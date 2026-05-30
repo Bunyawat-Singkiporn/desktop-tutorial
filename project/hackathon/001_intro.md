@@ -2,12 +2,12 @@
 
 
 
-1. ชื่อโปรเจค:
+1. Name:
 
-2. ปัญหา:
+2. Problem:
 
-3. ผู้ใช้:
+3. User:
 
-4. วิธีแก้ปัญหา:
+4. How to fix the problem:
 
-5. ฟีเจอร์หลัก:
+5. Main Feature:
