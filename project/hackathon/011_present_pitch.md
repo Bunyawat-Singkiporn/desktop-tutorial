@@ -1,17 +1,17 @@
 # Project Presentation
 
-Project Name
+Project Name:
 
-Problem
+Problem:
 
-Users
+Users:
 
-Existing Solutions
+Existing Solutions:
 
-Market Research
+Market Research:
 
-Why This Project
+Why This Project:
 
-Risks
+Risks:
 
-Final Score
+Final Score:
