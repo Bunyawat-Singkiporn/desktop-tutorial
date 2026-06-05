@@ -1,63 +1,67 @@
-# for i in range(5):      
+```text
+for i in range(5):
+``` 
 
 ลูปกี่รอบ?
 --------------------------------------------
 
-
-# for i in range(1, 5):   
-#     print(i)
+```text
+for i in range(1, 5):   
+    print(i)
+```
 
 จะแสดงอะไร?
 --------------------------------------------
 
-
-# tasks = []              
+```text
+tasks = []     
+```         
 
 เกี่ยวกับอะไร?
 --------------------------------------------
 
-
-# tasks = [               
-#     "Homework",
-#     "Read Book"
-# ]
+```text
+tasks = [               
+    "Homework",
+    "Read Book"
+]
 print(tasks[0])
-
+```
 
 จะแสดงค่าอะไรออกมา
 --------------------------------------------
 
-
-# score = 80              
-# if score >= 50:
-#     print("Pass")
-# else:
-#     print("Fail")
-
+```text
+score = 80              
+if score >= 50:
+    print("Pass")
+else:
+    print("Fail")
+```
 
 จะprintค่าอะไรออกมา
 --------------------------------------------
 
-
-# def hello():            
-
+```text
+def hello():            
+```
 
 เกี่ยวกับอะไร
 --------------------------------------------
 
-
-# def hello():        
-#     print("Hello")
-
+```text
+def hello():        
+    print("Hello")
+```
 
 codeนี้จะแสดงhelloเลยมั้ย
 --------------------------------------------
 
+```text
+def hello():        
+    print("Hello")
 
-# def hello():        
-#     print("Hello")
-
-# hello()
-
+hello()
+```
 
 codeนี้จะแสดงhelloเลยมั้ย
