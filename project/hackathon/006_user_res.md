@@ -1,11 +1,13 @@
-# Problem Validation
+# User Research
 
-For each idea:
+Questions
 
-## Questions
+- Who are the users?
 
-- Is it a real problem?
-- How do people solve it today?
-- Who experiences this problem?
-- How many people have this problem?
-- Would someone actually use our solution?
+- How old are they?
+
+- What do they need?
+
+- What frustrates them?
+
+- Would they actually use our solution?
