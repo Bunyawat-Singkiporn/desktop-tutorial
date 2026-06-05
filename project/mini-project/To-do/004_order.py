@@ -8,10 +8,22 @@ tasks = [
 for i in range(len(tasks)):
     print(i + 1, tasks[i])
 
+# ผลลัพธ์
+# 1 Homework
+# 2 Read Book
 
-# len() ไว้นับจำนวน
+# len(tasks)
+# ใช้นับจำนวนข้อมูลใน list
 
-# for i in range() คือการใช้ลูป for เพื่อวนลูปผ่านตัวเลขตั้งแต่ 0 ถึงจำนวนงานใน tasks - 1 (วนรอบตามจำนวนงานใน tasks)
+# len(tasks) = 2
 
-# print(i + 1, tasks[i]) ผลลัพธ์คือ 1 Homework เพราะ print 0+1=1 และ tasks[0] คือ Homework
-# คิดว่ารอบสองจะแสดงอะไรออกมา?
+# range(2)
+# จะได้ 0, 1
+
+# รอบแรก
+# i = 0
+# print(1, tasks[0])
+
+# รอบสอง
+# i = 1
+# print(2, tasks[1])
