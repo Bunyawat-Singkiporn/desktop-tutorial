@@ -2,12 +2,12 @@
 
 Score 1-5
 
-User Need
+User Need:
 
-Problem Severity
+Problem Severity:
 
-Market Opportunity
+Market Opportunity:
 
-Technical Feasibility
+Technical Feasibility:
 
-Learning Value
+Learning Value:
