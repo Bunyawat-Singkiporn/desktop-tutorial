@@ -2,268 +2,303 @@
 
 ---
 
-### Question 1: Print Message
+### Question 1: School Sign
 
-**Problem description:** Print the following message exactly as shown.
+**Problem description:** แสดงข้อความต่อไปนี้ให้ตรงตามตัวอย่าง
 
 **Output format:**
 
 ```text
-I love Python
-Learning is fun
+Welcome to Python Class
+Let's Learn Together
 ```
 
-**Hint:** Use more than one `print()`.
+**Hint:** ใช้ `print()` มากกว่า 1 ครั้ง
 
 **Difficulty:** Easy
 
 ---
 
-### Question 2: Personal Information
+### Question 2: Pet Information
 
-**Problem description:** Create variables called `name` and `age`. Print them in one sentence.
-
-Example output:
+**Problem description:** สร้างตัวแปรชื่อ `pet_name` และ `pet_type` แล้วแสดงผลในรูปแบบ
 
 ```text
-Tom is 11 years old
+Milo is a Dog
 ```
 
-**Hint:** Store data in variables before printing.
+**Hint:** เก็บข้อมูลในตัวแปรก่อน แล้วนำมาแสดงผล
 
 **Difficulty:** Easy
 
 ---
 
-### Question 3: Different Data Types
+### Question 3: Student Data
 
-**Problem description:** Create variables using these data types:
+**Problem description:** สร้างตัวแปรดังต่อไปนี้
 
-- string
-- integer
-- float
-- boolean
+- ชื่อนักเรียน
+- อายุ
+- ส่วนสูง
+- เป็นนักเรียนหรือไม่
 
-Print all values.
+จากนั้นแสดงผลค่าของตัวแปรทั้งหมด
 
-**Hint:** Remember the difference between `"11"` and `11`.
+**Hint:** ใช้ string, int, float และ bool
 
 **Difficulty:** Easy
 
 ---
 
-### Question 4: Favorite Food
+### Question 4: Dream Job
 
-**Problem description:** Read a name and a favorite food. Print the result in the format:
+**Problem description:** รับชื่อและอาชีพในฝัน แล้วแสดงผลในรูปแบบ
 
 ```text
-Tom likes Pizza
+Anna wants to be a Doctor
 ```
 
 **Input format:**
 
-Two lines of text.
+ข้อความ 2 บรรทัด
 
 **Example input:**
 
 ```text
-Tom
-Pizza
+Anna
+Doctor
 ```
 
 **Example output:**
 
 ```text
-Tom likes Pizza
+Anna wants to be a Doctor
 ```
 
-**Hint:** Use `input()` twice.
+**Hint:** ใช้ `input()` 2 ครั้ง
 
 **Difficulty:** Easy
 
 ---
 
-### Question 5: Age After 10 Years
+### Question 5: Birthday Calculation
 
-**Problem description:** Read age and print age after 10 years.
+**Problem description:** รับอายุปัจจุบัน และแสดงอายุในอีก 3 ปีข้างหน้า
 
 **Input format:**
 
-One integer.
+จำนวนเต็ม 1 จำนวน
 
 **Example input:**
 
 ```text
-11
+12
 ```
 
 **Example output:**
 
 ```text
-21
+15
 ```
 
-**Hint:** Input is text, convert it first.
+**Hint:** ใช้ `int()` ก่อนคำนวณ
 
 **Difficulty:** Easy
 
 ---
 
-### Question 6: Average Score
+### Question 6: Team Score
 
-**Problem description:** Read three scores and print the average.
+**Problem description:** รับคะแนนของทีม 2 รอบการแข่งขัน แล้วแสดงผลรวมคะแนน
 
 **Input format:**
 
-Three integers.
+จำนวนเต็ม 2 จำนวน
 
 **Example input:**
 
 ```text
-60
-70
-80
-```
-
-**Example output:**
-
-```text
-70.0
-```
-
-**Hint:** Add all scores first, then divide.
-
-**Difficulty:** Medium
-
----
-
-### Question 7: Split the Bill
-
-**Problem description:** Read total cost and number of friends. Print how much each person should pay.
-
-**Input format:**
-
-Two integers.
-
-**Example input:**
-
-```text
-300
-3
-```
-
-**Example output:**
-
-```text
-100.0
-```
-
-**Hint:** Use division (`/`).
-
-**Difficulty:** Medium
-
----
-
-### Question 8: Hot Weather
-
-**Problem description:** Read temperature. If temperature is greater than 35, print:
-
-```text
-Very Hot
-```
-
-Otherwise print nothing.
-
-**Input format:**
-
-One integer.
-
-**Example input:**
-
-```text
+35
 40
 ```
 
 **Example output:**
 
 ```text
-Very Hot
+75
 ```
 
-**Hint:** Use `if`.
+**Hint:** ใช้เครื่องหมาย `+`
 
 **Difficulty:** Medium
 
 ---
 
-### Question 9: Pass or Fail
+### Question 7: Sharing Pizza
 
-**Problem description:** Read a score. If score is at least 50, print:
-
-```text
-Pass
-```
-
-Otherwise print:
-
-```text
-Fail
-```
+**Problem description:** รับจำนวนชิ้นพิซซ่า และจำนวนเพื่อนที่ต้องแบ่งกันกิน แสดงจำนวนชิ้นที่แต่ละคนจะได้รับ
 
 **Input format:**
 
-One integer.
+จำนวนเต็ม 2 จำนวน
 
 **Example input:**
 
 ```text
-45
+12
+4
 ```
 
 **Example output:**
 
 ```text
-Fail
+3.0
 ```
 
-**Hint:** Use `if` and `else`.
+**Hint:** ใช้เครื่องหมาย `/`
 
 **Difficulty:** Medium
 
+**Starter Code:**
+
+```python
+pizza = int(input())
+friends = int(input())
+
+# Write your code here
+```
+
 ---
 
-### Question 10: Buy a Drink
+### Question 8: Tall Student
 
-**Problem description:** A drink costs 25 Baht.
+**Problem description:** รับส่วนสูง
 
-Read the amount of money.
+ถ้าส่วนสูงมากกว่า 150 ให้แสดง
 
-If the money is enough:
+```text
+Tall
+```
 
-- Print `Can Buy`
-- Print the change
-
-Otherwise:
-
-- Print `Need More Money`
+ถ้าไม่ถึง 150 ไม่ต้องแสดงอะไร
 
 **Input format:**
 
-One integer.
+จำนวนเต็ม 1 จำนวน
 
 **Example input:**
 
 ```text
-40
+160
+```
+
+**Example output:**
+
+```text
+Tall
+```
+
+**Hint:** ใช้ `if`
+
+**Difficulty:** Medium
+
+**Starter Code:**
+
+```python
+height = int(input())
+
+# Write your code here
+```
+
+---
+
+### Question 9: Library Entry
+
+**Problem description:** รับอายุ
+
+ถ้าอายุตั้งแต่ 12 ปีขึ้นไป ให้แสดง
+
+```text
+Can Enter
+```
+
+ถ้าอายุน้อยกว่า 12 ปี ให้แสดง
+
+```text
+Cannot Enter
+```
+
+**Input format:**
+
+จำนวนเต็ม 1 จำนวน
+
+**Example input:**
+
+```text
+10
+```
+
+**Example output:**
+
+```text
+Cannot Enter
+```
+
+**Hint:** ใช้ `if` และ `else`
+
+**Difficulty:** Medium
+
+**Starter Code:**
+
+```python
+age = int(input())
+
+# Write your code here
+```
+
+---
+
+### Question 10: Buy a Notebook
+
+**Problem description:** สมุดราคา 30 บาท
+
+รับจำนวนเงินจากผู้ใช้
+
+ถ้ามีเงินเพียงพอ
+
+- แสดงคำว่า `Can Buy`
+- แสดงเงินทอน
+
+ถ้ามีเงินไม่เพียงพอ
+
+- แสดงคำว่า `Need More Money`
+
+**Input format:**
+
+จำนวนเต็ม 1 จำนวน
+
+**Example input:**
+
+```text
+50
 ```
 
 **Example output:**
 
 ```text
 Can Buy
-15
+20
 ```
 
-**Hint:** Use subtraction and `if/else`.
+**Hint:** ใช้การลบ และ `if/else`
 
 **Difficulty:** Medium-Hard
+
+**Starter Code:**
+
+```python
+money = int(input())
+price = 30
+
+# Write your code here
+```
