@@ -14,4 +14,6 @@ Why This Project:
 
 Risks:
 
+MVP features:
+
 Final Score:
