@@ -9,3 +9,5 @@ Questions
 - Do we need special data?
 
 - Can we finish an MVP?
+
+Minimum Viable Product
