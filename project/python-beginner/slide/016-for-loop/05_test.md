@@ -1,22 +1,24 @@
-### Question 3: Count to N
+# 🔢 Practice for Loop — Question 3: Count to N
 
-Task:
+**Difficulty:** 🟡 Medium
 
-รับตัวเลข N
+---
 
-แสดงเลขตั้งแต่
+## โจทย์
 
-1 ถึง N
+รับตัวเลข N แล้วแสดงเลข 1 ถึง N ทีละบรรทัด
 
-Example Input
+---
 
-```text
+## ตัวอย่าง
+
+**Input:**
+```
 5
 ```
 
-Example Output
-
-```text
+**Output:**
+```
 1
 2
 3
@@ -24,12 +26,18 @@ Example Output
 5
 ```
 
-Starter Code
+---
+
+## 💡 Hint
+
+ใช้ `range(1, n + 1)` เพื่อให้ครอบคลุมถึง N
+
+---
+
+## Starter Code
 
 ```python
 n = int(input())
 
 # Write your code here
 ```
-
-Difficulty: Medium

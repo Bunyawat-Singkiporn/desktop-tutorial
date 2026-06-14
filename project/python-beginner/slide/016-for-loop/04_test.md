@@ -1,15 +1,40 @@
-### Question 2: Even Numbers
+# 🔢 Practice for Loop — Question 2: Even Numbers
 
-Task:
+**Difficulty:** 🟡 Medium
 
-แสดงเลขคู่
+---
 
-2 ถึง 20
+## โจทย์
 
-Starter Code
+แสดงเลขคู่ตั้งแต่ 2 ถึง 20 ทีละบรรทัด
+
+---
+
+## ตัวอย่างผลลัพธ์
+
+```
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+```
+
+---
+
+## 💡 Hint
+
+ใช้ `range(start, stop, step)` โดยกำหนด step = 2
+
+---
+
+## Starter Code
 
 ```python
 # Write your code here
 ```
-
-Difficulty: Medium

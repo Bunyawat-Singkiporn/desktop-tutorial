@@ -1,27 +1,39 @@
-### Question 3: Homework
+# 📚 Practice and/or/not — Question 3: Homework
 
-Task:
+**Difficulty:** 🟡 Medium
 
-กำหนด
+---
+
+## โจทย์
+
+ตรวจสอบว่านักเรียนทำการบ้านแล้วหรือยัง โดยใช้ตัวแปรที่กำหนดให้
 
 ```python
 homework_done = False
 ```
 
-ใช้ not
+**เงื่อนไข:** ถ้า**ยังไม่ทำ**การบ้าน → แสดง `Do Homework`
 
-ถ้ายังไม่ทำการบ้าน
+---
 
-แสดง
+## ตัวอย่างผลลัพธ์
 
+```
 Do Homework
+```
 
-Starter Code
+---
+
+## 💡 Hint
+
+ใช้ `not` เพื่อกลับค่า → `not False` จะได้ `True`
+
+---
+
+## Starter Code
 
 ```python
 homework_done = False
 
 # Write your code here
 ```
-
-Difficulty: Medium

@@ -1,32 +1,46 @@
-# Practice and / or / not
+# 🎢 Practice and/or/not — Question 1: Ride Allowed
 
-### Question 1: Ride Allowed
+**Difficulty:** 🟢 Easy
 
-Task:
+---
 
-รับ
+## โจทย์
 
-อายุ
+รับอายุและส่วนสูง แล้วตรวจสอบว่าขึ้นเครื่องเล่นได้หรือไม่
 
-ส่วนสูง
+**เงื่อนไข:** ต้องผ่าน **ทั้งสอง** ข้อ
+- อายุ >= 12
+- ส่วนสูง >= 140
 
-ถ้า
+| ผล | Output |
+|----|--------|
+| ผ่านทั้งคู่ | `Ride Allowed` |
+| ไม่ผ่าน | `Cannot Ride` |
 
-อายุ >= 12
+---
 
-และ
+## ตัวอย่าง
 
-ส่วนสูง >= 140
+**Input:**
+```
+14
+150
+```
 
-แสดง
-
+**Output:**
+```
 Ride Allowed
+```
 
-ไม่เช่นนั้น
+---
 
-Cannot Ride
+## 💡 Hint
 
-Starter Code
+ใช้ `and` เพื่อตรวจสอบว่าเงื่อนไขทั้งสองเป็นจริงพร้อมกัน
+
+---
+
+## Starter Code
 
 ```python
 age = int(input())
@@ -34,5 +48,3 @@ height = int(input())
 
 # Write your code here
 ```
-
-Difficulty: Easy

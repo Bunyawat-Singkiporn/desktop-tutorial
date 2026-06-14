@@ -1,39 +1,46 @@
-### Question 2: Double or Triple
+# ✖️ Practice Even / Odd — Question 2: Double or Triple
 
-Task:
+**Difficulty:** 🟢 Easy
 
-รับตัวเลข
+---
 
-ถ้าเป็นเลขคู่
+## โจทย์
 
-แสดงค่าคูณ 2
+รับตัวเลข แล้วคำนวณตามเงื่อนไข
 
-ถ้าเป็นเลขคี่
+| เงื่อนไข | Output |
+|----------|--------|
+| เลข**คู่** | ค่า × 2 |
+| เลข**คี่** | ค่า × 3 |
 
-แสดงค่าคูณ 3
+---
 
-Example Input
+## ตัวอย่าง
 
-```text
+**Input:**
+```
 5
 ```
 
-Example Output
-
-```text
+**Output:**
+```
 15
 ```
 
-Hint:
+> 5 เป็นเลขคี่ → 5 × 3 = 15
 
-ตรวจสอบก่อน แล้วค่อยคำนวณ
+---
 
-Starter Code
+## 💡 Hint
+
+ตรวจสอบเลขคู่/คี่ก่อน แล้วค่อยคำนวณ
+
+---
+
+## Starter Code
 
 ```python
 number = int(input())
 
 # Write your code here
 ```
-
-Difficulty: Easy

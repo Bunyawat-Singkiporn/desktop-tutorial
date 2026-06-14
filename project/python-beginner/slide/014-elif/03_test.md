@@ -1,27 +1,39 @@
-### Question 2: Wallet Status
+# 💰 Practice elif — Question 2: Wallet Status
 
-Task:
+**Difficulty:** 🟢 Easy
 
-รับจำนวนเงิน
+---
 
-100+
+## โจทย์
 
-Rich
+รับจำนวนเงิน แล้วแสดงสถานะ
 
-50-99
+| เงื่อนไข | Output |
+|----------|--------|
+| เงิน >= 100 | `Rich` |
+| เงิน 50–99 | `Normal` |
+| เงิน < 50 | `Poor` |
 
+---
+
+## ตัวอย่าง
+
+**Input:**
+```
+75
+```
+
+**Output:**
+```
 Normal
+```
 
-ต่ำกว่า 50
+---
 
-Poor
-
-Starter Code
+## Starter Code
 
 ```python
 money = int(input())
 
 # Write your code here
 ```
-
-Difficulty: Easy

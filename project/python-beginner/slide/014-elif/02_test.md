@@ -1,45 +1,45 @@
-# Practice elif
+# 👤 Practice elif — Question 1: Age Group
 
-### Question 1: Age Group
+**Difficulty:** 🟢 Easy
 
-Task:
+---
 
-รับอายุ
+## โจทย์
 
-ต่ำกว่า 13
+รับอายุ แล้วแสดงกลุ่มอายุ
 
-Child
+| เงื่อนไข | Output |
+|----------|--------|
+| อายุ < 13 | `Child` |
+| อายุ 13–17 | `Teen` |
+| อายุ 18+ | `Adult` |
 
-13-17
+---
 
-Teen
+## ตัวอย่าง
 
-18+
-
-Adult
-
-Example Input
-
-```text
+**Input:**
+```
 15
 ```
 
-Example Output
-
-```text
+**Output:**
+```
 Teen
 ```
 
-Hint:
+---
 
-ใช้ elif
+## 💡 Hint
 
-Starter Code
+ใช้ `elif` เพื่อเพิ่มเงื่อนไขระหว่าง `if` และ `else`
+
+---
+
+## Starter Code
 
 ```python
 age = int(input())
 
 # Write your code here
 ```
-
-Difficulty: Easy

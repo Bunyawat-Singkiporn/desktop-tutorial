@@ -1,43 +1,46 @@
-### Question 3: Special Number
+# ⭐ Practice Even / Odd — Question 3: Special Number
 
-Task:
+**Difficulty:** 🟡 Medium
 
-รับตัวเลข
+---
 
-ถ้าเป็นเลขคู่และมากกว่า 20
+## โจทย์
 
-แสดง
+รับตัวเลข แล้วตัดสินว่าเป็น Special หรือ Normal
 
-Special
+| เงื่อนไข | Output |
+|----------|--------|
+| เลข**คู่** และ **> 20** | `Special` |
+| อื่น ๆ | `Normal` |
 
-ไม่เช่นนั้น
+---
 
-แสดง
+## ตัวอย่าง
 
-Normal
-
-Example Input
-
-```text
+**Input:**
+```
 24
 ```
 
-Example Output
-
-```text
+**Output:**
+```
 Special
 ```
 
-Hint:
+> 24 เป็นเลขคู่ และ 24 > 20 → Special
 
-ใช้ if ซ้อนเงื่อนไข
+---
 
-Starter Code
+## 💡 Hint
+
+ใช้ `and` เพื่อรวม 2 เงื่อนไขเข้าด้วยกัน
+
+---
+
+## Starter Code
 
 ```python
 number = int(input())
 
 # Write your code here
 ```
-
-Difficulty: Medium

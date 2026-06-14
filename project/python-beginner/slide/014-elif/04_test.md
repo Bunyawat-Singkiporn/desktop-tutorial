@@ -1,31 +1,40 @@
-### Question 3: Temperature
+# 🌡️ Practice elif — Question 3: Temperature
 
-Task:
+**Difficulty:** 🟡 Medium
 
-รับอุณหภูมิ
+---
 
-40+
+## โจทย์
 
-Very Hot
+รับอุณหภูมิ แล้วบอกระดับความร้อน
 
-30+
+| เงื่อนไข | Output |
+|----------|--------|
+| temp >= 40 | `Very Hot` |
+| temp >= 30 | `Hot` |
+| temp >= 20 | `Warm` |
+| temp < 20 | `Cold` |
 
+---
+
+## ตัวอย่าง
+
+**Input:**
+```
+35
+```
+
+**Output:**
+```
 Hot
+```
 
-20+
+---
 
-Warm
-
-ต่ำกว่า 20
-
-Cold
-
-Starter Code
+## Starter Code
 
 ```python
 temp = int(input())
 
 # Write your code here
 ```
-
-Difficulty: Medium

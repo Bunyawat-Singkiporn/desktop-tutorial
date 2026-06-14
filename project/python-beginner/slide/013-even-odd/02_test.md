@@ -1,40 +1,41 @@
-# Practice Even / Odd
+# 🚌 Practice Even / Odd — Question 1: Bus Seat
 
-### Question 1: Bus Seat
+**Difficulty:** 🟢 Easy
 
-Task:
+---
 
-รับหมายเลขที่นั่ง
+## โจทย์
 
-ถ้าเป็นเลขคู่
+รับหมายเลขที่นั่ง แล้วบอกว่าเป็นที่นั่งแบบไหน
 
-แสดง
+| เงื่อนไข | Output |
+|----------|--------|
+| หมายเลขเป็น**เลขคู่** | `Window Seat` |
+| หมายเลขเป็น**เลขคี่** | `Aisle Seat` |
 
-Window Seat
+---
 
-ถ้าเป็นเลขคี่
+## ตัวอย่าง
 
-แสดง
-
-Aisle Seat
-
-Example Input
-
-```text
+**Input:**
+```
 12
 ```
 
-Example Output
-
-```text
+**Output:**
+```
 Window Seat
 ```
 
-Hint:
+---
 
-ใช้ %
+## 💡 Hint
 
-Starter Code
+ใช้ `%` เพื่อตรวจสอบเลขคู่/คี่
+
+---
+
+## Starter Code
 
 ```python
 seat = int(input())

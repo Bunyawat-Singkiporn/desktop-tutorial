@@ -1,24 +1,46 @@
-### Question 2: Discount
+# 🏷️ Practice and/or/not — Question 2: Discount
 
-Task:
+**Difficulty:** 🟡 Medium
 
-รับ
+---
 
-เงิน
+## โจทย์
 
-สมาชิก(True/False)
+รับจำนวนเงินและสถานะสมาชิก แล้วตรวจสอบว่าได้รับส่วนลดหรือไม่
 
-ถ้ามีเงิน >= 100
+**เงื่อนไข:** ต้องผ่าน **ทั้งสอง** ข้อ
+- เงิน >= 100
+- เป็นสมาชิก (`True`)
 
-และ
+| ผล | Output |
+|----|--------|
+| ผ่านทั้งคู่ | `Discount` |
+| ไม่ผ่าน | ไม่แสดงอะไร |
 
-เป็นสมาชิก
+---
 
-แสดง
+## ตัวอย่าง
 
+**Input:**
+```
+150
+True
+```
+
+**Output:**
+```
 Discount
+```
 
-Starter Code
+---
+
+## 💡 Hint
+
+ค่าที่รับมาจาก `input()` จะเป็น string เสมอ ต้องเปรียบเทียบกับ `"True"`
+
+---
+
+## Starter Code
 
 ```python
 money = int(input())
@@ -26,5 +48,3 @@ member = input()
 
 # Write your code here
 ```
-
-Difficulty: Medium
