@@ -59,7 +59,7 @@ You should see `(venv)` at the start of your terminal line.
 ## Step 3 — Install Django and Required Packages
 
 ```bash
-pip install django djangorestframework django-cors-headers
+pip install django djangorestframework django-cors-headers python-decouple
 ```
 
 | Package | Purpose |
@@ -67,6 +67,7 @@ pip install django djangorestframework django-cors-headers
 | `django` | The core framework |
 | `djangorestframework` | Build JSON APIs |
 | `django-cors-headers` | Allow Next.js frontend to call your API |
+| `python-decouple` | Read settings from a `.env` file |
 
 **Save dependencies to a file:**
 ```bash
@@ -97,7 +98,44 @@ backend/
 
 ---
 
-## Step 5 — Create an App
+## Step 5 — Set Up Environment Variables
+
+Create `backend/.env` **(do this before editing settings.py)**:
+
+```
+SECRET_KEY=your-local-secret-key-anything-is-fine-for-dev
+DEBUG=True
+ALLOWED_HOSTS=localhost,127.0.0.1
+```
+
+Add `.env` to `backend/.gitignore` so it never gets pushed to GitHub:
+```
+venv/
+__pycache__/
+*.pyc
+db.sqlite3
+.env
+```
+
+Now update the **top of `config/settings.py`** to read from `.env`:
+
+```python
+from decouple import config
+
+SECRET_KEY = config("SECRET_KEY")
+DEBUG = config("DEBUG", default=True, cast=bool)
+ALLOWED_HOSTS = config(
+    "ALLOWED_HOSTS",
+    default="localhost,127.0.0.1",
+    cast=lambda v: [s.strip() for s in v.split(",")]
+)
+```
+
+> All teammates create their own `.env` locally — secrets never go into GitHub.
+
+---
+
+## Step 6 — Create an App
 
 In Django, an **app** is a module that handles one part of your project (e.g., products, users, orders).
 
@@ -131,7 +169,7 @@ CORS_ALLOWED_ORIGINS = [
 
 ---
 
-## Step 6 — Create a Model
+## Step 7 — Create a Model
 
 A **model** is a Python class that becomes a table in the database.
 
@@ -158,7 +196,7 @@ python manage.py migrate          # Apply to database
 
 ---
 
-## Step 7 — Register in Admin Panel
+## Step 8 — Register in Admin Panel
 
 Open `products/admin.py`:
 
@@ -171,7 +209,7 @@ admin.site.register(Product)
 
 ---
 
-## Step 8 — Create an API Endpoint
+## Step 9 — Create an API Endpoint
 
 **Create `products/serializers.py`:**
 ```python
@@ -222,7 +260,7 @@ urlpatterns = [
 
 ---
 
-## Step 9 — Create Admin User & Run Server
+## Step 10 — Create Admin User & Run Server
 
 ```bash
 python manage.py createsuperuser
@@ -241,7 +279,7 @@ python manage.py runserver
 
 ---
 
-## Step 10 — Test the API
+## Step 11 — Test the API
 
 You can test with the browser, or use **Postman** / **Thunder Client** (VS Code extension):
 
@@ -255,7 +293,7 @@ You can test with the browser, or use **Postman** / **Thunder Client** (VS Code 
 
 ---
 
-## Step 11 — Push to GitHub
+## Step 12 — Push to GitHub
 
 Create `backend/.gitignore`:
 ```
@@ -281,6 +319,9 @@ git push
 - [ ] Django + DRF + CORS installed
 - [ ] `requirements.txt` created
 - [ ] Project created with `django-admin startproject`
+- [ ] `.env` file created with SECRET_KEY, DEBUG, ALLOWED_HOSTS
+- [ ] `settings.py` updated to use `python-decouple`
+- [ ] `.env` added to `.gitignore`
 - [ ] App created with `startapp`
 - [ ] App registered in `INSTALLED_APPS`
 - [ ] CORS configured

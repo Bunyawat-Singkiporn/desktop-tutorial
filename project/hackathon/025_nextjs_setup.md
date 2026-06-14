@@ -10,8 +10,10 @@
 |---------|---------|
 | File-based routing | No need to configure routes manually |
 | Server-side rendering | Faster page load, better SEO |
-| API Routes | Build simple backend inside the same project |
 | Easy Deployment | Designed to deploy on Vercel in 1 click |
+| Works with any backend | Sends requests to Django API — no backend code needed in Next.js |
+
+> 📌 In this class, **Next.js is only the frontend**. All data comes from the **Django backend**. We do NOT use Next.js API Routes.
 
 ---
 
@@ -152,24 +154,51 @@ The navbar now appears on **every page** automatically.
 
 ---
 
-## Step 7 — Call Your Backend API
+## Step 7 — Set Up Environment Variables
 
-When your Django backend is running, you can fetch data like this:
+Create `frontend/.env.local` **(do this before writing any fetch calls)**:
+
+```
+NEXT_PUBLIC_API_URL=http://localhost:8000
+```
+
+> `NEXT_PUBLIC_` prefix makes the variable available in the browser.
+> ⚠️ Add `.env.local` to `.gitignore` — never commit this file!
+
+Check that `.gitignore` inside `frontend/` already contains (it should by default):
+```
+.env.local
+```
+
+---
+
+## Step 8 — Connect to Django Backend
+
+Next.js sends HTTP requests to Django. There are two patterns:
+
+### Pattern A — GET (read data)
+
+Used on **Server Components** (default in App Router). Runs on the server.
 
 ```jsx
 // src/app/page.jsx
-async function getData() {
-  const res = await fetch("http://localhost:8000/api/products/");
+
+async function getProducts() {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/products/`);
   return res.json();
 }
 
 export default async function Home() {
-  const data = await getData();
+  const products = await getProducts();
   return (
     <main>
       <h1>Products</h1>
-      {data.map((item) => (
-        <p key={item.id}>{item.name}</p>
+      {products.map((item) => (
+        <div key={item.id}>
+          <h2>{item.name}</h2>
+          <p>{item.description}</p>
+          <p>Price: {item.price}</p>
+        </div>
       ))}
     </main>
   );
@@ -178,19 +207,62 @@ export default async function Home() {
 
 ---
 
-## Step 8 — Use Environment Variables for API URL
+### Pattern B — POST (send data)
 
-Create `frontend/.env.local`:
-```
-NEXT_PUBLIC_API_URL=http://localhost:8000
-```
+Used in **forms or buttons** inside Client Components.
 
-Update your fetch call:
 ```jsx
-const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/products/`);
+// src/app/create/page.jsx
+"use client";  // ← needed for useState and event handlers
+
+import { useState } from "react";
+
+export default function CreateProduct() {
+  const [name, setName] = useState("");
+  const [price, setPrice] = useState("");
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/products/`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name: name, price: price, description: "" }),
+    });
+
+    if (res.ok) {
+      alert("Product created!");
+    }
+  }
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <input
+        placeholder="Product name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
+      <input
+        placeholder="Price"
+        value={price}
+        onChange={(e) => setPrice(e.target.value)}
+      />
+      <button type="submit">Create</button>
+    </form>
+  );
+}
 ```
 
-> ⚠️ Add `.env.local` to `.gitignore` — never push secrets to GitHub!
+---
+
+## Summary — Server vs Client Component
+
+| | Server Component | Client Component |
+|---|---|---|
+| **Default?** | Yes | Add `"use client"` at top |
+| **Can fetch on load?** | ✅ Yes | ✅ Yes (use `useEffect`) |
+| **Can use useState?** | ❌ No | ✅ Yes |
+| **Use for** | Displaying data | Forms, buttons, interactions |
 
 ---
 
@@ -224,5 +296,7 @@ git push
 - [ ] Home page edited successfully
 - [ ] New page created (about/)
 - [ ] Navbar added in layout
-- [ ] `.env.local` created with API URL
+- [ ] `.env.local` created with `NEXT_PUBLIC_API_URL=http://localhost:8000`
+- [ ] GET request to Django working (products list)
+- [ ] POST request to Django working (create form)
 - [ ] Pushed to GitHub
