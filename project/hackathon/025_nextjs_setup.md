@@ -57,23 +57,113 @@ npx create-next-app@latest frontend
 
 ---
 
-## Step 2 — Project Structure
+## Step 2 — Best Practice Folder Structure
+
+After creating the project, **reorganize `src/` to follow this structure**:
 
 ```
 frontend/
 ├── src/
-│   └── app/
-│       ├── page.jsx        ← Home page  (localhost:3000/)
-│       ├── layout.jsx      ← Shared layout (navbar, footer)
-│       ├── globals.css     ← Global styles
-│       └── about/
-│           └── page.jsx    ← About page (localhost:3000/about)
-├── public/                 ← Static files (images, icons)
-├── package.json            ← Project dependencies
-└── next.config.js          ← Next.js configuration
+│   ├── app/                        ← Pages & routing (Next.js App Router)
+│   │   ├── (auth)/                 ← Route group (no URL prefix)
+│   │   │   ├── login/
+│   │   │   │   └── page.jsx
+│   │   │   └── register/
+│   │   │       └── page.jsx
+│   │   ├── products/
+│   │   │   ├── page.jsx            ← /products
+│   │   │   └── [id]/
+│   │   │       └── page.jsx        ← /products/1
+│   │   ├── layout.jsx              ← Root layout (navbar, footer)
+│   │   ├── page.jsx                ← Home page /
+│   │   └── globals.css
+│   ├── components/                 ← Reusable UI pieces
+│   │   ├── ui/                     ← Generic: Button, Input, Card
+│   │   │   ├── Button.jsx
+│   │   │   └── Card.jsx
+│   │   └── layout/                 ← Structural: Navbar, Footer, Sidebar
+│   │       ├── Navbar.jsx
+│   │       └── Footer.jsx
+│   ├── lib/                        ← Utility functions & API calls
+│   │   ├── api.js                  ← All fetch() calls to Django in one place
+│   │   └── utils.js                ← Helpers (format date, format price)
+│   └── hooks/                      ← Custom React hooks (Client Components)
+│       └── useProducts.js          ← e.g. fetch + loading + error state
+├── public/                         ← Static files (images, icons, fonts)
+├── .env.local                      ← Local env vars (never commit!)
+├── .env.example                    ← Template showing what vars are needed
+├── .gitignore
+├── next.config.js
+└── package.json
 ```
 
-> 📌 **Routing rule:** Each folder inside `app/` with a `page.jsx` file becomes a URL path automatically.
+### Key folders explained
+
+| Folder | What goes here |
+|--------|----------------|
+| `app/` | Pages only — one `page.jsx` per route |
+| `components/ui/` | Small reusable pieces: Button, Card, Badge |
+| `components/layout/` | Structural pieces: Navbar, Footer, Sidebar |
+| `lib/api.js` | **All** `fetch()` calls to Django — never call fetch directly in pages |
+| `lib/utils.js` | Pure helper functions (no React) |
+| `hooks/` | Custom hooks that wrap `useState`/`useEffect` |
+
+### `lib/api.js` example
+
+Centralize all API calls here so pages stay clean:
+
+```js
+// src/lib/api.js
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
+
+export async function getProducts() {
+  const res = await fetch(`${BASE_URL}/api/products/`);
+  if (!res.ok) throw new Error("Failed to fetch products");
+  return res.json();
+}
+
+export async function createProduct(data) {
+  const res = await fetch(`${BASE_URL}/api/products/`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  });
+  if (!res.ok) throw new Error("Failed to create product");
+  return res.json();
+}
+
+export async function deleteProduct(id) {
+  const res = await fetch(`${BASE_URL}/api/products/${id}/`, {
+    method: "DELETE",
+  });
+  if (!res.ok) throw new Error("Failed to delete product");
+}
+```
+
+Then in your page, just import and call:
+
+```jsx
+// src/app/products/page.jsx
+import { getProducts } from "@/lib/api";
+
+export default async function ProductsPage() {
+  const products = await getProducts();
+  return (
+    <main>
+      {products.map((p) => <p key={p.id}>{p.name}</p>)}
+    </main>
+  );
+}
+```
+
+### `.env.example` — commit this file!
+
+Create `frontend/.env.example` (safe to commit, no real values):
+```
+NEXT_PUBLIC_API_URL=http://localhost:8000
+```
+
+> When a teammate clones the repo, they copy this file to `.env.local` and fill in the values.
 
 ---
 

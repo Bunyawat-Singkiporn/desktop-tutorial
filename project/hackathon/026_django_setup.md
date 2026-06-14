@@ -293,7 +293,135 @@ You can test with the browser, or use **Postman** / **Thunder Client** (VS Code 
 
 ---
 
-## Step 12 — Push to GitHub
+## Step 12 — Best Practice Folder Structure
+
+As your project grows, **each Django app should follow this internal structure**:
+
+```
+backend/
+├── config/                     ← Project-level config (created by startproject)
+│   ├── settings.py             ← All settings (reads from .env)
+│   ├── urls.py                 ← Root URL router
+│   ├── wsgi.py
+│   └── asgi.py
+├── products/                   ← One app per feature/domain
+│   ├── migrations/             ← Auto-generated — do not edit manually
+│   ├── tests/                  ← Tests for this app
+│   │   └── test_views.py
+│   ├── admin.py                ← Register models in admin panel
+│   ├── models.py               ← Database tables
+│   ├── serializers.py          ← Convert model ↔ JSON
+│   ├── views.py                ← Handle requests, return responses
+│   ├── urls.py                 ← URL routes for this app
+│   └── permissions.py          ← Who can access what (optional)
+├── users/                      ← Another app for user/auth logic
+│   ├── models.py
+│   ├── serializers.py
+│   ├── views.py
+│   └── urls.py
+├── middleware/                 ← Custom middleware (optional)
+│   └── logging_middleware.py
+├── .env                        ← Local secrets (never commit!)
+├── .env.example                ← Template for teammates (commit this)
+├── .gitignore
+├── manage.py
+├── Procfile                    ← For deployment (gunicorn)
+└── requirements.txt
+```
+
+### One app per domain — keep it separate
+
+| App | Handles |
+|-----|--------|
+| `products/` | Product CRUD |
+| `users/` | Registration, login, profile |
+| `orders/` | Order creation, history |
+| `payments/` | Payment records |
+
+> Each app should do **one thing** and be independent.
+
+### Custom Middleware
+
+Middleware runs on **every request** before it reaches the view. Useful for logging, authentication checks, or adding headers.
+
+Create `backend/middleware/logging_middleware.py`:
+
+```python
+import logging
+
+logger = logging.getLogger(__name__)
+
+class RequestLoggingMiddleware:
+    def __init__(self, get_response):
+        self.get_response = get_response
+
+    def __call__(self, request):
+        # Before view: log the incoming request
+        logger.info(f"{request.method} {request.path}")
+
+        response = self.get_response(request)  # Call the view
+
+        # After view: log the response status
+        logger.info(f"Response: {response.status_code}")
+        return response
+```
+
+Register it in `config/settings.py`:
+
+```python
+MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
+    "middleware.logging_middleware.RequestLoggingMiddleware",  # ← Add here
+    # ... rest unchanged ...
+]
+```
+
+### Custom Permissions
+
+Create `products/permissions.py` to control who can access which endpoint:
+
+```python
+from rest_framework.permissions import BasePermission
+
+class IsOwnerOrReadOnly(BasePermission):
+    """
+    Allow anyone to read (GET).
+    Only allow the owner to write (POST, PUT, DELETE).
+    """
+    def has_object_permission(self, request, view, obj):
+        if request.method in ("GET", "HEAD", "OPTIONS"):
+            return True
+        return obj.owner == request.user
+```
+
+Use it in `views.py`:
+
+```python
+from .permissions import IsOwnerOrReadOnly
+
+class ProductViewSet(viewsets.ModelViewSet):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
+    permission_classes = [IsOwnerOrReadOnly]
+```
+
+### `.env.example` — commit this file!
+
+Create `backend/.env.example` (safe to commit, no real values):
+```
+SECRET_KEY=your-secret-key-here
+DEBUG=True
+ALLOWED_HOSTS=localhost,127.0.0.1
+DATABASE_URL=sqlite:///db.sqlite3
+```
+
+> Teammates clone the repo → copy `.env.example` → rename to `.env` → fill in values.
+
+---
+
+## Step 13 — Push to GitHub
 
 Create `backend/.gitignore`:
 ```
@@ -325,9 +453,11 @@ git push
 - [ ] App created with `startapp`
 - [ ] App registered in `INSTALLED_APPS`
 - [ ] CORS configured
+- [ ] `.env.example` created (committed to GitHub)
 - [ ] Model created and migrated
 - [ ] Admin registered
 - [ ] Serializer + ViewSet + URLs created
 - [ ] API working at `/api/products/`
 - [ ] Admin panel accessible
+- [ ] `lib/` folder structure in place (for larger apps)
 - [ ] Pushed to GitHub
