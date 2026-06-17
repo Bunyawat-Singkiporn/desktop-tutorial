@@ -59,7 +59,7 @@ You should see `(venv)` at the start of your terminal line.
 ## Step 3 — Install Django and Required Packages
 
 ```bash
-pip install django djangorestframework django-cors-headers python-decouple
+pip install django djangorestframework django-cors-headers python-decouple dj-database-url psycopg2-binary
 ```
 
 | Package | Purpose |
@@ -68,6 +68,8 @@ pip install django djangorestframework django-cors-headers python-decouple
 | `djangorestframework` | Build JSON APIs |
 | `django-cors-headers` | Allow Next.js frontend to call your API |
 | `python-decouple` | Read settings from a `.env` file |
+| `dj-database-url` | Convert DATABASE_URL string to Django format |
+| `psycopg2-binary` | Connect to PostgreSQL (for Supabase) |
 
 **Save dependencies to a file:**
 ```bash
@@ -100,15 +102,48 @@ backend/
 
 ## Step 5 — Set Up Environment Variables
 
-Create `backend/.env` **(do this before editing settings.py)**:
+Create `backend/.env` **(choose one option below)**:
+
+### Option A: SQLite (Simple, Local Only)
+
+For local development without a shared database:
 
 ```
-SECRET_KEY=your-local-secret-key-anything-is-fine-for-dev
+SECRET_KEY=your-local-secret-key
 DEBUG=True
 ALLOWED_HOSTS=localhost,127.0.0.1
+DATABASE_URL=sqlite:///db.sqlite3
 ```
 
-Add `.env` to `backend/.gitignore` so it never gets pushed to GitHub:
+### Option B: Supabase PostgreSQL (Team-Friendly)
+
+For multiple developers sharing one database:
+
+**Step 1: Create a Supabase project**
+1. Go to [https://supabase.com](https://supabase.com)
+2. Click **New Project**
+3. Choose a name, password, and region
+4. Click **Create**
+5. Wait ~3 minutes for the database to spin up
+
+**Step 2: Get your connection string**
+1. In Supabase → **Settings → Database**
+2. Copy the connection string under "PostgreSQL URI"
+3. It looks like: `postgresql://user:password@host:5432/postgres`
+
+**Step 3: Add to `.env`**
+
+```
+SECRET_KEY=your-local-secret-key
+DEBUG=True
+ALLOWED_HOSTS=localhost,127.0.0.1
+DATABASE_URL=postgresql://user:password@host:5432/postgres
+```
+
+---
+
+**Add `.env` to `.gitignore`** so it never gets pushed to GitHub:
+
 ```
 venv/
 __pycache__/
@@ -120,6 +155,7 @@ db.sqlite3
 Now update the **top of `config/settings.py`** to read from `.env`:
 
 ```python
+import dj_database_url
 from decouple import config
 
 SECRET_KEY = config("SECRET_KEY")
@@ -129,9 +165,35 @@ ALLOWED_HOSTS = config(
     default="localhost,127.0.0.1",
     cast=lambda v: [s.strip() for s in v.split(",")]
 )
+
+# Database: supports both SQLite and PostgreSQL
+DATABASES = {
+    "default": dj_database_url.config(
+        default=config("DATABASE_URL", default="sqlite:///db.sqlite3")
+    )
+}
 ```
 
-> All teammates create their own `.env` locally — secrets never go into GitHub.
+> All teammates create their own `.env` locally — secrets never go into GitHub. 
+> If using Supabase, each person points to the **same DATABASE_URL** from Supabase.
+
+---
+
+## Step 5.5 — Update DATABASES in settings.py
+
+Make sure your `config/settings.py` has this **DATABASES** section (add if not present):
+
+```python
+# Around line 80-100, find DATABASES = { ... } and replace with:
+
+DATABASES = {
+    "default": dj_database_url.config(
+        default=config("DATABASE_URL", default="sqlite:///db.sqlite3")
+    )
+}
+```
+
+This lets Django read **DATABASE_URL** from `.env` automatically.
 
 ---
 

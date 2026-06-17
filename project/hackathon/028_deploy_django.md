@@ -1,202 +1,168 @@
-# 🚂 Deploy Django Backend to Railway
+# 🚂 Deploy Django Backend
 
 ---
 
-## Why Railway?
+## Option A: Railway + PostgreSQL (Recommended)
 
-**Railway** is the easiest platform to deploy Django backends with a free-tier database.
+Railway is simple: push to GitHub, Railway builds & deploys automatically.
 
-| Platform | Free Tier | Difficulty |
-|----------|-----------|------------|
-| **Railway** | $5 credit/month | ⭐ Easy |
-| Render | 750 hrs/month | ⭐ Easy |
-| Fly.io | Limited free | ⭐⭐ Medium |
-
----
-
-## Step 1 — Install Production Packages
+### Step 1 — Install Production Packages
 
 ```bash
 cd backend
-venv\Scripts\activate    # Windows
-# or: source venv/bin/activate  (Mac/Linux)
-
-pip install gunicorn whitenoise psycopg2-binary python-decouple dj-database-url
+pip install gunicorn whitenoise dj-database-url
 pip freeze > requirements.txt
 ```
 
-| Package | Purpose |
-|---------|---------|
-| `gunicorn` | Production web server (replaces `runserver`) |
-| `whitenoise` | Serve static files without a separate server |
-| `psycopg2-binary` | Connect Django to PostgreSQL |
-| `python-decouple` | Read settings from environment variables |
-| `dj-database-url` | Parse `DATABASE_URL` into Django format |
+### Step 2 — Create `Procfile`
 
----
+Create `backend/Procfile` (no extension):
+```
+web: gunicorn config.wsgi --log-file -
+```
 
-## Step 2 — Update `config/settings.py`
+### Step 3 — Update `config/settings.py`
 
-Replace the top of the file:
+Add these at the top:
 
 ```python
 from decouple import config
 import dj_database_url
 
-# Security
 SECRET_KEY = config("SECRET_KEY")
 DEBUG = config("DEBUG", default=False, cast=bool)
-ALLOWED_HOSTS = config(
-    "ALLOWED_HOSTS",
-    default="localhost,127.0.0.1",
-    cast=lambda v: [s.strip() for s in v.split(",")]
-)
-```
+ALLOWED_HOSTS = config("ALLOWED_HOSTS", default="localhost").split(",")
 
-**Update MIDDLEWARE** (Whitenoise must be right after SecurityMiddleware):
-
-```python
-MIDDLEWARE = [
-    "corsheaders.middleware.CorsMiddleware",
-    "django.middleware.security.SecurityMiddleware",
-    "whitenoise.middleware.WhiteNoiseMiddleware",    # ← Add here
-    # ... rest unchanged ...
-]
-```
-
-**Update DATABASES** (supports both SQLite locally and PostgreSQL in production):
-
-```python
 DATABASES = {
     "default": dj_database_url.config(
         default=config("DATABASE_URL", default="sqlite:///db.sqlite3")
     )
 }
-```
 
-**Add static files settings:**
-
-```python
 STATIC_URL = "/static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
-```
 
-**Update CORS** to include your Vercel URL:
-
-```python
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "https://your-project.vercel.app",    # ← Add after Vercel deploy
+    "https://your-domain.vercel.app",
 ]
 ```
 
+Add Whitenoise to MIDDLEWARE (right after SecurityMiddleware):
+```python
+MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",  # ← Add
+    # ... rest unchanged
+]
+```
+
+### Step 4 — Push to GitHub
+
+```bash
+git add .
+git commit -m "Setup production Django"
+git push
+```
+
+### Step 5 — Deploy on Railway
+
+1. Go to [https://railway.app](https://railway.app) → Login with GitHub
+2. Click **New Project** → **Deploy from GitHub repo**
+3. Select your repo → **Deploy**
+4. Click the service → **Settings** → set Root Directory to `backend`
+5. Click **+ New** → **Database** → **PostgreSQL**
+6. Railway adds `DATABASE_URL` automatically
+
+### Step 6 — Set Environment Variables
+
+In Railway → Your service → **Variables**:
+
+| Key | Value |
+|-----|-------|
+| `SECRET_KEY` | `python -c "import secrets; print(secrets.token_urlsafe(50))"` |
+| `DEBUG` | `False` |
+| `ALLOWED_HOSTS` | `your-project.railway.app` |
+
+> `DATABASE_URL` is already set by PostgreSQL addon
+
 ---
 
-## Step 3 — Create a `Procfile`
+## Option B: Supabase + Django
 
-Create a file named **`Procfile`** (no extension) inside `backend/`:
+Supabase provides PostgreSQL hosting + built-in auth & real-time features.
 
+### Step 1 — Create Supabase Project
+
+1. Go to [https://supabase.com](https://supabase.com) → **New Project**
+2. Name your project, set password, choose region
+3. Wait ~3 minutes
+4. Go to **Settings** → **Database** → Copy **PostgreSQL URI**
+5. It looks like: `postgresql://user:pass@host/postgres`
+
+### Step 2 — Update Django for Supabase
+
+In `backend/.env` (local development):
 ```
-web: gunicorn config.wsgi --log-file -
-```
-
-> Railway reads this file to know how to start your server.
-
----
-
-## Step 4 — Create `.env` for Local Development
-
-Create `backend/.env`:
-```
-SECRET_KEY=any-random-string-for-local-dev
+DATABASE_URL=postgresql://user:pass@host/postgres
+SECRET_KEY=your-secret-key
 DEBUG=True
 ALLOWED_HOSTS=localhost,127.0.0.1
 ```
 
-Make sure `.env` is in `backend/.gitignore`:
+Your Django settings already support this (from Step 026).
+
+### Step 3 — Deploy Backend (Railway or Render)
+
+After your Django backend is configured for Supabase:
+- Use **Railway** (same as Option A, but skip PostgreSQL addon — use Supabase URL instead)
+- Or use **Render** (free tier available)
+
+When setting environment variables, add:
 ```
-venv/
-__pycache__/
-*.pyc
-db.sqlite3
-.env          ← never commit this!
+DATABASE_URL=postgresql://user:pass@host/postgres
 ```
 
 ---
 
-## Step 5 — Push to GitHub
+## After Deployment
 
+**Run migrations on the server:**
+
+In your Railway/Render dashboard, open a Shell:
 ```bash
-cd ..    # go back to my-startup root
-git add .
-git commit -m "Prepare Django for production deploy"
-git push
+python manage.py migrate
+python manage.py createsuperuser
 ```
 
----
-
-## Step 6 — Create a Railway Account
-
-1. Go to [https://railway.app](https://railway.app)
-2. Click **Login** → **Login with GitHub**
-3. Authorize Railway
-
----
-
-## Step 7 — Create a New Project
-
-1. Click **New Project**
-2. Choose **Deploy from GitHub repo**
-3. Select your `my-startup` repository
-4. Click **Deploy Now**
-
----
-
-## Step 8 — Configure the Service
-
-Click on the service that was created → **Settings** tab:
-
-| Setting | Value |
-|---------|-------|
-| **Root Directory** | `backend` |
-| **Build Command** | `pip install -r requirements.txt` |
-| **Start Command** | `gunicorn config.wsgi --log-file -` |
-
----
-
-## Step 9 — Add a PostgreSQL Database
-
-1. In your project, click **New** → **Database** → **PostgreSQL**
-2. Railway creates the database and **automatically** adds `DATABASE_URL` to your service's environment variables
-
----
-
-## Step 10 — Set Environment Variables
-
-In your service → **Variables** tab, add:
-
-| Variable | Value |
-|----------|-------|
-| `SECRET_KEY` | A long random string (see below) |
-| `DEBUG` | `False` |
-| `ALLOWED_HOSTS` | `your-project.railway.app` |
-
-**Generate a secure SECRET_KEY:**
-```bash
-python -c "import secrets; print(secrets.token_urlsafe(50))"
+**Test your API:**
+```
+https://your-project.railway.app/api/products/
 ```
 
-> `DATABASE_URL` is already set automatically by Railway — don't touch it.
+**Update frontend `.env.local`:**
+```
+NEXT_PUBLIC_API_URL=https://your-project.railway.app
+```
+
+Then deploy frontend to Vercel (see Step 027).
 
 ---
 
-## Step 11 — Deploy & Run Migrations
+## ✅ Checklist
 
-Click **Deploy**. Watch the build logs — wait for:
-```
-✅ Deploy Successful
-```
+- [ ] Production packages installed (gunicorn, whitenoise, dj-database-url)
+- [ ] `Procfile` created
+- [ ] `config/settings.py` updated for production
+- [ ] `.env` set for local dev
+- [ ] Pushed to GitHub
+- [ ] Deployed to Railway (or Render)
+- [ ] Database connected (Railway PostgreSQL or Supabase)
+- [ ] Environment variables set on server
+- [ ] Migrations ran successfully
+- [ ] API accessible at `https://your-backend.railway.app/api/`
 
 Then run migrations. In Railway → your service → **Settings → Deploy → Post Deploy Command**:
 ```

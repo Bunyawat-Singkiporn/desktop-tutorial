@@ -1,129 +1,72 @@
-# 🐙 GitHub Setup — Version Control for Your Project
+# � Quick Start — Before You Begin
 
 ---
 
-## What is GitHub?
+## Assumptions
 
-- **Git** — a tool that tracks changes in your code (runs on your computer)
-- **GitHub** — a website that stores your code online and lets teams collaborate
-
-> Think of Git like "Save History" and GitHub like "Google Drive for code"
-
----
-
-## Step 1 — Create a GitHub Account
-
-1. Go to [https://github.com](https://github.com)
-2. Click **Sign up**
-3. Enter your email, password, and username
-4. Verify your email
-
----
-
-## Step 2 — Install Git on Your Computer
-
-**Check if Git is already installed:**
-```bash
-git --version
-```
-
-**If not installed:**
-- **Windows:** Download from [https://git-scm.com](https://git-scm.com) → Run installer
-- **Mac:** Run `xcode-select --install` in Terminal
-- **Linux:** Run `sudo apt install git`
-
-**Set up your identity (do this once):**
-```bash
-git config --global user.name "Your Name"
-git config --global user.email "your@email.com"
-```
-
----
-
-## Step 3 — Create a New Repository on GitHub
-
-1. Click the **+** button (top right) → **New repository**
-2. Fill in:
-   - **Repository name:** e.g. `my-startup`
-   - **Description:** (optional)
-   - **Visibility:** Public or Private
-   - ✅ Check **Add a README file**
-3. Click **Create repository**
-
----
-
-## Step 4 — Clone the Repository to Your Computer
-
-Copy the repo URL from GitHub (green **Code** button → copy HTTPS URL)
+This guide assumes:
+- ✅ You have a GitHub account
+- ✅ Git is installed on your computer
+- ✅ You have a GitHub repository created (e.g. `my-startup`)
+- ✅ You've cloned it locally and are ready to code
 
 ```bash
 git clone https://github.com/your-username/my-startup.git
 cd my-startup
 ```
 
-Now you have a local copy of the repo.
-
 ---
 
-## Step 5 — Basic Git Workflow (Daily Use)
+## Project Structure
 
-```
-Edit files → Stage → Commit → Push
-```
-
-| Command | What it does |
-|---------|-------------|
-| `git status` | Show which files changed |
-| `git add .` | Stage ALL changed files |
-| `git add filename` | Stage one specific file |
-| `git commit -m "message"` | Save a snapshot with a message |
-| `git push` | Upload commits to GitHub |
-| `git pull` | Download latest changes from GitHub |
-
-**Example workflow:**
-```bash
-# After editing files...
-git status                        # See what changed
-git add .                         # Stage everything
-git commit -m "Add homepage UI"   # Save snapshot
-git push                          # Upload to GitHub
-```
-
----
-
-## Step 6 — Branching (Working in a Team)
-
-> Never commit directly to `main` in a team project!
-
-```bash
-# Create and switch to a new branch
-git checkout -b feature/login-page
-
-# Work on your code...
-git add .
-git commit -m "Add login page"
-git push origin feature/login-page
-```
-
-Then on GitHub → open a **Pull Request** → teammate reviews → **Merge** to main
-
----
-
-## Recommended Folder Structure for a Startup Project
+Create this folder structure:
 
 ```
 my-startup/
-├── frontend/    ← Next.js project
-├── backend/     ← Django project
+├── frontend/    ← Next.js app (Steps 025)
+├── backend/     ← Django app (Steps 026)
 └── README.md
 ```
 
 ---
 
-## ✅ Checklist
+## Tools You Need
 
-- [ ] GitHub account created
-- [ ] Git installed and configured
-- [ ] Repository created on GitHub
-- [ ] Repository cloned locally
-- [ ] Practiced: add → commit → push
+Install these before starting:
+
+| Tool | Download | Check |
+|------|----------|-------|
+| **Node.js** (v18+) | [nodejs.org](https://nodejs.org) | `node --version` |
+| **Python** (3.10+) | [python.org](https://python.org) | `python --version` |
+| **Git** | [git-scm.com](https://git-scm.com) | `git --version` |
+
+---
+
+## Basic Git Workflow
+
+After making changes, upload to GitHub:
+
+```bash
+git add .
+git commit -m "Add feature description"
+git push
+```
+
+For team projects, use branches:
+```bash
+git checkout -b feature/feature-name
+# ... make changes ...
+git push origin feature/feature-name
+# Then open a Pull Request on GitHub
+```
+
+---
+
+## ✅ Checklist Before Starting
+
+- [ ] GitHub repo cloned locally
+- [ ] Node.js (v18+) installed
+- [ ] Python (3.10+) installed
+- [ ] Create `frontend/` folder
+- [ ] Create `backend/` folder
+- [ ] Ready for Step 025 (Next.js)
