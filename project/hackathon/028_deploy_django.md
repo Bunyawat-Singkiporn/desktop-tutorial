@@ -1,29 +1,61 @@
-# 🚂 Deploy Django Backend
+# � Deploy Django Backend — Render + Supabase (Free)
+
+**Stack:** Next.js (Vercel) + Django (Render) + Supabase (PostgreSQL)
+
+```
+User's Browser
+      │
+      ▼
+┌─────────────────┐          ┌──────────────────────┐
+│     Vercel      │  fetch   │       Render         │
+│   (Next.js)     │─────────►│     (Django API)     │
+│   Frontend      │          └──────────┬───────────┘
+└─────────────────┘                     │
+                              ┌─────────▼──────────┐
+                              │     Supabase       │
+                              │   (PostgreSQL)     │
+                              └────────────────────┘
+```
 
 ---
 
-## Option A: Railway + PostgreSQL (Recommended)
+## Part 1 — Set Up Supabase (Database)
 
-Railway is simple: push to GitHub, Railway builds & deploys automatically.
+### Step 1 — Create Supabase Project
 
-### Step 1 — Install Production Packages
+1. Go to [https://supabase.com](https://supabase.com) → Login with GitHub
+2. Click **New Project** → fill in name, password, region
+3. Wait ~3 minutes for setup
+4. Go to **Settings → Database**
+5. Scroll to **Connection string → URI** → Copy it
+
+It looks like:
+```
+postgresql://postgres:[YOUR-PASSWORD]@db.xxxx.supabase.co:5432/postgres
+```
+
+> ⚠️ Keep this URL secret — treat it like a password
+
+---
+
+## Part 2 — Prepare Django for Production
+
+### Step 2 — Install Production Packages
 
 ```bash
 cd backend
-pip install gunicorn whitenoise dj-database-url
+pip install gunicorn whitenoise dj-database-url psycopg2-binary
 pip freeze > requirements.txt
 ```
 
-### Step 2 — Create `Procfile`
+### Step 3 — Create `Procfile`
 
 Create `backend/Procfile` (no extension):
 ```
 web: gunicorn config.wsgi --log-file -
 ```
 
-### Step 3 — Update `config/settings.py`
-
-Add these at the top:
+### Step 4 — Update `config/settings.py`
 
 ```python
 from decouple import config
@@ -45,7 +77,7 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "https://your-domain.vercel.app",
+    "https://your-frontend.vercel.app",  # ← Update after Vercel deploy
 ]
 ```
 
@@ -59,7 +91,24 @@ MIDDLEWARE = [
 ]
 ```
 
-### Step 4 — Push to GitHub
+### Step 5 — Update `.env` for Local Dev with Supabase
+
+```
+SECRET_KEY=any-local-key
+DEBUG=True
+ALLOWED_HOSTS=localhost,127.0.0.1
+DATABASE_URL=postgresql://postgres:[YOUR-PASSWORD]@db.xxxx.supabase.co:5432/postgres
+```
+
+### Step 6 — Run Migrations Locally (Test Connection)
+
+```bash
+python manage.py migrate
+```
+
+If successful → Django is connected to Supabase. ✅
+
+### Step 7 — Push to GitHub
 
 ```bash
 git add .
@@ -67,169 +116,90 @@ git commit -m "Setup production Django"
 git push
 ```
 
-### Step 5 — Deploy on Railway
+---
 
-1. Go to [https://railway.app](https://railway.app) → Login with GitHub
-2. Click **New Project** → **Deploy from GitHub repo**
-3. Select your repo → **Deploy**
-4. Click the service → **Settings** → set Root Directory to `backend`
-5. Click **+ New** → **Database** → **PostgreSQL**
-6. Railway adds `DATABASE_URL` automatically
+## Part 3 — Deploy Django on Render
 
-### Step 6 — Set Environment Variables
+### Step 8 — Create Render Account
 
-In Railway → Your service → **Variables**:
+1. Go to [https://render.com](https://render.com) → **Sign Up with GitHub**
+
+### Step 9 — Create Web Service
+
+1. Click **New → Web Service**
+2. Connect your GitHub repo
+3. Configure:
+
+| Setting | Value |
+|---------|-------|
+| **Root Directory** | `backend` |
+| **Runtime** | `Python` |
+| **Build Command** | `pip install -r requirements.txt` |
+| **Start Command** | `gunicorn config.wsgi --log-file -` |
+| **Instance Type** | `Free` |
+
+### Step 10 — Set Environment Variables
+
+In Render → your service → **Environment**:
 
 | Key | Value |
 |-----|-------|
-| `SECRET_KEY` | `python -c "import secrets; print(secrets.token_urlsafe(50))"` |
+| `SECRET_KEY` | Run locally: `python -c "import secrets; print(secrets.token_urlsafe(50))"` |
 | `DEBUG` | `False` |
-| `ALLOWED_HOSTS` | `your-project.railway.app` |
+| `ALLOWED_HOSTS` | `your-service.onrender.com` |
+| `DATABASE_URL` | Supabase URI (from Step 1) |
 
-> `DATABASE_URL` is already set by PostgreSQL addon
+### Step 11 — Deploy & Run Migrations
 
----
+Click **Deploy**. After deploy succeeds, open **Shell** tab in Render:
 
-## Option B: Supabase + Django
-
-Supabase provides PostgreSQL hosting + built-in auth & real-time features.
-
-### Step 1 — Create Supabase Project
-
-1. Go to [https://supabase.com](https://supabase.com) → **New Project**
-2. Name your project, set password, choose region
-3. Wait ~3 minutes
-4. Go to **Settings** → **Database** → Copy **PostgreSQL URI**
-5. It looks like: `postgresql://user:pass@host/postgres`
-
-### Step 2 — Update Django for Supabase
-
-In `backend/.env` (local development):
-```
-DATABASE_URL=postgresql://user:pass@host/postgres
-SECRET_KEY=your-secret-key
-DEBUG=True
-ALLOWED_HOSTS=localhost,127.0.0.1
-```
-
-Your Django settings already support this (from Step 026).
-
-### Step 3 — Deploy Backend (Railway or Render)
-
-After your Django backend is configured for Supabase:
-- Use **Railway** (same as Option A, but skip PostgreSQL addon — use Supabase URL instead)
-- Or use **Render** (free tier available)
-
-When setting environment variables, add:
-```
-DATABASE_URL=postgresql://user:pass@host/postgres
-```
-
----
-
-## After Deployment
-
-**Run migrations on the server:**
-
-In your Railway/Render dashboard, open a Shell:
 ```bash
 python manage.py migrate
 python manage.py createsuperuser
 ```
 
-**Test your API:**
-```
-https://your-project.railway.app/api/products/
-```
+### Step 12 — Get Your Live URL
 
-**Update frontend `.env.local`:**
+Render gives you a URL like:
 ```
-NEXT_PUBLIC_API_URL=https://your-project.railway.app
+https://my-startup-api.onrender.com
 ```
 
-Then deploy frontend to Vercel (see Step 027).
-
----
-
-## ✅ Checklist
-
-- [ ] Production packages installed (gunicorn, whitenoise, dj-database-url)
-- [ ] `Procfile` created
-- [ ] `config/settings.py` updated for production
-- [ ] `.env` set for local dev
-- [ ] Pushed to GitHub
-- [ ] Deployed to Railway (or Render)
-- [ ] Database connected (Railway PostgreSQL or Supabase)
-- [ ] Environment variables set on server
-- [ ] Migrations ran successfully
-- [ ] API accessible at `https://your-backend.railway.app/api/`
-
-Then run migrations. In Railway → your service → **Settings → Deploy → Post Deploy Command**:
+Test it:
 ```
-python manage.py migrate
-```
-
-Or use the **Shell** tab to run manually:
-```bash
-python manage.py migrate
-python manage.py createsuperuser
+https://my-startup-api.onrender.com/api/products/
 ```
 
 ---
 
-## Step 12 — Get Your Live URL
+## Part 4 — Connect Frontend to Backend
 
-In Railway → your service → **Settings → Networking** → click **Generate Domain**
-
-Your API is now live at:
-```
-https://your-project.railway.app/api/products/
-https://your-project.railway.app/admin/
-```
-
----
-
-## Step 13 — Update Vercel with the Backend URL
+### Step 13 — Update Vercel Environment Variable
 
 1. Go to Vercel → your project → **Settings → Environment Variables**
-2. Set `NEXT_PUBLIC_API_URL` = `https://your-project.railway.app`
-3. Redeploy from Vercel dashboard
+2. Set `NEXT_PUBLIC_API_URL` = `https://my-startup-api.onrender.com`
+3. **Redeploy** from Vercel dashboard
 
 ---
 
-## Final Architecture
+## ⚠️ Render Free Tier Note
 
-```
-User's Browser
-      │
-      ▼
-┌─────────────────┐          ┌──────────────────────┐
-│     Vercel      │  fetch   │       Railway        │
-│   (Next.js)     │─────────►│   (Django + DRF)     │
-│   Frontend      │          │     Backend API      │
-└─────────────────┘          └──────────┬───────────┘
-                                        │
-                              ┌─────────▼──────────┐
-                              │    PostgreSQL       │
-                              │    Database        │
-                              └────────────────────┘
-```
+Render free web services **sleep after 15 minutes** of inactivity. The first request after sleep takes ~30 seconds to wake up. This is fine for demos and hackathons.
 
 ---
 
 ## ✅ Checklist
 
-- [ ] Production packages installed (`gunicorn`, `whitenoise`, `psycopg2`, etc.)
-- [ ] `settings.py` updated (SECRET_KEY from env, Whitenoise, dj-database-url)
+- [ ] Supabase project created, URI copied
+- [ ] Production packages installed (gunicorn, whitenoise, dj-database-url, psycopg2-binary)
 - [ ] `Procfile` created
-- [ ] `.env` created for local dev + added to `.gitignore`
+- [ ] `settings.py` updated for production
+- [ ] Local migration to Supabase successful
 - [ ] Pushed to GitHub
-- [ ] Railway account created
-- [ ] Service configured (Root Directory = `backend`)
-- [ ] PostgreSQL database added
-- [ ] Environment variables set (SECRET_KEY, DEBUG, ALLOWED_HOSTS)
-- [ ] Deployed successfully
-- [ ] Migrations run on production
-- [ ] Live URL working (`/api/products/`)
-- [ ] Vercel updated with Railway URL
-- [ ] Full stack working end-to-end 🎉
+- [ ] Render web service created
+- [ ] Environment variables set on Render
+- [ ] Deployed successfully on Render
+- [ ] Migrations ran on Render
+- [ ] API accessible at `https://your-service.onrender.com/api/`
+- [ ] Vercel updated with Render URL
+- [ ] Full stack working end-to-end ✅

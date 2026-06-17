@@ -1,4 +1,4 @@
-# � Quick Start — Before You Begin
+# Quick Start — Before You Begin
 
 ---
 
