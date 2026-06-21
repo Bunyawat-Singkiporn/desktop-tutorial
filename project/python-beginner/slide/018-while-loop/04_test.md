@@ -35,7 +35,6 @@ password = input()
 while password != "python123":
     print("Wrong password! Try again.")
     # Get new input
-    pass
 
 print("Access granted!")
 ```

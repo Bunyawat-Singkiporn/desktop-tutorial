@@ -41,7 +41,6 @@ count = int(input())
 while count > 0:
     # Print count
     # Decrease count
-    pass
 
 print("Blast off!")
 ```

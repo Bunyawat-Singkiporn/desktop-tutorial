@@ -36,7 +36,6 @@ count = 1
 while count <= 5:
     # Print count
     # Increase count
-    pass
 
 print("Done!")
 ```

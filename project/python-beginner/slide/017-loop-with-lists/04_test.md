@@ -41,7 +41,6 @@ total = 0
 for i in range(len(scores)):
     # Print "Student X: score"
     # Add to total
-    pass
 
 # Print average
 ```
