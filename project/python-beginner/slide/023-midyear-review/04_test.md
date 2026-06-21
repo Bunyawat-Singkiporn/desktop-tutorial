@@ -48,13 +48,10 @@ while True:
     name = input()
     if name == "done":
         break
-    price = int(input())
-    items.append(name)
-    prices.append(price)
+    # Get price and store both name and price
 
 print("=== Receipt ===")
-for i in range(len(items)):
-    print(f"{items[i]}: {prices[i]} baht")
+# Print each item with price
 print("---")
-print(f"Total: {sum(prices)} baht")
+# Print total
 ```

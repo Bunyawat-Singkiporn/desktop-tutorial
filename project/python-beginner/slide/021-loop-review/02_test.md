@@ -34,7 +34,7 @@ n = int(input())
 total = 0
 
 for i in range(1, n + 1):
-    total = total + i
+    # Add i to total
 
-print(f"Sum from 1 to {n} = {total}")
+# Print result
 ```

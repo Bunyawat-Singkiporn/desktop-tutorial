@@ -30,6 +30,6 @@
 ```python
 for row in range(3):
     for col in range(4):
-        print("*", end="")
-    print()   # new line after each row
+        # Print one * without newline
+    # Move to next line
 ```

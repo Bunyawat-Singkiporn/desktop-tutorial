@@ -49,14 +49,10 @@ Zara not found
 ```python
 names = ["Alice", "Bob", "Charlie", "Diana", "Eve"]
 target = input()
-found = False
 
 for i in range(len(names)):
     if names[i] == target:
-        # Print position (i+1) and break
-        found = True
-        break
+        # Print position (i+1) and stop searching
 
-if not found:
-    print(target, "not found")
+# If never found, print "target not found"
 ```
