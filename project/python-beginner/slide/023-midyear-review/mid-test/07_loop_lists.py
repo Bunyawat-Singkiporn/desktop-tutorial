@@ -9,11 +9,19 @@ for i in range(len(scores)):
 average = sum(scores) / len(scores)
 print("Average:", average)  # print(f"Average: {average}")
 
-# วิธีที่ 2 : for score in scores (ใช้ counter แยก)
-count = 1
-for score in scores:
-    print("Student", count, ":", score)
-    count = count + 1
 
-average = sum(scores) / len(scores)
-print("Average:", average)
+
+
+#=======================================================
+
+# วิธีที่ 2 : for score in scores (ใช้ counter แยก)
+
+# scores = [88, 95, 72, 100, 65]
+# count = 1
+
+# for score in scores:
+#     print("Student", count, ":", score)
+#     count = count + 1
+
+# average = sum(scores) / len(scores)
+# print("Average:", average)
