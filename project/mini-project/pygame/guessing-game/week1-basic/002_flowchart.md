@@ -28,27 +28,22 @@ Flowchart = **แผนที่ของโปรแกรม**
 
 ## Flowchart ของ Guessing Game
 
-```text
-        ⬭ Start
-           ↓
-   ▭ secret_number = 3
-   ▭ score = 0
-   ▭ message = "Guess 1-5"
-           ↓
-   ▭ แสดงข้อความบนจอ
-           ↓
-   ▭ รอผู้เล่นกดปุ่ม
-           ↓
-   ◇ guess == secret_number?
-    ↙ Yes           ↘ No
-▭ "Correct!"      ◇ guess < secret_number?
-▭ score += 1        ↙ Yes      ↘ No
-       ↓         ▭ "Too Low!" ▭ "Too High!"
-       └──────────┴────────────┘
-                  ↓
-         กลับไปแสดงข้อความ
-                  ↓
-        ⬭ End (กดปิดเกม)
+```mermaid
+flowchart TD
+    A([Start]) --> B["secret_number = 3\nscore = 0"]
+    B --> C["แสดงข้อความบนจอ"]
+    C --> D["รอผู้เล่นกดปุ่ม 1-5"]
+    D --> E{"guess == secret_number?"}
+    E -- Yes --> F["message = 'Correct!'\nscore += 1"]
+    E -- No --> G{"guess < secret_number?"}
+    G -- Yes --> H["message = 'Too Low!'"]
+    G -- No --> I["message = 'Too High!'"]
+    F --> C
+    H --> C
+    I --> C
+    C --> J{"ปิดเกม?"}
+    J -- No --> D
+    J -- Yes --> K([End])
 ```
 
 ---
