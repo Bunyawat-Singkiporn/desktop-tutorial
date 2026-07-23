@@ -80,3 +80,23 @@ secret_number = 3
 ```
 
 > รันทดสอบ — กด 3 → "Correct!", กด 1 → "Too Low!", กด 5 → "Too High!"
+
+---
+
+## โบนัส — สุ่มเลขลับ
+
+ตอนนี้เลขลับเป็น `3` ตลอด — เปลี่ยนให้สุ่มได้:
+
+**1.** เพิ่ม **บนสุดของไฟล์** ข้าง `import pygame`:
+
+```python
+import random
+```
+
+**2.** เปลี่ยน `secret_number = 3` เป็น:
+
+```python
+secret_number = random.randint(1, 5)
+```
+
+`random.randint(1, 5)` = สุ่มเลขระหว่าง 1 ถึง 5 — ต่างกันทุกครั้งที่รันเกม!

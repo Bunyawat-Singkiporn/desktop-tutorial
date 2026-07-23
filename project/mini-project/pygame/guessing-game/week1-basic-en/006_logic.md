@@ -80,3 +80,23 @@ secret_number = 3
 ```
 
 > Run it — press 3 → "Correct!", press 1 → "Too Low!", press 5 → "Too High!"
+
+---
+
+## Bonus — Random Secret Number
+
+Right now the secret number is always `3`. You can make it random:
+
+**1.** Add at the very top of the file (next to `import pygame`):
+
+```python
+import random
+```
+
+**2.** Change `secret_number = 3` to:
+
+```python
+secret_number = random.randint(1, 5)
+```
+
+`random.randint(1, 5)` picks a random whole number between 1 and 5 — different every time you run the game!
