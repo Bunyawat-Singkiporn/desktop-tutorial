@@ -24,45 +24,23 @@ stars = [
 | `star[0] = random.randint(...)` | เปลี่ยน x ของดาวดวงนั้น |
 | `random.randint(3, 7)` | ความเร็วสุ่ม 3–7 |
 
-## 📝 โค้ดเต็ม
+## 📝 แก้ไข 005_catch.py
+
+**1.** **แทนที่** `star_x`, `star_y`, `star_speed` สามบรรทัด ด้วย list:
 
 ```python
-import pygame
-import random
-
-pygame.init()
-screen = pygame.display.set_mode((800, 600))
-pygame.display.set_caption("Star Catcher")
-clock = pygame.time.Clock()
-font  = pygame.font.SysFont(None, 36)
-
-basket_x     = 400
-basket_y     = 550
-basket_speed = 6
-
 # ดาวหลายดวง [x, y, speed]
 stars = []
 for i in range(2):
     x     = random.randint(20, 780)
-    y     = random.randint(-500, -50)   # เริ่มห่างกันมาก
+    y     = random.randint(-500, -50)
     speed = random.randint(2, 4)
     stars.append([x, y, speed])
+```
 
-score = 0
-lives = 3
+**2.** **แทนที่** `star_y += star_speed` และ `if star_y > 620:` block ด้วย:
 
-running = True
-while running:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
-
-    keys = pygame.key.get_pressed()
-    if keys[pygame.K_LEFT] and basket_x > 40:
-        basket_x -= basket_speed
-    if keys[pygame.K_RIGHT] and basket_x < 760:
-        basket_x += basket_speed
-
+```python
     # ขยับดาวทุกดวง
     for star in stars:
         star[1] += star[2]
@@ -80,35 +58,16 @@ while running:
             star[0] = random.randint(20, 780)
             star[1] = random.randint(-500, -50)
             star[2] = random.randint(2, 4)
-
-    if lives <= 0:
-        running = False
-
-    screen.fill("navy")
-    pygame.draw.rect(screen, "brown", (basket_x - 40, basket_y, 80, 20))
-
-    for star in stars:
-        pygame.draw.circle(screen, "yellow", (star[0], star[1]), 12)
-
-    score_text = font.render(f"Score: {score}", True, "white")
-    lives_text = font.render(f"Lives: {lives}", True, "red")
-    screen.blit(score_text, (10, 10))
-    screen.blit(lives_text, (10, 50))
-
-    pygame.display.flip()
-    clock.tick(60)
-
-# Game Over Screen
-screen.fill("navy")
-over_text = font.render(f"Game Over!  Score: {score}", True, "yellow")
-screen.blit(over_text, (200, 280))
-pygame.display.flip()
-pygame.time.wait(3000)
-
-pygame.quit()
 ```
 
-> รันดู — ดาว 3 ดวงตกพร้อมกัน ความเร็วต่างกัน! 🎉
+**3.** **แทนที่** `pygame.draw.circle(...)` ด้วย:
+
+```python
+    for star in stars:
+        pygame.draw.circle(screen, "yellow", (star[0], star[1]), 12)
+```
+
+> รันดู — ดาว 2 ดวงตกพร้อมกัน ความเร็วต่างกัน! 🎉
 
 ## โบนัส
 ลองเพิ่มดาวอีกดวงเมื่อคะแนนถึง 10:

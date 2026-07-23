@@ -35,46 +35,43 @@ if distance < 30:   # 30 = รัศมีวงกลม
 | `mx, my = event.pos` | แยก x, y ออกมา |
 | `distance < 30` | ถ้าคลิกอยู่ในรัศมีวงกลม |
 
-## 📝 เพิ่มโค้ดนี้
+## 📝 เพิ่มใน 003_dot.py
+
+**1.** เพิ่ม **หลัง** `import random`:
 
 ```python
-import pygame
-import random
 import math
+```
 
-pygame.init()
-screen = pygame.display.set_mode((800, 600))
-pygame.display.set_caption("Click the Dot")
-clock = pygame.time.Clock()
+**2.** เพิ่ม **หลัง** `clock = pygame.time.Clock()`:
+
+```python
 font  = pygame.font.SysFont(None, 36)
+```
 
-dot_x = random.randint(50, 750)
-dot_y = random.randint(50, 550)
-score = 0   # ← เพิ่ม
+**3.** เพิ่ม **ก่อน** `running = True`:
 
-running = True
-while running:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
-        if event.type == pygame.MOUSEBUTTONDOWN:   # ← เพิ่ม
+```python
+score = 0
+```
+
+**4.** เพิ่ม **ใน** `for event in pygame.event.get():` (หลัง `running = False`):
+
+```python
+        if event.type == pygame.MOUSEBUTTONDOWN:
             mx, my = event.pos
             distance = math.sqrt((mx - dot_x)**2 + (my - dot_y)**2)
             if distance < 30:
                 score += 1
                 dot_x = random.randint(50, 750)
                 dot_y = random.randint(50, 550)
+```
 
-    screen.fill("white")
-    pygame.draw.circle(screen, "red", (dot_x, dot_y), 30)
+**5.** เพิ่ม **ก่อน** `pygame.display.flip()`:
 
-    score_text = font.render(f"Score: {score}", True, "black")   # ← เพิ่ม
+```python
+    score_text = font.render(f"Score: {score}", True, "black")
     screen.blit(score_text, (10, 10))
-
-    pygame.display.flip()
-    clock.tick(60)
-
-pygame.quit()
 ```
 
 > รันดู — คลิกที่วงกลมแดง คะแนนขึ้น แล้ววงกลมย้ายที่ใหม่! 🎉

@@ -34,40 +34,32 @@ basket_x - 40          basket_x + 40
           basket_x (จุดกลาง)
 ```
 
-## 📝 พิมพ์โค้ดนี้
+## 📝 เพิ่มใน 002_window.py
+
+**1.** เพิ่ม **ก่อน** `running = True`:
 
 ```python
-import pygame
-
-pygame.init()
-screen = pygame.display.set_mode((800, 600))
-pygame.display.set_caption("Star Catcher")
-clock = pygame.time.Clock()
-
 # ตะกร้า
 basket_x     = 400
 basket_y     = 550
 basket_speed = 6
+```
 
-running = True
-while running:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
+**2.** เพิ่ม **ก่อน** `screen.fill(...)`:
 
+```python
     # เลื่อนซ้าย-ขวา
     keys = pygame.key.get_pressed()
     if keys[pygame.K_LEFT] and basket_x > 40:
         basket_x -= basket_speed
     if keys[pygame.K_RIGHT] and basket_x < 760:
         basket_x += basket_speed
+```
 
-    screen.fill("navy")
+**3.** เพิ่ม **หลัง** `screen.fill("navy")`:
+
+```python
     pygame.draw.rect(screen, "brown", (basket_x - 40, basket_y, 80, 20))
-    pygame.display.flip()
-    clock.tick(60)
-
-pygame.quit()
 ```
 
 > รันดู — ตะกร้าเลื่อนซ้าย-ขวาได้! 🎮
