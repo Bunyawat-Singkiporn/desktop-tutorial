@@ -1,0 +1,25 @@
+{% extends 'board/base.html' %}
+{% block title %}Delete Post{% endblock %}
+
+{% block content %}
+    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8 max-w-md mx-auto mt-8 text-center">
+        <div class="text-5xl mb-4">🗑️</div>
+        <h1 class="text-xl font-bold text-gray-800 mb-2">Delete this post?</h1>
+        <p class="text-gray-500 mb-2 font-medium">"{{ post.title }}"</p>
+        <p class="text-gray-400 text-sm mb-8">This action cannot be undone.</p>
+
+        <form method="post">
+            {% csrf_token %}
+            <div class="flex justify-center gap-4">
+                <button type="submit"
+                        class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600 font-medium transition">
+                    Yes, delete
+                </button>
+                <a href="{% url 'post_detail' post.pk %}"
+                   class="bg-gray-100 text-gray-700 px-6 py-2 rounded hover:bg-gray-200 font-medium transition">
+                    Cancel
+                </a>
+            </div>
+        </form>
+    </div>
+{% endblock %}
