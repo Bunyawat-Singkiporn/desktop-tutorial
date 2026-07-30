@@ -1,0 +1,40 @@
+# 🌸 Practice: Loop with Lists — Question 1: Print All Items
+
+**Difficulty:** 🟢 Easy
+
+---
+
+## Problem
+
+Loop through the list below and type each name.
+
+```python
+animals = ["Cat", "Dog", "Fish", "Bird"]
+```
+
+**Output:**
+```
+Cat
+Dog
+Fish
+Bird
+```
+
+---
+
+## 💡 Hint
+
+```python
+for animal in animals:
+    print(...)
+```
+
+---
+
+## Starter Code
+
+```python
+animals = ["Cat", "Dog", "Fish", "Bird"]
+
+# Loop through and print each animal
+```
