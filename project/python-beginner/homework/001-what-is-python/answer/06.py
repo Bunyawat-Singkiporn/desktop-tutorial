@@ -1,0 +1,2 @@
+print("Cat")
+print("Dog")

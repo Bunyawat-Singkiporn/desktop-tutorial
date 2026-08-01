@@ -1,0 +1,2 @@
+ok = False
+print(ok)
