@@ -1025,6 +1025,15 @@ def slugify(title: str) -> str:
 
 
 def main() -> None:
+    # Late import of scaffold helper so regenerating homework keeps incomplete starters
+    import importlib.util
+
+    fix_path = Path(__file__).resolve().parent / "_fix_homework_starters.py"
+    spec = importlib.util.spec_from_file_location("fix_hw", fix_path)
+    fix_mod = importlib.util.module_from_spec(spec)
+    assert spec.loader is not None
+    spec.loader.exec_module(fix_mod)
+
     data = content()
     data = content_rest(data)
     data = content_loops(data)
@@ -1045,7 +1054,7 @@ def main() -> None:
 
 1. เรียนจบบทใน `slide/0xx-.../` แล้ว
 2. เปิดโฟลเดอร์ homework ชื่อเดียวกัน
-3. ทำข้อ 1 → 10 ตามลำดับ
+3. ทำข้อ 1 → 10 ตามลำดับ (Starter Code เป็นโครงว่าง — อย่าเปิดเฉลยก่อน)
 4. เทียบเฉลยใน `answer/` หลังลองเองแล้ว
 
 ## กฎสำคัญ
@@ -1076,10 +1085,14 @@ def main() -> None:
 
         for i, h in enumerate(info["homeworks"], start=1):
             title, body, hint, answer = h[0], h[1], h[2], h[4]
-            starter = h[3]
+            # Ignore packed full starters from data; always scaffold from answer
+            answer_text = answer if answer.endswith("\n") else answer + "\n"
+            starter = fix_mod.scaffold(answer_text)
+            if starter.strip() == answer_text.strip():
+                starter = "# เขียนโค้ดตรงนี้\n"
             io = h[5] if len(h) > 5 else ""
             write(hw_week / f"{i:02d}.md", hw_md(topic, i, title, body, hint, starter, io))
-            write(hw_week / "answer" / f"{i:02d}.py", answer if answer.endswith("\n") else answer + "\n")
+            write(hw_week / "answer" / f"{i:02d}.py", answer_text)
 
     print(f"Generated medium+homework for {len(WEEKS)} weeks")
 
