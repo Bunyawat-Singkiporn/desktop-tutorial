@@ -9,7 +9,6 @@
 มีชื่อนักเรียนจาก 2 ห้อง (มีชื่อซ้ำข้ามห้อง) แสดง:
 1. จำนวนนักเรียนทั้งหมด (ไม่ซ้ำ)
 2. ชื่อที่อยู่ในทั้งสองห้อง
-3. ชื่อที่อยู่ในห้องใดห้องหนึ่งเท่านั้น (union ลบ intersection)
 
 ```python
 room_a = ["Alice", "Bob", "Charlie", "Diana"]
@@ -20,7 +19,6 @@ room_b = ["Bob", "Eve", "Charlie", "Frank"]
 ```
 Total unique students: 6
 In both rooms: {'Bob', 'Charlie'}
-Only in one room: {'Alice', 'Diana', 'Eve', 'Frank'}
 ```
 
 ---
