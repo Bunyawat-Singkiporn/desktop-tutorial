@@ -81,11 +81,37 @@ for i in range(5):
 
 > รันดู — เห็นผลไม้ 3 สี คะแนนต่างกัน! 🎉
 
-## โบนัส
-เพิ่มข้อความคะแนนใต้ผลไม้แต่ละลูก:
+---
+
+## โบนัส — ป้ายคะแนนใต้ผลไม้
+
+ให้เด็กเห็นว่าผลไม้แต่ละลูกให้กี่คะแนน เช่น `+1` `+2` `+3`
+
+### เพิ่มตรงไหน
+
+**1.** เพิ่ม **หลัง** `font = pygame.font.SysFont(None, 36)`:
+
 ```python
 small_font = pygame.font.SysFont(None, 22)
-fruit_labels = ["+1", "+2", "+3"]
-label = small_font.render(fruit_labels[ftype], True, "black")
-screen.blit(label, (fx - 8, fy + 18))
 ```
+
+**2.** เพิ่ม **หลัง** `fruit_points = [1, 2, 3]`:
+
+```python
+fruit_labels = ["+1", "+2", "+3"]
+```
+
+**3.** เพิ่ม **ใน** ลูปวาดผลไม้ — **หลัง** `pygame.draw.circle(...)`:
+
+```python
+    for fruit in fruits:
+        fx, fy, ftype = fruit
+        pygame.draw.circle(screen, fruit_colors[ftype], (fx, fy), 15)
+        # ← เพิ่ม 2 บรรทัดนี้
+        label = small_font.render(fruit_labels[ftype], True, "black")
+        screen.blit(label, (fx - 8, fy + 18))
+```
+
+`(fx - 8, fy + 18)` = วางข้อความใต้ผลไม้นิดหน่อย
+
+> รันดู — ใต้ผลไม้ควรมี +1 / +2 / +3
