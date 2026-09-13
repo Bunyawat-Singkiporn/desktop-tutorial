@@ -12,6 +12,23 @@
 | Update | `d.update({"a": 10})` |
 | Delete | `del d["b"]` |
 | Loop | `for k, v in d.items():` |
+| Key exists? | `if "a" in d:` |
+
+---
+
+## Practice Path (easy → harder)
+
+Start with **06–15** to get comfortable, then medium / challenge.
+
+| Order | Level | Skills |
+|-------|--------|--------|
+| `06`–`09` | 🟢 | Access / change / add key |
+| `10`–`11` | 🟢 | Loop `items()` and print |
+| `12`–`15` | 🟢 | `input` + lookup / `in` |
+| `16`–`19` | 🟡 | Menu check / print loop / sum scores |
+| `20`–`24` | 🟡 | Count / login / total price / find max |
+| `02`–`04` | 🟡 | Word count / quiz / total (original) |
+| `05` | 🔴 | Multi-command inventory |
 
 ---
 
