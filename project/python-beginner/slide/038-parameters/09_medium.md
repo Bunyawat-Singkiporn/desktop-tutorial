@@ -1,4 +1,4 @@
-# Practice Parameters — Medium: BMI
+# Practice Parameters — Question 8: บัตรสุขภาพในคลาสพละ
 
 **Difficulty:** 🟡 Medium
 
@@ -6,11 +6,10 @@
 
 ## โจทย์
 
-สร้าง `show_bmi(weight, height)` ที่คำนวณ BMI = `weight / (height ** 2)` แล้วพิมพ์
+ครูพละให้นักเรียนกรอกน้ำหนักและส่วนสูง แล้วคำนวณ BMI
 
-รับน้ำหนัก (kg) และส่วนสูง (m) จาก `input`
-
-> ผสมความรู้: parameter + input + float + **
+สร้าง `health_card(weight, height)` ที่พิมพ์ BMI  
+สูตร: `weight / (height ** 2)` แสดงทศนิยม 2 ตำแหน่ง
 
 ---
 
@@ -24,20 +23,21 @@
 
 **Output:**
 ```
+Health Card
+Weight: 60.0 kg
+Height: 1.7 m
 BMI: 20.76
 ```
-
-(ปัดทศนิยม 2 ตำแหน่งด้วย `:.2f`)
 
 ---
 
 ## Starter Code
 
 ```python
-def show_bmi(weight, height):
+def health_card(weight, height):
     # Write your code here
 
 weight = float(input())
 height = float(input())
-show_bmi(weight, height)
+health_card(weight, height)
 ```

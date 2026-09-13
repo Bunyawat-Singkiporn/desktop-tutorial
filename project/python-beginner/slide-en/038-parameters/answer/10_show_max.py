@@ -1,11 +1,11 @@
-def show_max(a, b):
-    if a > b:
-        print(f"Max: {a}")
-    elif b > a:
-        print(f"Max: {b}")
+def who_is_older(age1, age2):
+    if age1 > age2:
+        print("Friend 1 is older")
+    elif age2 > age1:
+        print("Friend 2 is older")
     else:
-        print("Equal")
+        print("Same age")
 
-a = int(input())
-b = int(input())
-show_max(a, b)
+age1 = int(input())
+age2 = int(input())
+who_is_older(age1, age2)

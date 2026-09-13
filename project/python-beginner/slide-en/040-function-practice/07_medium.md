@@ -1,4 +1,4 @@
-# Practice Function — Medium: Password Check
+# Practice Function — Question 6: Game Password Setup
 
 **Difficulty:** 🟡 Medium
 
@@ -6,15 +6,9 @@
 
 ## Task
 
-Create `is_strong(password)` that returns `True` if:
-- length >= 8 **and**
-- has at least one digit
+Account signup: password must be at least 8 characters and include a digit.
 
-Otherwise return `False`.
-
-Main program asks for a password and prints `Strong` or `Weak`.
-
-> Combines: return + input + if + for + str
+Create `is_strong(password)` and tell the player `Strong password` or `Weak password`.
 
 ---
 
@@ -27,14 +21,8 @@ hello123
 
 **Output:**
 ```
-Strong
+Strong password
 ```
-
----
-
-## 💡 Hint
-
-Check digits with `for ch in password:` and `ch.isdigit()`
 
 ---
 
@@ -46,7 +34,7 @@ def is_strong(password):
 
 password = input()
 if is_strong(password):
-    print("Strong")
+    print("Strong password")
 else:
-    print("Weak")
+    print("Weak password")
 ```

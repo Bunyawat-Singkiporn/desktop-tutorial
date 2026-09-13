@@ -1,4 +1,4 @@
-# 🔥 Practice Return — Challenge: Is the Word Long?
+# 🔥 Practice Return — Challenge: Game Username Signup
 
 **Difficulty:** 🔴 Hard
 
@@ -6,13 +6,11 @@
 
 ## Task
 
+Game signup: username must be at least 8 characters.
+
 Create:
-1. `word_len(text)` — return length
-2. `is_long(text)` — return `True` if length >= 8 (call `word_len` inside)
-
-Read a word from `input` and print length + `Long` or `Short`.
-
-> Combines: return + nested functions + input + if + len
+1. `name_length(text)` — return length
+2. `can_register(text)` — return `True` if length >= 8 (use `name_length`)
 
 ---
 
@@ -20,13 +18,14 @@ Read a word from `input` and print length + `Long` or `Short`.
 
 **Input:**
 ```
-pythonista
+dragon123
 ```
 
 **Output:**
 ```
-Length: 10
-Long
+Username: dragon123
+Length: 9
+Status: OK to register
 ```
 
 ---
@@ -34,16 +33,17 @@ Long
 ## Starter Code
 
 ```python
-def word_len(text):
+def name_length(text):
     # Write your code here
 
-def is_long(text):
+def can_register(text):
     # Write your code here
 
-text = input()
-print(f"Length: {word_len(text)}")
-if is_long(text):
-    print("Long")
+username = input()
+print(f"Username: {username}")
+print(f"Length: {name_length(username)}")
+if can_register(username):
+    print("Status: OK to register")
 else:
-    print("Short")
+    print("Status: Too short")
 ```

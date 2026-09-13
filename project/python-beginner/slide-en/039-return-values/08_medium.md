@@ -1,4 +1,4 @@
-# Practice Return — Medium: Rectangle Area
+# Practice Return — Question 7: Football Field Area
 
 **Difficulty:** 🟡 Medium
 
@@ -6,10 +6,9 @@
 
 ## Task
 
-Create `rect_area(w, h)` that **returns** `w * h`.
-Read width and height from `input`, then print the area.
+The school will paint a football field and needs the area.
 
-> Combines: return + input + float
+Create `field_area(width, length)` that **returns** `width * length`.
 
 ---
 
@@ -17,13 +16,16 @@ Read width and height from `input`, then print the area.
 
 **Input:**
 ```
-5
-3
+20
+40
 ```
 
 **Output:**
 ```
-Area: 15.0
+Football Field
+Width: 20.0
+Length: 40.0
+Area: 800.0
 ```
 
 ---
@@ -31,10 +33,14 @@ Area: 15.0
 ## Starter Code
 
 ```python
-def rect_area(w, h):
+def field_area(width, length):
     # Write your code here
 
-w = float(input())
-h = float(input())
-print(f"Area: {rect_area(w, h)}")
+width = float(input())
+length = float(input())
+area = field_area(width, length)
+print("Football Field")
+print(f"Width: {width}")
+print(f"Length: {length}")
+print(f"Area: {area}")
 ```

@@ -1,4 +1,4 @@
-# Practice Parameters — Medium: ส่วนลด
+# Practice Parameters — Question 7: วันลดราคา
 
 **Difficulty:** 🟡 Medium
 
@@ -6,12 +6,12 @@
 
 ## โจทย์
 
-สร้าง `apply_discount(price, percent)` ที่พิมพ์ราคาสุทธิหลังลด
-สูตร: `price * (100 - percent) / 100`
+ร้านค้ามีวันลดราคา
 
-รับ `price` และ `percent` จาก `input` แล้วเรียก function
+สร้าง `sale_price(price, percent)` ที่คำนวณราคาหลังลด:
+`price * (100 - percent) / 100`
 
-> ผสมความรู้: parameter + input + float + operators
+แล้วแสดงทั้งราคาเดิม ส่วนลด และราคาที่ต้องจ่าย
 
 ---
 
@@ -25,6 +25,8 @@
 
 **Output:**
 ```
+Original: 200.0
+Discount: 10%
 Pay: 180.0
 ```
 
@@ -33,10 +35,10 @@ Pay: 180.0
 ## Starter Code
 
 ```python
-def apply_discount(price, percent):
+def sale_price(price, percent):
     # Write your code here
 
 price = float(input())
 percent = float(input())
-apply_discount(price, percent)
+sale_price(price, percent)
 ```

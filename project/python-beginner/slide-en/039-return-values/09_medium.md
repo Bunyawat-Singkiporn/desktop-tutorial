@@ -1,4 +1,4 @@
-# Practice Return — Medium: C → F (return)
+# Practice Return — Question 8: Trip Weather App
 
 **Difficulty:** 🟡 Medium
 
@@ -6,10 +6,9 @@
 
 ## Task
 
-Create `to_fahrenheit(c)` that **returns** Fahrenheit (`c * 9/5 + 32`).
-Read Celsius from `input` and print the result.
+A travel app needs to convert °C to °F.
 
-> Combines: return + input + float
+Create `to_fahrenheit(c)` that **returns** Fahrenheit.
 
 ---
 
@@ -22,7 +21,8 @@ Read Celsius from `input` and print the result.
 
 **Output:**
 ```
-32.0
+Trip Weather
+0.0 C = 32.0 F
 ```
 
 ---
@@ -34,5 +34,7 @@ def to_fahrenheit(c):
     # Write your code here
 
 c = float(input())
-print(to_fahrenheit(c))
+f = to_fahrenheit(c)
+print("Trip Weather")
+print(f"{c} C = {f} F")
 ```

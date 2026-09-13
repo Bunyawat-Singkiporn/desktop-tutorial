@@ -1,4 +1,4 @@
-# Practice Parameters — Medium: เลขมากสุด
+# Practice Parameters — Question 9: ใครอายุมากกว่า
 
 **Difficulty:** 🟡 Medium
 
@@ -6,11 +6,12 @@
 
 ## โจทย์
 
-สร้าง `show_max(a, b)` ที่พิมพ์เลขที่มากกว่า (ถ้าเท่ากันพิมพ์ `Equal`)
+รับอายุเพื่อน 2 คน แล้วบอกว่าใครมากกว่า
 
-รับเลข 2 ตัวจาก `input` แล้วเรียก function
-
-> ผสมความรู้: parameter + input + int + if/elif/else
+สร้าง `who_is_older(age1, age2)`:
+- ถ้าคนที่ 1 มากกว่า → `Friend 1 is older`
+- ถ้าคนที่ 2 มากกว่า → `Friend 2 is older`
+- เท่ากัน → `Same age`
 
 ---
 
@@ -18,13 +19,13 @@
 
 **Input:**
 ```
-8
 12
+15
 ```
 
 **Output:**
 ```
-Max: 12
+Friend 2 is older
 ```
 
 ---
@@ -32,10 +33,10 @@ Max: 12
 ## Starter Code
 
 ```python
-def show_max(a, b):
+def who_is_older(age1, age2):
     # Write your code here
 
-a = int(input())
-b = int(input())
-show_max(a, b)
+age1 = int(input())
+age2 = int(input())
+who_is_older(age1, age2)
 ```

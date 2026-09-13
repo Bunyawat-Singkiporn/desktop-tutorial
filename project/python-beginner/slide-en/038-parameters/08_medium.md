@@ -1,4 +1,4 @@
-# Practice Parameters — Medium: Discount
+# Practice Parameters — Question 7: Sale Day
 
 **Difficulty:** 🟡 Medium
 
@@ -6,12 +6,9 @@
 
 ## Task
 
-Create `apply_discount(price, percent)` that prints the discounted price:
-`price * (100 - percent) / 100`
+The shop has a sale day.
 
-Read `price` and `percent` from `input`, then call the function.
-
-> Combines: parameter + input + float + operators
+Create `sale_price(price, percent)` and show original price, discount %, and amount to pay.
 
 ---
 
@@ -25,6 +22,8 @@ Read `price` and `percent` from `input`, then call the function.
 
 **Output:**
 ```
+Original: 200.0
+Discount: 10%
 Pay: 180.0
 ```
 
@@ -33,10 +32,10 @@ Pay: 180.0
 ## Starter Code
 
 ```python
-def apply_discount(price, percent):
+def sale_price(price, percent):
     # Write your code here
 
 price = float(input())
 percent = float(input())
-apply_discount(price, percent)
+sale_price(price, percent)
 ```

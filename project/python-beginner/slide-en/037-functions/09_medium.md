@@ -1,4 +1,4 @@
-# Practice Functions — Medium: Temperature Convert
+# Practice Functions — Question 8: Travel Temperature
 
 **Difficulty:** 🟡 Medium
 
@@ -6,9 +6,11 @@
 
 ## Task
 
-Create `c_to_f()` that reads Celsius (`float`), converts with `C * 9/5 + 32`, and prints the result.
+You are traveling abroad. Build a tiny weather helper.
 
-> Combines: function + input + float + operators
+Create `show_fahrenheit()` that reads °C and shows °F.
+
+Formula: `C * 9 / 5 + 32`
 
 ---
 
@@ -21,7 +23,8 @@ Create `c_to_f()` that reads Celsius (`float`), converts with `C * 9/5 + 32`, an
 
 **Output:**
 ```
-77.0 F
+Today: 25.0 C
+In Fahrenheit: 77.0 F
 ```
 
 ---
@@ -29,8 +32,8 @@ Create `c_to_f()` that reads Celsius (`float`), converts with `C * 9/5 + 32`, an
 ## Starter Code
 
 ```python
-def c_to_f():
+def show_fahrenheit():
     # Write your code here
 
-c_to_f()
+show_fahrenheit()
 ```

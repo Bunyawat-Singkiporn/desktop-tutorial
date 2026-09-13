@@ -32,4 +32,5 @@ if ask("Color of the sky? ", "blue"):
 else:
     print("Wrong!")
 
+print("=== Result ===")
 show_result(score, total)

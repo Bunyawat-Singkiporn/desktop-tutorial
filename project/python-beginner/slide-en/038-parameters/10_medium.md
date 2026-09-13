@@ -1,4 +1,4 @@
-# Practice Parameters — Medium: Bigger Number
+# Practice Parameters — Question 9: Who Is Older?
 
 **Difficulty:** 🟡 Medium
 
@@ -6,11 +6,9 @@
 
 ## Task
 
-Create `show_max(a, b)` that prints the larger number (or `Equal`).
+Read two friends' ages and say who is older.
 
-Read two ints from `input` and call the function.
-
-> Combines: parameter + input + int + if/elif/else
+Create `who_is_older(age1, age2)`.
 
 ---
 
@@ -18,13 +16,13 @@ Read two ints from `input` and call the function.
 
 **Input:**
 ```
-8
 12
+15
 ```
 
 **Output:**
 ```
-Max: 12
+Friend 2 is older
 ```
 
 ---
@@ -32,10 +30,10 @@ Max: 12
 ## Starter Code
 
 ```python
-def show_max(a, b):
+def who_is_older(age1, age2):
     # Write your code here
 
-a = int(input())
-b = int(input())
-show_max(a, b)
+age1 = int(input())
+age2 = int(input())
+who_is_older(age1, age2)
 ```

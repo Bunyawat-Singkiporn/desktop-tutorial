@@ -1,8 +1,8 @@
 def login(user, password):
-    if user == "admin" and password == "1234":
-        print("Access granted")
+    if user == "player1" and password == "abc123":
+        print("Login success! Let's play")
     else:
-        print("Access denied")
+        print("Login failed")
 
 user = input()
 password = input()

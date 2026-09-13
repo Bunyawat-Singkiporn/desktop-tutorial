@@ -10,4 +10,5 @@ def get_grade(score):
 
 score = int(input())
 grade = get_grade(score)
+print(f"Score: {score}")
 print(f"Grade: {grade}")

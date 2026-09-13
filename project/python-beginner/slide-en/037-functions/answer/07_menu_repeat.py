@@ -1,9 +1,8 @@
 def show_menu():
-    print("=== Menu ===")
-    print("1. Play")
-    print("2. Scores")
-    print("3. Quit")
+    print("=== My Game ===")
+    print("1. Start")
+    print("2. High Score")
+    print("3. Exit")
 
-show_menu()
 show_menu()
 show_menu()

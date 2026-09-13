@@ -1,4 +1,4 @@
-# Practice Return — Medium: พื้นที่สี่เหลี่ยม
+# Practice Return — Question 7: คำนวณพื้นที่สนาม
 
 **Difficulty:** 🟡 Medium
 
@@ -6,10 +6,11 @@
 
 ## โจทย์
 
-สร้าง `rect_area(w, h)` ที่ **return** `w * h`
-รับความกว้างและความสูงจาก `input` แล้วพิมพ์พื้นที่
+โรงเรียนจะทาสีสนามฟุตบอลสี่เหลี่ยม — ต้องรู้พื้นที่
 
-> ผสมความรู้: return + input + float
+สร้าง `field_area(width, length)` ที่ **return** พื้นที่ (`width * length`)
+
+รับความกว้างและความยาวจาก `input`
 
 ---
 
@@ -17,13 +18,16 @@
 
 **Input:**
 ```
-5
-3
+20
+40
 ```
 
 **Output:**
 ```
-Area: 15.0
+Football Field
+Width: 20.0
+Length: 40.0
+Area: 800.0
 ```
 
 ---
@@ -31,10 +35,14 @@ Area: 15.0
 ## Starter Code
 
 ```python
-def rect_area(w, h):
+def field_area(width, length):
     # Write your code here
 
-w = float(input())
-h = float(input())
-print(f"Area: {rect_area(w, h)}")
+width = float(input())
+length = float(input())
+area = field_area(width, length)
+print("Football Field")
+print(f"Width: {width}")
+print(f"Length: {length}")
+print(f"Area: {area}")
 ```

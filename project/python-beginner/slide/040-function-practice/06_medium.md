@@ -1,4 +1,4 @@
-# Practice Function — Medium: บิลช้อปปิ้งจาก Input
+# Practice Function — Question 5: บิลซูเปอร์มาร์เก็ต + VAT
 
 **Difficulty:** 🟡 Medium
 
@@ -6,19 +6,14 @@
 
 ## โจทย์
 
-สร้าง 2 functions:
+ทำเครื่องคิดเงินซูเปอร์มาร์เก็ต
 
 | Function | หน้าที่ |
 |----------|---------|
-| `calc_total(prices)` | return ผลรวมของ list ราคา |
-| `add_vat(total)` | return ราคาหลัง VAT 7% (`total * 1.07`) |
+| `calc_total(prices)` | รวมราคาสินค้าใน list |
+| `add_vat(total)` | คืนราคารวมหลัง VAT 7% |
 
-โปรแกรมหลัก:
-1. ถามจำนวนสินค้า `n`
-2. รับราคา `n` ครั้งเก็บใน list
-3. แสดงยอดก่อน VAT และหลัง VAT
-
-> ผสมความรู้: function + return + input + for + list + float
+ถามจำนวนสินค้า รับราคาทีละชิ้น แล้วแสดงยอดก่อน/หลัง VAT
 
 ---
 
@@ -29,6 +24,7 @@ How many items? 3
 Price: 100
 Price: 50
 Price: 25
+=== Receipt ===
 Before VAT: 175.0
 After VAT: 187.25
 ```
@@ -47,10 +43,10 @@ def add_vat(total):
 n = int(input("How many items? "))
 prices = []
 for i in range(n):
-    price = float(input("Price: "))
-    prices.append(price)
+    prices.append(float(input("Price: ")))
 
 total = calc_total(prices)
+print("=== Receipt ===")
 print(f"Before VAT: {total}")
 print(f"After VAT: {add_vat(total)}")
 ```

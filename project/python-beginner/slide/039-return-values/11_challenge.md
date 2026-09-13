@@ -1,4 +1,4 @@
-# 🔥 Practice Return — Challenge: คำยาวไหม?
+# 🔥 Practice Return — Challenge: สมัคร username เกม
 
 **Difficulty:** 🔴 Hard
 
@@ -6,14 +6,13 @@
 
 ## โจทย์
 
+ระบบสมัครเกม: username ต้องยาวอย่างน้อย 8 ตัวอักษร
+
 สร้าง 2 functions:
-1. `word_len(text)` — return ความยาวข้อความ
-2. `is_long(text)` — return `True` ถ้าความยาว >= 8 ไม่งั้น `False`
-   (ให้เรียก `word_len` ข้างใน)
+1. `name_length(text)` — return ความยาว
+2. `can_register(text)` — return `True` ถ้ายาว >= 8 (เรียก `name_length` ข้างใน)
 
-รับคำจาก `input` แล้วพิมพ์ความยาว + `Long` หรือ `Short`
-
-> ผสมความรู้: return + function ซ้อน + input + if + len
+รับ username แล้วบอกผล
 
 ---
 
@@ -21,13 +20,26 @@
 
 **Input:**
 ```
-pythonista
+dragon123
 ```
 
 **Output:**
 ```
-Length: 10
-Long
+Username: dragon123
+Length: 9
+Status: OK to register
+```
+
+**Input:**
+```
+cat
+```
+
+**Output:**
+```
+Username: cat
+Length: 3
+Status: Too short
 ```
 
 ---
@@ -35,16 +47,17 @@ Long
 ## Starter Code
 
 ```python
-def word_len(text):
+def name_length(text):
     # Write your code here
 
-def is_long(text):
+def can_register(text):
     # Write your code here
 
-text = input()
-print(f"Length: {word_len(text)}")
-if is_long(text):
-    print("Long")
+username = input()
+print(f"Username: {username}")
+print(f"Length: {name_length(username)}")
+if can_register(username):
+    print("Status: OK to register")
 else:
-    print("Short")
+    print("Status: Too short")
 ```

@@ -1,4 +1,4 @@
-# 🔥 Practice Functions — Challenge: เครื่องคิดเลขง่าย
+# 🔥 Practice Functions — Challenge: ร้านขายขนมในโรงเรียน
 
 **Difficulty:** 🔴 Hard
 
@@ -6,12 +6,16 @@
 
 ## โจทย์
 
-สร้าง function `simple_calc()` ที่:
-1. รับเลข 2 ตัวจาก `input` (`float`)
-2. รับตัวดำเนินการเป็นข้อความ (`+` หรือ `*`)
-3. ถ้า `+` พิมพ์ผลบวก ถ้า `*` พิมพ์ผลคูณ นอกนั้นพิมพ์ `Unknown`
+ทำเครื่องคิดเงินร้านขนม:
 
-> ผสมความรู้: function + input + float + if/elif/else
+สร้าง `snack_bill()` ที่:
+1. รับราคาต่อชิ้น
+2. รับจำนวนชิ้น
+3. รับตัวดำเนินการ — ต้องเป็น `*` เท่านั้น (คูณราคา × จำนวน)
+   - ถ้าเป็น `*` → แสดงบิลรวม
+   - อื่นๆ → พิมพ์ `Please use *`
+
+แสดงบิลให้ดูชัดเจน
 
 ---
 
@@ -19,14 +23,17 @@
 
 **Input:**
 ```
-10
+20
 3
-+
+*
 ```
 
 **Output:**
 ```
-13.0
+Snack Shop
+Price: 20.0
+Qty: 3
+Total: 60.0
 ```
 
 ---
@@ -34,8 +41,8 @@
 ## Starter Code
 
 ```python
-def simple_calc():
+def snack_bill():
     # Write your code here
 
-simple_calc()
+snack_bill()
 ```

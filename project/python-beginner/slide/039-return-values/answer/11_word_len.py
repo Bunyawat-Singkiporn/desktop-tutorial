@@ -1,12 +1,13 @@
-def word_len(text):
+def name_length(text):
     return len(text)
 
-def is_long(text):
-    return word_len(text) >= 8
+def can_register(text):
+    return name_length(text) >= 8
 
-text = input()
-print(f"Length: {word_len(text)}")
-if is_long(text):
-    print("Long")
+username = input()
+print(f"Username: {username}")
+print(f"Length: {name_length(username)}")
+if can_register(username):
+    print("Status: OK to register")
 else:
-    print("Short")
+    print("Status: Too short")

@@ -21,7 +21,10 @@ def grade(avg):
         return "F"
 
 def report(name, avg, g):
-    print(f"{name} | avg={avg:.1f} | grade={g}")
+    print("=== Report Card ===")
+    print(f"Student: {name}")
+    print(f"Average: {avg:.1f}")
+    print(f"Grade: {g}")
 
 name = input("Name: ")
 n = int(input("Subjects: "))

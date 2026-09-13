@@ -1,4 +1,4 @@
-# Practice Parameters — Medium: BMI
+# Practice Parameters — Question 8: PE Health Card
 
 **Difficulty:** 🟡 Medium
 
@@ -6,11 +6,9 @@
 
 ## Task
 
-Create `show_bmi(weight, height)` that prints BMI = `weight / (height ** 2)` with 2 decimals.
+In PE class, students enter weight and height to get a BMI health card.
 
-Read weight (kg) and height (m) from `input`.
-
-> Combines: parameter + input + float + **
+Create `health_card(weight, height)` and print BMI with 2 decimals.
 
 ---
 
@@ -24,6 +22,9 @@ Read weight (kg) and height (m) from `input`.
 
 **Output:**
 ```
+Health Card
+Weight: 60.0 kg
+Height: 1.7 m
 BMI: 20.76
 ```
 
@@ -32,10 +33,10 @@ BMI: 20.76
 ## Starter Code
 
 ```python
-def show_bmi(weight, height):
+def health_card(weight, height):
     # Write your code here
 
 weight = float(input())
 height = float(input())
-show_bmi(weight, height)
+health_card(weight, height)
 ```

@@ -1,4 +1,4 @@
-# Practice Return Values — Medium: คู่/คี่จาก Input
+# Practice Return — Question 6: เกมเลขนำโชค
 
 **Difficulty:** 🟡 Medium
 
@@ -6,23 +6,23 @@
 
 ## โจทย์
 
-สร้าง function `parity(n)` ที่ return `"Even"` หรือ `"Odd"`
+ทำเกมเล็กๆ: ผู้เล่นสุ่มเลข (พิมพ์เอง) แล้วบอกว่าคู่หรือคี่
 
-รับตัวเลขจาก `input` 3 ครั้ง (ใช้ `for`) แล้วพิมพ์ผลแต่ละรอบ
+สร้าง `lucky(n)` ที่ return `"Even"` หรือ `"Odd"`
 
-> ผสมความรู้: return + input + for loop + if
+เล่น 3 รอบ
 
 ---
 
 ## ตัวอย่าง Session
 
 ```
-Enter number: 4
-4 → Even
-Enter number: 7
-7 → Odd
-Enter number: 10
-10 → Even
+Your number: 4
+4 is Even
+Your number: 7
+7 is Odd
+Your number: 10
+10 is Even
 ```
 
 ---
@@ -30,10 +30,10 @@ Enter number: 10
 ## Starter Code
 
 ```python
-def parity(n):
+def lucky(n):
     # Write your code here
 
 for i in range(3):
-    n = int(input("Enter number: "))
-    print(f"{n} → {parity(n)}")
+    n = int(input("Your number: "))
+    print(f"{n} is {lucky(n)}")
 ```

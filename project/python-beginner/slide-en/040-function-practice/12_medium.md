@@ -1,4 +1,4 @@
-# Practice Function — Medium: Temperature Mode Convert
+# Practice Function — Question 10: Travel Temperature Helper
 
 **Difficulty:** 🟡 Medium
 
@@ -6,10 +6,12 @@
 
 ## Task
 
-Create `to_f(c)` and `to_c(f)`.
-Read mode (`C` or `F`) and a value, then convert.
+Travel app: user chooses mode then converts temperature.
 
-> Combines: return + input + if/elif + float
+- `C` → convert to °F
+- `F` → convert to °C
+
+Create `to_f(c)` and `to_c(f)`.
 
 ---
 
@@ -17,13 +19,14 @@ Read mode (`C` or `F`) and a value, then convert.
 
 **Input:**
 ```
-F
-100
+C
+0
 ```
 
 **Output:**
 ```
-37.78 C
+Travel Helper
+0.0 C = 32.00 F
 ```
 
 ---
@@ -39,11 +42,11 @@ def to_c(f):
 
 mode = input()
 value = float(input())
-
+print("Travel Helper")
 if mode == "C":
-    print(f"{to_f(value):.2f} F")
+    print(f"{value} C = {to_f(value):.2f} F")
 elif mode == "F":
-    print(f"{to_c(value):.2f} C")
+    print(f"{value} F = {to_c(value):.2f} C")
 else:
     print("Unknown mode")
 ```

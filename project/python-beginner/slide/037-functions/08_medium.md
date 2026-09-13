@@ -1,4 +1,4 @@
-# Practice Functions — Medium: นับถอยหลัง
+# Practice Functions — Question 7: นับถอยหลังปล่อยจรวด
 
 **Difficulty:** 🟡 Medium
 
@@ -6,34 +6,37 @@
 
 ## โจทย์
 
-สร้าง function `countdown()` ที่:
-1. รับเลขเริ่มต้นด้วย `input` (แปลงเป็น `int`)
-2. ใช้ `for` นับถอยหลังถึง 1
-3. พิมพ์ `Go!` ท้ายสุด
+ทำโปรแกรมปล่อยจรวดในเกม:
 
-> ผสมความรู้: function + input + int + for + range
+สร้าง `launch()` ที่ถามเลขเริ่มต้น แล้วให้นับถอยหลังถึง 1 และพิมพ์ `Liftoff!`
 
 ---
 
 ## ตัวอย่าง Session
 
 ```
-Start from: 5
+Countdown from: 5
 5
 4
 3
 2
 1
-Go!
+Liftoff!
 ```
+
+---
+
+## 💡 Hint
+
+`for i in range(start, 0, -1):`
 
 ---
 
 ## Starter Code
 
 ```python
-def countdown():
+def launch():
     # Write your code here
 
-countdown()
+launch()
 ```

@@ -1,4 +1,4 @@
-# Practice Functions — Medium: เมนูซ้ำ
+# Practice Functions — Question 6: เมนูเกม
 
 **Difficulty:** 🟡 Medium
 
@@ -6,28 +6,23 @@
 
 ## โจทย์
 
-สร้าง function `show_menu()` ที่แสดงเมนู 3 ข้อ
-แล้วเรียกใช้ **3 ครั้ง** (เหมือนเปิดเมนูหลายรอบ)
+คุณกำลังทำเกม — สร้าง function `show_menu()` แสดงเมนูหลักของเกม
 
-> ผสมความรู้: function + print หลายบรรทัด
+เรียก `show_menu()` **2 ครั้ง** (เหมือนเปิดเมนูแล้วกลับมาเปิดอีก)
 
 ---
 
 ## Output
 
 ```
-=== Menu ===
-1. Play
-2. Scores
-3. Quit
-=== Menu ===
-1. Play
-2. Scores
-3. Quit
-=== Menu ===
-1. Play
-2. Scores
-3. Quit
+=== My Game ===
+1. Start
+2. High Score
+3. Exit
+=== My Game ===
+1. Start
+2. High Score
+3. Exit
 ```
 
 ---
@@ -38,5 +33,6 @@
 def show_menu():
     # Write your code here
 
-# เรียก 3 ครั้ง
+show_menu()
+show_menu()
 ```

@@ -1,4 +1,4 @@
-# Practice Function — Medium: Menu Calculator
+# Practice Function — Question 8: Phone Calculator App
 
 **Difficulty:** 🟡 Medium
 
@@ -6,11 +6,12 @@
 
 ## Task
 
-Create `add(a, b)` and `mul(a, b)` that return results.
+Make a tiny phone calculator.
 
-Read `a`, `b`, then choice `1` (add) or `2` (multiply).
+- `add(a, b)` returns sum
+- `mul(a, b)` returns product
 
-> Combines: return + input + if/elif + operators
+User enters two numbers, then presses `1` (add) or `2` (multiply).
 
 ---
 
@@ -25,7 +26,8 @@ Read `a`, `b`, then choice `1` (add) or `2` (multiply).
 
 **Output:**
 ```
-Result: 10
+Calculator
+7 + 3 = 10
 ```
 
 ---
@@ -42,11 +44,11 @@ def mul(a, b):
 a = int(input())
 b = int(input())
 choice = input()
-
+print("Calculator")
 if choice == "1":
-    print(f"Result: {add(a, b)}")
+    print(f"{a} + {b} = {add(a, b)}")
 elif choice == "2":
-    print(f"Result: {mul(a, b)}")
+    print(f"{a} * {b} = {mul(a, b)}")
 else:
-    print("Invalid")
+    print("Unknown button")
 ```

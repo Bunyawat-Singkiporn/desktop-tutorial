@@ -1,4 +1,4 @@
-# Practice Functions — Medium: ทักทายจาก Input
+# Practice Functions — Question 5: เคาน์เตอร์ต้อนรับ
 
 **Difficulty:** 🟡 Medium
 
@@ -6,39 +6,39 @@
 
 ## โจทย์
 
-สร้าง function `ask_and_greet()` ที่:
+โรงเรียนมีเคาน์เตอร์ต้อนรับ — สร้างโปรแกรมถามชื่อแล้วทักทาย
+
+สร้าง function `welcome()` ที่:
 1. ถามชื่อด้วย `input`
 2. แสดงข้อความต้อนรับพร้อมชื่อ
 
-เรียกใช้ **2 ครั้ง**
-
-> ผสมความรู้: function + input + f-string
+เรียก `welcome()` **2 ครั้ง** (มีผู้มาเยือน 2 คน)
 
 ---
 
 ## ตัวอย่าง Session
 
 ```
-What is your name? Alice
-Hello, Alice! Welcome!
-What is your name? Bob
-Hello, Bob! Welcome!
+Name: Alice
+Welcome, Alice!
+Name: Bob
+Welcome, Bob!
 ```
 
 ---
 
 ## 💡 Hint
 
-`input()` ใส่ **ข้างใน** function ได้ — ไม่ต้องรับ parameter
+ใส่ `input()` **ข้างใน** function ได้
 
 ---
 
 ## Starter Code
 
 ```python
-def ask_and_greet():
+def welcome():
     # Write your code here
 
-ask_and_greet()
-ask_and_greet()
+welcome()
+welcome()
 ```

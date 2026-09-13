@@ -1,4 +1,4 @@
-# Practice Functions — Medium: Repeat Menu
+# Practice Functions — Question 6: Game Menu
 
 **Difficulty:** 🟡 Medium
 
@@ -6,27 +6,23 @@
 
 ## Task
 
-Create `show_menu()` that prints a 3-item menu, then call it **3 times**.
+You are making a game. Create `show_menu()` for the main menu.
 
-> Combines: function + multi-line print
+Call it **2 times** (open the menu, then open it again).
 
 ---
 
 ## Output
 
 ```
-=== Menu ===
-1. Play
-2. Scores
-3. Quit
-=== Menu ===
-1. Play
-2. Scores
-3. Quit
-=== Menu ===
-1. Play
-2. Scores
-3. Quit
+=== My Game ===
+1. Start
+2. High Score
+3. Exit
+=== My Game ===
+1. Start
+2. High Score
+3. Exit
 ```
 
 ---
@@ -37,5 +33,6 @@ Create `show_menu()` that prints a 3-item menu, then call it **3 times**.
 def show_menu():
     # Write your code here
 
-# Call 3 times
+show_menu()
+show_menu()
 ```

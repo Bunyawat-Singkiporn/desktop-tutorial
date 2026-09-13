@@ -1,4 +1,4 @@
-# Practice Function — Medium: ตรวจรหัสผ่าน
+# Practice Function — Question 6: ตั้งรหัสผ่านเกม
 
 **Difficulty:** 🟡 Medium
 
@@ -6,15 +6,12 @@
 
 ## โจทย์
 
-สร้าง function `is_strong(password)` ที่ return `True` ถ้า:
-- ความยาว >= 8 **และ**
+ระบบสร้างบัญชีเกม: รหัสผ่านต้อง
+- ยาวอย่างน้อย 8 ตัว
 - มีตัวเลขอย่างน้อย 1 ตัว
 
-ไม่งั้น return `False`
-
-โปรแกรมหลักถามรหัสผ่าน แล้วพิมพ์ `Strong` หรือ `Weak`
-
-> ผสมความรู้: return + input + if + for + str
+สร้าง `is_strong(password)` return `True`/`False`  
+แล้วบอกผู้เล่นว่า `Strong password` หรือ `Weak password`
 
 ---
 
@@ -27,7 +24,7 @@ hello123
 
 **Output:**
 ```
-Strong
+Strong password
 ```
 
 **Input:**
@@ -37,14 +34,14 @@ abc
 
 **Output:**
 ```
-Weak
+Weak password
 ```
 
 ---
 
 ## 💡 Hint
 
-เช็คตัวเลข: `for ch in password:` แล้วใช้ `ch.isdigit()`
+`ch.isdigit()` ใช้เช็คว่าเป็นตัวเลข
 
 ---
 
@@ -56,7 +53,7 @@ def is_strong(password):
 
 password = input()
 if is_strong(password):
-    print("Strong")
+    print("Strong password")
 else:
-    print("Weak")
+    print("Weak password")
 ```

@@ -8,6 +8,6 @@ def is_strong(password):
 
 password = input()
 if is_strong(password):
-    print("Strong")
+    print("Strong password")
 else:
-    print("Weak")
+    print("Weak password")

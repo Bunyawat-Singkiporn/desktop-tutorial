@@ -1,4 +1,4 @@
-# 🔥 Practice Parameters — Challenge: Login
+# 🔥 Practice Parameters — Challenge: Game Login
 
 **Difficulty:** 🔴 Hard
 
@@ -6,13 +6,11 @@
 
 ## Task
 
-Create `login(user, password)`:
-- if `user == "admin"` and `password == "1234"` → `Access granted`
-- else → `Access denied`
+Build a game login screen.
 
-Read username and password from `input`.
+Correct account: username `player1`, password `abc123`
 
-> Combines: parameter + input + if + and
+Create `login(user, password)` and print success or failed.
 
 ---
 
@@ -20,13 +18,13 @@ Read username and password from `input`.
 
 **Input:**
 ```
-admin
-1234
+player1
+abc123
 ```
 
 **Output:**
 ```
-Access granted
+Login success! Let's play
 ```
 
 ---

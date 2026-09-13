@@ -1,4 +1,4 @@
-# Practice Function — Medium: Shopping Bill from Input
+# Practice Function — Question 5: Supermarket Receipt + VAT
 
 **Difficulty:** 🟡 Medium
 
@@ -6,19 +6,14 @@
 
 ## Task
 
-Create 2 functions:
+Build a supermarket cash register.
 
 | Function | Job |
 |----------|-----|
-| `calc_total(prices)` | return sum of price list |
-| `add_vat(total)` | return total after 7% VAT (`total * 1.07`) |
+| `calc_total(prices)` | sum item prices |
+| `add_vat(total)` | total after 7% VAT |
 
-Main program:
-1. Ask how many items `n`
-2. Read `n` prices into a list
-3. Print before VAT and after VAT
-
-> Combines: function + return + input + for + list + float
+Ask how many items, read each price, then print the receipt.
 
 ---
 
@@ -29,6 +24,7 @@ How many items? 3
 Price: 100
 Price: 50
 Price: 25
+=== Receipt ===
 Before VAT: 175.0
 After VAT: 187.25
 ```
@@ -47,10 +43,10 @@ def add_vat(total):
 n = int(input("How many items? "))
 prices = []
 for i in range(n):
-    price = float(input("Price: "))
-    prices.append(price)
+    prices.append(float(input("Price: ")))
 
 total = calc_total(prices)
+print("=== Receipt ===")
 print(f"Before VAT: {total}")
 print(f"After VAT: {add_vat(total)}")
 ```

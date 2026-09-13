@@ -1,4 +1,4 @@
-# Practice Functions — Medium: แปลงอุณหภูมิ
+# Practice Functions — Question 8: แปลงอุณหภูมิไปเที่ยว
 
 **Difficulty:** 🟡 Medium
 
@@ -6,12 +6,11 @@
 
 ## โจทย์
 
-สร้าง function `c_to_f()` ที่:
-1. รับอุณหภูมิ Celsius จาก `input` (`float`)
-2. แปลงเป็น Fahrenheit: `C * 9/5 + 32`
-3. พิมพ์ผล
+คุณจะไปเที่ยวต่างประเทศ — ทำแอพแปลงอุณหภูมิ
 
-> ผสมความรู้: function + input + float + operators
+สร้าง `show_fahrenheit()` ที่รับอุณหภูมิ °C แล้วแสดงเป็น °F
+
+สูตร: `C * 9 / 5 + 32`
 
 ---
 
@@ -24,7 +23,8 @@
 
 **Output:**
 ```
-77.0 F
+Today: 25.0 C
+In Fahrenheit: 77.0 F
 ```
 
 ---
@@ -32,8 +32,8 @@
 ## Starter Code
 
 ```python
-def c_to_f():
+def show_fahrenheit():
     # Write your code here
 
-c_to_f()
+show_fahrenheit()
 ```

@@ -1,4 +1,4 @@
-# Practice Parameters — Medium: คำนวณจาก Input
+# Practice Parameters — Question 6: บิลร้านอาหาร
 
 **Difficulty:** 🟡 Medium
 
@@ -6,13 +6,14 @@
 
 ## โจทย์
 
-สร้าง function `show_total(price, qty)` ที่แสดงราคารวม (`price * qty`)
+ทำบิลร้านอาหารง่ายๆ
 
-โปรแกรมหลัก:
-1. รับ `price` และ `qty` จาก `input` (แปลงเป็นตัวเลข)
-2. เรียก `show_total(price, qty)`
+สร้าง `print_bill(price, qty)` ที่แสดง:
+- ราคาต่อจาน
+- จำนวน
+- รวม = `price * qty`
 
-> ผสมความรู้: parameter + input + float/int + operators
+รับราคาและจำนวนจาก `input` แล้วเรียก function
 
 ---
 
@@ -20,13 +21,16 @@
 
 **Input:**
 ```
-25.5
-4
+45
+2
 ```
 
 **Output:**
 ```
-Total: 102.0
+Food Bill
+Price: 45.0
+Qty: 2
+Total: 90.0
 ```
 
 ---
@@ -34,10 +38,10 @@ Total: 102.0
 ## Starter Code
 
 ```python
-def show_total(price, qty):
+def print_bill(price, qty):
     # Write your code here
 
 price = float(input())
 qty = int(input())
-show_total(price, qty)
+print_bill(price, qty)
 ```

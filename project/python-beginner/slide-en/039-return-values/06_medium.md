@@ -1,4 +1,4 @@
-# Practice Return Values — Medium: Grade from Input
+# Practice Return — Question 5: Student Grade Card
 
 **Difficulty:** 🟡 Medium
 
@@ -6,18 +6,10 @@
 
 ## Task
 
-Create `get_grade(score)` that **returns** a grade:
+Make a simple grade card.
 
-| Score | Grade |
-|-------|-------|
-| >= 80 | `A` |
-| >= 70 | `B` |
-| >= 60 | `C` |
-| < 60  | `F` |
-
-Main program reads a score from `input` and prints the grade.
-
-> Combines: return + input + int() + elif
+Create `get_grade(score)` that **returns** A/B/C/F.
+Read a score and print the card.
 
 ---
 
@@ -30,6 +22,7 @@ Main program reads a score from `input` and prints the grade.
 
 **Output:**
 ```
+Score: 73
 Grade: B
 ```
 
@@ -43,5 +36,6 @@ def get_grade(score):
 
 score = int(input())
 grade = get_grade(score)
+print(f"Score: {score}")
 print(f"Grade: {grade}")
 ```

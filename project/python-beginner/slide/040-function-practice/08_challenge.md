@@ -1,4 +1,4 @@
-# 🔥 Practice Function — Challenge: Mini Quiz
+# 🔥 Practice Function — Challenge: เกมตอบคำถามในห้องเรียน
 
 **Difficulty:** 🔴 Hard
 
@@ -6,21 +6,19 @@
 
 ## โจทย์
 
-สร้างแบบทดสอบสั้นๆ ด้วย functions:
+ทำเกมควิซสั้นๆ ในห้องเรียน
 
 | Function | หน้าที่ |
 |----------|---------|
-| `ask(question, answer)` | ถามคำถาม รับคำตอบจาก `input` — ถูก return `True` ผิด return `False` |
-| `show_result(score, total)` | แสดงคะแนนและข้อความตามผล |
+| `ask(question, answer)` | ถามแล้วรับคำตอบ — ถูก return `True` |
+| `show_result(score, total)` | แสดงคะแนน + ข้อความ |
 
-กฎ `show_result`:
+กฎข้อความ:
 - ได้เต็ม → `Perfect!`
-- ได้ >= ครึ่ง → `Good job!`
+- ได้ครึ่งขึ้นไป → `Good job!`
 - น้อยกว่าครึ่ง → `Keep practicing!`
 
-ถาม **3 ข้อ** เก็บคะแนน
-
-> ผสมความรู้: function + return + input + if + score += 1
+ถาม 3 ข้อ เก็บคะแนน
 
 ---
 
@@ -33,6 +31,7 @@ Capital of Thailand? Bangkok
 Correct!
 Color of the sky? green
 Wrong!
+=== Result ===
 Score: 2/3
 Good job!
 ```
@@ -69,5 +68,6 @@ if ask("Color of the sky? ", "blue"):
 else:
     print("Wrong!")
 
+print("=== Result ===")
 show_result(score, total)
 ```

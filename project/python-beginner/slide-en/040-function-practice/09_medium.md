@@ -1,4 +1,4 @@
-# Practice Function — Medium: Filter Passing Scores
+# Practice Function — Question 7: Who Passed the Test?
 
 **Difficulty:** 🟡 Medium
 
@@ -6,24 +6,22 @@
 
 ## Task
 
-Create `pass_scores(scores)` that returns scores >= 50.
+A teacher checks test scores. Score >= 50 means pass.
 
-Main program reads `n` scores into a list, then prints the passed ones.
-
-> Combines: function + return + input + for + list + if
+Create `get_passed(scores)` that returns only passing scores.
 
 ---
 
 ## Example Session
 
 ```
-How many? 5
+How many scores? 5
 Score: 40
 Score: 70
 Score: 55
 Score: 30
 Score: 90
-Passed: [70, 55, 90]
+Passed scores: [70, 55, 90]
 ```
 
 ---
@@ -31,13 +29,13 @@ Passed: [70, 55, 90]
 ## Starter Code
 
 ```python
-def pass_scores(scores):
+def get_passed(scores):
     # Write your code here
 
-n = int(input("How many? "))
+n = int(input("How many scores? "))
 scores = []
 for i in range(n):
     scores.append(int(input("Score: ")))
 
-print(f"Passed: {pass_scores(scores)}")
+print(f"Passed scores: {get_passed(scores)}")
 ```

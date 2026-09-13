@@ -1,14 +1,14 @@
-def add_student(students, name):
-    students.append(name)
+def add_name(names, name):
+    names.append(name)
 
-def show_students(students):
-    for name in students:
+def show_names(names):
+    for name in names:
         print(name)
 
-students = []
-n = int(input("How many students? "))
+names = []
+n = int(input("How many campers? "))
 for i in range(n):
-    name = input("Name: ")
-    add_student(students, name)
+    add_name(names, input("Name: "))
 
-show_students(students)
+print("=== Camp List ===")
+show_names(names)

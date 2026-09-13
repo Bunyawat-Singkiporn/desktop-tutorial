@@ -1,4 +1,4 @@
-# Practice Parameters — Medium: อายุ + สิทธิ์โหวต
+# Practice Parameters — Question 5: บัตรเข้าโรงภาพยนตร์
 
 **Difficulty:** 🟡 Medium
 
@@ -6,27 +6,16 @@
 
 ## โจทย์
 
-1. รับอายุด้วย `input` แปลงเป็น `int`
-2. สร้าง function `check_vote(age)` ที่แสดงผล:
-   - อายุ >= 18 → `You can vote`
-   - น้อยกว่า → `Too young to vote`
-3. เรียก `check_vote(age)` ด้วยค่าที่รับมา
+หนังเรื่องนี้ต้องอายุ 13 ปีขึ้นไป
 
-> ผสมความรู้: parameter + input + int() + if/else
+1. รับอายุจาก `input`
+2. สร้าง `check_ticket(age)` แสดง:
+   - อายุ >= 13 → `You can watch`
+   - น้อยกว่า → `Sorry, too young`
 
 ---
 
 ## ตัวอย่าง
-
-**Input:**
-```
-20
-```
-
-**Output:**
-```
-You can vote
-```
 
 **Input:**
 ```
@@ -35,7 +24,17 @@ You can vote
 
 **Output:**
 ```
-Too young to vote
+You can watch
+```
+
+**Input:**
+```
+10
+```
+
+**Output:**
+```
+Sorry, too young
 ```
 
 ---
@@ -43,9 +42,9 @@ Too young to vote
 ## Starter Code
 
 ```python
-def check_vote(age):
+def check_ticket(age):
     # Write your code here
 
 age = int(input())
-check_vote(age)
+check_ticket(age)
 ```

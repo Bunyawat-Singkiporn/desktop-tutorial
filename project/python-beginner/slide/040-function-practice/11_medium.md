@@ -1,4 +1,4 @@
-# Practice Function — Medium: รายชื่อนักเรียน
+# Practice Function — Question 9: รายชื่อเข้าค่าย
 
 **Difficulty:** 🟡 Medium
 
@@ -6,23 +6,24 @@
 
 ## โจทย์
 
+ครูเก็บรายชื่อเด็กเข้าค่าย
+
 สร้าง:
-- `add_student(students, name)` — เพิ่มชื่อลง list
-- `show_students(students)` — พิมพ์ชื่อทุกคนทีละบรรทัด
+- `add_name(names, name)` — เพิ่มชื่อลง list
+- `show_names(names)` — แสดงรายชื่อทีละคน
 
-รับจำนวนคน แล้วรับชื่อทีละคน แล้วแสดงรายชื่อ
-
-> ผสมความรู้: function + list + input + for
+ถามจำนวนคน รับชื่อ แล้วพิมพ์รายชื่อทั้งหมด
 
 ---
 
 ## ตัวอย่าง Session
 
 ```
-How many students? 3
+How many campers? 3
 Name: Alice
 Name: Bob
 Name: Cara
+=== Camp List ===
 Alice
 Bob
 Cara
@@ -33,17 +34,17 @@ Cara
 ## Starter Code
 
 ```python
-def add_student(students, name):
+def add_name(names, name):
     # Write your code here
 
-def show_students(students):
+def show_names(names):
     # Write your code here
 
-students = []
-n = int(input("How many students? "))
+names = []
+n = int(input("How many campers? "))
 for i in range(n):
-    name = input("Name: ")
-    add_student(students, name)
+    add_name(names, input("Name: "))
 
-show_students(students)
+print("=== Camp List ===")
+show_names(names)
 ```

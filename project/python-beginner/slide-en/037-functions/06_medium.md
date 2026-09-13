@@ -1,4 +1,4 @@
-# Practice Functions — Medium: Greet from Input
+# Practice Functions — Question 5: Welcome Desk
 
 **Difficulty:** 🟡 Medium
 
@@ -6,39 +6,33 @@
 
 ## Task
 
-Create a function `ask_and_greet()` that:
+The school has a welcome desk. Build a program that asks for a name and greets the visitor.
+
+Create `welcome()` that:
 1. Asks for a name with `input`
 2. Prints a welcome message with the name
 
-Call it **2 times**.
-
-> Combines: function + input + f-string
+Call `welcome()` **2 times** (two visitors).
 
 ---
 
 ## Example Session
 
 ```
-What is your name? Alice
-Hello, Alice! Welcome!
-What is your name? Bob
-Hello, Bob! Welcome!
+Name: Alice
+Welcome, Alice!
+Name: Bob
+Welcome, Bob!
 ```
-
----
-
-## 💡 Hint
-
-You can put `input()` **inside** the function — no parameter needed.
 
 ---
 
 ## Starter Code
 
 ```python
-def ask_and_greet():
+def welcome():
     # Write your code here
 
-ask_and_greet()
-ask_and_greet()
+welcome()
+welcome()
 ```

@@ -1,4 +1,4 @@
-# 🔥 Practice Function — Challenge: ระบบเกรดนักเรียน
+# 🔥 Practice Function — Challenge: ใบรายงานผลการเรียน
 
 **Difficulty:** 🔴 Hard
 
@@ -6,20 +6,16 @@
 
 ## โจทย์
 
-สร้างระบบเกรดจาก input:
+ทำใบรายงานผลการเรียนของนักเรียน 1 คน
 
 | Function | หน้าที่ |
 |----------|---------|
-| `read_scores(n)` | รับคะแนน n ครั้ง return list |
-| `average(scores)` | return ค่าเฉลี่ย |
-| `grade(avg)` | return A/B/C/F |
-| `report(name, avg, g)` | พิมพ์รายงาน 1 บรรทัด |
+| `read_scores(n)` | รับคะแนน n วิชา เป็น list |
+| `average(scores)` | คืนค่าเฉลี่ย |
+| `grade(avg)` | คืนเกรด A/B/C/F |
+| `report(name, avg, g)` | พิมพ์ใบรายงาน |
 
-รับชื่อนักเรียน + จำนวนวิชา แล้วแสดงผล
-
-กฎเกรด: >=80 A, >=70 B, >=60 C, นอกนั้น F
-
-> ผสมความรู้: หลาย functions + input + list + for + elif + f-string
+เกรด: >=80 A, >=70 B, >=60 C, นอกนั้น F
 
 ---
 
@@ -31,7 +27,10 @@ Subjects: 3
 Score: 80
 Score: 90
 Score: 70
-Alice | avg=80.0 | grade=A
+=== Report Card ===
+Student: Alice
+Average: 80.0
+Grade: A
 ```
 
 ---

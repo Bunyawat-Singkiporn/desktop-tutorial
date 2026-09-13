@@ -1,4 +1,4 @@
-# Practice Return — Medium: Clamp Score
+# Practice Return — Question 9: Fix Game Scores
 
 **Difficulty:** 🟡 Medium
 
@@ -6,22 +6,26 @@
 
 ## Task
 
-Create `clamp(score)` that keeps a score in 0–100.
-Read 3 scores with `input` and print each clamped value.
+In your game, scores must stay between 0 and 100.
 
-> Combines: return + input + for + if/elif/else
+Create `fix_score(score)`:
+- below 0 → `0`
+- above 100 → `100`
+- otherwise keep the value
+
+Fix 3 raw scores from input.
 
 ---
 
 ## Example Session
 
 ```
-Enter score: -5
-0
-Enter score: 150
-100
-Enter score: 85
-85
+Raw score: -5
+Fixed: 0
+Raw score: 150
+Fixed: 100
+Raw score: 85
+Fixed: 85
 ```
 
 ---
@@ -29,10 +33,10 @@ Enter score: 85
 ## Starter Code
 
 ```python
-def clamp(score):
+def fix_score(score):
     # Write your code here
 
 for i in range(3):
-    score = int(input("Enter score: "))
-    print(clamp(score))
+    score = int(input("Raw score: "))
+    print(f"Fixed: {fix_score(score)}")
 ```

@@ -1,4 +1,4 @@
-# 🔥 Practice Function — Challenge: Student Grade System
+# 🔥 Practice Function — Challenge: Student Report Card
 
 **Difficulty:** 🔴 Hard
 
@@ -6,18 +6,14 @@
 
 ## Task
 
-Build a grade system from input:
+Build one student's report card.
 
 | Function | Job |
 |----------|-----|
-| `read_scores(n)` | read n scores, return list |
+| `read_scores(n)` | read n subject scores |
 | `average(scores)` | return average |
 | `grade(avg)` | return A/B/C/F |
-| `report(name, avg, g)` | print one report line |
-
-Grade rules: >=80 A, >=70 B, >=60 C, else F
-
-> Combines: many functions + input + list + for + elif + f-string
+| `report(name, avg, g)` | print report card |
 
 ---
 
@@ -29,7 +25,10 @@ Subjects: 3
 Score: 80
 Score: 90
 Score: 70
-Alice | avg=80.0 | grade=A
+=== Report Card ===
+Student: Alice
+Average: 80.0
+Grade: A
 ```
 
 ---

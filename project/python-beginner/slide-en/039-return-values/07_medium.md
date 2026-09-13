@@ -1,4 +1,4 @@
-# Practice Return Values — Medium: Even/Odd from Input
+# Practice Return — Question 6: Lucky Number Game
 
 **Difficulty:** 🟡 Medium
 
@@ -6,23 +6,21 @@
 
 ## Task
 
-Create `parity(n)` that returns `"Even"` or `"Odd"`.
+A tiny game: the player enters a number and learns if it is Even or Odd.
 
-Read 3 numbers with `input` (use `for`) and print each result.
-
-> Combines: return + input + for loop + if
+Create `lucky(n)` that returns `"Even"` or `"Odd"`. Play 3 rounds.
 
 ---
 
 ## Example Session
 
 ```
-Enter number: 4
-4 → Even
-Enter number: 7
-7 → Odd
-Enter number: 10
-10 → Even
+Your number: 4
+4 is Even
+Your number: 7
+7 is Odd
+Your number: 10
+10 is Even
 ```
 
 ---
@@ -30,10 +28,10 @@ Enter number: 10
 ## Starter Code
 
 ```python
-def parity(n):
+def lucky(n):
     # Write your code here
 
 for i in range(3):
-    n = int(input("Enter number: "))
-    print(f"{n} → {parity(n)}")
+    n = int(input("Your number: "))
+    print(f"{n} is {lucky(n)}")
 ```

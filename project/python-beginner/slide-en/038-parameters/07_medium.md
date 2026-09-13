@@ -1,4 +1,4 @@
-# Practice Parameters — Medium: Total from Input
+# Practice Parameters — Question 6: Food Bill
 
 **Difficulty:** 🟡 Medium
 
@@ -6,13 +6,9 @@
 
 ## Task
 
-Create `show_total(price, qty)` that prints `price * qty`.
+Make a simple restaurant bill.
 
-Main program:
-1. Read `price` and `qty` from `input`
-2. Call `show_total(price, qty)`
-
-> Combines: parameter + input + float/int + operators
+Create `print_bill(price, qty)` that shows price, quantity, and total (`price * qty`).
 
 ---
 
@@ -20,13 +16,16 @@ Main program:
 
 **Input:**
 ```
-25.5
-4
+45
+2
 ```
 
 **Output:**
 ```
-Total: 102.0
+Food Bill
+Price: 45.0
+Qty: 2
+Total: 90.0
 ```
 
 ---
@@ -34,10 +33,10 @@ Total: 102.0
 ## Starter Code
 
 ```python
-def show_total(price, qty):
+def print_bill(price, qty):
     # Write your code here
 
 price = float(input())
 qty = int(input())
-show_total(price, qty)
+print_bill(price, qty)
 ```

@@ -7,10 +7,10 @@ def mul(a, b):
 a = int(input())
 b = int(input())
 choice = input()
-
+print("Calculator")
 if choice == "1":
-    print(f"Result: {add(a, b)}")
+    print(f"{a} + {b} = {add(a, b)}")
 elif choice == "2":
-    print(f"Result: {mul(a, b)}")
+    print(f"{a} * {b} = {mul(a, b)}")
 else:
-    print("Invalid")
+    print("Unknown button")

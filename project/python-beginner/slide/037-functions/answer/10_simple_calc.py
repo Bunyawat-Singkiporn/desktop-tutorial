@@ -1,12 +1,13 @@
-def simple_calc():
-    a = float(input())
-    b = float(input())
+def snack_bill():
+    price = float(input())
+    qty = float(input())
     op = input()
-    if op == "+":
-        print(a + b)
-    elif op == "*":
-        print(a * b)
+    print("Snack Shop")
+    print(f"Price: {price}")
+    print(f"Qty: {qty}")
+    if op == "*":
+        print(f"Total: {price * qty}")
     else:
-        print("Unknown")
+        print("Please use *")
 
-simple_calc()
+snack_bill()

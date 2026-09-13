@@ -1,4 +1,4 @@
-# Practice Return — Medium: C → F (return)
+# Practice Return — Question 8: แอพอากาศสำหรับทริป
 
 **Difficulty:** 🟡 Medium
 
@@ -6,12 +6,10 @@
 
 ## โจทย์
 
-สร้าง `to_fahrenheit(c)` ที่ **return** ค่า Fahrenheit
+แอพท่องเที่ยวต้องแปลง °C เป็น °F
+
+สร้าง `to_fahrenheit(c)` ที่ **return** ค่า Fahrenheit  
 สูตร: `c * 9/5 + 32`
-
-รับ Celsius จาก `input` แล้วพิมพ์ผล
-
-> ผสมความรู้: return + input + float
 
 ---
 
@@ -24,7 +22,8 @@
 
 **Output:**
 ```
-32.0
+Trip Weather
+0.0 C = 32.0 F
 ```
 
 ---
@@ -36,5 +35,7 @@ def to_fahrenheit(c):
     # Write your code here
 
 c = float(input())
-print(to_fahrenheit(c))
+f = to_fahrenheit(c)
+print("Trip Weather")
+print(f"{c} C = {f} F")
 ```

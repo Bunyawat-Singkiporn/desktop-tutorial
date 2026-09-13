@@ -1,4 +1,4 @@
-# Practice Function — Medium: Student Names
+# Practice Function — Question 9: Camp Attendance List
 
 **Difficulty:** 🟡 Medium
 
@@ -6,23 +6,22 @@
 
 ## Task
 
+A teacher collects names for camp.
+
 Create:
-- `add_student(students, name)` — append name to list
-- `show_students(students)` — print each name
-
-Read how many students, then each name, then show the list.
-
-> Combines: function + list + input + for
+- `add_name(names, name)`
+- `show_names(names)`
 
 ---
 
 ## Example Session
 
 ```
-How many students? 3
+How many campers? 3
 Name: Alice
 Name: Bob
 Name: Cara
+=== Camp List ===
 Alice
 Bob
 Cara
@@ -33,17 +32,17 @@ Cara
 ## Starter Code
 
 ```python
-def add_student(students, name):
+def add_name(names, name):
     # Write your code here
 
-def show_students(students):
+def show_names(names):
     # Write your code here
 
-students = []
-n = int(input("How many students? "))
+names = []
+n = int(input("How many campers? "))
 for i in range(n):
-    name = input("Name: ")
-    add_student(students, name)
+    add_name(names, input("Name: "))
 
-show_students(students)
+print("=== Camp List ===")
+show_names(names)
 ```

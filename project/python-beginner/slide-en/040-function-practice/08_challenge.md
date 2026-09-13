@@ -1,4 +1,4 @@
-# 🔥 Practice Function — Challenge: Mini Quiz
+# 🔥 Practice Function — Challenge: Classroom Quiz Game
 
 **Difficulty:** 🔴 Hard
 
@@ -6,21 +6,16 @@
 
 ## Task
 
-Build a short quiz with functions:
+Make a short classroom quiz game.
 
 | Function | Job |
 |----------|-----|
-| `ask(question, answer)` | ask question, read `input` — return `True` if correct else `False` |
-| `show_result(score, total)` | print score and a message |
+| `ask(question, answer)` | ask and return True if correct |
+| `show_result(score, total)` | print score + message |
 
-`show_result` rules:
-- full score → `Perfect!`
-- >= half → `Good job!`
-- otherwise → `Keep practicing!`
+Messages: Perfect! / Good job! / Keep practicing!
 
-Ask **3 questions** and track score.
-
-> Combines: function + return + input + if + score += 1
+Ask 3 questions and keep score.
 
 ---
 
@@ -33,6 +28,7 @@ Capital of Thailand? Bangkok
 Correct!
 Color of the sky? green
 Wrong!
+=== Result ===
 Score: 2/3
 Good job!
 ```
@@ -69,5 +65,6 @@ if ask("Color of the sky? ", "blue"):
 else:
     print("Wrong!")
 
+print("=== Result ===")
 show_result(score, total)
 ```

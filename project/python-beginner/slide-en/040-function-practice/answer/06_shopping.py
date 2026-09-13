@@ -10,9 +10,9 @@ def add_vat(total):
 n = int(input("How many items? "))
 prices = []
 for i in range(n):
-    price = float(input("Price: "))
-    prices.append(price)
+    prices.append(float(input("Price: ")))
 
 total = calc_total(prices)
+print("=== Receipt ===")
 print(f"Before VAT: {total}")
 print(f"After VAT: {add_vat(total)}")

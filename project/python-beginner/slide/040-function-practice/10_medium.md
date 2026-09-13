@@ -1,4 +1,4 @@
-# Practice Function — Medium: เครื่องคิดเลขเมนู
+# Practice Function — Question 8: แอพเครื่องคิดเลขมือถือ
 
 **Difficulty:** 🟡 Medium
 
@@ -6,16 +6,14 @@
 
 ## โจทย์
 
-สร้าง functions:
+ทำแอพเครื่องคิดเลขง่ายๆ
+
 - `add(a, b)` return ผลบวก
 - `mul(a, b)` return ผลคูณ
 
-โปรแกรมหลัก:
-1. รับ `a`, `b` จาก input
-2. รับตัวเลือก `1` = บวก, `2` = คูณ
-3. เรียก function ที่ถูกแล้วพิมพ์ผล
-
-> ผสมความรู้: return + input + if/elif + operators
+ผู้ใช้พิมพ์เลข 2 ตัว แล้วเลือก:
+- `1` = บวก
+- `2` = คูณ
 
 ---
 
@@ -30,7 +28,8 @@
 
 **Output:**
 ```
-Result: 10
+Calculator
+7 + 3 = 10
 ```
 
 ---
@@ -47,11 +46,11 @@ def mul(a, b):
 a = int(input())
 b = int(input())
 choice = input()
-
+print("Calculator")
 if choice == "1":
-    print(f"Result: {add(a, b)}")
+    print(f"{a} + {b} = {add(a, b)}")
 elif choice == "2":
-    print(f"Result: {mul(a, b)}")
+    print(f"{a} * {b} = {mul(a, b)}")
 else:
-    print("Invalid")
+    print("Unknown button")
 ```

@@ -1,4 +1,4 @@
-# Practice Functions — Medium: Countdown
+# Practice Functions — Question 7: Rocket Launch Countdown
 
 **Difficulty:** 🟡 Medium
 
@@ -6,25 +6,22 @@
 
 ## Task
 
-Create `countdown()` that:
-1. Reads a start number with `input` (`int`)
-2. Counts down to 1 with `for`
-3. Prints `Go!` at the end
+Make a rocket launch countdown for your game.
 
-> Combines: function + input + int + for + range
+Create `launch()` that asks for a starting number, counts down to 1, then prints `Liftoff!`
 
 ---
 
 ## Example Session
 
 ```
-Start from: 5
+Countdown from: 5
 5
 4
 3
 2
 1
-Go!
+Liftoff!
 ```
 
 ---
@@ -32,8 +29,8 @@ Go!
 ## Starter Code
 
 ```python
-def countdown():
+def launch():
     # Write your code here
 
-countdown()
+launch()
 ```

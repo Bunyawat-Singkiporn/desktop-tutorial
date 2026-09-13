@@ -1,6 +1,7 @@
-def c_to_f():
+def show_fahrenheit():
     c = float(input())
     f = c * 9 / 5 + 32
-    print(f"{f} F")
+    print(f"Today: {c} C")
+    print(f"In Fahrenheit: {f} F")
 
-c_to_f()
+show_fahrenheit()

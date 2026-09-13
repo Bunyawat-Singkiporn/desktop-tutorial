@@ -1,4 +1,4 @@
-# 🔥 Practice Functions — Challenge: Simple Calculator
+# 🔥 Practice Functions — Challenge: School Snack Shop
 
 **Difficulty:** 🔴 Hard
 
@@ -6,10 +6,14 @@
 
 ## Task
 
-Create `simple_calc()` that reads two numbers and an operator (`+` or `*`).
-Print the result, or `Unknown` for other operators.
+Build a snack shop cash register.
 
-> Combines: function + input + float + if/elif/else
+Create `snack_bill()` that:
+1. Reads price per item
+2. Reads quantity
+3. Reads an operator — must be `*`
+   - if `*` → print the full bill
+   - otherwise → print `Please use *`
 
 ---
 
@@ -17,14 +21,17 @@ Print the result, or `Unknown` for other operators.
 
 **Input:**
 ```
-10
+20
 3
-+
+*
 ```
 
 **Output:**
 ```
-13.0
+Snack Shop
+Price: 20.0
+Qty: 3
+Total: 60.0
 ```
 
 ---
@@ -32,8 +39,8 @@ Print the result, or `Unknown` for other operators.
 ## Starter Code
 
 ```python
-def simple_calc():
+def snack_bill():
     # Write your code here
 
-simple_calc()
+snack_bill()
 ```

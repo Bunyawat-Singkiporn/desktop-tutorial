@@ -1,4 +1,4 @@
-# 🔥 Practice Parameters — Challenge: Login
+# 🔥 Practice Parameters — Challenge: Login เข้าเกม
 
 **Difficulty:** 🔴 Hard
 
@@ -6,13 +6,15 @@
 
 ## โจทย์
 
-สร้าง `login(user, password)` ที่:
-- ถ้า `user == "admin"` และ `password == "1234"` → พิมพ์ `Access granted`
-- นอกนั้น → พิมพ์ `Access denied`
+ทำหน้า login ของเกม
 
-รับ username และ password จาก `input` แล้วเรียก function
+รหัสที่ถูกต้อง: username = `player1` และ password = `abc123`
 
-> ผสมความรู้: parameter + input + if + and
+สร้าง `login(user, password)`:
+- ถูกทั้งคู่ → `Login success! Let's play`
+- ผิด → `Login failed`
+
+รับ username และ password จากผู้เล่น
 
 ---
 
@@ -20,13 +22,13 @@
 
 **Input:**
 ```
-admin
-1234
+player1
+abc123
 ```
 
 **Output:**
 ```
-Access granted
+Login success! Let's play
 ```
 
 ---

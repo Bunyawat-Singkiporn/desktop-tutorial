@@ -1,6 +1,6 @@
-def ask_and_greet():
-    name = input("What is your name? ")
-    print(f"Hello, {name}! Welcome!")
+def welcome():
+    name = input("Name: ")
+    print(f"Welcome, {name}!")
 
-ask_and_greet()
-ask_and_greet()
+welcome()
+welcome()

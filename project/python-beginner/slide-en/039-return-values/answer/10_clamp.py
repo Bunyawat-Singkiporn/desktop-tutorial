@@ -1,4 +1,4 @@
-def clamp(score):
+def fix_score(score):
     if score < 0:
         return 0
     elif score > 100:
@@ -7,5 +7,5 @@ def clamp(score):
         return score
 
 for i in range(3):
-    score = int(input("Enter score: "))
-    print(clamp(score))
+    score = int(input("Raw score: "))
+    print(f"Fixed: {fix_score(score)}")

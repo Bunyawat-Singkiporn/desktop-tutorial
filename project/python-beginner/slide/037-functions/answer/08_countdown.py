@@ -1,7 +1,7 @@
-def countdown():
-    start = int(input("Start from: "))
+def launch():
+    start = int(input("Countdown from: "))
     for i in range(start, 0, -1):
         print(i)
-    print("Go!")
+    print("Liftoff!")
 
-countdown()
+launch()

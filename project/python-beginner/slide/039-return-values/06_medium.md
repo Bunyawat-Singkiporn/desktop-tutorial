@@ -1,4 +1,4 @@
-# Practice Return Values — Medium: เกรดจาก Input
+# Practice Return — Question 5: บัตรเกรดนักเรียน
 
 **Difficulty:** 🟡 Medium
 
@@ -6,7 +6,9 @@
 
 ## โจทย์
 
-สร้าง function `get_grade(score)` ที่ **return** เกรด:
+ทำบัตรเกรดง่ายๆ
+
+สร้าง `get_grade(score)` ที่ **return** เกรด:
 
 | คะแนน | เกรด |
 |-------|------|
@@ -15,9 +17,7 @@
 | >= 60 | `C` |
 | < 60  | `F` |
 
-โปรแกรมหลักรับคะแนนจาก `input` แล้วพิมพ์เกรด
-
-> ผสมความรู้: return + input + int() + elif
+รับคะแนนจาก `input` แล้วแสดงบัตรเกรด
 
 ---
 
@@ -30,6 +30,7 @@
 
 **Output:**
 ```
+Score: 73
 Grade: B
 ```
 
@@ -43,5 +44,6 @@ def get_grade(score):
 
 score = int(input())
 grade = get_grade(score)
+print(f"Score: {score}")
 print(f"Grade: {grade}")
 ```

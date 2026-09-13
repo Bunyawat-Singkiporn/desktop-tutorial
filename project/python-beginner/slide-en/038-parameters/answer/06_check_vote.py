@@ -1,8 +1,8 @@
-def check_vote(age):
-    if age >= 18:
-        print("You can vote")
+def check_ticket(age):
+    if age >= 13:
+        print("You can watch")
     else:
-        print("Too young to vote")
+        print("Sorry, too young")
 
 age = int(input())
-check_vote(age)
+check_ticket(age)

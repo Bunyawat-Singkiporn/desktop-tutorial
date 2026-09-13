@@ -1,4 +1,4 @@
-# Practice Parameters — Medium: Age & Voting
+# Practice Parameters — Question 5: Movie Ticket Check
 
 **Difficulty:** 🟡 Medium
 
@@ -6,13 +6,12 @@
 
 ## Task
 
-1. Read age with `input`, convert to `int`
-2. Create `check_vote(age)` that prints:
-   - age >= 18 → `You can vote`
-   - otherwise → `Too young to vote`
-3. Call `check_vote(age)` with the input value
+This movie is for age 13+.
 
-> Combines: parameter + input + int() + if/else
+1. Read age from `input`
+2. Create `check_ticket(age)`:
+   - age >= 13 → `You can watch`
+   - otherwise → `Sorry, too young`
 
 ---
 
@@ -20,12 +19,12 @@
 
 **Input:**
 ```
-20
+15
 ```
 
 **Output:**
 ```
-You can vote
+You can watch
 ```
 
 ---
@@ -33,9 +32,9 @@ You can vote
 ## Starter Code
 
 ```python
-def check_vote(age):
+def check_ticket(age):
     # Write your code here
 
 age = int(input())
-check_vote(age)
+check_ticket(age)
 ```
