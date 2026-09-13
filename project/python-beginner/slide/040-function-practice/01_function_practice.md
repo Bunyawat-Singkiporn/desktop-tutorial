@@ -63,8 +63,28 @@ print(f"Average: {avg:.1f}, Grade: {grade}")
 
 ---
 
+## รวม Function กับ Input
+
+```python
+def get_grade(score):
+    if score >= 80:
+        return "A"
+    elif score >= 60:
+        return "B"
+    else:
+        return "F"
+
+score = int(input("Enter score: "))
+print("Grade:", get_grade(score))
+```
+
+รับค่าจากผู้เล่น → ส่งเข้า function → ได้ผลกลับมา
+
+---
+
 ## แนวคิด: Function ที่ดี
 
 - ทำงานอย่างเดียว (Single Responsibility)
 - ตั้งชื่อสื่อความหมาย
 - ไม่ยาวเกิน 10–15 บรรทัด
+- ใช้ร่วมกับสิ่งที่เรียนมาแล้ว: `input`, `if`, `for`, `list`, `dict`

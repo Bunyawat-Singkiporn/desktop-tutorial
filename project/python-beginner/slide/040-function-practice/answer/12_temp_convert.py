@@ -1,0 +1,15 @@
+def to_f(c):
+    return c * 9 / 5 + 32
+
+def to_c(f):
+    return (f - 32) * 5 / 9
+
+mode = input()
+value = float(input())
+
+if mode == "C":
+    print(f"{to_f(value):.2f} F")
+elif mode == "F":
+    print(f"{to_c(value):.2f} C")
+else:
+    print("Unknown mode")

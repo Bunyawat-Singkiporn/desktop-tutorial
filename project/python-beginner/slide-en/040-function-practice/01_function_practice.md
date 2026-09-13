@@ -68,3 +68,24 @@ print(f"Average: {avg:.1f}, Grade: {grade}")
 - It does one thing (single responsibility).
 - It has a meaningful name.
 - It is no longer than 10–15 lines.
+
+---
+
+## Combining Functions with Input
+
+```python
+def get_grade(score):
+    if score >= 80:
+        return "A"
+    elif score >= 60:
+        return "B"
+    else:
+        return "F"
+
+score = int(input("Enter score: "))
+print("Grade:", get_grade(score))
+```
+
+Read from the user → pass into a function → get a result back.
+
+Also combine with what you already know: `input`, `if`, `for`, `list`, `dict`.
