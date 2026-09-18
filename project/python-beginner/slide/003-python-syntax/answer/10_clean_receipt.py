@@ -1,0 +1,6 @@
+print("--------------------")
+print("   FRUIT SHOP")
+print("--------------------")
+print("Apple     40")
+print("Orange    35")
+print("--------------------")

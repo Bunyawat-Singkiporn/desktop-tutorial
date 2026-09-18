@@ -1,44 +1,53 @@
-# 🔀 Practice: Syntax — Question 3: Mixed Errors
+# 🔗 กฎการเขียน Python — ข้อ 3: ของที่ต้องมาเป็นคู่
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-โค้ดด้านล่างมีข้อผิดพลาด **3 ประเภทที่ต่างกัน** หาและแก้ทุกจุด
+โค้ดนี้ผิดกฎข้อที่ 2 — มีของที่มาไม่ครบคู่อยู่ 3 จุด
 
 ```python
-Print("==========")
-print("MY PROFILE"
-  print("==========")
-print("Name: Jordan")
+print("Music Room)
+print "Piano available")
+print("Booking at office"
 ```
 
-**Output ที่ต้องการ:**
-```
-==========
-MY PROFILE
-==========
-Name: Jordan
+เขียนใหม่ให้ถูกกฎ
+
+---
+
+## Input
+
+ไม่มี
+
+## Output
+
+ข้อความ 3 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Music Room
+Piano available
+Booking at office
 ```
 
 ---
 
 ## 💡 Hint
 
-3 ประเภทของ Error:
-- `NameError` — ตัวพิมพ์ผิด
-- `SyntaxError` — เครื่องหมายไม่ครบ
-- `IndentationError` — ย่อหน้าเกิน
+แต่ละบรรทัดต้องมีครบ 4 อย่าง — วงเล็บเปิด คำพูดเปิด คำพูดปิด วงเล็บปิด ลองนับดูทีละบรรทัด
 
 ---
 
 ## Starter Code
 
 ```python
-Print("==========")
-print("MY PROFILE"
-  print("==========")
-print("Name: Jordan")
+# เขียนโค้ดตรงนี้
 ```

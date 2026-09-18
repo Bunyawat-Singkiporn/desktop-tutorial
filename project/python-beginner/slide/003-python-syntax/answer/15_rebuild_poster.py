@@ -1,0 +1,6 @@
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~")
+print("     CODING CAMP 2026")
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~")
+print("  - Day 1 print")
+print("  - Day 2 rules")
+print("  - Day 3 comments")

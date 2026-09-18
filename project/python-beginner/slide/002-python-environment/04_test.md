@@ -1,45 +1,53 @@
-# 🔧 Practice: Environment — Question 3: Fix Four Errors
+# 📐 รันโปรแกรมและอ่าน Error — ข้อ 3: เว้นวรรคหน้าบรรทัด
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-โค้ดด้านล่างมีข้อผิดพลาด **4 จุด** หาและแก้ทุกจุดให้รันได้
+โปรแกรมนี้ขึ้น `IndentationError: unexpected indent`
+
+> โค้ดข้างล่างนี้ **รันไม่ได้** หาที่ผิดแล้วเขียนใหม่ให้ถูกต้อง เพื่อให้ได้ผลลัพธ์ตามตัวอย่าง
 
 ```python
-PRINT("Welcome!")
-print("Today is Monday"
-print("Have a great day!)
-  print("Goodbye!")
+print("Morning Assembly")
+    print("07:50 at the field")
+print("Bring your hat")
 ```
 
-**Output ที่ต้องการ:**
-```
-Welcome!
-Today is Monday
-Have a great day!
-Goodbye!
+---
+
+## Input
+
+ไม่มี
+
+## Output
+
+ข้อความ 3 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Morning Assembly
+07:50 at the field
+Bring your hat
 ```
 
 ---
 
 ## 💡 Hint
 
-มองหา:
-1. ตัวพิมพ์ผิด
-2. วงเล็บ `)` ที่หายไป
-3. เครื่องหมาย `"` ที่หายไป
-4. Indentation ที่ไม่ควรมี
+บรรทัดธรรมดาต้องเริ่มชิดซ้ายสุดเสมอ ช่องว่างข้างหน้ามีความหมายพิเศษใน Python
 
 ---
 
 ## Starter Code
 
 ```python
-PRINT("Welcome!")
-print("Today is Monday"
-print("Have a great day!)
-  print("Goodbye!")
+# เขียนโค้ดที่ถูกต้องตรงนี้
 ```

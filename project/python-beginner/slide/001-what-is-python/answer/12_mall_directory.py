@@ -1,0 +1,7 @@
+print("MALL DIRECTORY")
+print("==============================")
+print("Floor 4    Cinema")
+print("Floor 3    Bookstore")
+print("Floor 2    Fashion")
+print("Floor 1    Supermarket")
+print("Floor B    Parking")

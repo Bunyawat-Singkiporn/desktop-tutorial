@@ -1,0 +1,6 @@
+print("CONTENTS")
+print("1. Basic")
+print("   1.1 print")
+print("   1.2 comment")
+print("2. Variables")
+print("   2.1 naming")

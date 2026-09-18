@@ -1,38 +1,42 @@
-# 🏪 Practice: What is Python — Question 3: Shop Sign
+# 🧹 รู้จัก Python — ข้อ 3: ตารางเวรทำความสะอาด
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-แสดงป้ายร้านค้าตามรูปแบบนี้ **ทุกตัวอักษรต้องตรงกัน:**
+ห้องเรียนแบ่งเวรทำความสะอาดไว้ 3 วัน
 
-```
-********************
-*   BEST BAKERY   *
-********************
-Open : 7am - 8pm
-Tel  : 099-999-9999
-********************
-```
+เขียนโปรแกรมแสดงตารางเวร โดยมีหัวเรื่องข้างบน แล้วตามด้วยรายชื่อวันละบรรทัด
 
 ---
 
-## 💡 Hint
+## Input
 
-- ใช้ `print()` 6 ครั้ง
-- นับ `*` และ space ให้ถูกต้อง
+ไม่มี (โปรแกรมนี้ไม่รับค่าจากผู้ใช้)
+
+## Output
+
+หัวเรื่อง 1 บรรทัด และรายการเวร 3 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Cleaning Duty
+Monday - Mint
+Tuesday - Beam
+Wednesday - Ploy
+```
 
 ---
 
 ## Starter Code
 
 ```python
-# Print top border
-# Print shop name
-# Print middle border
-# Print hours
-# Print phone
-# Print bottom border
+# เขียนโค้ดตรงนี้
 ```

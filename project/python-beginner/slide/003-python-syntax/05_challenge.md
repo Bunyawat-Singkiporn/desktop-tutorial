@@ -1,49 +1,60 @@
-# 🔥 Practice: Syntax — Question 4: Fix the Diary
+# 🔥 กฎการเขียน Python — ข้อ 12: กู้ไดอารี่ทั้งไฟล์
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-โค้ดด้านล่างมีข้อผิดพลาด **5 จุด ใน 5 ประเภทที่ต่างกัน** แก้ให้ครบทุกจุด
+ไฟล์ไดอารี่นี้ผิดกฎกระจายอยู่ 5 จุด
 
 ```python
-Print("==========")
-  print("MY DIARY")
-PRINT("==========")
-print("Date: Monday"
-print("Mood: Happy!)
+print("=====================")
+  Print("   MY CODE DIARY")
+print("=====================)
+print("Day 1  learn print")
+   print("Day 2  learn rules"
+PRINT("=====================")
 ```
 
-**Output ที่ต้องการ:**
-```
-==========
-MY DIARY
-==========
-Date: Monday
-Mood: Happy!
+เขียนใหม่ให้ถูกกฎทั้งหมด
+
+---
+
+## Input
+
+ไม่มี
+
+## Output
+
+ไดอารี่ในกรอบ 6 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+=====================
+   MY CODE DIARY
+=====================
+Day 1  learn print
+Day 2  learn rules
+=====================
 ```
 
 ---
 
 ## 💡 Hint
 
-มองหา Error แต่ละประเภท:
-1. `NameError` (P ใหญ่)
-2. `IndentationError` (space นำหน้า)
-3. `NameError` (ตัวใหญ่ทั้งหมด)
-4. `SyntaxError` (`)` ขาด)
-5. `SyntaxError` (`"` ปิดขาด)
+แก้ทีละบรรทัดแล้วรันใหม่ทุกครั้ง อย่าแก้รวดเดียว 5 จุด
+ถ้าพลาดจะไม่รู้ว่าพลาดตรงไหน
 
 ---
 
 ## Starter Code
 
 ```python
-Print("==========")
-  print("MY DIARY")
-PRINT("==========")
-print("Date: Monday"
-print("Mood: Happy!)
+# เขียนโค้ดตรงนี้
 ```

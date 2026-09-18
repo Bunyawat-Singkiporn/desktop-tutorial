@@ -143,17 +143,39 @@ def chapter_num(folder):
     return int(m.group(1)) if m else 999
 
 
+# ตรวจบน "โค้ดจริง" เท่านั้น -> ต้องลบข้อความในเครื่องหมายคำพูดและคอมเมนต์ออกก่อน
+# ไม่งั้น print("==========") จะถูกมองว่าใช้ตัวดำเนินการเปรียบเทียบ
+STR_LIT = re.compile(r'([fFrRbB]{0,2})("""|\'\'\'|"|\')(.*?)(\2)', re.S)
+# feature เหล่านี้ต้องดูจากตัวข้อความจริง ไม่ใช่โค้ดที่ลบข้อความออกแล้ว
+LITERAL_FEATS = {"f-string", ":.2f"}
+
+
+def strip_strings(code):
+    """แทนข้อความในเครื่องหมายคำพูดด้วยช่องว่าง แต่เก็บส่วนที่อยู่ใน {} ของ f-string ไว้"""
+    def repl(m):
+        prefix, quote, body = m.group(1), m.group(2), m.group(3)
+        keep = ""
+        if "f" in prefix.lower():
+            keep = " ".join(re.findall(r"\{([^{}]*)\}", body))
+        return prefix + quote + keep + quote
+    out = STR_LIT.sub(repl, code)
+    out = re.sub(r"#.*", "", out)          # ตัดคอมเมนต์
+    return out
+
+
 def scope_violations(code, chnum):
     bad = []
+    stripped = strip_strings(code)
     for feat, pat in PATTERNS:
-        if re.search(pat, code, re.M):
+        target = code if feat in LITERAL_FEATS else stripped
+        if re.search(pat, target, re.M):
             need = FIRST_TAUGHT.get(feat)
             if need and chnum < need:
                 bad.append(f"{feat} (สอนบท {need:03d})")
     for pat, name in NEVER_TAUGHT:
-        if name and re.search(pat, code, re.M):
+        if name and re.search(pat, stripped, re.M):
             bad.append(f"{name} (ไม่เคยสอนในหลักสูตร)")
-    if re.search(r"\bwhile\s+True\b", code) and chnum < 20:
+    if re.search(r"\bwhile\s+True\b", stripped) and chnum < 20:
         bad.append("while True (สอนบท 020)")
     return bad
 
@@ -176,9 +198,9 @@ def parse_problem(path):
     m = re.search(r"\*\*Output:\*\*\s*\n+```text\n(.*?)```", src, re.S)
     if m:
         out["output"] = m.group(1)
-    blocks = CODE_FENCE.findall(src)
-    if blocks:
-        out["starter"] = blocks[-1]
+    m = re.search(r"##\s*Starter Code\s*\n+```(?:python)?\n(.*?)```", src, re.S)
+    if m:
+        out["starter"] = m.group(1)
     out["raw"] = src
     return out
 

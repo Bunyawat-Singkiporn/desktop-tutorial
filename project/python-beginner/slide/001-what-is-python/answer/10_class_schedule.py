@@ -1,0 +1,7 @@
+print("MONDAY SCHEDULE")
+print("No   Time          Subject")
+print("--   -----------   ---------")
+print("1    08:30-09:20   Math")
+print("2    09:30-10:20   English")
+print("3    10:30-11:20   Science")
+print("4    13:00-13:50   Computer")

@@ -1,41 +1,51 @@
-# 🔧 Practice: Environment — Question 2: Fix Three Errors
+# 🔠 รันโปรแกรมและอ่าน Error — ข้อ 2: พิมพ์ชื่อคำสั่งผิด
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-โค้ดด้านล่างมีข้อผิดพลาด **3 จุด** แก้ให้รันได้และแสดงผลถูกต้อง
+โปรแกรมนี้ขึ้น `NameError: name 'Print' is not defined`
+
+> โค้ดข้างล่างนี้ **รันไม่ได้** หาที่ผิดแล้วเขียนใหม่ให้ถูกต้อง เพื่อให้ได้ผลลัพธ์ตามตัวอย่าง
 
 ```python
-Print("Line 1: Hello")
-print("Line 2: World"
-print(Line 3: Done")
+Print("Science Fair")
+print("Hall A")
 ```
 
-**Output ที่ต้องการ:**
-```
-Line 1: Hello
-Line 2: World
-Line 3: Done
+---
+
+## Input
+
+ไม่มี
+
+## Output
+
+ข้อความ 2 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Science Fair
+Hall A
 ```
 
 ---
 
 ## 💡 Hint
 
-มองหา:
-1. ตัวพิมพ์ผิด (P ใหญ่)
-2. วงเล็บไม่ปิด
-3. เครื่องหมาย `"` ขาด
+`NameError` แปลว่า Python ไม่รู้จักชื่อนี้ — Python แยกตัวพิมพ์เล็กกับตัวพิมพ์ใหญ่เป็นคนละตัว
 
 ---
 
 ## Starter Code
 
 ```python
-Print("Line 1: Hello")
-print("Line 2: World"
-print(Line 3: Done")
+# เขียนโค้ดที่ถูกต้องตรงนี้
 ```

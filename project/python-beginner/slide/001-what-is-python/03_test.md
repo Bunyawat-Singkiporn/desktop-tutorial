@@ -1,40 +1,42 @@
-# 🪪 Practice: What is Python — Question 2: Name Card
+# 🪪 รู้จัก Python — ข้อ 2: การ์ดแนะนำตัว
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-แสดงการ์ดแนะนำตัวแบบนี้ (แทน Alex / 12 / Drawing ด้วยข้อมูลของตัวเอง):
+ในคาบแรกครูให้ทุกคนทำการ์ดแนะนำตัวด้วย Python
 
-```
-========================
-       NAME CARD
-========================
-Name  : Alex
-Age   : 12
-Hobby : Drawing
-========================
-```
+เขียนโปรแกรมแสดงข้อมูลของตัวเอง 3 บรรทัด โดยแต่ละบรรทัดมีป้ายกำกับนำหน้า
+(ใช้ข้อมูลตามตัวอย่างก่อน แล้วค่อยเปลี่ยนเป็นของตัวเอง)
 
 ---
 
-## 💡 Hint
+## Input
 
-- ใช้ `print()` 7 ครั้ง
-- ระวังเรื่อง space และ `:` ให้ตรงกัน
+ไม่มี (โปรแกรมนี้ไม่รับค่าจากผู้ใช้)
+
+## Output
+
+ข้อมูล 3 บรรทัด แต่ละบรรทัดขึ้นต้นด้วยป้ายกำกับ
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Name: Mint
+Class: M1/2
+Hobby: Drawing
+```
 
 ---
 
 ## Starter Code
 
 ```python
-# Print the top border
-# Print title
-# Print middle border
-# Print name
-# Print age
-# Print hobby
-# Print bottom border
+# เขียนโค้ดตรงนี้
 ```

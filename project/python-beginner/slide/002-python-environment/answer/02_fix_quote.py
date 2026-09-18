@@ -1,5 +1,2 @@
-# โจทย์: แก้โค้ดที่มี Error 1 จุด
-# ข้อผิดพลาด: ขาดเครื่องหมาย " ปิดหลัง Good morning!
-
-# ✅ โค้ดที่ถูกต้อง
-print("Good morning!")
+print("Photo Club")
+print("Meeting on Friday")

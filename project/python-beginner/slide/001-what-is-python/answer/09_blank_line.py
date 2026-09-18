@@ -1,0 +1,5 @@
+print("LIBRARY NOTICE")
+print("Open 08:00 - 17:00")
+print()
+print("BOOK RETURN")
+print("Return books within 7 days")

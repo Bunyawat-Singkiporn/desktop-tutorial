@@ -1,4 +1,4 @@
-# Practice: Environment — Medium A: จับคู่ Error
+# 🐛 รันโปรแกรมและอ่าน Error — ข้อ 6: ผิด 2 จุดในโปรแกรมเดียว
 
 **Difficulty:** 🟡 Medium
 
@@ -6,32 +6,49 @@
 
 ## โจทย์
 
-เขียนคำตอบเป็นข้อความ (print) ตามตาราง — แต่ละบรรทัดเป็นชนิด Error ที่ถูกต้อง
+โปรแกรมนี้แก้ที่เดียวยังไม่พอ รันแล้วเจอ error ซ้ำอีกรอบ
 
-| สาเหตุ | Error |
-|--------|-------|
-| พิมพ์ `Print` ตัวใหญ่ | NameError |
-| ลืมปิด `)` | SyntaxError |
-| มี space นำหน้าโดยไม่จำเป็น | IndentationError |
+> โค้ดข้างล่างนี้ **รันไม่ได้** หาที่ผิดแล้วเขียนใหม่ให้ถูกต้อง เพื่อให้ได้ผลลัพธ์ตามตัวอย่าง
+
+```python
+print("Canteen Menu")
+Print("Rice with chicken  40")
+print("Noodle soup  35)
+```
+
+---
+
+## Input
+
+ไม่มี
+
+## Output
+
+เมนู 3 บรรทัด
+
+---
+
+## ตัวอย่าง
 
 **Output:**
-```
-NameError
-SyntaxError
-IndentationError
-```
 
+```text
+Canteen Menu
+Rice with chicken  40
+Noodle soup  35
+```
 
 ---
 
 ## 💡 Hint
 
-แค่ print ชื่อ Error ตามลำดับตาราง
+Python รายงาน error ทีละอัน แก้อันแรกแล้วรันใหม่จะเจออันที่สอง
+อย่าเพิ่งท้อ ให้ไล่แก้ทีละรอบจนกว่าจะรันผ่าน
 
 ---
 
 ## Starter Code
 
 ```python
-# พิมพ์ชื่อ Error ตามลำดับ
+# เขียนโค้ดที่ถูกต้องตรงนี้
 ```

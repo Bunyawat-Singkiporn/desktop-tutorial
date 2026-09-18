@@ -1,4 +1,4 @@
-# 🔧 Practice: Environment — Question 1: Fix the Error
+# 🔍 รันโปรแกรมและอ่าน Error — ข้อ 1: ลืมปิดเครื่องหมายคำพูด
 
 **Difficulty:** 🟢 Easy
 
@@ -6,27 +6,46 @@
 
 ## โจทย์
 
-โค้ดด้านล่างมีข้อผิดพลาด **1 จุด** แก้ให้รันได้ถูกต้อง
+ป้ายประกาศของชมรมถ่ายภาพรันไม่ออก ขึ้น `SyntaxError`
+
+> โค้ดข้างล่างนี้ **รันไม่ได้** หาที่ผิดแล้วเขียนใหม่ให้ถูกต้อง เพื่อให้ได้ผลลัพธ์ตามตัวอย่าง
 
 ```python
-print("Good morning!
+print("Photo Club)
+print("Meeting on Friday")
 ```
 
-**Output ที่ต้องการ:**
-```
-Good morning!
+---
+
+## Input
+
+ไม่มี
+
+## Output
+
+ข้อความ 2 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Photo Club
+Meeting on Friday
 ```
 
 ---
 
 ## 💡 Hint
 
-ดูที่เครื่องหมาย `"` — มีอะไรขาดหายไปไหม?
+`SyntaxError` มักเกิดจากของที่ต้องมาเป็นคู่แล้วมาไม่ครบ ลองไล่นับดูทีละบรรทัด
 
 ---
 
 ## Starter Code
 
 ```python
-print("Good morning!
+# เขียนโค้ดที่ถูกต้องตรงนี้
 ```

@@ -1,38 +1,53 @@
-# 📐 Practice: Syntax — Question 2: Fix the Indentation
+# 🔡 กฎการเขียน Python — ข้อ 2: คำสั่งต้องตัวพิมพ์เล็กเสมอ
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-โค้ดด้านล่างมี IndentationError แก้ให้แสดงผลถูกต้อง
+โค้ดนี้ผิดกฎข้อที่ 1 ทุกบรรทัดเลย
 
 ```python
-  print("First line")
-print("Second line")
-    print("Third line")
+PRINT("Swimming Pool")
+Print("Open 06:00 - 20:00")
+pRiNt("No running")
 ```
 
-**Output ที่ต้องการ:**
-```
-First line
-Second line
-Third line
+เขียนใหม่ให้ถูกกฎ
+
+---
+
+## Input
+
+ไม่มี
+
+## Output
+
+ข้อความ 3 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Swimming Pool
+Open 06:00 - 20:00
+No running
 ```
 
 ---
 
 ## 💡 Hint
 
-โค้ดปกติ (ที่ไม่อยู่ใน if/for) **ต้องไม่มี space** นำหน้า
+Python มองว่า `print` `Print` `PRINT` เป็นคนละคำกันหมด และรู้จักแค่แบบเดียว
 
 ---
 
 ## Starter Code
 
 ```python
-  print("First line")
-print("Second line")
-    print("Third line")
+# เขียนโค้ดตรงนี้
 ```
