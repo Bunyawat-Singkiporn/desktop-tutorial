@@ -2,11 +2,21 @@ age = int(input())
 day = input()
 
 if age >= 60:
-    price = 50
+    base_price = 50
 else:
-    price = 100
+    base_price = 100
 
 if day == "weekend":
-    price = price + 20
+    weekend_fee = 20
+else:
+    weekend_fee = 0
 
-print(price)
+total = base_price + weekend_fee
+
+print("========================")
+print("        TICKET")
+print("========================")
+print(f"Base Price : {base_price}")
+print(f"Weekend Fee: {weekend_fee}")
+print(f"Total      : {total}")
+print("========================")
