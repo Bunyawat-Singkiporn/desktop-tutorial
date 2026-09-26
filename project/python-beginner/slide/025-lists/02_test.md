@@ -1,4 +1,4 @@
-# 🏫 Practice Lists — Question 1: Class Roll Call
+# 📋 Lists — ข้อ 2: ป้ายชั้นเรียนหน้า-หลัง
 
 **Difficulty:** 🟢 Easy
 
@@ -6,29 +6,40 @@
 
 ## โจทย์
 
-กำหนดรายชื่อนักเรียน 3 คน แล้วแสดงชื่อแรกและชื่อสุดท้าย
+ครูอยากโชว์ชื่อนักเรียนคนแรกและคนสุดท้ายในแถวบนจอ
 
-```python
-students = ["Alice", "Bob", "Charlie"]
-```
+กำหนด `students = ["Ann", "Ben", "Cara", "Dan"]`
 
-| Output |
-|--------|
-| `Alice` |
-| `Charlie` |
+แสดงชื่อคนแรกบรรทัดหนึ่ง และคนสุดท้ายอีกบรรทัด
 
 ---
 
-## 💡 Hint
+## Input
 
-ใช้ index `[0]` สำหรับตัวแรก และ `[-1]` สำหรับตัวสุดท้าย
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+ชื่อ 2 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Ann
+Dan
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-students = ["Alice", "Bob", "Charlie"]
+students = ["Ann", "Ben", "Cara", "Dan"]
 
-# Write your code here
+# เขียนโค้ดตรงนี้
 ```

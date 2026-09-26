@@ -1,5 +1,0 @@
-item = input()
-price = int(input())
-qty = int(input())
-print(f"{item} x{qty}")
-print(f"Total: {price * qty}")

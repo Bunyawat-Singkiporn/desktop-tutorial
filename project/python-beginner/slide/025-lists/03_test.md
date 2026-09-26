@@ -1,4 +1,4 @@
-# 🔢 Practice Lists — Question 2: Print All Scores
+# 📋 Lists — ข้อ 3: เมนูของว่างสามอย่าง
 
 **Difficulty:** 🟢 Easy
 
@@ -6,33 +6,41 @@
 
 ## โจทย์
 
-กำหนดคะแนน 5 คน แสดงคะแนนทุกตัวด้วย for loop
+ร้านของว่างติดป้ายเมนูสั้นๆ บนจอ
 
-```python
-scores = [85, 92, 78, 90, 88]
-```
+กำหนด `snacks = ["Cookie", "Chips", "Jelly"]`
 
-**Output:**
-```
-85
-92
-78
-90
-88
-```
+วนพิมพ์ชื่อของว่างทีละบรรทัด
 
 ---
 
-## 💡 Hint
+## Input
 
-ใช้ `for score in scores:` เพื่อวนผ่านทุกค่า
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+ชื่อของว่าง 3 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Cookie
+Chips
+Jelly
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-scores = [85, 92, 78, 90, 88]
+snacks = ["Cookie", "Chips", "Jelly"]
 
-# Write your code here
+# เขียนโค้ดตรงนี้
 ```

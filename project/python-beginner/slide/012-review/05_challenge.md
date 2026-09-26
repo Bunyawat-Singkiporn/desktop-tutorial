@@ -1,64 +1,55 @@
-# 🔥 Practice: Review — Question 4: Full Receipt
+# 📝 Review — ข้อ 5: โปรแกรมครบสูตร
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-รับข้อมูลสินค้าและแสดงใบเสร็จสมบูรณ์พร้อมภาษี
+รับชื่อและราคา คิด VAT *1.07 แสดงชื่อและราคารวมทศนิยม 2 ตำแหน่ง
+
+---
+
+## Input
+
+ดูตัวอย่าง
+
+## Output
+
+2 บรรทัด
+
+---
+
+## ตัวอย่าง
 
 **Input:**
-```
-Sam
-T-Shirt
-299.0
-3
-10
-```
 
-> (ชื่อลูกค้า, ชื่อสินค้า, ราคาต่อชิ้น, จำนวน, ส่วนลด%)
+```text
+Bee
+100
+```
 
 **Output:**
+
+```text
+Customer: Bee
+Pay: 107.00
 ```
-================================
-          FASHION STORE
-================================
-Customer : Sam
-Item     : T-Shirt
-Price    : 299.00 baht
-Qty      : 3
---------------------------------
-Subtotal : 897.00 baht
-Discount : 89.70 baht (10%)
-Total    : 807.30 baht
-================================
-Thank you, Sam! See you again.
-```
+
 
 ---
 
 ## 💡 Hint
 
-1. subtotal = price × qty
-2. discount_amount = subtotal × (discount_percent / 100)
-3. total = subtotal - discount_amount
+input → คูณ 1.07 → แสดง
 
 ---
 
 ## Starter Code
 
 ```python
-customer_name = input()
-item_name = input()
+name = input()
 price = float(input())
-qty = int(input())
-discount_percent = int(input())
 
-# Calculate values
-subtotal = 
-discount_amount = 
-total = 
-
-# Print full receipt
+# คิดเงิน
 ```

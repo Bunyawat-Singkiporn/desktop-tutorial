@@ -1,61 +1,56 @@
-# 🔥 Practice: Comments — Question 4: Commented Receipt
+# 📻 Comments — ข้อ 12: บอร์ดเพลย์ลิสต์วิทยุ
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-เขียนโปรแกรมแสดงใบเสร็จด้านล่าง โดย **ทุก print() ต้องมี comment** อธิบายว่าแสดงอะไร (อย่างน้อย 8 comment)
+ชมรมวิทยุโรงเรียนติดบอร์ดเพลย์ลิสต์ประจำวัน
+โปรแกรมนี้ยาวขึ้น ต้องมีครบทั้ง header comment, comment แบ่งส่วน, และ comment ท้ายบรรทัด
+
+เขียนโปรแกรมแสดงบอร์ดตามตัวอย่าง และจัด comment ให้ครบ 3 แบบนี้ในไฟล์เดียว
+
+---
+
+## Input
+
+ไม่มี (โปรแกรมนี้ไม่รับค่าจากผู้ใช้)
+
+## Output
+
+ดูตัวอย่าง
+
+---
+
+## ตัวอย่าง
 
 **Output:**
-```
-==============================
-         SUPER MART
-==============================
-Item 1: Apple Juice     25 baht
-Item 2: Bread           40 baht
-Item 3: Milk            55 baht
-------------------------------
-Subtotal:              120 baht
-Discount (10%):         12 baht
-Total:                 108 baht
-==============================
-Thank you for shopping!
+
+```text
+========================
+   RADIO PLAYLIST
+========================
+Morning Slot
+1. Sunrise Run
+2. Cheer Up Beat
+Afternoon Slot
+3. Study Soft
+4. Campus Walk
+DJ note: requests at booth
+========================
 ```
 
 ---
 
 ## 💡 Hint
 
-Comment ตัวอย่าง:
-```python
-# กรอบบนสุดของใบเสร็จ
-print("==============================")
-# ชื่อร้าน
-print("         SUPER MART")
-```
+วางโครงก่อน: หัวโปรแกรม → ส่วนเช้า → ส่วนบ่าย → หมายเหตุ DJ
 
 ---
 
 ## Starter Code
 
 ```python
-# กรอบบนสุด
-
-# ชื่อร้าน
-
-# กรอบกลาง
-
-# รายการสินค้า
-
-# เส้นคั่น
-
-# ยอดรวม
-
-# ส่วนลด
-
-# ยอดสุทธิ
-
-# ข้อความขอบคุณ
+# เขียนโค้ดตรงนี้
 ```

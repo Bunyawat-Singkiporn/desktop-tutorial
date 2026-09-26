@@ -1,0 +1,5 @@
+athlete = ("Beam", 16, "Swim", 3)
+print(f"Name  : {athlete[0]}")
+print(f"Age   : {athlete[1]}")
+print(f"Sport : {athlete[2]}")
+print(f"Medals: {athlete[3]}")

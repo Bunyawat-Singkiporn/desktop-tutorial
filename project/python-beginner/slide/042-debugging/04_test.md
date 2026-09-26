@@ -1,39 +1,59 @@
-# 🧩 Debugging — Question 3: Fix Logic Error
+# 🐛 Debugging — ข้อ 4: แก้ index เกิน
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-โค้ดรันได้แต่ผลลัพธ์ **ผิด** — หา Logic Error และแก้
+อ่านสมาชิกใน list แต่ต้องไม่เกินขอบ
 
-```python
-# โปรแกรมหาผลรวม 1 ถึง 5
-total = 0
-for i in range(1, 5):
-    total = i        # ← Logic error!
+**เงื่อนไข:**
 
-print("Sum:", total)
-# Expected: Sum: 15
-# Got: Sum: 4
+- มี `nums = [10, 20, 30]`
+- รับ index เป็นจำนวนเต็ม
+- ถ้า index อยู่ระหว่าง 0 ถึง len-1 พิมพ์ค่า ไม่งั้นพิมพ์ `Out of range`
+
+---
+
+## Input
+
+ดูตัวอย่าง
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Input:**
+
+```text
+5
 ```
+
+**Output:**
+
+```text
+Out of range
+```
+
 
 ---
 
 ## 💡 Hint
 
-ต้องการ **สะสม** ค่า ไม่ใช่ **ทับ** ค่า
+เทียบกับ len(nums)
 
 ---
 
 ## Starter Code
 
 ```python
-total = 0
-for i in range(1, 5):
-    total = i   # แก้บรรทัดนี้
+nums = [10, 20, 30]
+index = int(input())
 
-# แก้ range ให้ถูกต้องด้วย
-print("Sum:", total)
+# เช็กขอบเขตก่อน
 ```

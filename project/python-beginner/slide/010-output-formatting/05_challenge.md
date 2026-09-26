@@ -1,55 +1,50 @@
-# 🔥 Practice: Output Formatting — Question 4: Shopping Receipt
+# 🖨️ Output Formatting — ข้อ 5: ใบเสร็จจัดคอลัมน์
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-รับข้อมูลลูกค้าและสินค้า แล้วแสดงใบเสร็จสวยงาม
+item = "Book", price = 199.5 แสดงกรอบสั้นตามตัวอย่าง
 
-**Input:**
-```
-Alice
-Headphones
-899.0
-2
-```
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+ใบเสร็จ
+
+---
+
+## ตัวอย่าง
 
 **Output:**
+
+```text
+================
+Item : Book
+Price: 199.50
+================
 ```
-==============================
-         TECH STORE
-==============================
-Customer : Alice
-Item     : Headphones
-Price    : 899.00 baht
-Quantity : 2
-------------------------------
-Total    : 1798.00 baht
-==============================
-Thank you, Alice!
-```
+
 
 ---
 
 ## 💡 Hint
 
-- Total = price × quantity
-- ใช้ `{value:.2f}` สำหรับตัวเลขทุกตัว
-- จัดแนวด้วย space ใน f-string
+ใช้ :.2f กับราคา
 
 ---
 
 ## Starter Code
 
 ```python
-customer_name = input()
-item_name = input()
-price = float(input())
-quantity = int(input())
+item = "Book"
+price = 199.5
 
-total = price * quantity
-
-# Print formatted receipt using f-string
+# ใบเสร็จ
 ```

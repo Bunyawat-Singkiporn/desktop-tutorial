@@ -1,4 +1,4 @@
-# ⌨️ Practice: Input — Question 1: Greeting
+# ⌨️ Input — ข้อ 1: ยินดีต้อนรับเข้าค่าย
 
 **Difficulty:** 🟢 Easy
 
@@ -6,31 +6,41 @@
 
 ## โจทย์
 
-รับชื่อจากผู้ใช้ แล้วพิมพ์ข้อความทักทาย
-
-**Input:**
-```
-Alice
-```
-
-**Output:**
-```
-Hello, Alice!
-```
+ค่ายวิทยาศาสตร์ต้องการข้อความต้อนรับหน้าประตู
+รับชื่อค่าย แล้วพิมพ์ข้อความต้อนรับ
 
 ---
 
-## 💡 Hint
+## Input
 
-- ใช้ `input()` รับชื่อ
-- ใช้ `print()` แสดงข้อความ + ชื่อ
+ชื่อค่าย 1 บรรทัด
+
+## Output
+
+ข้อความต้อนรับ 1 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Input:**
+
+```text
+Star Lab
+```
+
+**Output:**
+
+```text
+Welcome to Star Lab
+```
 
 ---
 
 ## Starter Code
 
 ```python
-name = input()
+camp = input()
 
-# Print the greeting
+# เขียนโค้ดตรงนี้
 ```

@@ -1,4 +1,4 @@
-# Practice: Naming Rules — Medium B: เลือกชื่อที่ถูก
+# 🚫 Naming Rules — ข้อ 7: หลีกเลี่ยง keyword
 
 **Difficulty:** 🟡 Medium
 
@@ -6,25 +6,46 @@
 
 ## โจทย์
 
-แสดงเฉพาะชื่อที่ถูกต้องตามกฎ (คนละบรรทัด) จากรายการนี้: `1score`, `my_score`, `my-score`, `total_price`
+โค้ดนี้ใช้คำสงวนเป็นชื่อตัวแปร จึงพัง
+
+```python
+# class = "Robot Club"   # ใช้ไม่ได้
+# print = "Board"        # ใช้ไม่ได้
+```
+
+เก็บชื่อชมรม `Robot Club` และสถานที่ `Board Room` ด้วยชื่อที่ไม่ใช่ keyword แล้วพิมพ์ตามตัวอย่าง
+
+---
+
+## Input
+
+ไม่มี (โปรแกรมนี้ไม่รับค่าจากผู้ใช้)
+
+## Output
+
+ดูตัวอย่าง
+
+---
+
+## ตัวอย่าง
 
 **Output:**
-```
-my_score
-total_price
-```
 
+```text
+Club: Robot Club
+Place: Board Room
+```
 
 ---
 
 ## 💡 Hint
 
-ห้ามขึ้นต้นด้วยตัวเลข ห้ามมี -
+เลือกคำที่บอกความหมายแทน เช่น `club_name` หรือ `meeting_place`
 
 ---
 
 ## Starter Code
 
 ```python
-# print เฉพาะชื่อที่ถูก
+# อย่าใช้ class / print / if เป็นชื่อตัวแปร
 ```

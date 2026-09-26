@@ -1,49 +1,54 @@
-# 🔥 Practice: Data Types — Question 4: Game Status
+# 🧬 Data Types — ข้อ 5: ใบเสร็จชนิดข้อมูล
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-สร้างโปรแกรมแสดงสถานะเกมโดยใช้ **ครบทั้ง 4 data types** และแสดง type ของแต่ละตัวแปรด้วย
+เก็บ `item = "Juice"`, `price = 25.5`, `qty = 2`, `paid = True` แล้วแสดงค่าและ type ของ price กับ qty
 
-**ข้อมูลที่ต้องเก็บ:**
-| Variable | ค่า | Type |
-|----------|-----|------|
-| `player_name` | `"Hero"` | str |
-| `player_level` | `5` | int |
-| `player_hp` | `87.5` | float |
-| `is_boss_defeated` | `False` | bool |
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+ใบเสร็จ
+
+---
+
+## ตัวอย่าง
 
 **Output:**
+
+```text
+Item: Juice
+Price: 25.5
+Price Type: <class 'float'>
+Qty: 2
+Qty Type: <class 'int'>
+Paid: True
 ```
-=== Game Status ===
-Player  : Hero       (str)
-Level   : 5          (int)
-HP      : 87.5       (float)
-Boss    : False      (bool)
-```
+
 
 ---
 
 ## 💡 Hint
 
-ใช้ `type(x).__name__` เพื่อได้แค่ชื่อ type เช่น `int` (ไม่มี `<class '...'>`)
-
-```python
-print(type(42).__name__)    # int
-```
+แสดงทั้งค่าและชนิดของตัวเลข
 
 ---
 
 ## Starter Code
 
 ```python
-player_name = "Hero"
-player_level = 5
-player_hp = 87.5
-is_boss_defeated = False
+item = "Juice"
+price = 25.5
+qty = 2
+paid = True
 
-# Print each with its type name
+# แสดงผล
 ```

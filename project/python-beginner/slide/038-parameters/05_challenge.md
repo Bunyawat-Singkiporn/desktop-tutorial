@@ -1,40 +1,50 @@
-# 🔥 Practice Parameters — Question 4: Calculator
+# 📥 Parameters — ข้อ 5: ตั๋วหนัง
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-สร้าง function `calculate(a, b, op)` ที่คำนวณและแสดงผลตาม operator
+ราคาตั๋วตามอายุ
 
-| op | ผล |
-|----|-----|
-| `"+"` | a + b |
-| `"-"` | a - b |
-| `"*"` | a * b |
-| `"/"` | a / b (ตรวจว่า b ≠ 0) |
+**เงื่อนไข:**
+
+- สร้าง `ticket(age)` ถ้า age < 12 พิมพ์ `Price: 80` ไม่งั้น `Price: 120`
+- เรียกกับ `10` และ `15`
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม / เรียกฟังก์ชันในโค้ด)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## ตัวอย่าง
 
 **Output:**
+
+```text
+Price: 80
+Price: 120
 ```
-3 + 5 = 8
-10 - 4 = 6
-6 * 7 = 42
-10 / 2 = 5.0
-10 / 0 = Cannot divide by zero
-```
+
+
+---
+
+## 💡 Hint
+
+เด็กต่ำกว่า 12 จ่ายถูกกว่า
 
 ---
 
 ## Starter Code
 
 ```python
-def calculate(a, b, op):
-    # Write your code here
-
-calculate(3, 5, "+")
-calculate(10, 4, "-")
-calculate(6, 7, "*")
-calculate(10, 2, "/")
-calculate(10, 0, "/")
+# ticket
 ```

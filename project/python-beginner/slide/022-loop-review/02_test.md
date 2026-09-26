@@ -1,4 +1,4 @@
-# 🔁 Practice: Loop Review — Question 1: Sum with for
+# 🔁 loop-review — ข้อ 2: รวมแต้มเกม
 
 **Difficulty:** 🟢 Easy
 
@@ -6,24 +6,35 @@
 
 ## โจทย์
 
-รับ n แล้วรวมตัวเลขตั้งแต่ 1 ถึง n
+เกมให้แต้มรอบละเท่ากับหมายเลขรอบตั้งแต่ 1 ถึง `n`
+รับ `n` แล้วรวมแต้มทั้งหมดด้วย `for` และ `+=`
+
+---
+
+## Input
+
+จำนวนเต็ม n 1 บรรทัด
+
+## Output
+
+บรรทัดเดียว Total Points: <ผลรวม>
+
+---
+
+## ตัวอย่าง
 
 **Input:**
-```
+
+```text
 5
 ```
 
 **Output:**
+
+```text
+Total Points: 15
 ```
-Sum from 1 to 5 = 15
-```
 
----
-
-## 💡 Hint
-
-- ใช้ `for i in range(1, n+1):`
-- สะสมใน `total`
 
 ---
 
@@ -33,8 +44,5 @@ Sum from 1 to 5 = 15
 n = int(input())
 total = 0
 
-for i in range(1, n + 1):
-    # Add i to total
-
-# Print result
+# รวมแต้มแล้วพิมพ์
 ```

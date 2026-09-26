@@ -1,62 +1,59 @@
-# 🔥 Debugging — Question 4: Fix All Three
+# 🐛 Debugging — ข้อ 5: รายงานบั๊กสามชนิด
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-โค้ดด้านล่างมี **3 บัค** (Syntax + Runtime + Logic) — หาและแก้ทั้งหมด
+จำแนกประเภทบั๊กจากคำอธิบายสั้นๆ ที่กำหนดในโค้ด
 
-```python
-scores = [85, 72, 90, 68, 95]
-total = 0
+**เงื่อนไข:**
 
-for score in scores
-    total = score
+- มี list `labels = ["Syntax", "Runtime", "Logic"]`
+- รับหมายเลข 0/1/2 แล้วพิมพ์ป้ายนั้น
+- ถ้าไม่อยู่ในช่วงพิมพ์ `Unknown`
 
-average = total / 0    # ← ตรวจดี ๆ
+---
 
-if average >= 70:
-    print("Class passed)   # ← ตรวจดี ๆ
-else:
-    print("Class failed")
+## Input
 
-print("Average:", average)
+ดูตัวอย่าง
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Input:**
+
+```text
+1
 ```
 
-**Output ที่ถูกต้อง:**
+**Output:**
+
+```text
+Runtime
 ```
-Class passed
-Average: 82.0
-```
+
 
 ---
 
 ## 💡 Hint
 
-อ่านโค้ดทีละบรรทัด แล้วถามตัวเองว่า:
-1. บรรทัดไหนผิด grammar Python?
-2. บรรทัดไหนจะพังตอนรัน?
-3. บรรทัดไหน logic ผิด?
+เช็กช่วงก่อน index
 
 ---
 
 ## Starter Code
 
 ```python
-scores = [85, 72, 90, 68, 95]
-total = 0
+labels = ["Syntax", "Runtime", "Logic"]
+code = int(input())
 
-for score in scores
-    total = score
-
-average = total / 0
-
-if average >= 70:
-    print("Class passed)
-else:
-    print("Class failed")
-
-print("Average:", average)
+# เลือกป้าย
 ```

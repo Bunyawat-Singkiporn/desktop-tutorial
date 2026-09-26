@@ -1,4 +1,4 @@
-# Practice Dictionary — Question 7: อัปเดตคะแนนเกม
+# 🏋️ Dict Practice — ข้อ 8: อัปเดตคะแนนสอบ
 
 **Difficulty:** 🟢 Easy
 
@@ -6,32 +6,40 @@
 
 ## โจทย์
 
-คะแนนเกมเริ่มที่ 10 — ผู้เล่นได้คะแนนเพิ่ม ให้เปลี่ยนเป็น 25 แล้วแสดงผล
+แก้คะแนนสอบล่าสุด
 
-```python
-player = {"name": "Hero", "score": 10}
-```
+กำหนด `scores = {"Ann": 70, "Ben": 80}`
 
-**Output:**
-```
-Before: 10
-After: 25
-```
+แก้คะแนน Ann เป็น 85 แล้วพิมพ์ items
 
 ---
 
-## 💡 Hint
+## Input
 
-`player["score"] = 25`
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Ann: 85
+Ben: 80
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-player = {"name": "Hero", "score": 10}
+scores = {"Ann": 70, "Ben": 80}
 
-print(f"Before: {player['score']}")
-# อัปเดตคะแนนที่นี่
-print(f"After: {player['score']}")
+# เขียนโค้ดตรงนี้
 ```

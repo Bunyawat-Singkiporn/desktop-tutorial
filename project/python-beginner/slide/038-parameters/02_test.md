@@ -1,4 +1,4 @@
-# 👋 Practice Parameters — Question 1: Personalised Greet
+# 📥 Parameters — ข้อ 2: ทักทายชื่อเพื่อน
 
 **Difficulty:** 🟢 Easy
 
@@ -6,24 +6,39 @@
 
 ## โจทย์
 
-สร้าง function `greet(name)` แล้วเรียกด้วยชื่อ 3 คน
+แอปแชททักทายเพื่อน
+
+**เงื่อนไข:**
+
+- สร้าง `hi(name)` พิมพ์ `Hi, <name>!`
+- เรียกกับ `"Kate"` และ `"Leo"`
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม / เรียกฟังก์ชันในโค้ด)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## ตัวอย่าง
 
 **Output:**
+
+```text
+Hi, Kate!
+Hi, Leo!
 ```
-Hello, Alice!
-Hello, Bob!
-Hello, Charlie!
-```
+
 
 ---
 
 ## Starter Code
 
 ```python
-def greet(name):
-    # Write your code here
-
-greet("Alice")
-greet("Bob")
-greet("Charlie")
+# hi(name)
 ```

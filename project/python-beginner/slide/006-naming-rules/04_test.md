@@ -1,45 +1,39 @@
-# 🔄 Practice: Naming Rules — Question 3: Rewrite Bad Code
+# 🌡️ Naming Rules — ข้อ 3: อุณหภูมิห้องแล็บ
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-โค้ดด้านล่างทำงานได้ แต่ตั้งชื่อ variable แย่มาก — **เขียนใหม่ให้ชื่อถูกต้อง** โดย Output เหมือนเดิม
+เพื่อนตั้งชื่อตัวแปรว่า `2temp` ซึ่งผิดกฎ (ขึ้นต้นด้วยตัวเลขไม่ได้)
 
-```python
-a = "Laptop"
-b = 25000
-c = 3
-d = b * c
-
-print(a)
-print(b)
-print(c)
-print(d)
-```
-
-**Output:**
-```
-Laptop
-25000
-3
-75000
-```
+เก็บอุณหภูมิ 24 ในตัวแปรที่ขึ้นต้นด้วยตัวอักษร แล้วพิมพ์ตามตัวอย่าง
 
 ---
 
-## 💡 Hint
+## Input
 
-ตั้งชื่อที่บอกว่าเก็บอะไร เช่น `product_name`, `unit_price`, `quantity`, `total_price`
+ไม่มี (โปรแกรมนี้ไม่รับค่าจากผู้ใช้)
+
+## Output
+
+ดูตัวอย่าง
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Lab Temp: 24
+```
 
 ---
 
 ## Starter Code
 
 ```python
-# Rewrite with proper snake_case names
-product_name = "Laptop"
-# ... your code here
+# ห้ามขึ้นต้นชื่อด้วยตัวเลข
 ```

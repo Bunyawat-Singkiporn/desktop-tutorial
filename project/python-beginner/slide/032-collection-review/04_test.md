@@ -1,40 +1,44 @@
-# 📊 Practice Collection Review — Question 3: List + Set Mixed
+# 📚 Collection Review — ข้อ 4: เช็คสมาชิก set
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-ระบบเช็คชื่อ: ใช้ list เก็บรายชื่อที่เช็คมาแล้ว (อาจมีซ้ำ) และใช้ set ติดตามว่ามีใครมาแล้วบ้าง
+เช็คว่ามีแท็กนี้หรือไม่
 
-```python
-checkins = ["Alice", "Bob", "Alice", "Charlie", "Bob", "Alice"]
-```
+กำหนด `tags = {"food", "travel", "sport"}`
 
-**Output:**
-```
-Total check-ins: 6
-Unique students: 3
-Most check-ins: Alice (3 times)
-```
+เช็ค `"music"` แสดง `Yes` หรือ `No`
 
 ---
 
-## 💡 Hint
+## Input
 
-- ใช้ `set(checkins)` เพื่อหาชื่อไม่ซ้ำ
-- ใช้ `.count(name)` เพื่อนับจำนวนครั้ง
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+บรรทัดเดียว
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+No
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-checkins = ["Alice", "Bob", "Alice", "Charlie", "Bob", "Alice"]
+tags = {"food", "travel", "sport"}
 
-total = len(checkins)
-unique = set(checkins)
-
-# หาคนที่เช็คมาบ่อยที่สุด
+# เขียนโค้ดตรงนี้
 ```

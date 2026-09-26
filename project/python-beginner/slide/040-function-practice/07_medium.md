@@ -1,4 +1,4 @@
-# Practice Function — Question 6: ตั้งรหัสผ่านเกม
+# 🧩 Function Practice — ข้อ 7: กรองคะแนนผ่าน
 
 **Difficulty:** 🟡 Medium
 
@@ -6,54 +6,47 @@
 
 ## โจทย์
 
-ระบบสร้างบัญชีเกม: รหัสผ่านต้อง
-- ยาวอย่างน้อย 8 ตัว
-- มีตัวเลขอย่างน้อย 1 ตัว
+เก็บเฉพาะคะแนนที่ >= 60 เป็น list ใหม่
 
-สร้าง `is_strong(password)` return `True`/`False`  
-แล้วบอกผู้เล่นว่า `Strong password` หรือ `Weak password`
+**เงื่อนไข:**
+
+- สร้าง `get_passed(scores)` คืน list ที่ผ่าน
+- พิมพ์ผลของ `[50, 60, 75, 40, 90]`
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม / เรียกฟังก์ชันในโค้ด)
+
+## Output
+
+1 บรรทัด
 
 ---
 
 ## ตัวอย่าง
 
-**Input:**
-```
-hello123
-```
-
 **Output:**
-```
-Strong password
+
+```text
+[60, 75, 90]
 ```
 
-**Input:**
-```
-abc
-```
-
-**Output:**
-```
-Weak password
-```
 
 ---
 
 ## 💡 Hint
 
-`ch.isdigit()` ใช้เช็คว่าเป็นตัวเลข
+สร้าง list ว่างแล้ว append
 
 ---
 
 ## Starter Code
 
 ```python
-def is_strong(password):
-    # Write your code here
+def get_passed(scores):
+    # เขียนโค้ดตรงนี้
 
-password = input()
-if is_strong(password):
-    print("Strong password")
-else:
-    print("Weak password")
+print(get_passed([50, 60, 75, 40, 90]))
 ```

@@ -1,4 +1,4 @@
-# 🚫 Practice Review Lists — Question 1: Skip One
+# 🔁 Review Lists — ข้อ 2: หัวท้ายชั้นวาง
 
 **Difficulty:** 🟢 Easy
 
@@ -6,32 +6,41 @@
 
 ## โจทย์
 
-แสดงทุกรายการใน list **ยกเว้น** `"banana"`
+พนักงานอยากรู้ของชิ้นแรก ชิ้นสุดท้าย และจำนวนบนชั้น
 
-```python
-fruits = ["apple", "banana", "mango", "kiwi", "banana", "grape"]
-```
+กำหนด `shelf = ["Mug", "Plate", "Bowl", "Cup"]`
 
-**Output:**
-```
-apple
-mango
-kiwi
-grape
-```
+แสดงตามตัวอย่าง
 
 ---
 
-## 💡 Hint
+## Input
 
-ใช้ `if fruit != "banana":` ก่อน print
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+3 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+First: Mug
+Last : Cup
+Count: 4
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-fruits = ["apple", "banana", "mango", "kiwi", "banana", "grape"]
+shelf = ["Mug", "Plate", "Bowl", "Cup"]
 
-# Write your code here
+# เขียนโค้ดตรงนี้
 ```

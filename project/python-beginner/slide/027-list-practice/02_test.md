@@ -1,4 +1,4 @@
-# 🔍 Practice List — Question 1: Filter Big Numbers
+# 🏋️ List Practice — ข้อ 2: พิมพ์งานบ้านพร้อมเลข
 
 **Difficulty:** 🟢 Easy
 
@@ -6,32 +6,41 @@
 
 ## โจทย์
 
-กำหนดตัวเลข แสดงเฉพาะตัวที่ **มากกว่า 10**
+แม่บ้านอยากพิมพ์รายการงานพร้อมเลขที่
 
-```python
-numbers = [3, 15, 7, 22, 8, 30, 5, 18]
-```
+กำหนด `chores = ["Wash dishes", "Fold clothes", "Water plants"]`
 
-**Output:**
-```
-15
-22
-30
-18
-```
+ใช้ `for i in range(len(chores)):` แสดงแบบ `1) Wash dishes`
 
 ---
 
-## 💡 Hint
+## Input
 
-ใช้ `for` loop และ `if` เพื่อตรวจแต่ละค่า
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+3 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+1) Wash dishes
+2) Fold clothes
+3) Water plants
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-numbers = [3, 15, 7, 22, 8, 30, 5, 18]
+chores = ["Wash dishes", "Fold clothes", "Water plants"]
 
-# Write your code here
+# เขียนโค้ดตรงนี้
 ```

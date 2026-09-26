@@ -1,4 +1,4 @@
-# 👋 Practice Functions — Question 1: Greet
+# ⚙️ Functions — ข้อ 2: ป้ายร้านกาแฟ
 
 **Difficulty:** 🟢 Easy
 
@@ -6,34 +6,40 @@
 
 ## โจทย์
 
-สร้าง function `greet()` ที่แสดงข้อความต้อนรับ แล้วเรียกใช้ 3 ครั้ง
+ร้านกาแฟต้องการป้ายเปิดร้าน
 
-**Output:**
-```
-Hello! Welcome to Python class.
-Hello! Welcome to Python class.
-Hello! Welcome to Python class.
-```
+**เงื่อนไข:**
+
+- สร้าง `show_sign()` ที่พิมพ์ 3 บรรทัดตามตัวอย่าง
+- เรียกฟังก์ชัน 1 ครั้ง
 
 ---
 
-## 💡 Hint
+## Input
 
-```python
-def greet():
-    print(...)
+ไม่มี (กำหนดค่าในโปรแกรม / เรียกฟังก์ชันในโค้ด)
 
-greet()
-greet()
-greet()
+## Output
+
+3 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+==== COFFEE ====
+Open 7:00 - 18:00
+================
 ```
+
 
 ---
 
 ## Starter Code
 
 ```python
-# สร้าง function greet()
-
-# เรียก 3 ครั้ง
+# สร้าง show_sign() แล้วเรียก
 ```

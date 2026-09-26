@@ -1,59 +1,53 @@
-# 🔥 Practice List — Question 4: To-Do Manager
+# 🏋️ List Practice — ข้อ 5: รายงานงานบ้าน
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-สร้างโปรแกรม to-do ที่ผู้ใช้เลือกได้:
+พิมพ์รายงานงานบ้านพร้อมเลขที่และจำนวนงาน
 
-| คำสั่ง | ผล |
-|--------|-----|
-| `add` | เพิ่ม to-do ใหม่ |
-| `remove` | ลบ to-do ที่ระบุ |
-| `show` | แสดง to-do ทั้งหมด |
-| `exit` | จบโปรแกรม |
+กำหนด `chores = ["Cook", "Clean", "Shop"]`
+
+แสดงตามตัวอย่าง
 
 ---
 
-## ตัวอย่าง Session
+## Input
 
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+รายการ + สรุป
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+1. Cook
+2. Clean
+3. Shop
+Jobs: 3
 ```
-Command: add
-Item: Buy milk
-Command: add
-Item: Do laundry
-Command: show
-1. Buy milk
-2. Do laundry
-Command: remove
-Item: Buy milk
-Command: show
-1. Do laundry
-Command: exit
-Done!
-```
+
 
 ---
 
 ## 💡 Hint
 
-- ใช้ `while True:` และ `break` เพื่อออกจาก loop
-- ใช้ `if command == "add":` สำหรับแต่ละคำสั่ง
+ใช้ range(len) แล้วปิดท้ายด้วย len
 
 ---
 
 ## Starter Code
 
 ```python
-todos = []
+chores = ["Cook", "Clean", "Shop"]
 
-while True:
-    command = input("Command: ")
-    
-    if command == "exit":
-        print("Done!")
-        break
-    # Write your code here
+# เขียนโค้ดตรงนี้
 ```

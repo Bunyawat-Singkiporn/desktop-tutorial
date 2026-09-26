@@ -1,39 +1,40 @@
-# 🏷️ Practice: Output Formatting — Question 2: Product Label
+# 🖨️ Output Formatting — ข้อ 3: ราคาทศนิยม 2 ตำแหน่ง
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-รับชื่อสินค้าและราคา แล้วแสดงป้ายสินค้าด้วย f-string
-
-**Input:**
-```
-Notebook
-35.5
-```
-
-**Output:**
-```
-Product: Notebook
-Price: 35.50 baht
-```
+มี price = 12.5 แสดง Price: 12.50
 
 ---
 
-## 💡 Hint
+## Input
 
-- ใช้ `float(input())` สำหรับราคา
-- ใช้ `{price:.2f}` ใน f-string เพื่อแสดง 2 ตำแหน่งทศนิยม
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Price: 12.50
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-product_name = input()
-price = float(input())
+price = 12.5
 
-# Print using f-string
+# แสดงทศนิยม 2 ตำแหน่ง
 ```

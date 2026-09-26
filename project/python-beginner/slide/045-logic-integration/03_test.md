@@ -1,29 +1,46 @@
-# 📋 Logic Integration — Question 2: List + Function
+# 🧠 Logic Integration — ข้อ 3: พิมพ์เฉพาะคะแนนผ่าน
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-สร้าง function `summarize(scores)` ที่แสดงสรุป: min, max, average
+มีคะแนนใน list พิมพ์เฉพาะที่ >= 50
+
+**เงื่อนไข:**
+
+- `scores = [40, 55, 70, 30]`
+- พิมพ์ค่าที่ผ่านทีละบรรทัด
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## ตัวอย่าง
 
 **Output:**
+
+```text
+55
+70
 ```
-Min: 45
-Max: 95
-Average: 77.0
-```
+
 
 ---
 
 ## Starter Code
 
 ```python
-def summarize(scores):
-    # หา min โดยไม่ใช้ min()
-    # หา max โดยไม่ใช้ max()
-    # คำนวณ average
-    # Write your code here
+scores = [40, 55, 70, 30]
 
-summarize([85, 45, 92, 68, 95])
+# พิมพ์เฉพาะที่ผ่าน
+```

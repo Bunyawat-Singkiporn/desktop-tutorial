@@ -1,42 +1,44 @@
-# ❓ Practice Dictionary — Question 2: Quiz Checker
+# 🏋️ Dict Practice — ข้อ 3: เพิ่มเบอร์โทร
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-กำหนดเฉลยข้อสอบ 3 ข้อ รับคำตอบจากผู้ใช้ แสดงคะแนน
+โปรไฟล์ยังไม่มีเบอร์
 
-```python
-answers = {"q1": "A", "q2": "C", "q3": "B"}
-```
+กำหนด `user = {"name": "Ben", "city": "Bangkok"}`
 
-**ตัวอย่าง Session:**
-```
-q1: A
-q2: B
-q3: B
-Score: 2/3
-```
+เพิ่ม `phone` เป็น `081-222-3333` แล้วแสดงเบอร์
 
 ---
 
-## 💡 Hint
+## Input
 
-Loop ผ่าน `answers.items()` รับ input สำหรับแต่ละข้อ นับถ้าตรง
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+บรรทัดเดียว
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Phone: 081-222-3333
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-answers = {"q1": "A", "q2": "C", "q3": "B"}
-score = 0
+user = {"name": "Ben", "city": "Bangkok"}
 
-for question, correct in answers.items():
-    user = input(f"{question}: ")
-    # Write your code here
-
-print(f"Score: {score}/3")
+# เขียนโค้ดตรงนี้
 ```

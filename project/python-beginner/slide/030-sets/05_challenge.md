@@ -1,43 +1,50 @@
-# 🔥 Practice Sets — Question 4: Class Roster
+# 🔤 Sets — ข้อ 5: บัตรเข้างานพร้อมเช็ค
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-มีชื่อนักเรียนจาก 2 ห้อง (มีชื่อซ้ำข้ามห้อง) แสดง:
-1. จำนวนนักเรียนทั้งหมด (ไม่ซ้ำ)
-2. ชื่อที่อยู่ในทั้งสองห้อง
+ระบบสแกนบัตรเข้างาน
 
-```python
-room_a = ["Alice", "Bob", "Charlie", "Diana"]
-room_b = ["Bob", "Eve", "Charlie", "Frank"]
+กำหนด `badges = {"E01", "E02", "E03"}`
+
+เช็ค `"E04"` ถ้ามีแสดง `Welcome` ไม่มีแสดง `Denied`
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+บรรทัดเดียว
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Denied
 ```
 
-**Output** (ลำดับอาจต่างกัน):
-```
-Total unique students: 6
-In both rooms: {'Bob', 'Charlie'}
-```
 
 ---
 
 ## 💡 Hint
 
-- แปลง list เป็น set ก่อน
-- ใช้ `|` และ `&` และ `-` (difference)
+กรณีไม่พบก็ต้องมี else
 
 ---
 
 ## Starter Code
 
 ```python
-room_a = ["Alice", "Bob", "Charlie", "Diana"]
-room_b = ["Bob", "Eve", "Charlie", "Frank"]
+badges = {"E01", "E02", "E03"}
 
-set_a = set(room_a)
-set_b = set(room_b)
-
-# Write your code here
+# เขียนโค้ดตรงนี้
 ```

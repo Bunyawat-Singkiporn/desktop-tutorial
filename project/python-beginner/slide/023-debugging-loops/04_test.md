@@ -1,53 +1,49 @@
-# 🐛 Practice: Debugging Loops — Question 3: Fix Three Bugs
+# 🐛 debugging-loops — ข้อ 4: แก้ indent ใบเสร็จ
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-โค้ดด้านล่างมี **3 bugs** แก้ให้แสดงผลถูกต้อง
+ต้องการพิมพ์รายการสินค้า 3 ชิ้นในลูป แต่ `print` อยู่นอกลูป
+จัด indent ให้พิมพ์ครบ
 
-```python
-names = ["Alice", "Bob", "Charlie"]
+---
 
-for name in names:
-    print(names)
+## Input
 
-total = 0
-for i in range(1, 5):
-    total = total + i
-print("Total 1-5:", total)
+ไม่มี (แก้โค้ดที่ให้มา)
+
+## Output
+
+Item 1 ถึง Item 3
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Item 1
+Item 2
+Item 3
 ```
 
-**Output ที่ต้องการ:**
-```
-Alice
-Bob
-Charlie
-Total 1-5: 15
-```
 
 ---
 
 ## 💡 Hint
 
-Bug 1: ใช้ `names` แทน `name`
-Bug 2: `range(1, 5)` ได้แค่ 1–4
-Bug 3: `print` อยู่นอก loop แต่ค่า total ผิด
+คำสั่งที่ต้องทำทุกรอบต้องอยู่ในลูป
 
 ---
 
 ## Starter Code
 
 ```python
-names = ["Alice", "Bob", "Charlie"]
-
-for name in names:
-    print(names)   # Bug 1
-
-total = 0
-for i in range(1, 5):   # Bug 2
-    total = total + i
-print("Total 1-5:", total)
+for i in range(1, 4):
+    pass
+print(f"Item {i}")  # ← จัด indent / ลบ pass
 ```

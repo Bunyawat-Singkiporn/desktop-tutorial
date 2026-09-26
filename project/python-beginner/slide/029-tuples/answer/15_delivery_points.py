@@ -1,0 +1,6 @@
+pickup = (10, 20)
+drop = (40, 50)
+print(f"Pickup: ({pickup[0]}, {pickup[1]})")
+print(f"Drop  : ({drop[0]}, {drop[1]})")
+print(f"DX    : {drop[0] - pickup[0]}")
+print(f"DY    : {drop[1] - pickup[1]}")

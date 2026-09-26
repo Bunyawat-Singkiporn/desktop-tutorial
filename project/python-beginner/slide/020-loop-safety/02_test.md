@@ -1,4 +1,4 @@
-# 🛑 Practice: Loop Safety — Question 1: Use break
+# 🛑 loop-safety — ข้อ 2: หยุดที่เลข 7
 
 **Difficulty:** 🟢 Easy
 
@@ -6,33 +6,45 @@
 
 ## โจทย์
 
-วนซ้ำ 1–10 แต่หยุดทันทีเมื่อพบเลข 6
+วนพิมพ์เลข `1` ถึง `10` แต่เมื่อถึง `7` ให้ `break` ทันที (ไม่พิมพ์ 7)
+แล้วพิมพ์ `Stopped`
+
+---
+
+## Input
+
+ไม่มี
+
+## Output
+
+เลข 1–6 แล้ว Stopped
+
+---
+
+## ตัวอย่าง
+
+**Input:**
+
+```text
+
+```
 
 **Output:**
-```
+
+```text
 1
 2
 3
 4
 5
-Stopped at 6
+6
+Stopped
 ```
-
----
-
-## 💡 Hint
-
-- ใช้ `for i in range(1, 11):`
-- ถ้า `i == 6` ให้ `print` ข้อความแล้ว `break`
 
 ---
 
 ## Starter Code
 
 ```python
-for i in range(1, 11):
-    if i == 6:
-        print("Stopped at 6")
-        # Stop the loop
-    # Print i (only reached if i != 6)
+# เขียนโค้ดตรงนี้
 ```

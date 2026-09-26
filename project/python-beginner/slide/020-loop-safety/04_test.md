@@ -1,58 +1,48 @@
-# 🔍 Practice: Loop Safety — Question 3: Find First Match
+# 💬 loop-safety — ข้อ 4: พิมพ์ข้อความจนเจอ stop
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-วนซ้ำ list แล้วหยุดเมื่อเจอชื่อที่ต้องการ
-
-```python
-names = ["Alice", "Bob", "Charlie", "Diana", "Eve"]
-```
-
-รับชื่อจากผู้ใช้ แล้วแสดงว่าเจอที่ตำแหน่งเท่าไหร่ (เริ่มนับที่ 1)
-
-**Input:**
-```
-Charlie
-```
-
-**Output:**
-```
-Found Charlie at position 3
-```
-
-**Input:**
-```
-Zara
-```
-
-**Output:**
-```
-Zara not found
-```
+ใช้ `while True` รับข้อความ
+ถ้าได้ `"stop"` ให้ `break`
+ข้อความอื่นให้พิมพ์กลับในรูปแบบ `Echo: <ข้อความ>`
 
 ---
 
-## 💡 Hint
+## Input
 
-- ใช้ตัวแปร `found = False`
-- ถ้าเจอ: แสดงตำแหน่ง, `found = True`, `break`
-- หลัง loop: ถ้า `not found` แสดง not found
+ข้อความทีละบรรทัด จบด้วย stop
+
+## Output
+
+Echo ของข้อความก่อน stop
+
+---
+
+## ตัวอย่าง
+
+**Input:**
+
+```text
+hi
+python
+stop
+```
+
+**Output:**
+
+```text
+Echo: hi
+Echo: python
+```
 
 ---
 
 ## Starter Code
 
 ```python
-names = ["Alice", "Bob", "Charlie", "Diana", "Eve"]
-target = input()
-
-for i in range(len(names)):
-    if names[i] == target:
-        # Print position (i+1) and stop searching
-
-# If never found, print "target not found"
+# เขียนโค้ดตรงนี้
 ```

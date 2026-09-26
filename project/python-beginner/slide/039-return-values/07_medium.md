@@ -1,4 +1,4 @@
-# Practice Return — Question 6: เกมเลขนำโชค
+# ↩️ Return Values — ข้อ 7: แปลง ซม.→ม.
 
 **Difficulty:** 🟡 Medium
 
@@ -6,34 +6,50 @@
 
 ## โจทย์
 
-ทำเกมเล็กๆ: ผู้เล่นสุ่มเลข (พิมพ์เอง) แล้วบอกว่าคู่หรือคี่
+แปลงเซนติเมตรเป็นเมตร
 
-สร้าง `lucky(n)` ที่ return `"Even"` หรือ `"Odd"`
+**เงื่อนไข:**
 
-เล่น 3 รอบ
+- สร้าง `to_meters(cm)` คืน `cm / 100`
+- พิมพ์ผลของ `175` และ `200`
 
 ---
 
-## ตัวอย่าง Session
+## Input
 
+ไม่มี (กำหนดค่าในโปรแกรม / เรียกฟังก์ชันในโค้ด)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+1.75
+2.0
 ```
-Your number: 4
-4 is Even
-Your number: 7
-7 is Odd
-Your number: 10
-10 is Even
-```
+
+
+---
+
+## 💡 Hint
+
+หาร 100 แล้ว return
 
 ---
 
 ## Starter Code
 
 ```python
-def lucky(n):
-    # Write your code here
+def to_meters(cm):
+    # return
+    # เขียนโค้ดตรงนี้
 
-for i in range(3):
-    n = int(input("Your number: "))
-    print(f"{n} is {lucky(n)}")
+print(to_meters(175))
+print(to_meters(200))
 ```

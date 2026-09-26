@@ -1,4 +1,4 @@
-# ✏️ Practice Dictionary Methods — Question 1: Update Age
+# 🔧 Dict Methods — ข้อ 2: อัปเดตอายุนักเรียน
 
 **Difficulty:** 🟢 Easy
 
@@ -6,23 +6,39 @@
 
 ## โจทย์
 
-กำหนดข้อมูลนักเรียน เปลี่ยนอายุเป็น 16 แล้วแสดงค่าที่อัปเดต
+นักเรียนวันเกิดแล้วต้องแก้อายุ
 
-```python
-student = {"name": "Alice", "age": 15, "score": 90}
-```
+กำหนด `student = {"name": "Ann", "age": 12}`
+
+แก้ age เป็น 13 แล้วแสดงอายุใหม่
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+บรรทัดเดียว
+
+---
+
+## ตัวอย่าง
 
 **Output:**
+
+```text
+Age: 13
 ```
-Updated age: 16
-```
+
 
 ---
 
 ## Starter Code
 
 ```python
-student = {"name": "Alice", "age": 15, "score": 90}
+student = {"name": "Ann", "age": 12}
 
-# อัปเดตอายุเป็น 16
+# เขียนโค้ดตรงนี้
 ```

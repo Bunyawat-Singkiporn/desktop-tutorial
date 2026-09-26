@@ -1,36 +1,44 @@
-# ✏️ Practice Choosing Data Types — Question 3: Rewrite with Tuple
+# 🧭 Choosing Types — ข้อ 4: ผู้เข้าชมไม่ซ้ำ
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-โค้ดด้านล่างใช้ list เก็บพิกัด (x, y, z) ซึ่งไม่ควรเปลี่ยน
-เขียนใหม่โดยใช้ **tuple** แทนและเพิ่ม comment อธิบายว่าทำไมถึงเลือก tuple
+นับผู้เข้าชมไม่ซ้ำด้วย set
 
-```python
-# โค้ดเดิม (ใช้ list)
-point = [10, 20, 30]
-print(f"x={point[0]}, y={point[1]}, z={point[2]}")
-```
+กำหนด `visitors = {"Ann", "Ben", "Ann", "Cara"}`
 
-**Output** (เหมือนเดิม):
-```
-x=10, y=20, z=30
-```
+แสดงจำนวนสมาชิกใน set
 
 ---
 
-## 💡 Hint
+## Input
 
-เปลี่ยน `[]` เป็น `()` และเพิ่ม comment ว่าทำไม
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+บรรทัดเดียว
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Visitors: 3
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-# เขียนใหม่ด้วย tuple
-# comment: ทำไมถึงใช้ tuple?
+visitors = {"Ann", "Ben", "Ann", "Cara"}
+
+# เขียนโค้ดตรงนี้
 ```

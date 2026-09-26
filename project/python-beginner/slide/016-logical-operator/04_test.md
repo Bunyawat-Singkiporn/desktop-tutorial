@@ -1,39 +1,52 @@
-# 📚 Practice and/or/not — Question 3: Homework
+# 🚨 Logical — ข้อ 3: แจ้งเตือนคะแนนพิเศษ
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-ตรวจสอบว่านักเรียนทำการบ้านแล้วหรือยัง โดยใช้ตัวแปรที่กำหนดให้
+ระบบติวเตอร์จะแจ้งเตือนเมื่อคะแนนสูงมากหรือต่ำมาก
 
-```python
-homework_done = False
-```
+เขียนโปรแกรมรับคะแนน แล้วบอกว่าต้องแจ้งเตือนหรือไม่
 
-**เงื่อนไข:** ถ้า**ยังไม่ทำ**การบ้าน → แสดง `Do Homework`
+**เงื่อนไข:**
 
----
-
-## ตัวอย่างผลลัพธ์
-
-```
-Do Homework
-```
+- คะแนน `> 90` **หรือ** คะแนน `< 20` → `Special Alert`
+- ถ้าไม่ใช่ → `Normal`
 
 ---
 
-## 💡 Hint
+## Input
 
-ใช้ `not` เพื่อกลับค่า → `not False` จะได้ `True`
+คะแนนเป็นจำนวนเต็ม 1 บรรทัด
+
+## Output
+
+สถานะการแจ้งเตือน 1 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Input:**
+
+```text
+15
+```
+
+**Output:**
+
+```text
+Special Alert
+```
 
 ---
 
 ## Starter Code
 
 ```python
-homework_done = False
+score = int(input())
 
-# Write your code here
+# เขียนโค้ดตรงนี้
 ```

@@ -1,42 +1,46 @@
-# 🌡️ Practice: Operators — Question 3: Temperature Converter
+# 🔢 Operators — ข้อ 4: ยกกำลัง
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-รับอุณหภูมิเป็นองศาเซลเซียส แล้วแปลงเป็นฟาเรนไฮต์
-
-**สูตร:** `F = C × 9/5 + 32`
-
-**Input:**
-```
-100
-```
-
-**Output:**
-```
-Celsius: 100
-Fahrenheit: 212.0
-```
+รับ n แสดง n**2
 
 ---
 
-## 💡 Hint
+## Input
 
-- ใช้ `float(input())` เพื่อรองรับทศนิยม
-- ทำตามสูตรทีละขั้น: คูณก่อน หารก่อน บวกทีหลัง
+ดูตัวอย่าง
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Input:**
+
+```text
+9
+```
+
+**Output:**
+
+```text
+81
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-celsius = float(input())
+n = int(input())
 
-# Convert to Fahrenheit
-fahrenheit = 
-
-# Print results
+# ยกกำลังสอง
 ```

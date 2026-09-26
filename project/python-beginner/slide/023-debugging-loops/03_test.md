@@ -1,33 +1,43 @@
-# 🐛 Practice: Debugging Loops — Question 2: Fix Infinite Loop
+# 🐛 debugging-loops — ข้อ 3: แก้ while นับลูกค้า
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-โค้ดด้านล่างวนไม่หยุด — แก้ให้นับ 1–5 แล้วหยุด
+ต้องการนับลูกค้าจาก 1 ถึง 4 แต่ยังไม่อัปเดต `count` ในลูป
+เติมบรรทัดอัปเดตให้ถูกต้อง
 
-```python
-count = 1
-while count <= 5:
-    print(count)
-```
+---
 
-**Output ที่ต้องการ:**
-```
+## Input
+
+ไม่มี (แก้โค้ดที่ให้มา)
+
+## Output
+
+เลข 1 ถึง 4
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
 1
 2
 3
 4
-5
 ```
+
 
 ---
 
 ## 💡 Hint
 
-`while` loop ต้องมีอะไรเพิ่มเข้าไปอีก?
+ต้องเปลี่ยนค่า count ในทุกๆ รอบ
 
 ---
 
@@ -35,7 +45,7 @@ while count <= 5:
 
 ```python
 count = 1
-while count <= 5:
+while count <= 4:
     print(count)
-    # Something is missing here!
+    # เติมบรรทัดอัปเดตตรงนี้
 ```

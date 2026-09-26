@@ -1,51 +1,63 @@
-# 🔥 Practice: Type Conversion — Question 4: Three-Subject Average
+# 🔄 Type Conversion — ข้อ 12: บิลร้านอาหารสามรายการ
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-รับคะแนน 3 วิชาจากผู้ใช้ แล้วคำนวณและแสดงผลลัพธ์
+ร้านอาหารคิดเงินสามรายการในบิลเดียว
+รับราคาอาหาร จานหวาน และเครื่องดื่ม แล้วออกใบสรุปในกรอบ
+
+---
+
+## Input
+
+3 บรรทัด — ราคาอาหาร จานหวาน เครื่องดื่ม (ทศนิยม)
+
+## Output
+
+ใบบิลในกรอบ แสดงแต่ละรายการและยอดรวม
+
+---
+
+## ตัวอย่าง
 
 **Input:**
-```
-80
-90
-70
+
+```text
+120.0
+45.5
+35.0
 ```
 
 **Output:**
-```
-Scores: 80, 90, 70
-Total: 240
-Average: 80.00
-Highest: 90
-Lowest: 70
+
+```text
+========================
+         MEAL
+========================
+Food     : 120.0
+Dessert  : 45.5
+Drink    : 35.0
+Total    : 200.5
+========================
 ```
 
 ---
 
 ## 💡 Hint
 
-- ใช้ `int(input())` สำหรับทุกคะแนน
-- หาค่าสูงสุด/ต่ำสุดด้วย `max()` และ `min()`
-- ใช้ `f"{avg:.2f}"` แสดงทศนิยม 2 ตำแหน่ง
+รับครบสามค่าก่อน บวกรวมเก็บในตัวแปร แล้วค่อยพิมพ์กรอบทีเดียว
 
 ---
 
 ## Starter Code
 
 ```python
-score1 = int(input())
-score2 = int(input())
-score3 = int(input())
+food = float(input())
+dessert = float(input())
+drink = float(input())
 
-# Calculate total, average, highest, lowest
-total = 
-average = 
-highest = max(score1, score2, score3)
-lowest = 
-
-# Print results
+# เขียนโค้ดตรงนี้
 ```

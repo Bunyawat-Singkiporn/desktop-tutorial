@@ -1,4 +1,4 @@
-# 📊 Practice Dictionary — Question 1: Word Counter
+# 🏋️ Dict Practice — ข้อ 2: บัตรนักเรียนสั้น
 
 **Difficulty:** 🟢 Easy
 
@@ -6,37 +6,41 @@
 
 ## โจทย์
 
-นับว่าแต่ละคำปรากฏกี่ครั้งใน list
+พิมพ์บัตรนักเรียนจาก dict
 
-```python
-words = ["cat", "dog", "cat", "bird", "dog", "cat"]
-```
+กำหนด `student = {"name": "Ann", "age": 12, "grade": "M1"}`
 
-**Output:**
-```
-cat: 3
-dog: 2
-bird: 1
-```
+แสดง Name / Age / Grade
 
 ---
 
-## 💡 Hint
+## Input
 
-ถ้า `word` อยู่ใน dict แล้ว → เพิ่ม 1
-ถ้ายังไม่มี → ตั้งค่าเป็น 1
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+3 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Name: Ann
+Age: 12
+Grade: M1
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-words = ["cat", "dog", "cat", "bird", "dog", "cat"]
-count = {}
+student = {"name": "Ann", "age": 12, "grade": "M1"}
 
-for word in words:
-    # Write your code here
-
-for word, n in count.items():
-    print(f"{word}: {n}")
+# เขียนโค้ดตรงนี้
 ```

@@ -1,35 +1,53 @@
-# 🧹 Code Readability — Question 3: Rewrite Dense Code
+# ✨ Code Readability — ข้อ 4: เก็บผลเปรียบเทียบ
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-เขียนโค้ดด้านล่างใหม่ให้อ่านง่ายขึ้น (ใช้ชื่อดี, f-string, indent, comment)
+ตรวจอายุผู้ใหญ่
 
-```python
-x=int(input());y=int(input());z=x*y;print("Result: "+str(z));r=z%2;print("Even" if r==0 else "Odd")
-```
+**เงื่อนไข:**
 
-**Output** (สำหรับ input 6, 7):
-```
-Result: 42
-Even
-```
+- รับอายุ
+- เก็บ `is_adult = age >= 18`
+- ถ้า True พิมพ์ `Adult` ไม่งั้น `Minor`
 
 ---
 
-## 💡 Hint
+## Input
 
-- แยกแต่ละคำสั่งบน 1 บรรทัด
-- ใช้ชื่อตัวแปรสื่อความหมาย
-- ใช้ f-string แทน `"..." + str(...)`
+ดูตัวอย่าง
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Input:**
+
+```text
+20
+```
+
+**Output:**
+
+```text
+Adult
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-# เขียนใหม่ให้อ่านง่าย — output ต้องเหมือนเดิม
+age = int(input())
+is_adult = age >= 18
+
+# ใช้ is_adult
 ```

@@ -1,4 +1,4 @@
-# 🧩 Logic Integration — Question 1: FizzBuzz Variant
+# 🧠 Logic Integration — ข้อ 2: เก็บชื่อ 3 คน
 
 **Difficulty:** 🟢 Easy
 
@@ -6,39 +6,52 @@
 
 ## โจทย์
 
-วนตัวเลข 1 ถึง 15 แสดงตามเงื่อนไข:
+รับชื่อ 3 คนเก็บใน list แล้วพิมพ์ทีละชื่อ
 
-| เงื่อนไข | แสดง |
-|----------|------|
-| หารด้วย 3 ลงตัว | `Fizz` |
-| หารด้วย 5 ลงตัว | `Buzz` |
-| หารด้วยทั้ง 3 และ 5 | `FizzBuzz` |
-| อื่น ๆ | ตัวเลขนั้น |
+**เงื่อนไข:**
+
+- ใช้ลูปอ่าน input 3 ครั้ง
+
+---
+
+## Input
+
+ดูตัวอย่าง
+
+## Output
+
+3 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Input:**
+
+```text
+Ann
+Ben
+Cat
+```
 
 **Output:**
+
+```text
+Ann
+Ben
+Cat
 ```
-1
-2
-Fizz
-4
-Buzz
-Fizz
-7
-8
-Fizz
-Buzz
-11
-Fizz
-13
-14
-FizzBuzz
-```
+
 
 ---
 
 ## Starter Code
 
 ```python
-for i in range(1, 16):
-    # Write your code here
+names = []
+for i in range(3):
+    names.append(input())
+
+for name in names:
+    print(name)
 ```

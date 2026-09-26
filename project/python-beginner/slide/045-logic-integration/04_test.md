@@ -1,37 +1,46 @@
-# 📊 Logic Integration — Question 3: Dict + Loop + Conditions
+# 🧠 Logic Integration — ข้อ 4: เลือกเครื่องมือ: รวมยอด
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-กำหนดสินค้าและราคา แสดงเฉพาะสินค้าที่ **ราคา <= 20** พร้อมระบุว่า "Cheap" หรือ "Fair"
+ต้องการยอดรวมราคา — ใช้ฟังก์ชันช่วย
 
-| ราคา | ระดับ |
-|------|------|
-| <= 10 | `Cheap` |
-| 11-20 | `Fair` |
-| > 20 | (ไม่แสดง) |
+**เงื่อนไข:**
 
-```python
-prices = {"apple": 15, "banana": 8, "mango": 35, "kiwi": 10, "orange": 22}
-```
+- `total(prices)` คืนผลรวม
+- พิมพ์ผล `[20, 30, 50]`
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
 
 **Output:**
+
+```text
+100
 ```
-apple: 15 → Fair
-banana: 8 → Cheap
-kiwi: 10 → Cheap
-```
+
 
 ---
 
 ## Starter Code
 
 ```python
-prices = {"apple": 15, "banana": 8, "mango": 35, "kiwi": 10, "orange": 22}
+def total(prices):
+    # รวม
 
-for item, price in prices.items():
-    # Write your code here
+print(total([20, 30, 50]))
 ```

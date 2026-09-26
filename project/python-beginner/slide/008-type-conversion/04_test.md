@@ -1,52 +1,46 @@
-# 🧾 Practice: Type Conversion — Question 3: Fix the TypeError
+# 🔄 Type Conversion — ข้อ 3: น้ำหนักกระเป๋า
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-โค้ดด้านล่างมี TypeError — **แก้ให้รันได้** โดยไม่เปลี่ยน Output
-
-```python
-student_name = input()
-score = input()
-passed_score = 50
-
-print("Name: " + student_name)
-print("Score: " + score)
-print("Pass score: " + passed_score)
-```
-
-**Input:**
-```
-Emma
-75
-```
-
-**Output:**
-```
-Name: Emma
-Score: 75
-Pass score: 50
-```
+เคาน์เตอร์สนามบินชั่งน้ำหนักกระเป๋าเดินทาง
+รับน้ำหนักเป็นทศนิยม แล้วแสดงผลพร้อมป้ายกำกับ
 
 ---
 
-## 💡 Hint
+## Input
 
-ไม่สามารถต่อ `str` กับ `int` ด้วย `+` — ต้องแปลง `int` เป็น `str` ก่อน
+น้ำหนักเป็นทศนิยม 1 บรรทัด
+
+## Output
+
+ข้อความน้ำหนัก 1 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Input:**
+
+```text
+12.8
+```
+
+**Output:**
+
+```text
+Bag weight: 12.8 kg
+```
 
 ---
 
 ## Starter Code
 
 ```python
-student_name = input()
-score = input()
-passed_score = 50
+weight = float(input())
 
-print("Name: " + student_name)
-print("Score: " + score)
-print("Pass score: " + passed_score)  # ← ตรงนี้มี Error!
+# เขียนโค้ดตรงนี้
 ```

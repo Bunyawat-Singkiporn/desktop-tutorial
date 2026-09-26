@@ -1,53 +1,63 @@
-# 🔥 Logic Integration — Question 4: Mini ATM
+# 🧠 Logic Integration — ข้อ 5: คิวร้านตัดซ้ำ
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-สร้างโปรแกรม ATM อย่างง่าย:
+คิวชื่ออาจซ้ำ ให้พิมพ์จำนวนชื่อไม่ซ้ำ
 
-**Rules:**
-- เริ่มต้นมียอดเงิน 1000 บาท
-- Commands: `deposit`, `withdraw`, `balance`, `exit`
-- ถอนไม่ได้ถ้าเงินไม่พอ
-- แต่ละ transaction บันทึกใน list
+**เงื่อนไข:**
 
-**ตัวอย่าง Session:**
+- รับ n แล้วอ่าน n ชื่อ
+- ใช้ set หาจำนวนไม่ซ้ำแล้วพิมพ์
+
+---
+
+## Input
+
+ดูตัวอย่าง
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Input:**
+
+```text
+4
+Ann
+Ben
+Ann
+Cat
 ```
-Command: balance
-Balance: 1000
-Command: deposit
-Amount: 500
-Deposited: 500. Balance: 1500
-Command: withdraw
-Amount: 200
-Withdrawn: 200. Balance: 1300
-Command: withdraw
-Amount: 2000
-Insufficient funds
-Command: balance
-Balance: 1300
-Command: exit
-Transactions: 2
+
+**Output:**
+
+```text
+3
 ```
+
+
+---
+
+## 💡 Hint
+
+set ตัดชื่อซ้ำ
 
 ---
 
 ## Starter Code
 
 ```python
-def show_balance(balance):
-    print(f"Balance: {balance}")
-
-balance = 1000
-transactions = []
-
-while True:
-    command = input("Command: ")
-    if command == "exit":
-        print(f"Transactions: {len(transactions)}")
-        break
-    # Write your code here
+n = int(input())
+names = []
+for i in range(n):
+    names.append(input())
+print(len(set(names)))
 ```

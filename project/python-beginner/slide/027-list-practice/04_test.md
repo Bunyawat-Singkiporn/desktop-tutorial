@@ -1,39 +1,47 @@
-# 📋 Practice List — Question 3: Numbered To-Do List
+# 🏋️ List Practice — ข้อ 4: กรองสินค้าราคาถูก
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-กำหนดรายการ to-do แสดงพร้อมหมายเลขลำดับ
+ร้านอยากได้เฉพาะสินค้าราคาต่ำกว่า 50
 
-```python
-todos = ["Buy groceries", "Do homework", "Clean room", "Call mom"]
-```
+กำหนด `prices = [20, 75, 40, 90, 15, 60]`
 
-**Output:**
-```
-=== To-Do List ===
-1. Buy groceries
-2. Do homework
-3. Clean room
-4. Call mom
-```
+สร้าง list ใหม่ชื่อ `cheap` เก็บราคาที่ต่ำกว่า 50 แล้วแสดง `cheap`
 
 ---
 
-## 💡 Hint
+## Input
 
-ใช้ `range(len(todos))` เพื่อได้ index แล้วบวก 1 สำหรับลำดับ
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+list หนึ่งบรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+[20, 40, 15]
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-todos = ["Buy groceries", "Do homework", "Clean room", "Call mom"]
+prices = [20, 75, 40, 90, 15, 60]
+cheap = []
 
-print("=== To-Do List ===")
-# Write your code here
+# เขียนโค้ดตรงนี้
+
+print(cheap)
 ```

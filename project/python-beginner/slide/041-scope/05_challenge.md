@@ -1,51 +1,61 @@
-# 🔥 Practice Scope — Question 4: Config and Compute
+# 🔭 Scope — ข้อ 5: ยอดขายร้าน
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-สร้างระบบคำนวณราคาที่ใช้:
-- `TAX_RATE = 0.07` — global config
-- function `calculate_price(base_price)` — ใช้ local variable สำหรับการคำนวณ แล้ว return ราคาสุดท้าย
-- function `show_receipt(item, price)` — แสดงใบเสร็จ
+ยอดขายสะสมของร้าน
+
+**เงื่อนไข:**
+
+- `total = 0`
+- `sell(price)` เพิ่มยอดด้วย global
+- `show_total()` พิมพ์ `Total: ...`
+- ขาย 30 กับ 45 แล้ว show
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
 
 **Output:**
-```
-=== Receipt ===
-Coffee: 32.1 บาท
-Cake: 85.6 บาท
-Total: 117.7 บาท
+
+```text
+Total: 75
 ```
 
-(ราคาก่อน tax: Coffee=30, Cake=80 — tax 7%)
 
 ---
 
 ## 💡 Hint
 
-- `calculate_price(30)` ควร return `30 * (1 + TAX_RATE)`
-- ใช้ local variable `tax_amount` ข้างใน function ได้
+show อ่านอย่างเดียว ไม่ต้อง global
 
 ---
 
 ## Starter Code
 
 ```python
-TAX_RATE = 0.07
+total = 0
 
-def calculate_price(base_price):
-    # ใช้ TAX_RATE global และ local variable ข้างใน
-    # Write your code here
+def sell(price):
+    # global
 
-def show_receipt(item, price):
-    # Write your code here
+def show_total():
+    # พิมพ์ยอด
 
-print("=== Receipt ===")
-coffee_price = calculate_price(30)
-cake_price = calculate_price(80)
-show_receipt("Coffee", coffee_price)
-show_receipt("Cake", cake_price)
-print(f"Total: {coffee_price + cake_price:.1f} บาท")
+sell(30)
+sell(45)
+show_total()
 ```

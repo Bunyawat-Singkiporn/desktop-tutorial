@@ -1,6 +1,6 @@
-scores = [40, 55, 60, 30]
-count = 0
-for s in scores:
-    if s >= 50:
-        count = count + 1
-print(count)
+scores = [42, 55, 60, 38, 71, 49]
+passed = 0
+for score in scores:
+    if score >= 50:
+        passed = passed + 1
+print(f"Passed: {passed}")

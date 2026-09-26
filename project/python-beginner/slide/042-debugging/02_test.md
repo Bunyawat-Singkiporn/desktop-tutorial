@@ -1,4 +1,4 @@
-# 🐛 Debugging — Question 1: Fix Syntax Error
+# 🐛 Debugging — ข้อ 2: เติม colon ที่หาย
 
 **Difficulty:** 🟢 Easy
 
@@ -6,38 +6,47 @@
 
 ## โจทย์
 
-โค้ดด้านล่างมี **Syntax Error** — หาและแก้ให้รันได้
+โค้ดเช็กคะแนนขาดเครื่องหมาย `:`
 
-```python
-score = 75
+**เงื่อนไข:**
 
-if score >= 50
-    print("Pass")
-else
-    print("Fail")
-```
-
-**Output ที่ถูกต้อง:**
-```
-Pass
-```
+- รับคะแนนหนึ่งค่า
+- ถ้า >= 50 พิมพ์ `Pass` ไม่งั้น `Fail`
+- เขียน if ให้ถูกต้อง
 
 ---
 
-## 💡 Hint
+## Input
 
-Python ต้องการ `:` หลัง `if` และ `else` ทุกครั้ง
+ดูตัวอย่าง
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Input:**
+
+```text
+60
+```
+
+**Output:**
+
+```text
+Pass
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-score = 75
+score = int(input())
 
-# แก้ syntax error ด้านล่าง
-if score >= 50
-    print("Pass")
-else
-    print("Fail")
+# เขียน if/else ให้ถูก
 ```

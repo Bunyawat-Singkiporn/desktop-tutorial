@@ -1,4 +1,4 @@
-# 🧑‍🎓 Practice Dictionaries — Question 1: Student Card
+# 📖 Dictionaries — ข้อ 2: อ่านชื่อจากสมุดโทรศัพท์
 
 **Difficulty:** 🟢 Easy
 
@@ -6,38 +6,39 @@
 
 ## โจทย์
 
-กำหนดข้อมูลนักเรียน แสดงชื่อและอายุ
+เปิดสมุดโทรศัพท์แล้วอ่านชื่อเจ้าของเบอร์
 
-```python
-student = {
-    "name": "Alice",
-    "age": 15,
-    "score": 92
-}
-```
+กำหนด `contact = {"name": "Mew", "phone": "081-111-2222"}`
 
-**Output:**
-```
-Name: Alice
-Age: 15
-```
+แสดง `Name: Mew`
 
 ---
 
-## 💡 Hint
+## Input
 
-ใช้ `student["name"]` และ `student["age"]`
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+บรรทัดเดียว
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Name: Mew
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-student = {
-    "name": "Alice",
-    "age": 15,
-    "score": 92
-}
+contact = {"name": "Mew", "phone": "081-111-2222"}
 
-# Write your code here
+# เขียนโค้ดตรงนี้
 ```

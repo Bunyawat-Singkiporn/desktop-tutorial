@@ -1,4 +1,4 @@
-# 🔭 Practice Scope — Question 1: Predict Output
+# 🔭 Scope — ข้อ 2: อ่านชื่อ global
 
 **Difficulty:** 🟢 Easy
 
@@ -6,44 +6,44 @@
 
 ## โจทย์
 
-อ่านโค้ดด้านล่างแล้วทำนาย output โดยไม่ต้องรัน
-แล้วเขียนโค้ดที่ถูกต้องเพื่อยืนยัน
+มีชื่อร้านเป็นตัวแปรนอกฟังก์ชัน
 
-```python
-x = 10
+**เงื่อนไข:**
 
-def change():
-    x = 99
-    print("Inside:", x)
-
-change()
-print("Outside:", x)
-```
-
-**Output ที่ถูกต้อง:**
-```
-Inside: 99
-Outside: 10
-```
+- มี `shop = "Bean House"` นอกฟังก์ชัน
+- สร้าง `show_shop()` พิมพ์ `Shop: <shop>` โดยอ่านค่า global
+- เรียก 1 ครั้ง
 
 ---
 
-## 💡 คำถาม
+## Input
 
-ทำไม `x` ภายนอกยังเป็น `10` แม้ว่า `change()` จะกำหนด `x = 99`?
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Shop: Bean House
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-x = 10
+shop = "Bean House"
 
-def change():
-    x = 99
-    print("Inside:", x)
+def show_shop():
+    # พิมพ์ Shop: ...
 
-change()
-print("Outside:", x)
-# เพิ่ม comment อธิบายว่าทำไม x ภายนอกไม่เปลี่ยน
+show_shop()
 ```

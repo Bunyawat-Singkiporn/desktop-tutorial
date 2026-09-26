@@ -1,4 +1,4 @@
-# 📐 Code Readability — Question 2: Fix Indentation + Add Comments
+# ✨ Code Readability — ข้อ 3: ใช้ค่าคงที่ ALL_CAPS
 
 **Difficulty:** 🟢 Easy
 
@@ -6,34 +6,42 @@
 
 ## โจทย์
 
-โค้ดด้านล่างมี indentation ผิด และไม่มี comment — แก้และเพิ่ม comment ที่เหมาะสม
+คำนวณราคาหลังลดด้วยอัตราคงที่
 
-```python
-fruits=["apple","banana","mango"]
-total=0
-for f in fruits:
-total+=len(f)
-avg=total/len(fruits)
-print(avg)
-```
+**เงื่อนไข:**
 
-**Output:**
-```
-5.333333333333333
-```
+- ตั้ง `DISCOUNT_RATE = 0.1`
+- `price = 200`
+- พิมพ์ `Final: <price * (1 - DISCOUNT_RATE)>` ทศนิยม 1 ตำแหน่ง
 
 ---
 
-## 💡 Hint
+## Input
 
-- เว้นช่องว่างรอบ `=` และ `,`
-- indent บรรทัดใน `for` 4 ช่อง
-- เพิ่ม comment อธิบายว่าโค้ดทำอะไร
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Final: 180.0
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-# เขียนใหม่ด้วย indentation ที่ถูกต้องและ comment ที่เหมาะสม
+DISCOUNT_RATE = 0.1
+price = 200
+
+# คำนวณแล้วพิมพ์
 ```

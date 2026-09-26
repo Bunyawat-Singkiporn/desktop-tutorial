@@ -1,4 +1,4 @@
-# ²  Practice Return Values — Question 1: Square
+# ↩️ Return Values — ข้อ 2: กำลังสอง
 
 **Difficulty:** 🟢 Easy
 
@@ -6,15 +6,35 @@
 
 ## โจทย์
 
-สร้าง function `square(n)` ที่ **return** ค่า n²
-เก็บผลลัพธ์ในตัวแปรแล้ว print
+เครื่องคิดเลขยกกำลังสอง
+
+**เงื่อนไข:**
+
+- สร้าง `square(n)` ที่ `return n * n`
+- พิมพ์ผลของ `square(5)` `square(4)` `square(10)`
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม / เรียกฟังก์ชันในโค้ด)
+
+## Output
+
+3 บรรทัด
+
+---
+
+## ตัวอย่าง
 
 **Output:**
-```
+
+```text
 25
 16
 100
 ```
+
 
 ---
 
@@ -22,10 +42,10 @@
 
 ```python
 def square(n):
-    # Write your code here
+    # return
+    # เขียนโค้ดตรงนี้
 
-result = square(5)
-print(result)
+print(square(5))
 print(square(4))
 print(square(10))
 ```

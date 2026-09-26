@@ -1,4 +1,4 @@
-# 🗂️ Practice Collection Review — Question 1: All Three Types
+# 📚 Collection Review — ข้อ 2: อ่าน list กับ tuple
 
 **Difficulty:** 🟢 Easy
 
@@ -6,26 +6,41 @@
 
 ## โจทย์
 
-สร้างทั้ง list, tuple และ set จากข้อมูลชุดเดียวกัน แสดงชนิดและจำนวน
+อ่านค่าแรกจาก list และค่าท้ายจาก tuple
 
-ข้อมูล: คะแนน `[90, 75, 90, 85, 75, 100]`
+กำหนด `names = ["Ann", "Ben", "Cara"]` และ `codes = (101, 102, 103)`
+
+แสดงตามตัวอย่าง
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## ตัวอย่าง
 
 **Output:**
+
+```text
+Ann
+103
 ```
-list: [90, 75, 90, 85, 75, 100] → 6 items
-tuple: (90, 75, 90, 85, 75, 100) → 6 items
-set: {75, 90, 85, 100} → 4 items
-```
+
 
 ---
 
 ## Starter Code
 
 ```python
-scores_list = [90, 75, 90, 85, 75, 100]
-scores_tuple = # แปลงเป็น tuple
-scores_set = # แปลงเป็น set
+names = ["Ann", "Ben", "Cara"]
+codes = (101, 102, 103)
 
-print(f"list: {scores_list} → {len(scores_list)} items")
-# แสดง tuple และ set แบบเดียวกัน
+# เขียนโค้ดตรงนี้
 ```

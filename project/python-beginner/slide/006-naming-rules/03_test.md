@@ -1,43 +1,40 @@
-# 📐 Practice: Naming Rules — Question 2: Room Area
+# 📐 Naming Rules — ข้อ 2: คะแนนควิซสองวิชา
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-เขียนโปรแกรมคำนวณพื้นที่ห้อง โดยใช้ชื่อ variable ที่ถูกต้องตามกฎ snake_case
+ครูเก็บคะแนนควิซคณิตและวิทย์ ต้องใช้ snake_case แยกสองตัวแปร
 
-| ข้อมูล | ค่า |
-|--------|-----|
-| ความกว้าง | `4` (เมตร) |
-| ความยาว | `6` (เมตร) |
-| พื้นที่ | กว้าง × ยาว |
-
-**Output:**
-```
-Width: 4 m
-Length: 6 m
-Area: 24 m2
-```
-
-> **กฎเพิ่มเติม:** ชื่อ variable ทุกตัวต้องเป็น snake_case และสื่อความหมาย
+เก็บคะแนนคณิต 18 และวิทย์ 16 แล้วพิมพ์ตามตัวอย่าง
 
 ---
 
-## 💡 Hint
+## Input
 
-ตัวอย่างชื่อที่ดี: `room_width`, `room_length`, `room_area`
+ไม่มี (โปรแกรมนี้ไม่รับค่าจากผู้ใช้)
+
+## Output
+
+ดูตัวอย่าง
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Math: 18
+Science: 16
+```
 
 ---
 
 ## Starter Code
 
 ```python
-# Define variables with proper names
-room_width = 
-room_length = 
-room_area = 
-
-# Print results
+# ใช้ชื่อแบบ math_score และ science_score
 ```

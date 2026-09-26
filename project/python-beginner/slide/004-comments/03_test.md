@@ -1,48 +1,43 @@
-# 🍎 Practice: Comments — Question 2: Code from Comments
+# 📚 Comments — ข้อ 2: เวลาเปิดห้องสมุด
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-comment ด้านล่างอธิบายสิ่งที่โปรแกรมควรทำ — เขียนโค้ดให้ตรงกับ comment
+ห้องสมุดโรงเรียนจะติดป้ายเวลาเปิด-ปิด
+ก่อนพิมพ์ป้าย ให้เขียน comment บรรทัดเดี่ยวอธิบายว่าส่วนนี้คือเวลาทำการ
 
-```python
-# แสดงชื่อร้านผลไม้
-# แสดงราคา: Apple 20 baht
-# แสดงราคา: Mango 35 baht
-# แสดงราคา: Orange 15 baht
-# แสดงข้อความขอบคุณ
-```
-
-**Output:**
-```
-Best Fruit Shop
-Apple: 20 baht
-Mango: 35 baht
-Orange: 15 baht
-Thank you!
-```
+เขียนโปรแกรมแสดงข้อความ 3 บรรทัดตามตัวอย่าง
+และมี comment บรรทัดเดี่ยวอย่างน้อย 1 บรรทัดก่อนกลุ่ม `print`
 
 ---
 
-## 💡 Hint
+## Input
 
-เขียน `print()` ต่อจาก comment แต่ละบรรทัด
+ไม่มี (โปรแกรมนี้ไม่รับค่าจากผู้ใช้)
+
+## Output
+
+ดูตัวอย่าง
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+School Library
+Open 08:00 - 16:00
+Quiet Zone Only
+```
 
 ---
 
 ## Starter Code
 
 ```python
-# แสดงชื่อร้านผลไม้
-
-# แสดงราคา: Apple 20 baht
-
-# แสดงราคา: Mango 35 baht
-
-# แสดงราคา: Orange 15 baht
-
-# แสดงข้อความขอบคุณ
+# เขียนโค้ดตรงนี้
 ```

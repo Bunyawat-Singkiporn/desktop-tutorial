@@ -1,46 +1,56 @@
-# 🔥 Practice Functions — Question 4: Refactor
+# ⚙️ Functions — ข้อ 5: เครื่องคิดเลขเล็ก
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-โค้ดด้านล่างทำงานได้ แต่ยาวและซ้ำซ้อน — แบ่งออกเป็น **3 functions** ที่มีชื่อสื่อความหมาย
+เครื่องคิดเลขรับตัวเลข 2 ค่าแล้วแสดงผลบวก
 
-```python
-# โค้ดเดิม (ห้ามแก้)
-print("=== Student 1 ===")
-print("Name: Alice")
-print("Score: 85")
-print("Status: Pass")
-print()
-print("=== Student 2 ===")
-print("Name: Bob")
-print("Score: 42")
-print("Status: Fail")
-print()
-print("=== Student 3 ===")
-print("Name: Charlie")
-print("Score: 78")
-print("Status: Pass")
+**เงื่อนไข:**
+
+- สร้าง `add_two()` อ่านจำนวนเต็ม 2 บรรทัด แล้วพิมพ์ `Sum: <ผลรวม>`
+- เรียก 1 ครั้ง
+
+---
+
+## Input
+
+ดูตัวอย่าง
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Input:**
+
+```text
+7
+8
 ```
 
-**ให้สร้าง function แล้วเรียกใช้แทน** — output ต้องเหมือนเดิม
+**Output:**
+
+```text
+Sum: 15
+```
+
 
 ---
 
 ## 💡 Hint
 
-ตรวจว่าส่วนไหนซ้ำกัน — นั่นคือส่วนที่ควรเป็น function
+รับ input ทั้งสองค่าในฟังก์ชัน
 
 ---
 
 ## Starter Code
 
 ```python
-def show_student():
-    # Write your code here
-
-# เรียก 3 ครั้ง
+# add_two()
 ```

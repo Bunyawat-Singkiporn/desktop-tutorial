@@ -1,49 +1,55 @@
-# 🔥 Practice Return Values — Question 4: Chain Functions
+# ↩️ Return Values — ข้อ 5: หาค่ามากกว่า (return)
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-สร้าง 2 functions ที่ทำงานต่อกัน:
-1. `get_average(scores)` — return ค่าเฉลี่ย
-2. `classify(average)` — return ระดับ
+คืนค่าที่มากกว่าระหว่างสองจำนวน
 
-| เฉลี่ย | ระดับ |
-|--------|------|
-| >= 80 | `Excellent` |
-| >= 60 | `Satisfactory` |
-| < 60 | `Needs Improvement` |
+**เงื่อนไข:**
 
-แล้วใช้ทั้งสองใน list ของนักเรียน
+- สร้าง `bigger(a, b)` คืนค่าที่มากกว่า (เท่ากันคืน a ก็ได้)
+- พิมพ์ผลของ `(9, 4)` และ `(3, 8)`
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม / เรียกฟังก์ชันในโค้ด)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## ตัวอย่าง
 
 **Output:**
+
+```text
+9
+8
 ```
-Alice: 85.0 → Excellent
-Bob: 62.0 → Satisfactory
-Charlie: 50.0 → Needs Improvement
-```
+
+
+---
+
+## 💡 Hint
+
+เทียบแล้ว return ค่า
 
 ---
 
 ## Starter Code
 
 ```python
-def get_average(scores):
-    # Write your code here
+def bigger(a, b):
+    # return
+    # เขียนโค้ดตรงนี้
 
-def classify(average):
-    # Write your code here
-
-students = {
-    "Alice": [90, 85, 80],
-    "Bob": [70, 55, 61],
-    "Charlie": [45, 55, 50]
-}
-
-for name, scores in students.items():
-    avg = get_average(scores)
-    level = classify(avg)
-    print(f"{name}: {avg:.1f} → {level}")
+print(bigger(9, 4))
+print(bigger(3, 8))
 ```

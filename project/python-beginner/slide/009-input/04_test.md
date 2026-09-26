@@ -1,41 +1,49 @@
-# 🎤 Practice: Input — Question 3: Full Name
+# ⌨️ Input — ข้อ 3: ชื่อเล่นกับสีโปรด
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-รับชื่อจริงและนามสกุลแยกกัน แล้วแสดงชื่อเต็มและความยาวรวมกัน
-
-**Input:**
-```
-Alice
-Smith
-```
-
-**Output:**
-```
-Full name: Alice Smith
-First: Alice
-Last: Smith
-```
+กิจกรรม Ice Breaking ในห้องเรียน
+รับชื่อเล่นและสีโปรด แล้วแสดงทั้งสองอย่าง
 
 ---
 
-## 💡 Hint
+## Input
 
-- รับ 2 `input()` แยกกัน
-- ใช้ `print()` แสดง 3 บรรทัด
-- ต่อชื่อด้วย `first + " " + last` หรือ `print(first, last)`
+2 บรรทัด — ชื่อเล่น และสีโปรด
+
+## Output
+
+2 บรรทัด แสดงชื่อเล่นและสี
+
+---
+
+## ตัวอย่าง
+
+**Input:**
+
+```text
+Pleng
+blue
+```
+
+**Output:**
+
+```text
+Nickname: Pleng
+Color: blue
+```
 
 ---
 
 ## Starter Code
 
 ```python
-first_name = input()
-last_name = input()
+nickname = input()
+color = input()
 
-# Print full name and each part
+# เขียนโค้ดตรงนี้
 ```

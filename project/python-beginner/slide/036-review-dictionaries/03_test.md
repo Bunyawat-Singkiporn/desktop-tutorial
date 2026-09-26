@@ -1,37 +1,44 @@
-# 🔄 Practice Review Dictionaries — Question 2: List to Dict
+# 🔁 Review Dicts — ข้อ 3: อัปเดตโปรไฟล์สั้น
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-แปลง list ของคู่ `[ชื่อ, คะแนน]` ให้เป็น dict
+แก้เมืองในโปรไฟล์
 
-```python
-data = [["Alice", 90], ["Bob", 75], ["Charlie", 88]]
-```
+กำหนด `user = {"name": "Hugo", "city": "Trang"}`
 
-**Output:**
-```
-{'Alice': 90, 'Bob': 75, 'Charlie': 88}
-```
+แก้ city เป็น `Krabi` แล้วแสดงเมือง
 
 ---
 
-## 💡 Hint
+## Input
 
-Loop ผ่าน `data` และกำหนด `scores[pair[0]] = pair[1]`
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+บรรทัดเดียว
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+City: Krabi
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-data = [["Alice", 90], ["Bob", 75], ["Charlie", 88]]
-scores = {}
+user = {"name": "Hugo", "city": "Trang"}
 
-# แปลงเป็น dict
-
-print(scores)
+# เขียนโค้ดตรงนี้
 ```

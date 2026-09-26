@@ -1,4 +1,4 @@
-# 🔒 Practice Collection Review — Question 2: Tuple Demo
+# 📚 Collection Review — ข้อ 3: ตัดซ้ำจากรายชื่อ
 
 **Difficulty:** 🟢 Easy
 
@@ -6,34 +6,39 @@
 
 ## โจทย์
 
-สร้าง tuple ของสี RGB แล้วแสดงว่าอะไรทำได้และทำไม่ได้
+ตัดชื่อซ้ำจาก list
 
-```python
-rgb = (255, 128, 0)
-```
+กำหนด `names = ["Ed", "Ann", "Ed", "Ben"]`
 
-**ต้องทำ:**
-1. แสดงค่า r, g, b แยกกัน
-2. วน loop แสดงทุกค่า
-3. print ว่า `"RGB values are fixed"` เพื่อสื่อ immutability
+แสดงไม่ซ้ำแบบเรียง
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+list หนึ่งบรรทัด
+
+---
+
+## ตัวอย่าง
 
 **Output:**
+
+```text
+['Ann', 'Ben', 'Ed']
 ```
-R: 255
-G: 128
-B: 0
-All values: 255 128 0
-RGB values are fixed
-```
+
 
 ---
 
 ## Starter Code
 
 ```python
-rgb = (255, 128, 0)
+names = ["Ed", "Ann", "Ed", "Ben"]
 
-# แสดง r, g, b
-# วน loop
-# แสดง message
+# เขียนโค้ดตรงนี้
 ```

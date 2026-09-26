@@ -1,41 +1,45 @@
-# 🔗 Practice Dictionary Methods — Question 3: Items Loop
+# 🔧 Dict Methods — ข้อ 4: ลบคะแนนเก่า
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-กำหนดราคาสินค้า แสดงทุกรายการด้วย `.items()` พร้อมคำนวณรวม
+ลบคะแนนเก่าออกจากโปรไฟล์
 
-```python
-prices = {"apple": 15, "banana": 8, "mango": 25, "kiwi": 35}
-```
+กำหนด `student = {"name": "Cara", "score": 60, "room": "M2"}`
 
-**Output:**
-```
-apple: 15 บาท
-banana: 8 บาท
-mango: 25 บาท
-kiwi: 35 บาท
-Total: 83 บาท
-```
+ใช้ `del` ลบคีย์ score แล้วพิมพ์ทุกคีย์ที่เหลือ
 
 ---
 
-## 💡 Hint
+## Input
 
-ใช้ `for item, price in prices.items():`
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+name
+room
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-prices = {"apple": 15, "banana": 8, "mango": 25, "kiwi": 35}
-total = 0
+student = {"name": "Cara", "score": 60, "room": "M2"}
 
-# Write your code here
-
-print(f"Total: {total} บาท")
+# เขียนโค้ดตรงนี้
 ```

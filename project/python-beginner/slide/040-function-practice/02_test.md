@@ -1,4 +1,4 @@
-# ➕ Practice Function — Question 1: List Sum
+# 🧩 Function Practice — ข้อ 2: ผลรวม list
 
 **Difficulty:** 🟢 Easy
 
@@ -6,13 +6,34 @@
 
 ## โจทย์
 
-สร้าง function `list_sum(numbers)` ที่รับ list แล้ว return ผลรวม
+คิดยอดรวมราคาในตะกร้า
+
+**เงื่อนไข:**
+
+- สร้าง `list_sum(numbers)` คืนผลรวม
+- พิมพ์ผลของสอง list ตามตัวอย่าง
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม / เรียกฟังก์ชันในโค้ด)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## ตัวอย่าง
 
 **Output:**
-```
+
+```text
 150
 413
 ```
+
 
 ---
 
@@ -20,7 +41,7 @@
 
 ```python
 def list_sum(numbers):
-    # Write your code here
+    # เขียนโค้ดตรงนี้
 
 print(list_sum([10, 20, 30, 40, 50]))
 print(list_sum([78, 85, 92, 70, 88]))

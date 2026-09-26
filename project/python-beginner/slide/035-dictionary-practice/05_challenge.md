@@ -1,51 +1,66 @@
-# 🔥 Practice Dictionary — Question 4: Inventory System
+# 🏋️ Dict Practice — ข้อ 5: ตรวจคำตอบควิซ
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-สร้างระบบสินค้าคงคลัง รองรับคำสั่ง: `add`, `update`, `remove`, `show`, `exit`
+ตรวจคำตอบควิซ 3 ข้อ
 
-| คำสั่ง | ผล |
-|--------|-----|
-| `add` | เพิ่มสินค้า (ชื่อ + ราคา) |
-| `update` | อัปเดตราคา |
-| `remove` | ลบสินค้า |
-| `show` | แสดงทั้งหมด |
-| `exit` | จบ |
+กำหนด `answers = {"q1": "A", "q2": "C", "q3": "B"}`
 
-**ตัวอย่าง Session:**
+รับคำตอบผู้ใช้ด้วย `input("q1: ")` แบบเดียวกันกับ q2 q3
+ถ้าถูกพิมพ์ `Correct` ผิดพิมพ์ `Wrong` แล้วปิดท้ายด้วยคะแนนรวม (ข้อละ 1)
+
+ตัวอย่างคำตอบผู้ใช้: A / B / B
+
+> หมายเหตุ: prompt ของ input จะโผล่หน้าคำว่า Correct/Wrong
+
+---
+
+## Input
+
+3 บรรทัด — คำตอบ q1 q2 q3
+
+## Output
+
+4 บรรทัด (รวม prompt)
+
+---
+
+## ตัวอย่าง
+
+**Input:**
+
+```text
+A
+B
+B
 ```
-Command: add
-Name: Pen
-Price: 15
-Command: add
-Name: Book
-Price: 120
-Command: show
-Pen: 15 บาท
-Book: 120 บาท
-Command: update
-Name: Pen
-New price: 18
-Command: show
-Pen: 18 บาท
-Book: 120 บาท
-Command: exit
+
+**Output:**
+
+```text
+q1: Correct
+q2: Wrong
+q3: Correct
+Score: 2
 ```
+
+
+---
+
+## 💡 Hint
+
+เทียบคำตอบทีละข้อแล้วสะสมคะแนน
 
 ---
 
 ## Starter Code
 
 ```python
-inventory = {}
+answers = {"q1": "A", "q2": "C", "q3": "B"}
 
-while True:
-    command = input("Command: ")
-    if command == "exit":
-        break
-    # Write your code here
+# เขียนโค้ดตรงนี้
 ```

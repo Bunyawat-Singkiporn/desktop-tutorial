@@ -1,4 +1,4 @@
-# Practice Functions — Question 6: เมนูเกม
+# ⚙️ Functions — ข้อ 7: นับถอยหลัง 3
 
 **Difficulty:** 🟡 Medium
 
@@ -6,33 +6,48 @@
 
 ## โจทย์
 
-คุณกำลังทำเกม — สร้าง function `show_menu()` แสดงเมนูหลักของเกม
+จอเกมนับถอยหลังก่อนเริ่ม
 
-เรียก `show_menu()` **2 ครั้ง** (เหมือนเปิดเมนูแล้วกลับมาเปิดอีก)
+**เงื่อนไข:**
+
+- สร้าง `countdown()` พิมพ์ 3 แล้ว 2 แล้ว 1 แล้ว `Go!`
+- ใช้ list `[3, 2, 1]` วนพิมพ์ได้
+- เรียก 1 ครั้ง
 
 ---
 
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม / เรียกฟังก์ชันในโค้ด)
+
 ## Output
 
+4 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+3
+2
+1
+Go!
 ```
-=== My Game ===
-1. Start
-2. High Score
-3. Exit
-=== My Game ===
-1. Start
-2. High Score
-3. Exit
-```
+
+
+---
+
+## 💡 Hint
+
+วน list ตัวเลขแล้วพิมพ์ Go!
 
 ---
 
 ## Starter Code
 
 ```python
-def show_menu():
-    # Write your code here
-
-show_menu()
-show_menu()
+# countdown()
 ```

@@ -1,4 +1,4 @@
-# Practice: Output Formatting — Medium B: เงินทศนิยม 2 ตำแหน่ง
+# 🖨️ Output Formatting — ข้อ 7: ค่าพายสั้น
 
 **Difficulty:** 🟡 Medium
 
@@ -6,10 +6,26 @@
 
 ## โจทย์
 
-กำหนด `amount = 12.5` แสดงด้วย `:.2f` เป็น:
+pi = 3.14159 แสดง Pi = 3.14
 
-```
-Pay: 12.50
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Pi = 3.14
 ```
 
 
@@ -17,13 +33,14 @@ Pay: 12.50
 
 ## 💡 Hint
 
-f"Pay: {amount:.2f}"
+ใช้ :.2f
 
 ---
 
 ## Starter Code
 
 ```python
-amount = 12.5
+pi = 3.14159
 
+# แสดง
 ```

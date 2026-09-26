@@ -1,4 +1,4 @@
-# 📏 Practice Review Lists — Question 2: Word Lengths
+# 🔁 Review Lists — ข้อ 3: เพิ่มของเข้าตะกร้า
 
 **Difficulty:** 🟢 Easy
 
@@ -6,33 +6,41 @@
 
 ## โจทย์
 
-กำหนดรายการคำ แสดงแต่ละคำพร้อมความยาว
+ลูกค้าหยิบของเพิ่มเข้าตะกร้า
 
-```python
-words = ["cat", "python", "hi", "elephant", "ok"]
-```
+กำหนด `cart = ["Milk", "Bread"]` แล้ว append `Eggs` และ `Butter`
 
-**Output:**
-```
-cat: 3
-python: 6
-hi: 2
-elephant: 8
-ok: 2
-```
+แสดง list
 
 ---
 
-## 💡 Hint
+## Input
 
-ใช้ `len(word)` เพื่อหาความยาวของแต่ละคำ
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+list หนึ่งบรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+['Milk', 'Bread', 'Eggs', 'Butter']
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-words = ["cat", "python", "hi", "elephant", "ok"]
+cart = ["Milk", "Bread"]
 
-# Write your code here
+# เขียนโค้ดตรงนี้
+
+print(cart)
 ```

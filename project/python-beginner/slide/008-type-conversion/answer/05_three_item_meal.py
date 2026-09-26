@@ -1,0 +1,12 @@
+food = float(input())
+dessert = float(input())
+drink = float(input())
+total = food + dessert + drink
+print("========================")
+print("         MEAL")
+print("========================")
+print("Food     :", food)
+print("Dessert  :", dessert)
+print("Drink    :", drink)
+print("Total    :", total)
+print("========================")

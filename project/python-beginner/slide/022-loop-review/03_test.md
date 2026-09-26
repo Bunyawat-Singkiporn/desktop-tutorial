@@ -1,46 +1,43 @@
-# 🔢 Practice: Loop Review — Question 2: Multiples
+# 🔁 loop-review — ข้อ 3: แสดงเมนูของหวาน
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-รับตัวเลข n แล้วแสดงตัวคูณของ n ตั้งแต่ 1–10
-
-**Input:**
-```
-7
-```
-
-**Output:**
-```
-7 x 1 = 7
-7 x 2 = 14
-7 x 3 = 21
-7 x 4 = 28
-7 x 5 = 35
-7 x 6 = 42
-7 x 7 = 49
-7 x 8 = 56
-7 x 9 = 63
-7 x 10 = 70
-```
+ร้านมีเมนูของหวานใน list: `"Cake"`, `"Pudding"`, `"Ice Cream"`
+วนพิมพ์ทีละรายการ
 
 ---
 
-## 💡 Hint
+## Input
 
-- `for i in range(1, 11):`
-- ใช้ f-string: `f"{n} x {i} = {n * i}"`
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+3 บรรทัดชื่อของหวาน
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Cake
+Pudding
+Ice Cream
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-n = int(input())
+desserts = ["Cake", "Pudding", "Ice Cream"]
 
-for i in range(1, 11):
-    # Print "n x i = result"
+# วนพิมพ์
 ```

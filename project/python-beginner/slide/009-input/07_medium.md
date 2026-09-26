@@ -1,4 +1,4 @@
-# Practice: Input — Medium B: ราคารวม
+# ⌨️ Input — ข้อ 7: บิลสองรายการ
 
 **Difficulty:** 🟡 Medium
 
@@ -6,40 +6,49 @@
 
 ## โจทย์
 
-รับราคาสินค้าต่อชิ้น (int) และจำนวน (int) แสดงผลคูณ:
-
-```
-Total: <price*qty>
-```
-
+ร้านมินิมาร์ทคิดเงินสองรายการ
+รับราคาสองชิ้น แล้วแสดงยอดรวม
 
 ---
 
-## ตัวอย่าง Input / Output
+## Input
+
+2 บรรทัด — ราคาชิ้นที่ 1 และชิ้นที่ 2 (จำนวนเต็ม)
+
+## Output
+
+ยอดรวม 1 บรรทัด
+
+---
+
+## ตัวอย่าง
 
 **Input:**
-```
-25
-4
+
+```text
+45
+30
 ```
 
 **Output:**
-```
-Total: 100
+
+```text
+Total: 75
 ```
 
 ---
 
 ## 💡 Hint
 
-สอง int(input())
+ใช้ `int(input())` สองครั้ง แล้วบวกก่อนพิมพ์
 
 ---
 
 ## Starter Code
 
 ```python
-price = int(input())
-qty = int(input())
+item1 = int(input())
+item2 = int(input())
 
+# เขียนโค้ดตรงนี้
 ```

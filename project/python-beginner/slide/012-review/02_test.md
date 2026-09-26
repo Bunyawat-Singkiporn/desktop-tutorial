@@ -1,4 +1,4 @@
-# 🔁 Practice: Review — Question 1: Hello with Age
+# 📝 Review — ข้อ 2: ทักทายจาก input
 
 **Difficulty:** 🟢 Easy
 
@@ -6,27 +6,34 @@
 
 ## โจทย์
 
-รับชื่อและปีเกิด แล้วแสดงข้อมูลพร้อมคำนวณอายุ (ปัจจุบัน = 2025)
-
-**Input:**
-```
-Emma
-2012
-```
-
-**Output:**
-```
-Name: Emma
-Age: 13
-```
+รับชื่อ แสดง Hello, ชื่อ!
 
 ---
 
-## 💡 Hint
+## Input
 
-- อายุ = 2025 - ปีเกิด
-- แปลงปีเกิดเป็น `int` ก่อนลบ
-- ใช้ f-string สำหรับ output
+ดูตัวอย่าง
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Input:**
+
+```text
+Pat
+```
+
+**Output:**
+
+```text
+Hello, Pat!
+```
+
 
 ---
 
@@ -34,8 +41,6 @@ Age: 13
 
 ```python
 name = input()
-birth_year = int(input())
 
-# Calculate age
-# Print results
+# ทักทาย
 ```

@@ -1,4 +1,4 @@
-# Practice: Midyear Review — Medium A: เฉลี่ย 3 วิชา + เกรด
+# 🏆 midyear-review — ข้อ 6: ค่าเฉลี่ยคะแนนห้อง
 
 **Difficulty:** 🟡 Medium
 
@@ -6,38 +6,43 @@
 
 ## โจทย์
 
-รับคะแนน 3 วิชา (int) หาเฉลี่ย แสดงเฉลี่ยทศนิยม 1 ตำแหน่ง แล้วเกรด A ถ้า >=80, B ถ้า >=60, else C
-
+คะแนนห้อง `[80, 70, 90, 60]` หาผลรวมและค่าเฉลี่ยทศนิยม 1 ตำแหน่ง
 
 ---
 
-## ตัวอย่าง Input / Output
+## Input
 
-**Input:**
-```
-80
-70
-90
-```
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+สองบรรทัด Total และ Average
+
+---
+
+## ตัวอย่าง
+
 **Output:**
+
+```text
+Total: 300
+Average: 75.0
 ```
-80.0
-A
-```
+
 
 ---
 
 ## 💡 Hint
 
-loop หรือบวกสามค่า + elif
+สะสมด้วยลูป ห้ามใช้ sum()
 
 ---
 
 ## Starter Code
 
 ```python
-s1 = int(input())
-s2 = int(input())
-s3 = int(input())
+scores = [80, 70, 90, 60]
+total = 0
 
+# รวมและเฉลี่ย
 ```

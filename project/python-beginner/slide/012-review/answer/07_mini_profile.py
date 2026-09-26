@@ -1,5 +1,0 @@
-name = input()
-city = input()
-print("PROFILE")
-print(f"Name: {name}")
-print(f"City: {city}")

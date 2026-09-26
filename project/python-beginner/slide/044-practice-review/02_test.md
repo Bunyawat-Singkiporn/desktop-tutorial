@@ -1,4 +1,4 @@
-# 🔗 Practice Review — Question 1: List + Function + Condition
+# 🔁 Practice Review — ข้อ 2: ผลรวมคะแนน list
 
 **Difficulty:** 🟢 Easy
 
@@ -6,25 +6,41 @@
 
 ## โจทย์
 
-สร้าง function `check_pass(scores)` ที่แสดงแต่ละคะแนนพร้อม Pass/Fail
+รวมคะแนนใน list
+
+**เงื่อนไข:**
+
+- `total_of(scores)` คืนผลรวม
+- พิมพ์ผลของ `[70, 80, 90]`
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
 
 **Output:**
+
+```text
+240
 ```
-85 → Pass
-45 → Fail
-92 → Pass
-38 → Fail
-77 → Pass
-```
+
 
 ---
 
 ## Starter Code
 
 ```python
-def check_pass(scores):
-    for score in scores:
-        # Write your code here
+def total_of(scores):
+    # รวม
 
-check_pass([85, 45, 92, 38, 77])
+print(total_of([70, 80, 90]))
 ```

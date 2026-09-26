@@ -1,4 +1,4 @@
-# 💥 Debugging — Question 2: Fix Runtime Error
+# 🐛 Debugging — ข้อ 3: กันหารศูนย์
 
 **Difficulty:** 🟢 Easy
 
@@ -6,45 +6,55 @@
 
 ## โจทย์
 
-โค้ดด้านล่างมี **Runtime Error** 2 จุด — หาและแก้
+หารตัวเลขสองค่า แต่ห้ามให้โปรแกรมพังเมื่อตัวหารเป็น 0
 
-```python
-scores = [85, 92, 78]
+**เงื่อนไข:**
 
-# Bug 1: index เกิน
-print(scores[5])
+- รับ a และ b
+- ถ้า b == 0 พิมพ์ `Cannot divide`
+- ไม่งั้นพิมพ์ผล `a / b` ทศนิยม 1 ตำแหน่ง
 
-# Bug 2: ชนิดข้อมูลผิด
-age = input("Age: ")
-next_year = age + 1
-print(next_year)
+---
+
+## Input
+
+ดูตัวอย่าง
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Input:**
+
+```text
+10
+0
 ```
 
-**Output ที่ถูกต้อง** (ถ้าผู้ใช้ป้อน `15`):
+**Output:**
+
+```text
+Cannot divide
 ```
-78
-16
-```
+
 
 ---
 
 ## 💡 Hint
 
-- Bug 1: index สุดท้ายคือ `len(scores) - 1`
-- Bug 2: `input()` return `str` เสมอ ต้องแปลงเป็น `int` ก่อน
+เช็ก b ก่อนหาร
 
 ---
 
 ## Starter Code
 
 ```python
-scores = [85, 92, 78]
+a = int(input())
+b = int(input())
 
-# แก้ Bug 1
-print(scores[5])
-
-# แก้ Bug 2
-age = input("Age: ")
-next_year = age + 1
-print(next_year)
+# กันหารศูนย์
 ```

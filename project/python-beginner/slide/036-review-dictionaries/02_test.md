@@ -1,4 +1,4 @@
-# 🐛 Practice Review Dictionaries — Question 1: Fix Access Bug
+# 🔁 Review Dicts — ข้อ 2: อ่านค่าปลอดภัย
 
 **Difficulty:** 🟢 Easy
 
@@ -6,33 +6,39 @@
 
 ## โจทย์
 
-โค้ดด้านล่างมีบัค — แก้ให้ทำงานถูกต้อง
+อ่านคะแนนแบบเช็คคีย์ก่อน
 
-```python
-# โค้ดที่มีบัค
-student = {"name": "Alice", "age": 15}
-print(student["score"])   # KeyError!
-print(student[name])      # NameError!
-```
+กำหนด `student = {"name": "Gina", "room": "M3"}`
 
-**Output ที่ถูกต้อง:**
-```
-Name: Alice
-Age: 15
-```
+ถ้ามี `score` แสดงค่า ไม่งั้นแสดง `No score yet`
 
 ---
 
-## 💡 Hint
+## Input
 
-ตรวจว่า key มีอยู่จริงไหม และใช้ string `"name"` ไม่ใช่ตัวแปร `name`
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+บรรทัดเดียว
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+No score yet
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-student = {"name": "Alice", "age": 15}
+student = {"name": "Gina", "room": "M3"}
 
-# แก้โค้ดให้ถูกต้อง
+# เขียนโค้ดตรงนี้
 ```

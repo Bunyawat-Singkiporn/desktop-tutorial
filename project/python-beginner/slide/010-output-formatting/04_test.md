@@ -1,49 +1,38 @@
-# 📊 Practice: Output Formatting — Question 3: Score Report
+# 🖨️ Output Formatting — ข้อ 4: คั่นด้วยขีด
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-รับชื่อและคะแนน 3 วิชา แล้วแสดงรายงานผลการเรียนพร้อมคะแนนเฉลี่ย
-
-**Input:**
-```
-Sam
-80
-90
-70
-```
-
-**Output:**
-```
-=== Score Report ===
-Name: Sam
-Math: 80
-English: 90
-Science: 70
-Average: 80.00
-```
+พิมพ์ A B C โดยคั่นด้วย - ด้วย sep
 
 ---
 
-## 💡 Hint
+## Input
 
-- เฉลี่ย = (คะแนนรวม) / 3
-- ใช้ `{average:.2f}` แสดงทศนิยม 2 ตำแหน่ง
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+A-B-C
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-name = input()
-math = int(input())
-english = int(input())
-science = int(input())
-
-average = (math + english + science) / 3
-
-# Print report using f-string
+# ใช้ sep
 ```

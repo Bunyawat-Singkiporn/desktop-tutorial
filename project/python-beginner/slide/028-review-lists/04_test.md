@@ -1,36 +1,46 @@
-# 🔀 Practice Review Lists — Question 3: Merge and Sort
+# 🔁 Review Lists — ข้อ 4: ลบเมนูเลิกขาย
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-รวม 2 list เข้าด้วยกัน แล้วเรียงจากน้อยไปมาก และแสดงผล
+ร้านเลิกขายเมนูหนึ่งรายการ
 
-```python
-group_a = [5, 2, 9, 1]
-group_b = [8, 3, 7, 4]
-```
+กำหนด `menu = ["Pad Thai", "Soup", "Salad", "Curry"]`
 
-**Output:**
-```
-[1, 2, 3, 4, 5, 7, 8, 9]
-```
+ลบ `Soup` แล้วแสดง list
 
 ---
 
-## 💡 Hint
+## Input
 
-ใช้ `+` เพื่อรวม list แล้วใช้ `.sort()`
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+list หนึ่งบรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+['Pad Thai', 'Salad', 'Curry']
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-group_a = [5, 2, 9, 1]
-group_b = [8, 3, 7, 4]
+menu = ["Pad Thai", "Soup", "Salad", "Curry"]
 
-# รวมสอง list แล้วเรียง
+# เขียนโค้ดตรงนี้
+
+print(menu)
 ```

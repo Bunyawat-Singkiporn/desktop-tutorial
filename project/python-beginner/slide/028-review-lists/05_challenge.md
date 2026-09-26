@@ -1,50 +1,54 @@
-# 🔥 Practice Review Lists — Question 4: Grade Tracker
+# 🔁 Review Lists — ข้อ 5: รายงานชั้นเรียน
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-กำหนดคะแนน 5 วิชา คำนวณค่าเฉลี่ยและแสดงผลสรุป
+พิมพ์รายงานชั้นเรียนพร้อมเลขที่และจำนวนคน
 
-```python
-scores = [78, 85, 92, 70, 88]
-```
+กำหนด `students = ["Ann", "Ben", "Cara", "Dan"]`
 
-**ต้องแสดง:**
-1. คะแนนแต่ละวิชาพร้อมหมายเลข
-2. ผลรวม
-3. ค่าเฉลี่ย (ทศนิยม 1 ตำแหน่ง)
-4. ผล: `Pass` ถ้าเฉลี่ย >= 70, `Fail` ถ้าไม่ถึง
+แสดงตามตัวอย่าง
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+รายการ + สรุป
+
+---
+
+## ตัวอย่าง
 
 **Output:**
+
+```text
+1) Ann
+2) Ben
+3) Cara
+4) Dan
+Students: 4
 ```
-1. 78
-2. 85
-3. 92
-4. 70
-5. 88
-Total: 413
-Average: 82.6
-Result: Pass
-```
+
 
 ---
 
 ## 💡 Hint
 
-- ใช้ loop คำนวณ total ก่อน
-- `average = total / len(scores)`
-- ใช้ `f"{average:.1f}"` สำหรับทศนิยม 1 ตำแหน่ง
+range(len) + สรุปจำนวน
 
 ---
 
 ## Starter Code
 
 ```python
-scores = [78, 85, 92, 70, 88]
-total = 0
+students = ["Ann", "Ben", "Cara", "Dan"]
 
-# Write your code here
+# เขียนโค้ดตรงนี้
 ```

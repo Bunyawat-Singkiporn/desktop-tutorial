@@ -1,38 +1,45 @@
-# 🔄 Practice Choosing Data Types — Question 2: Dedup and Sort
+# 🧭 Choosing Types — ข้อ 3: วันในสัปดาห์คงที่
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-กำหนด list ที่มีค่าซ้ำ แปลงให้เป็น list ที่ไม่มีซ้ำและเรียงแล้วโดยผ่าน set
+ชื่อวันเปลี่ยนไม่ได้ ใช้ tuple
 
-```python
-data = [5, 3, 1, 3, 7, 5, 2, 7, 1]
-```
+กำหนด `week = ("Mon", "Tue", "Wed")`
 
-**Output:**
-```
-Original: [5, 3, 1, 3, 7, 5, 2, 7, 1]
-Unique sorted: [1, 2, 3, 5, 7]
-```
+แสดงวันแรกและจำนวนวัน
 
 ---
 
-## 💡 Hint
+## Input
 
-1. แปลง list → set (ลบซ้ำ)
-2. แปลง set → list
-3. `.sort()` list
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Mon
+Days: 3
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-data = [5, 3, 1, 3, 7, 5, 2, 7, 1]
-print("Original:", data)
+week = ("Mon", "Tue", "Wed")
 
-# แปลงและเรียง
+# เขียนโค้ดตรงนี้
 ```

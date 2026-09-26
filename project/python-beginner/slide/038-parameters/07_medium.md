@@ -1,4 +1,4 @@
-# Practice Parameters — Question 6: บิลร้านอาหาร
+# 📥 Parameters — ข้อ 7: ตรวจสิทธิ์โหวต
 
 **Difficulty:** 🟡 Medium
 
@@ -6,42 +6,45 @@
 
 ## โจทย์
 
-ทำบิลร้านอาหารง่ายๆ
+ตรวจอายุก่อนเข้าคูหา
 
-สร้าง `print_bill(price, qty)` ที่แสดง:
-- ราคาต่อจาน
-- จำนวน
-- รวม = `price * qty`
+**เงื่อนไข:**
 
-รับราคาและจำนวนจาก `input` แล้วเรียก function
+- สร้าง `check_vote(age)` ถ้า age >= 18 พิมพ์ `Can vote` ไม่งั้น `Too young`
+- เรียกกับ `20` และ `15`
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม / เรียกฟังก์ชันในโค้ด)
+
+## Output
+
+2 บรรทัด
 
 ---
 
 ## ตัวอย่าง
 
-**Input:**
-```
-45
-2
+**Output:**
+
+```text
+Can vote
+Too young
 ```
 
-**Output:**
-```
-Food Bill
-Price: 45.0
-Qty: 2
-Total: 90.0
-```
+
+---
+
+## 💡 Hint
+
+เทียบกับ 18 ในฟังก์ชัน
 
 ---
 
 ## Starter Code
 
 ```python
-def print_bill(price, qty):
-    # Write your code here
-
-price = float(input())
-qty = int(input())
-print_bill(price, qty)
+# check_vote
 ```

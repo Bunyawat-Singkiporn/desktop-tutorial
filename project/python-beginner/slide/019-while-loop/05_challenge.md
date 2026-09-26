@@ -1,51 +1,59 @@
-# 🔥 Practice: while Loop — Question 4: Number Accumulator
+# 🏦 while-loop — ข้อ 5: ถอนเงินจนเหลือไม่พอ
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-รับตัวเลขซ้ำๆ จนกว่าผู้ใช้จะพิมพ์ `0` แล้วแสดงสถิติ
+ยอดเงินในบัญชีเริ่มที่ `balance`
+รับจำนวนเงินที่ถอนทีละครั้ง ถ้ายอดคงเหลือพอให้ถอนได้
+ถ้าจำนวนที่ขอถอน **มากกว่า** ยอดคงเหลือ ให้หยุดรับและแสดงยอดคงเหลือสุดท้าย
+
+(ใช้เงื่อนไข while เทียบยอด — ห้าม break)
+
+---
+
+## Input
+
+บรรทัดแรกยอดเงิน ตามด้วยจำนวนถอนทีละบรรทัด
+
+## Output
+
+Remaining: <ยอดคงเหลือเมื่อถอนไม่พอ>
+
+---
+
+## ตัวอย่าง
 
 **Input:**
-```
-5
-12
-3
-8
-0
+
+```text
+1000
+200
+300
+600
 ```
 
 **Output:**
-```
-Count: 4
-Total: 28
-Average: 7.00
-Largest: 12
-Smallest: 3
+
+```text
+Remaining: 500
 ```
 
 ---
 
 ## 💡 Hint
 
-- ใช้ `while True:` + `break` เมื่อรับ 0
-- เก็บตัวเลขทุกตัวใน list
-- ใช้ `max()`, `min()`, `sum()`, `len()` คำนวณ
+วนรับจำนวนถอนตราบใดที่ถอนได้ไม่เกินยอดคงเหลือ หักยอดแล้วรับรอบใหม่ — พิมพ์ Remaining หลังลูป
 
 ---
 
 ## Starter Code
 
 ```python
-numbers = []
+balance = int(input())
+withdraw = int(input())
 
-while True:
-    n = int(input())
-    if n == 0:
-        break
-    numbers.append(n)
-
-# Calculate and print stats
+# เขียนโค้ดตรงนี้
 ```

@@ -1,4 +1,4 @@
-# ➕ Practice List Methods — Question 1: Build a List
+# 🛠️ List Methods — ข้อ 2: เพิ่มชื่อเข้ากลุ่มแชท
 
 **Difficulty:** 🟢 Easy
 
@@ -6,27 +6,41 @@
 
 ## โจทย์
 
-เริ่มด้วย list ว่าง แล้วเพิ่มชื่อ 3 คนด้วย `.append()` แสดงผล list สุดท้าย
+กลุ่มแชทเริ่มว่าง แล้วมีเพื่อนเข้ามา 3 คน
 
-**Output:**
-```
-['Alice', 'Bob', 'Charlie']
-```
+เริ่มจาก `members = []` แล้ว `.append()` ชื่อ `Mew`, `Pim`, `Ohm` ตามลำดับ
+
+แสดง list สุดท้าย
 
 ---
 
-## 💡 Hint
+## Input
 
-เรียก `.append()` 3 ครั้ง แต่ละครั้งใส่ชื่อหนึ่งคน
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+list หนึ่งบรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+['Mew', 'Pim', 'Ohm']
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-names = []
+members = []
 
-# เพิ่มชื่อ 3 คน
+# เขียนโค้ดตรงนี้
 
-print(names)
+print(members)
 ```

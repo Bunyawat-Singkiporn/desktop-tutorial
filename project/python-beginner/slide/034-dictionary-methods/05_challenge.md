@@ -1,59 +1,53 @@
-# 🔥 Practice Dictionary Methods — Question 4: Contact Editor
+# 🔧 Dict Methods — ข้อ 5: จัดการโปรไฟล์เต็มชุด
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-สร้าง contact editor ที่ทำได้ 3 คำสั่ง: `show`, `update`, `delete`
+จัดการโปรไฟล์ด้วยหลายคำสั่ง
 
-```python
-contact = {
-    "name": "Alice",
-    "phone": "081-111-1111",
-    "city": "Bangkok"
-}
+กำหนด `user = {"name": "Finn", "age": 16, "temp": 1, "city": "Nan"}`
+
+update age เป็น 17 และ city เป็น `Lampang` แล้ว del `temp`
+จากนั้นพิมพ์ items
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+3 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+name: Finn
+age: 17
+city: Lampang
 ```
 
-| คำสั่ง | ผล |
-|--------|-----|
-| `show` | แสดงทุก key-value |
-| `update` | รับ key และค่าใหม่แล้วอัปเดต |
-| `delete` | รับ key แล้วลบออก |
-| `exit` | จบโปรแกรม |
 
-**ตัวอย่าง Session:**
-```
-Command: show
-name: Alice
-phone: 081-111-1111
-city: Bangkok
-Command: update
-Key: city
-Value: Chiang Mai
-Command: delete
-Key: phone
-Command: show
-name: Alice
-city: Chiang Mai
-Command: exit
-```
+---
+
+## 💡 Hint
+
+update หลายคีย์ ลบของชั่วคราว แล้วรายงาน
 
 ---
 
 ## Starter Code
 
 ```python
-contact = {
-    "name": "Alice",
-    "phone": "081-111-1111",
-    "city": "Bangkok"
-}
+user = {"name": "Finn", "age": 16, "temp": 1, "city": "Nan"}
 
-while True:
-    command = input("Command: ")
-    if command == "exit":
-        break
-    # Write your code here
+# เขียนโค้ดตรงนี้
 ```

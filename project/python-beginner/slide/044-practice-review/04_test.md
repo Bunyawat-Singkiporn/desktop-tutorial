@@ -1,41 +1,48 @@
-# 🔄 Practice Review — Question 3: Input → Store → Display
+# 🔁 Practice Review — ข้อ 4: ค่าเฉลี่ยกันว่าง
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-สร้างโปรแกรมที่รับชื่อและคะแนน 3 คน เก็บใน list แล้วแสดงผลสรุป
+ค่าเฉลี่ยที่กัน list ว่าง
 
-**ตัวอย่าง Session:**
+**เงื่อนไข:**
+
+- `average(scores)` ถ้าว่างคืน 0 ไม่งั้น sum/len
+- พิมพ์ผล `[]` และ `[8, 10]`
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+0
+9.0
 ```
-Name: Alice
-Score: 85
-Name: Bob
-Score: 72
-Name: Charlie
-Score: 90
-=== Results ===
-Alice: 85
-Bob: 72
-Charlie: 90
-Average: 82.3
-```
+
 
 ---
 
 ## Starter Code
 
 ```python
-records = []
+def average(scores):
+    # กันว่าง
 
-for i in range(3):
-    name = input("Name: ")
-    score = int(input("Score: "))
-    records.append((name, score))
-
-print("=== Results ===")
-# แสดงทุกคน
-# คำนวณและแสดงค่าเฉลี่ย
+print(average([]))
+print(average([8, 10]))
 ```

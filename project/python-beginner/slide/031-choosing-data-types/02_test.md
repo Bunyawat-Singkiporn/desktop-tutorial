@@ -1,4 +1,4 @@
-# 🤔 Practice Choosing Data Types — Question 1: Right Tool
+# 🧭 Choosing Types — ข้อ 2: รายการซื้อที่แก้ได้
 
 **Difficulty:** 🟢 Easy
 
@@ -6,35 +6,41 @@
 
 ## โจทย์
 
-สร้างโค้ดสำหรับ 3 สถานการณ์ต่อไปนี้โดยใช้ชนิดข้อมูลที่เหมาะสม:
+รายการซื้อต้องเพิ่มของได้ทีหลัง เลยใช้ list
 
-| สถานการณ์ | ชนิดที่เหมาะ |
-|----------|------------|
-| ชื่อวันในสัปดาห์ (ไม่เปลี่ยน) | Tuple |
-| รายชื่อสมาชิก (เพิ่มลบได้) | List |
-| รหัสนักเรียน (ไม่ซ้ำ) | Set |
+เริ่ม `cart = ["Milk", "Bread"]` แล้ว append `Eggs`
 
-แสดงจำนวนสมาชิกของแต่ละชนิด
+แสดง list
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+list หนึ่งบรรทัด
+
+---
+
+## ตัวอย่าง
 
 **Output:**
+
+```text
+['Milk', 'Bread', 'Eggs']
 ```
-Days: 7
-Members: 4
-IDs: 5
-```
+
 
 ---
 
 ## Starter Code
 
 ```python
-# สร้างแต่ละชนิดด้วยข้อมูลตัวอย่าง
+cart = ["Milk", "Bread"]
 
-days = # tuple
-members = # list  
-ids = # set
+# เขียนโค้ดตรงนี้
 
-print("Days:", len(days))
-print("Members:", len(members))
-print("IDs:", len(ids))
+print(cart)
 ```

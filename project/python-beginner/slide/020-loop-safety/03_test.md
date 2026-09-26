@@ -1,36 +1,53 @@
-# ⏭️ Practice: Loop Safety — Question 2: Skip Even Numbers
+# ⏭️ loop-safety — ข้อ 3: ข้ามเลขที่หาร 5 ลงตัว
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-วนซ้ำ 1–10 แต่ข้ามเลขคู่ทั้งหมด แสดงเฉพาะเลขคี่
-
-**Output:**
-```
-1
-3
-5
-7
-9
-```
+วนเลข `1` ถึง `12` ถ้าเลขหารด้วย 5 ลงตัวให้ `continue`
+พิมพ์เฉพาะเลขที่เหลือ
 
 ---
 
-## 💡 Hint
+## Input
 
-- ถ้า `i % 2 == 0` (เลขคู่) ให้ `continue`
-- ถ้าไม่ใช่ก็ `print` ปกติ
+ไม่มี
+
+## Output
+
+เลข 1–12 ที่ไม่หาร 5 ลงตัว
+
+---
+
+## ตัวอย่าง
+
+**Input:**
+
+```text
+
+```
+
+**Output:**
+
+```text
+1
+2
+3
+4
+6
+7
+8
+9
+11
+12
+```
 
 ---
 
 ## Starter Code
 
 ```python
-for i in range(1, 11):
-    if i % 2 == 0:
-        # Skip even numbers
-    print(i)
+# เขียนโค้ดตรงนี้
 ```

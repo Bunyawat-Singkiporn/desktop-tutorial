@@ -1,61 +1,40 @@
-# 🔍 Read Code — Question 2: Trace Variables
+# 👀 Read Code — ข้อ 3: ทำนายลูปพิมพ์
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-ไล่ค่าตัวแปรทีละขั้นแล้วเขียน trace table ลงใน comment
-จากนั้นรันโค้ดเพื่อตรวจสอบ
-
-```python
-def mystery(items):
-    count = 0
-    total = 0
-    for item in items:
-        if item > 5:
-            count += 1
-            total += item
-    return total, count
-
-result = mystery([3, 8, 2, 9, 5, 7])
-print(result)
-```
+เขียนโปรแกรมให้พิมพ์เหมือนการวน `for i in range(3): print(i)`
 
 ---
 
-## คำถาม
+## Input
 
-เติม trace table:
+ไม่มี (กำหนดค่าในโปรแกรม)
 
-| รอบ | item | item > 5? | count | total |
-|-----|------|-----------|-------|-------|
-| 1 | 3 | False | 0 | 0 |
-| 2 | 8 | True | ? | ? |
-| 3 | 2 | ? | ? | ? |
-| 4 | 9 | ? | ? | ? |
-| 5 | 5 | ? | ? | ? |
-| 6 | 7 | ? | ? | ? |
+## Output
 
-Output คือ: ?
+3 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+0
+1
+2
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-# ตอบ trace table ใน comment ก่อน
-
-def mystery(items):
-    count = 0
-    total = 0
-    for item in items:
-        if item > 5:
-            count += 1
-            total += item
-    return total, count
-
-result = mystery([3, 8, 2, 9, 5, 7])
-print(result)
+# ลูป range(3)
 ```

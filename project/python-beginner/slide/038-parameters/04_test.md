@@ -1,27 +1,44 @@
-# 🧾 Practice Parameters — Question 3: Describe Person
+# 📥 Parameters — ข้อ 4: บวกแล้วพิมพ์
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-สร้าง function `describe(name, age, city)` ที่แสดงประโยคแนะนำตัว
+เครื่องคิดเลขบวกสองจำนวนแล้วแสดงผลทันที
+
+**เงื่อนไข:**
+
+- สร้าง `add(a, b)` พิมพ์ผลบวกอย่างเดียว
+- เรียก `add(3, 5)` และ `add(10, 20)`
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม / เรียกฟังก์ชันในโค้ด)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## ตัวอย่าง
 
 **Output:**
+
+```text
+8
+30
 ```
-Alice is 15 years old and lives in Bangkok.
-Bob is 14 years old and lives in Chiang Mai.
-```
+
 
 ---
 
 ## Starter Code
 
 ```python
-def describe(name, age, city):
-    # Write your code here
-
-describe("Alice", 15, "Bangkok")
-describe("Bob", 14, "Chiang Mai")
+# add(a, b)
 ```

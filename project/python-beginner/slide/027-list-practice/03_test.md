@@ -1,4 +1,4 @@
-# 🧮 Practice List — Question 2: Count Passing Scores
+# 🏋️ List Practice — ข้อ 3: นับคะแนนผ่านเกณฑ์
 
 **Difficulty:** 🟢 Easy
 
@@ -6,32 +6,39 @@
 
 ## โจทย์
 
-นับจำนวนคะแนนที่ **>= 50** (ผ่าน) จาก list
+ครูอยากรู้ว่ามีกี่คนได้คะแนนตั้งแต่ 60 ขึ้นไป
 
-```python
-scores = [85, 45, 92, 38, 77, 61, 49, 55]
-```
+กำหนด `scores = [55, 80, 42, 70, 90, 58]`
 
-**Output:**
-```
-Passed: 5
-```
+แสดง `Passed: N`
 
 ---
 
-## 💡 Hint
+## Input
 
-ใช้ตัวแปร `count = 0` แล้วเพิ่มทุกครั้งที่เงื่อนไขเป็นจริง
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+บรรทัดเดียว
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Passed: 3
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-scores = [85, 45, 92, 38, 77, 61, 49, 55]
-count = 0
+scores = [55, 80, 42, 70, 90, 58]
 
-# Write your code here
-
-print("Passed:", count)
+# เขียนโค้ดตรงนี้
 ```

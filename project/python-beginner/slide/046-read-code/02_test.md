@@ -1,4 +1,4 @@
-# 👁️ Read Code — Question 1: Predict Output
+# 👀 Read Code — ข้อ 2: ทำนายผลลัพธ์บวก
 
 **Difficulty:** 🟢 Easy
 
@@ -6,43 +6,39 @@
 
 ## โจทย์
 
-อ่านโค้ดด้านล่าง **โดยไม่รัน** แล้วเขียนว่า output คืออะไร
-จากนั้นรันเพื่อตรวจสอบ
+โค้ดด้านล่างจะพิมพ์อะไร? จงเขียนโปรแกรมให้ได้ผลเดียวกัน
 
 ```python
-numbers = [2, 5, 3, 8, 1]
-result = 0
-
-for n in numbers:
-    if n % 2 == 0:
-        result += n
-
-print(result)
+a = 4
+b = 6
+print(a + b)
 ```
 
 ---
 
-## คำถาม
+## Input
 
-1. ตัวแปร `result` มีค่าเท่าไหร่หลัง loop จบ?
-2. Output คืออะไร?
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+10
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-# เขียนคำตอบเป็น comment ก่อนรัน
-# result เท่ากับ: ?
-# Output คือ: ?
-
-# แล้วรันโค้ดเพื่อตรวจสอบ
-numbers = [2, 5, 3, 8, 1]
-result = 0
-
-for n in numbers:
-    if n % 2 == 0:
-        result += n
-
-print(result)
+# ให้ได้ผลเหมือนโค้ดด้านบน
 ```

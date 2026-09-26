@@ -1,4 +1,4 @@
-# Practice Function — Question 5: บิลซูเปอร์มาร์เก็ต + VAT
+# 🧩 Function Practice — ข้อ 6: บิล+VAT สองฟังก์ชัน
 
 **Difficulty:** 🟡 Medium
 
@@ -6,28 +6,40 @@
 
 ## โจทย์
 
-ทำเครื่องคิดเงินซูเปอร์มาร์เก็ต
+รวมราคาสินค้าแล้วคิด VAT 7%
 
-| Function | หน้าที่ |
-|----------|---------|
-| `calc_total(prices)` | รวมราคาสินค้าใน list |
-| `add_vat(total)` | คืนราคารวมหลัง VAT 7% |
+**เงื่อนไข:**
 
-ถามจำนวนสินค้า รับราคาทีละชิ้น แล้วแสดงยอดก่อน/หลัง VAT
+- `calc_total(prices)` คืนผลรวม
+- `add_vat(total)` คืน total * 1.07
+- พิมพ์ `add_vat(calc_total([100, 50]))` ทศนิยม 2 ตำแหน่ง
 
 ---
 
-## ตัวอย่าง Session
+## Input
 
+ไม่มี (กำหนดค่าในโปรแกรม / เรียกฟังก์ชันในโค้ด)
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+160.50
 ```
-How many items? 3
-Price: 100
-Price: 50
-Price: 25
-=== Receipt ===
-Before VAT: 175.0
-After VAT: 187.25
-```
+
+
+---
+
+## 💡 Hint
+
+ประกอบสองฟังก์ชัน
 
 ---
 
@@ -35,18 +47,10 @@ After VAT: 187.25
 
 ```python
 def calc_total(prices):
-    # Write your code here
+    # เขียนโค้ดตรงนี้
 
 def add_vat(total):
-    # Write your code here
+    # เขียนโค้ดตรงนี้
 
-n = int(input("How many items? "))
-prices = []
-for i in range(n):
-    prices.append(float(input("Price: ")))
-
-total = calc_total(prices)
-print("=== Receipt ===")
-print(f"Before VAT: {total}")
-print(f"After VAT: {add_vat(total)}")
+print(f"{add_vat(calc_total([100, 50])):.2f}")
 ```

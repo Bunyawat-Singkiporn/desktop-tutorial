@@ -1,46 +1,50 @@
-# 🚀 Practice: while Loop — Question 2: Countdown
+# 2️⃣ while-loop — ข้อ 3: พิมพ์เลขคู่ด้วย while
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-รับตัวเลขจากผู้ใช้ แล้วนับถอยหลังจากตัวเลขนั้นถึง 1
-
-**Input:**
-```
-5
-```
-
-**Output:**
-```
-5
-4
-3
-2
-1
-Blast off!
-```
+พิมพ์เลขคู่ `2 4 6 8 10` ทีละบรรทัด ด้วย `while`
+เริ่มจากตัวแปร `n = 2` แล้วเพิ่มทีละ 2
 
 ---
 
-## 💡 Hint
+## Input
 
-- รับค่าแล้วแปลงเป็น `int`
-- เงื่อนไข: `count > 0`
-- ลด count ลง 1 ทุกรอบ
+ไม่มี
+
+## Output
+
+เลขคู่ 5 ค่า
+
+---
+
+## ตัวอย่าง
+
+**Input:**
+
+```text
+
+```
+
+**Output:**
+
+```text
+2
+4
+6
+8
+10
+```
 
 ---
 
 ## Starter Code
 
 ```python
-count = int(input())
+n = 2
 
-while count > 0:
-    # Print count
-    # Decrease count
-
-print("Blast off!")
+# เขียนโค้ดตรงนี้
 ```

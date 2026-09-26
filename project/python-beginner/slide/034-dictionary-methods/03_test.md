@@ -1,4 +1,4 @@
-# 🗑️ Practice Dictionary Methods — Question 2: Delete Key
+# 🔧 Dict Methods — ข้อ 3: อัปเดตหลายฟิลด์
 
 **Difficulty:** 🟢 Easy
 
@@ -6,29 +6,40 @@
 
 ## โจทย์
 
-กำหนดข้อมูลสินค้า ลบ key `"discount"` ออกแล้วแสดง dict ที่เหลือ
+อัปเดตข้อมูลติดต่อหลายฟิลด์พร้อมกัน
 
-```python
-product = {"name": "Pen", "price": 15, "discount": 0.1, "stock": 200}
-```
+กำหนด `user = {"name": "Ben", "city": "Bangkok", "score": 70}`
 
-**Output:**
-```
-{'name': 'Pen', 'price': 15, 'stock': 200}
-```
+ใช้ `.update({"city": "Phuket", "score": 85})` แล้วแสดง city และ score
 
 ---
 
-## 💡 Hint
+## Input
 
-ใช้ `del product["discount"]`
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Phuket
+85
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-product = {"name": "Pen", "price": 15, "discount": 0.1, "stock": 200}
+user = {"name": "Ben", "city": "Bangkok", "score": 70}
 
-# ลบ discount แล้วแสดง
+# เขียนโค้ดตรงนี้
 ```

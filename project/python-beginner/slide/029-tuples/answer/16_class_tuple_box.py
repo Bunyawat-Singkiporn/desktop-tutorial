@@ -1,0 +1,6 @@
+info = ("M2/1", 32, "Building A")
+print("====================")
+print(f"Class : {info[0]}")
+print(f"Size  : {info[1]}")
+print(f"Place : {info[2]}")
+print("====================")

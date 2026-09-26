@@ -1,4 +1,4 @@
-# Practice: Operators — Medium B: เปรียบเทียบคะแนน
+# 🔢 Operators — ข้อ 7: เศษจากการแบ่งกลุ่ม
 
 **Difficulty:** 🟡 Medium
 
@@ -6,36 +6,47 @@
 
 ## โจทย์
 
-รับคะแนนสองคน แสดงผลการเปรียบเทียบเป็น True/False ของ `a > b` เท่านั้นหนึ่งบรรทัด
-
+รับจำนวนคน แสดงเศษเมื่อหาร 3 (เหลือกี่คนที่ไม่ครบกลุ่ม)
 
 ---
 
-## ตัวอย่าง Input / Output
+## Input
+
+ดูตัวอย่าง
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
 
 **Input:**
-```
-9
-7
+
+```text
+11
 ```
 
 **Output:**
+
+```text
+Remainder: 2
 ```
-True
-```
+
 
 ---
 
 ## 💡 Hint
 
-print(a > b)
+ใช้ %
 
 ---
 
 ## Starter Code
 
 ```python
-a = int(input())
-b = int(input())
+n = int(input())
 
+# เศษ
 ```

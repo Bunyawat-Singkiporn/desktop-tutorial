@@ -1,4 +1,4 @@
-# Practice Function — Question 8: แอพเครื่องคิดเลขมือถือ
+# 🧩 Function Practice — ข้อ 10: เครื่องคิดเลขสองปุ่ม
 
 **Difficulty:** 🟡 Medium
 
@@ -6,31 +6,40 @@
 
 ## โจทย์
 
-ทำแอพเครื่องคิดเลขง่ายๆ
+มีปุ่มบวกและคูณ
 
-- `add(a, b)` return ผลบวก
-- `mul(a, b)` return ผลคูณ
+**เงื่อนไข:**
 
-ผู้ใช้พิมพ์เลข 2 ตัว แล้วเลือก:
-- `1` = บวก
-- `2` = คูณ
+- `add(a, b)` และ `mul(a, b)` คืนผล
+- พิมพ์ `add(3, 4)` และ `mul(3, 4)`
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม / เรียกฟังก์ชันในโค้ด)
+
+## Output
+
+2 บรรทัด
 
 ---
 
 ## ตัวอย่าง
 
-**Input:**
-```
+**Output:**
+
+```text
 7
-3
-1
+12
 ```
 
-**Output:**
-```
-Calculator
-7 + 3 = 10
-```
+
+---
+
+## 💡 Hint
+
+แต่ละฟังก์ชัน return ค่า
 
 ---
 
@@ -38,19 +47,11 @@ Calculator
 
 ```python
 def add(a, b):
-    # Write your code here
+    # เขียนโค้ดตรงนี้
 
 def mul(a, b):
-    # Write your code here
+    # เขียนโค้ดตรงนี้
 
-a = int(input())
-b = int(input())
-choice = input()
-print("Calculator")
-if choice == "1":
-    print(f"{a} + {b} = {add(a, b)}")
-elif choice == "2":
-    print(f"{a} * {b} = {mul(a, b)}")
-else:
-    print("Unknown button")
+print(add(3, 4))
+print(mul(3, 4))
 ```

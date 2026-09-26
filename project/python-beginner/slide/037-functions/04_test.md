@@ -1,47 +1,45 @@
-# 📄 Practice Functions — Question 3: Report Sections
+# ⚙️ Functions — ข้อ 4: เส้นคั่นสั้น
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-สร้าง 3 functions สำหรับแต่ละส่วนของรายงาน แล้วเรียกตามลำดับ
+ต้องการเส้นคั่นก่อนหัวข้อ
 
-| Function | แสดง |
-|----------|------|
-| `print_header()` | หัวรายงาน |
-| `print_body()` | เนื้อหา 3 บรรทัด |
-| `print_footer()` | ท้ายรายงาน |
+**เงื่อนไข:**
 
-**Output:**
-```
-===== REPORT =====
-Student: Alice
-Score: 92
-Grade: A
-=================
-```
+- สร้าง `line()` พิมพ์ `----------`
+- เรียก `line()` แล้วพิมพ์ `REPORT` แล้วเรียก `line()` อีกครั้ง
 
 ---
 
-## 💡 Hint
+## Input
 
-สร้าง 3 functions แยกกัน แล้วเรียงเรียก
+ไม่มี (กำหนดค่าในโปรแกรม / เรียกฟังก์ชันในโค้ด)
+
+## Output
+
+3 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+----------
+REPORT
+----------
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-def print_header():
-    # Write your code here
-
-def print_body():
-    # Write your code here
-
-def print_footer():
-    # Write your code here
-
-# เรียกทั้ง 3 ตามลำดับ
+# line + REPORT
 ```

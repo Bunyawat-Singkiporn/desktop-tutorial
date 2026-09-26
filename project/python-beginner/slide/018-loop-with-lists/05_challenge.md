@@ -1,46 +1,63 @@
-# 🔥 Practice: Loop with Lists — Question 4: List Printer with Stats
+# 🛍️ loop-with-lists — ข้อ 5: ใบสรุปตะกร้าสินค้า
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-วนซ้ำ list ตัวเลขด้านล่าง แล้วแสดงผลลัพธ์ครบทุกอย่าง
+ตะกร้ามีราคาสินค้าในลิสต์
+ออกใบสรุปในกรอบ แสดงทุกราคา ยอดรวม จำนวนชิ้น และค่าเฉลี่ย (ทศนิยม 1 ตำแหน่ง)
 
-```python
-numbers = [3, 7, 1, 9, 4, 6, 2, 8, 5]
+---
+
+## Input
+
+ไม่มี
+
+## Output
+
+ใบสรุปในกรอบตามตัวอย่าง
+
+---
+
+## ตัวอย่าง
+
+**Input:**
+
+```text
+
 ```
 
 **Output:**
-```
-Numbers: 3 7 1 9 4 6 2 8 5
-Count: 9
-Total: 45
-Max: 9
-Min: 1
-Average: 5.0
+
+```text
+========================
+        CART
+========================
+120
+80
+200
+50
+------------------------
+Items   : 4
+Total   : 450
+Average : 112.5
+========================
 ```
 
 ---
 
 ## 💡 Hint
 
-- พิมพ์ทุกตัวในบรรทัดเดียวด้วย `print(n, end=" ")`
-- ใช้ `max()`, `min()`, `len()`, `sum()` ได้เลย
+พิมพ์หัวกรอบ → วนพิมพ์ราคาและสะสม → ปิดด้วยสถิติจาก total กับ len
 
 ---
 
 ## Starter Code
 
 ```python
-numbers = [3, 7, 1, 9, 4, 6, 2, 8, 5]
+prices = [120, 80, 200, 50]
 
-# Print all numbers in one line
-print("Numbers:", end=" ")
-for n in numbers:
-    print(n, end=" ")
-print()   # new line
-
-# Calculate and print stats
+# เขียนโค้ดตรงนี้
 ```

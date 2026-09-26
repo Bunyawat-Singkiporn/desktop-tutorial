@@ -1,4 +1,4 @@
-# Practice: Review — Medium A: แคชเชียร์มินิ (ยังไม่ใช้ if)
+# 📝 Review — ข้อ 6: บิลสองชิ้น
 
 **Difficulty:** 🟡 Medium
 
@@ -6,44 +6,49 @@
 
 ## โจทย์
 
-รับชื่อสินค้า (str) ราคา (int) จำนวน (int) แสดง:
-
-```
-<item> x<qty>
-Total: <price*qty>
-```
-
+รับราคาสองชิ้น แสดง Total ทศนิยม 2 ตำแหน่ง
 
 ---
 
-## ตัวอย่าง Input / Output
+## Input
+
+ดูตัวอย่าง
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
 
 **Input:**
-```
-Eraser
-10
-3
+
+```text
+20.25
+25.25
 ```
 
 **Output:**
+
+```text
+Total: 45.50
 ```
-Eraser x3
-Total: 30
-```
+
 
 ---
 
 ## 💡 Hint
 
-ใช้ input + f-string ได้
+รวมแล้ว :.2f
 
 ---
 
 ## Starter Code
 
 ```python
-item = input()
-price = int(input())
-qty = int(input())
+a = float(input())
+b = float(input())
 
+# รวม
 ```

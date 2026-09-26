@@ -1,4 +1,4 @@
-# Practice: Operators — Medium A: ทอนเงิน
+# 🔢 Operators — ข้อ 6: พื้นที่สี่เหลี่ยม
 
 **Difficulty:** 🟡 Medium
 
@@ -6,40 +6,49 @@
 
 ## โจทย์
 
-รับราคาและเงินที่จ่าย (int) แสดงเงินทอน:
-
-```
-Change: <paid-price>
-```
-
+รับกว้างและสูง แสดงพื้นที่
 
 ---
 
-## ตัวอย่าง Input / Output
+## Input
+
+ดูตัวอย่าง
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
 
 **Input:**
-```
-40
-100
+
+```text
+5
+8
 ```
 
 **Output:**
+
+```text
+Area: 40
 ```
-Change: 60
-```
+
 
 ---
 
 ## 💡 Hint
 
-change = paid - price
+กว้างคูณสูง
 
 ---
 
 ## Starter Code
 
 ```python
-price = int(input())
-paid = int(input())
+w = int(input())
+h = int(input())
 
+# พื้นที่
 ```

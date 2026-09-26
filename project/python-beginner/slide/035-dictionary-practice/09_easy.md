@@ -1,4 +1,4 @@
-# Practice Dictionary — Question 8: เพิ่มเบอร์โทร
+# 🏋️ Dict Practice — ข้อ 9: เช็คของในคลัง
 
 **Difficulty:** 🟢 Easy
 
@@ -6,24 +6,39 @@
 
 ## โจทย์
 
-สมุดติดต่อยังไม่มีเบอร์ — เพิ่ม key `"phone"` เป็น `"0812345678"` แล้วแสดงทั้ง dict
+เช็คว่ามีสินค้าในคลังหรือไม่
 
-```python
-contact = {"name": "Bob", "city": "Bangkok"}
-```
+กำหนด `stock = {"rice": 10, "oil": 4, "salt": 7}`
+
+ถ้ามีคีย์ `sugar` แสดง `In stock` ไม่เช่นนั้น `Sold out`
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+บรรทัดเดียว
+
+---
+
+## ตัวอย่าง
 
 **Output:**
+
+```text
+Sold out
 ```
-{'name': 'Bob', 'city': 'Bangkok', 'phone': '0812345678'}
-```
+
 
 ---
 
 ## Starter Code
 
 ```python
-contact = {"name": "Bob", "city": "Bangkok"}
+stock = {"rice": 10, "oil": 4, "salt": 7}
 
-# เพิ่ม phone ที่นี่
-print(contact)
+# เขียนโค้ดตรงนี้
 ```

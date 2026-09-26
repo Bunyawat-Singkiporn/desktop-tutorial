@@ -1,4 +1,4 @@
-# Practice Functions — Question 5: เคาน์เตอร์ต้อนรับ
+# ⚙️ Functions — ข้อ 6: ใบเสร็จสั้น
 
 **Difficulty:** 🟡 Medium
 
@@ -6,39 +6,46 @@
 
 ## โจทย์
 
-โรงเรียนมีเคาน์เตอร์ต้อนรับ — สร้างโปรแกรมถามชื่อแล้วทักทาย
+พิมพ์ใบเสร็จกาแฟหนึ่งรายการ
 
-สร้าง function `welcome()` ที่:
-1. ถามชื่อด้วย `input`
-2. แสดงข้อความต้อนรับพร้อมชื่อ
+**เงื่อนไข:**
 
-เรียก `welcome()` **2 ครั้ง** (มีผู้มาเยือน 2 คน)
+- สร้าง `print_receipt()` แสดงตามตัวอย่าง
+- เรียก 1 ครั้ง
 
 ---
 
-## ตัวอย่าง Session
+## Input
 
+ไม่มี (กำหนดค่าในโปรแกรม / เรียกฟังก์ชันในโค้ด)
+
+## Output
+
+ใบเสร็จ
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Item : Latte
+Price: 85
+Thank you
 ```
-Name: Alice
-Welcome, Alice!
-Name: Bob
-Welcome, Bob!
-```
+
 
 ---
 
 ## 💡 Hint
 
-ใส่ `input()` **ข้างใน** function ได้
+จัดข้อความให้ตรงตัวอย่าง
 
 ---
 
 ## Starter Code
 
 ```python
-def welcome():
-    # Write your code here
-
-welcome()
-welcome()
+# print_receipt()
 ```

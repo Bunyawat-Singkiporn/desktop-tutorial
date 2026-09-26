@@ -1,41 +1,46 @@
-# 🧮 Practice: Review — Question 2: Simple Calculator
+# 📝 Review — ข้อ 3: อายุปีหน้า
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-รับตัวเลข 2 จำนวน แล้วแสดงผล +, -, *, /
-
-**Input:**
-```
-10
-3
-```
-
-**Output:**
-```
-10 + 3 = 13
-10 - 3 = 7
-10 * 3 = 30
-10 / 3 = 3.33
-```
+รับอายุ แสดง Next: อายุ+1
 
 ---
 
-## 💡 Hint
+## Input
 
-- ใช้ f-string: `f"{a} + {b} = {a + b}"`
-- หารใช้ `{a / b:.2f}` เพื่อแสดงแค่ 2 ตำแหน่ง
+ดูตัวอย่าง
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Input:**
+
+```text
+12
+```
+
+**Output:**
+
+```text
+Next: 13
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-a = int(input())
-b = int(input())
+age = int(input())
 
-# Print all 4 operations
+# ปีหน้า
 ```

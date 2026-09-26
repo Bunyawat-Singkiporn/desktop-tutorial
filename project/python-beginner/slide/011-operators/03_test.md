@@ -1,40 +1,47 @@
-# 💰 Practice: Operators — Question 2: Change Calculator
+# 🔢 Operators — ข้อ 3: หารลงตัว
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-รับราคาสินค้าและจำนวนเงินที่จ่าย แล้วคำนวณเงินทอน
-
-**Input:**
-```
-45
-100
-```
-
-**Output:**
-```
-Price: 45
-Paid: 100
-Change: 55
-```
+รับ n แสดง n//4 และ n%4
 
 ---
 
-## 💡 Hint
+## Input
 
-- เงินทอน = จ่าย - ราคา
-- ใช้ `-` ลบ
+ดูตัวอย่าง
+
+## Output
+
+2 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Input:**
+
+```text
+17
+```
+
+**Output:**
+
+```text
+4
+1
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-price = int(input())
-paid = int(input())
+n = int(input())
 
-# Calculate change and print
+# แสดง // และ %
 ```

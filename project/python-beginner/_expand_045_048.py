@@ -1,0 +1,541 @@
+# -*- coding: utf-8 -*-
+"""Expand weeks 045-048 to 15-problem standard."""
+from __future__ import annotations
+
+from _expand_helpers import write_week
+
+NO_IN = "ไม่มี (กำหนดค่าในโปรแกรม)"
+HAS_IN = "ดูตัวอย่าง"
+
+
+def p(n, title, slug, body, out_desc, sample_out, starter, answer, hint=None, sample_in=None, in_desc=None):
+    return {
+        "n": n, "title": title, "slug": slug, "body": body,
+        "input_desc": in_desc if in_desc is not None else (HAS_IN if sample_in is not None else NO_IN),
+        "output_desc": out_desc,
+        "sample_input": sample_in,
+        "sample_output": sample_out,
+        "hint": hint, "starter": starter, "answer": answer,
+    }
+
+
+def idx(title, scope, bans, rows, notes=""):
+    table = "\n".join(
+        f"| {i} | `{f}` | {lv} | {t} | {ax} |"
+        for i, (f, lv, t, ax) in enumerate(rows, 1)
+    )
+    return f"""# 📋 สารบัญโจทย์ — {title}
+
+**ขอบเขตของบทนี้:** {scope}
+
+> ❌ {bans}
+
+---
+
+## ลำดับที่แนะนำ
+
+| # | ไฟล์ | ระดับ | โจทย์ | แกนการคิด |
+|---|------|-------|-------|-----------|
+{table}
+
+**สรุป:** 🟢 Easy 5 ข้อ · 🟡 Medium 6 ข้อ · 🔴 Challenge 4 ข้อ = **15 ข้อ**
+
+---
+
+## หมายเหตุสำหรับครู
+
+{notes}
+"""
+
+
+FILES = [
+    ("02_test.md", "🟢"), ("03_test.md", "🟢"), ("04_test.md", "🟢"),
+    ("08_easy.md", "🟢"), ("09_easy.md", "🟢"),
+    ("06_medium.md", "🟡"), ("07_medium.md", "🟡"), ("10_medium.md", "🟡"),
+    ("11_medium.md", "🟡"), ("12_medium.md", "🟡"), ("13_medium.md", "🟡"),
+    ("05_challenge.md", "🔴"), ("14_challenge.md", "🔴"),
+    ("15_challenge.md", "🔴"), ("16_challenge.md", "🔴"),
+]
+
+
+def rows(items):
+    return [(f, lv, t, ax) for (f, lv), (t, ax) in zip(FILES, items)]
+
+
+# ───────── 045 logic-integration — NO .startswith() ─────────
+def week_045():
+    items = [
+        ("เก็บชื่อ 3 คน", "input วน list"),
+        ("พิมพ์เฉพาะคะแนนผ่าน", "กรอง list"),
+        ("เลือกเครื่องมือ: รวมยอด", "checklist คิด"),
+        ("นับคำสั้นใน list", "นับด้วยลูป"),
+        ("หาค่าสูงสุดเอง", "เทียบในลูป"),
+        ("รับคะแนน n คน", "สร้าง list จาก input"),
+        ("ชื่อที่ขึ้นต้น A", "เทียบตัวอักษรแรก"),
+        ("เมนูเลือกงาน", "input + if"),
+        ("รวมราคาจาก dict", "order list"),
+        ("แยกคู่/คี่", "สอง list"),
+        ("สรุปผ่าน/ตก", "นับสองค่า"),
+        ("คิวร้านตัดซ้ำ", "set"),
+        ("โปรไฟล์หลายคน", "dict สร้างจากลูป"),
+        ("ตะกร้าคิดส่วนลด", "หลายขั้น"),
+        ("ห้องเรียนสรุปเกรดหยาบ", "list+ฟังก์ชัน"),
+    ]
+    index = idx(
+        "บท 045 Logic Integration",
+        "คิดขั้นตอน input→process→output · ใช้ list/dict/loop/function ที่เรียนแล้ว",
+        "ห้าม `.startswith()` · ใช้ `name[0] == \"A\"` แทนได้",
+        rows(items),
+        "อย่า copy ตัวอย่าง startswith จากบทเรียน",
+    )
+    probs = [
+        p(2, "เก็บชื่อ 3 คน", "read_three_names",
+          "รับชื่อ 3 คนเก็บใน list แล้วพิมพ์ทีละชื่อ\n\n**เงื่อนไข:**\n\n- ใช้ลูปอ่าน input 3 ครั้ง",
+          "3 บรรทัด", "Ann\nBen\nCat",
+          "names = []\nfor i in range(3):\n    names.append(input())\n\nfor name in names:\n    print(name)",
+          "names = []\nfor i in range(3):\n    names.append(input())\n\nfor name in names:\n    print(name)",
+          sample_in="Ann\nBen\nCat"),
+        p(3, "พิมพ์เฉพาะคะแนนผ่าน", "print_pass_only",
+          "มีคะแนนใน list พิมพ์เฉพาะที่ >= 50\n\n**เงื่อนไข:**\n\n- `scores = [40, 55, 70, 30]`\n- พิมพ์ค่าที่ผ่านทีละบรรทัด",
+          "2 บรรทัด", "55\n70",
+          "scores = [40, 55, 70, 30]\n\n# พิมพ์เฉพาะที่ผ่าน",
+          "scores = [40, 55, 70, 30]\nfor s in scores:\n    if s >= 50:\n        print(s)"),
+        p(4, "เลือกเครื่องมือ: รวมยอด", "tool_sum",
+          "ต้องการยอดรวมราคา — ใช้ฟังก์ชันช่วย\n\n**เงื่อนไข:**\n\n- `total(prices)` คืนผลรวม\n- พิมพ์ผล `[20, 30, 50]`",
+          "1 บรรทัด", "100",
+          "def total(prices):\n    # รวม\n    ...\n\nprint(total([20, 30, 50]))",
+          "def total(prices):\n    return sum(prices)\n\nprint(total([20, 30, 50]))"),
+        p(8, "นับคำสั้นใน list", "count_short",
+          "นับคำที่ความยาว <= 3\n\n**เงื่อนไข:**\n\n- `words = [\"hi\", \"code\", \"ok\", \"python\"]`\n- พิมพ์จำนวนคำสั้น",
+          "1 บรรทัด", "2",
+          'words = ["hi", "code", "ok", "python"]\ncount = 0\nfor w in words:\n    # นับถ้าสั้น\n    ...\nprint(count)',
+          'words = ["hi", "code", "ok", "python"]\ncount = 0\nfor w in words:\n    if len(w) <= 3:\n        count += 1\nprint(count)'),
+        p(9, "หาค่าสูงสุดเอง", "find_max_loop",
+          "หาค่ามากสุดโดยไม่ใช้ max()\n\n**เงื่อนไข:**\n\n- `nums = [3, 9, 2, 7]`\n- เริ่มจากตัวแรก แล้วเทียบทีละตัว\n- พิมพ์ค่ามากสุด",
+          "1 บรรทัด", "9",
+          "nums = [3, 9, 2, 7]\nbest = nums[0]\nfor n in nums:\n    # อัปเดต best\n    ...\nprint(best)",
+          "nums = [3, 9, 2, 7]\nbest = nums[0]\nfor n in nums:\n    if n > best:\n        best = n\nprint(best)"),
+        p(6, "รับคะแนน n คน", "read_n_scores",
+          "รับจำนวน n แล้วอ่านคะแนน n ค่า แล้วพิมพ์ผลรวม\n\n**เงื่อนไข:**\n\n- บรรทัดแรกคือ n\n- ตามด้วยคะแนน n บรรทัด",
+          "1 บรรทัด", "150",
+          "n = int(input())\nscores = []\nfor i in range(n):\n    scores.append(int(input()))\nprint(sum(scores))",
+          "n = int(input())\nscores = []\nfor i in range(n):\n    scores.append(int(input()))\nprint(sum(scores))",
+          sample_in="3\n40\n50\n60", hint="สร้าง list จาก input ก่อนรวม"),
+        p(7, "ชื่อที่ขึ้นต้น A", "names_start_a",
+          "พิมพ์ชื่อที่ตัวอักษรแรกเป็น A\n\n**เงื่อนไข:**\n\n- `names = [\"Ann\", \"Bob\", \"Ada\", \"Ken\"]`\n- ใช้ `name[0] == \"A\"` (ห้าม startswith)",
+          "2 บรรทัด", "Ann\nAda",
+          'names = ["Ann", "Bob", "Ada", "Ken"]\n\n# เทียบตัวอักษรแรก',
+          'names = ["Ann", "Bob", "Ada", "Ken"]\nfor name in names:\n    if name[0] == "A":\n        print(name)',
+          "ใช้ index 0 ไม่ใช่ startswith"),
+        p(10, "เมนูเลือกงาน", "menu_choice",
+          "เมนูเล็ก: 1 แสดง Hello, 2 แสดง Bye, อื่นๆ Unknown\n\n**เงื่อนไข:**\n\n- รับตัวเลขตัวเลือก",
+          "1 บรรทัด", "Hello",
+          "choice = int(input())\n\n# แตกเมนู",
+          'choice = int(input())\nif choice == 1:\n    print("Hello")\nelif choice == 2:\n    print("Bye")\nelse:\n    print("Unknown")',
+          sample_in="1", hint="ใช้ if/elif/else"),
+        p(11, "รวมราคาจาก dict", "order_bill",
+          "สั่งอาหารจากเมนู dict\n\n**เงื่อนไข:**\n\n- `menu = {\"a\": 40, \"b\": 25}` `order = [\"a\", \"b\", \"a\"]`\n- พิมพ์ยอดรวม",
+          "1 บรรทัด", "105",
+          'menu = {"a": 40, "b": 25}\norder = ["a", "b", "a"]\ntotal = 0\nfor item in order:\n    total += menu[item]\nprint(total)',
+          'menu = {"a": 40, "b": 25}\norder = ["a", "b", "a"]\ntotal = 0\nfor item in order:\n    total += menu[item]\nprint(total)',
+          "วน order ดึงราคา"),
+        p(12, "แยกคู่/คี่", "split_parity",
+          "แยกเลขคู่และคี่เป็นสอง list\n\n**เงื่อนไข:**\n\n- `nums = [1, 2, 3, 4, 5]`\n- พิมพ์ list คู่แล้วตามด้วย list คี่",
+          "2 บรรทัด", "[2, 4]\n[1, 3, 5]",
+          "nums = [1, 2, 3, 4, 5]\nevens = []\nodds = []\nfor n in nums:\n    # แยก\n    ...\nprint(evens)\nprint(odds)",
+          "nums = [1, 2, 3, 4, 5]\nevens = []\nodds = []\nfor n in nums:\n    if n % 2 == 0:\n        evens.append(n)\n    else:\n        odds.append(n)\nprint(evens)\nprint(odds)",
+          "สร้างสอง list"),
+        p(13, "สรุปผ่าน/ตก", "pass_fail_count",
+          "นับจำนวนผ่านและตก\n\n**เงื่อนไข:**\n\n- `scores = [40, 60, 55, 30, 80]` เกณฑ์ 50\n- พิมพ์ `Pass: x` และ `Fail: y`",
+          "2 บรรทัด", "Pass: 3\nFail: 2",
+          "scores = [40, 60, 55, 30, 80]\npassed = 0\nfailed = 0\nfor s in scores:\n    # นับ\n    ...\nprint(f\"Pass: {passed}\")\nprint(f\"Fail: {failed}\")",
+          'scores = [40, 60, 55, 30, 80]\npassed = 0\nfailed = 0\nfor s in scores:\n    if s >= 50:\n        passed += 1\n    else:\n        failed += 1\nprint(f"Pass: {passed}")\nprint(f"Fail: {failed}")',
+          "นับสองตัวแปร"),
+        p(5, "คิวร้านตัดซ้ำ", "queue_unique",
+          "คิวชื่ออาจซ้ำ ให้พิมพ์จำนวนชื่อไม่ซ้ำ\n\n**เงื่อนไข:**\n\n- รับ n แล้วอ่าน n ชื่อ\n- ใช้ set หาจำนวนไม่ซ้ำแล้วพิมพ์",
+          "1 บรรทัด", "3",
+          "n = int(input())\nnames = []\nfor i in range(n):\n    names.append(input())\nprint(len(set(names)))",
+          "n = int(input())\nnames = []\nfor i in range(n):\n    names.append(input())\nprint(len(set(names)))",
+          sample_in="4\nAnn\nBen\nAnn\nCat", hint="set ตัดชื่อซ้ำ"),
+        p(14, "โปรไฟล์หลายคน", "build_profiles",
+          "สร้าง dict จากคู่ชื่อ-คะแนน\n\n**เงื่อนไข:**\n\n- รับ n\n- อ่าน n รอบ แต่ละรอบชื่อแล้วคะแนน\n- พิมพ์ dict ทั้งก้อน",
+          "1 บรรทัด", "{'Ada': 90, 'Ben': 70}",
+          "n = int(input())\nprofiles = {}\nfor i in range(n):\n    name = input()\n    score = int(input())\n    profiles[name] = score\nprint(profiles)",
+          "n = int(input())\nprofiles = {}\nfor i in range(n):\n    name = input()\n    score = int(input())\n    profiles[name] = score\nprint(profiles)",
+          sample_in="2\nAda\n90\nBen\n70", hint="ใส่ key ทีละคน"),
+        p(15, "ตะกร้าคิดส่วนลด", "cart_discount",
+          "รวมราคาสินค้า ถ้าครบ 200 ลด 20\n\n**เงื่อนไข:**\n\n- `prices = [80, 70, 60]`\n- รวมแล้วคิดส่วนลด\n- พิมพ์ `Pay: <ยอด>`",
+          "1 บรรทัด", "Pay: 190",
+          "prices = [80, 70, 60]\ntotal = sum(prices)\nif total >= 200:\n    total = total - 20\nprint(f\"Pay: {total}\")",
+          'prices = [80, 70, 60]\ntotal = sum(prices)\nif total >= 200:\n    total = total - 20\nprint(f"Pay: {total}")',
+          "รวมก่อนแล้วค่อยลด"),
+        p(16, "ห้องเรียนสรุปเกรดหยาบ", "class_summary",
+          "สรุปสถานะผ่านของทั้งห้อง\n\n**เงื่อนไข:**\n\n- สร้าง `status(score)` คืน `Pass` หรือ `Fail` (เกณฑ์ 50)\n- มี `scores = [45, 70, 88]`\n- พิมพ์สถานะทีละบรรทัด",
+          "3 บรรทัด", "Fail\nPass\nPass",
+          'def status(score):\n    # return Pass/Fail\n    ...\n\nscores = [45, 70, 88]\nfor s in scores:\n    print(status(s))',
+          'def status(score):\n    if score >= 50:\n        return "Pass"\n    else:\n        return "Fail"\n\nscores = [45, 70, 88]\nfor s in scores:\n    print(status(s))',
+          "อย่าทำเกรด A/B/C/F"),
+    ]
+    for i, pr in enumerate(probs):
+        probs[i] = dict(pr)
+        probs[i]["starter"] = pr["starter"].replace("    ...\n", "")
+    write_week("045-logic-integration", chapter="Logic Integration", emoji="🧠", index_md=index, problems=probs)
+
+
+# ───────── 046 read-code ─────────
+def week_046():
+    items = [
+        ("ทำนายผลลัพธ์บวก", "trace สั้น"),
+        ("ทำนายลูปพิมพ์", "trace ลูป"),
+        ("ทำนาย if", "trace เงื่อนไข"),
+        ("ทำนายผลคูณฟังก์ชัน", "อ่านฟังก์ชัน"),
+        ("ทำนาย list สะสม", "trace list"),
+        ("เขียนตามที่อ่านได้", "สร้างจากสเปก"),
+        ("หาค่ามากสุดเอง", "ตามแบบบทเรียน"),
+        ("double แล้ว apply", "ฟังก์ชันเรียกฟังก์ชัน"),
+        ("นับรอบที่เข้าเงื่อนไข", "trace นับ"),
+        ("ผลลัพธ์ dict อัปเดต", "trace dict"),
+        ("คืน list จากฟังก์ชัน", "return list"),
+        ("หาบั๊กในยอดรวม", "อ่านแล้วแก้"),
+        ("ทำนาย while สั้น", "trace while"),
+        ("ประกอบสองฟังก์ชัน", "อ่าน composition"),
+        ("มือถือ trace ยาว", "หลายขั้น"),
+    ]
+    index = idx(
+        "บท 046 Read Code",
+        "อ่านโค้ด / ทำนายผล / เขียนตามสเปก · ฟังก์ชันคืน list และเรียกฟังก์ชันในฟังก์ชันได้",
+        "ห้าม `.startswith()` · ห้ามของนอก Phase 1",
+        rows(items),
+        "หลายข้อเป็นการให้เขียนโค้ดที่ผลลัพธ์ตรงกับที่อ่านแล้วเข้าใจ",
+    )
+    probs = [
+        p(2, "ทำนายผลลัพธ์บวก", "predict_add",
+          "โค้ดด้านล่างจะพิมพ์อะไร? จงเขียนโปรแกรมให้ได้ผลเดียวกัน\n\n```python\na = 4\nb = 6\nprint(a + b)\n```",
+          "1 บรรทัด", "10",
+          "# ให้ได้ผลเหมือนโค้ดด้านบน",
+          "a = 4\nb = 6\nprint(a + b)"),
+        p(3, "ทำนายลูปพิมพ์", "predict_loop",
+          "เขียนโปรแกรมให้พิมพ์เหมือนการวน `for i in range(3): print(i)`",
+          "3 บรรทัด", "0\n1\n2",
+          "# ลูป range(3)",
+          "for i in range(3):\n    print(i)"),
+        p(4, "ทำนาย if", "predict_if",
+          "ถ้า score = 55 และเกณฑ์ 50 ผลคือ Pass — จงเขียนให้ได้ผลนั้น",
+          "1 บรรทัด", "Pass",
+          'score = 55\nif score >= 50:\n    print("Pass")\nelse:\n    print("Fail")',
+          'score = 55\nif score >= 50:\n    print("Pass")\nelse:\n    print("Fail")'),
+        p(8, "ทำนายผลคูณฟังก์ชัน", "predict_mul_fn",
+          "สร้าง `triple(x)` คืน x*3 แล้วพิมพ์ผลของ 5",
+          "1 บรรทัด", "15",
+          "def triple(x):\n    # return\n    ...\n\nprint(triple(5))",
+          "def triple(x):\n    return x * 3\n\nprint(triple(5))"),
+        p(9, "ทำนาย list สะสม", "predict_append",
+          "เริ่ม list ว่าง เพิ่ม 1 แล้ว 2 แล้วพิมพ์ list",
+          "1 บรรทัด", "[1, 2]",
+          "nums = []\nnums.append(1)\nnums.append(2)\nprint(nums)",
+          "nums = []\nnums.append(1)\nnums.append(2)\nprint(nums)"),
+        p(6, "เขียนตามที่อ่านได้", "write_from_spec",
+          "ต้องการพิมพ์ผลรวมของ `[2, 4, 6]` ซึ่งเท่ากับ 12",
+          "1 บรรทัด", "12",
+          "print(sum([2, 4, 6]))",
+          "print(sum([2, 4, 6]))",
+          "อ่านสเปกแล้วเขียนให้ตรง"),
+        p(7, "หาค่ามากสุดเอง", "trace_max",
+          "หาค่ามากสุดใน `[3, 7, 2, 9, 4]` แบบเริ่มจาก 0 แล้วอัปเดตเมื่อเจอค่ามากกว่า (ตามแนวบทเรียน)",
+          "1 บรรทัด", "9",
+          "numbers = [3, 7, 2, 9, 4]\nresult = 0\nfor num in numbers:\n    if num > result:\n        result = num\nprint(result)",
+          "numbers = [3, 7, 2, 9, 4]\nresult = 0\nfor num in numbers:\n    if num > result:\n        result = num\nprint(result)",
+          "อัปเดตเมื่อเจอค่ามากกว่า"),
+        p(10, "double แล้ว apply", "apply_double",
+          "สร้าง `double(x)` คืน x*2 และ `apply_all(lst)` คืน list ใหม่ที่ double ทุกตัว\n\n**เงื่อนไข:**\n\n- พิมพ์ผลของ `[1, 2, 3]`",
+          "1 บรรทัด", "[2, 4, 6]",
+          "def double(x):\n    # return\n    ...\n\ndef apply_all(lst):\n    # สร้าง list ใหม่\n    ...\n\nprint(apply_all([1, 2, 3]))",
+          "def double(x):\n    return x * 2\n\ndef apply_all(lst):\n    result = []\n    for item in lst:\n        result.append(double(item))\n    return result\n\nprint(apply_all([1, 2, 3]))",
+          "เรียก double ในลูป"),
+        p(11, "นับรอบที่เข้าเงื่อนไข", "count_trace",
+          "นับว่ามีกี่ตัวใน `[1, 4, 6, 3]` ที่มากกว่า 3",
+          "1 บรรทัด", "2",
+          "nums = [1, 4, 6, 3]\ncount = 0\nfor n in nums:\n    if n > 3:\n        count += 1\nprint(count)",
+          "nums = [1, 4, 6, 3]\ncount = 0\nfor n in nums:\n    if n > 3:\n        count += 1\nprint(count)",
+          "นับเมื่อเงื่อนไขเป็นจริง"),
+        p(12, "ผลลัพธ์ dict อัปเดต", "trace_dict",
+          "เริ่ม `d = {\"a\": 1}` แล้วตั้ง `d[\"a\"] = 5` และเพิ่ม `d[\"b\"] = 2` แล้วพิมพ์ d",
+          "1 บรรทัด", "{'a': 5, 'b': 2}",
+          'd = {"a": 1}\nd["a"] = 5\nd["b"] = 2\nprint(d)',
+          'd = {"a": 1}\nd["a"] = 5\nd["b"] = 2\nprint(d)'),
+        p(13, "คืน list จากฟังก์ชัน", "return_list_fn",
+          "สร้าง `ones(n)` คืน list ของ 1 จำนวน n ตัว\n\n**เงื่อนไข:**\n\n- พิมพ์ผลของ `ones(4)`",
+          "1 บรรทัด", "[1, 1, 1, 1]",
+          "def ones(n):\n    # return list\n    ...\n\nprint(ones(4))",
+          "def ones(n):\n    result = []\n    for i in range(n):\n        result.append(1)\n    return result\n\nprint(ones(4))",
+          "สร้าง list ในฟังก์ชันแล้ว return"),
+        p(5, "หาบั๊กในยอดรวม", "find_sum_bug",
+          "โค้ดเดิมสะสมผิดเพราะใช้ `total = n` — จงเขียนให้รวม `[5, 5, 5]` ได้ 15",
+          "1 บรรทัด", "15",
+          "total = 0\nfor n in [5, 5, 5]:\n    total += n\nprint(total)",
+          "total = 0\nfor n in [5, 5, 5]:\n    total += n\nprint(total)",
+          "ต้องเป็น += ไม่ใช่ ="),
+        p(14, "ทำนาย while สั้น", "trace_while",
+          "เริ่ม x = 0 ขณะ x < 3 พิมพ์ x แล้ว x += 1",
+          "3 บรรทัด", "0\n1\n2",
+          "x = 0\nwhile x < 3:\n    print(x)\n    x += 1",
+          "x = 0\nwhile x < 3:\n    print(x)\n    x += 1",
+          "ระวังเงื่อนไขหยุด"),
+        p(15, "ประกอบสองฟังก์ชัน", "compose_add",
+          "`inc(x)` คืน x+1 และ `twice_inc(x)` คืน inc(inc(x))\n\n**เงื่อนไข:**\n\n- พิมพ์ผลของ `twice_inc(5)`",
+          "1 บรรทัด", "7",
+          "def inc(x):\n    # return\n    ...\n\ndef twice_inc(x):\n    # เรียก inc สองครั้ง\n    ...\n\nprint(twice_inc(5))",
+          "def inc(x):\n    return x + 1\n\ndef twice_inc(x):\n    return inc(inc(x))\n\nprint(twice_inc(5))",
+          "เรียกฟังก์ชันซ้อน"),
+        p(16, "มือถือ trace ยาว", "long_trace",
+          "จำลองยอดเงิน: เริ่ม 100 ซื้อของราคาใน list `[20, 15, 30]` ทีละรายการ แล้วพิมพ์ยอดคงเหลือ",
+          "1 บรรทัด", "35",
+          "money = 100\nfor price in [20, 15, 30]:\n    money = money - price\nprint(money)",
+          "money = 100\nfor price in [20, 15, 30]:\n    money = money - price\nprint(money)",
+          "หักทีละรายการตามลำดับ"),
+    ]
+    for i, pr in enumerate(probs):
+        probs[i] = dict(pr)
+        probs[i]["starter"] = pr["starter"].replace("    ...\n", "")
+    write_week("046-read-code", chapter="Read Code", emoji="👀", index_md=index, problems=probs)
+
+
+# ───────── 047 final-review ─────────
+def week_047():
+    items = [
+        ("ทักทาย+อายุ", "พื้นฐานรวม"),
+        ("เลขคู่หรือไม่", "if + %"),
+        ("รวม list สั้น", "list+sum"),
+        ("dict แสดงค่า", "dict พื้นฐาน"),
+        ("ฟังก์ชันคืนค่า", "return"),
+        ("ใบเสร็จเล็ก", "คำนวณ+พิมพ์"),
+        ("กรองคะแนน", "list+if"),
+        ("นับใน dict", "ความถี่"),
+        ("set สมาชิก", "in"),
+        ("สองฟังก์ชันประกอบ", "composition"),
+        ("while นับถอย", "while"),
+        ("โปรเจกต์ตะกร้า", "list+dict+fn"),
+        ("รายงานห้องเรียน", "dict of lists"),
+        ("เครื่องคิดเลขเมนู", "เมนู+ฟังก์ชัน"),
+        ("สรุปพร้อมเช็กขอบ", "กันเคสพิเศษ"),
+    ]
+    index = idx(
+        "บท 047 Final Review",
+        "ทบทวน Phase 1 ทั้งชุดภายในขอบเขตที่เรียนแล้ว",
+        "ห้าม `.startswith()` · ห้าม OOP/file/import/try",
+        rows(items),
+        "ผสมหลายหัวข้อในข้อ Challenge",
+    )
+    probs = [
+        p(2, "ทักทาย+อายุ", "hello_age",
+          "รับชื่อและอายุ แล้วพิมพ์ `Hello, <name> (<age>)`",
+          "1 บรรทัด", "Hello, Tee (11)",
+          "name = input()\nage = int(input())\nprint(f\"Hello, {name} ({age})\")",
+          'name = input()\nage = int(input())\nprint(f"Hello, {name} ({age})")',
+          sample_in="Tee\n11"),
+        p(3, "เลขคู่หรือไม่", "even_check",
+          "รับจำนวนเต็ม พิมพ์ `Even` หรือ `Odd`",
+          "1 บรรทัด", "Even",
+          "n = int(input())\nif n % 2 == 0:\n    print(\"Even\")\nelse:\n    print(\"Odd\")",
+          'n = int(input())\nif n % 2 == 0:\n    print("Even")\nelse:\n    print("Odd")',
+          sample_in="8"),
+        p(4, "รวม list สั้น", "sum_list_short",
+          "พิมพ์ผลรวมของ `[5, 10, 15]`",
+          "1 บรรทัด", "30",
+          "print(sum([5, 10, 15]))",
+          "print(sum([5, 10, 15]))"),
+        p(8, "dict แสดงค่า", "dict_show",
+          "มี `user = {\"name\": \"Nok\", \"level\": 3}` พิมพ์ `Nok Lv.3`",
+          "1 บรรทัด", "Nok Lv.3",
+          'user = {"name": "Nok", "level": 3}\nprint(f"{user[\'name\']} Lv.{user[\'level\']}")',
+          'user = {"name": "Nok", "level": 3}\nprint(f"{user[\'name\']} Lv.{user[\'level\']}")'),
+        p(9, "ฟังก์ชันคืนค่า", "ret_add",
+          "สร้าง `add(a, b)` คืนผลบวก แล้วพิมพ์ผลของ `(2, 9)`",
+          "1 บรรทัด", "11",
+          "def add(a, b):\n    return a + b\n\nprint(add(2, 9))",
+          "def add(a, b):\n    return a + b\n\nprint(add(2, 9))"),
+        p(6, "ใบเสร็จเล็ก", "mini_bill",
+          "รับราคาสองค่า รวมแล้วพิมพ์ `Total: <ยอด>`",
+          "1 บรรทัด", "Total: 75",
+          "a = int(input())\nb = int(input())\nprint(f\"Total: {a + b}\")",
+          'a = int(input())\nb = int(input())\nprint(f"Total: {a + b}")',
+          sample_in="40\n35", hint="บวกแล้วจัดรูปแบบ"),
+        p(7, "กรองคะแนน", "filter_scores",
+          "จาก `[45, 60, 80, 50]` พิมพ์เฉพาะค่า > 50",
+          "2 บรรทัด", "60\n80",
+          "scores = [45, 60, 80, 50]\nfor s in scores:\n    if s > 50:\n        print(s)",
+          "scores = [45, 60, 80, 50]\nfor s in scores:\n    if s > 50:\n        print(s)",
+          "เงื่อนไขเข้มกว่าเท่ากับ"),
+        p(10, "นับใน dict", "count_letters",
+          "นับตัวอักษรใน list `letters = [\"a\", \"b\", \"a\", \"c\", \"a\"]` แล้วพิมพ์จำนวน `a`",
+          "1 บรรทัด", "3",
+          'letters = ["a", "b", "a", "c", "a"]\nfreq = {}\nfor ch in letters:\n    if ch in freq:\n        freq[ch] = freq[ch] + 1\n    else:\n        freq[ch] = 1\nprint(freq["a"])',
+          'letters = ["a", "b", "a", "c", "a"]\nfreq = {}\nfor ch in letters:\n    if ch in freq:\n        freq[ch] = freq[ch] + 1\n    else:\n        freq[ch] = 1\nprint(freq["a"])',
+          "แบบนับความถี่"),
+        p(11, "set สมาชิก", "set_in",
+          "มี `vip = {\"Ann\", \"Ben\"}` รับชื่อ แล้วพิมพ์ `VIP` หรือ `Guest`",
+          "1 บรรทัด", "VIP",
+          'vip = {"Ann", "Ben"}\nname = input()\nif name in vip:\n    print("VIP")\nelse:\n    print("Guest")',
+          'vip = {"Ann", "Ben"}\nname = input()\nif name in vip:\n    print("VIP")\nelse:\n    print("Guest")',
+          sample_in="Ann", hint="ใช้ in"),
+        p(12, "สองฟังก์ชันประกอบ", "compose_tax",
+          "`net(price)` คืน price หลังหัก 10 และ `label(n)` คืนสตริง `Net: <n>`\n\n**เงื่อนไข:**\n\n- พิมพ์ `label(net(100))`",
+          "1 บรรทัด", "Net: 90",
+          "def net(price):\n    return price - 10\n\ndef label(n):\n    return f\"Net: {n}\"\n\nprint(label(net(100)))",
+          'def net(price):\n    return price - 10\n\ndef label(n):\n    return f"Net: {n}"\n\nprint(label(net(100)))',
+          "ประกอบ return"),
+        p(13, "while นับถอย", "while_down",
+          "เริ่ม n = 3 ขณะ n > 0 พิมพ์ n แล้วลด 1 หลังจบพิมพ์ `Done`",
+          "4 บรรทัด", "3\n2\n1\nDone",
+          "n = 3\nwhile n > 0:\n    print(n)\n    n -= 1\nprint(\"Done\")",
+          'n = 3\nwhile n > 0:\n    print(n)\n    n -= 1\nprint("Done")',
+          "ลดค่าในลูป"),
+        p(5, "โปรเจกต์ตะกร้า", "cart_project",
+          "ตะกร้าเป็น list ราคา และคูปองเป็น dict\n\n**เงื่อนไข:**\n\n- `prices = [100, 50]`\n- `coupon = {\"off\": 20}`\n- รวมราคาแล้วหัก coupon[\"off\"] พิมพ์ยอด",
+          "1 บรรทัด", "130",
+          'prices = [100, 50]\ncoupon = {"off": 20}\nprint(sum(prices) - coupon["off"])',
+          'prices = [100, 50]\ncoupon = {"off": 20}\nprint(sum(prices) - coupon["off"])',
+          "ผสม list กับ dict"),
+        p(14, "รายงานห้องเรียน", "class_report",
+          "dict ของ list คะแนน พิมพ์ชื่อกับผลรวม\n\n**เงื่อนไข:**\n\n- `room = {\"A\": [10, 20], \"B\": [30, 5]}`\n- พิมพ์ `A: 30` และ `B: 35`",
+          "2 บรรทัด", "A: 30\nB: 35",
+          'room = {"A": [10, 20], "B": [30, 5]}\nfor name, scores in room.items():\n    print(f"{name}: {sum(scores)}")',
+          'room = {"A": [10, 20], "B": [30, 5]}\nfor name, scores in room.items():\n    print(f"{name}: {sum(scores)}")',
+          "dict of lists"),
+        p(15, "เครื่องคิดเลขเมนู", "calc_menu",
+          "รับตัวเลือก 1=บวก 2=คูณ แล้วรับ a, b พิมพ์ผล\n\n**เงื่อนไข:**\n\n- มีฟังก์ชัน `add` และ `mul`",
+          "1 บรรทัด", "12",
+          "def add(a, b):\n    return a + b\n\ndef mul(a, b):\n    return a * b\n\nop = int(input())\na = int(input())\nb = int(input())\nif op == 1:\n    print(add(a, b))\nelse:\n    print(mul(a, b))",
+          "def add(a, b):\n    return a + b\n\ndef mul(a, b):\n    return a * b\n\nop = int(input())\na = int(input())\nb = int(input())\nif op == 1:\n    print(add(a, b))\nelse:\n    print(mul(a, b))",
+          sample_in="2\n3\n4", hint="เลือกฟังก์ชันตามเมนู"),
+        p(16, "สรุปพร้อมเช็กขอบ", "safe_summary",
+          "รับ n คะแนน ถ้า n เป็น 0 พิมพ์ `No scores` ไม่งั้นพิมพ์ค่าเฉลี่ยทศนิยม 1 ตำแหน่ง",
+          "1 บรรทัด", "No scores",
+          "n = int(input())\nif n == 0:\n    print(\"No scores\")\nelse:\n    total = 0\n    for i in range(n):\n        total += int(input())\n    print(f\"{total / n:.1f}\")",
+          'n = int(input())\nif n == 0:\n    print("No scores")\nelse:\n    total = 0\n    for i in range(n):\n        total += int(input())\n    print(f"{total / n:.1f}")',
+          sample_in="0", hint="กันหารศูนย์ด้วยการเช็ก n"),
+    ]
+    write_week("047-final-review", chapter="Final Review", emoji="🏁", index_md=index, problems=probs)
+
+
+# ───────── 048 readiness drills (keep 01 + 02_readiness) ─────────
+def week_048():
+    items = [
+        ("พิมพ์สามบรรทัด", "พื้นฐาน print"),
+        ("ตัวแปร+แสดง", "ตัวแปร"),
+        ("รับชื่อทักทาย", "input"),
+        ("if ผ่านเกณฑ์", "เงื่อนไข"),
+        ("ลูป range", "for"),
+        ("list รวมยอด", "list"),
+        ("dict อ่านค่า", "dict"),
+        ("ฟังก์ชัน return", "function"),
+        ("while นับ", "while"),
+        ("ผสม list+if", "กรอง"),
+        ("ผสม dict+ลูป", "items"),
+        ("มินิโปรเจกต์ร้าน", "รวมหลายอย่าง"),
+        ("เช็กความพร้อมคอลเลกชัน", "list/set/dict"),
+        ("เช็กความพร้อมฟังก์ชัน", "def+return"),
+        ("โจทย์รวมท้าย Phase 1", "integration"),
+    ]
+    index = idx(
+        "บท 048 Transition Prep — Phase-1 Drills",
+        "ฝึกความพร้อม Phase 1 ก่อนขึ้น Phase 2 · ใช้ได้ทุกอย่างที่เรียนใน 001–047 แต่ห้ามของ Phase 2",
+        "ห้าม class / file I/O / import / try-except · เก็บ `01_transition_prep.md` และ `02_readiness.md`",
+        rows(items),
+        "`02_readiness.md` เป็นแบบประเมิน ไม่นับเป็นโจทย์ฝึกเขียนโค้ด",
+    )
+    probs = [
+        p(2, "พิมพ์สามบรรทัด", "print_three",
+          "พิมพ์สามบรรทัดตามตัวอย่างเพื่อตรวจสภาพแวดล้อม",
+          "3 บรรทัด", "Ready\nPhase 1\nOK",
+          '# พิมพ์ 3 บรรทัด',
+          'print("Ready")\nprint("Phase 1")\nprint("OK")'),
+        p(3, "ตัวแปร+แสดง", "var_show",
+          "ตั้ง `course = \"Python\"` และ `weeks = 48` แล้วพิมพ์ `Python / 48`",
+          "1 บรรทัด", "Python / 48",
+          'course = "Python"\nweeks = 48\nprint(f"{course} / {weeks}")',
+          'course = "Python"\nweeks = 48\nprint(f"{course} / {weeks}")'),
+        p(4, "รับชื่อทักทาย", "input_hi",
+          "รับชื่อแล้วพิมพ์ `Hello, <name>`",
+          "1 บรรทัด", "Hello, Pat",
+          "name = input()\nprint(f\"Hello, {name}\")",
+          'name = input()\nprint(f"Hello, {name}")',
+          sample_in="Pat"),
+        p(8, "if ผ่านเกณฑ์", "if_ready",
+          "รับคะแนนความพร้อม ถ้า >= 70 พิมพ์ `Ready` ไม่งั้น `Review`",
+          "1 บรรทัด", "Ready",
+          "score = int(input())\nif score >= 70:\n    print(\"Ready\")\nelse:\n    print(\"Review\")",
+          'score = int(input())\nif score >= 70:\n    print("Ready")\nelse:\n    print("Review")',
+          sample_in="80"),
+        p(9, "ลูป range", "loop_ready",
+          "พิมพ์เลข 1 ถึง 4 ด้วย range",
+          "4 บรรทัด", "1\n2\n3\n4",
+          "for i in range(1, 5):\n    print(i)",
+          "for i in range(1, 5):\n    print(i)"),
+        p(6, "list รวมยอด", "list_sum_ready",
+          "มี `skills = [10, 20, 30]` พิมพ์ผลรวม",
+          "1 บรรทัด", "60",
+          "skills = [10, 20, 30]\nprint(sum(skills))",
+          "skills = [10, 20, 30]\nprint(sum(skills))",
+          "ใช้ sum ได้"),
+        p(7, "dict อ่านค่า", "dict_ready",
+          "มี `info = {\"track\": \"beginner\", \"done\": 48}` พิมพ์ `beginner 48`",
+          "1 บรรทัด", "beginner 48",
+          'info = {"track": "beginner", "done": 48}\nprint(info["track"], info["done"])',
+          'info = {"track": "beginner", "done": 48}\nprint(info["track"], info["done"])'),
+        p(10, "ฟังก์ชัน return", "fn_ready",
+          "สร้าง `square(n)` คืน n*n แล้วพิมพ์ผลของ 6",
+          "1 บรรทัด", "36",
+          "def square(n):\n    return n * n\n\nprint(square(6))",
+          "def square(n):\n    return n * n\n\nprint(square(6))"),
+        p(11, "while นับ", "while_ready",
+          "เริ่ม c = 1 ขณะ c <= 3 พิมพ์ c แล้วเพิ่ม 1",
+          "3 บรรทัด", "1\n2\n3",
+          "c = 1\nwhile c <= 3:\n    print(c)\n    c += 1",
+          "c = 1\nwhile c <= 3:\n    print(c)\n    c += 1",
+          "อย่าลืมเพิ่ม c"),
+        p(12, "ผสม list+if", "mix_filter",
+          "จาก `[2, 5, 8, 1]` พิมพ์เฉพาะเลขคู่",
+          "2 บรรทัด", "2\n8",
+          "nums = [2, 5, 8, 1]\nfor n in nums:\n    if n % 2 == 0:\n        print(n)",
+          "nums = [2, 5, 8, 1]\nfor n in nums:\n    if n % 2 == 0:\n        print(n)",
+          "ใช้ %"),
+        p(13, "ผสม dict+ลูป", "mix_items",
+          "วน `progress = {\"vars\": 1, \"loops\": 1, \"funcs\": 1}` พิมพ์ `key: value`",
+          "3 บรรทัด", "vars: 1\nloops: 1\nfuncs: 1",
+          'progress = {"vars": 1, "loops": 1, "funcs": 1}\nfor k, v in progress.items():\n    print(f"{k}: {v}")',
+          'progress = {"vars": 1, "loops": 1, "funcs": 1}\nfor k, v in progress.items():\n    print(f"{k}: {v}")',
+          "ใช้ .items()"),
+        p(5, "มินิโปรเจกต์ร้าน", "shop_mini",
+          "ร้านมีเมนู dict และออเดอร์ list\n\n**เงื่อนไข:**\n\n- `menu = {\"bun\": 25, \"milk\": 20}`\n- `order = [\"bun\", \"milk\", \"bun\"]`\n- พิมพ์ยอดรวม",
+          "1 บรรทัด", "70",
+          'menu = {"bun": 25, "milk": 20}\norder = ["bun", "milk", "bun"]\ntotal = 0\nfor item in order:\n    total += menu[item]\nprint(total)',
+          'menu = {"bun": 25, "milk": 20}\norder = ["bun", "milk", "bun"]\ntotal = 0\nfor item in order:\n    total += menu[item]\nprint(total)',
+          "วนออเดอร์บวกราคา"),
+        p(14, "เช็กความพร้อมคอลเลกชัน", "coll_ready",
+          "สร้าง list จาก input 3 ค่า แล้วพิมพ์จำนวนสมาชิกไม่ซ้ำด้วย set",
+          "1 บรรทัด", "2",
+          "vals = []\nfor i in range(3):\n    vals.append(input())\nprint(len(set(vals)))",
+          "vals = []\nfor i in range(3):\n    vals.append(input())\nprint(len(set(vals)))",
+          sample_in="a\nb\na", hint="set ตัดซ้ำ"),
+        p(15, "เช็กความพร้อมฟังก์ชัน", "fn_compose_ready",
+          "`double(x)` คืน x*2 และ `add_five(x)` คืน x+5\n\n**เงื่อนไข:**\n\n- พิมพ์ `add_five(double(4))`",
+          "1 บรรทัด", "13",
+          "def double(x):\n    return x * 2\n\ndef add_five(x):\n    return x + 5\n\nprint(add_five(double(4)))",
+          "def double(x):\n    return x * 2\n\ndef add_five(x):\n    return x + 5\n\nprint(add_five(double(4)))",
+          "ประกอบฟังก์ชัน"),
+        p(16, "โจทย์รวมท้าย Phase 1", "phase1_capstone",
+          "รับจำนวนนักเรียน n แล้วอ่านชื่อกับคะแนน สร้าง dict แล้วพิมพ์คนที่ได้คะแนนสูงสุดแบบเทียบเอง (ห้าม max)\n\n**เงื่อนไข:**\n\n- พิมพ์ `Top: <name> <score>`",
+          "1 บรรทัด", "Top: Bee 95",
+          "n = int(input())\ndata = {}\nfor i in range(n):\n    name = input()\n    score = int(input())\n    data[name] = score\n\nbest_name = \"\"\nbest_score = -1\nfor name, score in data.items():\n    if score > best_score:\n        best_score = score\n        best_name = name\nprint(f\"Top: {best_name} {best_score}\")",
+          'n = int(input())\ndata = {}\nfor i in range(n):\n    name = input()\n    score = int(input())\n    data[name] = score\n\nbest_name = ""\nbest_score = -1\nfor name, score in data.items():\n    if score > best_score:\n        best_score = score\n        best_name = name\nprint(f"Top: {best_name} {best_score}")',
+          sample_in="3\nAnn\n80\nBee\n95\nCat\n70", hint="เก็บใน dict แล้วไล่เทียบ"),
+    ]
+    write_week("048-transition-prep", chapter="Transition Prep", emoji="🚀", index_md=index, problems=probs)
+
+
+if __name__ == "__main__":
+    week_045()
+    week_046()
+    week_047()
+    week_048()

@@ -1,35 +1,46 @@
-# 🥇 Practice List Methods — Question 3: Top Score
+# 🛠️ List Methods — ข้อ 4: เอาของหมดสต็อกออก
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-กำหนดคะแนน เรียงจากมากไปน้อย แล้วแสดงคะแนนสูงสุด
+คลังต้องเอาสินค้าหมดสต็อกออกจากรายการ
 
-```python
-scores = [72, 95, 60, 88, 45, 83]
-```
+กำหนด `stock = ["Rice", "Oil", "Soap", "Milk"]`
 
-**Output:**
-```
-Top score: 95
-```
+ลบ `Oil` ออกด้วย `.remove()` แล้วแสดง list
 
 ---
 
-## 💡 Hint
+## Input
 
-- `.sort(reverse=True)` จะเรียงจากมากไปน้อย
-- หลังเรียงแล้ว `scores[0]` คือค่ามากที่สุด
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+list หนึ่งบรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+['Rice', 'Soap', 'Milk']
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-scores = [72, 95, 60, 88, 45, 83]
+stock = ["Rice", "Oil", "Soap", "Milk"]
 
-# เรียงและแสดงคะแนนสูงสุด
+# เขียนโค้ดตรงนี้
+
+print(stock)
 ```

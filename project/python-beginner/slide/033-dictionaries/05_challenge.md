@@ -1,49 +1,54 @@
-# 🔥 Practice Dictionaries — Question 4: Phonebook Lookup
+# 📖 Dictionaries — ข้อ 5: สมุดติดต่อพร้อมเช็ค
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-สร้างสมุดโทรศัพท์ 3 คน และรับชื่อจากผู้ใช้เพื่อค้นหาเบอร์ (ทำ 3 ครั้ง)
+สมุดติดต่อต้องเช็คคีย์ก่อนแล้ววนพิมพ์ทุกคีย์
 
-```python
-phonebook = {
-    "Alice": "081-111-1111",
-    "Bob": "082-222-2222",
-    "Charlie": "083-333-3333"
-}
+กำหนด `contact = {"name": "Nida", "phone": "089-000-1111", "city": "Khon Kaen"}`
+
+ถ้ามี `email` แสดง Found email ไม่เช่นนั้น No email
+จากนั้นพิมพ์ทุกคีย์ทีละบรรทัด
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+4 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+No email
+name
+phone
+city
 ```
 
-**ตัวอย่าง Session:**
-```
-Search: Alice
-Phone: 081-111-1111
-Search: David
-Not found: David
-Search: Bob
-Phone: 082-222-2222
-```
 
 ---
 
 ## 💡 Hint
 
-ใช้ `if name in phonebook:` ก่อนเข้าถึงค่า
+เช็คคีย์ที่อาจไม่มี แล้วค่อยวนคีย์ที่มี
 
 ---
 
 ## Starter Code
 
 ```python
-phonebook = {
-    "Alice": "081-111-1111",
-    "Bob": "082-222-2222",
-    "Charlie": "083-333-3333"
-}
+contact = {"name": "Nida", "phone": "089-000-1111", "city": "Khon Kaen"}
 
-for i in range(3):
-    name = input("Search: ")
-    # Write your code here
+# เขียนโค้ดตรงนี้
 ```

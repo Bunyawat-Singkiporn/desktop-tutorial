@@ -1,4 +1,4 @@
-# 🎨 Practice: Output Formatting — Question 1: f-string Greeting
+# 🖨️ Output Formatting — ข้อ 2: ทักทาย f-string
 
 **Difficulty:** 🟢 Easy
 
@@ -6,33 +6,35 @@
 
 ## โจทย์
 
-รับชื่อและอายุ แล้วแสดงด้วย f-string ตามรูปแบบ
-
-**Input:**
-```
-Bob
-14
-```
-
-**Output:**
-```
-My name is Bob and I am 14 years old.
-```
+มี name = "Lina" แสดง Hello, Lina! ด้วย f-string
 
 ---
 
-## 💡 Hint
+## Input
 
-- รับ `name` และ `age` จาก `input()`
-- ใช้ `f"...{name}...{age}..."` สำหรับ output
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Hello, Lina!
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-name = input()
-age = int(input())
+name = "Lina"
 
-# Use f-string to print
+# แสดงด้วย f-string
 ```

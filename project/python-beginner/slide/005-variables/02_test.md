@@ -1,4 +1,4 @@
-# 📦 Practice: Variables — Question 1: Personal Info
+# 🐾 Variables — ข้อ 1: การ์ดสัตว์เลี้ยง
 
 **Difficulty:** 🟢 Easy
 
@@ -6,36 +6,37 @@
 
 ## โจทย์
 
-สร้าง variable เก็บข้อมูล 3 อย่าง แล้วแสดงออกมาตามรูปแบบ
+คลินิกสัตว์เลี้ยงอยากพิมพ์การ์ดแนะนำสัตว์ตัวแรกของวัน
 
-| Variable | ค่า |
-|----------|-----|
-| `name` | `"Sam"` |
-| `age` | `10` |
-| `city` | `"Chiang Mai"` |
-
-**Output:**
-```
-Name: Sam
-Age: 10
-City: Chiang Mai
-```
+เก็บชื่อสัตว์ไว้ในตัวแปร แล้วแสดง 2 บรรทัดตามตัวอย่าง
 
 ---
 
-## 💡 Hint
+## Input
 
-สร้าง variable 3 ตัวก่อน แล้วใช้ `print()` แสดงผล
+ไม่มี (โปรแกรมนี้ไม่รับค่าจากผู้ใช้)
+
+## Output
+
+ข้อความ 2 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Pet Name
+Mochi
+```
 
 ---
 
 ## Starter Code
 
 ```python
-# Create 3 variables
-name = 
-age = 
-city = 
+pet_name = "Mochi"
 
-# Print them
+# เขียนโค้ดตรงนี้
 ```

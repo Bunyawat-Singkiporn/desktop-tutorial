@@ -1,55 +1,43 @@
-# ✅ Practice: Loop Review — Question 3: Grade List
+# 🔁 loop-review — ข้อ 4: นับถอยหลังเปิดร้าน
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-รับคะแนน 5 ครั้ง แล้วแสดงเกรดของแต่ละคน พร้อมสรุปจำนวนที่ผ่าน/ไม่ผ่าน
+ป้ายร้านนับถอยหลังจาก 3 ถึง 1 ด้วย `while` แล้วพิมพ์ `Open!`
 
-**Input:**
-```
-85
-55
-92
-45
-70
-```
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+เลข 3 2 1 แล้ว Open!
+
+---
+
+## ตัวอย่าง
 
 **Output:**
-```
-Score 85: Pass
-Score 55: Fail
-Score 92: Pass
-Score 45: Fail
-Score 70: Pass
----
-Pass: 3
-Fail: 2
+
+```text
+3
+2
+1
+Open!
 ```
 
----
-
-## 💡 Hint
-
-- ใช้ `for i in range(5):` รับ input 5 ครั้ง
-- ถ้า score >= 60: Pass, นับ pass
-- ถ้าไม่: Fail, นับ fail
 
 ---
 
 ## Starter Code
 
 ```python
-pass_count = 0
-fail_count = 0
+count = 3
 
-for i in range(5):
-    score = int(input())
-    # Check pass/fail and print result
-    # Count each
-
-print("---")
-# Print pass and fail counts
+# while นับลง แล้วพิมพ์ Open!
 ```

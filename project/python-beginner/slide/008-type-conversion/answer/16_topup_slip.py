@@ -1,0 +1,12 @@
+phone = input()
+amount = int(input())
+fee = float(input())
+charged = amount + fee
+print("========================")
+print("        TOPUP")
+print("========================")
+print("Phone  :", phone)
+print("Amount :", amount)
+print("Fee    :", fee)
+print("Charged:", charged)
+print("========================")

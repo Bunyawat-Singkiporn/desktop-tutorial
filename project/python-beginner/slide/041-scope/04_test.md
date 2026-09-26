@@ -1,35 +1,47 @@
-# 🌐 Practice Scope — Question 3: Local and Global
+# 🔭 Scope — ข้อ 4: คืนค่าจาก local
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-สร้างโปรแกรมที่ใช้ทั้ง global และ local variable อย่างถูกต้อง
+คำนวณในฟังก์ชันแล้วส่งค่าออก
 
 **เงื่อนไข:**
-- `SCHOOL_NAME = "True Coding"` — global (ใช้ใน function ได้)
-- function `introduce(name, score)` — ใช้ local variables ข้างใน
-- แสดงผลด้วย global school name
+
+- สร้าง `calc()` มี `result = 42` แล้ว return result
+- เก็บค่าใน `value` แล้วพิมพ์
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
 
 **Output:**
+
+```text
+42
 ```
-[True Coding] Alice scored 90
-[True Coding] Bob scored 75
-```
+
 
 ---
 
 ## Starter Code
 
 ```python
-SCHOOL_NAME = "True Coding"
+def calc():
+    # return ค่าในฟังก์ชัน
 
-def introduce(name, score):
-    # ใช้ SCHOOL_NAME (global) และ name, score (local parameter)
-    # Write your code here
-
-introduce("Alice", 90)
-introduce("Bob", 75)
+value = calc()
+print(value)
 ```

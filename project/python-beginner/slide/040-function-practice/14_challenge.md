@@ -1,58 +1,46 @@
-# 🔥 Practice Function — Challenge: กระเป๋าเงินในเกม
+# 🧩 Function Practice — ข้อ 14: กระเป๋าเงินเกม
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-ทำระบบเงินในเกมด้วย **3 functions**:
+กระเป๋าเงินในเกม
 
-| Function | หน้าที่ |
-|----------|---------|
-| `add_money(wallet, amount)` | เพิ่มเงิน แล้ว return wallet ใหม่ |
-| `spend_money(wallet, amount)` | ถอนเงิน (ถ้าเงินไม่พอ return wallet เดิม) |
-| `show_wallet(wallet)` | แสดงยอดเงิน |
+**เงื่อนไข:**
 
-เริ่มต้น `wallet = 100`  
-รับคำสั่ง `add` หรือ `spend` และจำนวนเงิน 1 ครั้ง แล้วแสดงผล
+- `add_money(wallet, amount)` เพิ่มเงินใน `wallet["coin"]`
+- `spend_money(wallet, amount)` ลดเงิน
+- `show_wallet(wallet)` พิมพ์ `Coins: <จำนวน>`
+- เริ่ม `{ "coin": 100 }` เพิ่ม 50 ใช้ 30 แล้ว show
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม / เรียกฟังก์ชันในโค้ด)
+
+## Output
+
+1 บรรทัด
 
 ---
 
 ## ตัวอย่าง
 
-**Input:**
-```
-add
-50
-```
-
 **Output:**
-```
-Wallet: 150 coins
+
+```text
+Coins: 120
 ```
 
-**Input:**
-```
-spend
-30
-```
 
-**Output:**
-```
-Wallet: 70 coins
-```
+---
 
-**Input:**
-```
-spend
-200
-```
+## 💡 Hint
 
-**Output:**
-```
-Wallet: 100 coins
-```
+แก้ค่าใน dict ผ่าน key
 
 ---
 
@@ -60,22 +48,16 @@ Wallet: 100 coins
 
 ```python
 def add_money(wallet, amount):
-    # Write your code here
+    # เขียนโค้ดตรงนี้
 
 def spend_money(wallet, amount):
-    # Write your code here
+    # เขียนโค้ดตรงนี้
 
 def show_wallet(wallet):
-    # Write your code here
+    # เขียนโค้ดตรงนี้
 
-wallet = 100
-action = input()
-amount = int(input())
-
-if action == "add":
-    wallet = add_money(wallet, amount)
-elif action == "spend":
-    wallet = spend_money(wallet, amount)
-
+wallet = {"coin": 100}
+add_money(wallet, 50)
+spend_money(wallet, 30)
 show_wallet(wallet)
 ```

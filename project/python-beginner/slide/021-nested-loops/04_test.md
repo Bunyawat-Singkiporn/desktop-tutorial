@@ -1,43 +1,41 @@
-# ✖️ Practice: Nested Loops — Question 3: Multiplication Table
+# 🔲 nested-loops — ข้อ 4: ไฟ LED จุด
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-รับจำนวน n แล้วแสดงตารางสูตรคูณ n×n
-
-**Input:**
-```
-4
-```
-
-**Output:**
-```
-1  2  3  4  
-2  4  6  8  
-3  6  9  12  
-4  8  12  16  
-```
+แผงไฟ LED ขนาด 3×3 ต้องติดจุด `.` ทุกช่อง
+พิมพ์ตารางจุด 3 แถว 3 คอลัมน์
 
 ---
 
-## 💡 Hint
+## Input
 
-- Loop นอก: แถว 1–n
-- Loop ใน: คอลัมน์ 1–n
-- `print(i * j, end="  ")` พิมพ์ตัวเลขและ space
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+ตารางจุด 3×3
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+...
+...
+...
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-n = int(input())
-
-for i in range(1, n + 1):
-    for j in range(1, n + 1):
-        # Print i * j with spaces
-    # Move to next line
+# เขียนลูปซ้อนพิมพ์จุด
 ```

@@ -1,4 +1,4 @@
-# Practice: Data Types — Medium A: ทาย type()
+# 🧬 Data Types — ข้อ 6: การ์ดข้อมูลผสม
 
 **Difficulty:** 🟡 Medium
 
@@ -6,30 +6,47 @@
 
 ## โจทย์
 
-สร้างตัวแปรตามตาราง แล้วพิมพ์ชนิดทีละบรรทัดด้วย `type(...)` (แสดงผลตามที่ Python ให้):
+`name = "Ben"`, `age = 11`, `height = 1.4`, `is_member = False` แสดงครบ
 
-| ตัวแปร | ค่า |
-|--------|-----|
-| a | 10 |
-| b | 2.5 |
-| c | "10" |
-| d | False |
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+4 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Name: Ben
+Age: 11
+Height: 1.4
+Member: False
+```
 
 
 ---
 
 ## 💡 Hint
 
-ใช้ print(type(a)) ฯลฯ
+ครบทั้งสี่ชนิด
 
 ---
 
 ## Starter Code
 
 ```python
-a = 10
-b = 2.5
-c = "10"
-d = False
+name = "Ben"
+age = 11
+height = 1.4
+is_member = False
 
+# แสดงผล
 ```

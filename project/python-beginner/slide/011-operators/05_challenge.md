@@ -1,51 +1,55 @@
-# 🔥 Practice: Operators — Question 4: Rectangle Stats
+# 🔢 Operators — ข้อ 5: บิลร้าน + เปรียบเทียบ
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-รับความกว้างและความสูงของสี่เหลี่ยมผืนผ้า แล้วแสดงค่าต่างๆ ครบถ้วน
+รับราคาสินค้าสองชิ้น แสดงยอดรวม และผลเปรียบเทียบว่ารวม >= 100 หรือไม่
+
+---
+
+## Input
+
+ดูตัวอย่าง
+
+## Output
+
+2 บรรทัด
+
+---
+
+## ตัวอย่าง
 
 **Input:**
-```
-7
-4
+
+```text
+70
+60
 ```
 
 **Output:**
-```
-Width : 7
-Height: 4
-Area  : 28
-Perim : 22
-Diag  : 8.06
+
+```text
+Total: 130
+Big Bill: True
 ```
 
-> Diagonal = √(width² + height²) — ใช้ `** 0.5` แทนการหารากที่สอง
 
 ---
 
 ## 💡 Hint
 
-- พื้นที่ = `width * height`
-- เส้นรอบวง = `(width + height) * 2`
-- เส้นทแยงมุม = `(width**2 + height**2) ** 0.5`
-- ใช้ `:.2f` สำหรับ diagonal
+ยังไม่ต้อง if — พิมพ์ True/False
 
 ---
 
 ## Starter Code
 
 ```python
-width = int(input())
-height = int(input())
+a = int(input())
+b = int(input())
 
-# Calculate all values
-area = 
-perimeter = 
-diagonal = 
-
-# Print results
+# รวมและเปรียบเทียบ
 ```

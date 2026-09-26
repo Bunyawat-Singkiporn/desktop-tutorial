@@ -1,4 +1,4 @@
-# Practice: Review — Medium B: โปรไฟล์สั้น
+# 📝 Review — ข้อ 7: เช็กเกณฑ์แบบไม่ if
 
 **Difficulty:** 🟡 Medium
 
@@ -6,44 +6,47 @@
 
 ## โจทย์
 
-รับชื่อ และเมือง แสดงการ์ด:
-
-```
-PROFILE
-Name: ...
-City: ...
-```
-
+รับคะแนน แสดง Pass: ตามด้วยผล score >= 50
 
 ---
 
-## ตัวอย่าง Input / Output
+## Input
+
+ดูตัวอย่าง
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
 
 **Input:**
-```
-Lee
-Chiang Mai
+
+```text
+40
 ```
 
 **Output:**
+
+```text
+Pass: False
 ```
-PROFILE
-Name: Lee
-City: Chiang Mai
-```
+
 
 ---
 
 ## 💡 Hint
 
-สอง input + print หัวข้อ
+ยังไม่มี if
 
 ---
 
 ## Starter Code
 
 ```python
-name = input()
-city = input()
+score = int(input())
 
+# แสดงผลเปรียบเทียบ
 ```

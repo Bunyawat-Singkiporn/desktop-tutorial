@@ -1,4 +1,4 @@
-# 🗂️ Practice: Data Types — Question 1: Type Checker
+# 🧬 Data Types — ข้อ 2: ชนิดของอายุ
 
 **Difficulty:** 🟢 Easy
 
@@ -6,38 +6,36 @@
 
 ## โจทย์
 
-สร้าง variable 4 ตัว แต่ละตัวเป็น data type ต่างกัน แล้วใช้ `type()` แสดงชนิดของแต่ละตัว
-
-| Variable | ค่า | Type |
-|----------|-----|------|
-| `my_age` | `12` | `int` |
-| `my_height` | `1.55` | `float` |
-| `my_name` | `"Alice"` | `str` |
-| `is_student` | `True` | `bool` |
-
-**Output:**
-```
-<class 'int'>
-<class 'float'>
-<class 'str'>
-<class 'bool'>
-```
+เก็บ `age = 12` แล้วแสดงค่าและชนิด
 
 ---
 
-## 💡 Hint
+## Input
 
-ใช้ `print(type(variable_name))` สำหรับแต่ละ variable
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Age: 12
+Type: <class 'int'>
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-my_age = 12
-my_height = 1.55
-my_name = "Alice"
-is_student = True
+age = 12
 
-# Print the type of each variable
+# แสดงค่าและชนิด
 ```

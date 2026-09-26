@@ -1,39 +1,46 @@
-# 🏙️ Practice: Input — Question 2: Hometown
+# ⌨️ Input — ข้อ 2: เมืองเกิด
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-รับชื่อและเมืองบ้านเกิด แล้วแสดงประโยคแนะนำตัว
-
-**Input:**
-```
-Tom
-Phuket
-```
-
-**Output:**
-```
-I am Tom from Phuket.
-Nice to meet you!
-```
+แบบสอบถามท่องเที่ยวถามเมืองเกิด
+รับชื่อเมือง แล้วแสดงพร้อมป้ายกำกับ
 
 ---
 
-## 💡 Hint
+## Input
 
-- รับ 2 ค่าจาก `input()`
-- ใช้ `print()` แสดง 2 บรรทัด
+ชื่อเมือง 1 บรรทัด
+
+## Output
+
+ข้อความเมืองเกิด 1 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Input:**
+
+```text
+Khon Kaen
+```
+
+**Output:**
+
+```text
+Hometown: Khon Kaen
+```
 
 ---
 
 ## Starter Code
 
 ```python
-name = input()
 city = input()
 
-# Print introduction
+# เขียนโค้ดตรงนี้
 ```

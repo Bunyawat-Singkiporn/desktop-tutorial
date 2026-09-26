@@ -1,49 +1,44 @@
-# 📞 Practice Dictionaries — Question 3: Contact Card
+# 📖 Dictionaries — ข้อ 4: เช็คว่ามีเบอร์หรือยัง
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-กำหนดข้อมูลติดต่อ แสดงทุก key-value แบบมีรูปแบบสวยงาม
+เช็คว่าใน dict มีคีย์ phone หรือไม่
 
-```python
-contact = {
-    "name": "Bob Smith",
-    "phone": "081-234-5678",
-    "city": "Bangkok",
-    "email": "bob@email.com"
-}
-```
+กำหนด `user = {"name": "Ohm", "city": "Bangkok"}`
 
-**Output:**
-```
-=== Contact Info ===
-name: Bob Smith
-phone: 081-234-5678
-city: Bangkok
-email: bob@email.com
-```
+ถ้ามี `phone` แสดง `Has phone` ไม่เช่นนั้น `No phone`
 
 ---
 
-## 💡 Hint
+## Input
 
-ใช้ `for key in contact:` แล้ว print `key` และ `contact[key]`
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+บรรทัดเดียว
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+No phone
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-contact = {
-    "name": "Bob Smith",
-    "phone": "081-234-5678",
-    "city": "Bangkok",
-    "email": "bob@email.com"
-}
+user = {"name": "Ohm", "city": "Bangkok"}
 
-print("=== Contact Info ===")
-# Write your code here
+# เขียนโค้ดตรงนี้
 ```

@@ -1,22 +1,24 @@
-# โจทย์: ตรวจสอบการเข้าสวนสนุกตามกฎ
-# - เด็ก (อายุ < 12): เข้าได้เฉพาะเมื่อมีผู้ปกครองมาด้วย
-# - ผู้ใหญ่ (อายุ >= 12): เข้าได้เสมอ ยกเว้นถูกแบน
-# ผสมความรู้: and + or + not + elif
+height = int(input())
+age = int(input())
+is_vip = int(input())
+day = input()
 
-age = int(input())       # รับอายุ
-has_guardian = input()   # รับค่า "True" หรือ "False" (เป็น string)
-banned = input()         # รับค่า "True" หรือ "False" (เป็น string)
-
-# กรณีที่ 1: เด็ก → ต้องมีผู้ปกครองมาด้วย
-if age < 12:
-    if has_guardian == "True":   # มีผู้ปกครอง → เข้าได้
-        print("Welcome")
-    else:                        # ไม่มีผู้ปกครอง → เข้าไม่ได้
-        print("Not Allowed")
-
-# กรณีที่ 2: ผู้ใหญ่ → เข้าได้เสมอ ยกเว้นถูกแบน
+if height >= 120 and age >= 12:
+    base_price = 900
 else:
-    if banned == "True":         # ถูกแบน → เข้าไม่ได้
-        print("Not Allowed")
-    else:                        # ไม่ถูกแบน → เข้าได้
-        print("Welcome")
+    base_price = 500
+
+if is_vip == 1 or day == "weekend":
+    fast_pass = 200
+else:
+    fast_pass = 0
+
+total = base_price + fast_pass
+
+print("==========================")
+print("       THEME PARK")
+print("==========================")
+print(f"Base Price : {base_price}")
+print(f"Fast Pass  : {fast_pass}")
+print(f"Total      : {total}")
+print("==========================")

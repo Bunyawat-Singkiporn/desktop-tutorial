@@ -1,4 +1,4 @@
-# Practice: Debugging Loops — Medium B: แก้ infinite while
+# 🐛 debugging-loops — ข้อ 7: แก้ while ทายรหัส
 
 **Difficulty:** 🟡 Medium
 
@@ -6,23 +6,51 @@
 
 ## โจทย์
 
-ต้องการพิมพ์ 1 2 3 ด้วย while — อย่าลืมอัปเดตตัวแปร
+รหัสลับคือ `7` รับเดาจนกว่าจะถูกแล้วพิมพ์ `Unlocked`
+เงื่อนไข while กลับด้าน — แก้ให้ถูก
+
+---
+
+## Input
+
+ตัวเลขทายทีละบรรทัด จนตรงรหัส
+
+## Output
+
+Unlocked เมื่อเดาถูก
+
+---
+
+## ตัวอย่าง
+
+**Input:**
+
+```text
+3
+7
+```
+
+**Output:**
+
+```text
+Unlocked
+```
 
 
 ---
 
 ## 💡 Hint
 
-i = i + 1
+วนซ้ำขณะที่ยังเดาไม่ถูก
 
 ---
 
 ## Starter Code
 
 ```python
-i = 1
-while i <= 3:
-    print(i)
-    # แก้ตรงนี้
-
+secret = 7
+guess = int(input())
+while guess == secret:  # ← แก้เงื่อนไข
+    guess = int(input())
+print("Unlocked")
 ```

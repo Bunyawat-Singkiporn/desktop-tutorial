@@ -1,4 +1,4 @@
-# ✨ Code Readability — Question 1: Rename Variables
+# ✨ Code Readability — ข้อ 2: ตั้งชื่อคะแนนให้ชัด
 
 **Difficulty:** 🟢 Easy
 
@@ -6,31 +6,41 @@
 
 ## โจทย์
 
-โค้ดด้านล่างรันได้ แต่ชื่อตัวแปรไม่สื่อความหมาย — เขียนใหม่ด้วยชื่อที่ดีกว่า
+มีคะแนน 75 ตรวจผ่านเกณฑ์ 50
 
-```python
-# โค้ดเดิม
-a = int(input())
-b = int(input())
-c = a + b
-d = c / 2
-if d >= 50:
-    print("ok")
-else:
-    print("not ok")
+**เงื่อนไข:**
+
+- ใช้ชื่อ `score` และ `is_passed`
+- พิมพ์ `Passed` หรือ `Not passed`
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Passed
 ```
 
-**ชื่อที่ดีกว่า:** `score1`, `score2`, `total`, `average`, `"Pass"`, `"Fail"`
-
-**Output** (เหมือนเดิม สำหรับ input 80 60):
-```
-Pass
-```
 
 ---
 
 ## Starter Code
 
 ```python
-# เขียนใหม่ด้วยชื่อตัวแปรที่สื่อความหมาย
+score = 75
+is_passed = score >= 50
+
+# พิมพ์ตาม is_passed
 ```

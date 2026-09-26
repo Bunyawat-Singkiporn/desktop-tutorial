@@ -1,36 +1,44 @@
-# 🤝 Practice Sets — Question 3: Common Items
+# 🔤 Sets — ข้อ 4: ลบเมนูที่เลิกขาย
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-หาวิชาที่นักเรียน 2 คนลงทะเบียนเรียนร่วมกัน
+ร้านลบเมนูที่เลิกขายออกจาก set
 
-```python
-alice_classes = {"Math", "Science", "English", "Art"}
-bob_classes = {"Math", "PE", "English", "Music"}
-```
+กำหนด `menu = {"Soup", "Salad", "Steak"}` แล้ว remove `Salad`
 
-**Output** (ลำดับอาจต่างกัน):
-```
-Common classes: {'Math', 'English'}
-```
+แปลงเป็น list เรียงแล้วแสดง
 
 ---
 
-## 💡 Hint
+## Input
 
-ใช้ `&` (intersection) เพื่อหาค่าที่ซ้ำกัน
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+list หนึ่งบรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+['Soup', 'Steak']
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-alice_classes = {"Math", "Science", "English", "Art"}
-bob_classes = {"Math", "PE", "English", "Music"}
+menu = {"Soup", "Salad", "Steak"}
 
-# หาวิชาร่วมกัน
+# เขียนโค้ดตรงนี้
 ```

@@ -1,4 +1,4 @@
-# Practice Function — Question 9: รายชื่อเข้าค่าย
+# 🧩 Function Practice — ข้อ 11: เพิ่มชื่อเข้าค่าย
 
 **Difficulty:** 🟡 Medium
 
@@ -6,28 +6,41 @@
 
 ## โจทย์
 
-ครูเก็บรายชื่อเด็กเข้าค่าย
+เพิ่มชื่อเข้า list แล้วแสดงทั้งหมด
 
-สร้าง:
-- `add_name(names, name)` — เพิ่มชื่อลง list
-- `show_names(names)` — แสดงรายชื่อทีละคน
+**เงื่อนไข:**
 
-ถามจำนวนคน รับชื่อ แล้วพิมพ์รายชื่อทั้งหมด
+- `add_name(names, name)` ใช้ append แล้วคืน names
+- `show_names(names)` พิมพ์ทีละชื่อ
+- เริ่มจาก `[]` เพิ่ม `"Ann"` กับ `"Ben"` แล้ว show
 
 ---
 
-## ตัวอย่าง Session
+## Input
 
+ไม่มี (กำหนดค่าในโปรแกรม / เรียกฟังก์ชันในโค้ด)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Ann
+Ben
 ```
-How many campers? 3
-Name: Alice
-Name: Bob
-Name: Cara
-=== Camp List ===
-Alice
-Bob
-Cara
-```
+
+
+---
+
+## 💡 Hint
+
+append แล้วคืน list เดิม
 
 ---
 
@@ -35,16 +48,13 @@ Cara
 
 ```python
 def add_name(names, name):
-    # Write your code here
+    # เขียนโค้ดตรงนี้
 
 def show_names(names):
-    # Write your code here
+    # เขียนโค้ดตรงนี้
 
 names = []
-n = int(input("How many campers? "))
-for i in range(n):
-    add_name(names, input("Name: "))
-
-print("=== Camp List ===")
+names = add_name(names, "Ann")
+names = add_name(names, "Ben")
 show_names(names)
 ```

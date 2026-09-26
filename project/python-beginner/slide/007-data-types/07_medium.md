@@ -1,4 +1,4 @@
-# Practice: Data Types — Medium B: อย่าสับสน str กับ int
+# 🧬 Data Types — ข้อ 7: ตรวจชนิดคะแนน
 
 **Difficulty:** 🟡 Medium
 
@@ -6,11 +6,27 @@
 
 ## โจทย์
 
-กำหนด `n = 3` และ `s = "3"` แล้วแสดงผลของ `n + n` และ `s + s` คนละบรรทัด:
+`score = 90`, `ratio = 0.9` แสดง type ของทั้งคู่
 
-```
-6
-33
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+<class 'int'>
+<class 'float'>
 ```
 
 
@@ -18,14 +34,15 @@
 
 ## 💡 Hint
 
-int บวกเลข / str ต่อข้อความ
+print(type(...)) ตรงๆ
 
 ---
 
 ## Starter Code
 
 ```python
-n = 3
-s = "3"
+score = 90
+ratio = 0.9
 
+# แสดง type
 ```

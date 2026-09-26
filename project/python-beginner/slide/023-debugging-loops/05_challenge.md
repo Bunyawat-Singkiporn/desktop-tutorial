@@ -1,61 +1,56 @@
-# 🔥 Practice: Debugging Loops — Question 4: Fix the Broken Report
+# 🐛 debugging-loops — ข้อ 5: แก้รายงานยอดขาย
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-โค้ดด้านล่างมี **4 bugs** แก้ให้ทำงานถูกต้อง
+จากยอด `[100, 50, 150]` ต้องพิมพ์ยอดทีละบรรทัด แล้ว `Total: 300` และ `Count: 3`
+โค้ดเริ่มต้นผิดหลายจุด — แก้ให้ครบ
 
-```python
-scores = [80, 95, 60, 45, 75]
-total = 0
-count = 0
+---
 
-for score in scores:
-total = total + score
-count = count + 1
+## Input
 
-average = total / count
-print(f"Total: {total}")
-  print(f"Count: {count}")
-print(f"Average: {average:.1f}")
-print(f"Max: {max(score)}")
+ไม่มี (แก้โค้ดที่ให้มา)
+
+## Output
+
+รายการ + Total + Count
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+100
+50
+150
+Total: 300
+Count: 3
 ```
 
-**Output ที่ต้องการ:**
-```
-Total: 355
-Count: 5
-Average: 71.0
-Max: 95
-```
 
 ---
 
 ## 💡 Hint
 
-- Bug 1: Indent ผิดใน loop body
-- Bug 2: Indent ผิดของ print
-- Bug 3: `max(score)` ควรเป็น `max(scores)`
+ตรวจทีละจุด: สิ่งที่พิมพ์ / วิธีสะสม / จุดที่นับ
 
 ---
 
 ## Starter Code
 
 ```python
-scores = [80, 95, 60, 45, 75]
+sales = [100, 50, 150]
 total = 0
 count = 0
-
-for score in scores:
-total = total + score   # Bug 1: indent
-count = count + 1       # Bug 1: indent
-
-average = total / count
+for sale in sales:
+    print(sales)
+    total = sale
 print(f"Total: {total}")
-  print(f"Count: {count}")   # Bug 2: indent
-print(f"Average: {average:.1f}")
-print(f"Max: {max(score)}")  # Bug 3: wrong variable
+print(f"Count: {count}")
 ```

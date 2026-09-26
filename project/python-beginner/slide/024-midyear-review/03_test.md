@@ -1,57 +1,48 @@
-# 🏆 Practice: Mid-Year Review — Question 2: Class Average
+# 🏆 midyear-review — ข้อ 3: คิดเงินทอน
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-รับคะแนน n คน แล้วแสดงผลสรุปชั้นเรียน
+รับราคาสินค้าและเงินที่จ่าย (จำนวนเต็ม) แล้วพิมพ์เงินทอน
+
+---
+
+## Input
+
+ราคา 1 บรรทัด แล้วเงินที่จ่าย 1 บรรทัด
+
+## Output
+
+บรรทัดเดียว Change: <เงินทอน>
+
+---
+
+## ตัวอย่าง
 
 **Input:**
-```
-4
-90
-55
-75
-80
+
+```text
+70
+100
 ```
 
 **Output:**
-```
-Student 1: 90 → Pass
-Student 2: 55 → Fail
-Student 3: 75 → Pass
-Student 4: 80 → Pass
----
-Average: 75.0
-Pass: 3 | Fail: 1
+
+```text
+Change: 30
 ```
 
----
-
-## 💡 Hint
-
-- รับ n ก่อน แล้ว loop `range(n)` รับคะแนนทีละคน
-- เก็บใน list แล้วคำนวณหลัง loop
 
 ---
 
 ## Starter Code
 
 ```python
-n = int(input())
-scores = []
-pass_count = 0
-fail_count = 0
+price = int(input())
+paid = int(input())
 
-for i in range(n):
-    score = int(input())
-    scores.append(score)
-    # Print "Student X: score → Pass/Fail"
-    # Count pass/fail
-
-print("---")
-# Print average
-# Print pass/fail counts
+# คำนวณแล้วพิมพ์
 ```

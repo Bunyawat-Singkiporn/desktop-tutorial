@@ -1,4 +1,4 @@
-# Practice: Midyear Review — Medium B: ตะกร้า + ภาษี
+# 🏆 midyear-review — ข้อ 7: นับถอยหลังเปิดงาน
 
 **Difficulty:** 🟡 Medium
 
@@ -6,35 +6,46 @@
 
 ## โจทย์
 
-รับราคาสินค้า 2 ชิ้น (int) รวมกัน แล้วบวก VAT 7% แสดงยอดสุดท้ายทศนิยม 2 ตำแหน่ง
-
+นับถอยหลังจาก 5 ถึง 1 ด้วย while แล้วพิมพ์ `Start!`
 
 ---
 
-## ตัวอย่าง Input / Output
+## Input
 
-**Input:**
-```
-100
-100
-```
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+5 ถึง 1 แล้ว Start!
+
+---
+
+## ตัวอย่าง
+
 **Output:**
+
+```text
+5
+4
+3
+2
+1
+Start!
 ```
-214.00
-```
+
 
 ---
 
 ## 💡 Hint
 
-ผลรวม * 1.07 และ :.2f
+อัปเดตตัวนับทุกครั้ง
 
 ---
 
 ## Starter Code
 
 ```python
-a = int(input())
-b = int(input())
+count = 5
 
+# while นับลง
 ```

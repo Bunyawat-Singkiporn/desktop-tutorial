@@ -1,4 +1,4 @@
-# 📋 Practice Functions — Question 2: Show Menu
+# ⚙️ Functions — ข้อ 3: เมนูว่าง 2 รอบ
 
 **Difficulty:** 🟢 Easy
 
@@ -6,22 +6,39 @@
 
 ## โจทย์
 
-สร้าง function `show_menu()` ที่แสดงเมนู 3 ตัวเลือก แล้วเรียกใช้
+จอเมนูว่างยังไม่โหลดรายการ
+
+**เงื่อนไข:**
+
+- สร้าง `show_empty()` พิมพ์ `Menu loading...`
+- เรียก 2 ครั้ง
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม / เรียกฟังก์ชันในโค้ด)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## ตัวอย่าง
 
 **Output:**
+
+```text
+Menu loading...
+Menu loading...
 ```
-=== Menu ===
-1. Start game
-2. View scores
-3. Quit
-```
+
 
 ---
 
 ## Starter Code
 
 ```python
-# สร้าง function show_menu()
-
-# เรียกใช้
+# show_empty แล้วเรียก 2 ครั้ง
 ```

@@ -1,4 +1,4 @@
-# ➕ Practice: Operators — Question 1: Add Two Numbers
+# 🔢 Operators — ข้อ 2: บวกลบคูณหาร
 
 **Difficulty:** 🟢 Easy
 
@@ -6,25 +6,43 @@
 
 ## โจทย์
 
-รับตัวเลข 2 จำนวน แล้วแสดงผลรวม
+รับจำนวนเต็ม a แล้วแสดง a+3, a-3, a*3, a/3 คนละบรรทัด
+
+---
+
+## Input
+
+ดูตัวอย่าง
+
+## Output
+
+4 บรรทัด
+
+---
+
+## ตัวอย่าง
 
 **Input:**
-```
+
+```text
 10
-20
 ```
 
 **Output:**
+
+```text
+13
+7
+30
+3.3333333333333335
 ```
-Sum: 30
-```
+
 
 ---
 
 ## 💡 Hint
 
-- รับ 2 ค่าจาก `input()` แล้วแปลงเป็น `int`
-- บวกด้วย `+` แล้ว `print`
+ใช้ / จะได้ทศนิยม
 
 ---
 
@@ -32,7 +50,6 @@ Sum: 30
 
 ```python
 a = int(input())
-b = int(input())
 
-# Calculate and print the sum
+# แสดงผล
 ```

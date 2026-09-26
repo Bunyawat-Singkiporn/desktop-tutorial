@@ -1,43 +1,56 @@
-# 🔥 Practice Choosing Data Types — Question 4: Best Type
+# 🧭 Choosing Types — ข้อ 5: เลือกโครงสร้างสามแบบ
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-สร้างโปรแกรมระบบห้องสมุด โดยใช้ชนิดข้อมูลที่เหมาะสม:
+โปรแกรมเก็บข้อมูลสามอย่างคนละชนิด
 
-| ข้อมูล | ต้องการ | ชนิดที่เหมาะ |
-|--------|--------|------------|
-| ชื่อหนังสือในคลัง | เพิ่มลบได้, มีลำดับ | List |
-| ประเภทหนังสือ | คงที่ไม่เปลี่ยน | Tuple |
-| ISBN (ไม่ซ้ำกัน) | ตรวจซ้ำได้รวดเร็ว | Set |
+- `tasks` เป็น list ของงาน 2 อย่าง แล้ว append งานที่สาม
+- `days` เป็น tuple วันทำการ 3 วัน
+- `tags` เป็น set ของแท็ก แล้วตัดซ้ำอัตโนมัติ
 
-**ต้องทำ:**
-1. สร้างข้อมูลตัวอย่างแต่ละชนิด
-2. เพิ่มหนังสือใหม่ใน list
-3. ตรวจว่า ISBN ใหม่ซ้ำหรือไม่ก่อนเพิ่ม
-4. แสดงสรุป
+แสดง tasks, วันแรกของ days, และจำนวน tags
 
-**Output** (ตัวอย่าง):
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+3 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+['Wash', 'Cook', 'Shop']
+Mon
+Tags: 2
 ```
-Books: 4
-Categories: 3
-ISBNs: 4
-ISBN-999 is new → added
-```
+
+
+---
+
+## 💡 Hint
+
+เลือกชนิดตามว่าแก้ได้ / คงที่ / ไม่ซ้ำ
 
 ---
 
 ## Starter Code
 
 ```python
-books = ["Python Basics", "Data Science", "Web Dev"]
-categories = ("Fiction", "Non-fiction", "Science")
-isbns = {"ISBN-001", "ISBN-002", "ISBN-003"}
+tasks = ["Wash", "Cook"]
+days = ("Mon", "Tue", "Wed")
+tags = {"home", "home", "school"}
 
-# เพิ่มหนังสือใหม่ใน books
-# ตรวจ ISBN-999 ก่อนเพิ่ม
-# แสดงสรุป
+# เขียนโค้ดตรงนี้
 ```

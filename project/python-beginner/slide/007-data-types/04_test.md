@@ -1,44 +1,41 @@
-# 👤 Practice: Data Types — Question 3: Character Profile
+# 🧬 Data Types — ข้อ 4: ชนิดของชื่อ
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-สร้างโปรไฟล์ตัวละครในเกมโดยใช้ข้อมูลครบ 4 ชนิด แล้วแสดงผล
-
-| Variable | ค่า | Type |
-|----------|-----|------|
-| `hero_name` | `"Shadow"` | str |
-| `hero_level` | `10` | int |
-| `hero_hp` | `99.5` | float |
-| `is_alive` | `True` | bool |
-
-**Output:**
-```
-=== Character Profile ===
-Name: Shadow
-Level: 10
-HP: 99.5
-Alive: True
-```
+เก็บ `name = "Mira"` แสดงค่าและชนิด
 
 ---
 
-## 💡 Hint
+## Input
 
-ใช้ `print("Label:", variable)` แสดงผลแต่ละบรรทัด
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Name: Mira
+Type: <class 'str'>
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-hero_name = "Shadow"
-hero_level = 10
-hero_hp = 99.5
-is_alive = True
+name = "Mira"
 
-# Print profile
+# แสดงผล
 ```

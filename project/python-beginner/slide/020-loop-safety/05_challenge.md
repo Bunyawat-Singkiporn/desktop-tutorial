@@ -1,56 +1,59 @@
-# 🔥 Practice: Loop Safety — Question 4: Number Filter
+# 🎯 loop-safety — ข้อ 5: ทายเลขพร้อมคำใบ้
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-รับตัวเลขซ้ำๆ จนพิมพ์ `0` โดยแสดงเฉพาะเลขที่ **หารด้วย 3 ลงตัว** และนับจำนวน
+เลขลับคือ `25`
+ใช้ `while True` รับคำทาย
+- ถูก → พิมพ์ `Correct!` แล้ว break
+- น้อยเกินไป → พิมพ์ `Too low` แล้ว continue
+- มากเกินไป → พิมพ์ `Too high` แล้ว continue
+
+---
+
+## Input
+
+คำทายทีละบรรทัด
+
+## Output
+
+คำใบ้จนถูก
+
+---
+
+## ตัวอย่าง
 
 **Input:**
-```
-3
-7
-9
-2
-12
-5
-6
-0
+
+```text
+10
+40
+25
 ```
 
 **Output:**
-```
-3
-9
-12
-6
-Count of multiples of 3: 4
+
+```text
+Too low
+Too high
+Correct!
 ```
 
 ---
 
 ## 💡 Hint
 
-- `while True:` + `break` เมื่อรับ 0
-- ถ้า `n % 3 != 0` ให้ `continue` (ข้าม)
-- ถ้า `n % 3 == 0` ให้ print และเพิ่ม count
+เทียบ guess กับ secret ด้วย if / elif / else ใน while True
 
 ---
 
 ## Starter Code
 
 ```python
-count = 0
+secret = 25
 
-while True:
-    n = int(input())
-    if n == 0:
-        break
-    if n % 3 != 0:
-        continue   # Skip non-multiples
-    # Print and count multiples of 3
-
-print(f"Count of multiples of 3: {count}")
+# เขียนโค้ดตรงนี้
 ```

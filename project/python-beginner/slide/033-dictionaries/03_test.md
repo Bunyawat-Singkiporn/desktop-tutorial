@@ -1,4 +1,4 @@
-# ➕ Practice Dictionaries — Question 2: Add Key
+# 📖 Dictionaries — ข้อ 3: เพิ่มคะแนนเข้าโปรไฟล์
 
 **Difficulty:** 🟢 Easy
 
@@ -6,32 +6,39 @@
 
 ## โจทย์
 
-กำหนด dict ของสินค้า เพิ่ม key `"stock"` มีค่า `50` แล้วแสดงทุก key
+โปรไฟล์นักเรียนยังไม่มีคะแนน
 
-```python
-product = {"name": "Notebook", "price": 45}
-```
+กำหนด `student = {"name": "Pim", "age": 14}`
 
-**Output:**
-```
-name
-price
-stock
-```
+เพิ่มคีย์ `score` ค่า `88` แล้วแสดงค่าคะแนน
 
 ---
 
-## 💡 Hint
+## Input
 
-- เพิ่ม key ใหม่: `product["stock"] = 50`
-- แสดง key ทั้งหมด: `for key in product:`
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+บรรทัดเดียว
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Score: 88
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-product = {"name": "Notebook", "price": 45}
+student = {"name": "Pim", "age": 14}
 
-# เพิ่ม stock แล้วแสดงทุก key
+# เขียนโค้ดตรงนี้
 ```

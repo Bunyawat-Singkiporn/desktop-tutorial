@@ -1,53 +1,49 @@
-# 🔥 Practice Function — Challenge: ตัวละครในเกม RPG
+# 🧩 Function Practice — ข้อ 16: ตัวละคร HP
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-ทำระบบตัวละครเกมง่ายๆ ด้วย **4 functions**:
+ตัวละครมีเลือด
 
-| Function | หน้าที่ |
-|----------|---------|
-| `create_player(name)` | return dict `{"name": name, "hp": 100}` |
-| `take_damage(player, dmg)` | ลด hp (ไม่ต่ำกว่า 0) |
-| `is_alive(player)` | return `True` ถ้า hp > 0 |
-| `show_status(player)` | แสดงชื่อ + hp + Alive/Dead |
+**เงื่อนไข:**
 
-รับชื่อผู้เล่นและดาเมจจาก `input` แล้วแสดงสถานะหลังโดนตี
+- `create_player(name)` คืน `{"name": name, "hp": 100}`
+- `take_damage(player, dmg)` ลด hp
+- `is_alive(player)` คืน True ถ้า hp > 0
+- `show_status(player)` พิมพ์ `Name: ... / HP: ...`
+- สร้าง Hero โดน 40 แล้ว show และพิมพ์ is_alive
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม / เรียกฟังก์ชันในโค้ด)
+
+## Output
+
+3 บรรทัด
 
 ---
 
 ## ตัวอย่าง
 
-**Input:**
-```
-Hero
-30
-```
-
 **Output:**
-```
-=== Player Status ===
+
+```text
 Name: Hero
-HP: 70
-Status: Alive
+HP: 60
+True
 ```
 
-**Input:**
-```
-Hero
-120
-```
 
-**Output:**
-```
-=== Player Status ===
-Name: Hero
-HP: 0
-Status: Dead
-```
+---
+
+## 💡 Hint
+
+dict เก็บสถานะ แก้ผ่าน key
 
 ---
 
@@ -55,20 +51,19 @@ Status: Dead
 
 ```python
 def create_player(name):
-    # Write your code here
+    # เขียนโค้ดตรงนี้
 
 def take_damage(player, dmg):
-    # Write your code here
+    # เขียนโค้ดตรงนี้
 
 def is_alive(player):
-    # Write your code here
+    # เขียนโค้ดตรงนี้
 
 def show_status(player):
-    # Write your code here
+    # เขียนโค้ดตรงนี้
 
-name = input()
-dmg = int(input())
-player = create_player(name)
-take_damage(player, dmg)
-show_status(player)
+p = create_player("Hero")
+take_damage(p, 40)
+show_status(p)
+print(is_alive(p))
 ```

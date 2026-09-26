@@ -1,32 +1,39 @@
-# 🔄 Practice: Type Conversion — Question 2: Float Calculator
+# 🔄 Type Conversion — ข้อ 2: ป้ายราคากาแฟ
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-รับราคาสินค้า แล้วคำนวณราคาหลังบวก VAT 7%
-
-**Input:**
-```
-200
-```
-
-**Output:**
-```
-Original: 200.0
-VAT (7%): 14.0
-Total: 214.0
-```
+บาริสต้าต้องติดป้ายราคาแก้วกาแฟ
+รับราคาเป็นทศนิยม แล้วสร้างข้อความป้ายด้วยการต่อ string
 
 ---
 
-## 💡 Hint
+## Input
 
-- ใช้ `float(input())` รับค่า
-- VAT = price × 0.07
-- Total = price + VAT
+ราคาเป็นทศนิยม 1 บรรทัด
+
+## Output
+
+ข้อความป้ายราคา 1 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Input:**
+
+```text
+65.5
+```
+
+**Output:**
+
+```text
+Coffee price: 65.5
+```
 
 ---
 
@@ -35,9 +42,5 @@ Total: 214.0
 ```python
 price = float(input())
 
-# Calculate VAT and total
-vat = 
-total = 
-
-# Print results
+# เขียนโค้ดตรงนี้
 ```

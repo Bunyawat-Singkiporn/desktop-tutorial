@@ -1,59 +1,52 @@
-# 🔥 Final Review — Question 4: Mini Project Assessment
+# 🏁 Final Review — ข้อ 5: โปรเจกต์ตะกร้า
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-สร้าง **Student Management System** โดยใช้ทุกสิ่งที่เรียนมา:
+ตะกร้าเป็น list ราคา และคูปองเป็น dict
 
-**Features:**
-- `add` — เพิ่มนักเรียน (ชื่อ + คะแนน)
-- `show` — แสดงทั้งหมด (ชื่อ, คะแนน, เกรด)
-- `search` — ค้นหาตามชื่อ
-- `stats` — แสดง average, top, bottom
-- `exit` — จบ
+**เงื่อนไข:**
 
-**ต้องใช้:**
-- Functions แยกส่วน
-- Dictionary เก็บข้อมูล
-- เกรด: A≥80, B≥70, C≥60, F<60
+- `prices = [100, 50]`
+- `coupon = {"off": 20}`
+- รวมราคาแล้วหัก coupon["off"] พิมพ์ยอด
 
-**ตัวอย่าง Session:**
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+1 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+130
 ```
-Command: add
-Name: Alice
-Score: 88
-Command: add
-Name: Bob
-Score: 65
-Command: show
-Alice: 88 (A)
-Bob: 65 (C)
-Command: stats
-Average: 76.5
-Top: Alice (88)
-Bottom: Bob (65)
-Command: search
-Name: Alice
-Found: Alice - 88 (A)
-Command: exit
-```
+
+
+---
+
+## 💡 Hint
+
+ผสม list กับ dict
 
 ---
 
 ## Starter Code
 
 ```python
-# สร้าง functions ที่จำเป็น
-# เขียน main loop
-
-students = {}
-
-while True:
-    command = input("Command: ")
-    if command == "exit":
-        break
-    # Write your code here
+prices = [100, 50]
+coupon = {"off": 20}
+print(sum(prices) - coupon["off"])
 ```

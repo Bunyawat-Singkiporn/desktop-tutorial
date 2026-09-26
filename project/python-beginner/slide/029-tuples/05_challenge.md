@@ -1,47 +1,53 @@
-# 🔥 Practice Tuples — Question 4: Travel Itinerary
+# 📦 Tuples — ข้อ 5: โปรไฟล์นักกีฬา
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-กำหนดแผนการเดินทาง 5 วันเป็น tuple แสดงรายการแบบมีหมายเลข แล้วพิสูจน์ความเป็น immutable
+พิมพ์โปรไฟล์นักกีฬาจาก tuple
 
-```python
-itinerary = ("Arrive Bangkok", "Visit temples", "Day trip to Ayutthaya",
-             "Fly to Chiang Mai", "Return home")
-```
+กำหนด `athlete = ("Beam", 16, "Swim", 3)`
 
-**ต้องแสดง:**
-1. รายการทั้งหมดพร้อมหมายเลข
-2. จำนวนวัน
-3. พิมพ์ว่า `"Cannot change itinerary"` (โดยไม่ต้องแก้ค่าจริงๆ)
+แสดงชื่อ อายุ กีฬา และจำนวนเหรียญ ตามตัวอย่าง
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+4 บรรทัด
+
+---
+
+## ตัวอย่าง
 
 **Output:**
+
+```text
+Name  : Beam
+Age   : 16
+Sport : Swim
+Medals: 3
 ```
-Day 1: Arrive Bangkok
-Day 2: Visit temples
-Day 3: Day trip to Ayutthaya
-Day 4: Fly to Chiang Mai
-Day 5: Return home
-Total days: 5
-Cannot change itinerary
-```
+
 
 ---
 
 ## 💡 Hint
 
-ใช้ `range(len(itinerary))` เพื่อให้ได้หมายเลขวัน
+อ่านทีละฟิลด์ตามลำดับ
 
 ---
 
 ## Starter Code
 
 ```python
-itinerary = ("Arrive Bangkok", "Visit temples", "Day trip to Ayutthaya",
-             "Fly to Chiang Mai", "Return home")
+athlete = ("Beam", 16, "Swim", 3)
 
-# Write your code here
+# เขียนโค้ดตรงนี้
 ```

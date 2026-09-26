@@ -1,44 +1,41 @@
-# 📐 Practice: Nested Loops — Question 2: Right Triangle
+# 🔲 nested-loops — ข้อ 3: แถบเส้นประป้ายร้าน
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-รับจำนวนแถว แล้วแสดงสามเหลี่ยมมุมฉาก
-
-**Input:**
-```
-6
-```
-
-**Output:**
-```
-*
-**
-***
-****
-*****
-******
-```
+ป้ายร้านต้องการแถบเส้นประ 3 แถว แต่ละแถวมีเครื่องหมาย `-` ติดกัน 6 ตัว
+ใช้ลูปซ้อนและ `end=""` แล้วขึ้นบรรทัดใหม่ด้วย `print()` ว่าง
 
 ---
 
-## 💡 Hint
+## Input
 
-- Loop นอก: `for row in range(1, n+1)`
-- Loop ใน: `for col in range(row)` — วนตามแถวปัจจุบัน
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+3 บรรทัดของเส้นประ
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+------
+------
+------
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-n = int(input())
-
-for row in range(1, n + 1):
-    for col in range(row):
-        # Print one * without newline
-    # Move to next line
+# เขียนลูปซ้อนพิมพ์ -
 ```

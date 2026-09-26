@@ -1,0 +1,6 @@
+name = input()
+amount = float(input())
+print("==== PAYMENT ====")
+print(f"Payer : {name}")
+print(f"Amount: {amount:.2f}")
+print("==================")

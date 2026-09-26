@@ -1,38 +1,45 @@
-# 🤝 Practice Review Dictionaries — Question 3: Merge Dicts
+# 🔁 Review Dicts — ข้อ 4: ลบคีย์ชั่วคราว
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
 ## โจทย์
 
-รวม dict สองอันเข้าด้วยกัน (ถ้า key ซ้ำให้ใช้ค่าจาก `extra`)
+ลบโน้ตชั่วคราวออกจากสินค้า
 
-```python
-base = {"name": "Alice", "age": 15}
-extra = {"score": 90, "age": 16}
-```
+กำหนด `item = {"name": "Lamp", "note": "demo", "price": 199}`
 
-**Output:**
-```
-{'name': 'Alice', 'age': 16, 'score': 90}
-```
+del note แล้วพิมพ์คีย์ที่เหลือ
 
 ---
 
-## 💡 Hint
+## Input
 
-ใช้ `.update(extra)` เพื่อรวม — ค่าใหม่จะทับค่าเดิมถ้า key ซ้ำ
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+name
+price
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-base = {"name": "Alice", "age": 15}
-extra = {"score": 90, "age": 16}
+item = {"name": "Lamp", "note": "demo", "price": 199}
 
-# รวม extra เข้า base
-
-print(base)
+# เขียนโค้ดตรงนี้
 ```

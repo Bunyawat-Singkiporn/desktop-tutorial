@@ -1,4 +1,4 @@
-# Practice: Output Formatting — Medium A: ใบเสร็จ f-string
+# 🖨️ Output Formatting — ข้อ 6: ใบเสร็จส่วนลด
 
 **Difficulty:** 🟡 Medium
 
@@ -6,11 +6,28 @@
 
 ## โจทย์
 
-กำหนด item="Pen", price=15, qty=3 ใช้ f-string แสดง:
+price = 250, discount = 50, final = 200 แสดงสามบรรทัดตามตัวอย่าง
 
-```
-Item: Pen
-Line total: 45
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+3 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Price: 250
+Discount: 50
+Final: 200
 ```
 
 
@@ -18,15 +35,16 @@ Line total: 45
 
 ## 💡 Hint
 
-f"...{var}..."
+ใช้ f-string ทุกบรรทัด
 
 ---
 
 ## Starter Code
 
 ```python
-item = "Pen"
-price = 15
-qty = 3
+price = 250
+discount = 50
+final = 200
 
+# แสดงใบเสร็จ
 ```

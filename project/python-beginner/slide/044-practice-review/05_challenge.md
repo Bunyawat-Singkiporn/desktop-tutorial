@@ -1,61 +1,53 @@
-# 🔥 Practice Review — Question 4: Mini Grade System
+# 🔁 Practice Review — ข้อ 5: สรุปนักเรียนหลายคน
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-สร้างระบบจัดการเกรดโดยใช้ list, dict, และ functions
+สรุปค่าเฉลี่ยแบบหยาบของแต่ละคน
 
-**Commands:** `add`, `show`, `average`, `top`, `exit`
+**เงื่อนไข:**
 
-| Function | หน้าที่ |
-|----------|---------|
-| `add_student(db, name, score)` | เพิ่มนักเรียน |
-| `show_all(db)` | แสดงทั้งหมดพร้อมเกรด |
-| `get_average(db)` | return ค่าเฉลี่ย |
-| `get_top(db)` | return ชื่อคนได้สูงสุด |
+- `student_scores = {"Alice": [85, 90, 80], "Bob": [70, 75, 65]}`
+- วนพิมพ์ `Alice: 85.0` โดยใช้ sum/len ทศนิยม 1 ตำแหน่ง
+- ไม่ต้องแปลงเป็นเกรดตัวอักษร
 
-**ตัวอย่าง Session:**
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Alice: 85.0
+Bob: 70.0
 ```
-Command: add
-Name: Alice
-Score: 88
-Command: add
-Name: Bob
-Score: 72
-Command: show
-Alice: 88 (A)
-Bob: 72 (B)
-Command: average
-Average: 80.0
-Command: top
-Top: Alice (88)
-Command: exit
-```
+
+
+---
+
+## 💡 Hint
+
+อย่าทำเกรด A/B/C/F ในข้อนี้
 
 ---
 
 ## Starter Code
 
 ```python
-def add_student(db, name, score):
-    # Write your code here
+student_scores = {"Alice": [85, 90, 80], "Bob": [70, 75, 65]}
 
-def show_all(db):
-    # Write your code here
-
-def get_average(db):
-    # Write your code here
-
-def get_top(db):
-    # Write your code here
-
-db = {}
-while True:
-    command = input("Command: ")
-    if command == "exit":
-        break
-    # Write your code here
+# วนสรุป
 ```

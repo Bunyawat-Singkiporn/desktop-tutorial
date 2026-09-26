@@ -1,36 +1,48 @@
-# 🔥 Practice Function — Challenge: ห้องสมุดยืมหนังสือ
+# 🧩 Function Practice — ข้อ 15: ห้องสมุดยืม
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-ทำระบบห้องสมุดเล็กๆ ด้วย **3 functions**:
+เพิ่มหนังสือและนับจำนวน
 
-| Function | หน้าที่ |
-|----------|---------|
-| `add_book(books, title)` | เพิ่มชื่อหนังสือลง list |
-| `count_books(books)` | return จำนวนหนังสือ |
-| `show_books(books)` | แสดงรายชื่อทุกเล่ม |
+**เงื่อนไข:**
 
-รับจำนวนหนังสือ แล้วรับชื่อทีละเล่ม สุดท้ายแสดงรายการ + จำนวน
+- `add_book(books, title)` append แล้วคืน books
+- `count_books(books)` คืน len
+- `show_books(books)` พิมพ์ทีละเล่ม
+- เพิ่ม Python กับ Math แล้วพิมพ์จำนวน และรายชื่อ
 
 ---
 
-## ตัวอย่าง Session
+## Input
 
+ไม่มี (กำหนดค่าในโปรแกรม / เรียกฟังก์ชันในโค้ด)
+
+## Output
+
+3 บรรทัด
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+2
+Python
+Math
 ```
-How many books? 3
-Title: Python Basics
-Title: Fun Games
-Title: Space Kids
-=== Library ===
-Python Basics
-Fun Games
-Space Kids
-Total books: 3
-```
+
+
+---
+
+## 💡 Hint
+
+แยกหน้าที่แต่ละฟังก์ชัน
 
 ---
 
@@ -38,20 +50,17 @@ Total books: 3
 
 ```python
 def add_book(books, title):
-    # Write your code here
+    # เขียนโค้ดตรงนี้
 
 def count_books(books):
-    # Write your code here
+    # เขียนโค้ดตรงนี้
 
 def show_books(books):
-    # Write your code here
+    # เขียนโค้ดตรงนี้
 
 books = []
-n = int(input("How many books? "))
-for i in range(n):
-    add_book(books, input("Title: "))
-
-print("=== Library ===")
+books = add_book(books, "Python")
+books = add_book(books, "Math")
+print(count_books(books))
 show_books(books)
-print(f"Total books: {count_books(books)}")
 ```

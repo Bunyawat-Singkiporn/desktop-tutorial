@@ -1,4 +1,4 @@
-# Practice Return — Question 5: บัตรเกรดนักเรียน
+# ↩️ Return Values — ข้อ 6: ผ่าน/ไม่ผ่านเกณฑ์
 
 **Difficulty:** 🟡 Medium
 
@@ -6,44 +6,50 @@
 
 ## โจทย์
 
-ทำบัตรเกรดง่ายๆ
+เกณฑ์ผ่านสนามวิ่งคือเวลาไม่เกิน 60 วินาที
 
-สร้าง `get_grade(score)` ที่ **return** เกรด:
+**เงื่อนไข:**
 
-| คะแนน | เกรด |
-|-------|------|
-| >= 80 | `A` |
-| >= 70 | `B` |
-| >= 60 | `C` |
-| < 60  | `F` |
+- สร้าง `race_result(seconds)` คืน `Pass` ถ้า seconds <= 60 ไม่งั้น `Fail`
+- พิมพ์ผลของ `55` และ `72`
 
-รับคะแนนจาก `input` แล้วแสดงบัตรเกรด
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม / เรียกฟังก์ชันในโค้ด)
+
+## Output
+
+2 บรรทัด
 
 ---
 
 ## ตัวอย่าง
 
-**Input:**
-```
-73
+**Output:**
+
+```text
+Pass
+Fail
 ```
 
-**Output:**
-```
-Score: 73
-Grade: B
-```
+
+---
+
+## 💡 Hint
+
+คืนสตริง ไม่ใช่พิมพ์ในฟังก์ชัน
 
 ---
 
 ## Starter Code
 
 ```python
-def get_grade(score):
-    # Write your code here
+def race_result(seconds):
+    # return
+    # เขียนโค้ดตรงนี้
 
-score = int(input())
-grade = get_grade(score)
-print(f"Score: {score}")
-print(f"Grade: {grade}")
+print(race_result(55))
+print(race_result(72))
 ```

@@ -1,4 +1,4 @@
-# Practice Parameters — Question 9: ใครอายุมากกว่า
+# 📥 Parameters — ข้อ 10: พื้นที่สี่เหลี่ยม
 
 **Difficulty:** 🟡 Medium
 
@@ -6,37 +6,45 @@
 
 ## โจทย์
 
-รับอายุเพื่อน 2 คน แล้วบอกว่าใครมากกว่า
+คำนวณพื้นที่โต๊ะ
 
-สร้าง `who_is_older(age1, age2)`:
-- ถ้าคนที่ 1 มากกว่า → `Friend 1 is older`
-- ถ้าคนที่ 2 มากกว่า → `Friend 2 is older`
-- เท่ากัน → `Same age`
+**เงื่อนไข:**
+
+- สร้าง `area(w, h)` พิมพ์ `Area: <w*h>`
+- เรียกกับ `(4, 5)` และ `(3, 7)`
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม / เรียกฟังก์ชันในโค้ด)
+
+## Output
+
+2 บรรทัด
 
 ---
 
 ## ตัวอย่าง
 
-**Input:**
-```
-12
-15
+**Output:**
+
+```text
+Area: 20
+Area: 21
 ```
 
-**Output:**
-```
-Friend 2 is older
-```
+
+---
+
+## 💡 Hint
+
+คูณแล้วพิมพ์
 
 ---
 
 ## Starter Code
 
 ```python
-def who_is_older(age1, age2):
-    # Write your code here
-
-age1 = int(input())
-age2 = int(input())
-who_is_older(age1, age2)
+# area
 ```

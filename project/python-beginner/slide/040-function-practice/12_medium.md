@@ -1,4 +1,4 @@
-# Practice Function — Question 10: ตัวช่วยแปลงอุณหภูมิท่องเที่ยว
+# 🧩 Function Practice — ข้อ 12: อุณหภูมิสองทาง
 
 **Difficulty:** 🟡 Medium
 
@@ -6,28 +6,41 @@
 
 ## โจทย์
 
-แอพท่องเที่ยว: ผู้ใช้เลือกโหมดแล้วแปลงอุณหภูมิ
+แปลงสองทิศทาง
 
-- พิมพ์ `C` แล้วใส่ค่า → แปลงเป็น °F
-- พิมพ์ `F` แล้วใส่ค่า → แปลงเป็น °C
+**เงื่อนไข:**
 
-สร้าง `to_f(c)` และ `to_c(f)` ที่ return ค่า
+- `to_f(c)` คืน c*9/5+32
+- `to_c(f)` คืน (f-32)*5/9
+- พิมพ์ `to_f(0)` และ `to_c(32)`
+
+---
+
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม / เรียกฟังก์ชันในโค้ด)
+
+## Output
+
+2 บรรทัด
 
 ---
 
 ## ตัวอย่าง
 
-**Input:**
-```
-C
-0
+**Output:**
+
+```text
+32.0
+0.0
 ```
 
-**Output:**
-```
-Travel Helper
-0.0 C = 32.00 F
-```
+
+---
+
+## 💡 Hint
+
+ระวังวงเล็บใน to_c
 
 ---
 
@@ -35,18 +48,11 @@ Travel Helper
 
 ```python
 def to_f(c):
-    # Write your code here
+    # เขียนโค้ดตรงนี้
 
 def to_c(f):
-    # Write your code here
+    # เขียนโค้ดตรงนี้
 
-mode = input()
-value = float(input())
-print("Travel Helper")
-if mode == "C":
-    print(f"{value} C = {to_f(value):.2f} F")
-elif mode == "F":
-    print(f"{value} F = {to_c(value):.2f} C")
-else:
-    print("Unknown mode")
+print(to_f(0))
+print(to_c(32))
 ```

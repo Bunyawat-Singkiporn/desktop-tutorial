@@ -1,65 +1,52 @@
-# 🔥 Practice: Loop Review — Question 4: FizzBuzz
+# 🔁 loop-review — ข้อ 5: สรุปคะแนนสอบย่อย
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## โจทย์
 
-รับ n แล้วแสดงตัวเลข 1 ถึง n ตามกฎ:
+คะแนนสอบย่อย `[70, 85, 60, 90]`
+แสดงผลรวม ค่าเฉลี่ยทศนิยม 1 ตำแหน่ง และสถานะ
+- เฉลี่ย `>= 70` → `Status: Good`
+- น้อยกว่านั้น → `Status: Needs Work`
 
-| เงื่อนไข | แสดง |
-|----------|------|
-| หารด้วย 15 ลงตัว | `FizzBuzz` |
-| หารด้วย 3 ลงตัว | `Fizz` |
-| หารด้วย 5 ลงตัว | `Buzz` |
-| อื่นๆ | ตัวเลขนั้น |
+---
 
-**Input:**
-```
-15
-```
+## Input
+
+ไม่มี (กำหนดค่าในโปรแกรม)
+
+## Output
+
+สามบรรทัดสรุป
+
+---
+
+## ตัวอย่าง
 
 **Output:**
+
+```text
+Total: 305
+Average: 76.2
+Status: Good
 ```
-1
-2
-Fizz
-4
-Buzz
-Fizz
-7
-8
-Fizz
-Buzz
-11
-Fizz
-13
-14
-FizzBuzz
-```
+
 
 ---
 
 ## 💡 Hint
 
-- ตรวจ `% 15` ก่อน (เลขที่หารได้ทั้ง 3 และ 5)
-- แล้วตรวจ `% 3`, `% 5` ตามลำดับ
+คำนวณเฉลี่ยก่อน แล้วค่อยตัดสินสถานะ
 
 ---
 
 ## Starter Code
 
 ```python
-n = int(input())
+scores = [70, 85, 60, 90]
+total = 0
 
-for i in range(1, n + 1):
-    if i % 15 == 0:
-        print("FizzBuzz")
-    elif i % 3 == 0:
-        print("Fizz")
-    elif i % 5 == 0:
-        print("Buzz")
-    else:
-        print(i)
+# สรุปผล
 ```

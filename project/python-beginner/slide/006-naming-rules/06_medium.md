@@ -1,4 +1,4 @@
-# Practice: Naming Rules — Medium A: เขียนใหม่ด้วยชื่อที่ดี
+# 🐪 Naming Rules — ข้อ 6: แก้ชื่อ camelCase
 
 **Difficulty:** 🟡 Medium
 
@@ -6,24 +6,48 @@
 
 ## โจทย์
 
-แทนที่โค้ดแนว `x`/`y` ด้วยชื่อที่สื่อความหมาย แล้วแสดงส่วนต่างราคา:
+โค้ดเพื่อนใช้ camelCase ซึ่งไม่ใช่สไตล์ Python
 
-กำหนดราคาเดิม 200 ส่วนลด 30 แสดง:
-```
-170
+```python
+playerName = "Leo"
+highScore = 90
+print("Player:", playerName)
+print("High:", highScore)
 ```
 
+เขียนใหม่ด้วย snake_case ให้ได้ Output เดิม
+
+---
+
+## Input
+
+ไม่มี (โปรแกรมนี้ไม่รับค่าจากผู้ใช้)
+
+## Output
+
+ดูตัวอย่าง
+
+---
+
+## ตัวอย่าง
+
+**Output:**
+
+```text
+Player: Leo
+High: 90
+```
 
 ---
 
 ## 💡 Hint
 
-ใช้เช่น original_price, discount
+แยกคำด้วย `_` และใช้ตัวพิมพ์เล็กทั้งหมด เช่น `player_name`
 
 ---
 
 ## Starter Code
 
 ```python
-# ตั้งชื่อให้ดี แล้วคำนวณ
+# แปลงชื่อให้เป็น snake_case
 ```
