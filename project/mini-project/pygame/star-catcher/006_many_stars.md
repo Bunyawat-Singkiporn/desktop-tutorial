@@ -1,7 +1,7 @@
 # ⭐⭐⭐ ดาวหลายดวง
 
 ## เป้าหมาย
-เพิ่มดาวหลายดวงพร้อมกัน แต่ละดวงความเร็วต่างกัน โดยใช้ **list**
+เพิ่มดาวหลายดวงโดยใช้ **list**
 
 ## แนวคิด — เปลี่ยนจาก 1 ดาว เป็น list ของดาว
 
@@ -10,8 +10,8 @@
 ```python
 # ดาวแต่ละดวง = [x, y, ความเร็ว]
 stars = [
-    [100, -80,  2],
-    [400, -400, 3],
+    [100, -50,  2],
+    [400, -350, 2],
 ]
 ```
 
@@ -19,35 +19,31 @@ stars = [
 |------|--------|
 | `for star in stars:` | วนลูปดาวทุกดวง |
 | `star[1] += star[2]` | ดาวดวงนั้นตก (y เพิ่ม) |
-| `sx, sy = star[0], star[1]` | แยก x, y ออกมา |
-| `star[0] = random.randint(...)` | เปลี่ยน x ของดาวดวงนั้น |
-| `random.randint(2, 3)` | ความเร็วสุ่ม 2–3 (เล่นได้) |
+| `stars[1 - i]` | ดาวอีกดวง (เมื่อมี 2 ดวง) |
+| `other_y - 300` | วางสูงกว่าอีกดวง 300 px |
 
-> ทิป: วาง `y` ห่างกัน (เช่น `-80` กับ `-400`) จะไม่ตกพร้อมกัน — เล่นง่ายขึ้นมาก
+> ใช้ความเร็วเท่ากัน (`2`) และห่าง `y` ชัดๆ จะไม่ถึงตะกร้าพร้อมกัน
 
 ## 📝 แก้ไข 005_catch.py
 
-**0.** (แนะนำ) เร่งตะกร้า + เพิ่มชีวิต ให้จับดาว 2 ดวงทัน:
+**0.** เร่งตะกร้า + เพิ่มชีวิต:
 
 ```python
 basket_speed = 8
 lives = 5
 ```
 
-**1.** **แทนที่** `star_x`, `star_y`, `star_speed` สามบรรทัด ด้วย list:
+**1.** **แทนที่** `star_x`, `star_y`, `star_speed` ด้วย list:
 
 ```python
-# ดาวหลายดวง [x, y, speed]
-# วาง y ห่างกันชัดๆ — ไม่ตกพร้อมกัน
-stars = []
-for i in range(2):
-    x     = random.randint(20, 780)
-    y     = -80 - i * 320
-    speed = random.randint(2, 3)
-    stars.append([x, y, speed])
+# ดาว 2 ดวง [x, y, speed]
+stars = [
+    [random.randint(20, 780), -50,  2],
+    [random.randint(20, 780), -350, 2],
+]
 ```
 
-**2.** **แทนที่** `star_y += star_speed` และ `if star_y > 620:` block ด้วย:
+**2.** **แทนที่** `star_y += star_speed` และบล็อกจับ/พลาด ด้วย:
 
 ```python
     # ขยับดาวทุกดวง
@@ -55,18 +51,19 @@ for i in range(2):
         star[1] += star[2]
 
     # เช็คจับ / พลาด
-    for star in stars:
+    for i in range(len(stars)):
+        star = stars[i]
         sx, sy = star[0], star[1]
+        other_y = stars[1 - i][1]   # y ของดาวอีกดวง
+
         if sy > 520 and abs(sx - basket_x) < 65:
             score += 1
             star[0] = random.randint(20, 780)
-            star[1] = random.randint(-480, -280)
-            star[2] = random.randint(2, 3)
+            star[1] = min(other_y - 300, -50)  # สูงกว่าอีกดวง
         elif sy > 620:
             lives -= 1
             star[0] = random.randint(20, 780)
-            star[1] = random.randint(-480, -280)
-            star[2] = random.randint(2, 3)
+            star[1] = min(other_y - 300, -50)
 ```
 
 **3.** **แทนที่** `pygame.draw.circle(...)` ด้วย:
@@ -76,11 +73,7 @@ for i in range(2):
         pygame.draw.circle(screen, "yellow", (star[0], star[1]), 12)
 ```
 
-> รันดู — ดาว 2 ดวงผลัดกันตก ความเร็วไม่แรงเกินไป! 🎉
+> รันดู — ดาว 2 ดวงผลัดกันตก! 🎉
 
 ## โบนัส
-ลองเพิ่มดาวอีกดวงเมื่อคะแนนถึง 10:
-```python
-if score >= 10 and len(stars) < 3:
-    stars.append([random.randint(20, 780), -400, random.randint(2, 3)])
-```
+อยากยากขึ้น ลองเปลี่ยน `-350` เป็น `-250` (ห่างน้อยลง) หรือเพิ่มความเร็วเป็น `3`

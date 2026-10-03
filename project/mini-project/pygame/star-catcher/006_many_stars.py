@@ -9,16 +9,14 @@ font  = pygame.font.SysFont(None, 36)
 
 basket_x     = 400
 basket_y     = 550
-basket_speed = 8   # เร็วขึ้น ไล่จับดาว 2 ดวงได้ทัน
+basket_speed = 8
 
-# ดาวหลายดวง [x, y, speed]
-# วาง y ห่างกันชัดๆ — ไม่ตกพร้อมกัน
-stars = []
-for i in range(2):
-    x     = random.randint(20, 780)
-    y     = -80 - i * 320          # ดวงที่ 2 อยู่สูงกว่ามาก
-    speed = random.randint(2, 3)   # ช้าพอให้เด็กเล่นได้
-    stars.append([x, y, speed])
+# ดาว 2 ดวง [x, y, speed] — ความเร็วเท่ากัน + y ห่างกัน
+# จะได้ไม่ถึงตะกร้าพร้อมกัน
+stars = [
+    [random.randint(20, 780), -50,  2],
+    [random.randint(20, 780), -350, 2],
+]
 
 score = 0
 lives = 5
@@ -39,19 +37,20 @@ while running:
     for star in stars:
         star[1] += star[2]
 
-    # เช็คจับ / พลาด
-    for star in stars:
+    # เช็คจับ / พลาด (ใช้ i เพื่อหาดาวอีกดวง)
+    for i in range(len(stars)):
+        star = stars[i]
         sx, sy = star[0], star[1]
+        other_y = stars[1 - i][1]   # y ของดาวอีกดวง
+
         if sy > 520 and abs(sx - basket_x) < 65:
             score += 1
             star[0] = random.randint(20, 780)
-            star[1] = random.randint(-480, -280)  # เกิดใหม่สูงๆ เว้นจังหวะ
-            star[2] = random.randint(2, 3)
+            star[1] = min(other_y - 300, -50)  # สูงกว่าอีกดวง 300
         elif sy > 620:
             lives -= 1
             star[0] = random.randint(20, 780)
-            star[1] = random.randint(-480, -280)
-            star[2] = random.randint(2, 3)
+            star[1] = min(other_y - 300, -50)
 
     if lives <= 0:
         running = False
@@ -70,7 +69,6 @@ while running:
     pygame.display.flip()
     clock.tick(60)
 
-# Game Over Screen
 screen.fill("navy")
 over_text = font.render(f"Game Over!  Score: {score}", True, "yellow")
 screen.blit(over_text, (200, 280))
