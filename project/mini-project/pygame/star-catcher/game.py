@@ -13,19 +13,19 @@ small_font = pygame.font.SysFont(None, 28)
 # ─── ตะกร้า ──────────────────────────────────────────────
 basket_x     = 400
 basket_y     = 550
-basket_speed = 6
+basket_speed = 8   # เร็วพอไล่จับดาว 2 ดวง
 
 # ─── ดาว  [x, y, speed] ─────────────────────────────────
 stars = []
 for i in range(2):
     x     = random.randint(20, 780)
-    y     = random.randint(-500, -50)   # เริ่มห่างกัน ไม่ตกพร้อมกัน
-    speed = random.randint(2, 4)        # ช้าพอให้เล่นได้
+    y     = -80 - i * 320          # ห่างกันชัด ไม่ตกพร้อมกัน
+    speed = random.randint(2, 3)   # ช้าพอให้เล่นได้
     stars.append([x, y, speed])
 
 # ─── สถานะเกม ─────────────────────────────────────────────
 score     = 0
-lives     = 3
+lives     = 5
 game_over = False
 
 # ─── Game Loop ────────────────────────────────────────────
@@ -51,18 +51,18 @@ while running:
         # ── เช็คจับดาว / พลาด ──
         for star in stars:
             sx, sy = star[0], star[1]
-            if sy > 530 and abs(sx - basket_x) < 50:
+            if sy > 520 and abs(sx - basket_x) < 65:
                 # จับได้!
                 score += 1
                 star[0] = random.randint(20, 780)
-                star[1] = random.randint(-500, -50)
-                star[2] = random.randint(2, 4)
+                star[1] = random.randint(-480, -280)
+                star[2] = random.randint(2, 3)
             elif sy > 620:
                 # พลาด!
                 lives -= 1
                 star[0] = random.randint(20, 780)
-                star[1] = random.randint(-500, -50)
-                star[2] = random.randint(2, 4)
+                star[1] = random.randint(-480, -280)
+                star[2] = random.randint(2, 3)
 
         if lives <= 0:
             game_over = True
