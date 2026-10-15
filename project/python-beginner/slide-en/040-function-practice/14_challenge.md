@@ -1,35 +1,46 @@
-# 🔥 Practice Function — Challenge: Game Wallet
+# 🧩 Function Practice — Q14: กระเป๋าเงินเกม
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## Task
 
-Build an in-game wallet with **3 functions**:
+กระเป๋าเงินในเกม
 
-| Function | Job |
-|----------|-----|
-| `add_money(wallet, amount)` | add coins, return new wallet |
-| `spend_money(wallet, amount)` | spend coins (if not enough, keep old value) |
-| `show_wallet(wallet)` | print balance |
+**Requirements:**
 
-Start with `wallet = 100`. Read `add` or `spend` and an amount once.
+- `add_money(wallet, amount)` เพิ่มเงินใน `wallet["coin"]`
+- `spend_money(wallet, amount)` ลดเงิน
+- `show_wallet(wallet)` พิมพ์ `Coins: <จำนวน>`
+- เริ่ม `{ "coin": 100 }` เพิ่ม 50 ใช้ 30 แล้ว show
+
+---
+
+## Input
+
+None (values are set in the program / call functions in code)
+
+## Output
+
+1 line(s)
 
 ---
 
 ## Example
 
-**Input:**
-```
-add
-50
+**Output:**
+
+```text
+Coins: 120
 ```
 
-**Output:**
-```
-Wallet: 150 coins
-```
+
+---
+
+## Hint
+
+แก้ค่าใน dict ผ่าน key
 
 ---
 
@@ -45,14 +56,8 @@ def spend_money(wallet, amount):
 def show_wallet(wallet):
     # Write your code here
 
-wallet = 100
-action = input()
-amount = int(input())
-
-if action == "add":
-    wallet = add_money(wallet, amount)
-elif action == "spend":
-    wallet = spend_money(wallet, amount)
-
+wallet = {"coin": 100}
+add_money(wallet, 50)
+spend_money(wallet, 30)
 show_wallet(wallet)
 ```

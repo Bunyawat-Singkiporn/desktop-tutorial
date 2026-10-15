@@ -1,39 +1,32 @@
-# 📋 Practice List — Question 3: Numbered To-Do List
-
-**Difficulty:** 🟡 Medium
-
+# 🏋️ List Practice — Q4: กรองสินค้าราคาถูก
+**Difficulty:** 🟢 Easy
 ---
-
-## Problem
-
-Customize to-do items displayed with sequence numbers.
-
-```python
-todos = ["Buy groceries", "Do homework", "Clean room", "Call mom"]
-```
-
+## Task
+ร้านอยากได้เฉพาะสินค้าราคาต่ำกว่า 50
+กำหนด `prices = [20, 75, 40, 90, 15, 60]`
+สร้าง list ใหม่ชื่อ `cheap` เก็บราคาที่ต่ำกว่า 50 แล้วแสดง `cheap`
+---
+## Input
+None (values are set in the program)
+## Output
+list หนึ่งบรรทัด
+---
+## Example
 **Output:**
-```
-=== To-Do List ===
-1. Buy groceries
-2. Do homework
-3. Clean room
-4. Call mom
+```text
+[20, 40, 15]
 ```
 
----
-
-## 💡 Hint
-
-Use `range(len(todos))` to get the index and add 1 for the sequence.
 
 ---
 
 ## Starter Code
 
 ```python
-todos = ["Buy groceries", "Do homework", "Clean room", "Call mom"]
+prices = [20, 75, 40, 90, 15, 60]
+cheap = []
 
-print("=== To-Do List ===")
 # Write your code here
+
+print(cheap)
 ```

@@ -1,41 +1,31 @@
-# 🧮 Practice: Review — Question 2: Simple Calculator
 
-**Difficulty:** 🟡 Medium
 
----
-
-## Problem
-
-Get 2 numbers, then display +, -, *, / results.
-
-**Input:**
-```
-10
-3
-```
-
-**Output:**
-```
-10 + 3 = 13
-10 - 3 = 7
-10 * 3 = 30
-10 / 3 = 3.33
-```
+**Difficulty:** 🟢 Easy
 
 ---
 
-## 💡 Hint
 
-- Use an f-string: `f"{a} + {b} = {a + b}"`
-- For division use `{a / b:.2f}` to show only 2 places
+
+
 
 ---
 
-## Starter Code
+## Input
+## Output
+---
 
-```python
-a = int(input())
-b = int(input())
 
-# Print all 4 operations
+
+**Input:**# 📝 Review — ข้อ 3: อายุปีหน้า## โจทย์รับอายุ แสดง Next: อายุ+1ดูตัวอย่าง1 บรรทัด## ตัวอย่าง```text
+12
+```
+**Output:**```text
+Next: 13
+```
+---
+
+## Starter Code```python
+age = int(input())
+
+# ปีหน้า
 ```

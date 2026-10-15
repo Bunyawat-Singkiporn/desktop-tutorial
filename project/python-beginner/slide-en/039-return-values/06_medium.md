@@ -1,4 +1,4 @@
-# Practice Return — Question 5: Student Grade Card
+# ↩️ Return Values — Q6: ผ่าน/ไม่ผ่านเกณฑ์
 
 **Difficulty:** 🟡 Medium
 
@@ -6,36 +6,50 @@
 
 ## Task
 
-Make a simple grade card.
+เกณฑ์ผ่านสนามวิ่งคือเวลาไม่เกิน 60 วินาที
 
-Create `get_grade(score)` that **returns** A/B/C/F.
-Read a score and print the card.
+**Requirements:**
+
+- สร้าง `race_result(seconds)` คืน `Pass` ถ้า seconds <= 60 ไม่งั้น `Fail`
+- พิมพ์ผลของ `55` และ `72`
+
+---
+
+## Input
+
+None (values are set in the program / call functions in code)
+
+## Output
+
+2 บรรทัด
 
 ---
 
 ## Example
 
-**Input:**
-```
-73
+**Output:**
+
+```text
+Pass
+Fail
 ```
 
-**Output:**
-```
-Score: 73
-Grade: B
-```
+
+---
+
+## 💡 Hint
+
+คืนสตริง ไม่ใช่พิมพ์ในฟังก์ชัน
 
 ---
 
 ## Starter Code
 
 ```python
-def get_grade(score):
+def race_result(seconds):
+    # return
     # Write your code here
 
-score = int(input())
-grade = get_grade(score)
-print(f"Score: {score}")
-print(f"Grade: {grade}")
+print(race_result(55))
+print(race_result(72))
 ```

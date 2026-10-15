@@ -1,37 +1,37 @@
-# 🔄 Dictionary Review
+# 🔄 Review Dictionaries — ทบทวน Dictionary
 
 ---
 
-## Common Dictionary Operations
+## สรุปทุกคำสั่ง
 
 ```python
-# Create
+# สร้าง
 student = {"name": "Alice", "age": 15, "score": 90}
 
-# Access a value
+# เข้าถึง
 print(student["name"])        # Alice
 
-# Add or edit
-student["grade"] = "A"        # Add a new key
-student["age"] = 16           # Change an existing value
+# เพิ่ม / แก้ไข
+student["grade"] = "A"        # เพิ่ม key ใหม่
+student["age"] = 16           # แก้ไขค่าเดิม
 
-# Update multiple values
+# อัปเดตหลายค่า
 student.update({"score": 95, "age": 17})
 
-# Delete
+# ลบ
 del student["grade"]
 
-# Loop through all key-value pairs
+# Loop ทั้งหมด
 for key, value in student.items():
     print(f"{key}: {value}")
 ```
 
 ---
 
-## Check before accessing
+## ตรวจสอบก่อนเข้าถึง
 
 ```python
-# Recommended: always check first
+# แนะนำ: ตรวจก่อนเสมอ
 if "score" in student:
     print(student["score"])
 else:
@@ -40,7 +40,7 @@ else:
 
 ---
 
-## Combining a Dictionary with a Loop
+## Pattern รวม Dictionary กับ Loop
 
 ```python
 scores = {"Alice": 88, "Bob": 72, "Charlie": 95}
@@ -57,11 +57,11 @@ print(f"Top: {highest} ({max_score})")
 
 ---
 
-## Review Checklist
+## Checklist ก่อนสอบ
 
-- [ ] Create a dictionary
-- [ ] Access a value by its key
-- [ ] Add, edit, and delete keys
-- [ ] Use `.update()`
-- [ ] Loop through key-value pairs with `.items()`
-- [ ] Check for a key with `in`
+- [ ] สร้าง dict ได้
+- [ ] เข้าถึงค่าด้วย key ได้
+- [ ] เพิ่ม / แก้ไข / ลบ key ได้
+- [ ] ใช้ `.update()` ได้
+- [ ] loop ด้วย `.items()` ได้
+- [ ] ตรวจสอบ key ด้วย `in` ได้

@@ -1,44 +1,53 @@
-# 🔀 Practice: Syntax — Question 3: Mixed Errors
+# 🔗 Python syntax rules — Q3: Things that come in pairs
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-The code below has **3 different types of errors**. Find and fix them all.
+This code breaks rule 2 — three places where pairs are incomplete.
 
 ```python
-Print("==========")
-print("MY PROFILE"
-  print("==========")
-print("Name: Jordan")
+print("Music Room)
+print "Piano available")
+print("Booking at office"
 ```
 
-**Required Output:**
-```
-==========
-MY PROFILE
-==========
-Name: Jordan
+Rewrite it correctly.
+
+---
+
+## Input
+
+None
+
+## Output
+
+Three lines of text
+
+---
+
+## Example
+
+**Output:**
+
+```text
+Music Room
+Piano available
+Booking at office
 ```
 
 ---
 
-## 💡 Hint
+## Hint
 
-3 types of errors:
-- `NameError` — typo
-- `SyntaxError` — missing symbols
-- `IndentationError` — paragraph exceeded
+Each line needs four pieces — open paren, open quote, close quote, close paren. Count on each line.
 
 ---
 
 ## Starter Code
 
 ```python
-Print("==========")
-print("MY PROFILE"
-  print("==========")
-print("Name: Jordan")
+# Write your code here
 ```

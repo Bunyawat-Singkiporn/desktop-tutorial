@@ -1,40 +1,46 @@
-# 🤔 Practice Choosing Data Types — Question 1: Right Tool
+# 🧭 Choosing Types — Q2: รายการซื้อที่แก้ได้
 
 **Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Write code for the following three situations using the most appropriate data type:
+รายการซื้อต้องเพิ่มของได้ทีหลัง เลยใช้ list
 
-| Situation | Appropriate Type |
-|----------|------------|
-| Days of the week (fixed) | Tuple |
-| Member roster (items can be added or removed) | List |
-| Student IDs (unique) | Set |
+เริ่ม `cart = ["Milk", "Bread"]` แล้ว append `Eggs`
 
-Display the number of items in each collection.
+แสดง list
+
+---
+
+## Input
+
+None (values are set in the program)
+
+## Output
+
+one-Line List
+
+---
+
+## Example
 
 **Output:**
+
+```text
+['Milk', 'Bread', 'Eggs']
 ```
-Days: 7
-Members: 4
-IDs: 5
-```
+
 
 ---
 
 ## Starter Code
 
 ```python
-# Create each type with sample data.
+cart = ["Milk", "Bread"]
 
-days = # tuple
-members = # list  
-ids = # set
+# Write your code here
 
-print("Days:", len(days))
-print("Members:", len(members))
-print("IDs:", len(ids))
+print(cart)
 ```

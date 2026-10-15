@@ -1,37 +1,31 @@
-# 🔍 Practice List — Question 1: Filter Big Numbers
-
+# 🏋️ List Practice — Q2: พิมพ์งานบ้านพร้อมเลข
 **Difficulty:** 🟢 Easy
-
 ---
-
-## Problem
-
-Set numbers to display only those **greater than 10**
-
-```python
-numbers = [3, 15, 7, 22, 8, 30, 5, 18]
-```
-
+## Task
+แม่บ้านอยากพิมพ์รายการงานพร้อมเลขที่
+กำหนด `chores = ["Wash dishes", "Fold clothes", "Water plants"]`
+ใช้ `for i in range(len(chores)):` แสดงแบบ `1) Wash dishes`
+---
+## Input
+None (values are set in the program)
+## Output
+3 บรรทัด
+---
+## Example
 **Output:**
+```text
+1) Wash dishes
+2) Fold clothes
+3) Water plants
 ```
-15
-22
-30
-18
-```
 
----
-
-## 💡 Hint
-
-Use the `for` loop and `if` to check each value.
 
 ---
 
 ## Starter Code
 
 ```python
-numbers = [3, 15, 7, 22, 8, 30, 5, 18]
+chores = ["Wash dishes", "Fold clothes", "Water plants"]
 
 # Write your code here
 ```

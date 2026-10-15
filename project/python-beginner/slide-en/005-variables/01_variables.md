@@ -1,23 +1,23 @@
-# 📦 Variables — Boxes That Store Data
+# 📦 Variables — กล่องเก็บข้อมูล
 
 ---
 
-## What is a Variable?
+## Variable คืออะไร?
 
-A **Variable** is a "data storage place" in computer memory.
+**Variable** คือ "ที่เก็บข้อมูล" ในหน่วยความจำคอมพิวเตอร์
 
-Imagine a **box with a name tag** 📦:
+ลองนึกภาพ **กล่องที่มีป้ายชื่อ** 📦:
 
 ```
 ┌─────────────┐
-│     12      │  ← stored data (value)
+│     12      │  ← ข้อมูลที่เก็บ (value)
 └─────────────┘
-     age        ← box name (variable name)
+     age        ← ชื่อกล่อง (variable name)
 ```
 
 ---
 
-## How to Create a Variable
+## วิธีสร้าง Variable
 
 ```python
 age = 12
@@ -25,20 +25,20 @@ name = "Alex"
 price = 99.5
 ```
 
-> The `=` sign means **"store this value"**
-> (not "equals" like in math)
+> เครื่องหมาย `=` แปลว่า **"เก็บค่า"**
+> (ไม่ใช่ "เท่ากับ" แบบในคณิตศาสตร์)
 
 ---
 
-## How to Use a Variable
+## วิธีใช้ Variable
 
 ```python
 name = "Alex"
-print(name)              # show the value in the variable
-print("Hello,", name)    # use it together with text
+print(name)              # แสดงค่าใน variable
+print("Hello,", name)    # ใช้ร่วมกับข้อความ
 ```
 
-Output:
+ผลลัพธ์:
 ```
 Alex
 Hello, Alex
@@ -46,7 +46,7 @@ Hello, Alex
 
 ---
 
-## You Can Change a Variable's Value
+## เปลี่ยนค่า Variable ได้
 
 ```python
 score = 0
@@ -56,11 +56,11 @@ score = 100
 print(score)   # 100
 ```
 
-> Same box, but you can always put something new inside
+> กล่องเดิม แต่ใส่ของใหม่เข้าไปได้เสมอ
 
 ---
 
-## Variables Can Be Added Together
+## Variable บวกค่าได้
 
 ```python
 price = 100
@@ -72,7 +72,7 @@ print("Tax:", tax)
 print("Total:", total)
 ```
 
-Output:
+ผลลัพธ์:
 ```
 Price: 100
 Tax: 7
@@ -81,7 +81,7 @@ Total: 107
 
 ---
 
-## Program Example
+## ตัวอย่างโปรแกรม
 
 ```python
 name = "Sarah"
@@ -93,7 +93,7 @@ print("Age:", age)
 print("City:", city)
 ```
 
-Output:
+ผลลัพธ์:
 ```
 Name: Sarah
 Age: 13
@@ -102,10 +102,10 @@ City: Bangkok
 
 ---
 
-## Things to Remember
+## สิ่งที่ควรจำ
 
-| Allowed ✅ | Not allowed ❌ |
-|------------|----------------|
+| ทำได้ ✅ | ทำไม่ได้ ❌ |
+|---------|-----------|
 | `name = "Alex"` | `"Alex" = name` |
 | `score = 100` | `100 = score` |
-| You can change the value anytime | The left side must be a variable name |
+| เปลี่ยนค่าได้ตลอด | ค่าซ้ายต้องเป็นชื่อ variable |

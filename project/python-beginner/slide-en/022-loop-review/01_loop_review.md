@@ -1,23 +1,21 @@
-# 🔁 Loop Review — Review every Loop.
+♪ Loop Review • Review all types
 
 ---
 
-## Summary of loops learned
+♪ To sum up all the loops I've learned ♪
 
-| Loop |Use when|example|
-|------|---------|---------|
-| `for range()` |Know the exact number of turns|Count 1–10|
-| `for list` |Cycle through members on the list|Show list|
-| `while` |Cycle until the condition is False.|Receive duplicate input|
-| `nested` |loop nested loop|create pattern, table|
-| `break` |Stopped midway.|Find the desired value|
-| `continue` |skip some rounds|Filter data|
+^ Loop ^
+•--------------~--------
+^forrange)
+^For listen ^ ^ Through members of list ^
+♫ ♫ ♫ ♫ ♫ ♫ ♫ ♫
+^nested ^oop
+▪ Stop in the middle
+^3
 
 ---
 
-## Combined Example 1: Find Sum + Average
-
-```python
+# Na-na na-na na-na #```python
 scores = [85, 92, 78, 95, 88]
 total = 0
 
@@ -32,13 +30,9 @@ print(f"Average: {average:.1f}")
 ```
 Total: 438
 Average: 87.6
-```
+```---
 
----
-
-## Combined example 2: Repeat input until 0 is printed.
-
-```python
+## Example combined: Get Input Repeat till you type 0.```python
 total = 0
 count = 0
 
@@ -50,13 +44,9 @@ while True:
     count += 1
 
 print(f"Count: {count}, Total: {total}")
-```
+```---
 
----
-
-## Example included 3: Pattern according to size
-
-```python
+#### Example 3:Pttern by the size```python
 n = int(input())
 
 for row in range(1, n + 1):
@@ -71,16 +61,12 @@ Input: `4`
 **
 ***
 ****
-```
+```---
 
----
-
-## How to choose a loop?
-
-```
-Do you know the number of rounds?
-YES → for range() or for list
+## Choose Loop How? !```
+รู้จำนวนรอบ?
+ YES → for range() หรือ for list
  NO  → while
-Have to stop halfway?  → Use break
-Have to skip some rounds?   → Use continue
+       ต้องหยุดกลางคัน?  → ใช้ break
+       ต้องข้ามบางรอบ?   → ใช้ continue
 ```

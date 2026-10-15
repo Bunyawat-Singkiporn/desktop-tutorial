@@ -1,18 +1,37 @@
-# 🔢 Practice for Loop — Question 1: Count Numbers
+Number of seats
 
-**Difficulty:** 🟢 Easy
-
----
-
-## Problem
-
-Display the numbers 1 to 10, one per line.
+difficulty:
 
 ---
 
-## Sample Output
+♪ Task
+
+The theater has a front seat of 8 at 1 through 8.
+The staff wants the program to print the seating number by line.
+
+Write typed numbers.
+
+---
+
+♪ Input
+
+No.
+
+♪ Output
+
+Number 1 to 8, line by line.
+
+---
+
+## Example
+
+**Input:*```text
 
 ```
+
+**Output:**
+
+```text
 1
 2
 3
@@ -21,15 +40,7 @@ Display the numbers 1 to 10, one per line.
 6
 7
 8
-9
-10
 ```
-
----
-
-## 💡 Hint
-
-Use `range(start, stop)` and start at 1
 
 ---
 

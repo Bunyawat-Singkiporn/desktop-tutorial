@@ -1,4 +1,4 @@
-# Practice Return — Question 9: Fix Game Scores
+# ↩️ Return Values — Q10: clamp คะแนน 0-100
 
 **Difficulty:** 🟡 Medium
 
@@ -6,37 +6,52 @@
 
 ## Task
 
-In your game, scores must stay between 0 and 100.
+บังคับคะแนนให้อยู่ระหว่าง 0 ถึง 100
 
-Create `fix_score(score)`:
-- below 0 → `0`
-- above 100 → `100`
-- otherwise keep the value
+**Requirements:**
 
-Fix 3 raw scores from input.
+- สร้าง `clamp(score)` ถ้า < 0 คืน 0 ถ้า > 100 คืน 100 ไม่งั้นคืน score
+- พิมพ์ผลของ `-5` `40` `150`
 
 ---
 
-## Example Session
+## Input
 
+None (values are set in the program / call functions in code)
+
+## Output
+
+3 บรรทัด
+
+---
+
+## Example
+
+**Output:**
+
+```text
+0
+40
+100
 ```
-Raw score: -5
-Fixed: 0
-Raw score: 150
-Fixed: 100
-Raw score: 85
-Fixed: 85
-```
+
+
+---
+
+## 💡 Hint
+
+ใช้ if/elif/else คืนค่า
 
 ---
 
 ## Starter Code
 
 ```python
-def fix_score(score):
+def clamp(score):
+    # return
     # Write your code here
 
-for i in range(3):
-    score = int(input("Raw score: "))
-    print(f"Fixed: {fix_score(score)}")
+print(clamp(-5))
+print(clamp(40))
+print(clamp(150))
 ```

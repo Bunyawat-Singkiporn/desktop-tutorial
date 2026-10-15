@@ -1,0 +1,8 @@
+{
+"b45f2e0449a1cea66cef4f4fcfab56e10b0d025125ab65e352927fccd28978a5": "# 🎫 Even/Odd — Q10: Same row seats?",
+"1b551d0d08b8c19c7a4f6173721e890c5421243dd16c52c58fa14f9494852a38": "The cinema arranges seats on each side according to even - odd numbers.",
+"d438d5fe027364558d466b234bc91cea31eef3004c2a98d759da2f6abb38ba6f": "If two seat numbers result in the same remainder after dividing by 2, it means they are in the same row/side.",
+"74ee891b3db2b81cd1aac00a92018cf2364704ac9a40a8caa2306fae0d2ee6e6": "Write a program, get two seat numbers and tell if they are on the same side.",
+"ff61c5fc39799bfc3e2a439bfc071ac43041d9bb12f915a27be20a210a4d79d8": "- `seat_a % 2` equals `seat_b % 2` → `Same Side`",
+"87bcaa3d71c065fc0d076dd7507855ef68df360c84b36637b95916f34a5b8f6a": "- if not → `Opposite Side`"
+}

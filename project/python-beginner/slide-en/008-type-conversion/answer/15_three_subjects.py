@@ -1,0 +1,12 @@
+math = int(input())
+science = int(input())
+english = int(input())
+total = math + science + english
+print("========================")
+print("       SUBJECTS")
+print("========================")
+print("Math    :", math)
+print("Science :", science)
+print("English :", english)
+print("Total   :", total)
+print("========================")

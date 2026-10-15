@@ -1,42 +1,44 @@
-# ❓ Practice Dictionary — Question 2: Quiz Checker
+# 🏋️ Dict Practice — Q3: เพิ่มเบอร์โทร
 
-**Difficulty:** 🟡 Medium
-
----
-
-## Problem
-
-Given answer keys for 3 questions, read the user's answers and show the score.
-
-```python
-answers = {"q1": "A", "q2": "C", "q3": "B"}
-```
-
-**Sample Session:**
-```
-q1: A
-q2: B
-q3: B
-Score: 2/3
-```
+**Difficulty:** 🟢 Easy
 
 ---
 
-## 💡 Hint
+## Task
 
-Loop through `answers.items()`, read input for each question, and count matches
+โปรไฟล์ยังไม่มีเบอร์
+
+กำหนด `user = {"name": "Ben", "city": "Bangkok"}`
+
+เพิ่ม `phone` เป็น `081-222-3333` แล้วแสดงเบอร์
+
+---
+
+## Input
+
+None (values are set in the program)
+
+## Output
+
+One line
+
+---
+
+## Example
+
+**Output:**
+
+```text
+Phone: 081-222-3333
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-answers = {"q1": "A", "q2": "C", "q3": "B"}
-score = 0
+user = {"name": "Ben", "city": "Bangkok"}
 
-for question, correct in answers.items():
-    user = input(f"{question}: ")
-    # Write your code here
-
-print(f"Score: {score}/3")
+# Write your code here
 ```

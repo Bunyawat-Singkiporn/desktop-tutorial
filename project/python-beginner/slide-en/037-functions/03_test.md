@@ -1,27 +1,44 @@
-# 📋 Practice Functions — Question 2: Show Menu
+# ⚙️ Functions — Q3: Empty menu twice
 
 **Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Create a `show_menu()` function that displays a menu with three options, then call it.
+The menu screen is still loading items.
+
+**Requirements:**
+
+- Create `show_empty()` that prints `Menu loading...`
+- Call it twice
+
+---
+
+## Input
+
+None (values are set in the program / call functions in code)
+
+## Output
+
+2 lines
+
+---
+
+## Example
 
 **Output:**
+
+```text
+Menu loading...
+Menu loading...
 ```
-=== Menu ===
-1. Start game
-2. View scores
-3. Quit
-```
+
 
 ---
 
 ## Starter Code
 
 ```python
-# Create the show_menu() function
-
-# Call the function
+# show_empty() then call twice
 ```

@@ -1,19 +1,14 @@
-# 🔲 Nested Loops — Loops Inside Loops
+# Nasted Loops #
 
 ---
 
-## What is a Nested Loop?
+# Nasted Loop #
 
-A **nested loop** is a loop inside another loop.
-
-```python
-for i in range(3):        # Outer loop — runs 3 times
-    for j in range(3):    # Inner loop — runs 3 times each time
+"Nested Loop* is the loop inside the other loop.```python
+for i in range(3):        # Loop นอก — วน 3 รอบ
+    for j in range(3):    # Loop ใน — วน 3 รอบ ทุกครั้ง
         print(i, j)
-```
-
-Output:
-```
+```Results:```
 0 0
 0 1
 0 2
@@ -23,80 +18,57 @@ Output:
 2 0
 2 1
 2 2
-```
-
-> The inner loop **finishes all its iterations** before the outer loop moves to its next iteration.
+```> Loop
 
 ---
 
-## Total Number of Iterations
-
-```
-3 outer iterations × 4 inner iterations = 12 iterations in total
+♪ The total count ♪```
+Loop นอก 3 รอบ × Loop ใน 4 รอบ = 12 ครั้งรวม
 ```
 
 ```python
 for row in range(3):
     for col in range(4):
         print("*", end="")
-    print()    # new line
-```
-
-Output:
-```
+    print()    # ขึ้นบรรทัดใหม่
+```Results:```
 ****
 ****
 ****
-```
+```---
 
----
-
-## Example: Triangle Pattern
-
-```python
+#### Example:```python
 for row in range(1, 6):
     for col in range(row):
         print("*", end="")
     print()
-```
-
-Output:
-```
+```Results:```
 *
 **
 ***
 ****
 *****
-```
-
-> `range(row)` makes the inner loop run once for each value in the current row.
+```^rangekrow)
 
 ---
 
-## Example: Multiplication Table
-
-```python
+#### Example:```python
 for i in range(1, 4):
     for j in range(1, 4):
         print(i * j, end="\t")
     print()
-```
-
-Output:
-```
+```Results:```
 1	2	3	
 2	4	6	
 3	6	9	
-```
+```---
 
----
+♪ To sum
 
-## Summary
-
-| Topic | Example |
-|-------|---------|
-| Outer loop | Runs N times |
-| Inner loop | Runs M times for each outer iteration |
-| Total | N × M iterations |
-| `end=""` | Prints on the same line |
-| Empty `print()` | Starts a new line |
+▪ About ▪
+•--------
+♫ Loop outside ♫ N lap ▪
+^ Loop in ^ circuit M around every time loop outside ^
+^ including N× M times ▪
+Print In One line
+□ Free

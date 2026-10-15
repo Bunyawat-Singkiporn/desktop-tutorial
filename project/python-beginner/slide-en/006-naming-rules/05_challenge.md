@@ -1,49 +1,39 @@
-# 🔥 Practice: Naming Rules — Question 4: Student Report
 
-**Difficulty:** 🔴 Hard
+
+**Difficulty:** 🔴 Challenge
 
 ---
 
-## Problem
 
-Write a program that displays a student report using **all correctly named variables** that follow snake_case rules.
 
-**Data to store:**
-- Student name: `"Mia"`
-- Grade level: `6` (grade 6)
-- Math score: `88`
-- English score: `92`
-- Average score: (math + english) / 2
-
-**Output:**
-```
-=== Student Report ===
-Name  : Mia
-Grade : 6
-Math  : 88
-Eng   : 92
-Avg   : 90.0
+# 🧹 Naming Rules — ข้อ 12: รีแฟกเตอร์โค้ดสกปรก## โจทย์โปรแกรมสรุปค่าขนมใช้ชื่อแย่และผิดสไตล์```python
+X = 40
+Y = 25
+TP = X + Y
+print("Snack A:", X)
+print("Snack B:", Y)
+print("Total:", TP)
 ```
 
-> **Extra rule:** Do not use variable names shorter than 3 characters (except `avg`)
 
 ---
 
-## 💡 Hint
-
-Good name examples: `student_name`, `class_grade`, `math_score`, `english_score`, `average_score`
-
+## Input
+## Output
 ---
 
-## Starter Code
 
-```python
-# Store student data with good variable names
-student_name = "Mia"
-# ... add the remaining variables
 
-# Calculate the average
-average_score = 
+**Output:**เขียนใหม่ให้ชื่อถูกกฎ snake_case และสื่อความหมาย โดย Output ต้องเหมือนเดิมไม่มี (โปรแกรมนี้ไม่รับค่าจากผู้ใช้)ดูตัวอย่าง## ตัวอย่าง```text
+Snack A: 40
+Snack B: 25
+Total: 65
+```
+---
 
-# Display the report
+## Hint
+---
+
+## Starter Codeอย่าใช้ตัวพิมพ์ใหญ่ทั้งคำ และอย่าใช้ตัวอักษรเดี่ยวถ้าไม่จำเป็น```python
+# เปลี่ยนชื่อทั้งหมดให้ถูกกฎ
 ```

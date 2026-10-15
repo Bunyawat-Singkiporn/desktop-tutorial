@@ -1,60 +1,60 @@
-# 🐛 Debugging — Finding and Fixing Errors
+# 🐛 Debugging — การหาและแก้ข้อผิดพลาด
 
 ---
 
-## Three Types of Errors
+## ข้อผิดพลาด 3 ประเภท
 
 ---
 
-## 1. Syntax Error — Breaking the Language Rules
+## 1. Syntax Error — เขียนผิดกฎ
 
-Python cannot understand the code, so it **cannot run at all**.
+Python อ่านโค้ดไม่ออก → **รันไม่ได้เลย**
 
 ```python
-# ❌ Missing :
+# ❌ ลืม :
 if x > 5
     print(x)
 
-# ✅ Fixed
+# ✅ แก้แล้ว
 if x > 5:
     print(x)
 ```
 
-> Python reports: `SyntaxError: invalid syntax`
+> Python จะบอก: `SyntaxError: invalid syntax`
 
 ---
 
-## 2. Runtime Error — Crashing While Running
+## 2. Runtime Error — พังตอนรัน
 
-The syntax is valid, but a problem occurs while the program runs.
+โค้ด syntax ถูก แต่เกิดปัญหาขณะทำงาน
 
 ```python
-# ❌ Division by zero
+# ❌ หารด้วยศูนย์
 x = 10 / 0          # ZeroDivisionError
 
-# ❌ Index out of range
+# ❌ index เกินขนาด
 nums = [1, 2, 3]
 print(nums[5])       # IndexError
 
-# ❌ Wrong data type
+# ❌ ชนิดข้อมูลผิด
 print("5" + 3)       # TypeError
 ```
 
 ---
 
-## 3. Logic Error — Incorrect Result
+## 3. Logic Error — ผลลัพธ์ผิด
 
-The code runs, but **produces the wrong result**.
+โค้ดรันได้ แต่ **ให้ผลลัพธ์ที่ไม่ถูกต้อง**
 
 ```python
 # ❌ Logic error
 total = 0
 for i in range(1, 5):
-    total = i       # Wrong! Replaces the value each time
+    total = i       # ผิด! ทับค่าทุกรอบ
 
-print(total)        # 4 (not 10)
+print(total)        # 4 (ไม่ใช่ 10)
 
-# ✅ Correct
+# ✅ ถูกต้อง
 total = 0
 for i in range(1, 5):
     total += i
@@ -64,22 +64,22 @@ print(total)        # 10
 
 ---
 
-## Debugging with `print`
+## วิธี Debug ด้วย print
 
 ```python
 def calc(x, y):
-    print("x =", x, "y =", y)   # Check the input values
+    print("x =", x, "y =", y)   # ตรวจค่า
     result = x * y
-    print("result =", result)    # Check the result
+    print("result =", result)    # ตรวจผล
     return result
 ```
 
 ---
 
-## Summary
+## สรุป
 
-| Type | When It Occurs | How to Fix It |
-|------|----------------|---------------|
-| Syntax | The code breaks Python's rules | Read the error message |
-| Runtime | The program crashes while running | Check data types and valid ranges |
-| Logic | The result is incorrect | Use `print` to trace variable values |
+| ประเภท | เกิดเมื่อ | วิธีแก้ |
+|--------|---------|--------|
+| Syntax | เขียนผิดกฎ | อ่าน error message |
+| Runtime | รันแล้วพัง | ตรวจชนิดข้อมูล, ขอบเขต |
+| Logic | ผลผิด | ใช้ print trace ค่าตัวแปร |

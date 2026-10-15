@@ -1,30 +1,46 @@
-# 🔗 Practice Review — Question 1: List + Function + Condition
+# ^Page Review ^Q2: Total score
 
-**Difficulty:** 🟢 Easy
+difficulty:
 
 ---
 
-## Problem
+♪ Task
 
-Create a function named `check_pass(scores)` that displays each score with `Pass` or `Fail`.
+Total Score on List
 
-**Output:**
+== sync, corrected by elderman == *
+
+- ^total of)
+- Print the result of ^[70, 80, 90] ▪
+
+---
+
+♪ Input
+
+None
+
+♪ Output
+
+One line.
+
+---
+
+## Example
+
+♪ Output:*
+
+```text
+240
 ```
-85 → Pass
-45 → Fail
-92 → Pass
-38 → Fail
-77 → Pass
-```
+
 
 ---
 
 ## Starter Code
 
 ```python
-def check_pass(scores):
-    for score in scores:
-        # Write your code here
+def total_of(scores):
+    # รวม
 
-check_pass([85, 45, 92, 38, 77])
+print(total_of([70, 80, 90]))
 ```

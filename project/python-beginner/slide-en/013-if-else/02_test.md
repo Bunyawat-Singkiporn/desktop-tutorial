@@ -1,44 +1,51 @@
-# 🎓 Practice if/else — Question 1: Pass or Fail
+♪ if/else ♫ Q1: is the air up yet?
 
-**Difficulty:** 🟢 Easy
-
----
-
-## Problem
-
-Get test scores and tell if you passed or failed.
-
-|condition| Output |
-|----------|--------|
-|Score >= 50| `Pass` |
-|Score < 50| `Fail` |
+difficulty:
 
 ---
 
-## example
+♪ Task
 
-**Input:**
-```
-72
+The classroom has a temperature sensor.
+If you get 30 degrees, turn on the air conditioning.
+
+Write a reading program from the sensors and tell them what to do.
+
+♪ Rolls:*
+
+- It's temperature.
+- Less than that.
+
+---
+
+♪ Input
+
+The temperature is 1 lines integer.
+
+♪ Output
+
+1 line of work message
+
+---
+
+## Example
+
+**Input:*```text
+33
 ```
 
 **Output:**
+
+```text
+Turn On AC
 ```
-Pass
-```
-
----
-
-## 💡 Hint
-
-Use `if/else` to separate the two cases.
 
 ---
 
 ## Starter Code
 
 ```python
-score = int(input())
+temperature = int(input())
 
 # Write your code here
 ```

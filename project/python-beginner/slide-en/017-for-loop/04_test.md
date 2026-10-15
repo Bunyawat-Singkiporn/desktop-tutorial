@@ -1,35 +1,45 @@
-# 🔢 Practice for Loop — Question 2: Even Numbers
+# 🏀 for-loop — Q4: หมายเลขผู้เล่นคี่
 
-**Difficulty:** 🟡 Medium
-
----
-
-## Problem
-
-Display even numbers from 2 to 20, one per line.
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Sample Output
+## Task
+
+ทีมบาสมีผู้เล่นหมายเลขคี่เท่านั้น: 1, 3, 5, 7, 9
+โค้ชอยากให้พิมพ์รายชื่อหมายเลขบนกระดาน
+
+เขียนโปรแกรมพิมพ์เลขคี่ `1 3 5 7 9` ทีละบรรทัด โดยใช้ `range` ที่มี step
+
+---
+
+## Input
+
+ไม่มี
+
+## Output
+
+เลขคี่ 5 ค่า ทีละบรรทัด
+
+---
+
+## Example
+
+**Input:**
+
+```text
 
 ```
-2
-4
-6
-8
-10
-12
-14
-16
-18
-20
+
+**Output:**
+
+```text
+1
+3
+5
+7
+9
 ```
-
----
-
-## 💡 Hint
-
-Use `range(start, stop, step)` with step = 2
 
 ---
 

@@ -1,49 +1,54 @@
-# 🔥 Practice Dictionaries — Question 4: Phonebook Lookup
+# 📖 Dictionaries — Q5: สมุดติดต่อพร้อมเช็ค
 
-**Difficulty:** 🔴 Hard
-
----
-
-## Problem
-
-Create a phonebook for three people. Ask the user for a name and look up the corresponding phone number. Repeat this three times.
-
-```python
-phonebook = {
-    "Alice": "081-111-1111",
-    "Bob": "082-222-2222",
-    "Charlie": "083-333-3333"
-}
-```
-
-**Example Session:**
-```
-Search: Alice
-Phone: 081-111-1111
-Search: David
-Not found: David
-Search: Bob
-Phone: 082-222-2222
-```
+**Difficulty:** 🔴 Challenge
 
 ---
 
-## 💡 Hint
+## Task
 
-Use `if name in phonebook:` before accessing the value.
+สมุดติดต่อต้องเช็คคีย์ก่อนแล้ววนพิมพ์ทุกคีย์
+
+กำหนด `contact = {"name": "Nida", "phone": "089-000-1111", "city": "Khon Kaen"}`
+
+ถ้ามี `email` แสดง Found email ไม่เช่นนั้น No email
+จากนั้นพิมพ์ทุกคีย์ทีละบรรทัด
+
+---
+
+## Input
+
+None (values are set in the program)
+
+## Output
+
+4 lines
+
+---
+
+## Example
+
+**Output:**
+
+```text
+No email
+name
+phone
+city
+```
+
+
+---
+
+## Hint
+
+เช็คคีย์ที่อาจไม่มี แล้วค่อยวนคีย์ที่มี
 
 ---
 
 ## Starter Code
 
 ```python
-phonebook = {
-    "Alice": "081-111-1111",
-    "Bob": "082-222-2222",
-    "Charlie": "083-333-3333"
-}
+contact = {"name": "Nida", "phone": "089-000-1111", "city": "Khon Kaen"}
 
-for i in range(3):
-    name = input("Search: ")
-    # Write your code here
+# Write your code here
 ```

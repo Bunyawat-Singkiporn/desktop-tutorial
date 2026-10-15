@@ -1,54 +1,50 @@
-# 🏷️ Practice if/else — Question 3: Discount
+# If/else × QC3: At least player height
 
-**Difficulty:** 🟡 Medium
-
----
-
-## Problem
-
-Get product price. If price >= 100 baht, get 10 baht discount and show the final price.
-
-|condition| Output |
-|----------|--------|
-|Price >= 100|Show price after deducting 10 baht|
-|Price < 100|Show original price|
+difficulty:
 
 ---
 
-## example
+♪ Task
 
-**Input:**
-```
-120
+The amusement park has to be at least 120 centimeters high. Even if I could.
+
+Write a program to get the height of the player and tell him if it's up.
+
+♪ Rolls:*
+
+- Height
+- Lower.
+
+---
+
+♪ Input
+
+The height is centimeters.
+
+♪ Output
+
+Test results 1 lines
+
+---
+
+## Example
+
+**Input:*```text
+118
 ```
 
 **Output:**
-```
-110
-```
 
-**Input:**
+```text
+Not Allowed
 ```
-80
-```
-
-**Output:**
-```
-80
-```
-
----
-
-## 💡 Hint
-
-Delete the price after checking the conditions.
 
 ---
 
 ## Starter Code
 
 ```python
-price = int(input())
+height = int(input())
 
 # Write your code here
 ```

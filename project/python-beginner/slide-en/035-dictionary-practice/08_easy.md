@@ -1,4 +1,4 @@
-# Practice Dictionary — Question 7: Update Game Score
+# 🏋️ Dict Practice — Q8: อัปเดตคะแนนสอบ
 
 **Difficulty:** 🟢 Easy
 
@@ -6,32 +6,40 @@
 
 ## Task
 
-Game score starts at 10 — update it to 25, then show before/after.
+แก้คะแนนสอบล่าสุด
 
-```python
-player = {"name": "Hero", "score": 10}
-```
+กำหนด `scores = {"Ann": 70, "Ben": 80}`
 
-**Output:**
-```
-Before: 10
-After: 25
-```
+แก้คะแนน Ann เป็น 85 แล้วพิมพ์ items
 
 ---
 
-## 💡 Hint
+## Input
 
-`player["score"] = 25`
+None (values are set in the program)
+
+## Output
+
+2 lines
+
+---
+
+## Example
+
+**Output:**
+
+```text
+Ann: 85
+Ben: 80
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-player = {"name": "Hero", "score": 10}
+scores = {"Ann": 70, "Ben": 80}
 
-print(f"Before: {player['score']}")
-# Update score here
-print(f"After: {player['score']}")
+# Write your code here
 ```

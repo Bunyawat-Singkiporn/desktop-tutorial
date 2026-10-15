@@ -1,5 +1,4 @@
-player = {"name": "Hero", "score": 10}
-
-print(f"Before: {player['score']}")
-player["score"] = 25
-print(f"After: {player['score']}")
+scores = {"Ann": 70, "Ben": 80}
+scores["Ann"] = 85
+for key, value in scores.items():
+    print(f"{key}: {value}")

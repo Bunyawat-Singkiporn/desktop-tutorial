@@ -1,27 +1,27 @@
-# 🖥️ Python Environment — Getting Started Writing Code
+# 🖥️ Python Environment — Getting started with code
 
 ---
 
-## What is an Editor?
+## What is an editor?
 
-An **Editor** is a program for writing code.
+An **editor** is a program for writing code.
 
-It is like a **notebook** 📒 but for programmers, with features that make writing code easier.
+Like a **notebook** 📒 for programmers, with features that make coding easier.
 
-| Editor | Description |
-|--------|-------------|
-| **VS Code** | Works with every language ✅ (recommended) |
+| Editor | Notes |
+|--------|--------|
+| **VS Code** | Works with any language ✅ (recommended) |
 | PyCharm | Python-focused |
-| IDLE | Comes with Python |
+| IDLE | Bundled with Python |
 
 ---
 
-## How to Run Python Code
+## How to run Python code
 
-### Method 1: The ▶ button in VS Code
+### Method 1: ▶ button in VS Code
 1. Open a `.py` file
-2. Click the **▶ Run** button in the top-right corner
-3. See the result in the **Terminal** at the bottom
+2. Click **▶ Run** at the top right
+3. See output in the **Terminal** at the bottom
 
 ### Method 2: Terminal
 ```bash
@@ -30,11 +30,11 @@ python hello.py
 
 ---
 
-## What is an Error Message?
+## What is an error message?
 
-When code has a mistake, Python warns you — that is called an **Error**.
+When code has a mistake, Python reports it — called an **Error**.
 
-> Don't fear Errors! They are **helpful messages** that tell you what to fix 🆘
+> Do not fear errors! They are **help messages** that say where to fix 🆘
 
 ```
 SyntaxError: '(' was never closed
@@ -43,25 +43,25 @@ SyntaxError: '(' was never closed
          ^
 ```
 
-| Part of the Error | Meaning |
+| Part of the error | Meaning |
 |-------------------|---------|
-| `SyntaxError` | Type of mistake |
+| `SyntaxError` | Type of problem |
 | `'(' was never closed` | Detail: parenthesis not closed |
-| `line 1` | Line that has the problem |
+| `line 1` | Line with the problem |
 
 ---
 
-## Common Errors
+## Common errors
 
-| Error | Cause | How to fix |
-|-------|-------|------------|
-| `SyntaxError` | Code written in the wrong form | Check parentheses / punctuation |
-| `NameError` | Used a name that does not exist | Check spelling (`print` not `Print`) |
-| `IndentationError` | Incorrect indentation | Remove leading spaces on the line |
+| Error | Cause | Fix |
+|-------|--------|--------|
+| `SyntaxError` | Invalid code shape | Check parentheses / quotes |
+| `NameError` | Unknown name | Check spelling (`print` not `Print`) |
+| `IndentationError` | Bad indentation | Remove leading spaces at line start |
 
 ---
 
-## Example: Broken Code vs Correct Code
+## Example: broken vs correct code
 
 ❌ **Wrong:**
 ```python
@@ -81,9 +81,9 @@ Hello
 
 ---
 
-## Tips for Fixing Errors
+## Tips for fixing errors
 
-1. **Read the Error** carefully — it tells you which line has the problem
-2. **Check parentheses** — every `(` needs a closing `)`
-3. **Check quotation marks** — every `"` needs a closing `"`
-4. **Try Googling** the error message — someone else has hit the same problem!
+1. **Read the error** carefully — it names the problem line
+2. **Check parentheses** — every `(` needs a matching `)`
+3. **Check quotes** — every `"` needs a closing `"` 
+4. **Try Googling** the error message — someone else hit the same issue!

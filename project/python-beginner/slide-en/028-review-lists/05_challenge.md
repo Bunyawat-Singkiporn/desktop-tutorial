@@ -1,50 +1,54 @@
-# 🔥 Practice Review Lists — Question 4: Grade Tracker
+# 🔁 Review Lists — Q5: รายงานชั้นเรียน
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
-## Problem
+## Task
 
-Set scores for 5 subjects, calculate averages and display summary results.
+พิมพ์รายงานชั้นเรียนพร้อมเลขที่และจำนวนคน
 
-```python
-scores = [78, 85, 92, 70, 88]
-```
+กำหนด `students = ["Ann", "Ben", "Cara", "Dan"]`
 
-**Must present:**
-1. Score for each subject with number
-2. sum
-3. Average (1 decimal place)
-4. Result: `Pass` if average >= 70, `Fail` if not reached.
+แสดงตามตัวอย่าง
+
+---
+
+## Input
+
+None (values are set in the program)
+
+## Output
+
+รายการ + สรุป
+
+---
+
+## Example
 
 **Output:**
+
+```text
+1) Ann
+2) Ben
+3) Cara
+4) Dan
+Students: 4
 ```
-1. 78
-2. 85
-3. 92
-4. 70
-5. 88
-Total: 413
-Average: 82.6
-Result: Pass
-```
+
 
 ---
 
-## 💡 Hint
+## Hint
 
-- Use a loop to calculate the total first.
-- `average = total / len(scores)`
-- Use `f"{average:.1f}"` for 1 decimal place.
+range(len) + สรุปจำนวน
 
 ---
 
 ## Starter Code
 
 ```python
-scores = [78, 85, 92, 70, 88]
-total = 0
+students = ["Ann", "Ben", "Cara", "Dan"]
 
 # Write your code here
 ```

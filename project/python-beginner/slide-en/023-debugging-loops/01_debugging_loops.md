@@ -1,89 +1,69 @@
-# 🐛 Debugging Loops — Fix bugs in Loops.
+# Debugging Loops ^ fix bugs in Loop
 
 ---
 
-## Bug 1: Off-by-One Error
-
-```python
-# ❌ Wanted 1–5 but got only 1–4
+# Buug 1: Off-by-one #```python
+# ❌ ต้องการ 1–5 แต่ได้แค่ 1–4
 for i in range(1, 5):
     print(i)
 
-# ✅ Correct
+# ✅ แก้
 for i in range(1, 6):
     print(i)
-```
-
-> `range(1, 5)` = 1, 2, 3, 4 — **not including 5**
-> Requires 1–5 `range(1, 6)` required.
+```= 1, 2, 3, 4 = not including 5) *
+> Need 1 ^5 ▪
 
 ---
 
-## Bug 2: Infinite Loop
-
-```python
-# ❌ Forgot to update count → Non-stop loop!
+♪ Buug 2: Infinite Loop```python
+# ❌ ลืมอัปเดต count → วนไม่หยุด!
 count = 1
 while count <= 5:
     print(count)
 
-# ✅ Correct
+# ✅ แก้
 count = 1
 while count <= 5:
     print(count)
-    count = count + 1   # ← This line must be present.
-```
+    count = count + 1   # ← ต้องมีบรรทัดนี้
+```---
 
----
-
-## Bug 3: Indent is wrong.
-
-```python
-# ❌ print outside loop — print only once
+#### Bug 3: Inndent Wrong```python
+# ❌ print อยู่นอก loop — พิมพ์แค่ครั้งเดียว
 for i in range(3):
     pass
 print(i)
 
-# ✅ Fix: put indent in loop
+# ✅ แก้: indent ให้อยู่ใน loop
 for i in range(3):
     print(i)
-```
+```---
 
----
-
-## Bug 4: Use the name List instead of loop variables.
-
-```python
+## Buug 4: Use List instead of variables Walk```python
 names = ["Alice", "Bob", "Charlie"]
 
-# ❌ Incorrect: Use names instead of name
+# ❌ ผิด: ใช้ names แทน name
 for name in names:
-    print(names)   # Show all lists every round!
+    print(names)   # แสดง list ทั้งหมดทุกรอบ!
 
-# ✅ Correct
+# ✅ ถูก
 for name in names:
-    print(name)    # Show each name
-```
+    print(name)    # แสดงแต่ละชื่อ
+```---
 
----
+#### How Debug Loop
 
-## Debug Loop Method
-
-Temporarily add `print`, look at the values ​​each cycle:
-
-```python
+Add temporary values to each value :```python
 for i in range(5):
-    print(f"[debug] i = {i}")   # ← Delete when finished.
+    print(f"[debug] i = {i}")   # ← ลบออกเมื่อเสร็จแล้ว
     total = total + i
-```
+```---
 
----
+# To sum up the guard #
 
-## Summary of bugs to be careful of
-
-| Bug |signal|Solution|
-|-----|--------|--------|
-| Off-by-one |Less effective/more than 1 cycle|Check the value in `range()`|
-| Infinite loop |The program freezes.|Verify that variables have been changed.|
-|Indent is wrong|The code behaves strangely.|Check leading space|
-|Wrong name|Strange Output|Check variable names|
+▪ Buug
+I'm sorry.
+^ Off-by-one ▪
+▪ Infinite log
+Is that correct?
+Wrong name

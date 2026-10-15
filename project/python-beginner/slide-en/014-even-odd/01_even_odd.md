@@ -1,32 +1,21 @@
-# 🔢 Even / Odd — Even and odd numbers.
-
+# 🔢 Even / Odd — เลขคู่และเลขคี่
 ---
-
-## % What is?
-
-The symbol `%` is called **Modulo**.
-
-> Used to find **remainder from division**
-
-|Expression|meaning|result|
+## % คืออะไร?
+เครื่องหมาย `%` เรียกว่า **Modulo**
+> ใช้หา **เศษที่เหลือจากการหาร**
+| นิพจน์ | ความหมาย | ผลลัพธ์ |
 |--------|----------|---------|
-| `7 % 2` |7 divided by 2 leaves a remainder.| `1` |
-| `10 % 2` |10 divided by 2 leaves a remainder.| `0` |
-| `9 % 2` |9 divided by 2 leaves a remainder.| `1` |
-
+| `7 % 2` | 7 หาร 2 เหลือเศษ | `1` |
+| `10 % 2` | 10 หาร 2 เหลือเศษ | `0` |
+| `9 % 2` | 9 หาร 2 เหลือเศษ | `1` |
 ---
-
-## Inspection principles
-
-|condition|meaning|
+## หลักการตรวจสอบ
+| เงื่อนไข | ความหมาย |
 |----------|----------|
-| `number % 2 == 0` |➜ Number**Even** (Even)|
-| `number % 2 != 0` |➜ Number**Odd** (Odd)|
-
+| `number % 2 == 0` | ➜ เลข**คู่** (Even) |
+| `number % 2 != 0` | ➜ เลข**คี่** (Odd) |
 ---
-
-## Program example
-
+## Exampleโปรแกรม
 ```python
 number = int(input())
 
@@ -38,7 +27,7 @@ else:
 
 ---
 
-## Sample Input / Output
+## Example Input / Output
 
 | Input | Output |
 |-------|--------|

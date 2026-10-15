@@ -1,37 +1,37 @@
-# 🔭 Scope — Where Variables Are Available
+# 🔭 Scope — ขอบเขตของตัวแปร
 
 ---
 
-## What Is Scope?
+## Scope คืออะไร?
 
-Scope is the **area** in which a variable can be accessed.
+Scope คือ **ขอบเขต** ที่ตัวแปรสามารถถูกเข้าถึงได้
 
 ---
 
-## Local Variables
+## Local Variable — ตัวแปรภายใน
 
-A variable created **inside a function** is available only within that function.
+ตัวแปรที่สร้าง **ใน function** — ใช้ได้เฉพาะใน function นั้น
 
 ```python
 def my_func():
     x = 10          # local variable
-    print(x)        # ✅ Available here
+    print(x)        # ✅ ใช้ได้
 
 my_func()
-print(x)            # ❌ NameError — x does not exist outside the function
+print(x)            # ❌ NameError — x ไม่มีอยู่นอก function
 ```
 
 ---
 
-## Global Variables
+## Global Variable — ตัวแปรภายนอก
 
-A variable created **outside a function** is available throughout the program.
+ตัวแปรที่สร้าง **นอก function** — ใช้ได้ทั้งโปรแกรม
 
 ```python
 name = "Alice"      # global variable
 
 def show():
-    print(name)     # ✅ Can be read here
+    print(name)     # ✅ อ่านได้
 
 show()              # Alice
 print(name)         # Alice
@@ -39,13 +39,13 @@ print(name)         # Alice
 
 ---
 
-## When Names Are the Same
+## เมื่อชื่อซ้ำกัน
 
 ```python
 x = 100             # global
 
 def test():
-    x = 50          # local (a different variable!)
+    x = 50          # local (คนละตัวกัน!)
     print("Inside:", x)
 
 test()
@@ -58,31 +58,31 @@ Inside: 50
 Outside: 100
 ```
 
-> Python uses the local variable first.
+> Python จะใช้ local ก่อนเสมอ
 
 ---
 
-## Variable Lifetime
+## Variable Lifetime (อายุของตัวแปร)
 
 ```python
 def calc():
-    result = 42     # Created when the function runs
-    return result   # Returned before the variable disappears
+    result = 42     # เกิดตอน function ทำงาน
+    return result   # ส่งค่ากลับก่อนหาย
 
 value = calc()
 print(value)        # 42
-# result has now been deleted
+# result ถูกลบไปแล้ว
 ```
 
 ---
 
-## The `global` Keyword (Advanced)
+## global keyword (ขั้นสูง)
 
 ```python
 count = 0
 
 def add_one():
-    global count    # Use the global variable
+    global count    # บอกว่าใช้ตัวแปร global
     count += 1
 
 add_one()

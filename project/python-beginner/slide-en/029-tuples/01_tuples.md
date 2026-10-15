@@ -1,16 +1,16 @@
-# 🔒 Tuples — data that does not change
+# 🔒 Tuples — ข้อมูลที่ไม่เปลี่ยนแปลง
 
 ---
 
-## What is a Tuple?
+## Tuple คืออะไร?
 
-Tuple is a data structure similar to List but **cannot be edited** after creation (Immutable).
+Tuple คือโครงสร้างข้อมูลที่คล้าย List แต่ **ไม่สามารถแก้ไขได้** หลังจากสร้างแล้ว (Immutable)
 
 ---
 
-## Creating a Tuple
+## การสร้าง Tuple
 
-Use parentheses `()` instead of `[]`.
+ใช้วงเล็บ `()` แทน `[]`
 
 ```python
 days = ("Mon", "Tue", "Wed", "Thu", "Fri")
@@ -20,7 +20,7 @@ student = ("Alice", 15, "Grade 9")
 
 ---
 
-## Accessing data (like a List)
+## การเข้าถึงข้อมูล (เหมือน List)
 
 ```python
 days = ("Mon", "Tue", "Wed")
@@ -32,7 +32,7 @@ print(len(days)) # 3
 
 ---
 
-## Loop with a for loop
+## วนซ้ำด้วย for loop
 
 ```python
 days = ("Mon", "Tue", "Wed", "Thu", "Fri")
@@ -43,28 +43,28 @@ for day in days:
 
 ---
 
-## Immutable — Do not edit.
+## Immutable — ห้ามแก้ไข
 
 ```python
 days = ("Mon", "Tue", "Wed")
 days[0] = "Sunday"  # ❌ TypeError!
 ```
 
-> Tuples are designed to provide data that **Shouldn't change**
+> Tuple ถูกออกแบบมาเพื่อข้อมูลที่ **ไม่ควรเปลี่ยน**
 
 ---
 
-## When should I use Tuple?
+## เมื่อไหร่ควรใช้ Tuple?
 
-|Use **List** when|Use **Tuple** when|
+| ใช้ **List** เมื่อ | ใช้ **Tuple** เมื่อ |
 |------------------|-------------------|
-|Want to add/delete information|The data is constant and does not need to be changed.|
-|Information can be changed|Want to prevent editing|
-|Product list|Day of the week, coordinates, student information|
+| ต้องการเพิ่ม/ลบข้อมูล | ข้อมูลคงที่ ไม่ต้องเปลี่ยน |
+| ข้อมูลเปลี่ยนได้ | ต้องการป้องกันการแก้ไข |
+| รายการสินค้า | วันในสัปดาห์, พิกัด, ข้อมูลนักเรียน |
 
 ---
 
-## ExampleProgram
+## Exampleโปรแกรม
 
 ```python
 student = ("Bob", 14, "Grade 8")

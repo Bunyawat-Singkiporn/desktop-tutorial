@@ -1,0 +1,56 @@
+# 📥 while-loop — Q6: รวมเลขจนเจอ -1
+
+**Difficulty:** 🟡 Medium
+
+---
+
+## Task
+
+รับจำนวนเต็มซ้ำๆ รวมค่าไปเรื่อยๆ
+เมื่อผู้ใช้พิมพ์ `-1` ให้หยุด (ไม่เอามาบวก) แล้วแสดงผลรวม
+
+---
+
+## Input
+
+จำนวนเต็มทีละบรรทัด จบด้วย -1
+
+## Output
+
+Total: <ผลรวม>
+
+---
+
+## Example
+
+**Input:**
+
+```text
+10
+20
+5
+-1
+```
+
+**Output:**
+
+```text
+Total: 35
+```
+
+---
+
+## Hint
+
+ใช้ while number != -1 แล้วรับค่าใหม่ท้ายลูป
+
+---
+
+## Starter Code
+
+```python
+total = 0
+number = int(input())
+
+# Write your code here
+```

@@ -1,41 +1,39 @@
-# 🚀 Transition Prep — Getting Ready for Phase 2
+♪ Transition Prep stand by to phase 2
 
 ---
 
-## Phase 1 → Phase 2
+# Phase 1 × Phaase 2
 
 ```
-Phase 1: Python Fundamentals
+Phase 1: พื้นฐาน Python
     ↓
     Variables, Conditions, Loops
     Collections (List, Dict, ...)
     Functions
     ↓
-Phase 2: Advanced Python
+Phase 2: Python ขั้นสูง
     ↓
     Object-Oriented Programming
     File I/O
     Modules & Libraries
     Error Handling
-```
+```---
+
+##Pase 1 linked to Phaase 2? !
+
+^ Phase 1 ^
+•----------------------
+^Funactions ^ Methods in Class (Oop)
+♫ dirations ♫ JSon data, API returns ♫
+□ Lists ^ Reading lines from files ^
+^ Loops ^
+□ Debugging ▪
 
 ---
 
-## How Does Phase 1 Connect to Phase 2?
+## Things to learn in Phaase 2
 
-| Phase 1 | Application in Phase 2 |
-|---------|------------------------|
-| Functions | Methods in classes (OOP) |
-| Dictionaries | JSON data, API responses |
-| Lists | Reading lines from files |
-| Loops | Processing large datasets |
-| Debugging | Error Handling (try/except) |
-
----
-
-## What You Will Learn in Phase 2
-
-### OOP (Object-Oriented Programming)
+#### Oop #
 ```python
 class Student:
     def __init__(self, name, score):
@@ -53,14 +51,12 @@ with open("data.txt", "r") as f:
 ```python
 import math
 import random
-```
+```---
 
----
+♪ Ready? !
 
-## Are You Ready?
-
-Check your skills before starting Phase 2:
-- Understand functions and `return`.
-- Use lists and dictionaries confidently.
-- Fix basic bugs.
-- Read code written by other people.
+Check yourself before you start.
+- Understand the function and return.
+- Use list and dict.
+- Preliminary big fix.
+- Read the code someone else could write.

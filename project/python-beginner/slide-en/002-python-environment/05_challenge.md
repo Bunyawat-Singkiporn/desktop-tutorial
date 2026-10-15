@@ -1,52 +1,60 @@
-# 🔥 Practice: Environment — Question 4: Fix the Report Card
+# 🔥 Run programs and read errors — Q12: Hunt all four bug types
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
-## Problem
+## Task
 
-The code below has **5** mistakes. Find and fix every one.
+This sports schedule program has **4 bugs**, all different types.
+
+> The code below **does not run**. Find what is wrong and rewrite it so the output matches the example.
 
 ```python
-prant("================")
-Print("  Report Card  ")
-print("================"
-print("Name: Emma"
-print("Score: 98)
-  print("Great job!")
-```
-
-**Expected output:**
-```
-================
-  Report Card  
-================
-Name: Emma
-Score: 98
-Great job!
+print("+--------------------+"
+print("|   MATCH SCHEDULE   |")
+PRINT("+--------------------+")
+  print("| 09:00  A  vs  B    |")
+print("| 10:30  C  vs  D    |)
+print("+--------------------+")
 ```
 
 ---
 
-## 💡 Hint
+## Input
 
-5 types of errors to find:
-1. Function name misspelled (not just capitalization)
-2. Wrong capitalization (uppercase letter)
-3. Missing `)` parenthesis
-4. Missing `"` mark
-5. Extra indentation
+None
+
+## Output
+
+Six-line schedule in a box
+
+---
+
+## Example
+
+**Output:**
+
+```text
++--------------------+
+|   MATCH SCHEDULE   |
++--------------------+
+| 09:00  A  vs  B    |
+| 10:30  C  vs  D    |
++--------------------+
+```
+
+---
+
+## Hint
+
+Fastest approach: fix one spot, run again, repeat. Do not fix all four at once —
+if something is still wrong you will not know which fix failed.
 
 ---
 
 ## Starter Code
 
 ```python
-prant("================")
-Print("  Report Card  ")
-print("================"
-print("Name: Emma"
-print("Score: 98)
-  print("Great job!")
+# Write your corrected code here
 ```

@@ -1,0 +1,5 @@
+name = input()
+age = int(input())
+print("Visitor: " + name)
+print("Age: " + str(age))
+print("Age type:", type(age))

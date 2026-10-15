@@ -1,55 +1,40 @@
-# 🔁 for Loop — Repeating Actions
+♪ for Loop ♫ Revolving
 
 ---
 
-## What is a Loop?
+♪ What's Loop?
 
-A loop makes the computer **repeat work** without writing the same code many times.
+Loop is to get computers to run over without repeating their code.
 
-**Instead of writing this...**
-
-```python
+Instead of writing like this...```python
 print("Hello")
 print("Hello")
 print("Hello")
 print("Hello")
 print("Hello")
-```
-
-**We can write this instead!**
-
-```python
+```We can write this! **```python
 for i in range(5):
     print("Hello")
-```
+```---
 
----
+What?
 
-## What is `range(5)`?
+5 times
 
-`range(5)` creates the numbers **0 through 4** — 5 rounds total.
-
-> ⚠️ Always starts at **0** and stops before the given number
-
-```python
+& Always stop before a given number```python
 for i in range(5):
     print(i)
-```
-
-**Output:**
-```
+```The result:```
 0
 1
 2
 3
 4
-```
+```---
 
----
+♪ To sum
 
-## Summary
-
-| Code | Meaning |
-|------|---------|
-| `for i in range(5):` | Loop 5 times (i = 0, 1, 2, 3, 4) |
-| `    print(i)` | Print i each round |
+▪ Code ▪
+•--
+(i = 0, 1, 2, 3, 4)
+^ ^printi) ^ print i at each time

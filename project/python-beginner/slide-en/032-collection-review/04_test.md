@@ -1,40 +1,44 @@
-# 📊 Practice Collection Review — Question 3: List + Set Mixed
+# 📚 Collection Review — Q4: เช็คสมาชิก set
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Build an attendance system. Use a list to store all check-ins, including duplicates, and a set to track the students who attended.
+เช็คว่ามีแท็กนี้หรือไม่
 
-```python
-checkins = ["Alice", "Bob", "Alice", "Charlie", "Bob", "Alice"]
-```
+กำหนด `tags = {"food", "travel", "sport"}`
+
+เช็ค `"music"` แสดง `Yes` หรือ `No`
+
+---
+
+## Input
+
+None (values are set in the program)
+
+## Output
+
+One line
+
+---
+
+## Example
 
 **Output:**
+
+```text
+No
 ```
-Total check-ins: 6
-Unique students: 3
-Most check-ins: Alice (3 times)
-```
 
----
-
-## 💡 Hint
-
-- Use `set(checkins)` to find unique names.
-- Use `.count(name)` to count the number of check-ins.
 
 ---
 
 ## Starter Code
 
 ```python
-checkins = ["Alice", "Bob", "Alice", "Charlie", "Bob", "Alice"]
+tags = {"food", "travel", "sport"}
 
-total = len(checkins)
-unique = set(checkins)
-
-# Find the student with the most check-ins
+# Write your code here
 ```

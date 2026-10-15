@@ -1,43 +1,56 @@
-# 🔥 Practice Choosing Data Types — Question 4: Best Type
+# 🧭 Choosing Types — Q5: เลือกโครงสร้างสามแบบ
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
-## Problem
+## Task
 
-Create a library system using the appropriate data types:
+โปรแกรมเก็บข้อมูลสามอย่างคนละชนิด
 
-| Data | Requirements | Appropriate Type |
-|--------|--------|------------|
-| Book titles in the library | Ordered; items can be added or removed | List |
-| Book categories | Fixed and unchanged | Tuple |
-| ISBNs | Unique; fast duplicate checks | Set |
+- `tasks` เป็น list ของงาน 2 อย่าง แล้ว append งานที่สาม
+- `days` เป็น tuple วันทำการ 3 วัน
+- `tags` เป็น set ของแท็ก แล้วตัดซ้ำอัตโนมัติ
 
-**Requirements:**
-1. Create sample data using each collection type.
-2. Add a new book to the list.
-3. Check whether a new ISBN is a duplicate before adding it.
-4. Display a summary.
+แสดง tasks, วันแรกของ days, และจำนวน tags
 
-**Output** (example):
+---
+
+## Input
+
+None (values are set in the program)
+
+## Output
+
+Line
+
+---
+
+## Example
+
+**Output:**
+
+```text
+['Wash', 'Cook', 'Shop']
+Mon
+Tags: 2
 ```
-Books: 4
-Categories: 3
-ISBNs: 4
-ISBN-999 is new → added
-```
+
+
+---
+
+## Hint
+
+เลือกชนิดตามว่าแก้ได้ / คงที่ / ไม่ซ้ำ
 
 ---
 
 ## Starter Code
 
 ```python
-books = ["Python Basics", "Data Science", "Web Dev"]
-categories = ("Fiction", "Non-fiction", "Science")
-isbns = {"ISBN-001", "ISBN-002", "ISBN-003"}
+tasks = ["Wash", "Cook"]
+days = ("Mon", "Tue", "Wed")
+tags = {"home", "home", "school"}
 
-# Add a new book to books
-# Check ISBN-999 before adding.
-# Show summary
+# Write your code here
 ```

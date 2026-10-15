@@ -1,41 +1,35 @@
-# 🎤 Practice: Input — Question 3: Full Name
 
-**Difficulty:** 🟡 Medium
 
----
-
-## Problem
-
-Get first name and last name separately, then display the full name and each part.
-
-**Input:**
-```
-Alice
-Smith
-```
-
-**Output:**
-```
-Full name: Alice Smith
-First: Alice
-Last: Smith
-```
+**Difficulty:** 🟢 Easy
 
 ---
 
-## 💡 Hint
 
-- Get 2 separate `input()` calls
-- Use `print()` to show 3 lines
-- Join names with `first + " " + last` or `print(first, last)`
+
+
 
 ---
 
-## Starter Code
+## Input
+## Output
+---
 
-```python
-first_name = input()
-last_name = input()
 
-# Print full name and each part
+
+**Input:**# ⌨️ Input — ข้อ 3: ชื่อเล่นกับสีโปรด## โจทย์กิจกรรม Ice Breaking ในห้องเรียน
+รับชื่อเล่นและสีโปรด แล้วแสดงทั้งสองอย่าง2 บรรทัด — ชื่อเล่น และสีโปรด2 บรรทัด แสดงชื่อเล่นและสี## ตัวอย่าง```text
+Pleng
+blue
+```
+**Output:**```text
+Nickname: Pleng
+Color: blue
+```
+---
+
+## Starter Code```python
+nickname = input()
+color = input()
+
+# Write your code here
 ```

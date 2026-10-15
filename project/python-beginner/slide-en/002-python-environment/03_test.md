@@ -1,41 +1,51 @@
-# 🔧 Practice: Environment — Question 2: Fix Three Errors
+# 🔠 Run programs and read errors — Q2: Wrong command spelling
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-The code below has **3** mistakes. Fix them so it runs and shows the correct output.
+This program shows `NameError: name 'Print' is not defined`.
+
+> The code below **does not run**. Find what is wrong and rewrite it so the output matches the example.
 
 ```python
-Print("Line 1: Hello")
-print("Line 2: World"
-print(Line 3: Done")
-```
-
-**Expected output:**
-```
-Line 1: Hello
-Line 2: World
-Line 3: Done
+Print("Science Fair")
+print("Hall A")
 ```
 
 ---
 
-## 💡 Hint
+## Input
 
-Look for:
-1. Wrong capitalization (capital P)
-2. Unclosed parenthesis
-3. Missing `"` mark
+None
+
+## Output
+
+Two lines of text
+
+---
+
+## Example
+
+**Output:**
+
+```text
+Science Fair
+Hall A
+```
+
+---
+
+## Hint
+
+`NameError` means Python does not know this name — Python treats uppercase and lowercase as different.
 
 ---
 
 ## Starter Code
 
 ```python
-Print("Line 1: Hello")
-print("Line 2: World"
-print(Line 3: Done")
+# Write your corrected code here
 ```

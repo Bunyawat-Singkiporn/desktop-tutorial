@@ -1,4 +1,4 @@
-# Practice Dictionary — Question 8: Add Phone Number
+# 🏋️ Dict Practice — Q9: เช็คของในคลัง
 
 **Difficulty:** 🟢 Easy
 
@@ -6,24 +6,39 @@
 
 ## Task
 
-The contact has no phone yet — add key `"phone"` as `"0812345678"`, then print the whole dict.
+เช็คว่ามีสินค้าในคลังหรือไม่
 
-```python
-contact = {"name": "Bob", "city": "Bangkok"}
-```
+กำหนด `stock = {"rice": 10, "oil": 4, "salt": 7}`
+
+ถ้ามีคีย์ `sugar` แสดง `In stock` ไม่เช่นนั้น `Sold out`
+
+---
+
+## Input
+
+None (values are set in the program)
+
+## Output
+
+One line
+
+---
+
+## Example
 
 **Output:**
+
+```text
+Sold out
 ```
-{'name': 'Bob', 'city': 'Bangkok', 'phone': '0812345678'}
-```
+
 
 ---
 
 ## Starter Code
 
 ```python
-contact = {"name": "Bob", "city": "Bangkok"}
+stock = {"rice": 10, "oil": 4, "salt": 7}
 
-# Add phone here
-print(contact)
+# Write your code here
 ```

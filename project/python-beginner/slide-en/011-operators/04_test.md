@@ -1,42 +1,31 @@
-# 🌡️ Practice: Operators — Question 3: Temperature Converter
 
-**Difficulty:** 🟡 Medium
 
----
-
-## Problem
-
-Get a temperature in Celsius, then convert it to Fahrenheit.
-
-**Formula:** `F = C × 9/5 + 32`
-
-**Input:**
-```
-100
-```
-
-**Output:**
-```
-Celsius: 100
-Fahrenheit: 212.0
-```
+**Difficulty:** 🟢 Easy
 
 ---
 
-## 💡 Hint
 
-- Use `float(input())` to allow decimals
-- Follow the formula step by step: multiply and divide first, then add
+
+
 
 ---
 
-## Starter Code
+## Input
+## Output
+---
 
-```python
-celsius = float(input())
 
-# Convert to Fahrenheit
-fahrenheit = 
 
-# Print results
+**Input:**# 🔢 Operators — ข้อ 4: ยกกำลัง## โจทย์รับ n แสดง n**2ดูตัวอย่าง1 บรรทัด## ตัวอย่าง```text
+9
+```
+**Output:**```text
+81
+```
+---
+
+## Starter Code```python
+n = int(input())
+
+# ยกกำลังสอง
 ```

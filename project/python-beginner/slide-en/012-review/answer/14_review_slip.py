@@ -1,0 +1,5 @@
+name = input()
+paid = float(input())
+print("=== SLIP ===")
+print(f"Name: {name}")
+print(f"Paid: {paid:.2f}")

@@ -1,46 +1,37 @@
-# ⭐ Practice Even / Odd — Question 3: Special Number
-
-**Difficulty:** 🟡 Medium
-
+# 🏨 Even/Odd — Q3: ห้องพักแฝด
+**Difficulty:** 🟢 Easy
 ---
-
-## Problem
-
-Get the number and decide if it is Special or Normal.
-
-|condition| Output |
-|----------|--------|
-|Numbers **Even** and **> 20**| `Special` |
-|other| `Normal` |
-
+## Task
+โรงแรมจัดห้องแฝดสองฝั่งโถง
+ห้องเลข**คี่**อยู่ฝั่ง Twin B ห้องเลขคู่ฝั่ง Twin A
+เขียนโปรแกรมรับหมายเลขห้อง แล้วบอกว่าอยู่ฝั่งไหน
+**Rules:**
+- หมายเลขห้อง `% 2 != 0` → `Twin B`
+- ถ้าไม่ใช่ → `Twin A`
 ---
-
-## example
-
+## Input
+หมายเลขห้องเป็นจำนวนเต็ม 1 บรรทัด
+## Output
+ฝั่งห้อง 1 บรรทัด
+---
+## Example
 **Input:**
-```
-24
+```text
+305
 ```
 
 **Output:**
+
+```text
+Twin B
 ```
-Special
-```
-
-> 24 is an even number and 24 > 20 → Special
-
----
-
-## 💡 Hint
-
-Use `and` to combine 2 conditions.
 
 ---
 
 ## Starter Code
 
 ```python
-number = int(input())
+room = int(input())
 
 # Write your code here
 ```

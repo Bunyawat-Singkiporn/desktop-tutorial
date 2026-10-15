@@ -1,0 +1,49 @@
+# 🎬 Comments — Q6: รอบฉายหนัง
+
+**Difficulty:** 🟡 Medium
+
+---
+
+## Task
+
+โรงหนังโรงเรียนจะติดป้ายรอบฉาย
+โค้ดมีหลายส่วน (ชื่อเรื่อง / รอบฉาย / หมายเหตุ) ต้องใช้ comment แบ่งส่วนให้ชัด
+
+เขียนโปรแกรมแสดงป้ายตามตัวอย่าง โดยมี comment แบ่งอย่างน้อย 2 ส่วน
+
+---
+
+## Input
+None (this program does not read user input)
+
+## Output
+See the example
+
+---
+
+## Example
+
+**Output:**
+
+```text
+====================
+   MOVIE TONIGHT
+====================
+Title: Robot Friends
+Show 1: 16:00
+Show 2: 18:30
+Bring your ticket
+====================
+```
+
+---
+
+## Hint
+คิดก่อนว่าโปรแกรมมีกี่ส่วน แล้วใส่ comment หัวส่วนก่อนเริ่ม `print` ของส่วนนั้น
+
+---
+
+## Starter Code
+```python
+# Write your code here
+```

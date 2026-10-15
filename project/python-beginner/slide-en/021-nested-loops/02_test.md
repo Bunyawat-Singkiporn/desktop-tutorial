@@ -1,35 +1,42 @@
-# ⬜ Practice: Nested Loops — Question 1: Rectangle
+# Na-na na-na na-na #
 
-**Difficulty:** 🟢 Easy
-
----
-
-## Problem
-
-Displays a 4 × 3 rectangle marked `*`.
-
-**Output:**
-```
-****
-****
-****
-```
+difficulty:
 
 ---
 
-## 💡 Hint
+♪ Task
 
-- Outside Loop: Loop 3 times (3 rows).
-- Loop in: 4 loops (4 stars)
-- Use the `print("*", end="")` and `print()` lines.
+The theater has two rows and three rows.
+Use outside loops and loops in rows and spaces
+
+---
+
+♪ Input
+
+None
+
+♪ Output
+
+6 lines, each line is a row at
+
+---
+
+## Example
+
+♪ Output:*```text
+0 0
+0 1
+0 2
+1 0
+1 1
+1 2
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-for row in range(3):
-    for col in range(4):
-        # Print one * without newline
-    # Move to next line
+# เขียนลูปซ้อนพิมพ์พิกัด
 ```

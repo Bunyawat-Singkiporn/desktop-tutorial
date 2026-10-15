@@ -1,18 +1,18 @@
-# ✏️ Dictionary Methods — Working with Dictionaries
+# ✏️ Dictionary Methods — การจัดการ Dictionary
 
 ---
 
-## Change a Value
+## แก้ไขค่า
 
 ```python
 student = {"name": "Alice", "age": 15}
-student["age"] = 16           # change an existing value
+student["age"] = 16           # แก้ไขค่าเดิม
 print(student["age"])         # 16
 ```
 
 ---
 
-## .update() — Update Several Values at Once
+## .update() — อัปเดตหลายค่าพร้อมกัน
 
 ```python
 student = {"name": "Alice", "age": 15}
@@ -23,7 +23,7 @@ print(student)
 
 ---
 
-## del — Delete a Key
+## del — ลบ Key
 
 ```python
 student = {"name": "Alice", "age": 15, "score": 90}
@@ -34,7 +34,7 @@ print(student)
 
 ---
 
-## .values() — Get All Values
+## .values() — ดึงค่าทั้งหมด
 
 ```python
 student = {"name": "Alice", "age": 15, "score": 90}
@@ -52,7 +52,7 @@ Alice
 
 ---
 
-## .items() — Get Keys and Values Together
+## .items() — ดึง key และ value พร้อมกัน
 
 ```python
 student = {"name": "Alice", "age": 15}
@@ -69,12 +69,12 @@ age: 15
 
 ---
 
-## Methods Summary
+## สรุป Methods
 
-| Method | Purpose |
+| Method | หน้าที่ |
 |--------|---------|
-| `dict["key"] = x` | Change / add |
-| `.update({...})` | Update several values |
-| `del dict["key"]` | Delete a key |
-| `.values()` | Get all values |
-| `.items()` | Get key-value pairs |
+| `dict["key"] = x` | แก้ไข / เพิ่ม |
+| `.update({...})` | อัปเดตหลายค่า |
+| `del dict["key"]` | ลบ key |
+| `.values()` | ดึงค่าทั้งหมด |
+| `.items()` | ดึงคู่ key-value |

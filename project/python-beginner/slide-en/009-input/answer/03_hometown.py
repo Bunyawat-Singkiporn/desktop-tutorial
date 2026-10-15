@@ -1,9 +1,2 @@
-# โจทย์: รับชื่อและเมืองบ้านเกิด แล้วแสดงประโยคแนะนำตัว
-
-# รับข้อมูลจากผู้ใช้
-name = input()   # ชื่อ
-city = input()   # เมืองบ้านเกิด
-
-# แสดงประโยคแนะนำตัว
-print("I am", name, "from " + city + ".")
-print("Nice to meet you!")
+city = input()
+print("Hometown:", city)

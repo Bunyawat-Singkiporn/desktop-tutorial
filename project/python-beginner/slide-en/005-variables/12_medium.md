@@ -1,0 +1,46 @@
+# 🍽️ Variables — Q10: สลับเบอร์โต๊ะอาหาร
+
+**Difficulty:** 🟡 Medium
+
+---
+
+## Task
+
+ร้านอาหารจองโต๊ะผิดคู่: โต๊ะ A ได้เบอร์ 7 โต๊ะ B ได้เบอร์ 3
+ต้องการสลับเบอร์ให้ถูกต้อง
+
+ใช้ตัวแปรชั่วคราวสลับค่า แล้วพิมพ์ผลตามตัวอย่าง
+
+---
+
+## Input
+None (this program does not read user input)
+
+## Output
+See the example
+
+---
+
+## Example
+
+**Output:**
+
+```text
+Table A: 3
+Table B: 7
+```
+
+---
+
+## Hint
+ย้ายค่าหนึ่งค่าไปเก็บในกล่องชั่วคราวก่อน ไม่งั้นค่าเดิมจะหาย
+
+---
+
+## Starter Code
+```python
+table_a = 7
+table_b = 3
+
+# Write your code here
+```

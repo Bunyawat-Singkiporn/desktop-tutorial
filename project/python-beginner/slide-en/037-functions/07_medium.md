@@ -1,4 +1,4 @@
-# Practice Functions — Question 6: Game Menu
+# ⚙️ Functions — Q7: Countdown from 3
 
 **Difficulty:** 🟡 Medium
 
@@ -6,33 +6,48 @@
 
 ## Task
 
-You are making a game. Create `show_menu()` for the main menu.
+A game screen counts down before start.
 
-Call it **2 times** (open the menu, then open it again).
+**Requirements:**
+
+- Create `countdown()` that prints 3, then 2, then 1, then `Go!`
+- You may use list `[3, 2, 1]` in a loop
+- Call it once
 
 ---
 
+## Input
+
+None (values are set in the program / call functions in code)
+
 ## Output
 
+4 lines
+
+---
+
+## Example
+
+**Output:**
+
+```text
+3
+2
+1
+Go!
 ```
-=== My Game ===
-1. Start
-2. High Score
-3. Exit
-=== My Game ===
-1. Start
-2. High Score
-3. Exit
-```
+
+
+---
+
+## 💡 Hint
+
+Loop over the number list, then print Go!
 
 ---
 
 ## Starter Code
 
 ```python
-def show_menu():
-    # Write your code here
-
-show_menu()
-show_menu()
+# countdown()
 ```

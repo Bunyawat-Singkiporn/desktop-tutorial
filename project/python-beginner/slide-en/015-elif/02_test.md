@@ -1,45 +1,38 @@
-# 👤 Practice elif — Question 1: Age Group
-
+# 🌡️ elif — Q1: ระดับอุณหภูมิห้อง
 **Difficulty:** 🟢 Easy
-
 ---
-
-## Problem
-
-Get age then show age group
-
-|condition| Output |
-|----------|--------|
-|Age < 13| `Child` |
-|Age 13–17| `Teen` |
-|Age 18+| `Adult` |
-
+## Task
+แอปบ้านอัจฉริยะจัดระดับอุณหภูมิห้องแล้วแนะนำข้อความสั้นๆ
+เขียนโปรแกรมรับอุณหภูมิ แล้วบอกระดับอากาศ
+**Rules:**
+- อุณหภูมิ `>= 35` → `Hot`
+- อุณหภูมิ `>= 25` → `Warm`
+- อุณหภูมิ `>= 15` → `Cool`
+- น้อยกว่านั้น → `Cold`
 ---
-
-## example
-
+## Input
+อุณหภูมิเป็นจำนวนเต็ม 1 บรรทัด
+## Output
+ระดับอากาศ 1 บรรทัด
+---
+## Example
 **Input:**
-```
-15
+```text
+28
 ```
 
 **Output:**
+
+```text
+Warm
 ```
-Teen
-```
-
----
-
-## 💡 Hint
-
-Use `elif` to add conditions between `if` and `else`.
 
 ---
 
 ## Starter Code
 
 ```python
-age = int(input())
+temperature = int(input())
 
 # Write your code here
 ```

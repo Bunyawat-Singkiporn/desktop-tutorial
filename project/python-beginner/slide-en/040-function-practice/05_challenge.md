@@ -1,28 +1,45 @@
-# 🔥 Practice Function — Question 4: Score System
+# 🧩 Function Practice — Q5: ระบบคะแนน dict
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
-## Problem
+## Task
 
-Create a score system with separate functions:
+เก็บคะแนนนักเรียนใน dict
 
-| Function | Responsibility |
-|----------|----------------|
-| `add_score(scores, name, score)` | Adds a score to the dictionary |
-| `get_average(scores)` | Returns the average of all values in the dictionary |
-| `get_top(scores)` | Returns the name and score of the highest-scoring student |
-| `show_all(scores)` | Displays every student and score |
+**Requirements:**
 
-**Example Output:**
+- `add_score(scores, name, score)` ใส่คะแนนแล้วคืน scores
+- `get_average(scores)` คืนค่าเฉลี่ยจาก `.values()`
+- เพิ่ม Alice=80 Bob=100 แล้วพิมพ์ค่าเฉลี่ย
+
+---
+
+## Input
+
+None (values are set in the program / call functions in code)
+
+## Output
+
+1 line(s)
+
+---
+
+## Example
+
+**Output:**
+
+```text
+90.0
 ```
-Alice: 85
-Bob: 92
-Charlie: 78
-Average: 85.0
-Top: Bob (92)
-```
+
+
+---
+
+## Hint
+
+ใช้ .values() รวมคะแนน
 
 ---
 
@@ -35,19 +52,8 @@ def add_score(scores, name, score):
 def get_average(scores):
     # Write your code here
 
-def get_top(scores):
-    # Write your code here
-
-def show_all(scores):
-    # Write your code here
-
 scores = {}
-add_score(scores, "Alice", 85)
-add_score(scores, "Bob", 92)
-add_score(scores, "Charlie", 78)
-
-show_all(scores)
-print(f"Average: {get_average(scores):.1f}")
-top_name, top_score = get_top(scores)
-print(f"Top: {top_name} ({top_score})")
+scores = add_score(scores, "Alice", 80)
+scores = add_score(scores, "Bob", 100)
+print(get_average(scores))
 ```

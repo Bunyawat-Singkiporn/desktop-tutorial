@@ -1,50 +1,53 @@
-# 🎢 Practice and/or/not — Question 1: Ride Allowed
+# Logical #
 
-**Difficulty:** 🟢 Easy
+difficulty:
 
 ---
 
-## Problem
+♪ Task
 
-Read age and height, then check whether the ride is allowed.
+The rollercoster player determines that the player must be at least 120 centimeters tall.
+And it's at least 10 years old to get up.
 
-**Conditions:** both must pass
-- age >= 12
-- height >= 140
+Let's program the height and age and say it's up.
 
-| Result | Output |
-|--------|--------|
-| Both pass | `Ride Allowed` |
-| Fail | `Cannot Ride` |
+♪ Rolls:*
+
+- The height.
+- If it's not ?
+
+---
+
+♪ Input
+
+2 lines ^ high (numbers) and age (numbers)
+
+♪ Output
+
+One line of permissions
 
 ---
 
 ## Example
 
-**Input:**
-```
-14
-150
+**Input:*```text
+130
+12
 ```
 
 **Output:**
+
+```text
+Allowed
 ```
-Ride Allowed
-```
-
----
-
-## 💡 Hint
-
-Use `and` to check that both conditions are true at the same time
 
 ---
 
 ## Starter Code
 
 ```python
-age = int(input())
 height = int(input())
+age = int(input())
 
 # Write your code here
 ```

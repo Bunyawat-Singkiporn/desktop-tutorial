@@ -1,45 +1,28 @@
-# 🔄 Practice: Naming Rules — Question 3: Rewrite Bad Code
 
-**Difficulty:** 🟡 Medium
 
----
-
-## Problem
-
-The code below works, but the variable names are terrible — **rewrite it with correct names** while keeping the same Output.
-
-```python
-a = "Laptop"
-b = 25000
-c = 3
-d = b * c
-
-print(a)
-print(b)
-print(c)
-print(d)
-```
-
-**Output:**
-```
-Laptop
-25000
-3
-75000
-```
+**Difficulty:** 🟢 Easy
 
 ---
 
-## 💡 Hint
 
-Choose names that say what is stored, e.g. `product_name`, `unit_price`, `quantity`, `total_price`
+
+
+
+
 
 ---
 
-## Starter Code
+## Input
+## Output
+---
 
-```python
-# Rewrite with proper snake_case names
-product_name = "Laptop"
-# ... your code here
+
+
+**Output:**# 🌡️ Naming Rules — ข้อ 3: อุณหภูมิห้องแล็บ## โจทย์เพื่อนตั้งชื่อตัวแปรว่า `2temp` ซึ่งผิดกฎ (ขึ้นต้นด้วยตัวเลขไม่ได้)เก็บอุณหภูมิ 24 ในตัวแปรที่ขึ้นต้นด้วยตัวอักษร แล้วพิมพ์ตามตัวอย่างไม่มี (โปรแกรมนี้ไม่รับค่าจากผู้ใช้)ดูตัวอย่าง## ตัวอย่าง```text
+Lab Temp: 24
+```
+---
+
+## Starter Code```python
+# ห้ามขึ้นต้นชื่อด้วยตัวเลข
 ```

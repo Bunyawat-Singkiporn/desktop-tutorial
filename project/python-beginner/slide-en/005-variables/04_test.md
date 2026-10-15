@@ -1,46 +1,38 @@
-# 📐 Practice: Variables — Question 3: Rectangle
+# 🎮 Variables — Q3: ทักทายผู้เล่น
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Store the dimensions of a rectangle and calculate area + perimeter.
+เกมฝึกพิมพ์อยากทักทายผู้เล่นด้วยชื่อที่เก็บไว้
 
-| Variable | Value |
-|----------|-------|
-| `width` | `5` |
-| `height` | `8` |
-| `area` | width × height |
-| `perimeter` | (width + height) × 2 |
+ใช้ `print` คั่นด้วยจุลภาค เพื่อแสดงคำทักทายและชื่อในบรรทัดเดียวตามตัวอย่าง
+
+---
+
+## Input
+None (this program does not read user input)
+
+## Output
+See the example
+
+---
+
+## Example
 
 **Output:**
+
+```text
+Player: Nalin
 ```
-Width: 5
-Height: 8
-Area: 40
-Perimeter: 26
-```
-
----
-
-## 💡 Hint
-
-- Area = `width * height`
-- Perimeter = `(width + height) * 2`
 
 ---
 
 ## Starter Code
-
 ```python
-width = 5
-height = 8
+player = "Nalin"
 
-# Calculate area and perimeter
-area = 
-perimeter = 
-
-# Print all results
+# Write your code here
 ```

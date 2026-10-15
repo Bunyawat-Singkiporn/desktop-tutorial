@@ -1,38 +1,44 @@
-# 🐛 Practice Review Dictionaries — Question 1: Fix Access Bug
+# 🔁 Review Dicts — Q2: อ่านค่าปลอดภัย
 
 **Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-The code below contains bugs. Fix it so that it produces the correct output.
+อ่านคะแนนแบบเช็คคีย์ก่อน
 
-```python
-# Code with bugs
-student = {"name": "Alice", "age": 15}
-print(student["score"])   # KeyError!
-print(student[name])      # NameError!
-```
+กำหนด `student = {"name": "Gina", "room": "M3"}`
 
-**Correct Output:**
-```
-Name: Alice
-Age: 15
-```
+ถ้ามี `score` แสดงค่า ไม่งั้นแสดง `No score yet`
 
 ---
 
-## 💡 Hint
+## Input
 
-Check whether a key exists before accessing it, and use the string `"name"` rather than the variable `name`.
+None (values are set in the program)
+
+## Output
+
+One line
+
+---
+
+## Example
+
+**Output:**
+
+```text
+No score yet
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-student = {"name": "Alice", "age": 15}
+student = {"name": "Gina", "room": "M3"}
 
-# Fix the code
+# Write your code here
 ```

@@ -1,46 +1,56 @@
-# 🔥 Practice Functions — Question 4: Refactor
+# ⚙️ Functions — Q5: Mini calculator
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
-## Problem
+## Task
 
-The code below works, but it is long and repetitive. Refactor it into **three functions** with meaningful names.
+A calculator reads two numbers and shows their sum.
 
-```python
-# Original code (do not modify)
-print("=== Student 1 ===")
-print("Name: Alice")
-print("Score: 85")
-print("Status: Pass")
-print()
-print("=== Student 2 ===")
-print("Name: Bob")
-print("Score: 42")
-print("Status: Fail")
-print()
-print("=== Student 3 ===")
-print("Name: Charlie")
-print("Score: 78")
-print("Status: Pass")
+**Requirements:**
+
+- Create `add_two()` that reads two integers and prints `Sum: <total>`
+- Call it once
+
+---
+
+## Input
+
+See example
+
+## Output
+
+1 line
+
+---
+
+## Example
+
+**Input:**
+
+```text
+7
+8
 ```
 
-**Create functions and call them instead.** The output must remain the same.
+**Output:**
+
+```text
+Sum: 15
+```
+
 
 ---
 
 ## 💡 Hint
 
-Look for repeated sections. Those are the parts that should become functions.
+Read both inputs inside the function
 
 ---
 
 ## Starter Code
 
 ```python
-def show_student():
-    # Write your code here
-
-# Call it three times
+# add_two()
 ```

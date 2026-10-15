@@ -1,38 +1,37 @@
-# ➕ Practice: Operators — Question 1: Add Two Numbers
+
 
 **Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
 
-Get 2 numbers, then display their sum.
 
-**Input:**
-```
+
+
+---
+
+## Input
+## Output
+---
+
+
+
+**Input:**# 🔢 Operators — ข้อ 2: บวกลบคูณหาร## โจทย์รับจำนวนเต็ม a แล้วแสดง a+3, a-3, a*3, a/3 คนละบรรทัดดูตัวอย่าง4 บรรทัด## ตัวอย่าง```text
 10
-20
 ```
-
-**Output:**
+**Output:**```text
+13
+7
+30
+3.3333333333333335
 ```
-Sum: 30
-```
-
 ---
 
-## 💡 Hint
-
-- Get 2 values from `input()` and convert to `int`
-- Add with `+`, then `print`
-
+## Hint
 ---
 
-## Starter Code
-
-```python
+## Starter Codeใช้ / จะได้ทศนิยม```python
 a = int(input())
-b = int(input())
 
-# Calculate and print the sum
+# แสดงผล
 ```

@@ -1,49 +1,39 @@
-# 🎬 Practice: Comments — Question 3: Movie Ticket
+# 🙈 Comments — Q3: Comment ไม่โผล่ใน Output
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Write a program that displays a movie ticket **with a comment for every step** (at least 4 comments).
+เพื่อนคิดว่าข้อความหลัง `#` จะโผล่บนจอด้วย
+ครูให้พิสูจน์ว่า comment ไม่ปรากฏใน Output เลย
+
+เขียนโปรแกรมที่มี comment อธิบาย และพิมพ์ข้อความจริงแค่ 2 บรรทัดตามตัวอย่าง
+(ห้ามพิมพ์ข้อความที่อยู่ใน comment ออกมา)
+
+---
+
+## Input
+None (this program does not read user input)
+
+## Output
+See the example
+
+---
+
+## Example
 
 **Output:**
-```
-========================
-     CINEMA TICKET
-========================
-Movie : Moana 2
-Seat  : B7
-Price : 200 baht
-========================
-Enjoy the movie!
-```
 
----
-
-## 💡 Hint
-
-Example comments you should have:
-```python
-# Display the top border
-# Display the movie name
-# Display the seat
-# Display the price
+```text
+Reminder Board
+Bring your PE kit
 ```
 
 ---
 
 ## Starter Code
-
 ```python
-# Display the top border
-
-# Display the title: CINEMA TICKET
-
-# Display the middle border
-
-# Display ticket details
-
-# Display the bottom border and message
+# Write your code here
 ```

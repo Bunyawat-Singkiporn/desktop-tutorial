@@ -1,37 +1,44 @@
-# 👨‍🎓 Practice Tuples — Question 3: Student Records
+# 📦 Tuples — Q4: นับจำนวนวันในสัปดาห์เรียน
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Create records for three students, storing each one as a `(name, score)` tuple. Display every record and label each student Pass or Fail (score >= 50).
+นับจำนวนวันเรียนในสัปดาห์
 
-```python
-students = [("Alice", 85), ("Bob", 42), ("Charlie", 73)]
-```
+กำหนด `days = ("Mon", "Tue", "Wed", "Thu", "Fri")`
+
+แสดง `Days: 5`
+
+---
+
+## Input
+
+None (values are set in the program)
+
+## Output
+
+One line
+
+---
+
+## Example
 
 **Output:**
+
+```text
+Days: 5
 ```
-Alice: 85 → Pass
-Bob: 42 → Fail
-Charlie: 73 → Pass
-```
 
----
-
-## 💡 Hint
-
-- Loop through `students`
-- Each entry is a tuple: `student[0]` = name, `student[1]` = score.
 
 ---
 
 ## Starter Code
 
 ```python
-students = [("Alice", 85), ("Bob", 42), ("Charlie", 73)]
+days = ("Mon", "Tue", "Wed", "Thu", "Fri")
 
 # Write your code here
 ```

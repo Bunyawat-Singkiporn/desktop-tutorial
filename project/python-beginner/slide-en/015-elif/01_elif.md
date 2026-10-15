@@ -1,49 +1,36 @@
-# 🔀 elif — multiple conditions
-
+# 🔀 elif — เงื่อนไขหลายทาง
 ---
-
-## Why must there be an elif?
-
-`if / else` has only **2 options**.
-
+## ทำไมต้องมี elif?
+`if / else` มีได้แค่ **2 ทางเลือก** เท่านั้น
 ```
-✅ Passed
-❌ Not passed
+✅ ผ่าน
+❌ ไม่ผ่าน
 ```
-
-But sometimes we have **more than 2 cases** such as a student's grade:
-
+แต่บางครั้งเรามี **มากกว่า 2 กรณี** เช่น เกรดของนักเรียน:
 ```
-A → high score
-B → Medium
-C → enough to pass
-F → Fail
+A → คะแนนสูง
+B → ปานกลาง
+C → พอผ่าน
+F → ไม่ผ่าน
 ```
-
-So we can use `elif` to keep adding conditions.
-
+เราจึงใช้ `elif` เพื่อเพิ่มเงื่อนไขได้เรื่อย ๆ
 ---
-
-## writing style
-
+## รูปแบบการเขียน
 ```python
-if condition 1:
-    # done when condition 1 is true
+if เงื่อนไขที่ 1:
+    # ทำเมื่อเงื่อนไข 1 เป็นจริง
 
-elif condition 2:
-    # Do it when condition 2 is true.
+elif เงื่อนไขที่ 2:
+    # ทำเมื่อเงื่อนไข 2 เป็นจริง
 
-elif condition 3:
-    # done when condition 3 is true
+elif เงื่อนไขที่ 3:
+    # ทำเมื่อเงื่อนไข 3 เป็นจริง
 
 else:
-    # Do it when none of the conditions are true.
+    # ทำเมื่อไม่มีเงื่อนไขใดเป็นจริงเลย
 ```
-
 ---
-
-## Example program — graded
-
+## Exampleโปรแกรม — ให้เกรด
 ```python
 score = int(input())
 
@@ -56,14 +43,10 @@ elif score >= 60:
 else:
     print("F")
 ```
-
 ---
-
-## How it works
-
-> Python checks conditions **from top to bottom**
-> When you encounter a true condition → **Immediately stop** Do not continue checking.
-
+## วิธีทำงาน
+> Python ตรวจเงื่อนไข **จากบนลงล่าง**
+> เมื่อเจอเงื่อนไขที่เป็นจริง → **หยุดทันที** ไม่ตรวจต่อ
 | Input (score) | Output |
 |---------------|--------|
 | `85` | `A` |

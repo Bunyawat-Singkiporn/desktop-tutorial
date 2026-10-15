@@ -1,0 +1,6 @@
+first_name = input()
+last_name = input()
+nick_name = input()
+print("First:", first_name)
+print("Last:", last_name)
+print("Nick:", nick_name)

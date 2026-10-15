@@ -1,0 +1,7 @@
+print("+----------------------+")
+print("|     QUEUE TICKET     |")
+print("+----------------------+")
+print("|  Number : A045       |")
+print("|  Room   : 3          |")
+print("|  Floor  : 2          |")
+print("+----------------------+")

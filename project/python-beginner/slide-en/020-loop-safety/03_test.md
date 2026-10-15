@@ -1,36 +1,51 @@
-# ⏭️ Practice: Loop Safety — Question 2: Skip Even Numbers
+d d d d d d d d d d d d d d d d d d d d d d d d d d d
 
-**Difficulty:** 🟡 Medium
+difficulty:
 
 ---
 
-## Problem
+♪ Task
 
-Loop 1–10, but skip all even numbers. Show only odd numbers
+If you're divisible by 5, you're going to have ^1 to ^12.
+Print only the remaining numbers
+
+---
+
+♪ Input
+
+No.
+
+♪ Output
+
+1 divided by 12.
+
+---
+
+## Example
+
+**Input:*```text
+
+```
 
 **Output:**
-```
+
+```text
 1
+2
 3
-5
+4
+6
 7
+8
 9
+11
+12
 ```
-
----
-
-## 💡 Hint
-
-- If `i % 2 == 0` (even number) then `continue`
-- If not, it's normal `print`.
 
 ---
 
 ## Starter Code
 
 ```python
-for i in range(1, 11):
-    if i % 2 == 0:
-        # Skip even numbers
-    print(i)
+# Write your code here
 ```

@@ -1,57 +1,57 @@
-# 🎯 Final Review — Review Before Phase 2
+♪ Final Review .
 
 ---
 
-## What You Need to Know from Phase 1
+## Things to know from Phaase 1
 
-### Fundamentals
-- Variables, Data Types, Input/Output
-- Operators, Conditions (if/elif/else)
-- Loops (for, while)
+♪ Basically ♪
+- Veriables, Data Types, Input/ Output
+- Operators, concepts.
+- Loops.
 
-### Collections
-- **List** — Stores multiple values and can be modified
-- **Tuple** — Stores fixed data
-- **Set** — Stores unique values
-- **Dictionary** — Stores key-value pairs
+## Collections
+- List, edit.
+Fixed data.
+-Set*.
+- I'm sorry.
 
-### Functions
-- `def`, parameters, `return`
-- Scope (local vs global)
+# Funactions
+- ? ▪
+- Scope.
 
-### Quality
+##Quity
 - Debugging (3 error types)
-- Code Readability
+Code Readability.
 
 ---
 
-## Readiness Checklist
+♪ Readin' Checklist
 
-**Collections:**
-- [ ] I can create and use a list.
-- [ ] I can use list methods (`append`, `remove`, `sort`).
-- [ ] I understand the differences among lists, tuples, and sets.
-- [ ] I can create and use a dictionary.
-- [ ] I can use dictionary methods.
+== sync, corrected by elderman == *
+- [ ] Build and use List
+- [ ] Use List Methods.
+- [ ] Understand List / Tuple / Set
+- [ ] Create and run the dictionary.
+- [ ] Use Dictionary Methods.
 
-**Functions:**
-- [ ] I can create a function.
-- [ ] I can use parameters.
-- [ ] I can use `return`.
-- [ ] I understand local and global scope.
+== sync, corrected by elderman == *
+- [ ] Create a function.
+- [ ] Use parmeters.
+- [ ] Use return.
+- [ ] Understand local vs Global scope
 
-**Problem Solving:**
-- [ ] I can read code and predict its output.
-- [ ] I can find and fix bugs.
-- [ ] I can write clean, readable code.
+== sync, corrected by elderman ==
+- [ ] Read the code and tell output.
+- [ ] Find and solve the bg.
+- [ Clear Code ] Easy to read.
 
 ---
 
-## What Will You Learn in Phase 2?
+♪ What do you want to learn? !
 
-- Object-Oriented Programming (OOP)
-- File Input/Output
-- Modules & Libraries
-- Error Handling
+- Obj-Oriented Programming (Oop)
+- Four Input/output
+- ladies & Libraries
+- Security Handling.
 
-> The fundamentals from Phase 1 are the key to everything in Phase 2.
+> Based in Phase 1 is the key to all Pase 2

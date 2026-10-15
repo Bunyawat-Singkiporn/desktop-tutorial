@@ -1,36 +1,32 @@
-# 🔄 Practice: Type Conversion — Question 1: Number to Next Year
+
 
 **Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
 
-Get age from user Then show your age next year.
 
-**Input:**
-```
-15
-```
 
-**Output:**
-```
-Next year: 16
-```
 
 ---
 
-## 💡 Hint
-
-- `input()` always returns a string.
-- Use `int()` to convert before adding 1.
-
+## Input
+## Output
 ---
 
-## Starter Code
 
-```python
-age = input()      # Get the value — also a string!
 
-# Convert to int and add 1.
+**Input:**# 🔄 Type Conversion — ข้อ 1: ชั้นจอดรถถัดไป## โจทย์ตึกจอดรถมีลิฟต์บอกชั้นปัจจุบัน
+ให้รับชั้นปัจจุบัน แล้วบอกชั้นถัดไปที่ลิฟต์จะไปชั้นปัจจุบันเป็นจำนวนเต็ม 1 บรรทัดข้อความบอกชั้นถัดไป 1 บรรทัด## ตัวอย่าง```text
+3
+```
+**Output:**```text
+Next floor: 4
+```
+---
+
+## Starter Code```python
+floor = input()
+
+# Write your code here
 ```

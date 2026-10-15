@@ -1,38 +1,46 @@
-# 📏 Practice Review Lists — Question 2: Word Lengths
+# 🔁 Review Lists — Q3: เพิ่มของเข้าตะกร้า
 
 **Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Define word list Show each word along with its length.
+ลูกค้าหยิบของเพิ่มเข้าตะกร้า
 
-```python
-words = ["cat", "python", "hi", "elephant", "ok"]
-```
+กำหนด `cart = ["Milk", "Bread"]` แล้ว append `Eggs` และ `Butter`
 
-**Output:**
-```
-cat: 3
-python: 6
-hi: 2
-elephant: 8
-ok: 2
-```
+แสดง list
 
 ---
 
-## 💡 Hint
+## Input
 
-Use `len(word)` to find the length of each word.
+None (values are set in the program)
+
+## Output
+
+list หนึ่งบรรทัด
+
+---
+
+## Example
+
+**Output:**
+
+```text
+['Milk', 'Bread', 'Eggs', 'Butter']
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-words = ["cat", "python", "hi", "elephant", "ok"]
+cart = ["Milk", "Bread"]
 
 # Write your code here
+
+print(cart)
 ```

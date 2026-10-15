@@ -1,10 +1,10 @@
-# ⏳ while Loop — Loops according to condition.
+# ⏳ while Loop — วนซ้ำตามเงื่อนไข
 
 ---
 
-## What is a while Loop?
+## while Loop คืออะไร?
 
-`while` loops **as long as the condition is True**
+`while` วนซ้ำ **ตราบเท่าที่เงื่อนไขยังเป็น True**
 
 ```python
 count = 1
@@ -14,7 +14,7 @@ while count <= 5:
     count = count + 1
 ```
 
-Output:
+ผลลัพธ์:
 ```
 1
 2
@@ -25,12 +25,12 @@ Output:
 
 ---
 
-## while Loop structure
+## โครงสร้าง while Loop
 
 ```python
-while condition:
-    # Repeated code
-    # Variables must always be changed!
+while เงื่อนไข:
+    # โค้ดที่ทำซ้ำ
+    # ต้องมีการเปลี่ยนแปลงตัวแปรเสมอ!
 ```
 
 ---
@@ -39,8 +39,8 @@ while condition:
 
 | | `for` | `while` |
 |--|-------|---------|
-|**Use when**|Know the exact number of turns|Cycle until the condition is False.|
-|**example**|Count 1–10|Repeat input until correct.|
+| **ใช้เมื่อ** | รู้จำนวนรอบแน่นอน | วนจนเงื่อนไขเป็น False |
+| **ตัวอย่าง** | นับ 1–10 | รับ input ซ้ำจนถูก |
 
 ---
 
@@ -56,7 +56,7 @@ while count > 0:
 print("Blast off! 🚀")
 ```
 
-Output:
+ผลลัพธ์:
 ```
 5
 4
@@ -68,7 +68,7 @@ Blast off! 🚀
 
 ---
 
-## Example: Accept Input until correct
+## Example: รับ Input จนกว่าจะถูก
 
 ```python
 secret = 42
@@ -83,20 +83,20 @@ print("Correct!")
 
 ---
 
-## ⚠️ Watch out: Infinite Loop
+## ⚠️ ระวัง: Infinite Loop
 
 ```python
-# ❌ Never stops — forgot to add count!
+# ❌ วนไม่หยุด — ลืมเพิ่ม count!
 count = 1
 while count <= 5:
     print(count)
-    # No count = count + 1 → Condition is always True.
+    # ไม่มี count = count + 1 → เงื่อนไขเป็น True ตลอด
 
-# ✅ Correct
+# ✅ ถูกต้อง
 count = 1
 while count <= 5:
     print(count)
-    count = count + 1   # ← You must always have this line!
+    count = count + 1   # ← ต้องมีบรรทัดนี้เสมอ!
 ```
 
-> Press **Ctrl + C** to stop the stuck program.
+> กด **Ctrl + C** เพื่อหยุดโปรแกรมที่ค้าง

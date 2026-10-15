@@ -1,29 +1,44 @@
-# ➕ Practice Parameters — Question 2: Add and Print
+# 📥 Parameters — Q3: แสดงราคาสินค้า
 
 **Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Create an `add(a, b)` function that displays the sum.
+ชั้นวางแสดงราคา
+
+**Requirements:**
+
+- สร้าง `show_price(price)` พิมพ์ `Price: <price>`
+- เรียกกับ `99` และ `150`
+
+---
+
+## Input
+
+None (values are set in the program / call functions in code)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## Example
 
 **Output:**
+
+```text
+Price: 99
+Price: 150
 ```
-8
-30
-100
-```
+
 
 ---
 
 ## Starter Code
 
 ```python
-def add(a, b):
-    # Write your code here
-
-add(3, 5)
-add(10, 20)
-add(55, 45)
+# show_price
 ```

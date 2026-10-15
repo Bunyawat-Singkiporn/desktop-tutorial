@@ -1,0 +1,8 @@
+print("========================")
+print("      COFFEE MENU")
+print("========================")
+print("Espresso        45")
+print("Latte           55")
+print("Cappuccino      55")
+print("Mocha           65")
+print("========================")

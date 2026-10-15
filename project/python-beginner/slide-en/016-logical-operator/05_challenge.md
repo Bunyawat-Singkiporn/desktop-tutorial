@@ -1,77 +1,74 @@
-# 🔥 Practice and/or/not — Question 4: Theme Park Entry
+¶ Logical ¶
 
-**Difficulty:** 🔴 Hard
+difficulty:
 
 ---
 
-## Problem
+♪ Task
 
-The theme park has these rules:
+The theme park charges two-step tickets.
 
-- **Child** (age < 12): may enter **only with a guardian**
-- **Adult** (age >= 12): may always enter **except** when `banned = True`
+A basic price. **
 
-Read:
-1. age (int)
-2. has a guardian (`True` / `False`)
-3. is banned (`True` / `False`)
+▪ Prescription
+•-------- . .----
+♫ The height ♫ 120 ♫ ♫ ♫ age ♫ 12 ♫ 900 ♫
+All right.
 
-Show `Welcome` or `Not Allowed`
+Step 2 . .
 
-> Mix skills: and + or + not + elif
+▪ Add to
+•----------
+• as VlP
+▪ In addition
+
+Program seniors, age VlP and day, and then issue tickets.
+
+---
+
+♪ Input
+
+4 lines high, age, VIP (1)/0) days
+
+♪ Output
+
+The price of the tickets in the box shows the basic cost of the delivery and the total cost.
 
 ---
 
 ## Example
 
-**Input:**
-```
-10
-True
-False
-```
-**Output:**
-```
-Welcome
+**Input:*```text
+140
+15
+0
+weekend
 ```
 
-**Input:**
-```
-10
-False
-False
-```
 **Output:**
-```
-Not Allowed
-```
 
-**Input:**
-```
-20
-True
-True
-```
-**Output:**
-```
-Not Allowed
-```
+```text
+==========================
+       THEME PARK
+==========================
+Base Price : 900
+Fast Pass  : 200
+Total      : 1100
+==========================
+```---
+
+♪ Hint
+
+First, use a base price.
+Step two is used to evaluate the fast pass.
 
 ---
 
-## 💡 Hint
-
-- Split into 2 main cases: child vs adult
-- Each case has different conditions
-
----
-
-## Starter Code
-
-```python
+♪ Starter Code```python
+height = int(input())
 age = int(input())
-has_guardian = input()
-banned = input()
+is_vip = int(input())
+day = input()
 
 # Write your code here
 ```

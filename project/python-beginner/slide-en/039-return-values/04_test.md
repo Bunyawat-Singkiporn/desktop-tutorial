@@ -1,37 +1,49 @@
-# 🎓 Practice Return Values — Question 3: Get Grade
+# ↩️ Return Values — Q4: พื้นที่วงกลมหยาบ
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Create a `get_grade(score)` function that returns a grade, then display the result with an f-string.
+ใช้สูตรหยาบ area = 3 * r * r
 
-| Score | Grade |
-|-------|-------|
-| >= 80 | `A` |
-| >= 70 | `B` |
-| >= 60 | `C` |
-| < 60 | `F` |
+**Requirements:**
+
+- สร้าง `circle_area(r)` คืนค่าพื้นที่
+- พิมพ์ผลของ `circle_area(2)` และ `circle_area(5)`
+
+---
+
+## Input
+
+None (values are set in the program / call functions in code)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## Example
 
 **Output:**
+
+```text
+12
+75
 ```
-Score 85 → Grade A
-Score 72 → Grade B
-Score 55 → Grade F
-```
+
 
 ---
 
 ## Starter Code
 
 ```python
-def get_grade(score):
+def circle_area(r):
+    # return
     # Write your code here
 
-scores = [85, 72, 55]
-for s in scores:
-    grade = get_grade(s)
-    print(f"Score {s} → Grade {grade}")
+print(circle_area(2))
+print(circle_area(5))
 ```

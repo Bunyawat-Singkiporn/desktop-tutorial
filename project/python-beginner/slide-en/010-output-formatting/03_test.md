@@ -1,39 +1,28 @@
-# 🏷️ Practice: Output Formatting — Question 2: Product Label
 
-**Difficulty:** 🟡 Medium
 
----
-
-## Problem
-
-Get a product name and price, then display a product label with an f-string.
-
-**Input:**
-```
-Notebook
-35.5
-```
-
-**Output:**
-```
-Product: Notebook
-Price: 35.50 baht
-```
+**Difficulty:** 🟢 Easy
 
 ---
 
-## 💡 Hint
 
-- Use `float(input())` for the price
-- Use `{price:.2f}` in the f-string to show 2 decimal places
+
+
 
 ---
 
-## Starter Code
+## Input
+## Output
+---
 
-```python
-product_name = input()
-price = float(input())
 
-# Print using f-string
+
+**Output:**# 🖨️ Output Formatting — ข้อ 3: ราคาทศนิยม 2 ตำแหน่ง## โจทย์มี price = 12.5 แสดง Price: 12.50ไม่มี (กำหนดค่าในโปรแกรม)1 บรรทัด## ตัวอย่าง```text
+Price: 12.50
+```
+---
+
+## Starter Code```python
+price = 12.5
+
+# แสดงทศนิยม 2 ตำแหน่ง
 ```

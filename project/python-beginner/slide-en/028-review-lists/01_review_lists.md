@@ -1,10 +1,10 @@
-# 🔄 Review Lists — Review List
+# 🔄 Review Lists — ทบทวน List
 
 ---
 
-## All the things I learned
+## สิ่งที่เรียนมาทั้งหมด
 
-### Create and access
+### สร้างและเข้าถึง
 ```python
 fruits = ["apple", "banana", "mango"]
 print(fruits[0])    # apple
@@ -23,16 +23,16 @@ for i in range(len(fruits)):
 
 ### Methods
 ```python
-fruits.append("kiwi")        # add at the end
-fruits.remove("banana")      # Delete by value
-fruits[0] = "grape"          # Edit according to position
-fruits.sort()                # Sort less→more
-fruits.sort(reverse=True)    # Arrange more→less
+fruits.append("kiwi")        # เพิ่มท้าย
+fruits.remove("banana")      # ลบตามค่า
+fruits[0] = "grape"          # แก้ไขตามตำแหน่ง
+fruits.sort()                # เรียงน้อย→มาก
+fruits.sort(reverse=True)    # เรียงมาก→น้อย
 ```
 
 ---
 
-## Pattern sums scores and averages
+## Pattern รวมคะแนนและหาค่าเฉลี่ย
 
 ```python
 scores = [80, 75, 90, 65, 88]
@@ -47,21 +47,21 @@ print("Average:", average)
 
 ---
 
-## Common errors
+## ข้อผิดพลาดที่พบบ่อย
 
-|problem|example|correct|
+| ปัญหา | ตัวอย่าง | แก้ไข |
 |-------|---------|-------|
-|Index over size|`fruits[5]` (only 3)|Check with `len()`|
-|Delete missing values.| `fruits.remove("grape")` |Check with `in` first.|
-|Forgot index starts at 0|`fruits[1]` is the second one.|Remember: first one = `[0]`|
+| Index เกินขนาด | `fruits[5]` (มีแค่ 3 ตัว) | ตรวจด้วย `len()` |
+| ลบค่าที่ไม่มี | `fruits.remove("grape")` | ตรวจด้วย `in` ก่อน |
+| ลืม index เริ่มที่ 0 | `fruits[1]` คือตัวที่สอง | จำ: ตัวแรก = `[0]` |
 
 ---
 
-## Checklist before exam
+## Checklist ก่อนสอบ
 
-- [ ] can create a list
-- [ ] Access data with index (plus / minus).
-- [ ] Can use `len()`
-- [ ] loop through lists can be used in both ways.
-- [ ] Can use `.append()`, `.remove()`, `.sort()`.
-- [ ] filter and count with loop
+- [ ] สร้าง list ได้
+- [ ] เข้าถึงข้อมูลด้วย index (บวก / ลบ) ได้
+- [ ] ใช้ `len()` ได้
+- [ ] loop ผ่าน list ได้ทั้งสองแบบ
+- [ ] ใช้ `.append()`, `.remove()`, `.sort()` ได้
+- [ ] filter และ count ด้วย loop ได้

@@ -1,39 +1,39 @@
-# 💰 Practice elif — Question 2: Wallet Status
-
+# 🔋 elif — Q2: ระดับแบตเตอรี่
 **Difficulty:** 🟢 Easy
-
 ---
-
-## Problem
-
-Receive the amount and show the status
-
-|condition| Output |
-|----------|--------|
-|Money >= 100| `Rich` |
-|Money 50–99| `Normal` |
-|Money < 50| `Poor` |
-
+## Task
+โทรศัพท์แสดงระดับแบตเตอรี่เป็นคำสั้นๆ ให้ผู้ใช้รู้สถานะเร็วๆ
+เขียนโปรแกรมรับเปอร์เซ็นต์แบต แล้วแสดงเปอร์เซ็นต์กับสถานะ
+**Rules:**
+- แบต `>= 80` → `Full`
+- แบต `>= 40` → `Medium`
+- แบต `>= 15` → `Low`
+- น้อยกว่านั้น → `Critical`
 ---
-
-## example
-
+## Input
+เปอร์เซ็นต์แบตเตอรี่เป็นจำนวนเต็ม 1 บรรทัด
+## Output
+2 บรรทัด — เปอร์เซ็นต์ และสถานะ
+---
+## Example
 **Input:**
-```
-75
+```text
+42
 ```
 
 **Output:**
-```
-Normal
-```
 
+```text
+Battery : 42%
+Status  : Medium
+```
 ---
-
+## 💡 Hint
+เก็บข้อความสถานะไว้ในตัวแปรก่อน แล้วค่อยพิมพ์สองบรรทัดทีเดียว
+---
 ## Starter Code
-
 ```python
-money = int(input())
+battery = int(input())
 
 # Write your code here
 ```

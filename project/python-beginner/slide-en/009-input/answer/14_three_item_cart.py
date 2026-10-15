@@ -1,0 +1,12 @@
+item_a = int(input())
+item_b = int(input())
+item_c = int(input())
+total = item_a + item_b + item_c
+print("========================")
+print("         CART")
+print("========================")
+print("Item A :", item_a)
+print("Item B :", item_b)
+print("Item C :", item_c)
+print("Total  :", total)
+print("========================")

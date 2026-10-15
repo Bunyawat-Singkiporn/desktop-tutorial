@@ -1,38 +1,46 @@
-# 🔢 Practice Lists — Question 2: Print All Scores
+# 📋 Lists — Q3: Three snack menu items
 
 **Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Create a list of five scores and display each score with a for loop.
+A snack shop wants a short menu on the screen.
 
-```python
-scores = [85, 92, 78, 90, 88]
-```
+Set `snacks = ["Cookie", "Chips", "Jelly"]`
 
-**Output:**
-```
-85
-92
-78
-90
-88
-```
+Loop and print each snack name on its own line.
 
 ---
 
-## 💡 Hint
+## Input
 
-Use `for score in scores:` to loop through every value.
+None (values are set in the program)
+
+## Output
+
+3 lines (snack names)
+
+---
+
+## Example
+
+**Output:**
+
+```text
+Cookie
+Chips
+Jelly
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-scores = [85, 92, 78, 90, 88]
+snacks = ["Cookie", "Chips", "Jelly"]
 
 # Write your code here
 ```

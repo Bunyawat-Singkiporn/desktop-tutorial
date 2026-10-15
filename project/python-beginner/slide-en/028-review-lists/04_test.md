@@ -1,36 +1,46 @@
-# 🔀 Practice Review Lists — Question 3: Merge and Sort
+# 🔁 Review Lists — Q4: ลบเมนูเลิกขาย
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Combine 2 lists together, sort from lowest to highest and display the results.
+ร้านเลิกขายเมนูหนึ่งรายการ
 
-```python
-group_a = [5, 2, 9, 1]
-group_b = [8, 3, 7, 4]
-```
+กำหนด `menu = ["Pad Thai", "Soup", "Salad", "Curry"]`
+
+ลบ `Soup` แล้วแสดง list
+
+---
+
+## Input
+
+None (values are set in the program)
+
+## Output
+
+list หนึ่งบรรทัด
+
+---
+
+## Example
 
 **Output:**
+
+```text
+['Pad Thai', 'Salad', 'Curry']
 ```
-[1, 2, 3, 4, 5, 7, 8, 9]
-```
 
----
-
-## 💡 Hint
-
-Use `+` to combine lists, then use `.sort()`.
 
 ---
 
 ## Starter Code
 
 ```python
-group_a = [5, 2, 9, 1]
-group_b = [8, 3, 7, 4]
+menu = ["Pad Thai", "Soup", "Salad", "Curry"]
 
-# Combine two lists and sort
+# Write your code here
+
+print(menu)
 ```

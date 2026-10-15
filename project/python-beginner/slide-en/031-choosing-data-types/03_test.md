@@ -1,38 +1,45 @@
-# 🔄 Practice Choosing Data Types — Question 2: Dedup and Sort
+# 🧭 Choosing Types — Q3: วันในสัปดาห์คงที่
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Given a list containing duplicate values, use a set to create a sorted list of unique values.
+ชื่อวันเปลี่ยนไม่ได้ ใช้ tuple
 
-```python
-data = [5, 3, 1, 3, 7, 5, 2, 7, 1]
-```
+กำหนด `week = ("Mon", "Tue", "Wed")`
+
+แสดงวันแรกและจำนวนวัน
+
+---
+
+## Input
+
+None (values are set in the program)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## Example
 
 **Output:**
+
+```text
+Mon
+Days: 3
 ```
-Original: [5, 3, 1, 3, 7, 5, 2, 7, 1]
-Unique sorted: [1, 2, 3, 5, 7]
-```
 
----
-
-## 💡 Hint
-
-1. Convert the list to a set to remove duplicates.
-2. Convert the set back to a list.
-3. Sort the list with `.sort()`.
 
 ---
 
 ## Starter Code
 
 ```python
-data = [5, 3, 1, 3, 7, 5, 2, 7, 1]
-print("Original:", data)
+week = ("Mon", "Tue", "Wed")
 
-# Convert and sort
+# Write your code here
 ```

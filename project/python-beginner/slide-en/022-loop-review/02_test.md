@@ -1,29 +1,38 @@
-# 🔁 Practice: Loop Review — Question 1: Sum with for
+# loop-review ^Q2: including game points
 
-**Difficulty:** 🟢 Easy
+difficulty:
 
 ---
 
-## Problem
+♪ Task
 
-Get n and add the numbers from 1 to n.
+Game points are the same round number from 1 to . . . . . .
+And then you'll have all the points.
 
-**Input:**
-```
+---
+
+♪ Input
+
+n-lines
+
+♪ Output
+
+One line Total Points:< sum
+
+---
+
+## Example
+
+**Input:*```text
 5
 ```
 
 **Output:**
+
+```text
+Total Points: 15
 ```
-Sum from 1 to 5 = 15
-```
 
----
-
-## 💡 Hint
-
-- Use `for i in range(1, n+1):`
-- Accumulated in `total`
 
 ---
 
@@ -33,8 +42,5 @@ Sum from 1 to 5 = 15
 n = int(input())
 total = 0
 
-for i in range(1, n + 1):
-    # Add i to total
-
-# Print result
+# รวมแต้มแล้วพิมพ์
 ```

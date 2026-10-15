@@ -1,51 +1,46 @@
-# 🔥 Practice: Type Conversion — Question 4: Three-Subject Average
 
-**Difficulty:** 🔴 Hard
 
----
-
-## Problem
-
-Receive 3 subject scores from users Then calculate and display the results.
-
-**Input:**
-```
-80
-90
-70
-```
-
-**Output:**
-```
-Scores: 80, 90, 70
-Total: 240
-Average: 80.00
-Highest: 90
-Lowest: 70
-```
+**Difficulty:** 🔴 Challenge
 
 ---
 
-## 💡 Hint
 
-- Use `int(input())` for all points.
-- Find maximum/minimum values ​​with `max()` and `min()`
-- Use `f"{avg:.2f}"` to display 2 decimal places.
+
+
 
 ---
 
-## Starter Code
+## Input
+## Output
+---
 
-```python
-score1 = int(input())
-score2 = int(input())
-score3 = int(input())
 
-# Calculate total, average, highest, lowest
-total = 
-average = 
-highest = max(score1, score2, score3)
-lowest = 
 
-# Print results
+**Input:**# 🔄 Type Conversion — ข้อ 12: บิลร้านอาหารสามรายการ## โจทย์ร้านอาหารคิดเงินสามรายการในบิลเดียว
+รับราคาอาหาร จานหวาน และเครื่องดื่ม แล้วออกใบสรุปในกรอบ3 บรรทัด — ราคาอาหาร จานหวาน เครื่องดื่ม (ทศนิยม)ใบบิลในกรอบ แสดงแต่ละรายการและยอดรวม## ตัวอย่าง```text
+120.0
+45.5
+35.0
+```
+**Output:**```text
+========================
+         MEAL
+========================
+Food     : 120.0
+Dessert  : 45.5
+Drink    : 35.0
+Total    : 200.5
+========================
+```
+---
+
+## Hint
+---
+
+## Starter Codeรับครบสามค่าก่อน บวกรวมเก็บในตัวแปร แล้วค่อยพิมพ์กรอบทีเดียว```python
+food = float(input())
+dessert = float(input())
+drink = float(input())
+
+# Write your code here
 ```

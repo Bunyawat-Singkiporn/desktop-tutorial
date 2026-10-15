@@ -1,37 +1,44 @@
-# 🔄 Practice Review Dictionaries — Question 2: List to Dict
+# 🔁 Review Dicts — Q3: อัปเดตโปรไฟล์สั้น
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Convert a list of `[name, score]` pairs into a dictionary.
+แก้เมืองในโปรไฟล์
 
-```python
-data = [["Alice", 90], ["Bob", 75], ["Charlie", 88]]
-```
+กำหนด `user = {"name": "Hugo", "city": "Trang"}`
+
+แก้ city เป็น `Krabi` แล้วแสดงเมือง
+
+---
+
+## Input
+
+None (values are set in the program)
+
+## Output
+
+One line
+
+---
+
+## Example
 
 **Output:**
+
+```text
+City: Krabi
 ```
-{'Alice': 90, 'Bob': 75, 'Charlie': 88}
-```
 
----
-
-## 💡 Hint
-
-Loop through `data` and assign `scores[pair[0]] = pair[1]`.
 
 ---
 
 ## Starter Code
 
 ```python
-data = [["Alice", 90], ["Bob", 75], ["Charlie", 88]]
-scores = {}
+user = {"name": "Hugo", "city": "Trang"}
 
-# Convert to a dictionary
-
-print(scores)
+# Write your code here
 ```

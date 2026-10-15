@@ -1,37 +1,30 @@
-# 🚌 Practice Even / Odd — Question 1: Bus Seat
-
+# 🚌 Even/Odd — Q1: ที่นั่งรถบัสคู่-คี่
 **Difficulty:** 🟢 Easy
-
 ---
-
-## Problem
-
-Get seat number Then tell me what kind of seat it is.
-
-|condition| Output |
-|----------|--------|
-|The number is **even number**| `Window Seat` |
-|The number is **Odd**| `Aisle Seat` |
-
+## Task
+รถบัสทัวร์จัดที่นั่งเป็นสองฝั่ง
+เลขที่นั่งคู่ได้นั่งริมหน้าต่าง เลขคี่ได้นั่งริมทางเดิน
+เขียนโปรแกรมรับเลขที่นั่ง แล้วบอกว่าได้นั่งฝั่งไหน
+**Rules:**
+- เลขที่นั่ง `% 2 == 0` → `Window`
+- ถ้าไม่ใช่ → `Aisle`
 ---
-
-## example
-
+## Input
+เลขที่นั่งเป็นจำนวนเต็ม 1 บรรทัด
+## Output
+ฝั่งที่นั่ง 1 บรรทัด
+---
+## Example
 **Input:**
-```
+```text
 12
 ```
 
 **Output:**
+
+```text
+Window
 ```
-Window Seat
-```
-
----
-
-## 💡 Hint
-
-Use `%` to check even/odd numbers.
 
 ---
 

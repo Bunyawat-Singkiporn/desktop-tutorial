@@ -1,30 +1,28 @@
-# 👁️ Read Code — Reading Code
+♪ Read code
 
 ---
 
-## Why Learn to Read Code?
+♪ Why can't you read the code?
 
-- Fix bugs in code you did not write.
-- Work with a team.
-- Review old code.
+- Fix the bug in a code that doesn't write.
+- Working with the team.
+- Review the old code.
 
 ---
 
-## How to Read Code Step by Step
+# A process of reading code
 
 ```
-1. Start with the big picture.
-2. Find the input: what values does the program receive?
-3. Follow the code from top to bottom.
-4. Trace variable values one step at a time.
-5. For a loop, ask: "How many times does it run, and how do the values change?"
-6. For an `if` statement, ask: "Is the condition true?"
-7. Find the output: what does the program display?
-```
+1. มองภาพรวมก่อน
+2. หา Input: รับค่าอะไร?
+3. ไล่บรรทัดจากบนลงล่าง
+4. Trace ค่าตัวแปรทีละขั้น
+5. ถ้ามี loop — คิด "กี่รอบ ค่าเปลี่ยนยังไง"
+6. ถ้ามี if — คิด "เงื่อนไขเป็นจริงไหม"
+7. หา Output: แสดงอะไร?
+```---
 
----
-
-## Example — Read It First
+# Example #
 
 ```python
 numbers = [3, 7, 2, 9, 4]
@@ -35,24 +33,20 @@ for num in numbers:
         result = num
 
 print(result)
-```
-
-**Think through it step by step:**
+```One step at a time:*
 ```
 result = 0
-Iteration 1: num=3, 3 > 0 → result=3
-Iteration 2: num=7, 7 > 3 → result=7
-Iteration 3: num=2, 2 > 7 → no change
-Iteration 4: num=9, 9 > 7 → result=9
-Iteration 5: num=4, 4 > 9 → no change
+รอบ 1: num=3, 3 > 0 → result=3
+รอบ 2: num=7, 7 > 3 → result=7
+รอบ 3: num=2, 2 > 7 → ไม่เปลี่ยน
+รอบ 4: num=9, 9 > 7 → result=9
+รอบ 5: num=4, 4 > 9 → ไม่เปลี่ยน
 print(9)
-```
-
-**Output:** `9`
+```♪ Output: ▪
 
 ---
 
-## Example — Code with Functions
+# Example #
 
 ```python
 def double(x):
@@ -66,14 +60,12 @@ def apply_all(lst):
 
 nums = [1, 2, 3]
 print(apply_all(nums))
-```
-
-**Output:** `[2, 4, 6]`
+```== sync, corrected by elderman == ▪
 
 ---
 
-## Tips
+♪ Secrets
 
-- **Trace on paper**—write down the variable values for each iteration.
-- **Read function names**—a good name explains what a function does.
-- **Look for `return`**—it gives you the function's result.
+-Trace on paper.
+- Read the title, function.
+- Looking for return.

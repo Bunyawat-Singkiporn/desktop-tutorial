@@ -1,41 +1,48 @@
-# 🔄 Practice Review — Question 3: Input → Store → Display
+#Page Review #
 
-**Difficulty:** 🟡 Medium
+difficulty:
 
 ---
 
-## Problem
+♪ Task
 
-Create a program that reads the names and scores of three students, stores them in a list, and displays a summary.
+Free mean list
 
-**Example Session:**
+== sync, corrected by elderman == *
+
+- ^average) If you're free, 0th, then sm/len.
+- Print results. ▪
+
+---
+
+♪ Input
+
+None
+
+♪ Output
+
+Two lines.
+
+---
+
+## Example
+
+♪ Output:*
+
+```text
+0
+9.0
 ```
-Name: Alice
-Score: 85
-Name: Bob
-Score: 72
-Name: Charlie
-Score: 90
-=== Results ===
-Alice: 85
-Bob: 72
-Charlie: 90
-Average: 82.3
-```
+
 
 ---
 
 ## Starter Code
 
 ```python
-records = []
+def average(scores):
+    # กันว่าง
 
-for i in range(3):
-    name = input("Name: ")
-    score = int(input("Score: "))
-    records.append((name, score))
-
-print("=== Results ===")
-# Display every student
-# Calculate and display the average
+print(average([]))
+print(average([8, 10]))
 ```

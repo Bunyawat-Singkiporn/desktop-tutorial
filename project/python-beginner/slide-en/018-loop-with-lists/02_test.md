@@ -1,32 +1,41 @@
-# 🌸 Practice: Loop with Lists — Question 1: Print All Items
+# 🥤 loop-with-lists — Q2: เมนูเครื่องดื่ม
 
 **Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Loop through the list below and type each name.
-
-```python
-animals = ["Cat", "Dog", "Fish", "Bird"]
-```
-
-**Output:**
-```
-Cat
-Dog
-Fish
-Bird
-```
+ร้านกาแฟมีเมนูเครื่องดื่มเก็บไว้ในลิสต์
+เขียนโปรแกรมพิมพ์ชื่อเครื่องดื่มทีละบรรทัด
 
 ---
 
-## 💡 Hint
+## Input
 
-```python
-for animal in animals:
-    print(...)
+ไม่มี (ลิสต์กำหนดให้แล้ว)
+
+## Output
+
+ชื่อเครื่องดื่มทีละบรรทัด
+
+---
+
+## Example
+
+**Input:**
+
+```text
+
+```
+
+**Output:**
+
+```text
+Latte
+Mocha
+Tea
+Cocoa
 ```
 
 ---
@@ -34,7 +43,7 @@ for animal in animals:
 ## Starter Code
 
 ```python
-animals = ["Cat", "Dog", "Fish", "Bird"]
+drinks = ["Latte", "Mocha", "Tea", "Cocoa"]
 
-# Loop through and print each animal
+# Write your code here
 ```

@@ -1,40 +1,32 @@
-# 💰 Practice: Operators — Question 2: Change Calculator
 
-**Difficulty:** 🟡 Medium
 
----
-
-## Problem
-
-Get the product price and amount paid, then calculate the change.
-
-**Input:**
-```
-45
-100
-```
-
-**Output:**
-```
-Price: 45
-Paid: 100
-Change: 55
-```
+**Difficulty:** 🟢 Easy
 
 ---
 
-## 💡 Hint
 
-- Change = paid - price
-- Use `-` to subtract
+
+
 
 ---
 
-## Starter Code
+## Input
+## Output
+---
 
-```python
-price = int(input())
-paid = int(input())
 
-# Calculate change and print
+
+**Input:**# 🔢 Operators — ข้อ 3: หารลงตัว## โจทย์รับ n แสดง n//4 และ n%4ดูตัวอย่าง2 บรรทัด## ตัวอย่าง```text
+17
+```
+**Output:**```text
+4
+1
+```
+---
+
+## Starter Code```python
+n = int(input())
+
+# แสดง // และ %
 ```

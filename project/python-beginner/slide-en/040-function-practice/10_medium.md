@@ -1,4 +1,4 @@
-# Practice Function — Question 8: Phone Calculator App
+# 🧩 Function Practice — Q10: เครื่องคิดเลขสองปุ่ม
 
 **Difficulty:** 🟡 Medium
 
@@ -6,29 +6,40 @@
 
 ## Task
 
-Make a tiny phone calculator.
+มีปุ่มบวกและคูณ
 
-- `add(a, b)` returns sum
-- `mul(a, b)` returns product
+**Requirements:**
 
-User enters two numbers, then presses `1` (add) or `2` (multiply).
+- `add(a, b)` และ `mul(a, b)` คืนผล
+- พิมพ์ `add(3, 4)` และ `mul(3, 4)`
+
+---
+
+## Input
+
+None (values are set in the program / call functions in code)
+
+## Output
+
+2 line(s)
 
 ---
 
 ## Example
 
-**Input:**
-```
+**Output:**
+
+```text
 7
-3
-1
+12
 ```
 
-**Output:**
-```
-Calculator
-7 + 3 = 10
-```
+
+---
+
+## Hint
+
+แต่ละฟังก์ชัน return ค่า
 
 ---
 
@@ -41,14 +52,6 @@ def add(a, b):
 def mul(a, b):
     # Write your code here
 
-a = int(input())
-b = int(input())
-choice = input()
-print("Calculator")
-if choice == "1":
-    print(f"{a} + {b} = {add(a, b)}")
-elif choice == "2":
-    print(f"{a} * {b} = {mul(a, b)}")
-else:
-    print("Unknown button")
+print(add(3, 4))
+print(mul(3, 4))
 ```

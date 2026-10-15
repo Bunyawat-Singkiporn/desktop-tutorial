@@ -1,34 +1,48 @@
-# 🔥 Practice Function — Challenge: School Library
+# 🧩 Function Practice — Q15: ห้องสมุดยืม
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## Task
 
-Build a tiny library system with **3 functions**:
+เพิ่มหนังสือและนับจำนวน
 
-| Function | Job |
-|----------|-----|
-| `add_book(books, title)` | add a book title |
-| `count_books(books)` | return number of books |
-| `show_books(books)` | print all titles |
+**Requirements:**
+
+- `add_book(books, title)` append แล้วคืน books
+- `count_books(books)` คืน len
+- `show_books(books)` พิมพ์ทีละเล่ม
+- เพิ่ม Python กับ Math แล้วพิมพ์จำนวน และรายชื่อ
 
 ---
 
-## Example Session
+## Input
 
+None (values are set in the program / call functions in code)
+
+## Output
+
+3 line(s)
+
+---
+
+## Example
+
+**Output:**
+
+```text
+2
+Python
+Math
 ```
-How many books? 3
-Title: Python Basics
-Title: Fun Games
-Title: Space Kids
-=== Library ===
-Python Basics
-Fun Games
-Space Kids
-Total books: 3
-```
+
+
+---
+
+## Hint
+
+แยกหน้าที่แต่ละฟังก์ชัน
 
 ---
 
@@ -45,11 +59,8 @@ def show_books(books):
     # Write your code here
 
 books = []
-n = int(input("How many books? "))
-for i in range(n):
-    add_book(books, input("Title: "))
-
-print("=== Library ===")
+books = add_book(books, "Python")
+books = add_book(books, "Math")
+print(count_books(books))
 show_books(books)
-print(f"Total books: {count_books(books)}")
 ```

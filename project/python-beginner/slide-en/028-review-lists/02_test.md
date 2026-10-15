@@ -1,37 +1,46 @@
-# 🚫 Practice Review Lists — Question 1: Skip One
+# 🔁 Review Lists — Q2: หัวท้ายชั้นวาง
 
 **Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Show all items in the list **except** `"banana"`
+พนักงานอยากรู้ของชิ้นแรก ชิ้นสุดท้าย และจำนวนบนชั้น
 
-```python
-fruits = ["apple", "banana", "mango", "kiwi", "banana", "grape"]
-```
+กำหนด `shelf = ["Mug", "Plate", "Bowl", "Cup"]`
 
-**Output:**
-```
-apple
-mango
-kiwi
-grape
-```
+แสดงตามตัวอย่าง
 
 ---
 
-## 💡 Hint
+## Input
 
-Use `if fruit != "banana":` before printing.
+None (values are set in the program)
+
+## Output
+
+3 บรรทัด
+
+---
+
+## Example
+
+**Output:**
+
+```text
+First: Mug
+Last : Cup
+Count: 4
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-fruits = ["apple", "banana", "mango", "kiwi", "banana", "grape"]
+shelf = ["Mug", "Plate", "Bowl", "Cup"]
 
 # Write your code here
 ```

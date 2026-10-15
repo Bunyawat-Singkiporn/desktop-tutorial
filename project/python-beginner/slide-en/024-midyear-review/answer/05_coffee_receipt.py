@@ -1,0 +1,12 @@
+menu = input()
+coffee = int(input())
+snack = int(input())
+total = coffee + snack
+print("====================")
+print("      COFFEE")
+print("====================")
+print(f"Menu  : {menu}")
+print(f"Coffee: {coffee}")
+print(f"Snack : {snack}")
+print(f"Total : {total}")
+print("====================")

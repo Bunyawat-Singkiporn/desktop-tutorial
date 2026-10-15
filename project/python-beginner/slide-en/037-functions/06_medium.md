@@ -1,4 +1,4 @@
-# Practice Functions — Question 5: Welcome Desk
+# ⚙️ Functions — Q6: Short receipt
 
 **Difficulty:** 🟡 Medium
 
@@ -6,33 +6,46 @@
 
 ## Task
 
-The school has a welcome desk. Build a program that asks for a name and greets the visitor.
+Print a one-item coffee receipt.
 
-Create `welcome()` that:
-1. Asks for a name with `input`
-2. Prints a welcome message with the name
+**Requirements:**
 
-Call `welcome()` **2 times** (two visitors).
+- Create `print_receipt()` that displays as in the example
+- Call it once
 
 ---
 
-## Example Session
+## Input
 
+None (values are set in the program / call functions in code)
+
+## Output
+
+Receipt text
+
+---
+
+## Example
+
+**Output:**
+
+```text
+Item : Latte
+Price: 85
+Thank you
 ```
-Name: Alice
-Welcome, Alice!
-Name: Bob
-Welcome, Bob!
-```
+
+
+---
+
+## 💡 Hint
+
+Format the text to match the example
 
 ---
 
 ## Starter Code
 
 ```python
-def welcome():
-    # Write your code here
-
-welcome()
-welcome()
+# print_receipt()
 ```

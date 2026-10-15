@@ -1,34 +1,44 @@
-# 🔁 Practice Sets — Question 1: Remove Duplicates
+# 🔤 Sets — Q2: เช็คชื่อในกลุ่มเพื่อน
 
 **Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Define a list with duplicate values, convert it to set to delete duplicates, and then display it.
+แอปเช็คว่ามีเพื่อนชื่อนี้ในกลุ่มหรือไม่
 
-```python
-numbers = [1, 2, 2, 3, 4, 4, 4, 5]
-```
+กำหนด `friends = {"Mew", "Pim", "Ohm"}`
 
-**Output** (order may vary):
-```
-{1, 2, 3, 4, 5}
-```
+ถ้า `"Pim"` อยู่ในกลุ่ม แสดง `Found` ไม่เช่นนั้นแสดง `Missing`
 
 ---
 
-## 💡 Hint
+## Input
 
-Use `set(numbers)` to convert list to set.
+None (values are set in the program)
+
+## Output
+
+One line
+
+---
+
+## Example
+
+**Output:**
+
+```text
+Found
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-numbers = [1, 2, 2, 3, 4, 4, 4, 5]
+friends = {"Mew", "Pim", "Ohm"}
 
-# Convert to set
+# Write your code here
 ```

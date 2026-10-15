@@ -1,0 +1,50 @@
+# 📖 Dictionaries — Q11: เช็คแล้วแสดงคะแนน
+
+**Difficulty:** 🟡 Medium
+
+---
+
+## Task
+
+เช็คว่ามีคะแนนแล้วค่อยแสดง
+
+กำหนด `student = {"name": "Ann", "score": 92}`
+
+ถ้ามีคีย์ `score` แสดงค่าคะแนน ไม่เช่นนั้นแสดง `No score`
+
+---
+
+## Input
+
+None (values are set in the program)
+
+## Output
+
+One line
+
+---
+
+## Example
+
+**Output:**
+
+```text
+92
+```
+
+
+---
+
+## Hint
+
+เช็ค in ก่อนอ่านค่า
+
+---
+
+## Starter Code
+
+```python
+student = {"name": "Ann", "score": 92}
+
+# Write your code here
+```

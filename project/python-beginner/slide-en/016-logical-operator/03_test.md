@@ -1,50 +1,55 @@
-# 🏷️ Practice and/or/not — Question 2: Discount
+¶ Logical • Q2: Common day membership discount ¶
 
-**Difficulty:** 🟡 Medium
+difficulty:
 
 ---
 
-## Problem
+♪ Task
 
-Read an amount of money and member status, then check whether a discount is given.
+The bookstore's on sale only for members who bought it on a regular day.
 
-**Conditions:** both must pass
-- money >= 100
-- is a member (`True`)
+Program membership and day type and show discount status
 
-| Result | Output |
-|--------|--------|
-| Both pass | `Discount` |
-| Fail | show nothing |
+♪ Rolls:*
+
+The day is . . . . . . . . . . . .
+- If it's not ?
+
+---
+
+♪ Input
+
+2 lines status Members
+
+♪ Output
+
+2 lines . . . The membership status and the sale
 
 ---
 
 ## Example
 
-**Input:**
-```
-150
-True
+**Input:*```text
+1
+weekday
 ```
 
 **Output:**
-```
-Discount
-```
+
+```text
+Member : 1
+Offer  : Discount
+```---
+
+♪ Hint
+
+Keep & Offer text in variable first and then type in two lines
 
 ---
 
-## 💡 Hint
-
-Values from `input()` are always strings — compare with `"True"`
-
----
-
-## Starter Code
-
-```python
-money = int(input())
-member = input()
+♪ Starter Code```python
+is_member = int(input())
+day = input()
 
 # Write your code here
 ```

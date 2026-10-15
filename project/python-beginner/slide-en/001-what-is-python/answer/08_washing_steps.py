@@ -1,0 +1,5 @@
+print("1. Put clothes in the machine")
+print("2. Add detergent")
+print("3. Close the door")
+print("4. Select the program")
+print("5. Press start")

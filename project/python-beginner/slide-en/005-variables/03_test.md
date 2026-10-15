@@ -1,41 +1,39 @@
-# 🛒 Practice: Variables — Question 2: Shopping Total
+# 🚪 Variables — Q2: ป้ายห้องพร้อมเลขที่
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Store the prices of 2 items and calculate the total.
+อาคารเรียนติดป้ายหน้าห้องคอมพิวเตอร์
 
-| Variable | Value |
-|----------|-------|
-| `price_a` | `120` |
-| `price_b` | `250` |
-| `total` | sum of both |
+เก็บเลขห้องไว้ในตัวแปรจำนวนเต็ม แล้วแสดงป้ายตามตัวอย่าง
+
+---
+
+## Input
+None (this program does not read user input)
+
+## Output
+See the example
+
+---
+
+## Example
 
 **Output:**
+
+```text
+Computer Lab
+Room: 402
 ```
-Price A: 120
-Price B: 250
-Total: 370
-```
-
----
-
-## 💡 Hint
-
-- Use `+` to calculate `total = price_a + price_b`
-- Display with `print()`
 
 ---
 
 ## Starter Code
-
 ```python
-price_a = 120
-price_b = 250
-total = 
+room_number = 402
 
-# Print results
+# Write your code here
 ```

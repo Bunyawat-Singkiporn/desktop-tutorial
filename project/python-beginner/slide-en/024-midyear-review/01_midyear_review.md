@@ -1,40 +1,40 @@
-# 🏆 Mid-Year Review — Half-Year Review
+# 🏆 Mid-Year Review — ทบทวนครึ่งปี
 
 ---
 
-## What You Learned Across 24 Weeks
+## สิ่งที่เรียนมาตลอด 24 สัปดาห์
 
-### Months 1–3: Basics
+### เดือน 1–3: พื้นฐาน
 
-| Week | Topic | Key Points |
-|------|-------|------------|
-| 1–4 | Python, Environment, Syntax, Comments | `print()`, read Errors |
+| สัปดาห์ | หัวข้อ | สิ่งสำคัญ |
+|--------|--------|----------|
+| 1–4 | Python, Environment, Syntax, Comments | `print()`, อ่าน Error |
 | 5–8 | Variables, Naming, Data Types, Conversion | `int()`, `float()`, `str()` |
 | 9–12 | Input, Formatting, Operators, Review | `input()`, f-string |
 
-### Month 4: Conditions
+### เดือน 4: Conditions
 
-| Week | Topic | Key Points |
-|------|-------|------------|
+| สัปดาห์ | หัวข้อ | สิ่งสำคัญ |
+|--------|--------|----------|
 | 13 | Even/Odd | `%` modulo |
-| 14 | elif | multiple conditions |
+| 14 | elif | เงื่อนไขหลายกรณี |
 | 15 | Logical Operators | `and`, `or`, `not` |
 | 16 | for Loop | `range()` |
 
-### Months 5–6: Loops
+### เดือน 5–6: Loops
 
-| Week | Topic | Key Points |
-|------|-------|------------|
+| สัปดาห์ | หัวข้อ | สิ่งสำคัญ |
+|--------|--------|----------|
 | 17–18 | for + Lists, while Loop | `for item in list`, `while` |
 | 19–20 | Loop Safety, Nested | `break`, `continue`, nested |
-| 21–22 | Loop Review, Debugging | all loops combined |
+| 21–22 | Loop Review, Debugging | รวมทุก loop |
 
 ---
 
-## Sample Program Combining Everything
+## โปรแกรมตัวอย่างที่รวมทุกอย่าง
 
 ```python
-# Read name and 3 subject scores, then summarize
+# รับชื่อและคะแนน 3 วิชา สรุปผล
 name = input()
 scores = []
 
@@ -61,12 +61,12 @@ else:
 
 ---
 
-## Checklist Before Finishing Half-Year
+## Checklist ก่อนจบครึ่งปี
 
-- [ ] Comfortable with `print()` / `input()` / f-string
+- [ ] `print()` / `input()` / f-string ได้คล่อง
 - [ ] Variable, Data Types, Type Conversion
 - [ ] `if` / `elif` / `else` / logical operators
-- [ ] `for` with range and list
+- [ ] `for` range และ list
 - [ ] `while`, `break`, `continue`
 - [ ] Nested loops
-- [ ] Basic loop debugging
+- [ ] Debug loop เบื้องต้นได้

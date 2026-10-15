@@ -1,4 +1,4 @@
-# Practice Function — Question 6: Game Password Setup
+# 🧩 Function Practice — Q7: กรองคะแนนผ่าน
 
 **Difficulty:** 🟡 Medium
 
@@ -6,35 +6,47 @@
 
 ## Task
 
-Account signup: password must be at least 8 characters and include a digit.
+เก็บเฉพาะคะแนนที่ >= 60 เป็น list ใหม่
 
-Create `is_strong(password)` and tell the player `Strong password` or `Weak password`.
+**Requirements:**
+
+- สร้าง `get_passed(scores)` คืน list ที่ผ่าน
+- พิมพ์ผลของ `[50, 60, 75, 40, 90]`
+
+---
+
+## Input
+
+None (values are set in the program / call functions in code)
+
+## Output
+
+1 line(s)
 
 ---
 
 ## Example
 
-**Input:**
-```
-hello123
+**Output:**
+
+```text
+[60, 75, 90]
 ```
 
-**Output:**
-```
-Strong password
-```
+
+---
+
+## Hint
+
+สร้าง list ว่างแล้ว append
 
 ---
 
 ## Starter Code
 
 ```python
-def is_strong(password):
+def get_passed(scores):
     # Write your code here
 
-password = input()
-if is_strong(password):
-    print("Strong password")
-else:
-    print("Weak password")
+print(get_passed([50, 60, 75, 40, 90]))
 ```

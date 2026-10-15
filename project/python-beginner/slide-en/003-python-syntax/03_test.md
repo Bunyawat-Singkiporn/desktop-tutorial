@@ -1,38 +1,53 @@
-# 📐 Practice: Syntax — Question 2: Fix the Indentation
+# 🔡 Python syntax rules — Q2: Commands must be lowercase
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-The code below has an IndentationError. Fix it so the output is correct.
+This code breaks rule 1 on every line.
 
 ```python
-  print("First line")
-print("Second line")
-    print("Third line")
+PRINT("Swimming Pool")
+Print("Open 06:00 - 20:00")
+pRiNt("No running")
 ```
 
-**Expected output:**
-```
-First line
-Second line
-Third line
+Rewrite it correctly.
+
+---
+
+## Input
+
+None
+
+## Output
+
+Three lines of text
+
+---
+
+## Example
+
+**Output:**
+
+```text
+Swimming Pool
+Open 06:00 - 20:00
+No running
 ```
 
 ---
 
-## 💡 Hint
+## Hint
 
-Normal code (not inside if/for) **must have no leading spaces**
+Python treats `print`, `Print`, and `PRINT` as different names — and only knows one of them.
 
 ---
 
 ## Starter Code
 
 ```python
-  print("First line")
-print("Second line")
-    print("Third line")
+# Write your code here
 ```

@@ -1,41 +1,44 @@
-# 🐛 Practice: Debugging Loops — Question 2: Fix Infinite Loop
+# d d d d d d d d d debugging-lops d d d d oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh.
 
-**Difficulty:** 🟡 Medium
+difficulty:
 
 ---
 
-## Problem
+♪ Task
 
-The code below loops non-stop — fix it to count 1–5 and then stop.
+Needs a client count from 1 to 4 but not updated.
+Set up the correct update line
 
-```python
-count = 1
-while count <= 5:
-    print(count)
-```
+---
 
-**Required Output:**
-```
+♪ Input
+
+No.
+
+♪ Output
+
+Number 1 to 4.
+
+---
+
+## Example
+
+♪ Output:*```text
 1
 2
 3
 4
-5
-```
+```---
+
+♪ Hint
+
+Change the count every time.
 
 ---
 
-## 💡 Hint
-
-What else needs to be added to the `while` loop?
-
----
-
-## Starter Code
-
-```python
+♪ Starter Code```python
 count = 1
-while count <= 5:
+while count <= 4:
     print(count)
-    # Something is missing here!
+    # เติมบรรทัดอัปเดตตรงนี้
 ```

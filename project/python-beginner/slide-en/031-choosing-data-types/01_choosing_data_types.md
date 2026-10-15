@@ -1,61 +1,61 @@
-# 🤔 Choosing the Right Data Type
+# 🤔 Choosing Data Types — เลือกชนิดข้อมูลให้เหมาะสม
 
 ---
 
-## Comparison Table
+## ตารางเปรียบเทียบ
 
-| Feature | List `[]` | Tuple `()` | Set `{}` |
+| คุณสมบัติ | List `[]` | Tuple `()` | Set `{}` |
 |----------|-----------|------------|----------|
-| Mutable | ✅ | ❌ | ✅ |
-| Ordered | ✅ | ✅ | ❌ |
-| Allows duplicates | ✅ | ✅ | ❌ |
-| Supports indexing | ✅ | ✅ | ❌ |
+| แก้ไขได้ | ✅ | ❌ | ✅ |
+| มีลำดับ | ✅ | ✅ | ❌ |
+| ค่าซ้ำได้ | ✅ | ✅ | ❌ |
+| ใช้ index | ✅ | ✅ | ❌ |
 
 ---
 
-## Questions to help you decide
+## คำถามช่วยตัดสินใจ
 
 ```
-1. Do you need to add or remove items?
-   ❌ No → Tuple
-   ✅ Yes → Go to question 2
+1. ต้องการเพิ่ม/ลบข้อมูลได้ไหม?
+   ❌ ไม่ต้องการ → Tuple
+   ✅ ต้องการ → ไปข้อ 2
 
-2. Do you want unique values?
-   ✅ Yes → Set
-   ❌ No → List
+2. ต้องการค่าไม่ซ้ำกันไหม?
+   ✅ ต้องการ → Set
+   ❌ ไม่ต้องการ → List
 ```
 
 ---
 
-## Selection Examples
+## Exampleการเลือก
 
-| Situation | Use | Reason |
+| สถานการณ์ | ใช้ | เหตุผล |
 |----------|-----|--------|
-| Student roster (items can be added or removed) | `list` | Mutable and ordered |
-| Days of the week (fixed) | `tuple` | Immutable, preventing accidental changes |
-| Unique names | `set` | Stores unique values |
-| Coordinates (x, y) | `tuple` | Fixed and ordered |
+| รายชื่อนักเรียน (เพิ่มลบได้) | `list` | mutable, มีลำดับ |
+| วันในสัปดาห์ (คงที่) | `tuple` | immutable, ป้องกันการแก้ไข |
+| รายชื่อที่ไม่ซ้ำ | `set` | unique values |
+| พิกัด (x, y) | `tuple` | คงที่, มีลำดับ |
 
 ---
 
-## Code example
+## Exampleโค้ด
 
 ```python
-# List — mutable
+# List — แก้ไขได้
 shopping = ["milk", "eggs", "bread"]
 shopping.append("butter")
 
-# Tuple — fixed
+# Tuple — คงที่
 weekdays = ("Mon", "Tue", "Wed", "Thu", "Fri")
 
-# Set — unique values
+# Set — ไม่ซ้ำ
 visitors = {"Alice", "Bob", "Alice"}  # → {'Alice', 'Bob'}
 ```
 
 ---
 
-## Key Points
+## ข้อควรจำ
 
-- If you are unsure, start with a **list**.
-- If the data must not change, use a **tuple**.
-- If every value must be unique, use a **set**.
+- ถ้าไม่แน่ใจ → เริ่มด้วย **List**
+- ถ้าข้อมูล "ห้ามเปลี่ยน" → **Tuple**
+- ถ้าต้องการ "ไม่ซ้ำ" → **Set**

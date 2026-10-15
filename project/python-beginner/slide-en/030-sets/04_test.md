@@ -1,36 +1,44 @@
-# 🤝 Practice Sets — Question 3: Common Items
+# 🔤 Sets — Q4: ลบเมนูที่เลิกขาย
 
-**Difficulty:** 🟡 Medium
-
----
-
-## Problem
-
-Find the classes in which both students are enrolled.
-
-```python
-alice_classes = {"Math", "Science", "English", "Art"}
-bob_classes = {"Math", "PE", "English", "Music"}
-```
-
-**Output** (order may vary):
-```
-Common classes: {'Math', 'English'}
-```
+**Difficulty:** 🟢 Easy
 
 ---
 
-## 💡 Hint
+## Task
 
-Use `&` (intersection) to find values shared by both sets.
+ร้านลบเมนูที่เลิกขายออกจาก set
+
+กำหนด `menu = {"Soup", "Salad", "Steak"}` แล้ว remove `Salad`
+
+แปลงเป็น list เรียงแล้วแสดง
+
+---
+
+## Input
+
+None (values are set in the program)
+
+## Output
+
+one-Line List
+
+---
+
+## Example
+
+**Output:**
+
+```text
+['Soup', 'Steak']
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-alice_classes = {"Math", "Science", "English", "Art"}
-bob_classes = {"Math", "PE", "English", "Music"}
+menu = {"Soup", "Salad", "Steak"}
 
-# Find the classes they share
+# Write your code here
 ```

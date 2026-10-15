@@ -1,38 +1,34 @@
-# 🔥 Practice Lists — Question 4: Find Maximum
-
-**Difficulty:** 🔴 Hard
-
+# 📋 Lists — Q5: ใบสรุปเมนูร้านกาแฟ
+**Difficulty:** 🔴 Challenge
 ---
-
-## Problem
-
-Define a list of numbers, find the largest value by **Do not use `max()`**, use a loop to compare yourself.
-
-```python
-numbers = [42, 17, 85, 63, 29, 91, 54]
-```
-
+## Task
+ร้านกาแฟอยากได้ใบสรุปเมนูสั้นๆ
+กำหนด `drinks = ["Latte", "Mocha", "Tea"]` และ `prices = [55, 60, 40]`
+พิมพ์ชื่อเครื่องดื่มทีละบรรทัด แล้วปิดท้ายด้วยจำนวนเมนูและราคารวม
+---
+## Input
+None (values are set in the program)
+## Output
+รายการ + สรุป
+---
+## Example
 **Output:**
+```text
+Latte
+Mocha
+Tea
+Menus: 3
+Total: 155
 ```
-Maximum: 91
-```
-
 ---
 
 ## 💡 Hint
-
-- Start with `maximum = numbers[0]`
-- Loop through all values: If the value is greater than `maximum` → Update.
-
+วนพิมพ์ชื่อก่อน แล้วค่อยรวมราคา
 ---
-
 ## Starter Code
-
 ```python
-numbers = [42, 17, 85, 63, 29, 91, 54]
-maximum = numbers[0]
+drinks = ["Latte", "Mocha", "Tea"]
+prices = [55, 60, 40]
 
 # Write your code here
-
-print("Maximum:", maximum)
 ```

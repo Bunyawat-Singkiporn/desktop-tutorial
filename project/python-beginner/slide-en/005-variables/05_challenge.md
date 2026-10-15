@@ -1,49 +1,50 @@
-# 🔥 Practice: Variables — Question 4: Product Discount
+# 🕹️ Variables — Q12: แดชบอร์ดเกม
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
-## Problem
+## Task
 
-Store product data and calculate the price after discount.
+เกมแสดงสถานะผู้เล่น: ชีวิตเริ่ม 3 แต้มเริ่ม 0
+หลังผ่านด่าน ชีวิตเหลือ 2 และแต้มเป็น 150
 
-| Variable | Value |
-|----------|-------|
-| `product_name` | `"Running Shoes"` |
-| `original_price` | `1500` |
-| `discount_percent` | `20` (means 20%) |
-| `discount_amount` | `original_price × discount_percent / 100` |
-| `final_price` | `original_price - discount_amount` |
+พิมพ์สถานะเริ่มต้น แล้วเปลี่ยนค่าทั้งสองตัวแปร แล้วพิมพ์สถานะใหม่ตามตัวอย่าง
+
+---
+
+## Input
+None (this program does not read user input)
+
+## Output
+See the example
+
+---
+
+## Example
 
 **Output:**
-```
-Product: Running Shoes
-Original Price: 1500
-Discount: 20%
-You save: 300
-Final Price: 1200
+
+```text
+=== START ===
+Lives: 3
+Score: 0
+=== NOW ===
+Lives: 2
+Score: 150
 ```
 
 ---
 
-## 💡 Hint
-
-- `discount_amount = original_price * discount_percent / 100`
-- `final_price = original_price - discount_amount`
+## Hint
+พิมพ์บล็อกแรกให้จบก่อน ค่อยเปลี่ยนค่า แล้วพิมพ์บล็อกหลัง
 
 ---
 
 ## Starter Code
-
 ```python
-product_name = "Running Shoes"
-original_price = 1500
-discount_percent = 20
+lives = 3
+score = 0
 
-# Calculate discount
-discount_amount = 
-final_price = 
-
-# Print results
+# Write your code here
 ```

@@ -1,51 +1,37 @@
-# 🔥 Practice: Operators — Question 4: Rectangle Stats
 
-**Difficulty:** 🔴 Hard
 
----
-
-## Problem
-
-Get the width and height of a rectangle, then display all the values completely.
-
-**Input:**
-```
-7
-4
-```
-
-**Output:**
-```
-Width : 7
-Height: 4
-Area  : 28
-Perim : 22
-Diag  : 8.06
-```
-
-> Diagonal = √(width² + height²) — use `** 0.5` for the square root
+**Difficulty:** 🔴 Challenge
 
 ---
 
-## 💡 Hint
 
-- Area = `width * height`
-- Perimeter = `(width + height) * 2`
-- Diagonal = `(width**2 + height**2) ** 0.5`
-- Use `:.2f` for the diagonal
+
+
 
 ---
 
-## Starter Code
+## Input
+## Output
+---
 
-```python
-width = int(input())
-height = int(input())
 
-# Calculate all values
-area = 
-perimeter = 
-diagonal = 
 
-# Print results
+**Input:**# 🔢 Operators — ข้อ 5: บิลร้าน + เปรียบเทียบ## โจทย์รับราคาสินค้าสองชิ้น แสดงยอดรวม และผลเปรียบเทียบว่ารวม >= 100 หรือไม่ดูตัวอย่าง2 บรรทัด## ตัวอย่าง```text
+70
+60
+```
+**Output:**```text
+Total: 130
+Big Bill: True
+```
+---
+
+## Hint
+---
+
+## Starter Codeยังไม่ต้อง if — พิมพ์ True/False```python
+a = int(input())
+b = int(input())
+
+# รวมและเปรียบเทียบ
 ```

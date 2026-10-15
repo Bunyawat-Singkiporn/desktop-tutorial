@@ -1,0 +1,58 @@
+# 📚 Collection Review — Q16: กล่องสรุปคอลเลกชัน
+
+**Difficulty:** 🔴 Challenge
+
+---
+
+## Task
+
+สรุปคอลเลกชันสามชนิดแบบมีกรอบ
+
+กำหนด `nums = [5, 2, 9]` sort แล้ว
+`point = (3, 4)`
+`labels = {"A", "B", "A"}`
+
+แสดงตามตัวอย่าง
+
+---
+
+## Input
+
+None (values are set in the program)
+
+## Output
+
+กล่องสรุป
+
+---
+
+## Example
+
+**Output:**
+
+```text
+====================
+List : [2, 5, 9]
+Tuple: (3, 4)
+Set  : 2
+====================
+```
+
+
+---
+
+## Hint
+
+แสดงตัวแทนของทั้งสามชนิด
+
+---
+
+## Starter Code
+
+```python
+nums = [5, 2, 9]
+point = (3, 4)
+labels = {"A", "B", "A"}
+
+# Write your code here
+```

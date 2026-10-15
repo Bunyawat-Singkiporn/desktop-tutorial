@@ -1,18 +1,39 @@
-# ➕ Practice Function — Question 1: List Sum
+# 🧩 Function Practice — Q2: ผลรวม list
 
 **Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Create a `list_sum(numbers)` function that receives a list and returns its sum.
+คิดยอดรวมราคาในตะกร้า
+
+**Requirements:**
+
+- สร้าง `list_sum(numbers)` คืนผลรวม
+- พิมพ์ผลของสอง list ตามตัวอย่าง
+
+---
+
+## Input
+
+None (values are set in the program / call functions in code)
+
+## Output
+
+2 line(s)
+
+---
+
+## Example
 
 **Output:**
-```
+
+```text
 150
 413
 ```
+
 
 ---
 

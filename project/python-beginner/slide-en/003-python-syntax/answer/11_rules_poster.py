@@ -1,0 +1,7 @@
+print("+----------------------------+")
+print("|   PYTHON SYNTAX RULES      |")
+print("+----------------------------+")
+print("| 1. commands are lowercase  |")
+print("| 2. quotes and () in pairs  |")
+print("| 3. no space before a line  |")
+print("+----------------------------+")

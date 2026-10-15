@@ -1,43 +1,29 @@
-# 🧪 Practice: Data Types — Question 2: Type Prediction
 
-**Difficulty:** 🟡 Medium
+
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
 
-Write code that creates variables as in the table, then use `print(type(...))` to show each type and check that it matches what you expect.
 
-| Value | Expected type |
-|-------|---------------|
-| `42` | `int` |
-| `"42"` | `str` |
-| `42.0` | `float` |
-| `True` | `bool` |
 
-**Output:**
+
+---
+
+## Input
+## Output
+---
+
+
+
+**Output:**# 🧬 Data Types — ข้อ 3: ชนิดของราคา## โจทย์เก็บ `price = 29.99` แสดงค่าและชนิดไม่มี (กำหนดค่าในโปรแกรม)2 บรรทัด## ตัวอย่าง```text
+Price: 29.99
+Type: <class 'float'>
 ```
-<class 'int'>
-<class 'str'>
-<class 'float'>
-<class 'bool'>
-```
-
 ---
 
-## 💡 Hint
+## Starter Code```python
+price = 29.99
 
-`42` and `"42"` look similar but have different types! The `"..."` quotes make it a str
-
----
-
-## Starter Code
-
-```python
-a = 42
-b = "42"
-c = 42.0
-d = True
-
-# Print type of each
+# แสดงผล
 ```

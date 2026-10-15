@@ -1,32 +1,31 @@
-# ➕ Practice List Methods — Question 1: Build a List
-
+# 🛠️ List Methods — Q2: เพิ่มชื่อเข้ากลุ่มแชท
 **Difficulty:** 🟢 Easy
-
 ---
-
-## Problem
-
-Start with an empty list and add the names of 3 people with `.append()` to display the final list.
-
+## Task
+กลุ่มแชทเริ่มว่าง แล้วมีเพื่อนเข้ามา 3 คน
+เริ่มจาก `members = []` แล้ว `.append()` ชื่อ `Mew`, `Pim`, `Ohm` ตามลำดับ
+แสดง list สุดท้าย
+---
+## Input
+None (values are set in the program)
+## Output
+list หนึ่งบรรทัด
+---
+## Example
 **Output:**
+```text
+['Mew', 'Pim', 'Ohm']
 ```
-['Alice', 'Bob', 'Charlie']
-```
 
----
-
-## 💡 Hint
-
-Call `.append()` 3 times, enter one person's name each time.
 
 ---
 
 ## Starter Code
 
 ```python
-names = []
+members = []
 
-# Add 3 names
+# Write your code here
 
-print(names)
+print(members)
 ```

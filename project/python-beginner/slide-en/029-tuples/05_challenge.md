@@ -1,47 +1,53 @@
-# 🔥 Practice Tuples — Question 4: Travel Itinerary
+# 📦 Tuples — Q5: โปรไฟล์นักกีฬา
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
-## Problem
+## Task
 
-Defines a 5-day itinerary as a numbered tuple. then prove immutable
+พิมพ์โปรไฟล์นักกีฬาจาก tuple
 
-```python
-itinerary = ("Arrive Bangkok", "Visit temples", "Day trip to Ayutthaya",
-             "Fly to Chiang Mai", "Return home")
-```
+กำหนด `athlete = ("Beam", 16, "Swim", 3)`
 
-**Must present:**
-1. All items with numbers
-2. number of days
-3. Type `"Cannot change itinerary"` (without actually changing the value)
+แสดงชื่อ อายุ กีฬา และจำนวนเหรียญ ตามตัวอย่าง
+
+---
+
+## Input
+
+None (values are set in the program)
+
+## Output
+
+4 บรรทัด
+
+---
+
+## Example
 
 **Output:**
+
+```text
+Name  : Beam
+Age   : 16
+Sport : Swim
+Medals: 3
 ```
-Day 1: Arrive Bangkok
-Day 2: Visit temples
-Day 3: Day trip to Ayutthaya
-Day 4: Fly to Chiang Mai
-Day 5: Return home
-Total days: 5
-Cannot change itinerary
-```
+
 
 ---
 
-## 💡 Hint
+## Hint
 
-Use `range(len(itinerary))` to get the day number.
+อ่านทีละฟิลด์ตามลำดับ
 
 ---
 
 ## Starter Code
 
 ```python
-itinerary = ("Arrive Bangkok", "Visit temples", "Day trip to Ayutthaya",
-             "Fly to Chiang Mai", "Return home")
+athlete = ("Beam", 16, "Swim", 3)
 
 # Write your code here
 ```

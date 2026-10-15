@@ -1,41 +1,45 @@
-# 🔗 Practice Dictionary Methods — Question 3: Items Loop
+# 🔧 Dict Methods — Q4: ลบคะแนนเก่า
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Given product prices, display every item with `.items()` and calculate the total.
+ลบคะแนนเก่าออกจากโปรไฟล์
 
-```python
-prices = {"apple": 15, "banana": 8, "mango": 25, "kiwi": 35}
-```
+กำหนด `student = {"name": "Cara", "score": 60, "room": "M2"}`
+
+ใช้ `del` ลบคีย์ score แล้วพิมพ์ทุกคีย์ที่เหลือ
+
+---
+
+## Input
+
+None (values are set in the program)
+
+## Output
+
+2 lines
+
+---
+
+## Example
 
 **Output:**
-```
-apple: 15 baht
-banana: 8 baht
-mango: 25 baht
-kiwi: 35 baht
-Total: 83 baht
+
+```text
+name
+room
 ```
 
----
-
-## 💡 Hint
-
-Use `for item, price in prices.items():`
 
 ---
 
 ## Starter Code
 
 ```python
-prices = {"apple": 15, "banana": 8, "mango": 25, "kiwi": 35}
-total = 0
+student = {"name": "Cara", "score": 60, "room": "M2"}
 
 # Write your code here
-
-print(f"Total: {total} baht")
 ```

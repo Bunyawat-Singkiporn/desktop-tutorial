@@ -1,44 +1,39 @@
-# 📐 Practice: Nested Loops — Question 2: Right Triangle
+d d d d y d d d d d d y d d d d d d d d d d d d d d d d d d d
 
-**Difficulty:** 🟡 Medium
-
----
-
-## Problem
-
-Get the number of rows and display a right triangle.
-
-**Input:**
-```
-6
-```
-
-**Output:**
-```
-*
-**
-***
-****
-*****
-******
-```
+difficulty:
 
 ---
 
-## 💡 Hint
+♪ Task
 
-- Outside Loop: `for row in range(1, n+1)`
-- Loop in: `for col in range(row)` — Loop through the current row.
+The sign needs three rows of dotted strips, each of which has six ^-okay marks.
+Use loops and ^end=" and then up the line with empty
+
+---
+
+♪ Input
+
+None
+
+♪ Output
+
+3 lines of the dotted line
+
+---
+
+## Example
+
+♪ Output:*```text
+------
+------
+------
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-n = int(input())
-
-for row in range(1, n + 1):
-    for col in range(row):
-        # Print one * without newline
-    # Move to next line
+# เขียนลูปซ้อนพิมพ์ -
 ```

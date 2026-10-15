@@ -1,46 +1,39 @@
-# ✖️ Practice Even / Odd — Question 2: Double or Triple
-
+# 👕 Even/Odd — Q2: หมายเลขเสื้อแข่ง
 **Difficulty:** 🟢 Easy
-
 ---
-
-## Problem
-
-Get numbers and calculate according to conditions.
-
-|condition| Output |
-|----------|--------|
-|Number**even**|Value × 2|
-|**Odd** numbers|Value × 3|
-
+## Task
+ค่ายกีฬาแบ่งทีมตามหมายเลขเสื้อ
+เลขคู่เข้าทีมน้ำเงิน เลขคี่เข้าทีมแดง
+เขียนโปรแกรมรับหมายเลขเสื้อ แล้วแสดงหมายเลขกับชื่อทีม
+**Rules:**
+- หมายเลข `% 2 == 0` → `Blue`
+- ถ้าไม่ใช่ → `Red`
 ---
-
-## example
-
+## Input
+หมายเลขเสื้อเป็นจำนวนเต็ม 1 บรรทัด
+## Output
+2 บรรทัด — หมายเลข และทีม
+---
+## Example
 **Input:**
-```
-5
+```text
+7
 ```
 
 **Output:**
-```
-15
-```
 
-> 5 is an odd number → 5 × 3 = 15
-
+```text
+Jersey : 7
+Team   : Red
+```
 ---
-
 ## 💡 Hint
-
-Check even/odd numbers first. Then calculate
-
+เก็บชื่อทีมไว้ในตัวแปรก่อน แล้วค่อยพิมพ์สองบรรทัดทีเดียว
+จะได้ไม่ต้องเขียน `print` ซ้ำในทั้งสองทาง
 ---
-
 ## Starter Code
-
 ```python
-number = int(input())
+jersey = int(input())
 
 # Write your code here
 ```

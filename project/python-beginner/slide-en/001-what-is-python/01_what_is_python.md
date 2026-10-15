@@ -76,16 +76,16 @@ Hello, World!
 ## Example: `print()` several times
 
 ```python
-print("Hello!")
-print("My name is Python")
-print("Nice to meet you")
+print("สวัสดี!")
+print("ฉันชื่อ Python")
+print("ยินดีที่ได้รู้จัก")
 ```
 
 Output:
 ```
-Hello!
-My name is Python
-Nice to meet you
+สวัสดี!
+ฉันชื่อ Python
+ยินดีที่ได้รู้จัก
 ```
 
 > Each `print()` starts a new line automatically

@@ -1,38 +1,48 @@
-# 🛑 Practice: Loop Safety — Question 1: Use break
+♪ loop-savety ♫ Q2: Stop at 7.
 
-**Difficulty:** 🟢 Easy
+difficulty:
 
 ---
 
-## Problem
+♪ Task
 
-Loops 1–10, but stops when a 6 is found.
+^1 to 10)
+Then type ^Stopped
+
+---
+
+♪ Input
+
+No.
+
+♪ Output
+
+1)6
+
+---
+
+## Example
+
+**Input:*```text
+
+```
 
 **Output:**
-```
+
+```text
 1
 2
 3
 4
 5
-Stopped at 6
+6
+Stopped
 ```
-
----
-
-## 💡 Hint
-
-- Use `for i in range(1, 11):`
-- IF `i == 6` GIVES MESSAGE `print` THEN `break`
 
 ---
 
 ## Starter Code
 
 ```python
-for i in range(1, 11):
-    if i == 6:
-        print("Stopped at 6")
-        # Stop the loop
-    # Print i (only reached if i != 6)
+# Write your code here
 ```

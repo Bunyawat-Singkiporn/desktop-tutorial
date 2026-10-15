@@ -1,39 +1,59 @@
-# 🧩 Debugging — Question 3: Fix a Logic Error
+# 🐛 Debugging — Q4: แก้ index เกิน
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-The code runs, but the result is **incorrect**. Find and fix the logic error.
+อ่านสมาชิกใน list แต่ต้องไม่เกินขอบ
 
-```python
-# Program to find the sum from 1 through 5
-total = 0
-for i in range(1, 5):
-    total = i        # ← Logic error!
+**Requirements:**
 
-print("Sum:", total)
-# Expected: Sum: 15
-# Got: Sum: 4
+- มี `nums = [10, 20, 30]`
+- รับ index เป็นจำนวนเต็ม
+- ถ้า index อยู่ระหว่าง 0 ถึง len-1 พิมพ์ค่า ไม่งั้นพิมพ์ `Out of range`
+
+---
+
+## Input
+
+See example
+
+## Output
+
+1 line(s)
+
+---
+
+## Example
+
+**Input:**
+
+```text
+5
 ```
 
+**Output:**
+
+```text
+Out of range
+```
+
+
 ---
 
-## 💡 Hint
+## Hint
 
-You need to **accumulate** each value, not **replace** the previous value.
+เทียบกับ len(nums)
 
 ---
 
 ## Starter Code
 
 ```python
-total = 0
-for i in range(1, 5):
-    total = i   # Fix this line
+nums = [10, 20, 30]
+index = int(input())
 
-# Fix the range as well
-print("Sum:", total)
+# เช็กขอบเขตก่อน
 ```

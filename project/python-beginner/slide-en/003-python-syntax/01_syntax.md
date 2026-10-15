@@ -1,36 +1,36 @@
-# 📐 Python Syntax — Rules for Writing Code
+# 📐 Python Syntax — Coding rules
 
 ---
 
-## What is Syntax?
+## What is syntax?
 
-**Syntax** means the **writing rules** of the Python language.
+**Syntax** is Python’s **writing rules**.
 
-Just like English has rules:
-- A sentence needs a subject + verb
-- Spelling and punctuation must be correct
+Like Thai has rules:
+- Sentences need subject + verb
+- Tone marks must be correct
 
-Python has rules too — break a rule → **Error!**
+Python has rules too — break them → **Error!**
 
 ---
 
-## Rule 1: Uppercase / Lowercase Matters a Lot
+## Rule 1: Uppercase and lowercase matter
 
 Python is **case sensitive**.
 
-| ❌ Wrong | ✅ Correct | Error you get |
-|----------|------------|---------------|
+| ❌ Wrong | ✅ Correct | Error |
+|--------|--------|------------|
 | `Print("Hello")` | `print("Hello")` | `NameError` |
 | `PRINT("Hello")` | `print("Hello")` | `NameError` |
 
-> **All Python commands always use lowercase**
+> **Python commands are always lowercase**
 
 ---
 
-## Rule 2: Marks Must Come in Pairs
+## Rule 2: Symbols must come in pairs
 
-| Every... | Must have... | Wrong example | Correct example |
-|----------|--------------|---------------|-----------------|
+| Every... | needs... | Wrong | Correct |
+|--------|----------|------------|------------|
 | `(` | closing `)` | `print("Hi"` | `print("Hi")` |
 | opening `"` | closing `"` | `print("Hi)` | `print("Hi")` |
 
@@ -50,11 +50,11 @@ print("Line 1")    ← correct
   print("Line 2")  ← wrong! IndentationError
 ```
 
-> Indentation will have special meaning when you learn `if` and `for`
+> Indentation becomes important when you learn `if` and `for`
 
 ---
 
-## Real Error Examples
+## Real error examples
 
 ```python
 Print("Hello")
@@ -82,14 +82,14 @@ SyntaxError: '(' was never closed
 ```
 IndentationError: unexpected indent
 ```
-> Cause: unnecessary leading space
+> Cause: unnecessary leading spaces
 
 ---
 
-## Summary of 3 Rules
+## Three rules summary
 
 | # | Rule | Remember |
-|---|------|----------|
-| 1 | Always lowercase | `print` not `Print` |
-| 2 | Marks in pairs | `(` has `)`, `"` has `"` |
-| 3 | No leading spaces | Start at the beginning of the line |
+|---|----|----|
+| 1 | Lowercase commands | `print` not `Print` |
+| 2 | Matched symbols | `(` with `)`, `"` with `"` |
+| 3 | No leading spaces | Start at column zero |

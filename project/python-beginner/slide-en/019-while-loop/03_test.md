@@ -1,46 +1,50 @@
-# 🚀 Practice: while Loop — Question 2: Countdown
+# 2️⃣ while-loop — Q3: พิมพ์เลขคู่ด้วย while
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Get numbers from users Then count down from that number to 1.
+พิมพ์เลขคู่ `2 4 6 8 10` ทีละบรรทัด ด้วย `while`
+เริ่มจากตัวแปร `n = 2` แล้วเพิ่มทีละ 2
+
+---
+
+## Input
+
+ไม่มี
+
+## Output
+
+เลขคู่ 5 ค่า
+
+---
+
+## Example
 
 **Input:**
-```
-5
+
+```text
+
 ```
 
 **Output:**
-```
-5
-4
-3
+
+```text
 2
-1
-Blast off!
+4
+6
+8
+10
 ```
-
----
-
-## 💡 Hint
-
-- Get the value and convert it to `int`
-- Condition: `count > 0`
-- Reduce count by 1 every round.
 
 ---
 
 ## Starter Code
 
 ```python
-count = int(input())
+n = 2
 
-while count > 0:
-    # Print count
-    # Decrease count
-
-print("Blast off!")
+# Write your code here
 ```

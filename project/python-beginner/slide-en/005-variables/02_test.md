@@ -1,41 +1,39 @@
-# 📦 Practice: Variables — Question 1: Personal Info
+# 🐾 Variables — Q1: การ์ดสัตว์เลี้ยง
 
 **Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Create variables to store 3 pieces of data, then display them in this format.
+คลินิกสัตว์เลี้ยงอยากพิมพ์การ์ดแนะนำสัตว์ตัวแรกของวัน
 
-| Variable | Value |
-|----------|-------|
-| `name` | `"Sam"` |
-| `age` | `10` |
-| `city` | `"Chiang Mai"` |
-
-**Output:**
-```
-Name: Sam
-Age: 10
-City: Chiang Mai
-```
+เก็บชื่อสัตว์ไว้ในตัวแปร แล้วแสดง 2 บรรทัดตามตัวอย่าง
 
 ---
 
-## 💡 Hint
+## Input
+None (this program does not read user input)
 
-Create 3 variables first, then use `print()` to display them
+## Output
+ข้อความ 2 บรรทัด
+
+---
+
+## Example
+
+**Output:**
+
+```text
+Pet Name
+Mochi
+```
 
 ---
 
 ## Starter Code
-
 ```python
-# Create 3 variables
-name = 
-age = 
-city = 
+pet_name = "Mochi"
 
-# Print them
+# Write your code here
 ```

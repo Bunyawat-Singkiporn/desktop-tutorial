@@ -1,43 +1,44 @@
-# 🐛 Practice: Debugging Loops — Question 1: Fix Off-by-One
+# d d d d d d d d d d d d d d d d d d
 
-**Difficulty:** 🟢 Easy
+difficulty:
 
 ---
 
-## Problem
+♪ Task
 
-The code below wants to display 1–10 but only 1–9 — correct that.
+The program wants to print out bonus points.
+Correct
 
-```python
-for i in range(1, 10):
-    print(i)
-```
+---
 
-**Required Output:**
-```
+♪ Input
+
+No.
+
+♪ Output
+
+Number 1 to 6, line by line.
+
+---
+
+## Example
+
+♪ Output:*```text
 1
 2
 3
 4
 5
 6
-7
-8
-9
-10
-```
+```---
+
+♪ Hint
+
+Double stop.
 
 ---
 
-## 💡 Hint
-
-`range(1, 10)` stops before 10 — What needs to be changed?
-
----
-
-## Starter Code
-
-```python
-for i in range(1, 10):   # ← Fix this line
+♪ Starter Code```python
+for i in range(1, 6):  # ← แก้บรรทัดนี้
     print(i)
 ```

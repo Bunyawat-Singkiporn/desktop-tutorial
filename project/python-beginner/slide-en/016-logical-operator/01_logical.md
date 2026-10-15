@@ -1,64 +1,52 @@
-# 🔗 Logical Operators — Combining Conditions
+♪ Logical Operators
 
 ---
 
-## Why Do We Need Them?
+♪ Why do I have to?
 
-Sometimes one condition is not enough — we need to combine several conditions.
+Sometimes one condition isn't enough. We have to add multiple conditions.
 
-There are 3 main operators:
+3 digits:
 
-| Operator | Meaning |
-|----------|---------|
-| `and` | Every condition must be true |
-| `or` | Only one needs to be true |
-| `not` | Flip the value (True → False, False → True) |
+▪ Operator
+•----------
+All conditions must be true
+I'm sorry. Just one.
+(true, false)
 
 ---
 
-## `and` — All Must Be True
-
-```python
+♪ must be all```python
 age = 15
 score = 80
 
 if age >= 12 and score >= 50:
     print("Pass")
-```
-
-| age | score | Result |
-|-----|-------|--------|
-| 15 | 80 | ✅ `Pass` |
-| 10 | 80 | ❌ not shown |
-| 15 | 30 | ❌ not shown |
+```♫ age ♫ score ♫
+------------------------------
+▪
+▪
+▪
 
 ---
 
-## `or` — One True Is Enough
-
-```python
+♪ really ♪ Just one.```python
 if score > 90 or score < 20:
     print("Special")
-```
-
-| score | Result |
-|-------|--------|
-| 95 | ✅ `Special` |
-| 10 | ✅ `Special` |
-| 50 | ❌ not shown |
+```♫ score ♫
+•--------
+♫ 95 ♫ ♫ ▪
+▪
+□ Do not show
 
 ---
 
-## `not` — Flip the Value
-
-```python
+####:```python
 is_raining = False
 
 if not is_raining:
     print("Go Outside")
-```
-
-| is_raining | not is_raining | Result |
-|------------|----------------|--------|
-| `False` | `True` | ✅ `Go Outside` |
-| `True` | `False` | ❌ not shown |
+```▪ is raining
+------------------------------ . .--
+♫ False ♫ ♫ True ♫ ♫ Go outside ♫
+♫ True ♫ ♫

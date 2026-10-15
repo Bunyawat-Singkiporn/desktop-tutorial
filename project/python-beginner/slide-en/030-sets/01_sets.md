@@ -1,21 +1,21 @@
-# 🎯 Sets — Unique data sets.
+# 🎯 Sets — ชุดข้อมูลที่ไม่ซ้ำ
 
 ---
 
-## What is Set?
+## Set คืออะไร?
 
-Set is a data structure. **Values ​​are unique** and **No exact order**
+Set คือโครงสร้างข้อมูลที่ **ค่าจะไม่ซ้ำกัน** และ **ไม่มีลำดับแน่นอน**
 
 ---
 
-## Creating a Set
+## การสร้าง Set
 
 ```python
 fruits = {"apple", "banana", "mango"}
 numbers = {1, 2, 3, 4, 5}
 ```
 
-> If you enter duplicate values ​​— Set will automatically delete them.
+> ถ้าใส่ค่าซ้ำ — Set จะลบออกให้เองอัตโนมัติ
 
 ```python
 nums = {1, 2, 2, 3, 3, 3}
@@ -24,7 +24,7 @@ print(nums)  # {1, 2, 3}
 
 ---
 
-## Delete duplicate values ​​from List
+## ลบค่าซ้ำจาก List
 
 ```python
 data = [1, 2, 2, 3, 4, 4, 5]
@@ -34,18 +34,18 @@ print(unique)  # {1, 2, 3, 4, 5}
 
 ---
 
-## .add() and .remove()
+## .add() และ .remove()
 
 ```python
 fruits = {"apple", "banana"}
-fruits.add("mango")       # increase
-fruits.remove("banana")   # delete
+fruits.add("mango")       # เพิ่ม
+fruits.remove("banana")   # ลบ
 print(fruits)             # {'apple', 'mango'}
 ```
 
 ---
 
-## Check the value
+## ตรวจสอบค่า
 
 ```python
 fruits = {"apple", "banana", "mango"}
@@ -55,29 +55,29 @@ print("grape" in fruits)   # False
 
 ---
 
-## Union and Intersection
+## Union และ Intersection
 
-**Union `|` — Total (unique):**
+**Union `|` — รวมทั้งหมด (ไม่ซ้ำ):**
 ```python
 a = {"A", "B", "C"}
 b = {"B", "C", "D"}
 print(a | b)  # {'A', 'B', 'C', 'D'}
 ```
 
-**Intersection `&` — duplicate values:**
+**Intersection `&` — ค่าที่ซ้ำกัน:**
 ```python
 print(a & b)  # {'B', 'C'}
 ```
 
 ---
 
-## Summary of Set Methods
+## สรุป Set Methods
 
-| Method | Purpose |
+| คำสั่ง | หน้าที่ |
 |--------|---------|
-| `set(list)` |Convert list to set (delete duplicates)|
-| `.add(x)` |increase value|
-| `.remove(x)` |Delete value|
-| `x in set` |examine|
+| `set(list)` | แปลง list เป็น set (ลบซ้ำ) |
+| `.add(x)` | เพิ่มค่า |
+| `.remove(x)` | ลบค่า |
+| `x in set` | ตรวจสอบ |
 | `a \| b` | Union |
 | `a & b` | Intersection |

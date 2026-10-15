@@ -1,46 +1,53 @@
-# 🔥 Practice Review Dictionaries — Question 4: Grade Book
+# 🔁 Review Dicts — Q5: กระดานคะแนนพร้อม Top
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
-## Problem
+## Task
 
-Create a gradebook that can add students, update scores, display all records, and find the student with the highest score.
+พิมพ์กระดานคะแนนแล้วหาอันดับหนึ่งด้วยมือ
 
-Accept these commands: `add`, `update`, `show`, `top`, and `exit`.
+กำหนด `board = {"Nida": 70, "Ohm": 95, "Pim": 88}`
 
-**Example Session:**
+พิมพ์ทุกคนแบบ `Nida: 70` แล้วปิดท้าย `Top: Ohm (95)`
+
+---
+
+## Input
+
+None (values are set in the program)
+
+## Output
+
+4 lines
+
+---
+
+## Example
+
+**Output:**
+
+```text
+Nida: 70
+Ohm: 95
+Pim: 88
+Top: Ohm (95)
 ```
-Command: add
-Name: Alice
-Score: 85
-Command: add
-Name: Bob
-Score: 92
-Command: top
-Top: Bob (92)
-Command: update
-Name: Alice
-Score: 95
-Command: top
-Top: Alice (95)
-Command: show
-Alice: 95
-Bob: 92
-Command: exit
-```
+
+
+---
+
+## Hint
+
+พิมพ์ไปด้วย หากสูงสุดไปด้วยใน loop เดียว
 
 ---
 
 ## Starter Code
 
 ```python
-gradebook = {}
+board = {"Nida": 70, "Ohm": 95, "Pim": 88}
 
-while True:
-    command = input("Command: ")
-    if command == "exit":
-        break
-    # Write your code here
+# Write your code here
 ```

@@ -1,26 +1,26 @@
-# 📋 Lists — Collections of Data
+# 📋 Lists — Data collections
 
 ---
 
-## What is a List?
+## What is a list?
 
-A list is a data structure that lets you **store multiple values in one variable**.
+A list is a data structure used to **store many values in one variable**.
 
-Instead of creating multiple variables:
+Instead of creating many variables:
 ```python
 name1 = "Alice"
 name2 = "Bob"
 name3 = "Charlie"
 ```
 
-We can use a list instead:
+You can use a list:
 ```python
 names = ["Alice", "Bob", "Charlie"]
 ```
 
 ---
 
-## Creating a List
+## Creating lists
 
 ```python
 numbers = [1, 2, 3, 4, 5]
@@ -31,9 +31,9 @@ empty = []
 
 ---
 
-## Accessing Items by Index
+## Accessing data (index)
 
-Indexes always start at **0**.
+Index always starts at **0**.
 
 ```python
 fruits = ["apple", "banana", "mango"]
@@ -42,12 +42,12 @@ print(fruits[0])   # apple
 print(fruits[1])   # banana
 print(fruits[2])   # mango
 print(fruits[-1])  # mango  ← last item
-print(fruits[-2])  # banana ← second-to-last item
+print(fruits[-2])  # banana ← second-to-last
 ```
 
 ---
 
-## len() — Count the Items
+## len() — count members
 
 ```python
 fruits = ["apple", "banana", "mango"]
@@ -56,7 +56,7 @@ print(len(fruits))  # 3
 
 ---
 
-## Looping with a for Loop
+## Loop with for
 
 ```python
 fruits = ["apple", "banana", "mango"]
@@ -74,7 +74,7 @@ mango
 
 ---
 
-## Example Program — Adding Scores
+## Example program — sum scores
 
 ```python
 scores = [85, 90, 78, 92, 88]
@@ -88,7 +88,7 @@ print("Total:", total)
 
 ---
 
-## Index Example
+## Index example
 
 | Index | -3 | -2 | -1 |
 |-------|----|----|----|

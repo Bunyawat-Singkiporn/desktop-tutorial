@@ -1,32 +1,43 @@
-# 🔡 Practice: Syntax — Question 1: Fix the Case
+# ✍️ Python syntax rules — Q1: Write correctly from the start
 
 **Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-The code below will not run because of **wrong capitalization**. Fix it.
+The teacher asks you to write a notice that follows all 3 rules from the start — no fixing later.
 
-```python
-Print("I love Python")
-```
+Show these 3 lines — `Robot Club`, `Every Saturday`, `Room 501`
 
-**Expected output:**
-```
-I love Python
-```
+> **3 rules:** case matters · parentheses and quotes in pairs · normal lines must not have leading spaces
 
 ---
 
-## 💡 Hint
+## Input
 
-Python always uses **lowercase** — `print` not `Print`
+None
+
+## Output
+
+Three lines of text
+
+---
+
+## Example
+
+**Output:**
+
+```text
+Robot Club
+Every Saturday
+Room 501
+```
 
 ---
 
 ## Starter Code
 
 ```python
-Print("I love Python")
+# Write your code here
 ```

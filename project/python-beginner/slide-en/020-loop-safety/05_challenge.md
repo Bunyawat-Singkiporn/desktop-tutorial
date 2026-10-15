@@ -1,56 +1,53 @@
-# 🔥 Practice: Loop Safety — Question 4: Number Filter
+♪ loop-savety ♫ Q5: Guess the number with hints
 
-**Difficulty:** 🔴 Hard
+difficulty:
 
 ---
 
-## Problem
+♪ Task
 
-Receive repeated numbers until typing `0` showing only numbers **divided by 3** and counting them.
+The secret number is ^25)
+Use &  Reue
+Then break
+- Too little.
+- Too much.
 
-**Input:**
-```
-3
-7
-9
-2
-12
-5
-6
-0
+---
+
+♪ Input
+
+A line of guesswork.
+
+♪ Output
+
+The clue was correct.
+
+---
+
+## Example
+
+**Input:*```text
+10
+40
+25
 ```
 
 **Output:**
-```
-3
-9
-12
-6
-Count of multiples of 3: 4
-```
+
+```text
+Too low
+Too high
+Correct!
+```---
+
+♪ Hint
+
+Compare guesses with secret if / elif / otherwise in while True
 
 ---
 
-## 💡 Hint
+♪ Starter Code```python
+secret = 25
 
-- `while True:` + `break` when receiving 0
-- If `n % 3 != 0` then `continue` (skip)
-- If `n % 3 == 0` print and add count
-
----
-
-## Starter Code
-
-```python
-count = 0
-
-while True:
-    n = int(input())
-    if n == 0:
-        break
-    if n % 3 != 0:
-        continue   # Skip non-multiples
-    # Print and count multiples of 3
-
-print(f"Count of multiples of 3: {count}")
+# Write your code here
 ```

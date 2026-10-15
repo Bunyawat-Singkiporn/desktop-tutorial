@@ -1,35 +1,31 @@
-# 🥇 Practice List Methods — Question 3: Top Score
-
-**Difficulty:** 🟡 Medium
-
+# 🛠️ List Methods — Q4: เอาของหมดสต็อกออก
+**Difficulty:** 🟢 Easy
 ---
-
-## Problem
-
-Set scores in order from highest to lowest. then show the highest score
-
-```python
-scores = [72, 95, 60, 88, 45, 83]
-```
-
+## Task
+คลังต้องเอาสินค้าหมดสต็อกออกจากรายการ
+กำหนด `stock = ["Rice", "Oil", "Soap", "Milk"]`
+ลบ `Oil` ออกด้วย `.remove()` แล้วแสดง list
+---
+## Input
+None (values are set in the program)
+## Output
+list หนึ่งบรรทัด
+---
+## Example
 **Output:**
+```text
+['Rice', 'Soap', 'Milk']
 ```
-Top score: 95
-```
 
----
-
-## 💡 Hint
-
-- `.sort(reverse=True)` is arranged in descending order.
-- After sorting, `scores[0]` is the largest value.
 
 ---
 
 ## Starter Code
 
 ```python
-scores = [72, 95, 60, 88, 45, 83]
+stock = ["Rice", "Oil", "Soap", "Milk"]
 
-# Sort and display highest scores
+# Write your code here
+
+print(stock)
 ```

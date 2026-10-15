@@ -1,55 +1,42 @@
-# 💬 Read Code — Question 3: Explain the Code
+# Read code #
 
-**Difficulty:** 🟡 Medium
+difficulty:
 
 ---
 
-## Problem
+♪ Task
 
-Read the code below and explain in the comment block:
-1. What data the program receives.
-2. How it processes the data.
-3. What it displays.
+If the score is 55 and the standard 50 is Pass , write that result.
 
-```python
-def process(data):
-    result = {}
-    for item in data:
-        first_letter = item[0].upper()
-        if first_letter in result:
-            result[first_letter].append(item)
-        else:
-            result[first_letter] = [item]
-    return result
+---
 
-words = ["apple", "banana", "avocado", "blueberry", "cherry", "apricot"]
-grouped = process(words)
-for letter, group in grouped.items():
-    print(f"{letter}: {group}")
+♪ Input
+
+None
+
+♪ Output
+
+One line.
+
+---
+
+## Example
+
+♪ Output:*
+
+```text
+Pass
 ```
+
 
 ---
 
 ## Starter Code
 
 ```python
-# Explain the program below:
-# Input:
-# Processing:
-# Output:
-
-def process(data):
-    result = {}
-    for item in data:
-        first_letter = item[0].upper()
-        if first_letter in result:
-            result[first_letter].append(item)
-        else:
-            result[first_letter] = [item]
-    return result
-
-words = ["apple", "banana", "avocado", "blueberry", "cherry", "apricot"]
-grouped = process(words)
-for letter, group in grouped.items():
-    print(f"{letter}: {group}")
+score = 55
+if score >= 50:
+    print("Pass")
+else:
+    print("Fail")
 ```

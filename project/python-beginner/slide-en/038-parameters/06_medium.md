@@ -1,4 +1,4 @@
-# Practice Parameters — Question 5: Movie Ticket Check
+# 📥 Parameters — Q6: ส่วนลดคงที่
 
 **Difficulty:** 🟡 Medium
 
@@ -6,35 +6,45 @@
 
 ## Task
 
-This movie is for age 13+.
+ร้านลดทันที 20 บาท
 
-1. Read age from `input`
-2. Create `check_ticket(age)`:
-   - age >= 13 → `You can watch`
-   - otherwise → `Sorry, too young`
+**Requirements:**
+
+- สร้าง `after_discount(price)` พิมพ์ `Pay: <price-20>`
+- เรียกกับ `100` และ `85`
+
+---
+
+## Input
+
+None (values are set in the program / call functions in code)
+
+## Output
+
+2 บรรทัด
 
 ---
 
 ## Example
 
-**Input:**
-```
-15
+**Output:**
+
+```text
+Pay: 80
+Pay: 65
 ```
 
-**Output:**
-```
-You can watch
-```
+
+---
+
+## 💡 Hint
+
+หัก 20 แล้วพิมพ์
 
 ---
 
 ## Starter Code
 
 ```python
-def check_ticket(age):
-    # Write your code here
-
-age = int(input())
-check_ticket(age)
+# after_discount
 ```

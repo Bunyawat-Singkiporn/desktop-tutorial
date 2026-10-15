@@ -1,27 +1,46 @@
-# 🔍 Practice Function — Question 2: Filter List
+# 🧩 Function Practice — Q3: ค่าเฉลี่ย list
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Create a `filter_above(numbers, minimum)` function that returns a list containing only values greater than or equal to `minimum`.
+หาค่าเฉลี่ยคะแนนด้วย `sum` และ `len`
+
+**Requirements:**
+
+- สร้าง `average(scores)` คืน `sum(scores) / len(scores)`
+- พิมพ์ผลของ `[80, 90, 100]` ด้วยทศนิยม 1 ตำแหน่ง
+
+---
+
+## Input
+
+None (values are set in the program / call functions in code)
+
+## Output
+
+1 line(s)
+
+---
+
+## Example
 
 **Output:**
+
+```text
+90.0
 ```
-[15, 22, 30, 18]
-[85, 92, 88]
-```
+
 
 ---
 
 ## Starter Code
 
 ```python
-def filter_above(numbers, minimum):
+def average(scores):
     # Write your code here
 
-print(filter_above([3, 15, 7, 22, 8, 30, 5, 18], 10))
-print(filter_above([85, 45, 92, 38, 88], 80))
+print(average([80, 90, 100]))
 ```

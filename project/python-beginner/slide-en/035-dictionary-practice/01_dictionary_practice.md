@@ -1,38 +1,38 @@
-# 💾 Dictionary Practice — Practice Using Dictionaries
+# 💾 Dictionary Practice — ฝึกใช้ Dictionary
 
 ---
 
-## Review: Dictionaries Covered So Far
+## ทบทวน Dictionary ที่เรียนมา
 
-| Skill | Example |
+| ทักษะ | ตัวอย่าง |
 |-------|---------|
-| Create | `d = {"a": 1, "b": 2}` |
-| Access | `d["a"]` → `1` |
-| Add/change | `d["c"] = 3` |
-| Update | `d.update({"a": 10})` |
-| Delete | `del d["b"]` |
-| Loop | `for k, v in d.items():` |
-| Key exists? | `if "a" in d:` |
+| สร้าง | `d = {"a": 1, "b": 2}` |
+| เข้าถึง | `d["a"]` → `1` |
+| เพิ่ม/แก้ | `d["c"] = 3` |
+| อัปเดต | `d.update({"a": 10})` |
+| ลบ | `del d["b"]` |
+| loop | `for k, v in d.items():` |
+| มี key ไหม | `if "a" in d:` |
 
 ---
 
-## Practice Path (easy → harder)
+## แผนฝึกวันนี้ (ไล่จากง่าย → ยาก)
 
-Start with **06–15** to get comfortable, then medium / challenge.
+เริ่มจาก **06–15** ให้ชินก่อน แล้วค่อย medium / challenge
 
-| Order | Level | Skills |
+| ลำดับ | Level | ทักษะ |
 |-------|--------|--------|
-| `06`–`09` | 🟢 | Access / change / add key |
-| `10`–`11` | 🟢 | Loop `items()` and print |
-| `12`–`15` | 🟢 | `input` + lookup / `in` |
-| `16`–`19` | 🟡 | Menu check / print loop / sum scores |
-| `20`–`24` | 🟡 | Count / login / total price / find max |
-| `02`–`04` | 🟡 | Word count / quiz / total (original) |
-| `05` | 🔴 | Multi-command inventory |
+| `06`–`09` | 🟢 | อ่านค่า / แก้ค่า / เพิ่ม key |
+| `10`–`11` | 🟢 | วน `items()` แสดงรายการ |
+| `12`–`15` | 🟢 | `input` + หาค่า / `in` |
+| `16`–`19` | 🟡 | เช็คเมนู / loop พิมพ์ / รวมคะแนน |
+| `20`–`24` | 🟡 | นับความถี่ / login / รวมราคา / หา max |
+| `02`–`04` | 🟡 | word count / quiz / รวมราคา (เดิม) |
+| `05` | 🔴 | inventory หลายคำสั่ง |
 
 ---
 
-## Common Pattern — Frequency Count
+## Pattern ที่พบบ่อย — นับความถี่
 
 ```python
 words = ["cat", "dog", "cat", "bird", "dog", "cat"]
@@ -50,7 +50,7 @@ print(count)
 
 ---
 
-## Pattern — Check Answers
+## Pattern — ตรวจสอบคำตอบ
 
 ```python
 answers = {"q1": "A", "q2": "C", "q3": "B"}
@@ -64,15 +64,15 @@ else:
 
 ---
 
-## Program Example — Product Prices
+## Exampleโปรแกรม — ราคาสินค้า
 
 ```python
 prices = {"apple": 15, "banana": 8, "mango": 25}
 total = 0
 
 for item, price in prices.items():
-    print(f"{item}: {price} baht")
+    print(f"{item}: {price} บาท")
     total += price
 
-print(f"Total: {total} baht")
+print(f"รวม: {total} บาท")
 ```

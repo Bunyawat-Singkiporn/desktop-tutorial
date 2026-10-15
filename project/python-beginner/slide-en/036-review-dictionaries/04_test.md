@@ -1,38 +1,45 @@
-# 🤝 Practice Review Dictionaries — Question 3: Merge Dicts
+# 🔁 Review Dicts — Q4: ลบคีย์ชั่วคราว
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Merge two dictionaries. If a key appears in both, use the value from `extra`.
+ลบโน้ตชั่วคราวออกจากสินค้า
 
-```python
-base = {"name": "Alice", "age": 15}
-extra = {"score": 90, "age": 16}
-```
+กำหนด `item = {"name": "Lamp", "note": "demo", "price": 199}`
+
+del note แล้วพิมพ์คีย์ที่เหลือ
+
+---
+
+## Input
+
+None (values are set in the program)
+
+## Output
+
+2 lines
+
+---
+
+## Example
 
 **Output:**
+
+```text
+name
+price
 ```
-{'name': 'Alice', 'age': 16, 'score': 90}
-```
 
----
-
-## 💡 Hint
-
-Use `.update(extra)` to merge them. A value from `extra` replaces the existing value when a key appears in both dictionaries.
 
 ---
 
 ## Starter Code
 
 ```python
-base = {"name": "Alice", "age": 15}
-extra = {"score": 90, "age": 16}
+item = {"name": "Lamp", "note": "demo", "price": 199}
 
-# Merge extra into base
-
-print(base)
+# Write your code here
 ```

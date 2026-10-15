@@ -1,42 +1,51 @@
-# 🐛 Practice Scope — Question 2: Fix a Scope Bug
+# 🔭 Scope — Q3: local ทับชื่อ
 
 **Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-The code below has a bug. Fix it so that it works correctly.
+ตัวแปรชื่อเดียวกันคนละที่
 
-```python
-# Buggy code
-def calc():
-    result = 42
+**Requirements:**
 
-calc()
-print(result)  # NameError!
-```
-
-**Correct Output:**
-```
-42
-```
+- นอกฟังก์ชัน `x = 100`
+- ใน `demo()` ตั้ง `x = 50` แล้วพิมพ์ `Inside: 50`
+- หลังเรียกฟังก์ชันพิมพ์ `Outside: 100`
 
 ---
 
-## 💡 Hint
+## Input
 
-`result` is a local variable. Use `return` to send its value out of the function.
+None (values are set in the program)
+
+## Output
+
+2 line(s)
+
+---
+
+## Example
+
+**Output:**
+
+```text
+Inside: 50
+Outside: 100
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-# Fix the code so it can print 42
-def calc():
-    result = 42
-    # Fix this part
+x = 100
 
-# Fix this part to receive and print the value
+def demo():
+    # local x
+
+demo()
+print(f"Outside: {x}")
 ```

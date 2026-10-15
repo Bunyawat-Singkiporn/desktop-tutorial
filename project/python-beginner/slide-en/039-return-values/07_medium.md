@@ -1,4 +1,4 @@
-# Practice Return — Question 6: Lucky Number Game
+# ↩️ Return Values — Q7: แปลง ซม.→ม.
 
 **Difficulty:** 🟡 Medium
 
@@ -6,32 +6,50 @@
 
 ## Task
 
-A tiny game: the player enters a number and learns if it is Even or Odd.
+แปลงเซนติเมตรเป็นเมตร
 
-Create `lucky(n)` that returns `"Even"` or `"Odd"`. Play 3 rounds.
+**Requirements:**
+
+- สร้าง `to_meters(cm)` คืน `cm / 100`
+- พิมพ์ผลของ `175` และ `200`
 
 ---
 
-## Example Session
+## Input
 
+None (values are set in the program / call functions in code)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## Example
+
+**Output:**
+
+```text
+1.75
+2.0
 ```
-Your number: 4
-4 is Even
-Your number: 7
-7 is Odd
-Your number: 10
-10 is Even
-```
+
+
+---
+
+## 💡 Hint
+
+หาร 100 แล้ว return
 
 ---
 
 ## Starter Code
 
 ```python
-def lucky(n):
+def to_meters(cm):
+    # return
     # Write your code here
 
-for i in range(3):
-    n = int(input("Your number: "))
-    print(f"{n} is {lucky(n)}")
+print(to_meters(175))
+print(to_meters(200))
 ```

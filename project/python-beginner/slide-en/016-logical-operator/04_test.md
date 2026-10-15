@@ -1,39 +1,50 @@
-# 📚 Practice and/or/not — Question 3: Homework
+# loggeral ^ QC3: special score alert
 
-**Difficulty:** 🟡 Medium
-
----
-
-## Problem
-
-Check whether the student has done homework, using the given variable.
-
-```python
-homework_done = False
-```
-
-**Condition:** if homework is **not** done → show `Do Homework`
+difficulty:
 
 ---
 
-## Sample Output
+♪ Task
 
-```
-Do Homework
-```
+The tutor system alerts when the score is high or low.
+
+Get a score program and say whether to alert.
+
+♪ Rolls:*
+
+- Scores:
+- If it isn't . . .
 
 ---
 
-## 💡 Hint
+♪ Input
 
-Use `not` to flip the value → `not False` becomes `True`
+The score is 1 lines integer.
+
+♪ Output
+
+Warning status 1 lines
+
+---
+
+## Example
+
+**Input:*```text
+15
+```
+
+**Output:**
+
+```text
+Special Alert
+```
 
 ---
 
 ## Starter Code
 
 ```python
-homework_done = False
+score = int(input())
 
 # Write your code here
 ```

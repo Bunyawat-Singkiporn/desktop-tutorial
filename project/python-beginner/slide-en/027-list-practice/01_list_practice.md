@@ -1,24 +1,17 @@
-# 📝 List Practice — Practice using Lists.
-
+# 📝 List Practice — ฝึกใช้ List
 ---
-
-## Review the list you learned.
-
-|Skills|example|
+## ทบทวน List ที่เรียนมา
+| ทักษะ | ตัวอย่าง |
 |-------|---------|
-|Create a list| `items = ["a", "b", "c"]` |
-|Access with index| `items[0]`, `items[-1]` |
-|Loop| `for item in items:` |
-|Add information| `items.append("d")` |
-|Delete data| `items.remove("b")` |
-|Sort data| `items.sort()` |
-
+| สร้าง list | `items = ["a", "b", "c"]` |
+| เข้าถึงด้วย index | `items[0]`, `items[-1]` |
+| วนซ้ำ | `for item in items:` |
+| เพิ่มข้อมูล | `items.append("d")` |
+| ลบข้อมูล | `items.remove("b")` |
+| เรียงข้อมูล | `items.sort()` |
 ---
-
-## Common patterns
-
-**Filter (Filter) — Select only those that meet the conditions:**
-```python
+## Pattern ที่พบบ่อย
+**กรอง (Filter) — เลือกเฉพาะที่ตรงเงื่อนไข:**```python
 numbers = [3, 15, 7, 22, 8, 30]
 big = []
 
@@ -28,9 +21,7 @@ for n in numbers:
 
 print(big)  # [15, 22, 30]
 ```
-
-**Count (Count) — Count the numbers that meet the conditions:**
-```python
+**นับ (Count) — นับจำนวนที่ตรงเงื่อนไข:**```python
 scores = [85, 45, 92, 38, 77, 61]
 passed = 0
 
@@ -40,11 +31,8 @@ for score in scores:
 
 print("Passed:", passed)
 ```
-
 ---
-
-## Example program — To-Do list
-
+## Exampleโปรแกรม — รายการ To-Do
 ```python
 todos = ["Buy food", "Do homework", "Clean room"]
 
@@ -60,14 +48,11 @@ for i in range(len(todos)):
 2 . Do homework
 3 . Clean room
 ```
-
 ---
-
-## Order of working with Lists
-
+## ลำดับการทำงานกับ List
 ```
-1. Create a list
-2. Add/edit information
-3. Process with loop
-4. Show results
+1. สร้าง list
+2. เพิ่ม / แก้ไข ข้อมูล
+3. ประมวลผลด้วย loop
+4. แสดงผลลัพธ์
 ```

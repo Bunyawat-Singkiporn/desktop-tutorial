@@ -1,0 +1,5 @@
+print("WRONG  >>  RIGHT")
+print("-------------------------------")
+print('Print("Hi")  >>  print("Hi")')
+print('print("Hi)   >>  print("Hi")')
+print("-------------------------------")

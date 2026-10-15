@@ -1,35 +1,53 @@
-# 🧹 Code Readability — Question 3: Rewrite Dense Code
+# Code Readability ^Q4:
 
-**Difficulty:** 🟡 Medium
-
----
-
-## Problem
-
-Rewrite the code below so it is easier to read. Use meaningful names, an f-string, proper indentation, and a comment.
-
-```python
-x=int(input());y=int(input());z=x*y;print("Result: "+str(z));r=z%2;print("Even" if r==0 else "Odd")
-```
-
-**Output:** (for inputs 6 and 7)
-```
-Result: 42
-Even
-```
+difficulty:
 
 ---
 
-## 💡 Hint
+♪ Task
 
-- Put each statement on its own line.
-- Use meaningful variable names.
-- Use an f-string instead of `"..." + str(...)`.
+Adult age check.
+
+== sync, corrected by elderman == *
+
+- Aged.
+- Keep ^is adult = age > = 18. ▪
+- If True Prints
+
+---
+
+♪ Input
+
+See example
+
+♪ Output
+
+One line.
+
+---
+
+## Example
+
+**Input:*
+
+```text
+20
+```
+
+**Output:**
+
+```text
+Adult
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-# Rewrite the code for readability—the output must stay the same
+age = int(input())
+is_adult = age >= 18
+
+# ใช้ is_adult
 ```

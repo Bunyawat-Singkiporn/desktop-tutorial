@@ -1,52 +1,52 @@
-# 💬 Comments — Notes in Code
+# 💬 Comments — หมายเหตุในโค้ด
 
 ---
 
-## What is a Comment?
+## Comment คืออะไร?
 
-A **Comment** is text in code that **Python does not read and does not run**.
+**Comment** คือข้อความในโค้ดที่ **Python ไม่อ่านและไม่ทำงาน**
 
-Use it to explain the code so **people reading it** understand.
+ใช้เพื่ออธิบายให้ **คนอ่านโค้ด** เข้าใจ
 
-> Think of it like a **sticky note** 🗒️ that explains what you wrote
+> เปรียบเหมือน **โพสต์อิท** 🗒️ ที่แปะไว้อธิบายสิ่งที่เขียน
 
 ---
 
-## How to Write a Comment
+## วิธีเขียน Comment
 
-Put a `#` at the start:
+ใช้เครื่องหมาย `#` นำหน้า:
 
 ```python
-# This is a comment — Python will skip this line
-print("Hello")  # you can also put a comment at the end of a line
+# นี่คือ comment — Python จะข้ามบรรทัดนี้ไป
+print("Hello")  # comment ต่อท้ายโค้ดได้ด้วย
 ```
 
-Output:
+ผลลัพธ์:
 ```
 Hello
 ```
 
-> Comments **never appear** in the Output
+> Comment **ไม่ปรากฏ** ใน Output เลย
 
 ---
 
-## Why Use Comments?
+## ทำไมต้อง Comment?
 
 ```python
-# ❌ No comment — hard to understand
+# ❌ ไม่มี comment — อ่านไม่รู้เรื่อง
 x = 86400
 print(x * 7)
 ```
 
 ```python
-# ✅ With comments — clear right away
-# Number of seconds in 1 day
+# ✅ มี comment — เข้าใจทันที
+# จำนวนวินาทีใน 1 วัน
 seconds_per_day = 86400
-# Calculate seconds in 1 week (7 days)
+# คำนวณวินาทีใน 1 สัปดาห์ (7 วัน)
 print(seconds_per_day * 7)
 ```
 
-> Both programs do the same thing, but one is much easier to read!
+> โค้ดทั้งสองทำงานเหมือนกัน แต่อ่านได้ง่ายกว่ากันมาก!
 
 ---
 
@@ -54,27 +54,27 @@ print(seconds_per_day * 7)
 
 | ❌ Bad | ✅ Good |
 |--------|---------|
-| `# print hello` (says what you can already see) | `# Show a welcome message` |
-| `# x = 5` | `# Product price (baht)` |
-| `# this is code` | `# Calculate 7% VAT` |
+| `# print hello` (บอกสิ่งที่เห็นอยู่แล้ว) | `# แสดงข้อความต้อนรับ` |
+| `# x = 5` | `# ราคาสินค้า (บาท)` |
+| `# this is code` | `# คำนวณ VAT 7%` |
 
-> A good comment explains **why**, not just **what**
+> Comment ที่ดีอธิบาย **ทำไม** ไม่ใช่แค่ **อะไร**
 
 ---
 
-## Example of Good Comments
+## ตัวอย่าง Comment ที่ดี
 
 ```python
-# Display the shop sign header
+# แสดงหัวข้อป้ายร้าน
 print("====================")
-print("   BEST SHOP EVER  ")   # shop name
+print("   BEST SHOP EVER  ")   # ชื่อร้าน
 print("====================")
 
-# Display opening hours
+# แสดงเวลาเปิด-ปิด
 print("Open: 8am - 10pm")
 ```
 
-Output:
+ผลลัพธ์:
 ```
 ====================
    BEST SHOP EVER  
@@ -84,15 +84,15 @@ Open: 8am - 10pm
 
 ---
 
-## Multi-line Comments
+## Comment หลายบรรทัด
 
 ```python
 # =============================
-# Program name: Hello World
-# Author: Alex
-# Date: 1 Jan 2025
+# ชื่อโปรแกรม: Hello World
+# ผู้เขียน: Alex
+# วันที่: 1 Jan 2025
 # =============================
 print("Hello, World!")
 ```
 
-> Put `#` on every line you want to comment
+> ใส่ `#` ทุกบรรทัดที่ต้องการ comment

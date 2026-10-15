@@ -1,45 +1,50 @@
-# 🔥 Practice Sets — Question 4: Class Roster
+# 🔤 Sets — Q5: บัตรเข้างานพร้อมเช็ค
 
-**Difficulty:** 🔴 Hard
-
----
-
-## Problem
-
-You are given student names from two classrooms, with some students appearing in both. Display:
-1. The total number of unique students
-2. The names that appear in both classrooms
-3. The names that appear in only one classroom (union minus intersection)
-
-```python
-room_a = ["Alice", "Bob", "Charlie", "Diana"]
-room_b = ["Bob", "Eve", "Charlie", "Frank"]
-```
-
-**Output** (order may vary):
-```
-Total unique students: 6
-In both rooms: {'Bob', 'Charlie'}
-Only in one room: {'Alice', 'Diana', 'Eve', 'Frank'}
-```
+**Difficulty:** 🔴 Challenge
 
 ---
 
-## 💡 Hint
+## Task
 
-- Convert list to set first.
-- Use `|` and `&` and `-` (difference)
+ระบบสแกนบัตรเข้างาน
+
+กำหนด `badges = {"E01", "E02", "E03"}`
+
+เช็ค `"E04"` ถ้ามีแสดง `Welcome` ไม่มีแสดง `Denied`
+
+---
+
+## Input
+
+None (values are set in the program)
+
+## Output
+
+One line
+
+---
+
+## Example
+
+**Output:**
+
+```text
+Denied
+```
+
+
+---
+
+## Hint
+
+กรณีไม่พบก็ต้องมี else
 
 ---
 
 ## Starter Code
 
 ```python
-room_a = ["Alice", "Bob", "Charlie", "Diana"]
-room_b = ["Bob", "Eve", "Charlie", "Frank"]
-
-set_a = set(room_a)
-set_b = set(room_b)
+badges = {"E01", "E02", "E03"}
 
 # Write your code here
 ```

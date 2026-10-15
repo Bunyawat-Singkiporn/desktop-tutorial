@@ -1,14 +1,34 @@
-# 🔥 Practice: What is Python — Question 4: Star Pyramid
+# ⭐ What is Python — Q12: Star pyramid
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
-## Problem
+## Task
 
-Display this 5-row star pyramid — **every character must match:**
+The teacher gives a challenge: print a 5-row star pyramid.
 
-```
+Notice that each row adds 2 stars and the leading spaces shrink by 1.
+
+> The hard part is counting spaces, not new commands — still only `print` as before.
+
+---
+
+## Input
+
+None (this program does not read user input)
+
+## Output
+
+A 5-line star pyramid
+
+---
+
+## Example
+
+**Output:**
+
+```text
     *
    ***
   *****
@@ -18,33 +38,15 @@ Display this 5-row star pyramid — **every character must match:**
 
 ---
 
-## Sample Input / Output
+## Hint
 
-No input — fixed output
-
----
-
-## 💡 Hint
-
-| Row | Spaces | Stars |
-|-----|--------|-------|
-| 1 | 4 | 1 |
-| 2 | 3 | 3 |
-| 3 | 2 | 5 |
-| 4 | 1 | 7 |
-| 5 | 0 | 9 |
-
-- Row `n` has `(5-n)` spaces and `(2n-1)` stars
-- Use `print()` 5 times
+The bottom row is 9 stars wide with no leading spaces.
+Try writing the bottom row first, then work upward row by row.
 
 ---
 
 ## Starter Code
 
 ```python
-# Row 1: 4 spaces + 1 star
-# Row 2: 3 spaces + 3 stars
-# Row 3: 2 spaces + 5 stars
-# Row 4: 1 space  + 7 stars
-# Row 5: 0 spaces + 9 stars
+# Write your code here
 ```

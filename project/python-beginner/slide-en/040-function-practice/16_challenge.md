@@ -1,37 +1,49 @@
-# 🔥 Practice Function — Challenge: RPG Player
+# 🧩 Function Practice — Q16: ตัวละคร HP
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
 ## Task
 
-Build a simple RPG player system with **4 functions**:
+ตัวละครมีเลือด
 
-| Function | Job |
-|----------|-----|
-| `create_player(name)` | return `{"name": name, "hp": 100}` |
-| `take_damage(player, dmg)` | reduce hp (not below 0) |
-| `is_alive(player)` | return True if hp > 0 |
-| `show_status(player)` | print name, hp, Alive/Dead |
+**Requirements:**
+
+- `create_player(name)` คืน `{"name": name, "hp": 100}`
+- `take_damage(player, dmg)` ลด hp
+- `is_alive(player)` คืน True ถ้า hp > 0
+- `show_status(player)` พิมพ์ `Name: ... / HP: ...`
+- สร้าง Hero โดน 40 แล้ว show และพิมพ์ is_alive
+
+---
+
+## Input
+
+None (values are set in the program / call functions in code)
+
+## Output
+
+3 line(s)
 
 ---
 
 ## Example
 
-**Input:**
-```
-Hero
-30
+**Output:**
+
+```text
+Name: Hero
+HP: 60
+True
 ```
 
-**Output:**
-```
-=== Player Status ===
-Name: Hero
-HP: 70
-Status: Alive
-```
+
+---
+
+## Hint
+
+dict เก็บสถานะ แก้ผ่าน key
 
 ---
 
@@ -50,9 +62,8 @@ def is_alive(player):
 def show_status(player):
     # Write your code here
 
-name = input()
-dmg = int(input())
-player = create_player(name)
-take_damage(player, dmg)
-show_status(player)
+p = create_player("Hero")
+take_damage(p, 40)
+show_status(p)
+print(is_alive(p))
 ```

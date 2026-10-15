@@ -1,41 +1,47 @@
-# 🛒 Practice Dictionary — Question 3: Shopping Total
+# 🏋️ Dict Practice — Q4: นับผลไม้ในตะกร้า
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Given product prices, read 3 item names from the user and calculate the total.
+นับจำนวนผลไม้แต่ละชนิดในตะกร้า
 
-```python
-prices = {"apple": 15, "banana": 8, "mango": 25, "orange": 20, "kiwi": 35}
+กำหนด `fruits = ["apple", "banana", "apple", "mango", "banana", "apple"]`
+
+เริ่มจาก `count = {}` นับความถี่ แล้วพิมพ์ด้วย items
+
+---
+
+## Input
+
+None (values are set in the program)
+
+## Output
+
+3 lines
+
+---
+
+## Example
+
+**Output:**
+
+```text
+apple: 3
+banana: 2
+mango: 1
 ```
 
-**Sample Session:**
-```
-Item 1: apple
-Item 2: mango
-Item 3: banana
-apple: 15
-mango: 25
-banana: 8
-Total: 48 baht
-```
-
-If an item is not in the system, show `"Not found: [name]"` and do not add a price.
 
 ---
 
 ## Starter Code
 
 ```python
-prices = {"apple": 15, "banana": 8, "mango": 25, "orange": 20, "kiwi": 35}
-total = 0
+fruits = ["apple", "banana", "apple", "mango", "banana", "apple"]
+count = {}
 
-for i in range(3):
-    item = input(f"Item {i+1}: ")
-    # Write your code here
-
-print(f"Total: {total} baht")
+# Write your code here
 ```

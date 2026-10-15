@@ -1,60 +1,60 @@
-# 🗂️ Collection Review
+# 🗂️ Collection Review — ทบทวน Collections
 
 ---
 
-## All Three Types in One Place
+## ทั้งสามชนิด ณ ที่เดียว
 
 ```python
-# List — ordered, mutable, allows duplicates
+# List — เรียงลำดับ, แก้ไขได้, ซ้ำได้
 students = ["Alice", "Bob", "Charlie", "Alice"]
 
-# Tuple — ordered and immutable
+# Tuple — เรียงลำดับ, แก้ไขไม่ได้
 days = ("Mon", "Tue", "Wed", "Thu", "Fri")
 
-# Set — unordered, mutable, unique values
+# Set — ไม่เรียงลำดับ, แก้ไขได้, ไม่ซ้ำ
 unique_students = {"Alice", "Bob", "Charlie"}
 ```
 
 ---
 
-## Accessing Items
+## การเข้าถึงข้อมูล
 
 ```python
-# Lists and tuples support indexing.
+# List และ Tuple ใช้ index ได้
 print(students[0])  # Alice
 print(days[0])      # Mon
 
-# Sets do not support indexing — use a loop.
+# Set ไม่มี index — ต้องใช้ loop
 for s in unique_students:
     print(s)
 ```
 
 ---
 
-## Tuple Immutability
+## Immutability ของ Tuple
 
 ```python
 days = ("Mon", "Tue", "Wed")
 
-# ✅ Valid operations
-print(days[0])       # Read an item
-for d in days:       # Loop through the tuple
+# ✅ สิ่งที่ทำได้
+print(days[0])       # อ่านค่าได้
+for d in days:       # loop ได้
     print(d)
 
-# ❌ Invalid operations
+# ❌ สิ่งที่ทำไม่ได้
 days[0] = "Sunday"   # TypeError!
 days.append("Sat")   # AttributeError!
 ```
 
 ---
 
-## Example Program Using All Three Types
+## Exampleโปรแกรมใช้ทั้งสามแบบ
 
 ```python
-# Student data
+# ข้อมูลนักเรียน
 all_students = ["Alice", "Bob", "Alice", "Charlie"]
-unique = set(all_students)           # Remove duplicates
-grade_info = ("Grade 9", "Room 3")  # Fixed data
+unique = set(all_students)           # ลบซ้ำ
+grade_info = ("Grade 9", "Room 3")  # ข้อมูลคงที่
 
 print("Total entries:", len(all_students))
 print("Unique students:", len(unique))
@@ -63,12 +63,12 @@ print("Class:", grade_info[0], grade_info[1])
 
 ---
 
-## Comparison Summary
+## สรุปเปรียบเทียบ
 
 | | List | Tuple | Set |
 |-|------|-------|-----|
-| Create | `[1,2]` | `(1,2)` | `{1,2}` |
-| Index | ✅ | ✅ | ❌ |
-| Add | `.append()` | ❌ | `.add()` |
-| Remove | `.remove()` | ❌ | `.remove()` |
-| Duplicates | ✅ | ✅ | ❌ |
+| สร้าง | `[1,2]` | `(1,2)` | `{1,2}` |
+| index | ✅ | ✅ | ❌ |
+| เพิ่ม | `.append()` | ❌ | `.add()` |
+| ลบ | `.remove()` | ❌ | `.remove()` |
+| ซ้ำ | ✅ | ✅ | ❌ |

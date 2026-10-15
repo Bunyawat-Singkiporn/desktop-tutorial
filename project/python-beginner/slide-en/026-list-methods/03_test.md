@@ -1,36 +1,31 @@
-# ❌ Practice List Methods — Question 2: Remove Item
-
+# 🛠️ List Methods — Q3: แก้ชื่อเมนูผิด
 **Difficulty:** 🟢 Easy
-
 ---
-
-## Problem
-
-Set the fruit list, delete `"banana"` and display it.
-
-```python
-fruits = ["apple", "banana", "mango", "orange"]
-```
-
+## Task
+เมนูพิมพ์ผิดที่ตำแหน่งกลาง
+กำหนด `menu = ["Soup", "Salad", "Cake"]`
+แก้ค่าตำแหน่ง index 1 เป็น `Steak` แล้วแสดง list
+---
+## Input
+None (values are set in the program)
+## Output
+list หนึ่งบรรทัด
+---
+## Example
 **Output:**
+```text
+['Soup', 'Steak', 'Cake']
 ```
-['apple', 'mango', 'orange']
-```
 
----
-
-## 💡 Hint
-
-Use `.remove("banana")`
 
 ---
 
 ## Starter Code
 
 ```python
-fruits = ["apple", "banana", "mango", "orange"]
+menu = ["Soup", "Salad", "Cake"]
 
-# remove banana
+# Write your code here
 
-print(fruits)
+print(menu)
 ```

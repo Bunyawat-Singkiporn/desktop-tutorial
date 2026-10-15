@@ -1,49 +1,45 @@
-# 🔥 Practice: Input — Question 4: Age Calculator
 
-**Difficulty:** 🔴 Hard
 
----
-
-## Problem
-
-Get a name and birth year, then calculate age and display the full information.
-
-**Input:**
-```
-Jordan
-2010
-```
-
-**Output:**
-```
-Name: Jordan
-Birth Year: 2010
-Current Year: 2025
-Age: 15
-Next Birthday Age: 16
-```
+**Difficulty:** 🔴 Challenge
 
 ---
 
-## 💡 Hint
 
-- Current year = `2025` (you can hardcode it)
-- Age = `current_year - birth_year`
-- Age next year = age + 1
+
+
 
 ---
 
-## Starter Code
+## Input
+## Output
+---
 
-```python
+
+
+**Input:**# ⌨️ Input — ข้อ 12: บัตรนักเรียน## โจทย์ห้องทะเบียนพิมพ์บัตรนักเรียนสั้น ๆ
+รับชื่อ อายุ และชั้น แล้วจัดเป็นใบบัตรในกรอบ3 บรรทัด — ชื่อ อายุ (จำนวนเต็ม) ชั้น (เช่น `M.2`)บัตรนักเรียนในกรอบ## ตัวอย่าง```text
+Pim
+14
+M.2
+```
+**Output:**```text
+========================
+       STUDENT
+========================
+Name  : Pim
+Age   : 14
+Grade : M.2
+========================
+```
+---
+
+## Hint
+---
+
+## Starter Codeรับข้อมูลให้ครบก่อน แล้วค่อยพิมพ์เส้นกรอบและข้อมูลทีละบรรทัด```python
 name = input()
-birth_year = int(input())
+age = int(input())
+grade = input()
 
-current_year = 2025
-
-# Calculate age
-age = 
-next_age = 
-
-# Print all info
+# Write your code here
 ```

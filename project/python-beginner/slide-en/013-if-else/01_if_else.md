@@ -1,63 +1,51 @@
-# 🔀 if / else — two-way conditions
+♪ if / else two conditions
 
 ---
 
-## What is if?
+# If what is !
 
-`if` is used for **check conditions**
+• Used for checking conditions **
 
-> If the condition is **True** → execute the command
-> If condition is **False** → Skip.
-
----
-
-## if format
-
-```python
-if conditions:
-    # Commands made when a condition is true
-```
+> If conditions are true
+> If conditions are false
 
 ---
 
-## if/else format
+# Style if```python
+if เงื่อนไข:
+    # คำสั่งที่ทำเมื่อเงื่อนไขเป็นจริง
+```---
 
-```python
-if conditions:
-    # Do it when the condition is true.
+## Style if / else```python
+if เงื่อนไข:
+    # ทำเมื่อเงื่อนไขเป็นจริง
 else:
-    # done when the condition is false
-```
-
-> `else` is "if none of the above is the case"
+    # ทำเมื่อเงื่อนไขเป็นเท็จ
+```> ^else) is "if not the top case."
 
 ---
 
-## Program example
-
-```python
+## Example Program```python
 score = int(input())
 
 if score >= 50:
     print("Pass")
 else:
     print("Fail")
-```
+```---
+
+## Example Input / Output
+
+▪ Input ▪
+•------
+^80
+I'm sorry.
+I'm sorry.
 
 ---
 
-## Sample Input / Output
+♪ Be careful
 
-| Input | Output |
-|-------|--------|
-| `80` | `Pass` |
-| `45` | `Fail` |
-| `50` | `Pass` |
-
----
-
-## Precautions
-
-- `:` must be added after `if` and `else`.
-- Internal commands **must indent** (leave 4 spaces)
-- `else` Unconditional — Accepts all remaining cases.
+- There must be a post.
+- Internal command.
+No conditions.

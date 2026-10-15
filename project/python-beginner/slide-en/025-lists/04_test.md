@@ -1,37 +1,29 @@
-# ➕ Practice Lists — Question 3: Sum Without sum()
-
-**Difficulty:** 🟡 Medium
-
+# 📋 Lists — Q4: นับจำนวนเพื่อนในกลุ่ม
+**Difficulty:** 🟢 Easy
 ---
-
-## Problem
-
-Define a list of numbers, calculate the sum by **Do not use `sum()`**, use a loop instead.
-
-```python
-numbers = [10, 20, 30, 40, 50]
-```
-
+## Task
+แอปนับจำนวนเพื่อนในกลุ่มแชท
+กำหนด `friends = ["Mew", "Pim", "Ohm", "Fern", "Beam"]`
+แสดงจำนวนเพื่อนในรูปแบบ `Friends: N`
+---
+## Input
+None (values are set in the program)
+## Output
+บรรทัดเดียว
+---
+## Example
 **Output:**
+```text
+Friends: 5
 ```
-Total: 150
-```
 
----
-
-## 💡 Hint
-
-Use the variable `total = 0` and add in each loop.
 
 ---
 
 ## Starter Code
 
 ```python
-numbers = [10, 20, 30, 40, 50]
-total = 0
+friends = ["Mew", "Pim", "Ohm", "Fern", "Beam"]
 
 # Write your code here
-
-print("Total:", total)
 ```

@@ -1,26 +1,26 @@
-# 📤 Return Values
+# 📤 Return Values — ค่าที่ส่งกลับจาก Function
 
 ---
 
-## What Is `return`?
+## return คืออะไร?
 
-`return` sends a value **back out of a function** so it can be used elsewhere.
+`return` ส่งค่า **กลับออกมา** จาก function เพื่อนำไปใช้ต่อ
 
 ---
 
-## `print` vs. `return`
+## print vs return
 
 ```python
-# print displays a value, but does not make it available for later use
+# แบบ print — แสดงผลแต่นำไปใช้ต่อไม่ได้
 def add_print(a, b):
     print(a + b)
 
 result = add_print(3, 5)
-print(result)    # None  ← No value was returned!
+print(result)    # None  ← ไม่มีค่าส่งกลับ!
 ```
 
 ```python
-# return provides a value that can be used later
+# แบบ return — นำไปใช้ต่อได้
 def add_return(a, b):
     return a + b
 
@@ -30,7 +30,7 @@ print(result)    # 8  ✅
 
 ---
 
-## Using `return`
+## การใช้ return
 
 ```python
 def square(n):
@@ -43,7 +43,7 @@ print(square(4))   # 16
 
 ---
 
-## `return` with `if`/`else`
+## return กับ if/else
 
 ```python
 def is_even(n):
@@ -58,7 +58,7 @@ print(is_even(7))   # False
 
 ---
 
-## `return` with Grades
+## return กับ Grade
 
 ```python
 def get_grade(score):
@@ -77,8 +77,8 @@ print(f"Grade: {grade}")  # Grade: A
 
 ---
 
-## Important Points
+## ข้อสำคัญ
 
-- `return` immediately stops the function.
-- A function without a `return` statement returns `None`.
-- You can store a returned value: `result = func()`.
+- `return` หยุดการทำงานของ function ทันที
+- Function ที่ไม่มี `return` จะคืนค่า `None`
+- สามารถเก็บค่าที่ return ได้: `result = func()`

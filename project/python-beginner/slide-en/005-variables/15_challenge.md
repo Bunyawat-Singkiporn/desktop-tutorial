@@ -1,0 +1,52 @@
+# 🏨 Variables — Q14: บิลค่าที่พักค้างคืน
+
+**Difficulty:** 🔴 Challenge
+
+---
+
+## Task
+
+ที่พักใกล้โรงเรียนคิดค่าห้อง 900 ค่าอาหารเช้า 150 และค่าบริการ 50
+
+เก็บสามค่า บวกรวมเป็นยอดชำระ แล้วพิมพ์บิลตามตัวอย่าง
+
+---
+
+## Input
+None (this program does not read user input)
+
+## Output
+See the example
+
+---
+
+## Example
+
+**Output:**
+
+```text
+========================
+      STAY BILL
+========================
+Room    : 900
+Breakfast: 150
+Service : 50
+Pay     : 1100
+========================
+```
+
+---
+
+## Hint
+ตั้งชื่อตัวแปรยอดรวมให้สื่อความหมาย แล้วใช้ค่านั้นตอนพิมพ์บรรทัด Pay
+
+---
+
+## Starter Code
+```python
+room = 900
+breakfast = 150
+service = 50
+
+# Write your code here
+```

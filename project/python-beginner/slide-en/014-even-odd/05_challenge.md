@@ -1,90 +1,52 @@
-# 🔥 Practice Even / Odd — Question 4: Score Bonus
-
-**Difficulty:** 🔴 Hard
-
+# 🎤 Even/Odd — Q12: ตั๋วคอนเสิร์ต
+**Difficulty:** 🔴 Challenge
 ---
-
-## Problem
-
-Get scores for **2 subjects** and calculate the total, then:
-
-**Condition 1 — Check Bonus:**
-
-|condition| Output |
-|----------|--------|
-|The sum is an **even** number.| `Bonus! Total: [X + 10]` |
-|The sum is an **odd** number.| `No Bonus. Total: [X]` |
-
-**Condition 2 — Check Pass/Fail (from the total before adding Bonus):**
-
-|condition| Output |
-|----------|--------|
-|Sum >= 100| `Pass` |
-|Sum < 100| `Fail` |
-
+## Task
+บัฟเฟ่ต์คอนเสิร์ตคิดราคาตั๋วสองขั้นตอน
+**ขั้นที่ 1 — ดูเลขที่นั่ง**
+| เลขที่นั่ง | ราคาพื้นฐาน |
+|------------|-------------|
+| เลขคู่ | 800 บาท |
+| เลขคี่ | 600 บาท |
+**ขั้นที่ 2 — ดูวันที่ชม**
+| วัน | ค่าเพิ่ม |
+|-----|----------|
+| `weekend` | +100 บาท |
+| `weekday` | ไม่เพิ่ม |
+เขียนโปรแกรมรับเลขที่นั่งและวัน แล้วออกใบราคาตั๋ว
 ---
-
-## example
-
+## Input
+2 บรรทัด — เลขที่นั่ง (จำนวนเต็ม) และวัน (`weekday` หรือ `weekend`)
+## Output
+ใบราคาตั๋วในกรอบ แสดงราคาพื้นฐาน ค่าเพิ่ม และราคารวม
+---
+## Example
 **Input:**
-```
-55
-45
+```text
+24
+weekend
 ```
 
 **Output:**
-```
-Bonus! Total: 110
-Pass
-```
 
-> 55 + 45 = 100 (Even number) → Bonus +10 = 110 | 100 >= 100 → Pass
-
-**Input:**
+```text
+========================
+      CONCERT
+========================
+Base Price : 800
+Day Fee    : 100
+Total      : 900
+========================
 ```
-40
-31
-```
-
-**Output:**
-```
-No Bonus. Total: 71
-Fail
-```
-
-> 40 + 31 = 71 (odd number) → no bonus | 71 < 100 → Fail
-
 ---
-
 ## 💡 Hint
-
-- Use `%` to check the even/odd numbers of the sum.
-- Use `if/else` in **2 separate blocks** (check bonus first, then check pass/fail)
-- Both blocks use the sum **before** plus bonus.
-
+เงื่อนไขสองเรื่องนี้ไม่เกี่ยวกัน — แยกคิดทีละเรื่อง
+ใช้ `if/else` ชุดแรกหาราคาพื้นฐานจากเลขที่นั่ง แล้วค่อยใช้ชุดที่สองหาค่าเพิ่มตามวัน
 ---
-
 ## Starter Code
-
 ```python
-a = int(input())
-b = int(input())
-
-total = a + b
+seat = int(input())
+day = input()
 
 # Write your code here
-```
-
-- Check `% 15 == 0` first (or `% 3 == 0 and % 5 == 0`).
-- `if` must be sorted from the narrowest condition first.
-
----
-
-## Starter Code
-
-```python
-n = int(input())
-
-for i in range(1, n + 1):
-    # Write your code here
 ```

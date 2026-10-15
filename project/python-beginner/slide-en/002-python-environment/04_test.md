@@ -1,45 +1,53 @@
-# 🔧 Practice: Environment — Question 3: Fix Four Errors
+# 📐 Run programs and read errors — Q3: Leading spaces on a line
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-The code below has **4** mistakes. Find and fix every one so it runs.
+This program shows `IndentationError: unexpected indent`.
+
+> The code below **does not run**. Find what is wrong and rewrite it so the output matches the example.
 
 ```python
-PRINT("Welcome!")
-print("Today is Monday"
-print("Have a great day!)
-  print("Goodbye!")
-```
-
-**Expected output:**
-```
-Welcome!
-Today is Monday
-Have a great day!
-Goodbye!
+print("Morning Assembly")
+    print("07:50 at the field")
+print("Bring your hat")
 ```
 
 ---
 
-## 💡 Hint
+## Input
 
-Look for:
-1. Wrong capitalization
-2. Missing `)` parenthesis
-3. Missing `"` mark
-4. Indentation that should not be there
+None
+
+## Output
+
+Three lines of text
+
+---
+
+## Example
+
+**Output:**
+
+```text
+Morning Assembly
+07:50 at the field
+Bring your hat
+```
+
+---
+
+## Hint
+
+Normal lines must start at the far left. Leading spaces have special meaning in Python.
 
 ---
 
 ## Starter Code
 
 ```python
-PRINT("Welcome!")
-print("Today is Monday"
-print("Have a great day!)
-  print("Goodbye!")
+# Write your corrected code here
 ```

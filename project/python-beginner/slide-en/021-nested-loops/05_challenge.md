@@ -1,57 +1,43 @@
-# 🔥 Practice: Nested Loops — Question 4: Number Pattern
+# Isted-loops . . . . .
 
-**Difficulty:** 🔴 Hard
-
----
-
-## Problem
-
-Get n and display the pattern numbers according to this format.
-
-**Input:**
-```
-4
-```
-
-**Output:**
-```
-1
-1 2
-1 2 3
-1 2 3 4
-```
-
-**Input:**
-```
-5
-```
-
-**Output:**
-```
-1
-1 2
-1 2 3
-1 2 3 4
-1 2 3 4 5
-```
+difficulty:
 
 ---
 
-## 💡 Hint
+♪ Task
 
-- Outside Loop: Rows 1–n
-- Loop in: numbers 1 to current row
-- `print(j, end=" ")` then `print()` starts a new line.
+5 rows high square, 7 wide. Letters
+- First row and last row are full. Row
+- The middle row is . . . . . . . . at the tail and the middle gap.
 
 ---
 
-## Starter Code
+♪ Input
 
-```python
-n = int(input())
+None
 
-for row in range(1, n + 1):
-    for j in range(1, row + 1):
-        print(j, end=" ")
-    print()
+♪ Output
+
+Frame 5×7
+
+---
+
+## Example
+
+♪ Output:*```text
+*******
+*     *
+*     *
+*     *
+*******
+```---
+
+♪ Hint
+
+A row border or column edge to print a star.
+
+---
+
+♪ Starter Code```python
+# เขียนลูปซ้อนสร้างกรอบ
 ```

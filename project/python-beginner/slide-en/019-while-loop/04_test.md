@@ -1,29 +1,43 @@
-# 🔑 Practice: while Loop — Question 3: Password Checker
+# 🔑 while-loop — Q4: รหัสผ่านจนถูก
 
-**Difficulty:** 🟡 Medium
-
----
-
-## Problem
-
-Repeat password until typed correctly (code is `"python123"`)
-
-**Input/Output:**
-```
-Input: hello
-Wrong password! Try again.
-Input: test
-Wrong password! Try again.
-Input: python123
-Access granted!
-```
+**Difficulty:** 🟢 Easy
 
 ---
 
-## 💡 Hint
+## Task
 
-- Use `while password != "python123":`
-- Receive input at the beginning of the round and repeat it each round.
+ระบบล็อกอินรหัสถูกต้องคือ `"ok"`
+รับรหัสซ้ำด้วย `while` จนกว่าจะตรง แล้วพิมพ์ `Access Granted`
+
+> ห้ามใช้ `break` / `while True` — ให้ออกจากลูปด้วยเงื่อนไข while
+
+---
+
+## Input
+
+รหัสทีละบรรทัด จนถูกต้อง
+
+## Output
+
+Access Granted เมื่อรหัสถูก
+
+---
+
+## Example
+
+**Input:**
+
+```text
+no
+wait
+ok
+```
+
+**Output:**
+
+```text
+Access Granted
+```
 
 ---
 
@@ -32,9 +46,5 @@ Access granted!
 ```python
 password = input()
 
-while password != "python123":
-    print("Wrong password! Try again.")
-    # Get new input
-
-print("Access granted!")
+# Write your code here
 ```

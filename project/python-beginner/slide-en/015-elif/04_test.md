@@ -1,32 +1,30 @@
-# 🌡️ Practice elif — Question 3: Temperature
-
-**Difficulty:** 🟡 Medium
-
+# 🎟️ elif — Q3: ชั้นตั๋วตามอายุ
+**Difficulty:** 🟢 Easy
 ---
-
-## Problem
-
-Get the temperature and tell the heat level.
-
-|condition| Output |
-|----------|--------|
-| temp >= 40 | `Very Hot` |
-| temp >= 30 | `Hot` |
-| temp >= 20 | `Warm` |
-| temp < 20 | `Cold` |
-
+## Task
+สวนสนุกแบ่งประเภทตั๋วตามอายุผู้เข้าชม
+เขียนโปรแกรมรับอายุ แล้วบอกประเภทตั๋ว
+**Rules:**
+- อายุ `>= 60` → `Senior`
+- อายุ `>= 18` → `Adult`
+- อายุ `>= 13` → `Teen`
+- น้อยกว่านั้น → `Child`
 ---
-
-## example
-
+## Input
+อายุเป็นจำนวนเต็ม 1 บรรทัด
+## Output
+ประเภทตั๋ว 1 บรรทัด
+---
+## Example
 **Input:**
-```
-35
+```text
+15
 ```
 
 **Output:**
-```
-Hot
+
+```text
+Teen
 ```
 
 ---
@@ -34,7 +32,7 @@ Hot
 ## Starter Code
 
 ```python
-temp = int(input())
+age = int(input())
 
 # Write your code here
 ```

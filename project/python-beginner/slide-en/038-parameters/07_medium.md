@@ -1,4 +1,4 @@
-# Practice Parameters — Question 6: Food Bill
+# 📥 Parameters — Q7: ตรวจสิทธิ์โหวต
 
 **Difficulty:** 🟡 Medium
 
@@ -6,37 +6,45 @@
 
 ## Task
 
-Make a simple restaurant bill.
+ตรวจอายุก่อนเข้าคูหา
 
-Create `print_bill(price, qty)` that shows price, quantity, and total (`price * qty`).
+**Requirements:**
+
+- สร้าง `check_vote(age)` ถ้า age >= 18 พิมพ์ `Can vote` ไม่งั้น `Too young`
+- เรียกกับ `20` และ `15`
+
+---
+
+## Input
+
+None (values are set in the program / call functions in code)
+
+## Output
+
+2 บรรทัด
 
 ---
 
 ## Example
 
-**Input:**
-```
-45
-2
+**Output:**
+
+```text
+Can vote
+Too young
 ```
 
-**Output:**
-```
-Food Bill
-Price: 45.0
-Qty: 2
-Total: 90.0
-```
+
+---
+
+## 💡 Hint
+
+เทียบกับ 18 ในฟังก์ชัน
 
 ---
 
 ## Starter Code
 
 ```python
-def print_bill(price, qty):
-    # Write your code here
-
-price = float(input())
-qty = int(input())
-print_bill(price, qty)
+# check_vote
 ```

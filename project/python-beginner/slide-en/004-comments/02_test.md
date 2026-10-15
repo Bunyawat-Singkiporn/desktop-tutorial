@@ -1,31 +1,39 @@
-# 💬 Practice: Comments — Question 1: Add a Comment
+# 🚌 Comments — Q1: ป้ายตารางรถเมล์
 
 **Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Write a program that shows the output below **and add at least 2 comment lines** explaining what each part of the code does.
+ป้ายที่ป้ายรถเมล์หน้าโรงเรียนอยากแสดงสายรถและเวลาออก
+ครูให้ฝึกใส่ comment ท้ายบรรทัด เพื่ออธิบายว่าแต่ละบรรทัดหมายถึงอะไร
 
-**Output:**
-```
-Python is fun!
-Let's start coding!
-```
+เขียนโปรแกรมแสดงข้อมูล 3 บรรทัดตามตัวอย่าง และใส่ comment ท้ายบรรทัดอย่างน้อย 1 จุด
 
 ---
 
-## 💡 Hint
+## Input
+None (this program does not read user input)
 
-- Start comments with `#`
-- Comments do not affect the Output at all
-- Comments should explain **what the code does**
+## Output
+See the example
+
+---
+
+## Example
+
+**Output:**
+
+```text
+Bus Line 8
+Depart 06:30
+Arrive School 06:55
+```
 
 ---
 
 ## Starter Code
-
 ```python
-# TODO: Add your comments and code here
+# Write your code here
 ```

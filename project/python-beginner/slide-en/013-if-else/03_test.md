@@ -1,44 +1,54 @@
-# 🛒 Practice if/else — Question 2: Can I Buy?
+# if/else ^Q2: Low battery warning
 
-**Difficulty:** 🟢 Easy
-
----
-
-## Problem
-
-Product price **25 baht** Receive the user's amount. Then tell me whether you can buy it or not.
-
-|condition| Output |
-|----------|--------|
-|Money >= 25| `Can Buy` |
-|Money < 25| `Cannot Buy` |
+difficulty:
 
 ---
 
-## example
+♪ Task
 
-**Input:**
-```
-30
+The phone will alert when the battery is down to 20%.
+
+Get a battery percentage program and show your status.
+
+♪ Rolls:*
+
+- The battery.
+- From 20 up and over.
+
+---
+
+♪ Input
+
+The battery percentage is 1 lines integer.
+
+♪ Output
+
+2 lines ^% and status
+
+---
+
+## Example
+
+**Input:*```text
+15
 ```
 
 **Output:**
-```
-Can Buy
-```
+
+```text
+Battery : 15%
+Status  : Low Battery
+```---
+
+♪ Hint
+
+Keep status text in a variable and then display both lines at once.
+So you don't have to write it over and over in both ways.
 
 ---
 
-## 💡 Hint
-
-Compare the money you have with the price of the product.
-
----
-
-## Starter Code
-
-```python
-money = int(input())
+♪ Starter Code```python
+battery = int(input())
 
 # Write your code here
 ```

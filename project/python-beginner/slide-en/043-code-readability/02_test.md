@@ -1,36 +1,46 @@
-# ✨ Code Readability — Question 1: Rename Variables
+# Code Readability #
 
-**Difficulty:** 🟢 Easy
+difficulty:
 
 ---
 
-## Problem
+♪ Task
 
-The code below runs, but its variable names are unclear. Rewrite it with better names.
+There's 75 points through 50.
 
-```python
-# Original code
-a = int(input())
-b = int(input())
-c = a + b
-d = c / 2
-if d >= 50:
-    print("ok")
-else:
-    print("not ok")
+== sync, corrected by elderman == *
+
+- Use names ^score) and ^is passed ▪
+- Printed or passed ▪
+
+---
+
+♪ Input
+
+None
+
+♪ Output
+
+One line.
+
+---
+
+## Example
+
+♪ Output:*
+
+```text
+Passed
 ```
 
-**Better names:** `score1`, `score2`, `total`, `average`, `"Pass"`, `"Fail"`
-
-**Output:** (for inputs 80 and 60)
-```
-Pass
-```
 
 ---
 
 ## Starter Code
 
 ```python
-# Rewrite the code using meaningful variable names
+score = 75
+is_passed = score >= 50
+
+# พิมพ์ตาม is_passed
 ```

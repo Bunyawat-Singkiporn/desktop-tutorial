@@ -1,37 +1,48 @@
-# 📚 Final Review — Question 2: Collections
+# Final Review QC3: even number?
 
-**Difficulty:** 🟡 Medium
+difficulty:
 
 ---
 
-## Problem
+♪ Task
 
-The student data is provided as a list of `(name, score)` tuples.
-Create a `{name: score}` dictionary from the data, then find the unique students and the average score.
+Get integers, print
 
-```python
-records = [("Alice", 85), ("Bob", 72), ("Alice", 90), ("Charlie", 68)]
+---
+
+♪ Input
+
+See example
+
+♪ Output
+
+One line.
+
+---
+
+## Example
+
+**Input:*
+
+```text
+8
 ```
 
 **Output:**
-```
-Unique students: {'Alice', 'Bob', 'Charlie'}
-Latest scores: {'Alice': 90, 'Bob': 72, 'Charlie': 68}
-Average: 76.7
+
+```text
+Even
 ```
 
-(If a name appears more than once, keep its latest score.)
 
 ---
 
 ## Starter Code
 
 ```python
-records = [("Alice", 85), ("Bob", 72), ("Alice", 90), ("Charlie", 68)]
-
-names = set()
-scores = {}
-
-# Build names set and scores dict
-# Calculate average from scores.values()
+n = int(input())
+if n % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
 ```

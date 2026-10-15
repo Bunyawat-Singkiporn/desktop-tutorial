@@ -1,43 +1,48 @@
-# 🛒 Practice: Loop with Lists — Question 2: Price Total
+# 📚 loop-with-lists — Q3: รายวิชาในเทอมนี้
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Combine the prices of every item in the list and display the total.
+นักเรียนจดรายวิชาไว้ในลิสต์
+เขียนโปรแกรมพิมพ์แต่ละวิชาในรูปแบบ `Subject: <ชื่อ>`
 
-```python
-prices = [120, 350, 75, 200, 45]
+---
+
+## Input
+
+ไม่มี
+
+## Output
+
+รายวิชาพร้อมป้ายกำกับทีละบรรทัด
+
+---
+
+## Example
+
+**Input:**
+
+```text
+
 ```
 
 **Output:**
+
+```text
+Subject: Math
+Subject: Science
+Subject: Art
 ```
-120
-350
-75
-200
-45
-Total: 790
-```
-
----
-
-## 💡 Hint
-
-- Use the variable `total = 0` to store the total.
-- Each round `total = total + price`
-- Show total after exiting loop
 
 ---
 
 ## Starter Code
 
 ```python
-prices = [120, 350, 75, 200, 45]
-total = 0
+subjects = ["Math", "Science", "Art"]
 
-# Loop: print each price and add to total
-# After loop: print total
+# Write your code here
 ```

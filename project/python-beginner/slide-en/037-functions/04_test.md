@@ -1,47 +1,45 @@
-# 📄 Practice Functions — Question 3: Report Sections
+# ⚙️ Functions — Q4: Short divider
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Create three functions for the different sections of a report, then call them in order.
+You need a divider line before a heading.
 
-| Function | Displays |
-|----------|----------|
-| `print_header()` | The report header |
-| `print_body()` | Three lines of report content |
-| `print_footer()` | The report footer |
+**Requirements:**
+
+- Create `line()` that prints `----------`
+- Call `line()`, print `REPORT`, then call `line()` again
+
+---
+
+## Input
+
+None (values are set in the program / call functions in code)
+
+## Output
+
+3 lines
+
+---
+
+## Example
 
 **Output:**
+
+```text
+----------
+REPORT
+----------
 ```
-===== REPORT =====
-Student: Alice
-Score: 92
-Grade: A
-=================
-```
 
----
-
-## 💡 Hint
-
-Create three separate functions, then call them in the correct order.
 
 ---
 
 ## Starter Code
 
 ```python
-def print_header():
-    # Write your code here
-
-def print_body():
-    # Write your code here
-
-def print_footer():
-    # Write your code here
-
-# Call all three functions in order
+# line + REPORT
 ```

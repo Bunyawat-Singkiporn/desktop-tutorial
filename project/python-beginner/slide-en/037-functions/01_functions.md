@@ -2,13 +2,13 @@
 
 ---
 
-## What Is a Function?
+## What is a function?
 
-A function is a **named set of instructions** that you can reuse.
+A function is a **named block of statements** you can run again and again.
 
 ---
 
-## Why Use Functions?
+## Why use functions?
 
 Code without a function:
 ```python
@@ -27,34 +27,34 @@ greet()
 greet()
 ```
 
-> Write it once and use it many times.
+> Write once, use many times
 
 ---
 
-## Defining a Function
+## Defining a function
 
 ```python
 def function_name():
-    # Instructions inside the function
+    # statements inside
     print("Hello!")
 ```
 
-- `def` is a keyword that begins a function definition.
-- `function_name` is the name of the function.
-- `:` ends the `def` line.
-- The instructions inside the function **must be indented** by four spaces.
+- `def` = keyword that starts a function definition
+- `function_name` = name of the function
+- `:` = ends the `def` line
+- statements inside **must be indented** 4 spaces
 
 ---
 
-## Calling a Function
+## Calling a function
 
 ```python
 def greet():
     print("Hello!")
     print("Nice to meet you!")
 
-greet()   # First call
-greet()   # Second call
+greet()   # first call
+greet()   # second call
 ```
 
 **Output:**
@@ -67,20 +67,20 @@ Nice to meet you!
 
 ---
 
-## Order Matters
+## Order matters
 
 ```
-1. Define the function first.
-2. Call the function afterward.
+1. Define (create) first
+2. Call second
 ```
 
 ```python
-# ❌ Incorrect — called before it is defined
+# ❌ wrong — call before define
 greet()
 def greet():
     print("Hello!")
 
-# ✅ Correct — defined before it is called
+# ✅ correct — define then call
 def greet():
     print("Hello!")
 greet()

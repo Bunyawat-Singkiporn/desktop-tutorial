@@ -1,0 +1,35 @@
+# 📋 Exercise index — บท 039 Return Values
+
+**Chapter scope:** `return` · เก็บค่าที่คืน · return ใน if/elif/else · ความรู้ถึง 038
+
+> ❌ ห้าม clone เกรด 80/70/60 → A/B/C/F จากบทเรียน · ห้าม return หลายค่าพร้อมกัน
+
+---
+
+## Recommended order
+
+| # | File | Level | Problem | Core idea |
+|---|------|-------|-------|-----------|
+| 1 | `02_test.md` | 🟢 | กำลังสอง | return ค่าคำนวณ |
+| 2 | `03_test.md` | 🟢 | เช็กเลขคู่ | return True/False |
+| 3 | `04_test.md` | 🟢 | พื้นที่วงกลมหยาบ | return ค่า |
+| 4 | `08_easy.md` | 🟢 | ค่าสัมบูรณ์แบบง่าย | if + return |
+| 5 | `09_easy.md` | 🟢 | ส่วนลดเปอร์เซ็นต์ | return ราคาใหม่ |
+| 6 | `06_medium.md` | 🟡 | ผ่าน/ไม่ผ่านเกณฑ์ | return สตริง |
+| 7 | `07_medium.md` | 🟡 | แปลง ซม.→ม. | return float |
+| 8 | `10_medium.md` | 🟡 | clamp คะแนน 0-100 | หลาย return |
+| 9 | `11_medium.md` | 🟡 | อุณหภูมิเป็น F | สูตรแปลง |
+| 10 | `12_medium.md` | 🟡 | ค่าตั๋วตามอายุ | return ตัวเลข |
+| 11 | `13_medium.md` | 🟡 | ผลคูณสะสม 1..n | ลูป+return |
+| 12 | `05_challenge.md` | 🔴 | หาค่ามากกว่า (return) | เปรียบเทียบ |
+| 13 | `14_challenge.md` | 🔴 | สถานะกระเป๋าเงิน | หลายเกณฑ์ |
+| 14 | `15_challenge.md` | 🔴 | คะแนนโบนัสคู่/คี่ | คำนวณ+return |
+| 15 | `16_challenge.md` | 🔴 | สรุปออเดอร์อาหาร | หลายฟังก์ชัน |
+
+**Summary:** 🟢 Easy 5 problems · 🟡 Medium 6 problems · 🔴 Challenge 4 problems = **15 ข้อ**
+
+---
+
+## Notesสำหรับครู
+
+หลีกเลี่ยง get_grade แบบ 80/70/60 — ใช้สถานการณ์อื่นแทน

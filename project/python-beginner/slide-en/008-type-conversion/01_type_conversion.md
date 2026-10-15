@@ -1,92 +1,74 @@
-# 🔄 Type Conversion — Changing Data Types
+
 
 ---
 
-## A Common Problem
 
-`input()` always returns a **string**, even when the user types a number!
 
-```python
-age = input()         # user types: 15
-print(type(age))      # <class 'str'>  ← still a string!
+# 🔄 Type Conversion — แปลงชนิดข้อมูล## ปัญหาที่พบบ่อย`input()` คืนค่าเป็น **string เสมอ** แม้ผู้ใช้พิมพ์ตัวเลข!```python
+age = input()         # ผู้ใช้พิมพ์: 15
+print(type(age))      # <class 'str'>  ← ยังเป็น string!
 ```
-
-If you calculate without converting → Error!
-
-```python
+ถ้าคำนวณโดยไม่แปลง → Error!```python
 age = input()
 print(age + 1)   # TypeError: can only concatenate str (not "int") to str
 ```
+---
+
+
+
+
 
 ---
 
-## How to Convert Data Types
-
-| Function | Converts to | Example | Result |
-|----------|-------------|---------|--------|
-| `int()` | whole number | `int("15")` | `15` |
-| `float()` | decimal | `float("3.5")` | `3.5` |
-| `str()` | text | `str(100)` | `"100"` |
-
----
-
-## int() — Convert to a Whole Number
-
-```python
-age = int(input())      # get input and convert to int right away
+## วิธีแปลงชนิดข้อมูล| ฟังก์ชัน | แปลงเป็น | ตัวอย่าง | ผลลัพธ์ |
+|---------|---------|---------|--------|
+| `int()` | จำนวนเต็ม | `int("15")` | `15` |
+| `float()` | ทศนิยม | `float("3.5")` | `3.5` |
+| `str()` | ข้อความ | `str(100)` | `"100"` |## int() — แปลงเป็นจำนวนเต็ม```python
+age = int(input())      # รับ input แล้วแปลงเป็น int ทันที
 next_year_age = age + 1
 print("Next year:", next_year_age)
 ```
-
 Input: `15`
 Output: `Next year: 16`
 
 ---
 
-## float() — Convert to a Decimal
-
-```python
+## float() — แปลงเป็นทศนิยม```python
 price = float(input())
-with_vat = price * 1.07    # add 7% VAT
+with_vat = price * 1.07    # บวก VAT 7%
 print("Price with VAT:", with_vat)
 ```
-
 Input: `100`
 Output: `Price with VAT: 107.0`
 
 ---
 
-## str() — Convert to Text
-
-```python
+## str() — แปลงเป็นข้อความ```python
 score = 95
-message = "Your score is: " + str(score)  # must convert int → str before joining
+message = "Your score is: " + str(score)  # ต้องแปลง int → str ก่อนต่อ
 print(message)
 ```
-
 Output: `Your score is: 95`
 
-> Without `str()` → `TypeError`
+
 
 ---
 
-## Convert in One Line
-
-```python
-# Get input and convert at the same time
+> ถ้าไม่ใช้ `str()` → `TypeError`## แปลงในบรรทัดเดียว```python
+# รับแล้วแปลงพร้อมกันเลย
 age = int(input())
 price = float(input())
 ```
 
-> This is the most convenient way — no separate conversion line needed
 
 ---
 
-## Summary: When to Use What?
 
-| Situation | Use |
-|-----------|-----|
-| Get a number from `input()` to calculate | `int(input())` |
-| Get a decimal from `input()` | `float(input())` |
-| Join a number with text using `+` | `str(number)` |
-| Get text from `input()` | No conversion needed — it is already str |
+
+> วิธีนี้สะดวกที่สุด — ไม่ต้องแปลงแยกบรรทัด## สรุป: เมื่อไหร่ใช้อะไร?| สถานการณ์ | ใช้ |
+|----------|-----|
+| รับตัวเลขจาก `input()` มาคำนวณ | `int(input())` |
+| รับตัวเลขทศนิยมจาก `input()` | `float(input())` |
+| ต่อตัวเลขกับข้อความด้วย `+` | `str(number)` |
+| รับข้อความจาก `input()` | ไม่ต้องแปลง — เป็น str อยู่แล้ว |

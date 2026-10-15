@@ -1,0 +1,50 @@
+# 🌮 Comments — Q7: เมนูรถฟู้ดทรัก
+
+**Difficulty:** 🟡 Medium
+
+---
+
+## Task
+
+รถฟู้ดทรักหน้าโรงเรียนอยากได้เมนูสั้นๆ
+ครูให้ฝึกผสม comment สองแบบในไฟล์เดียว: บรรทัดเดี่ยวคั่นส่วน และท้ายบรรทัดอธิบายรายการ
+
+เขียนโปรแกรมแสดงเมนูตามตัวอย่าง
+ต้องมีทั้ง comment บรรทัดเดี่ยว และ comment ท้ายบรรทัดอย่างน้อยอย่างละ 1 จุด
+
+---
+
+## Input
+None (this program does not read user input)
+
+## Output
+See the example
+
+---
+
+## Example
+
+**Output:**
+
+```text
+--------------------
+ FOOD TRUCK MENU
+--------------------
+Taco Plate     45
+Corn Cup       25
+Iced Cocoa     30
+Cash only today
+--------------------
+```
+
+---
+
+## Hint
+ใช้ comment บรรทัดเดี่ยวบอกส่วนเมนูหรือหมายเหตุ แล้วค่อยใส่ comment ท้ายบรรทัดกับรายการพิเศษ
+
+---
+
+## Starter Code
+```python
+# Write your code here
+```

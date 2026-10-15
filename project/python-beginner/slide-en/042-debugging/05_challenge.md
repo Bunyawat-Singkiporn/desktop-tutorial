@@ -1,62 +1,59 @@
-# 🔥 Debugging — Question 4: Fix All Three
+# 🐛 Debugging — Q5: รายงานบั๊กสามชนิด
 
-**Difficulty:** 🔴 Hard
-
----
-
-## Problem
-
-The code below has **three bugs**: one syntax error, one runtime error, and one logic error. Find and fix all of them.
-
-```python
-scores = [85, 72, 90, 68, 95]
-total = 0
-
-for score in scores
-    total = score
-
-average = total / 0    # ← Look carefully
-
-if average >= 70:
-    print("Class passed)   # ← Look carefully
-else:
-    print("Class failed")
-
-print("Average:", average)
-```
-
-**Correct Output:**
-```
-Class passed
-Average: 82.0
-```
+**Difficulty:** 🔴 Challenge
 
 ---
 
-## 💡 Hint
+## Task
 
-Read the code one line at a time and ask yourself:
-1. Which line breaks Python's grammar?
-2. Which line will crash while the program runs?
-3. Which line has incorrect logic?
+จำแนกประเภทบั๊กจากคำอธิบายสั้นๆ ที่กำหนดในโค้ด
+
+**Requirements:**
+
+- มี list `labels = ["Syntax", "Runtime", "Logic"]`
+- รับหมายเลข 0/1/2 แล้วพิมพ์ป้ายนั้น
+- ถ้าไม่อยู่ในช่วงพิมพ์ `Unknown`
+
+---
+
+## Input
+
+See example
+
+## Output
+
+1 line(s)
+
+---
+
+## Example
+
+**Input:**
+
+```text
+1
+```
+
+**Output:**
+
+```text
+Runtime
+```
+
+
+---
+
+## Hint
+
+เช็กช่วงก่อน index
 
 ---
 
 ## Starter Code
 
 ```python
-scores = [85, 72, 90, 68, 95]
-total = 0
+labels = ["Syntax", "Runtime", "Logic"]
+code = int(input())
 
-for score in scores
-    total = score
-
-average = total / 0
-
-if average >= 70:
-    print("Class passed)
-else:
-    print("Class failed")
-
-print("Average:", average)
+# เลือกป้าย
 ```

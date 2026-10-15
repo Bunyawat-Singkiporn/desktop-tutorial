@@ -1,66 +1,48 @@
-# 📐 range() — Setting a Number Range
+♪  matter
 
 ---
 
-## Forms
-
-```
+♪ Style```
 range(start, stop)
 range(start, stop, step)
-```
-
-| Parameter | Meaning |
-|-----------|---------|
-| `start` | Start at this number |
-| `stop` | Stop **before** this number |
-| `step` | Jump size each time (default = 1) |
+```▪ Parsing
+•------------
+□ Start with this number
+* To this number * ▪
+How much do you think?
 
 ---
 
-## Example — start and stop
-
-```python
+# Example #```python
 for i in range(1, 6):
     print(i)
-```
-
-**Output:**
-```
+```The result:```
 1
 2
 3
 4
 5
-```
-
-> Starts at 1, stops before 6
+```> Start at 1 stop 6.
 
 ---
 
-## Example — with step
-
-```python
+# Example #```python
 for i in range(2, 11, 2):
     print(i)
-```
-
-**Output:**
-```
+```The result:```
 2
 4
 6
 8
 10
-```
-
-> Starts at 2, stops before 11, jumps by 2
+```> Start at 2, stop, 11 jumps by 2.
 
 ---
 
-## Comparison
+## Compare
 
-| range | Result |
-|-------|--------|
-| `range(5)` | 0, 1, 2, 3, 4 |
-| `range(1, 6)` | 1, 2, 3, 4, 5 |
-| `range(2, 11, 2)` | 2, 4, 6, 8, 10 |
+▪
+•--------
+^2 ^5)
+^1 equals 1, 6)
+• ^range2, 11, 2) 2, 4, 6, 8, 10 ^

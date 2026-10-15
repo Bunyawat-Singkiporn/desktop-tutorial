@@ -1,10 +1,10 @@
-# 📖 Dictionaries — Key-Value Data
+# 📖 Dictionaries — ข้อมูลแบบคู่
 
 ---
 
-## What is a Dictionary?
+## Dictionary คืออะไร?
 
-A dictionary stores data in **key-value pairs** (key → value), much like a real dictionary pairs words with definitions.
+Dictionary เก็บข้อมูลแบบ **คู่** (key → value) เหมือนพจนานุกรม
 
 ```python
 student = {
@@ -16,7 +16,7 @@ student = {
 
 ---
 
-## Creating a Dictionary
+## การสร้าง Dictionary
 
 ```python
 contact = {
@@ -28,7 +28,7 @@ contact = {
 
 ---
 
-## Accessing Values
+## การเข้าถึงข้อมูล
 
 ```python
 student = {"name": "Alice", "age": 15}
@@ -39,7 +39,7 @@ print(student["age"])   # 15
 
 ---
 
-## Adding a New Key
+## การเพิ่ม Key ใหม่
 
 ```python
 student = {"name": "Alice", "age": 15}
@@ -50,7 +50,7 @@ print(student)
 
 ---
 
-## Checking Whether a Key Exists
+## ตรวจสอบว่า Key มีอยู่
 
 ```python
 if "name" in student:
@@ -59,7 +59,7 @@ if "name" in student:
 
 ---
 
-## Loop
+## วนซ้ำ (Loop)
 
 ```python
 student = {"name": "Alice", "age": 15, "score": 92}
@@ -77,7 +77,7 @@ score : 92
 
 ---
 
-## Example Program — Contact Information
+## Exampleโปรแกรม — ข้อมูลติดต่อ
 
 ```python
 contact = {

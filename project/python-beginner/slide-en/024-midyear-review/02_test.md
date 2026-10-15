@@ -1,33 +1,39 @@
-# 🏆 Practice: Mid-Year Review — Question 1: Name & Grade
+# 🏆 midyear-review — Q2: ป้ายชื่อนักเรียน
 
 **Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Get name and score, then show grade.
-
-**Input:**
-```
-Alice
-85
-```
-
-**Output:**
-```
-Name: Alice
-Score: 85
-Grade: A
-```
-
-> Grade: A = 80+, B = 60–79, C = below 60
+รับชื่อนักเรียนแล้วพิมพ์ป้าย `Hello, <ชื่อ>!`
 
 ---
 
-## 💡 Hint
+## Input
 
-Use `if / elif / else` to check grades.
+ชื่อ 1 line
+
+## Output
+
+บรรทัดเดียวทักทาย
+
+---
+
+## Example
+
+**Input:**
+
+```text
+Mira
+```
+
+**Output:**
+
+```text
+Hello, Mira!
+```
+
 
 ---
 
@@ -35,10 +41,6 @@ Use `if / elif / else` to check grades.
 
 ```python
 name = input()
-score = int(input())
 
-print(f"Name: {name}")
-print(f"Score: {score}")
-
-# Determine and print grade
+# พิมพ์ป้าย
 ```

@@ -1,30 +1,46 @@
-# 📋 Logic Integration — Question 2: List + Function
+# Logic Integration QC3: Print only pass points
 
-**Difficulty:** 🟡 Medium
+difficulty:
 
 ---
 
-## Problem
+♪ Task
 
-Create a function named `summarize(scores)` that displays the minimum, maximum, and average scores.
+There's a single score on the list at > 50
 
-**Output:**
+== sync, corrected by elderman == *
+
+- ^scores = [40, 55, 70, 30] ▪
+- Print line by line.
+
+---
+
+♪ Input
+
+None
+
+♪ Output
+
+Two lines.
+
+---
+
+## Example
+
+♪ Output:*
+
+```text
+55
+70
 ```
-Min: 45
-Max: 95
-Average: 77.0
-```
+
 
 ---
 
 ## Starter Code
 
 ```python
-def summarize(scores):
-    # Find the minimum without using min()
-    # Find the maximum without using max()
-    # Calculate the average
-    # Write your code here
+scores = [40, 55, 70, 30]
 
-summarize([85, 45, 92, 68, 95])
+# พิมพ์เฉพาะที่ผ่าน
 ```

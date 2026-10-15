@@ -1,37 +1,46 @@
-# 🤝 Practice Function — Question 3: Two Functions
+# 🧩 Function Practice — Q4: นับผ่านเกณฑ์
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Create two functions that work together:
-- `collect_scores(n)` — asks for a score `n` times and returns a list
-- `get_average(scores)` — calculates and returns the average
+นับจำนวนคะแนนที่ >= 50
 
-Then use both functions in the main program.
+**Requirements:**
 
-**Example Session:**
+- สร้าง `count_pass(scores)` คืนจำนวนที่ผ่าน
+- พิมพ์ผลของ `[40, 55, 70, 30, 90]`
+
+---
+
+## Input
+
+None (values are set in the program / call functions in code)
+
+## Output
+
+1 line(s)
+
+---
+
+## Example
+
+**Output:**
+
+```text
+3
 ```
-Enter score 1: 80
-Enter score 2: 75
-Enter score 3: 90
-Average: 81.7
-```
+
 
 ---
 
 ## Starter Code
 
 ```python
-def collect_scores(n):
+def count_pass(scores):
     # Write your code here
 
-def get_average(scores):
-    # Write your code here
-
-scores = collect_scores(3)
-avg = get_average(scores)
-print(f"Average: {avg:.1f}")
+print(count_pass([40, 55, 70, 30, 90]))
 ```

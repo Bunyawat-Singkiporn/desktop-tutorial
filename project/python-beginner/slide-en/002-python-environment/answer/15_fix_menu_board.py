@@ -1,0 +1,6 @@
+print("=====================")
+print("Noodle Shop")
+print("=====================")
+print("Pork Noodle     45")
+print("Beef Noodle     55")
+print("Open 09:00 - 20:00")

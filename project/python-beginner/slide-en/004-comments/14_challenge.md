@@ -1,0 +1,52 @@
+# 🚉 Comments — Q13: ป้ายชานชาลา
+
+**Difficulty:** 🔴 Challenge
+
+---
+
+## Task
+
+สถานีรถไฟใกล้โรงเรียนมีป้ายชานชาลาที่ข้อมูลเยอะ
+ถ้าไม่มี comment โค้ดจะอ่านยากมาก
+
+เขียนโปรแกรมแสดงป้ายตามตัวอย่าง
+จัด comment ให้แยกชัดว่าส่วนไหนคือหัวสถานี ตารางรถ และประกาศความปลอดภัย
+
+---
+
+## Input
+None (this program does not read user input)
+
+## Output
+See the example
+
+---
+
+## Example
+
+**Output:**
+
+```text
+========================
+ PLATFORM 2 BOARD
+========================
+Next Train : Green Line
+Depart     : 07:12
+Arrive Mall: 07:28
+Status     : On Time
+Keep bags close
+Stand behind yellow line
+========================
+```
+
+---
+
+## Hint
+ใส่หัวข้อ comment สั้นๆ ก่อนทุกกลุ่ม `print` ที่เปลี่ยนเรื่อง
+
+---
+
+## Starter Code
+```python
+# Write your code here
+```

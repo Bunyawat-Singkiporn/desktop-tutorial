@@ -1,59 +1,32 @@
-# 🔥 Practice List — Question 4: To-Do Manager
-
-**Difficulty:** 🔴 Hard
-
+# 🏋️ List Practice — Q5: รายงานงานบ้าน
+**Difficulty:** 🔴 Challenge
 ---
-
-## Problem
-
-Create a user-selectable to-do program:
-
-| Command | Effect |
-|--------|-----|
-| `add` |Add a new to-do|
-| `remove` |Delete the specified to-do.|
-| `show` |Show all to-do|
-| `exit` |End of program|
-
+## Task
+พิมพ์รายงานงานบ้านพร้อมเลขที่และจำนวนงาน
+กำหนด `chores = ["Cook", "Clean", "Shop"]`
+แสดงตามตัวอย่าง
 ---
-
-## Example Session
-
+## Input
+None (values are set in the program)
+## Output
+รายการ + สรุป
+---
+## Example
+**Output:**
+```text
+1. Cook
+2. Clean
+3. Shop
+Jobs: 3
 ```
-Command: add
-Item: Buy milk
-Command: add
-Item: Do laundry
-Command: show
-1. Buy milk
-2. Do laundry
-Command: remove
-Item: Buy milk
-Command: show
-1. Do laundry
-Command: exit
-Done!
-```
-
 ---
 
 ## 💡 Hint
-
-- Use `while True:` and `break` to exit the loop.
-- Use `if command == "add":` for each command.
-
+ใช้ range(len) แล้วปิดท้ายด้วย len
 ---
-
 ## Starter Code
-
 ```python
-todos = []
+chores = ["Cook", "Clean", "Shop"]
 
-while True:
-    command = input("Command: ")
-    
-    if command == "exit":
-        print("Done!")
-        break
-    # Write your code here
+# Write your code here
 ```

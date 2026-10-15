@@ -1,43 +1,29 @@
-# 📐 Practice: Naming Rules — Question 2: Room Area
 
-**Difficulty:** 🟡 Medium
+
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
 
-Write a program that calculates room area using variable names that follow snake_case rules.
 
-| Data | Value |
-|------|-------|
-| Width | `4` (meters) |
-| Length | `6` (meters) |
-| Area | width × length |
 
-**Output:**
+
+
+
+---
+
+## Input
+## Output
+---
+
+
+
+**Output:**# 📐 Naming Rules — ข้อ 2: คะแนนควิซสองวิชา## โจทย์ครูเก็บคะแนนควิซคณิตและวิทย์ ต้องใช้ snake_case แยกสองตัวแปรเก็บคะแนนคณิต 18 และวิทย์ 16 แล้วพิมพ์ตามตัวอย่างไม่มี (โปรแกรมนี้ไม่รับค่าจากผู้ใช้)ดูตัวอย่าง## ตัวอย่าง```text
+Math: 18
+Science: 16
 ```
-Width: 4 m
-Length: 6 m
-Area: 24 m2
-```
-
-> **Extra rule:** Every variable name must be snake_case and meaningful
-
 ---
 
-## 💡 Hint
-
-Good name examples: `room_width`, `room_length`, `room_area`
-
----
-
-## Starter Code
-
-```python
-# Define variables with proper names
-room_width = 
-room_length = 
-room_area = 
-
-# Print results
+## Starter Code```python
+# ใช้ชื่อแบบ math_score และ science_score
 ```

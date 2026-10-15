@@ -1,36 +1,44 @@
-# ➕ Practice Sets — Question 2: Add and Check
+# 🔤 Sets — Q3: เพิ่มเมืองที่เคยไป
 
 **Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Define the set of fruits, add `"kiwi"` and check if `"apple"` and `"grape"` are in the set or not.
+นักท่องเที่ยวเพิ่มเมืองใหม่เข้า set
 
-```python
-fruits = {"apple", "banana", "mango"}
-```
+กำหนด `cities = {"Bangkok", "Chiang Mai"}` แล้ว `.add("Phuket")`
 
-**Output:**
-```
-apple: True
-grape: False
-```
+แปลงเป็น list เรียงชื่อ แล้วแสดง
 
 ---
 
-## 💡 Hint
+## Input
 
-Use `.add("kiwi")` and `"apple" in fruits`.
+None (values are set in the program)
+
+## Output
+
+one-Line List
+
+---
+
+## Example
+
+**Output:**
+
+```text
+['Bangkok', 'Chiang Mai', 'Phuket']
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-fruits = {"apple", "banana", "mango"}
+cities = {"Bangkok", "Chiang Mai"}
 
-# add kiwi
-# Check apple and grape
+# Write your code here
 ```

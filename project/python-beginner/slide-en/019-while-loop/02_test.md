@@ -1,30 +1,45 @@
-# ⏬ Practice: while Loop — Question 1: Count Up
+# 🚀 while-loop — Q2: นับลงจอด 1 ถึง 4
 
 **Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Use `while` loop to count from 1 to 5.
+ยานอวกาศจำลองนับ `1` ถึง `4` ก่อนพร้อมทำงาน
+หลังพิมพ์ครบให้พิมพ์ `Ready!`
+
+เขียนด้วย `while` (ห้ามใช้ for)
+
+---
+
+## Input
+
+ไม่มี
+
+## Output
+
+เลข 1–4 แล้วตามด้วย Ready!
+
+---
+
+## Example
+
+**Input:**
+
+```text
+
+```
 
 **Output:**
-```
+
+```text
 1
 2
 3
 4
-5
-Done!
+Ready!
 ```
-
----
-
-## 💡 Hint
-
-- Set `count = 1`
-- Condition: `count <= 5`
-- Don't forget `count = count + 1` in every round.
 
 ---
 
@@ -33,9 +48,5 @@ Done!
 ```python
 count = 1
 
-while count <= 5:
-    # Print count
-    # Increase count
-
-print("Done!")
+# Write your code here
 ```

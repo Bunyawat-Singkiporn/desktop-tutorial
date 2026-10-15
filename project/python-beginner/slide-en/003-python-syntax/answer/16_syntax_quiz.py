@@ -1,0 +1,6 @@
+print("SYNTAX QUIZ RESULT")
+print("1 : OK")
+print("2 : OK")
+print("3 : FAIL")
+print("4 : FAIL")
+print("5 : OK")

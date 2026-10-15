@@ -1,37 +1,44 @@
-# ➕ Practice Dictionaries — Question 2: Add Key
+# 📖 Dictionaries — Q3: เพิ่มคะแนนเข้าโปรไฟล์
 
 **Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Given the product dictionary below, add a `"stock"` key with the value `50`, then display every key.
+โปรไฟล์นักเรียนยังไม่มีคะแนน
 
-```python
-product = {"name": "Notebook", "price": 45}
-```
+กำหนด `student = {"name": "Pim", "age": 14}`
 
-**Output:**
-```
-name
-price
-stock
-```
+เพิ่มคีย์ `score` ค่า `88` แล้วแสดงค่าคะแนน
 
 ---
 
-## 💡 Hint
+## Input
 
-- Add a new key: `product["stock"] = 50`
-- Show all keys: `for key in product:`
+None (values are set in the program)
+
+## Output
+
+One line
+
+---
+
+## Example
+
+**Output:**
+
+```text
+Score: 88
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-product = {"name": "Notebook", "price": 45}
+student = {"name": "Pim", "age": 14}
 
-# Add stock and show every key
+# Write your code here
 ```

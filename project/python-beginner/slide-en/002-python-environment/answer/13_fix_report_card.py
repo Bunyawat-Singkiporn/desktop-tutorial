@@ -1,0 +1,7 @@
+print("======================")
+print("    REPORT CARD")
+print("======================")
+print("Name  : Beam")
+print("Math  : 82")
+print("English : 75")
+print("======================")

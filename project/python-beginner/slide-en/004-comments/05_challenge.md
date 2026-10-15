@@ -1,61 +1,52 @@
-# 🔥 Practice: Comments — Question 4: Commented Receipt
+# 📻 Comments — Q12: บอร์ดเพลย์ลิสต์วิทยุ
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
-## Problem
+## Task
 
-Write a program that displays the receipt below. **Every print() must have a comment** explaining what it shows (at least 8 comments).
+ชมรมวิทยุโรงเรียนติดบอร์ดเพลย์ลิสต์ประจำวัน
+โปรแกรมนี้ยาวขึ้น ต้องมีครบทั้ง header comment, comment แบ่งส่วน, และ comment ท้ายบรรทัด
+
+เขียนโปรแกรมแสดงบอร์ดตามตัวอย่าง และจัด comment ให้ครบ 3 แบบนี้ในไฟล์เดียว
+
+---
+
+## Input
+None (this program does not read user input)
+
+## Output
+See the example
+
+---
+
+## Example
 
 **Output:**
-```
-==============================
-         SUPER MART
-==============================
-Item 1: Apple Juice     25 baht
-Item 2: Bread           40 baht
-Item 3: Milk            55 baht
-------------------------------
-Subtotal:              120 baht
-Discount (10%):         12 baht
-Total:                 108 baht
-==============================
-Thank you for shopping!
+
+```text
+========================
+   RADIO PLAYLIST
+========================
+Morning Slot
+1. Sunrise Run
+2. Cheer Up Beat
+Afternoon Slot
+3. Study Soft
+4. Campus Walk
+DJ note: requests at booth
+========================
 ```
 
 ---
 
-## 💡 Hint
-
-Example comments:
-```python
-# Top border of the receipt
-print("==============================")
-# Shop name
-print("         SUPER MART")
-```
+## Hint
+วางโครงก่อน: หัวโปรแกรม → ส่วนเช้า → ส่วนบ่าย → หมายเหตุ DJ
 
 ---
 
 ## Starter Code
-
 ```python
-# Top border
-
-# Shop name
-
-# Middle border
-
-# Item list
-
-# Divider line
-
-# Subtotal
-
-# Discount
-
-# Total
-
-# Thank-you message
+# Write your code here
 ```

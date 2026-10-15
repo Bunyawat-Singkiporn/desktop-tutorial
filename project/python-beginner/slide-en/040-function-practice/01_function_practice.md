@@ -1,19 +1,19 @@
-# 🧩 Function Practice
+# 🧩 Function Practice — ฝึกใช้ Function
 
 ---
 
-## Review of Functions
+## ทบทวน Functions ที่เรียนมา
 
-| Skill | Example |
+| ทักษะ | ตัวอย่าง |
 |-------|---------|
-| Define a function | `def greet():` |
-| Use a parameter | `def greet(name):` |
-| Return a value | `return result` |
-| Call a function | `greet("Alice")` |
+| สร้าง function | `def greet():` |
+| ใช้ parameter | `def greet(name):` |
+| ส่งค่ากลับ | `return result` |
+| เรียกใช้ | `greet("Alice")` |
 
 ---
 
-## Combining a Function with a List
+## รวม Function กับ List
 
 ```python
 def get_total(scores):
@@ -28,7 +28,7 @@ print("Total:", get_total(my_scores))
 
 ---
 
-## Combining a Function with a Dictionary
+## รวม Function กับ Dictionary
 
 ```python
 def show_student(student):
@@ -41,7 +41,7 @@ show_student(alice)
 
 ---
 
-## Combining Multiple Functions
+## รวม Function หลายตัว
 
 ```python
 def get_average(scores):
@@ -63,15 +63,7 @@ print(f"Average: {avg:.1f}, Grade: {grade}")
 
 ---
 
-## What Makes a Good Function?
-
-- It does one thing (single responsibility).
-- It has a meaningful name.
-- It is no longer than 10–15 lines.
-
----
-
-## Combining Functions with Input
+## รวม Function กับ Input
 
 ```python
 def get_grade(score):
@@ -86,6 +78,13 @@ score = int(input("Enter score: "))
 print("Grade:", get_grade(score))
 ```
 
-Read from the user → pass into a function → get a result back.
+รับค่าจากผู้เล่น → ส่งเข้า function → ได้ผลกลับมา
 
-Also combine with what you already know: `input`, `if`, `for`, `list`, `dict`.
+---
+
+## แนวคิด: Function ที่ดี
+
+- ทำงานอย่างเดียว (Single Responsibility)
+- ตั้งชื่อสื่อความหมาย
+- ไม่ยาวเกิน 10–15 line(s)
+- ใช้ร่วมกับสิ่งที่เรียนมาแล้ว: `input`, `if`, `for`, `list`, `dict`

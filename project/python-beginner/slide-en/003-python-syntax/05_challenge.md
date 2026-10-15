@@ -1,49 +1,60 @@
-# 🔥 Practice: Syntax — Question 4: Fix the Diary
+# 🔥 Python syntax rules — Q12: Rescue the whole diary
 
-**Difficulty:** 🔴 Hard
+**Difficulty:** 🔴 Challenge
 
 ---
 
-## Problem
+## Task
 
-The code below has **5 mistakes in 5 different types**. Fix every one.
+This diary file breaks the rules in 5 places.
 
 ```python
-Print("==========")
-  print("MY DIARY")
-PRINT("==========")
-print("Date: Monday"
-print("Mood: Happy!)
+print("=====================")
+  Print("   MY CODE DIARY")
+print("=====================)
+print("Day 1  learn print")
+   print("Day 2  learn rules"
+PRINT("=====================")
 ```
 
-**Expected output:**
-```
-==========
-MY DIARY
-==========
-Date: Monday
-Mood: Happy!
+Rewrite so all rules are satisfied.
+
+---
+
+## Input
+
+None
+
+## Output
+
+Six-line diary in a box
+
+---
+
+## Example
+
+**Output:**
+
+```text
+=====================
+   MY CODE DIARY
+=====================
+Day 1  learn print
+Day 2  learn rules
+=====================
 ```
 
 ---
 
-## 💡 Hint
+## Hint
 
-Look for each type of Error:
-1. `NameError` (capital P)
-2. `IndentationError` (leading space)
-3. `NameError` (all uppercase)
-4. `SyntaxError` (missing `)`)
-5. `SyntaxError` (missing closing `"`)
+Fix one line, run again, repeat. Do not fix all five at once —
+if something is wrong you will not know which fix failed.
 
 ---
 
 ## Starter Code
 
 ```python
-Print("==========")
-  print("MY DIARY")
-PRINT("==========")
-print("Date: Monday"
-print("Mood: Happy!)
+# Write your code here
 ```

@@ -1,10 +1,10 @@
-# 📥 Parameters — Passing Values into Functions
+# 📥 Parameters — การส่งค่าเข้า Function
 
 ---
 
-## What Are Parameters?
+## Parameters คืออะไร?
 
-A parameter is a **variable that receives a value from outside** a function.
+Parameter คือ **ตัวแปรที่รับค่าจากภายนอก** เข้ามาใน function
 
 ```python
 def greet(name):        # name = parameter
@@ -22,7 +22,7 @@ Hello Bob
 
 ---
 
-## Multiple Parameters
+## หลาย Parameters
 
 ```python
 def describe(name, age):
@@ -40,7 +40,7 @@ Bob is 14 years old.
 
 ---
 
-## Example — Calculation
+## Example — คำนวณ
 
 ```python
 def add(a, b):
@@ -52,29 +52,29 @@ add(10, 20) # 30
 
 ---
 
-## Parameter vs. Argument
+## Parameter vs Argument
 
-| Term | Meaning | Example |
-|------|---------|---------|
-| Parameter | A variable name in the `def` statement | `def greet(name):` |
-| Argument | A value passed when calling the function | `greet("Alice")` |
+| คำ | ความหมาย | ตัวอย่าง |
+|----|---------|---------|
+| Parameter | ชื่อตัวแปรใน `def` | `def greet(name):` |
+| Argument | ค่าที่ส่งตอนเรียก | `greet("Alice")` |
 
 ---
 
-## Common Mistakes
+## ข้อควรระวัง
 
 ```python
 def add(a, b):
     print(a + b)
 
-add(3)        # ❌ Missing an argument
-add(3, 5, 7)  # ❌ Too many arguments
-add(3, 5)     # ✅ Correct
+add(3)        # ❌ ขาด argument
+add(3, 5, 7)  # ❌ เกิน argument
+add(3, 5)     # ✅ ถูกต้อง
 ```
 
 ---
 
-## Program Example — BMI Calculator
+## Exampleโปรแกรม — คำนวณ BMI
 
 ```python
 def show_bmi(weight, height):

@@ -1,26 +1,26 @@
-# 📋 Loop with Lists — Looping Over Multiple Items
+# 📋 Loop with Lists — วนซ้ำกับข้อมูลหลายชิ้น
 
 ---
 
-## What is a List?
+## List คืออะไร?
 
-**List** is a collection of multiple pieces of information in a single variable.
+**List** คือการเก็บข้อมูลหลายชิ้นไว้ในตัวแปรเดียว
 
 ```python
 fruits = ["Apple", "Banana", "Mango"]
 ```
 
-| Index |fee|
+| Index | ค่า |
 |-------|-----|
 | `[0]` | `"Apple"` |
 | `[1]` | `"Banana"` |
 | `[2]` | `"Mango"` |
 
-> Index always starts at **0**.
+> Index เริ่มที่ **0** เสมอ
 
 ---
 
-## Loop through a List with for
+## วนซ้ำ List ด้วย for
 
 ```python
 fruits = ["Apple", "Banana", "Mango"]
@@ -29,18 +29,18 @@ for fruit in fruits:
     print(fruit)
 ```
 
-Output:
+ผลลัพธ์:
 ```
 Apple
 Banana
 Mango
 ```
 
-> `fruit` is a temporary variable that holds a value each cycle — name it whatever you want.
+> `fruit` คือตัวแปรชั่วคราวที่เก็บค่าแต่ละรอบ — ตั้งชื่ออะไรก็ได้
 
 ---
 
-## Combine numbers in a List
+## รวมตัวเลขใน List
 
 ```python
 scores = [85, 92, 78, 95, 88]
@@ -54,7 +54,7 @@ print("Count:", len(scores))
 print(f"Average: {total / len(scores):.1f}")
 ```
 
-Output:
+ผลลัพธ์:
 ```
 Total: 438
 Count: 5
@@ -66,11 +66,11 @@ Average: 87.6
 ## for vs range
 
 ```python
-# range — know the number of turns
+# range — รู้จำนวนรอบ
 for i in range(3):
     print(i)      # 0, 1, 2
 
-# list — cycle through each value
+# list — วนผ่านแต่ละค่า
 colors = ["Red", "Green", "Blue"]
 for color in colors:
     print(color)  # Red, Green, Blue
@@ -78,7 +78,7 @@ for color in colors:
 
 ---
 
-## len() — Counts the number of members.
+## len() — นับจำนวนสมาชิก
 
 ```python
 names = ["Alice", "Bob", "Charlie"]
@@ -90,11 +90,11 @@ print(len(numbers)) # 5
 
 ---
 
-## Summary
+## สรุป
 
-|subject|example|
+| เรื่อง | ตัวอย่าง |
 |-------|---------|
-|Create a list| `items = ["a", "b", "c"]` |
-|Member access| `items[0]` → `"a"` |
-|loop list| `for item in items:` |
-|Count the number| `len(items)` → `3` |
+| สร้าง list | `items = ["a", "b", "c"]` |
+| เข้าถึงสมาชิก | `items[0]` → `"a"` |
+| วนซ้ำ list | `for item in items:` |
+| นับจำนวน | `len(items)` → `3` |

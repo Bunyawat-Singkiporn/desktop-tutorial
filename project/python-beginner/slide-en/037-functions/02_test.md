@@ -1,39 +1,45 @@
-# 👋 Practice Functions — Question 1: Greet
+# ⚙️ Functions — Q2: Coffee shop sign
 
 **Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Create a `greet()` function that displays a welcome message, then call it three times.
+A coffee shop needs an open sign.
 
-**Output:**
-```
-Hello! Welcome to Python class.
-Hello! Welcome to Python class.
-Hello! Welcome to Python class.
-```
+**Requirements:**
+
+- Create `show_sign()` that prints 3 lines as in the example
+- Call the function once
 
 ---
 
-## 💡 Hint
+## Input
 
-```python
-def greet():
-    print(...)
+None (values are set in the program / call functions in code)
 
-greet()
-greet()
-greet()
+## Output
+
+3 lines
+
+---
+
+## Example
+
+**Output:**
+
+```text
+==== COFFEE ====
+Open 7:00 - 18:00
+================
 ```
+
 
 ---
 
 ## Starter Code
 
 ```python
-# Create the greet() function
-
-# Call it three times
+# Create show_sign() and call it
 ```

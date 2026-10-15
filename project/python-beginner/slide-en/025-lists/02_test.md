@@ -1,34 +1,45 @@
-# 🏫 Practice Lists — Question 1: Class Roll Call
+# 📋 Lists — Q2: Class roll front and back
 
 **Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Create a list of three students, then display the first and last names.
+The teacher wants to show the first and last student in the row on the screen.
 
-```python
-students = ["Alice", "Bob", "Charlie"]
-```
+Set `students = ["Ann", "Ben", "Cara", "Dan"]`
 
-| Output |
-|--------|
-| `Alice` |
-| `Charlie` |
+Print the first name on one line and the last name on another.
 
 ---
 
-## 💡 Hint
+## Input
 
-Use index `[0]` for the first item and `[-1]` for the last item.
+None (values are set in the program)
+
+## Output
+
+2 lines (names)
+
+---
+
+## Example
+
+**Output:**
+
+```text
+Ann
+Dan
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-students = ["Alice", "Bob", "Charlie"]
+students = ["Ann", "Ben", "Cara", "Dan"]
 
 # Write your code here
 ```

@@ -1,44 +1,57 @@
-# 🧩 Logic Integration — Question 1: FizzBuzz Variant
+# Logic Integration ^Q2:
 
-**Difficulty:** 🟢 Easy
+difficulty:
 
 ---
 
-## Problem
+♪ Task
 
-Loop through the numbers from 1 to 15 and display a value according to these rules:
+Get three names on the list. Then type it in by name.
 
-| Condition | Display |
-|-----------|---------|
-| Divisible by 3 | `Fizz` |
-| Divisible by 5 | `Buzz` |
-| Divisible by both 3 and 5 | `FizzBuzz` |
-| Otherwise | The number itself |
+== sync, corrected by elderman == *
+
+- Use the loop three times.
+
+---
+
+♪ Input
+
+See example
+
+♪ Output
+
+Three lines.
+
+---
+
+## Example
+
+**Input:*
+
+```text
+Ann
+Ben
+Cat
+```
 
 **Output:**
+
+```text
+Ann
+Ben
+Cat
 ```
-1
-2
-Fizz
-4
-Buzz
-Fizz
-7
-8
-Fizz
-Buzz
-11
-Fizz
-13
-14
-FizzBuzz
-```
+
 
 ---
 
 ## Starter Code
 
 ```python
-for i in range(1, 16):
-    # Write your code here
+names = []
+for i in range(3):
+    names.append(input())
+
+for name in names:
+    print(name)
 ```

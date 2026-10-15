@@ -1,4 +1,4 @@
-# Practice Function — Question 10: Travel Temperature Helper
+# 🧩 Function Practice — Q12: อุณหภูมิสองทาง
 
 **Difficulty:** 🟡 Medium
 
@@ -6,28 +6,41 @@
 
 ## Task
 
-Travel app: user chooses mode then converts temperature.
+แปลงสองทิศทาง
 
-- `C` → convert to °F
-- `F` → convert to °C
+**Requirements:**
 
-Create `to_f(c)` and `to_c(f)`.
+- `to_f(c)` คืน c*9/5+32
+- `to_c(f)` คืน (f-32)*5/9
+- พิมพ์ `to_f(0)` และ `to_c(32)`
+
+---
+
+## Input
+
+None (values are set in the program / call functions in code)
+
+## Output
+
+2 line(s)
 
 ---
 
 ## Example
 
-**Input:**
-```
-C
-0
+**Output:**
+
+```text
+32.0
+0.0
 ```
 
-**Output:**
-```
-Travel Helper
-0.0 C = 32.00 F
-```
+
+---
+
+## Hint
+
+ระวังวงเล็บใน to_c
 
 ---
 
@@ -40,13 +53,6 @@ def to_f(c):
 def to_c(f):
     # Write your code here
 
-mode = input()
-value = float(input())
-print("Travel Helper")
-if mode == "C":
-    print(f"{value} C = {to_f(value):.2f} F")
-elif mode == "F":
-    print(f"{value} F = {to_c(value):.2f} C")
-else:
-    print("Unknown mode")
+print(to_f(0))
+print(to_c(32))
 ```

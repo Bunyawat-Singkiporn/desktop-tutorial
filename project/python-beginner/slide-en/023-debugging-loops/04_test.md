@@ -1,53 +1,42 @@
-# 🐛 Practice: Debugging Loops — Question 3: Fix Three Bugs
+# d d d d d d d d d d d d d d d d d
 
-**Difficulty:** 🟡 Medium
-
----
-
-## Problem
-
-The code below has **3 bugs** that need to be fixed to display correctly.
-
-```python
-names = ["Alice", "Bob", "Charlie"]
-
-for name in names:
-    print(names)
-
-total = 0
-for i in range(1, 5):
-    total = total + i
-print("Total 1-5:", total)
-```
-
-**Required Output:**
-```
-Alice
-Bob
-Charlie
-Total 1-5: 15
-```
+difficulty:
 
 ---
 
-## 💡 Hint
+♪ Task
 
-Bug 1: Use `names` instead of `name`.
-Bug 2: `range(1, 5)` only gets 1–4
-Bug 3: `print` is outside the loop but the total value is wrong.
+Three items in the loop must be printed, but the print is outside the loop.
+& Print
 
 ---
 
-## Starter Code
+♪ Input
 
-```python
-names = ["Alice", "Bob", "Charlie"]
+No.
 
-for name in names:
-    print(names)   # Bug 1
+♪ Output
 
-total = 0
-for i in range(1, 5):   # Bug 2
-    total = total + i
-print("Total 1-5:", total)
+Item 1 to Item 3
+
+---
+
+## Example
+
+♪ Output:*```text
+Item 1
+Item 2
+Item 3
+```---
+
+♪ Hint
+
+Every order to do so is in the loop.
+
+---
+
+♪ Starter Code```python
+for i in range(1, 4):
+    pass
+print(f"Item {i}")  # ← จัด indent / ลบ pass
 ```

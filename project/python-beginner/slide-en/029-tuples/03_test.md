@@ -1,38 +1,45 @@
-# 📅 Practice Tuples — Question 2: Weekdays
+# 📦 Tuples — Q3: พิกัดจุดบนแผนที่
 
 **Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Define a day of the week tuple displayed every day with a for loop.
+แอปแผนที่เก็บพิกัดจุดหนึ่งไว้ใน tuple
 
-```python
-weekdays = ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
-```
+กำหนด `point = (12, 45)`
 
-**Output:**
-```
-Monday
-Tuesday
-Wednesday
-Thursday
-Friday
-```
+แสดง `X: 12` และ `Y: 45`
 
 ---
 
-## 💡 Hint
+## Input
 
-Use `for day in weekdays:` like a loop and list.
+None (values are set in the program)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## Example
+
+**Output:**
+
+```text
+X: 12
+Y: 45
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-weekdays = ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
+point = (12, 45)
 
 # Write your code here
 ```

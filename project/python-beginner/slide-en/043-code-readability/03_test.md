@@ -1,39 +1,47 @@
-# 📐 Code Readability — Question 2: Fix Indentation + Add Comments
+# Code Readability QC3: Use ALL CIPS constant
 
-**Difficulty:** 🟢 Easy
-
----
-
-## Problem
-
-The code below has incorrect indentation and no comments. Fix it and add an appropriate comment.
-
-```python
-fruits=["apple","banana","mango"]
-total=0
-for f in fruits:
-total+=len(f)
-avg=total/len(fruits)
-print(avg)
-```
-
-**Output:**
-```
-5.333333333333333
-```
+difficulty:
 
 ---
 
-## 💡 Hint
+♪ Task
 
-- Add spaces around `=` and after `,`.
-- Indent the line inside the `for` loop by four spaces.
-- Add a comment explaining what the code does.
+Calculate the price after discount. Still rate.
+
+== sync, corrected by elderman == *
+
+- Set ^DISCUNT RATE = 0.1)
+- 200.
+- Print ^Fol:<price * (1 - DISCUNT RATE)
+
+---
+
+♪ Input
+
+None
+
+♪ Output
+
+One line.
+
+---
+
+## Example
+
+♪ Output:*
+
+```text
+Final: 180.0
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-# Rewrite the code with correct indentation and an appropriate comment
+DISCOUNT_RATE = 0.1
+price = 200
+
+# คำนวณแล้วพิมพ์
 ```

@@ -1,38 +1,42 @@
-# 🏪 Practice: What is Python — Question 3: Shop Sign
+# 🧹 What is Python — Q3: Cleaning duty roster
 
-**Difficulty:** 🟡 Medium
-
----
-
-## Problem
-
-Display a shop sign in this format — **every character must match:**
-
-```
-********************
-*   BEST BAKERY   *
-********************
-Open : 7am - 8pm
-Tel  : 099-999-9999
-********************
-```
+**Difficulty:** 🟢 Easy
 
 ---
 
-## 💡 Hint
+## Task
 
-- Use `print()` 6 times
-- Count `*` and spaces carefully
+The class has a cleaning rotation for 3 days.
+
+Write a program that shows the roster with a title on top, then one line per day.
+
+---
+
+## Input
+
+None (this program does not read user input)
+
+## Output
+
+One title line and 3 duty lines
+
+---
+
+## Example
+
+**Output:**
+
+```text
+Cleaning Duty
+Monday - Mint
+Tuesday - Beam
+Wednesday - Ploy
+```
 
 ---
 
 ## Starter Code
 
 ```python
-# Print top border
-# Print shop name
-# Print middle border
-# Print hours
-# Print phone
-# Print bottom border
+# Write your code here
 ```

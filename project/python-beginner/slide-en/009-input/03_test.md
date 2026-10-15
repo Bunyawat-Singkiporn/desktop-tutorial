@@ -1,39 +1,32 @@
-# 🏙️ Practice: Input — Question 2: Hometown
 
-**Difficulty:** 🟡 Medium
 
----
-
-## Problem
-
-Get a name and hometown, then display an introduction sentence.
-
-**Input:**
-```
-Tom
-Phuket
-```
-
-**Output:**
-```
-I am Tom from Phuket.
-Nice to meet you!
-```
+**Difficulty:** 🟢 Easy
 
 ---
 
-## 💡 Hint
 
-- Get 2 values with `input()`
-- Use `print()` to show 2 lines
+
+
 
 ---
 
-## Starter Code
+## Input
+## Output
+---
 
-```python
-name = input()
+
+
+**Input:**# ⌨️ Input — ข้อ 2: เมืองเกิด## โจทย์แบบสอบถามท่องเที่ยวถามเมืองเกิด
+รับชื่อเมือง แล้วแสดงพร้อมป้ายกำกับชื่อเมือง 1 บรรทัดข้อความเมืองเกิด 1 บรรทัด## ตัวอย่าง```text
+Khon Kaen
+```
+**Output:**```text
+Hometown: Khon Kaen
+```
+---
+
+## Starter Code```python
 city = input()
 
-# Print introduction
+# Write your code here
 ```

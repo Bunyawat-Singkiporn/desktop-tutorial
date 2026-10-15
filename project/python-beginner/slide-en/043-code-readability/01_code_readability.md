@@ -1,80 +1,72 @@
-# ✨ Code Readability — Easy-to-Read Code
+♪ Code Readability
 
 ---
 
-## What Makes Code Good?
+♪ What's a good code? !
 
-Good code should not only **run**—it should also be **easy to understand**.
+A good code isn't only possible but easily read. *
 
 ---
 
-## Use Meaningful Names
+♪ Named it to mean ♪
 
 ```python
-# ❌ Unclear
+# ❌ อ่านไม่รู้เรื่อง
 x = 75
 y = x >= 50
 
-# ✅ Clear at a glance
+# ✅ อ่านเข้าใจทันที
 score = 75
 is_passed = score >= 50
-```
+```---
 
----
-
-## Use Correct Indentation
+# Indientation right
 
 ```python
-# ❌ Incorrect indentation
+# ❌ indent ผิด
 def greet():
-print("Hello")     # ← This line should be indented by 4 spaces
+print("Hello")     # ← ควรเว้น 4 ช่อง
 
-# ✅ Correct
+# ✅ ถูกต้อง
 def greet():
     print("Hello")
-```
+```---
 
----
-
-## Add Comments Only When Needed
+#### Use only necessary applications
 
 ```python
-# ❌ Commenting every line creates clutter
-x = 10       # Set x to 10
-y = 20       # Set y to 20
-z = x + y    # Add x and y
+# ❌ comment ทุกบรรทัด (รก)
+x = 10       # กำหนด x เป็น 10
+y = 20       # กำหนด y เป็น 20
+z = x + y    # บวก x กับ y
 
-# ✅ Comment only where the reason needs explanation
+# ✅ comment เฉพาะจุดที่อธิบายเหตุผล
 DISCOUNT_RATE = 0.1   # 10% discount for all items
 price = 200
 final_price = price * (1 - DISCOUNT_RATE)
-```
+```---
 
----
-
-## Use f-Strings Instead of Joining Strings
+## Use f-sting instead of stringing
 
 ```python
-# ❌ Hard to read
+# ❌ อ่านยาก
 print("Name: " + name + ", Age: " + str(age))
 
-# ✅ Easy to read
+# ✅ อ่านง่าย
 print(f"Name: {name}, Age: {age}")
-```
+```---
 
----
-
-## Split Long Code into Functions
+# Funtion instead of code #
 
 ```python
-# ❌ Dense, lengthy code
+# ❌ โค้ดยาวอัดแน่น
 n = int(input())
 t = 0
 for i in range(n):
     t += i
 print(t)
 
-# ✅ Clearly separated
+# ✅ แบ่งชัดเจน
 def get_sum(n):
     total = 0
     for i in range(n):
@@ -83,14 +75,12 @@ def get_sum(n):
 
 n = int(input())
 print(get_sum(n))
-```
+```---
 
----
+# Five clean code mains
 
-## Five Clean Code Principles
-
-1. Use meaningful names.
-2. Always indent code correctly.
-3. Add comments only for complex parts.
-4. Use f-strings.
-5. Create a separate function for each task.
+One, name to mean it.
+Two things, always make it right.
+3.
+Four. Use f-stinging.
+Five division functions for each event.

@@ -1,36 +1,44 @@
-# ✏️ Practice Choosing Data Types — Question 3: Rewrite with Tuple
+# 🧭 Choosing Types — Q4: ผู้เข้าชมไม่ซ้ำ
 
-**Difficulty:** 🟡 Medium
-
----
-
-## Problem
-
-The code below uses a list to store coordinates (x, y, z) that should not change.
-Rewrite it using a **tuple** and add a comment explaining why a tuple is appropriate.
-
-```python
-# Original code (uses a list)
-point = [10, 20, 30]
-print(f"x={point[0]}, y={point[1]}, z={point[2]}")
-```
-
-**Output** (same as before):
-```
-x=10, y=20, z=30
-```
+**Difficulty:** 🟢 Easy
 
 ---
 
-## 💡 Hint
+## Task
 
-Change `[]` to `()` and add a comment explaining why.
+นับผู้เข้าชมไม่ซ้ำด้วย set
+
+กำหนด `visitors = {"Ann", "Ben", "Ann", "Cara"}`
+
+แสดงจำนวนสมาชิกใน set
+
+---
+
+## Input
+
+None (values are set in the program)
+
+## Output
+
+One line
+
+---
+
+## Example
+
+**Output:**
+
+```text
+Visitors: 3
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-# Rewrite with tuple
-# Comment: Why use a tuple?
+visitors = {"Ann", "Ben", "Ann", "Cara"}
+
+# Write your code here
 ```

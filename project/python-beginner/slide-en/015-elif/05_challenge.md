@@ -1,51 +1,47 @@
-# 🔥 Practice elif — Question 4: Grade & Feedback
-
-**Difficulty:** 🔴 Hard
-
+# 🅿️ elif — Q12: ค่าจอดรถหลายอัตรา
+**Difficulty:** 🔴 Challenge
 ---
-
-## Problem
-
-Receive a score (0–100) and display your grade **with an encouraging message**
-
-|score|grade|message|
-|-------|------|---------|
-| >= 80 | `A` | `Excellent!` |
-| >= 70 | `B` | `Good Job!` |
-| >= 60 | `C` | `Keep Going!` |
-| >= 50 | `D` | `Need More Practice` |
-| < 50  | `F` | `Please Retake` |
-
-> Mix knowledge: elif + input + print several lines
-
+## Task
+อาคารจอดรถคิดอัตราต่อชั่วโมงตามจำนวนชั่วโมงที่จอด แล้วคูณเป็นยอดรวม
+| ชั่วโมงที่จอด | อัตราต่อชั่วโมง |
+|---------------|-----------------|
+| `>= 8` | 25 บาท |
+| `>= 4` | 30 บาท |
+| `>= 2` | 40 บาท |
+| น้อยกว่านั้น | 50 บาท |
+ยอดรวม = อัตรา × จำนวนชั่วโมง
+เขียนโปรแกรมรับจำนวนชั่วโมง แล้วออกใบค่าจอด
 ---
-
-## example
-
+## Input
+จำนวนชั่วโมงเป็นจำนวนเต็ม 1 บรรทัด
+## Output
+ใบค่าจอดในกรอบ แสดงชั่วโมง อัตรา และยอดรวม
+---
+## Example
 **Input:**
-```
-73
+```text
+5
 ```
 
 **Output:**
-```
-B
-Good Job!
-```
 
+```text
+========================
+       PARKING
+========================
+Hours : 5
+Rate  : 30
+Total : 150
+========================
+```
 ---
-
 ## 💡 Hint
-
-- Use `elif` in order of highest score.
-- Each condition must be `print` two times.
-
+เลือกอัตราก่อนด้วย `elif` แล้วค่อยคูณกับจำนวนชั่วโมงทีหลัง
+อย่าคูณในทุกกิ่งซ้ำๆ
 ---
-
 ## Starter Code
-
 ```python
-score = int(input())
+hours = int(input())
 
 # Write your code here
 ```

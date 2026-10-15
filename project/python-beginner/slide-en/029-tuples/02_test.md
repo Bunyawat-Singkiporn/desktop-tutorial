@@ -1,34 +1,45 @@
-# 🏙️ Practice Tuples — Question 1: City Info
+# 📦 Tuples — Q2: ป้ายวันทำการหัวท้าย
 
 **Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Given a tuple of three cities, show the second city.
+ออฟฟิศอยากโชว์วันทำการวันแรกและวันสุดท้าย
 
-```python
-cities = ("Bangkok", "Chiang Mai", "Phuket")
-```
+กำหนด `workdays = ("Mon", "Tue", "Wed", "Thu", "Fri")`
 
-**Output:**
-```
-Chiang Mai
-```
+แสดงวันแรกและวันสุดท้ายคนละบรรทัด
 
 ---
 
-## 💡 Hint
+## Input
 
-Use index `[1]` to access the second one.
+None (values are set in the program)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## Example
+
+**Output:**
+
+```text
+Mon
+Fri
+```
+
 
 ---
 
 ## Starter Code
 
 ```python
-cities = ("Bangkok", "Chiang Mai", "Phuket")
+workdays = ("Mon", "Tue", "Wed", "Thu", "Fri")
 
 # Write your code here
 ```

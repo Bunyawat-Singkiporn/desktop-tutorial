@@ -1,20 +1,39 @@
-# 🔢 Practice Return Values — Question 2: Is Even
+# ↩️ Return Values — Q3: เช็กเลขคู่
 
 **Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Create an `is_even(n)` function that returns `True` for an even number or `False` for an odd number.
-Then use the function in an `if`/`else` statement.
+ตรวจเลขคู่ว่า True หรือ False
+
+**Requirements:**
+
+- สร้าง `is_even(n)` คืน True ถ้าหาร 2 ลงตัว ไม่งั้น False
+- พิมพ์ผลของ `is_even(8)` และ `is_even(7)`
+
+---
+
+## Input
+
+None (values are set in the program / call functions in code)
+
+## Output
+
+2 บรรทัด
+
+---
+
+## Example
 
 **Output:**
+
+```text
+True
+False
 ```
-4 → Even
-7 → Odd
-10 → Even
-```
+
 
 ---
 
@@ -22,11 +41,9 @@ Then use the function in an `if`/`else` statement.
 
 ```python
 def is_even(n):
+    # return
     # Write your code here
 
-for num in [4, 7, 10]:
-    if is_even(num):
-        print(f"{num} → Even")
-    else:
-        print(f"{num} → Odd")
+print(is_even(8))
+print(is_even(7))
 ```

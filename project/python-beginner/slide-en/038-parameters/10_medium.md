@@ -1,4 +1,4 @@
-# Practice Parameters — Question 9: Who Is Older?
+# 📥 Parameters — Q10: พื้นที่สี่เหลี่ยม
 
 **Difficulty:** 🟡 Medium
 
@@ -6,34 +6,45 @@
 
 ## Task
 
-Read two friends' ages and say who is older.
+คำนวณพื้นที่โต๊ะ
 
-Create `who_is_older(age1, age2)`.
+**Requirements:**
+
+- สร้าง `area(w, h)` พิมพ์ `Area: <w*h>`
+- เรียกกับ `(4, 5)` และ `(3, 7)`
+
+---
+
+## Input
+
+None (values are set in the program / call functions in code)
+
+## Output
+
+2 บรรทัด
 
 ---
 
 ## Example
 
-**Input:**
-```
-12
-15
+**Output:**
+
+```text
+Area: 20
+Area: 21
 ```
 
-**Output:**
-```
-Friend 2 is older
-```
+
+---
+
+## 💡 Hint
+
+คูณแล้วพิมพ์
 
 ---
 
 ## Starter Code
 
 ```python
-def who_is_older(age1, age2):
-    # Write your code here
-
-age1 = int(input())
-age2 = int(input())
-who_is_older(age1, age2)
+# area
 ```

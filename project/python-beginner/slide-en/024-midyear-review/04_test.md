@@ -1,57 +1,46 @@
-# 🏆 Practice: Mid-Year Review — Question 3: Shopping Cart
+# 🏆 midyear-review — Q4: ผ่านเกณฑ์ไหม
 
-**Difficulty:** 🟡 Medium
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-Get the product name and price repeatedly until you type `"done"` and the receipt is displayed.
+รับคะแนน ถ้า `>= 50` พิมพ์ `Pass` ไม่เช่นนั้นพิมพ์ `Fail`
+
+---
+
+## Input
+
+คะแนนจำนวนเต็ม 1 line
+
+## Output
+
+Pass หรือ Fail
+
+---
+
+## Example
 
 **Input:**
-```
-Apple
-15
-Bread
-40
-Milk
-35
-done
+
+```text
+72
 ```
 
 **Output:**
-```
-=== Receipt ===
-Apple: 15 baht
-Bread: 40 baht
-Milk: 35 baht
----
-Total: 90 baht
+
+```text
+Pass
 ```
 
----
-
-## 💡 Hint
-
-- Get the product name first if `== "done"` → `break`
-- If not → get price → keep both in list.
 
 ---
 
 ## Starter Code
 
 ```python
-items = []
-prices = []
+score = int(input())
 
-while True:
-    name = input()
-    if name == "done":
-        break
-    # Get price and store both name and price
-
-print("=== Receipt ===")
-# Print each item with price
-print("---")
-# Print total
+# ตรวจเกณฑ์
 ```

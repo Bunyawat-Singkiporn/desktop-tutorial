@@ -1,32 +1,51 @@
-# 🔧 Practice: Environment — Question 1: Fix the Error
+# 🔍 Run programs and read errors — Q1: Forgot to close a quote
 
 **Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
+## Task
 
-The code below has **1** mistake. Fix it so it runs correctly.
+The photo club notice will not run — it shows `SyntaxError`.
+
+> The code below **does not run**. Find what is wrong and rewrite it so the output matches the example.
 
 ```python
-print("Good morning!
-```
-
-**Expected output:**
-```
-Good morning!
+print("Photo Club)
+print("Meeting on Friday")
 ```
 
 ---
 
-## 💡 Hint
+## Input
 
-Look at the `"` marks — is something missing?
+None
+
+## Output
+
+Two lines of text
+
+---
+
+## Example
+
+**Output:**
+
+```text
+Photo Club
+Meeting on Friday
+```
+
+---
+
+## Hint
+
+`SyntaxError` often means something that must come in pairs is incomplete. Check line by line.
 
 ---
 
 ## Starter Code
 
 ```python
-print("Good morning!
+# Write your corrected code here
 ```

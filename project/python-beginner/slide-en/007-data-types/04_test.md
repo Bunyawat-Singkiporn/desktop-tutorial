@@ -1,44 +1,29 @@
-# 👤 Practice: Data Types — Question 3: Character Profile
 
-**Difficulty:** 🟡 Medium
+
+**Difficulty:** 🟢 Easy
 
 ---
 
-## Problem
 
-Create a game character profile using all 4 data types, then display it.
 
-| Variable | Value | Type |
-|----------|-------|------|
-| `hero_name` | `"Shadow"` | str |
-| `hero_level` | `10` | int |
-| `hero_hp` | `99.5` | float |
-| `is_alive` | `True` | bool |
 
-**Output:**
+
+---
+
+## Input
+## Output
+---
+
+
+
+**Output:**# 🧬 Data Types — ข้อ 4: ชนิดของชื่อ## โจทย์เก็บ `name = "Mira"` แสดงค่าและชนิดไม่มี (กำหนดค่าในโปรแกรม)2 บรรทัด## ตัวอย่าง```text
+Name: Mira
+Type: <class 'str'>
 ```
-=== Character Profile ===
-Name: Shadow
-Level: 10
-HP: 99.5
-Alive: True
-```
-
 ---
 
-## 💡 Hint
+## Starter Code```python
+name = "Mira"
 
-Use `print("Label:", variable)` for each line
-
----
-
-## Starter Code
-
-```python
-hero_name = "Shadow"
-hero_level = 10
-hero_hp = 99.5
-is_alive = True
-
-# Print profile
+# แสดงผล
 ```

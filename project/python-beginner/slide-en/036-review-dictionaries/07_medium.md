@@ -1,0 +1,50 @@
+# 🔁 Review Dicts — Q7: หาคะแนนสูงสุดด้วยมือ
+
+**Difficulty:** 🟡 Medium
+
+---
+
+## Task
+
+หากลุ่มที่ได้คะแนนสูงสุดโดยเทียบเอง
+
+กำหนด `scores = {"Red": 12, "Blue": 18, "Green": 15}`
+
+หาชื่อกลุ่มที่คะแนนสูงสุด (ห้าม max) แล้วแสดง `Top: Blue (18)`
+
+---
+
+## Input
+
+None (values are set in the program)
+
+## Output
+
+One line
+
+---
+
+## Example
+
+**Output:**
+
+```text
+Top: Blue (18)
+```
+
+
+---
+
+## Hint
+
+เก็บชื่อและคะแนนที่ดีที่สุดขณะวน loop
+
+---
+
+## Starter Code
+
+```python
+scores = {"Red": 12, "Blue": 18, "Green": 15}
+
+# Write your code here
+```
