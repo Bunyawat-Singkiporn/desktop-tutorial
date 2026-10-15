@@ -11,16 +11,6 @@
 
 ---
 
-## Input
-
-ไม่มี
-
-## Output
-
-บรรทัดเดียว Calories: <ผลรวม>
-
----
-
 ## Example
 
 **Input:**

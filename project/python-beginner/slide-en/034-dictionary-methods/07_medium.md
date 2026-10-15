@@ -14,16 +14,6 @@ update city เป็น `Chonburi` แล้ว del คีย์ `temp` จา�
 
 ---
 
-## Input
-
-None (values are set in the program)
-
-## Output
-
-2 lines
-
----
-
 ## Example
 
 **Output:**

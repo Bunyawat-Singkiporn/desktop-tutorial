@@ -6,11 +6,6 @@
 กำหนด `names = ["Ann", "Ben", "Cara"]`
 แสดงแบบ `0: Ann`
 ---
-## Input
-None (values are set in the program)
-## Output
-3 บรรทัด
----
 ## Example
 **Output:**
 ```text

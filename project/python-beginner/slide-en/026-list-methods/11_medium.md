@@ -6,11 +6,6 @@
 เริ่ม `queue = []` แล้ว append เลขคิว `Q1`, `Q2`, `Q3`, `Q4`
 แสดง list และจำนวนคนในคิว
 ---
-## Input
-None (values are set in the program)
-## Output
-2 บรรทัด
----
 ## Example
 **Output:**
 ```text

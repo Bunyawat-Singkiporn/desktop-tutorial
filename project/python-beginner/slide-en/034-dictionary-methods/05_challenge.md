@@ -15,16 +15,6 @@ update age เป็น 17 และ city เป็น `Lampang` แล้ว de
 
 ---
 
-## Input
-
-None (values are set in the program)
-
-## Output
-
-3 lines
-
----
-
 ## Example
 
 **Output:**

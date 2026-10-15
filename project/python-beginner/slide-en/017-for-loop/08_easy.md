@@ -13,16 +13,6 @@
 
 ---
 
-## Input
-
-ไม่มี
-
-## Output
-
-Day 1 ถึง Day 7 ทีละบรรทัด
-
----
-
 ## Example
 
 **Input:**

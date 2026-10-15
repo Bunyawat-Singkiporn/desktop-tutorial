@@ -17,14 +17,6 @@ print("Book:", n)
 
 ---
 
-## Input
-None (this program does not read user input)
-
-## Output
-See the example
-
----
-
 ## Example
 
 **Output:**

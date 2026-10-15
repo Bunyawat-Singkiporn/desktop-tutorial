@@ -6,11 +6,6 @@
 กำหนด `temps = [30, 32, 28, 31, 29]`
 แสดงค่าเฉลี่ยทศนิยม 1 ตำแหน่งแบบ `Average: 30.0`
 ---
-## Input
-None (values are set in the program)
-## Output
-บรรทัดเดียว
----
 ## Example
 **Output:**
 ```text

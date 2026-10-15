@@ -10,16 +10,6 @@
 
 ---
 
-## Input
-
-None (values are set in the program)
-
-## Output
-
-คะแนนที่ไม่ใช่ศูนย์
-
----
-
 ## Example
 
 **Output:**

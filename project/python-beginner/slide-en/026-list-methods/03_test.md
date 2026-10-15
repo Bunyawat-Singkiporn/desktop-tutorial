@@ -6,11 +6,6 @@
 กำหนด `menu = ["Soup", "Salad", "Cake"]`
 แก้ค่าตำแหน่ง index 1 เป็น `Steak` แล้วแสดง list
 ---
-## Input
-None (values are set in the program)
-## Output
-list หนึ่งบรรทัด
----
 ## Example
 **Output:**
 ```text

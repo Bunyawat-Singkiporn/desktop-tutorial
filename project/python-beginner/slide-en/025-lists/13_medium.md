@@ -6,11 +6,6 @@
 กำหนด `prices = [45, 120, 80, 200, 99, 150]`
 แสดง `Expensive: N`
 ---
-## Input
-None (values are set in the program)
-## Output
-บรรทัดเดียว
----
 ## Example
 **Output:**
 ```text

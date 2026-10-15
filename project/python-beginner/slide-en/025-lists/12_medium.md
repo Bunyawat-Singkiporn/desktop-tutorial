@@ -6,11 +6,6 @@
 กำหนด `queue = ["A01", "A02", "A03", "A04"]`
 แสดงตามตัวอย่าง
 ---
-## Input
-None (values are set in the program)
-## Output
-กล่องสรุป 3 บรรทัด
----
 ## Example
 **Output:**
 ```text

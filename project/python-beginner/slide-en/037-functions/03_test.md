@@ -15,16 +15,6 @@ The menu screen is still loading items.
 
 ---
 
-## Input
-
-None (values are set in the program / call functions in code)
-
-## Output
-
-2 lines
-
----
-
 ## Example
 
 **Output:**

@@ -14,16 +14,6 @@
 
 ---
 
-## Input
-
-None (values are set in the program)
-
-## Output
-
-รายงาน + สรุป
-
----
-
 ## Example
 
 **Output:**

@@ -15,16 +15,6 @@ When the shop closes, show a sign.
 
 ---
 
-## Input
-
-None (values are set in the program / call functions in code)
-
-## Output
-
-1 line
-
----
-
 ## Example
 
 **Output:**

@@ -12,16 +12,6 @@ Write a program that shows the menu like the example. The text `SPACE ADVENTURE`
 
 ---
 
-## Input
-
-None (this program does not read user input)
-
-## Output
-
-Menu with double border and 3 menu items
-
----
-
 ## Example
 
 **Output:**

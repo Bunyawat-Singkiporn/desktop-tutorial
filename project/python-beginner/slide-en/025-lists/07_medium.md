@@ -6,11 +6,6 @@
 กำหนด `names = ["Kate", "Leo", "Maya"]`
 แสดงแบบ `1. Kate` ทีละบรรทัด (เพิ่มตัวนับเองใน loop)
 ---
-## Input
-None (values are set in the program)
-## Output
-3 บรรทัด
----
 ## Example
 **Output:**
 ```text

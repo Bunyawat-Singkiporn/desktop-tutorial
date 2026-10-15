@@ -12,16 +12,6 @@ Write a program that shows Monday’s schedule for 4 periods; every column must 
 
 ---
 
-## Input
-
-None (this program does not read user input)
-
-## Output
-
-Table with 1 header row, 1 rule row, and 4 data rows
-
----
-
 ## Example
 
 **Output:**

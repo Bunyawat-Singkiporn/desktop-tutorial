@@ -14,16 +14,6 @@ update point เป็น 25 level เป็น 2 แล้วพิมพ์ it
 
 ---
 
-## Input
-
-None (values are set in the program)
-
-## Output
-
-3 lines
-
----
-
 ## Example
 
 **Output:**

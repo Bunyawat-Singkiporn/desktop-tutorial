@@ -6,11 +6,6 @@
 กำหนด `items = ["Apple", "Banana", "Mango", "Durian", "Grape"]`
 ลบ `Banana` และ `Durian` แล้ว `.sort()` และแสดง list
 ---
-## Input
-None (values are set in the program)
-## Output
-list หนึ่งบรรทัด
----
 ## Example
 **Output:**
 ```text

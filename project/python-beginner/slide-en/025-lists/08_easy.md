@@ -6,11 +6,6 @@
 กำหนด `prices = [120, 180, 250]`
 แสดงราคาแถวกลางในรูปแบบ `Middle: 180`
 ---
-## Input
-None (values are set in the program)
-## Output
-บรรทัดเดียว
----
 ## Example
 **Output:**
 ```text

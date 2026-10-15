@@ -12,16 +12,6 @@ Write a program that shows a certificate like the example with a border and seve
 
 ---
 
-## Input
-
-None (this program does not read user input)
-
-## Output
-
-Certificate in a border; every line the same width
-
----
-
 ## Example
 
 **Output:**

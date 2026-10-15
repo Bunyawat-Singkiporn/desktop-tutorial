@@ -12,16 +12,6 @@ Write a program that shows a receipt like the example: store name, line items, a
 
 ---
 
-## Input
-
-None (this program does not read user input)
-
-## Output
-
-Receipt with rules separating header, items, and total
-
----
-
 ## Example
 
 **Output:**

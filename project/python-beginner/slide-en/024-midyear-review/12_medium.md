@@ -10,16 +10,6 @@
 
 ---
 
-## Input
-
-None (values are set in the program)
-
-## Output
-
-ตาราง 3×3
-
----
-
 ## Example
 
 **Output:**

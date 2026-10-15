@@ -6,11 +6,6 @@
 กำหนด `cart = ["Milk", "Eggs", "Bread"]`
 เพิ่ม `Butter` ด้วย append และลบ `Eggs` ด้วย remove แล้วแสดง list
 ---
-## Input
-None (values are set in the program)
-## Output
-list หนึ่งบรรทัด
----
 ## Example
 **Output:**
 ```text

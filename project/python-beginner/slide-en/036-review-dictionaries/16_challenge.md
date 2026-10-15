@@ -15,16 +15,6 @@ update point เป็น 55 เพิ่มคีย์ `tier` เป็น `Si
 
 ---
 
-## Input
-
-None (values are set in the program)
-
-## Output
-
-กล่องสรุป
-
----
-
 ## Example
 
 **Output:**

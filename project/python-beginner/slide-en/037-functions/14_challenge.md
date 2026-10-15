@@ -17,16 +17,6 @@
 
 ---
 
-## Input
-
-None (values are set in the program / call functions in code)
-
-## Output
-
-4 บรรทัด
-
----
-
 ## Example
 
 **Output:**

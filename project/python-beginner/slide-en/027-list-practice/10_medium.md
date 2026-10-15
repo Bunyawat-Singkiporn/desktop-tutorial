@@ -6,11 +6,6 @@
 กำหนด `tasks = ["Sweep", "Mop", "Dust", "Wipe"]`
 ใช้ range(len) แสดง `0 Sweep Done` หรือ `1 Mop Todo` ตามว่า index หาร 2 ลงตัวหรือไม่
 ---
-## Input
-None (values are set in the program)
-## Output
-4 บรรทัด
----
 ## Example
 **Output:**
 ```text

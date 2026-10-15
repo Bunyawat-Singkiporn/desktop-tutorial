@@ -6,11 +6,6 @@
 กำหนด `sales = [1200, 980, 1500, 1100]`
 แสดงยอดรวม ค่าเฉลี่ย และยอดสูงสุดตามตัวอย่าง
 ---
-## Input
-None (values are set in the program)
-## Output
-สรุป 3 บรรทัด
----
 ## Example
 **Output:**
 ```text

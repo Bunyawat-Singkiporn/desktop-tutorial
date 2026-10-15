@@ -15,16 +15,6 @@ Write a program that shows a 5-item checklist in a box, as in the example.
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Five-item checklist in a box
-
----
-
 ## Example
 
 **Output:**

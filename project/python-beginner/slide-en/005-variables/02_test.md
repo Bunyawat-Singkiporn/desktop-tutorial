@@ -12,14 +12,6 @@
 
 ---
 
-## Input
-None (this program does not read user input)
-
-## Output
-ข้อความ 2 บรรทัด
-
----
-
 ## Example
 
 **Output:**

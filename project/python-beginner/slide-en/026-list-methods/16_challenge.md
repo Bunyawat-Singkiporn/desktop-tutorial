@@ -7,11 +7,6 @@
 เพิ่ม `150` ลบ `80` แก้ตำแหน่ง 0 เป็น `130` แล้วเรียงมากไปน้อย
 แสดง list และคะแนนสูงสุด (ค่าแรกหลังเรียง)
 ---
-## Input
-None (values are set in the program)
-## Output
-2 บรรทัด
----
 ## Example
 **Output:**
 ```text

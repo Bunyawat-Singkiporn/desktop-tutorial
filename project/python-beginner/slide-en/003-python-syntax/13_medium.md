@@ -13,16 +13,6 @@ Every code line must be **flush left** with no leading spaces.
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Table of contents with three indent levels
-
----
-
 ## Example
 
 **Output:**

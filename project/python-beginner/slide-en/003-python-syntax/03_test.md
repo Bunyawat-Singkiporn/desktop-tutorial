@@ -18,16 +18,6 @@ Rewrite it correctly.
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Three lines of text
-
----
-
 ## Example
 
 **Output:**

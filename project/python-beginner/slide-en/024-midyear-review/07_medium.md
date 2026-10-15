@@ -10,16 +10,6 @@
 
 ---
 
-## Input
-
-None (values are set in the program)
-
-## Output
-
-5 ถึง 1 แล้ว Start!
-
----
-
 ## Example
 
 **Output:**

@@ -6,11 +6,6 @@
 กำหนด `friends = ["Mew", "Pim", "Ohm", "Fern", "Beam"]`
 แสดงจำนวนเพื่อนในรูปแบบ `Friends: N`
 ---
-## Input
-None (values are set in the program)
-## Output
-บรรทัดเดียว
----
 ## Example
 **Output:**
 ```text

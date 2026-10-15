@@ -14,16 +14,6 @@ Write a program that prints the comparison table as in the example.
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Two-row comparison table
-
----
-
 ## Example
 
 **Output:**

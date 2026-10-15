@@ -26,16 +26,6 @@ Write a program that **prints the answer** — which version is correct and whic
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Five answer lines
-
----
-
 ## Example
 
 **Output:**

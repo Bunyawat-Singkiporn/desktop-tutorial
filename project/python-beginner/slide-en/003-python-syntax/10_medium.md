@@ -21,16 +21,6 @@ Rewrite so all rules pass while output stays identical character for character.
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Six-line receipt
-
----
-
 ## Example
 
 **Output:**

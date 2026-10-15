@@ -13,16 +13,6 @@
 
 ---
 
-## Input
-
-None (values are set in the program)
-
-## Output
-
-สามบรรทัดสรุป
-
----
-
 ## Example
 
 **Output:**

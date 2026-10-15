@@ -18,16 +18,6 @@ print("Bring your hat")
 
 ---
 
-## Input
-
-ไม่มี
-
-## Output
-
-ข้อความ 3 บรรทัด
-
----
-
 ## ตัวอย่าง
 
 **Output:**

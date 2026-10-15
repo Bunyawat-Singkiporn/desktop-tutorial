@@ -6,11 +6,6 @@
 กำหนด `stock = ["Rice", "Oil", "Soap", "Milk"]`
 ลบ `Oil` ออกด้วย `.remove()` แล้วแสดง list
 ---
-## Input
-None (values are set in the program)
-## Output
-list หนึ่งบรรทัด
----
 ## Example
 **Output:**
 ```text

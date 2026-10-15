@@ -6,11 +6,6 @@
 กำหนด `drinks = ["Latte", "Mocha", "Tea"]` และ `prices = [55, 60, 40]`
 พิมพ์ชื่อเครื่องดื่มทีละบรรทัด แล้วปิดท้ายด้วยจำนวนเมนูและราคารวม
 ---
-## Input
-None (values are set in the program)
-## Output
-รายการ + สรุป
----
 ## Example
 **Output:**
 ```text

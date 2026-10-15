@@ -21,16 +21,6 @@ Rewrite so all rules are satisfied.
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Six-line diary in a box
-
----
-
 ## Example
 
 **Output:**

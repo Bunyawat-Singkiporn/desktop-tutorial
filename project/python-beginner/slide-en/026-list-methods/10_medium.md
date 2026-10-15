@@ -6,11 +6,6 @@
 กำหนด `scores = [85, 40, 90, 55, 70]`
 ลบ `40` แล้ว `.sort(reverse=True)` และแสดง list
 ---
-## Input
-None (values are set in the program)
-## Output
-list หนึ่งบรรทัด
----
 ## Example
 **Output:**
 ```text

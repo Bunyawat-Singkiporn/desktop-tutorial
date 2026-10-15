@@ -13,16 +13,6 @@ Write a program that shows 3 lines about yourself; each line starts with a label
 
 ---
 
-## Input
-
-None (this program does not read user input)
-
-## Output
-
-Three lines of information, each starting with a label
-
----
-
 ## Example
 
 **Output:**

@@ -18,16 +18,6 @@ Rewrite so all rules are satisfied.
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Three-line shop sign
-
----
-
 ## Example
 
 **Output:**

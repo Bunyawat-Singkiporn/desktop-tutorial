@@ -16,16 +16,6 @@
 
 ---
 
-## Input
-
-None (values are set in the program)
-
-## Output
-
-Line
-
----
-
 ## Example
 
 **Output:**

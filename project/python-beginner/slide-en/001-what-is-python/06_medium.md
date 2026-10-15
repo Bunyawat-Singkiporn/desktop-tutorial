@@ -12,16 +12,6 @@ Write a program that shows the menu with top/bottom rules; drink names and price
 
 ---
 
-## Input
-
-None (this program does not read user input)
-
-## Output
-
-Menu inside horizontal rules; names and prices in the same columns
-
----
-
 ## Example
 
 **Output:**

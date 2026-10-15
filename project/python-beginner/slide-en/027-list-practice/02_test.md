@@ -6,11 +6,6 @@
 กำหนด `chores = ["Wash dishes", "Fold clothes", "Water plants"]`
 ใช้ `for i in range(len(chores)):` แสดงแบบ `1) Wash dishes`
 ---
-## Input
-None (values are set in the program)
-## Output
-3 บรรทัด
----
 ## Example
 **Output:**
 ```text

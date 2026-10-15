@@ -17,16 +17,6 @@ print("Hall A")
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Two lines of text
-
----
-
 ## Example
 
 **Output:**

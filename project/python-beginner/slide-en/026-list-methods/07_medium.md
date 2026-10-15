@@ -6,11 +6,6 @@
 กำหนด `drinks = ["Mocha", "Latte", "Tea"]`
 แก้ค่าตำแหน่ง 2 เป็น `Americano` แล้ว `.sort()` และแสดง list
 ---
-## Input
-None (values are set in the program)
-## Output
-list หนึ่งบรรทัด
----
 ## Example
 **Output:**
 ```text

@@ -12,16 +12,6 @@ Write a program that shows a ticket like the example. Every line must start and 
 
 ---
 
-## Input
-
-None (this program does not read user input)
-
-## Output
-
-Queue ticket with a complete four-sided border
-
----
-
 ## Example
 
 **Output:**

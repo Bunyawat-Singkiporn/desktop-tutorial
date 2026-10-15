@@ -6,11 +6,6 @@
 กำหนด `prices = [99, 45, 120, 30]`
 แก้ราคาตำแหน่ง 0 เป็น `50` แล้วเรียงน้อยไปมาก และแสดง list
 ---
-## Input
-None (values are set in the program)
-## Output
-list หนึ่งบรรทัด
----
 ## Example
 **Output:**
 ```text

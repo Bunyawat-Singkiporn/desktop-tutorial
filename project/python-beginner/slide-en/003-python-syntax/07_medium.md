@@ -19,16 +19,6 @@ Write a program that shows 2 lines as in the example.
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Two lines that contain quote marks inside the text
-
----
-
 ## Example
 
 **Output:**

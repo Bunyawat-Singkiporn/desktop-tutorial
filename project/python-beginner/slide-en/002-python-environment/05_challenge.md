@@ -21,16 +21,6 @@ print("+--------------------+")
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Six-line schedule in a box
-
----
-
 ## Example
 
 **Output:**

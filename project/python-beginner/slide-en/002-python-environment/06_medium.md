@@ -18,16 +18,6 @@ print("Noodle soup  35)
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Three-line menu
-
----
-
 ## Example
 
 **Output:**

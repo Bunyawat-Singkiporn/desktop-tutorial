@@ -6,11 +6,6 @@
 กำหนด `scores = [72, 40, 88, 55]`
 ใช้ range(len) แสดง `1) 72 Pass` หรือ Fail ถ้า < 50 แล้วปิดท้ายจำนวนผ่าน
 ---
-## Input
-None (values are set in the program)
-## Output
-รายงาน + สรุป
----
 ## Example
 **Output:**
 ```text

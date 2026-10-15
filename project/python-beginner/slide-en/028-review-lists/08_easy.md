@@ -14,16 +14,6 @@ Reorder in reverse and show
 
 ---
 
-## Input
-
-None (values are set in the program)
-
-## Output
-
-one-Line List
-
----
-
 ## Example
 
 **Output:**

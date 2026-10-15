@@ -6,11 +6,6 @@
 กำหนด `scores = [70, 95, 60, 88]`
 ใช้ `.sort(reverse=True)` แล้วแสดง list
 ---
-## Input
-None (values are set in the program)
-## Output
-list หนึ่งบรรทัด
----
 ## Example
 **Output:**
 ```text

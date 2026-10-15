@@ -10,16 +10,6 @@
 
 ---
 
-## Input
-
-None (values are set in the program)
-
-## Output
-
-สองบรรทัด Total และ Average
-
----
-
 ## Example
 
 **Output:**

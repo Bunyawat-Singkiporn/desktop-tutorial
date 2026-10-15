@@ -13,16 +13,6 @@ Separate each part with dotted rules and leave one blank line before the closing
 
 ---
 
-## Input
-
-None (this program does not read user input)
-
-## Output
-
-Transfer slip in three sections with a blank line before the footer
-
----
-
 ## Example
 
 **Output:**

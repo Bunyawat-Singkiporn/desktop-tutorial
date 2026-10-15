@@ -14,16 +14,6 @@ Write a program that shows two notice sections with one blank line between them.
 
 ---
 
-## Input
-
-None (this program does not read user input)
-
-## Output
-
-Two notice sections with one blank line between — 5 lines total
-
----
-
 ## Example
 
 **Output:**

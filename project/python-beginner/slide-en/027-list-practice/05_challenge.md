@@ -6,11 +6,6 @@
 กำหนด `chores = ["Cook", "Clean", "Shop"]`
 แสดงตามตัวอย่าง
 ---
-## Input
-None (values are set in the program)
-## Output
-รายการ + สรุป
----
 ## Example
 **Output:**
 ```text

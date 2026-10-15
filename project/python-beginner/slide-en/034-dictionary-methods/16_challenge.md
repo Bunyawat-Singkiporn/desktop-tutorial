@@ -14,16 +14,6 @@ update price เป็น 28 แล้ว del note จากนั้นแส�
 
 ---
 
-## Input
-
-None (values are set in the program)
-
-## Output
-
-กล่องสรุป
-
----
-
 ## Example
 
 **Output:**

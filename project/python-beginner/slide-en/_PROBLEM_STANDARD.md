@@ -126,6 +126,9 @@ battery = int(input())
 ```
 ````
 
+> Include `## Input` / `## Output` **only when the program reads user input**.
+> If there is no input, skip those headings — do not write `None` or similar filler.
+
 **Rules per section**
 
 | Section | Rule |
@@ -133,7 +136,7 @@ battery = int(input())
 | Title | `# <emoji> <chapter> — QN: <English title>` |
 | Difficulty | Easy / Medium / Challenge only |
 | Task | Tell a situation; do not dictate the exact code structure |
-| Input / Output | Be clear how many values and how many lines |
+| Input / Output | Only when there is input — be clear how many values and how many lines |
 | Example | At least **one** pair inside ` ```text ` blocks |
 | Hint | Optional for Easy; required for Medium/Challenge |
 | Starter Code | Input lines + comment only; do not give a finished if/else skeleton |

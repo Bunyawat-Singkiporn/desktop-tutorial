@@ -7,11 +7,6 @@
 พิมพ์ `Name Score Status` โดย Status เป็น Pass ถ้าคะแนน >= 50 ไม่เช่นนั้น Fail
 แล้วปิดท้ายด้วยจำนวนคนผ่าน
 ---
-## Input
-None (values are set in the program)
-## Output
-รายงานรายคน + สรุป
----
 ## Example
 **Output:**
 ```text

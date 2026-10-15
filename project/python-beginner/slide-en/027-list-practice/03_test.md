@@ -6,11 +6,6 @@
 กำหนด `scores = [55, 80, 42, 70, 90, 58]`
 แสดง `Passed: N`
 ---
-## Input
-None (values are set in the program)
-## Output
-บรรทัดเดียว
----
 ## Example
 **Output:**
 ```text

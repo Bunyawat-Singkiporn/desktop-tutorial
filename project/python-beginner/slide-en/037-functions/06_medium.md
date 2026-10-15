@@ -15,16 +15,6 @@ Print a one-item coffee receipt.
 
 ---
 
-## Input
-
-None (values are set in the program / call functions in code)
-
-## Output
-
-Receipt text
-
----
-
 ## Example
 
 **Output:**

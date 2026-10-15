@@ -17,16 +17,6 @@ print("Meeting on Friday")
 
 ---
 
-## Input
-
-ไม่มี
-
-## Output
-
-ข้อความ 2 บรรทัด
-
----
-
 ## ตัวอย่าง
 
 **Output:**

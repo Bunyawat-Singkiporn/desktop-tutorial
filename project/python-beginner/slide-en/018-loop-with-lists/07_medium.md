@@ -11,16 +11,6 @@
 
 ---
 
-## Input
-
-ไม่มี
-
-## Output
-
-บรรทัดเดียว Passed: <จำนวน>
-
----
-
 ## Example
 
 **Input:**

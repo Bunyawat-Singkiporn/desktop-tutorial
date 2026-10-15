@@ -26,16 +26,6 @@ following the format in the example.
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Three answer lines with a title
-
----
-
 ## Example
 
 **Output:**

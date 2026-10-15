@@ -17,16 +17,6 @@
 
 ---
 
-## Input
-
-None (values are set in the program / call functions in code)
-
-## Output
-
-3 line(s)
-
----
-
 ## Example
 
 **Output:**

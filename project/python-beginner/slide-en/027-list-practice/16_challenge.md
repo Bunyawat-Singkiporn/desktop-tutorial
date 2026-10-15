@@ -6,11 +6,6 @@
 กำหนด `temps = [28, 33, 30, 35, 29, 34, 31]`
 นับวันร้อน (>32) หาค่าสูงสุดด้วยมือ และค่าเฉลี่ยทศนิยม 1 ตำแหน่ง
 ---
-## Input
-None (values are set in the program)
-## Output
-3 บรรทัด
----
 ## Example
 **Output:**
 ```text

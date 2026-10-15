@@ -6,11 +6,6 @@
 กำหนด `scores = [8, 7, 9, 6, 10]`
 รวมคะแนนแล้วแสดง `Total: ...`
 ---
-## Input
-None (values are set in the program)
-## Output
-บรรทัดเดียว
----
 ## Example
 **Output:**
 ```text

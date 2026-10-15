@@ -6,11 +6,6 @@
 กำหนด `scores = [72, 55, 90]`
 เพิ่ม `88` ด้วย append ลบ `55` ด้วย remove แล้วเรียงมากไปน้อย และแสดง list
 ---
-## Input
-None (values are set in the program)
-## Output
-list หนึ่งบรรทัด
----
 ## Example
 **Output:**
 ```text

@@ -6,11 +6,6 @@
 กำหนด `students = ["Ann", "Ben", "Cara", "Dan"]`
 แสดงตามตัวอย่าง (หัวท้ายกรอบ ความยาว 20 ตัวอักษร `=`)
 ---
-## Input
-None (values are set in the program)
-## Output
-กล่องสรุป
----
 ## Example
 **Output:**
 ```text

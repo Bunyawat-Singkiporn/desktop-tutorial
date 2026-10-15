@@ -18,16 +18,6 @@ print("Keep quiet")
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Three lines of text
-
----
-
 ## Example
 
 **Output:**

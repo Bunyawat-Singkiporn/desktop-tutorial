@@ -15,16 +15,6 @@ A coffee shop needs an open sign.
 
 ---
 
-## Input
-
-None (values are set in the program / call functions in code)
-
-## Output
-
-3 lines
-
----
-
 ## Example
 
 **Output:**

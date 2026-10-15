@@ -19,16 +19,6 @@ print("Room 105")
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Two lines of text
-
----
-
 ## Example
 
 **Output:**

@@ -14,16 +14,6 @@ del คีย์ code แล้วพิมพ์ items และจำนวน
 
 ---
 
-## Input
-
-None (values are set in the program)
-
-## Output
-
-3 lines
-
----
-
 ## Example
 
 **Output:**

@@ -22,16 +22,6 @@ The program should have three lines: `Today Note`, `Homework`, and `Math page 42
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Three lines of text
-
----
-
 ## Example
 
 **Output:**

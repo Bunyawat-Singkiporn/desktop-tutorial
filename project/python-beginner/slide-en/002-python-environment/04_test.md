@@ -18,16 +18,6 @@ print("Bring your hat")
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Three lines of text
-
----
-
 ## Example
 
 **Output:**

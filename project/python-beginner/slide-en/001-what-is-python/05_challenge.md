@@ -14,16 +14,6 @@ Notice that each row adds 2 stars and the leading spaces shrink by 1.
 
 ---
 
-## Input
-
-None (this program does not read user input)
-
-## Output
-
-A 5-line star pyramid
-
----
-
 ## Example
 
 **Output:**

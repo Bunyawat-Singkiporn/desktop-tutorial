@@ -19,16 +19,6 @@ She wrote 'python' on the board
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Three lines of text
-
----
-
 ## Example
 
 **Output:**

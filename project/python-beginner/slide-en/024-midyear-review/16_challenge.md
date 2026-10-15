@@ -14,16 +14,6 @@
 
 ---
 
-## Input
-
-None (values are set in the program)
-
-## Output
-
-รายการ Pass แล้วตามด้วยกรอบสรุป
-
----
-
 ## Example
 
 **Output:**

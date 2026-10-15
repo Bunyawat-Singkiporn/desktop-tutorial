@@ -31,16 +31,6 @@ Write a program that prints answers as in the example.
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Six answer lines
-
----
-
 ## Example
 
 **Output:**

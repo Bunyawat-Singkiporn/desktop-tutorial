@@ -6,11 +6,6 @@
 กำหนด `items = ["Pen", "Book", "Glue", "Tape", "Ruler"]`
 แสดงชื่อชิ้นรองสุดท้ายด้วย negative index
 ---
-## Input
-None (values are set in the program)
-## Output
-บรรทัดเดียว
----
 ## Example
 **Output:**
 ```text

@@ -12,16 +12,6 @@ Write a program that shows all three screens, with one blank line between each s
 
 ---
 
-## Input
-
-None (this program does not read user input)
-
-## Output
-
-Three screens, each with its own frame, separated by blank lines
-
----
-
 ## Example
 
 **Output:**

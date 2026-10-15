@@ -6,11 +6,6 @@
 กำหนด `prices = [20, 75, 40, 90, 15, 60]`
 สร้าง list ใหม่ชื่อ `cheap` เก็บราคาที่ต่ำกว่า 50 แล้วแสดง `cheap`
 ---
-## Input
-None (values are set in the program)
-## Output
-list หนึ่งบรรทัด
----
 ## Example
 **Output:**
 ```text

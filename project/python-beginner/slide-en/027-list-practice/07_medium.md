@@ -6,11 +6,6 @@
 กำหนด `scores = [40, 70, 55, 30, 90]`
 แสดง `Sum passed: ...`
 ---
-## Input
-None (values are set in the program)
-## Output
-บรรทัดเดียว
----
 ## Example
 **Output:**
 ```text

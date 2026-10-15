@@ -12,16 +12,6 @@
 
 ---
 
-## Input
-
-None (values are set in the program)
-
-## Output
-
-list หนึ่งบรรทัด
-
----
-
 ## Example
 
 **Output:**

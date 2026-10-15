@@ -15,16 +15,6 @@ You need a divider line before a heading.
 
 ---
 
-## Input
-
-None (values are set in the program / call functions in code)
-
-## Output
-
-3 lines
-
----
-
 ## Example
 
 **Output:**

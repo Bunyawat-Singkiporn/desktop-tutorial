@@ -6,11 +6,6 @@
 กำหนด `queue = ["Ann", "Ben", "Cara"]`
 ลบ `Ben` เพิ่ม `Dan` แล้วแสดง list และจำนวนคนตามตัวอย่าง
 ---
-## Input
-None (values are set in the program)
-## Output
-2 บรรทัด
----
 ## Example
 **Output:**
 ```text

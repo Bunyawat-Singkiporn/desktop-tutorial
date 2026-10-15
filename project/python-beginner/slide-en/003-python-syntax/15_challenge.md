@@ -17,16 +17,6 @@ Write a program that produces the example output.
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Six-line sign in a box
-
----
-
 ## Example
 
 **Output:**

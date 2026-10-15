@@ -18,16 +18,6 @@ PRINT("Place: Music Room")
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Three lines of text
-
----
-
 ## Example
 
 **Output:**

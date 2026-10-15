@@ -19,16 +19,6 @@ Rewrite it so the output is in the correct order.
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Four step lines in the correct order
-
----
-
 ## Example
 
 **Output:**

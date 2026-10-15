@@ -6,11 +6,6 @@
 กำหนด `temps = [31, 28, 35, 30, 33]`
 หาค่าสูงสุดด้วยการเทียบใน loop (ห้ามใช้ max) แล้วแสดง `Hottest: ...`
 ---
-## Input
-None (values are set in the program)
-## Output
-บรรทัดเดียว
----
 ## Example
 **Output:**
 ```text

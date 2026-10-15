@@ -12,16 +12,6 @@ Write a program that shows 5 floors; store names must start in the same column.
 
 ---
 
-## Input
-
-None (this program does not read user input)
-
-## Output
-
-One title line, one rule line, and 5 floor lines
-
----
-
 ## Example
 
 **Output:**

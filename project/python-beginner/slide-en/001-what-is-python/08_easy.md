@@ -12,16 +12,6 @@ Write a program that shows 5 steps; each line starts with a number and a period.
 
 ---
 
-## Input
-
-None (this program does not read user input)
-
-## Output
-
-Five step lines, each starting with a number and dot
-
----
-
 ## Example
 
 **Output:**

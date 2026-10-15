@@ -22,16 +22,6 @@ print("======================")
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Seven-line report in a box
-
----
-
 ## Example
 
 **Output:**

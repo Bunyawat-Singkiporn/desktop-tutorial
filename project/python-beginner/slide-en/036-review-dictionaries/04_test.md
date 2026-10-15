@@ -14,16 +14,6 @@ del note แล้วพิมพ์คีย์ที่เหลือ
 
 ---
 
-## Input
-
-None (values are set in the program)
-
-## Output
-
-2 lines
-
----
-
 ## Example
 
 **Output:**

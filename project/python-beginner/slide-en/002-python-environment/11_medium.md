@@ -18,16 +18,6 @@ print("Blue Team")
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Four team lines
-
----
-
 ## Example
 
 **Output:**

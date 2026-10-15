@@ -14,16 +14,6 @@ Print the first name on one line and the last name on another.
 
 ---
 
-## Input
-
-None (values are set in the program)
-
-## Output
-
-2 lines (names)
-
----
-
 ## Example
 
 **Output:**

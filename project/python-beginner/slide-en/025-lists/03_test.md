@@ -14,16 +14,6 @@ Loop and print each snack name on its own line.
 
 ---
 
-## Input
-
-None (values are set in the program)
-
-## Output
-
-3 lines (snack names)
-
----
-
 ## Example
 
 **Output:**

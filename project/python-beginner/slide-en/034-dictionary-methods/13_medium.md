@@ -14,16 +14,6 @@ update soup เป็น 45 salad เป็น 55 แล้วรวม values
 
 ---
 
-## Input
-
-None (values are set in the program)
-
-## Output
-
-One line
-
----
-
 ## Example
 
 **Output:**

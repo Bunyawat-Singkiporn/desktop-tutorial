@@ -14,16 +14,6 @@
 
 ---
 
-## Input
-
-None (values are set in the program)
-
-## Output
-
-3 บรรทัด
-
----
-
 ## Example
 
 **Output:**

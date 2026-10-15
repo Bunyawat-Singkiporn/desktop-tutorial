@@ -6,11 +6,6 @@
 กำหนด `shelf = ["Soap", "Shampoo", "Cream"]`
 แก้ตำแหน่ง 0 เป็น `Lotion` เพิ่ม `Toner` ลบ `Cream` แล้วเรียงชื่อ และแสดง list
 ---
-## Input
-None (values are set in the program)
-## Output
-list หนึ่งบรรทัด
----
 ## Example
 **Output:**
 ```text

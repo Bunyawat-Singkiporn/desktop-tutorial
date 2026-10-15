@@ -6,11 +6,6 @@
 กำหนด `prices = [80, 150, 120, 40, 200, 95]`
 สร้าง `picked` เรียงแล้วแสดง
 ---
-## Input
-None (values are set in the program)
-## Output
-list หนึ่งบรรทัด
----
 ## Example
 **Output:**
 ```text

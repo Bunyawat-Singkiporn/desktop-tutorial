@@ -12,16 +12,6 @@ Write a program that shows a 3-line welcome message as in the example.
 
 ---
 
-## Input
-
-None (this program does not read user input)
-
-## Output
-
-Three lines of text
-
----
-
 ## Example
 
 **Output:**

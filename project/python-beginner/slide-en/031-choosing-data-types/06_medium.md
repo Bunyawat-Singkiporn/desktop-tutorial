@@ -12,16 +12,6 @@
 
 ---
 
-## Input
-
-None (values are set in the program)
-
-## Output
-
-one-Line List
-
----
-
 ## Example
 
 **Output:**

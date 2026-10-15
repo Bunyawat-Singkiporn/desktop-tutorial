@@ -14,16 +14,6 @@ Show these 3 lines — `Robot Club`, `Every Saturday`, `Room 501`
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Three lines of text
-
----
-
 ## Example
 
 **Output:**

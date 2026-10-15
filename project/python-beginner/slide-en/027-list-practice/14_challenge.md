@@ -6,11 +6,6 @@
 กำหนด `prices = [45, 90, 30, 120, 60, 75]`
 สร้าง `cart` เรียงแล้วแสดง list จำนวนชิ้น และยอดรวม
 ---
-## Input
-None (values are set in the program)
-## Output
-3 บรรทัด
----
 ## Example
 **Output:**
 ```text

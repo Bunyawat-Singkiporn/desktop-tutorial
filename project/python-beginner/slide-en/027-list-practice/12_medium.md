@@ -6,11 +6,6 @@
 กำหนด `scores = [40, 80, 60, 30, 90]`
 แสดง `Average: ...` ทศนิยม 1 ตำแหน่ง
 ---
-## Input
-None (values are set in the program)
-## Output
-บรรทัดเดียว
----
 ## Example
 **Output:**
 ```text

@@ -14,16 +14,6 @@ Show `1-Bag` with range (len)
 
 ---
 
-## Input
-
-None (values are set in the program)
-
-## Output
-
-Line
-
----
-
 ## Example
 
 **Output:**

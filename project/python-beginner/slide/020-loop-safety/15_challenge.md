@@ -14,16 +14,6 @@
 
 ---
 
-## Input
-
-ไม่มี
-
-## Output
-
-Present Count: <จำนวน>
-
----
-
 ## ตัวอย่าง
 
 **Input:**

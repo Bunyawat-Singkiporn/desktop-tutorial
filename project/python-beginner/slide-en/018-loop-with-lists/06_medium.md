@@ -11,16 +11,6 @@
 
 ---
 
-## Input
-
-ไม่มี
-
-## Output
-
-2 บรรทัด — Total และ Average
-
----
-
 ## Example
 
 **Input:**

@@ -6,11 +6,6 @@
 กำหนด `temps = [30, 34, 29, 36, 31, 33]`
 แสดง `Hot days: N`
 ---
-## Input
-None (values are set in the program)
-## Output
-บรรทัดเดียว
----
 ## Example
 **Output:**
 ```text

@@ -12,16 +12,6 @@ Write a program that shows the poster in a box as in the example.
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Rules poster in a box
-
----
-
 ## Example
 
 **Output:**

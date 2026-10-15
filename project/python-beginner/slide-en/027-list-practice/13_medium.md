@@ -6,11 +6,6 @@
 กำหนด `prices = [50, 120, 80, 200, 150]`
 แสดงตามตัวอย่าง
 ---
-## Input
-None (values are set in the program)
-## Output
-2 บรรทัด
----
 ## Example
 **Output:**
 ```text

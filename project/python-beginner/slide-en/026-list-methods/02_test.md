@@ -6,11 +6,6 @@
 เริ่มจาก `members = []` แล้ว `.append()` ชื่อ `Mew`, `Pim`, `Ohm` ตามลำดับ
 แสดง list สุดท้าย
 ---
-## Input
-None (values are set in the program)
-## Output
-list หนึ่งบรรทัด
----
 ## Example
 **Output:**
 ```text

@@ -21,16 +21,6 @@ print("Open 09:00 - 20:00)
 
 ---
 
-## Input
-
-None
-
-## Output
-
-Six-line menu in the correct order
-
----
-
 ## Example
 
 **Output:**
